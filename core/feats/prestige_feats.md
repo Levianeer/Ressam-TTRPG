@@ -26,7 +26,7 @@ Prestige Feats represent fundamental transformations in how a character interact
 
 **Ritual:** Carry something that should break you. Not in comfort, not with rest \- carry it until your body fails and your will is all that remains. The weight itself matters less than the refusal to set it down. Those who complete the path describe the same realization: nothing is heavy anymore.
 
-**Effect:** You no longer roll damage dice. Your weapon attacks deal fixed damage equal to your STR \+ your weapon skill ranks.
+**Effect:** You no longer roll damage dice. Your weapon attacks deal fixed damage equal to your STR \+ half your weapon skill ranks (rounded down).
 
 **Mechanical Changes:**
 
@@ -75,6 +75,7 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 - Any effect that would use Mana, instead uses your Hit Points.
 - HP spent as a casting cost is a cost, not damage \- it does not trigger effects that respond to taking damage.
 - If you die from HP spent on casting, the spell fails and you begin dying.
+- Does not affect Invocation spells, which already use their own HP conversion \- Invocation spells still cost HP equal to Mana Cost × 2, not × 1, and this feat doesn't change or discount that.
 
 ---
 
@@ -132,13 +133,13 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 
 **Ritual:** Destroy your spellbook  \-  every page, every scroll, every scrap of parchment that holds your magic. Melt the ink. Burn the vellum. Then, with chisel and your own blood as pigment, carve the first rune into your flesh. Work until the stone of your body accepts it. When the wound closes around the mark and the power answers your hand instead of your pen, you will never need parchment again.
 
-**Effect:** You can no longer scribe scrolls. Instead, during a Long Rest, you carve arcane runes into your body, armor, or weapons. Each brand holds one spell you know. You may maintain a number of brands equal to your MIND score. You cannot carve a spell with a total Mana Cost higher than your MIND ÷ 2\.
+**Effect:** You can no longer scribe scrolls. Instead, during a Field Rest or Long Rest, you carve arcane runes into your body, armor, or weapons. Each brand holds one spell you know. You may maintain a number of brands equal to your MIND score. You cannot carve a spell with a total Mana Cost higher than your MIND ÷ 2\.
 
-You have a number of **Rune Charges** equal to your Crafting skill ÷ 2 (rounded up). Casting any branded spell expends 1 Rune Charge, regardless of the spell's Mana Cost. No additional Mana is spent to cast. All Rune Charges are restored when you complete a Short Rest.
+You have a number of **Rune Charges** equal to your Crafting skill ÷ 2 (rounded up). Casting any branded spell expends 1 Rune Charge, regardless of the spell's Mana Cost. No additional Mana is spent to cast. All Rune Charges are restored when you complete a Field Rest or Long Rest.
 
 **Rune Surge:** When you have no remaining Rune Charges, you may still cast a branded spell by spending Mana equal to the spell's Mana Cost × 3\. This represents forcing power through an exhausted rune and cannot be reduced by any effect.
 
-**Runic Inscription:** Once per Long Rest, you may spend 10 minutes to carve a rune onto a surface, object, or doorway. The rune holds one spell you currently have branded (that brand goes dormant until your next Long Rest and cannot be re-energized). You set a trigger condition when carving. The rune lasts until triggered or until your next Long Rest. Only one Runic Inscription may exist at a time.
+**Runic Inscription:** Once per Field Rest or Long Rest, you may spend 10 minutes to carve a rune onto a surface, object, or doorway. The rune holds one spell you currently have branded (that brand goes dormant until your next Field Rest or Long Rest and cannot be re-energized). You set a trigger condition when carving. The rune lasts until triggered or until your next Field Rest or Long Rest. Only one Runic Inscription may exist at a time.
 
 **Mechanical Changes:**
 
@@ -164,7 +165,7 @@ Once per combat, when you successfully damage a creature with a Benediction or C
 **Mechanical Changes:**
 
 - Gain resistance to necrotic damage; vulnerability to radiant damage (double damage).
-- Once per Long Rest, you may animate a fresh corpse (dead no longer than 1 hour) as a **Fallen Thrall** (stats below). The thrall obeys your mental commands and lasts until destroyed, you may only have one at a time.
+- Once per Field Rest or Long Rest, you may animate a fresh corpse (dead no longer than 1 hour) as a **Fallen Thrall** (stats below). The thrall obeys your mental commands and lasts until destroyed, you may only have one at a time.
 - You have advantage on spell rolls against enemies within 10 ft.
 - Daily profane rite required (1 hour of meditation in darkness, defacing a holy symbol, or performing forbidden prayers). If not performed, lose all divine spellcasting until the rite is completed.
 

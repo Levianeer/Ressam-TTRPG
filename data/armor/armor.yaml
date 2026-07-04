@@ -60,7 +60,7 @@ medium_armor:
     - name: Brigandine
       ar: 13
       penalty: -3
-      stealth: null
+      stealth: -1
       price: "350 Crown"
       weight: "20 lb"
     - name: Breastplate

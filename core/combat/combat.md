@@ -18,18 +18,19 @@ Actions resolve highest to lowest each round.
 
 ## Action Economy
 
-| Action Type | Quantity | Examples |
-| :---- | :---- | :---- |
-| **Major Action** | 1/turn | Attack, cast spell, reload weapon, Dash, Disengage, Dodge |
-| **Minor Action** | 1/turn | Draw/sheathe weapon, drink potion, open door |
-| **Object Interaction** | 1/turn | Draw ammunition, pick up weapon, flip lever |
-| **Reaction** | 1/round | Held Action, Dodge, Parry, Block, Opportunity Attack |
-| **Free Action** | Unlimited | Drop item, speak briefly, stop channeling, etc |
+| Action Type | Quantity | Examples                                                       |
+| :---- | :---- |:---------------------------------------------------------------|
+| **Major Action** | 1/round | Attack, cast spell, reload weapon, Dash, Disengage, Dodge      |
+| **Minor Action** | 1/round | Sheathe weapon, drink potion, open door                        |
+| **Object Interaction** | 1/round | Draw ammunition, pick up weapon, flip lever                    |
+| **Reaction** | 1/round | Held Action, Dodge, Parry, Block, Opportunity Attack           |
+| **Free Action** | Unlimited | Drop item, speak briefly, stop channeling, etc                 |
 | **Move Action** | Unlimited | Move up to your maximum speed, can be broken up into multiples |
 
-- **Per Turn:** Refreshes when your turn begins  
 - **Per Round:** Refreshes at the start of your *next* turn  
-- Reactions can be used on anyone's turn
+- **Reactions:** Usable on anyone's turn
+- **Drawing multiple weapons:** As a single Object Interaction, you may draw any number of weapons at once, provided you have a free hand for each one.
+- **Reactions are a single shared pool:** Dodge, Block, Parry, and Opportunity Attacks all draw from the same 1 Reaction/round above \- and so does every other Reaction-based Feat, spell, or Maneuver you have (Riposte, Deflect Missiles, Ward of Faith, Dominating Stare, and the like). They compete for your one Reaction, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes, Improved Combat Reflexes) increases this pool.
 
 ---
 
@@ -38,6 +39,8 @@ Actions resolve highest to lowest each round.
 ### **Attack Roll**
 
 **1d12 \+  Weapon Skill \+ Attribute vs. Target's Evasion**
+
+**Trained:** As with all Skill-based rolls, the Attribute only applies once you have 1 or more ranks in the Weapon Skill used (core_rules.md, Skill Check Formula). An untrained attack rolls **1d12** alone.
 
 ### **Damage Roll**
 
@@ -63,7 +66,7 @@ Critical Hits occur on a **Natural 12** on attack rolls.
 
 **Effects:**
 
-- Deal **maximum possible damage**  
+- Roll damage normally \- there is no bonus to the damage roll itself.  
 - Target gains **1 Exhaustion** (if damage exceeds AR).  
   - A creature can gain Exhaustion from critical hits only once per round, regardless of how many critical hits it suffers.  
 - Bypasses Block and Parry
@@ -122,7 +125,7 @@ Requires Armorer's Tools. Cannot exceed starting AR or repair broken (0 AR) armo
 
 | Armorer Rank | Repair Time |
 | :---- | :---- |
-| 1+ | Long Rest: restore 2d6 AR |
+| 1+ | Field Rest or Long Rest: restore 2d6 AR |
 | 3+ | Short Rest: restore 2d6 AR |
 | 5+ | 10 minutes: restore 2d6 AR (1/day) |
 | 7+ | Combat (Major \+ Minor): restore 1d6 AR (1/day) |
@@ -201,3 +204,20 @@ Conditions can be applied by numerous different sources and in a multitude of wa
 | **Silenced** | Can't speak or cast spells. |
 | **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment. |
 | **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it automatically hit, and any melee hit is a critical hit. |
+
+---
+
+## Mythic Actions
+
+Mythic creatures \- campaign-defining bosses and other singular threats \- act on a different rhythm than player characters.
+
+**Mythic Action:** A Mythic creature takes one Mythic Action immediately after the turn of each player character, not just once per round. With a 4-player party, that's 4 Mythic Action opportunities per round.
+
+**Repetition:** Most individual Mythic Actions can only be chosen once per round, even though multiple opportunities occur that round. Some, such as basic attacks and Mythical Resistance, are exempt from that restriction and can be chosen at every opportunity if needed.
+
+### **Mythical Resistance**
+
+A Mythic creature may choose one condition, spell, or other ongoing effect currently affecting it and roll 1d12. On a 6 or higher, the chosen effect ends immediately.
+
+- This targets an ongoing effect \- a condition, a channeled spell's grip on it, a duration-based ensnarement, and so on \- not a single instantaneous resolution that has already fully resolved and left nothing behind.
+- A Mythic creature can use this Mythic Action even if it would otherwise be unable to take actions, even if another creature currently controls its actions, and even if a spell or effect has altered its game statistics.

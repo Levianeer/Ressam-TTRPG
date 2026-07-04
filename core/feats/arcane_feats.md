@@ -77,7 +77,7 @@ You have trained to maintain spells even in the chaos of battle.
 You can maintain channeled spells even when wounded.
 
 **Prerequisites:** MIND 7+  
-**Benefit:** When maintaining a channeled spell, if you fail, you may immediately spend 3 Mana Points to continue the spell anyway. You cannot use this feat if you have 0 or fewer Mana Points. Doing so would result in your death.
+**Benefit:** When you fail the MIND Ward check to maintain a channeled spell after taking damage, you may immediately spend Mana Points equal to the spell's Mana Cost to continue the spell anyway.
 
 ---
 
@@ -126,7 +126,7 @@ You can weave protective magic at a moment's notice.
 You can meditate to recover magical energy between battles.
 
 **Prerequisites:** \+4 ranks in Arcane Lore, MIND 6+  
-**Benefit:** Once per Long Rest, during a Short Rest, you may spend 30 minutes in meditation to recover Mana Points equal to half your Arcane Lore Skill ranks (rounded down, maximum \= half your MIND score). Mana regained through Arcane Recovery can be used to scribe scrolls immediately.
+**Benefit:** Once per Field Rest or Long Rest, during a Short Rest, you may spend 30 minutes in meditation to recover Mana Points equal to half your Arcane Lore Skill ranks (rounded down, maximum \= half your MIND score). Mana regained through Arcane Recovery can be used to scribe scrolls immediately.
 
 ---
 

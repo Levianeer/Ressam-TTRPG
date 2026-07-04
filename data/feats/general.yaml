@@ -7,14 +7,6 @@
     benefit: You gain \+2 HP per level (including retroactively for previous levels).
     extra: []
     special: null
-  - name: Improved Tough
-    flavor: You are the peak of physical endurance \- few can rival you.
-    prerequisites: Tough, END 6+
-    benefit: You gain an additional \+1 HP per level (including retroactively for previous levels).
-    extra: []
-    special: This is part of the Tough chain.
-    requires_feats:
-    - Tough
   - name: Keen Mind
     flavor: You have an exceptional memory and sense of direction.
     prerequisites: MIND 6+
@@ -54,7 +46,7 @@
   - name: Lucky
     flavor: Fortune favors you in your endeavors.
     prerequisites: CHA 8+
-    benefit: You have 3 luck points. When you make an attack roll, Skill check, or Ward check, you may spend 1 luck point to reroll a die and choose which result to use. You regain all luck points after a Long Rest.
+    benefit: You have 3 luck points. When you make an attack roll, Skill check, or Ward check, you may spend 1 luck point to reroll a die and choose which result to use. You regain all luck points after a Field Rest or Long Rest.
     extra: []
     special: null
   - name: Iron Will
@@ -75,13 +67,13 @@
   - name: Healer
     flavor: You have a gift for treating the wounded.
     prerequisites: null
-    benefit: You can spend 1 minute tending to a creature and restore 1d10 \+ their END. That creature can't regain HP this way again until they finish a Short or Long Rest.
+    benefit: You can spend 1 minute tending to a creature and restore 1d10 \+ their END. That creature can't regain HP this way again until they finish a Short Rest, Field Rest, or Long Rest.
     extra: []
     special: null
   - name: Inspiring Leader
     flavor: Your encouragement helps allies push through pain and fatigue.
     prerequisites: CHA 6+
-    benefit: You can spend 10 minutes encouraging your allies. Choose up to 6 friendly creatures (including yourself) who can see or hear you. For the next hour, each creature ignores half their penalty from their Exhaustion (a creature at Exhaustion 4 functions as Exhaustion 2\) (rounded down). This does not reduce actual Exhaustion levels. A creature can't benefit from this again until they finish a Long Rest.
+    benefit: You can spend 10 minutes encouraging your allies. Choose up to 6 friendly creatures (including yourself) who can see or hear you. For the next hour, each creature ignores half their penalty from their Exhaustion (a creature at Exhaustion 4 functions as Exhaustion 2\) (rounded down). This does not reduce actual Exhaustion levels. A creature can't benefit from this again until they finish a Field Rest or Long Rest.
     extra: []
     special: null
 - name: Magical Utility
@@ -104,12 +96,9 @@
     prerequisites: \+3 ranks in any Arcane or Divine school
     benefit: Your Maximum Mana increases by 5\.
     extra: []
-    special: This is the first feat in the Magically Gifted chain.
-  - name: Magical Prodigy
-    flavor: You are a true virtuoso, born to manipulate the fabric of the world.
-    prerequisites: Magically Gifted, \+5 ranks in any Arcane or Divine school
-    benefit: Your Maximum Mana increases by an additional 5\.
+  - name: Unbreakable Focus
+    flavor: You are a being of unshakable will and unbending resolve.
+    prerequisites: END 6+, MIND 6+ or FAI 6+, \+4 ranks in any skill under that attribute
+    benefit: When you are targeted by an overcome roll you are aware of, you may use your Reaction to gain \+4 to the contested Ward. If the overcome still succeeds, you may choose to suffer 1 Exhaustion to reduce it to the Resist effect instead. Once per round\.
     extra: []
-    special: This is part of the Magically Gifted chain.
-    requires_feats:
-    - Magically Gifted
+    special: null

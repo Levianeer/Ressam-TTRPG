@@ -7,7 +7,7 @@ When you first invest ranks in Invocation, you must perform the Severing \- a ri
 #### **The Ritual:**
 
 - Requires 8 hours of isolated meditation and self-inflicted pain.
-- You take 2d6 damage that cannot be healed until your next Long Rest.
+- You take 2d6 damage that cannot be healed until your next Field Rest or Long Rest.
 - Upon completion, your Familiar manifests for the first time.
 
 #### **Your Familiar:**
@@ -21,6 +21,8 @@ When you first invest ranks in Invocation, you must perform the Severing \- a ri
 ### **HP Loss Rule**
 
 You may cast Invocation spells using HP equal to Mana Cost × 2 instead of Mana, paid when you cast. This loss cannot be reduced or prevented but can use tHP.
+
+**Note:** This rate always applies to Invocation spells, even for casters who convert Mana costs to HP through other means (such as the Blood-Rule Prestige Feat) \- it does not stack with or get discounted by those effects.
 
 ### **SPELLS**
 
@@ -93,7 +95,7 @@ You may cast Invocation spells using HP equal to Mana Cost × 2 instead of Mana,
 
 - **Casting Time:** Major Action
 - **Range:** Self
-- **Duration:** Until ended
+- **Duration:** Channel
 - **Effect:** You tear your soul completely from your body and reshape yourself around it \- your flesh becomes a vessel for your own weaponized self. Spectral blades erupt from your limbs. Your voice echoes with your Familiar's distorted cries.
 
 - While Transformed:
@@ -103,7 +105,7 @@ You may cast Invocation spells using HP equal to Mana Cost × 2 instead of Mana,
   - You have resistance to non-magical physical damage
   - At the end of each of your turns, gain 1 Strain
 
-- **Escalating Power:** Your attacks deal \+1d6 lightning damage per Strain (maximum \+4d6).
+- **Escalating Power:** Your attacks deal \+1d4 lightning damage per Strain (maximum \+4d4).
 
 - **Ending Apotheosis:** At the start of your turn before acting, you may end the transformation. When it ends: take 1d8 damage per Strain and gain 1 Exhaustion. If reduced to 0 HP while transformed, Apotheosis ends immediately and you begin Dying.
 

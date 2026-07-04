@@ -12,7 +12,7 @@
   effect: |-
     Summon draining vines that latch onto a creature. Make a spell overcome roll vs. the target's STR Ward.
 
-      - **Overcome:** The target’s movement speed is reduced to 15 ft. At the start of their turn, the target takes 1d8+FAI necrotic damage and you regain tHP equal to half the damage dealt.
+      - **Overcome:** The target's movement speed is reduced to 15 ft. At the start of their turn, the target takes 1d8+FAI necrotic damage. Choose yourself or an ally within 30 ft of the target to regain tHP equal to half the damage dealt \- the vines feed whoever you will, not just you.
       - **Resist:** The tendrils lash the target before falling away \- they take 1d8+FAI necrotic damage.
 
 

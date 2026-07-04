@@ -22,6 +22,8 @@ Necration is the manipulation of death, decay, and the threshold between life an
 
 - At the end of each of their turns, the target may attempt to fight off the rot by rolling 1d12 \+ END \+ best END skill vs. the original spell roll. On success, the spell ends.
 
+- If the target dies while afflicted by Creeping Rot, the rot immediately leaps to the nearest other hostile creature within 10 ft (no action required). That creature must make a spell overcome roll vs. the original spell roll \- Overcome/Resist as above \- and the channel continues on them.
+
 **Grave Terror \- Mana Cost 2**
 
 - **Casting Time:** Major Action

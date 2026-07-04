@@ -60,7 +60,7 @@
   mana_cost: 5
   casting_time: Major Action
   range: 30 ft (requires direct eye contact)
-  duration: 1 minute
+  duration: Channel
   effect: |-
     Lock eyes with a target who can see you. Make a spell overcome roll vs. the target's FAI Ward. On success, they become ensnared in your gaze. While the spell is active, apply ONE of these effects for the duration:
 

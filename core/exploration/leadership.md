@@ -189,7 +189,7 @@ Followers die easily. If caught in combat, targeted by area effects, or facing a
 Cohorts are characters. Their death should matter.
 
 - **Dying:** Cohorts reduced to 0 HP follow standard dying rules (END rounds to stabilize)  
-- **Resurrection:** Same rules as player characters (if your setting allows it)  
+- **Resurrection:** Same as player characters \- not something you can arrange or purchase. If a dead cohort returns, it's entirely the DM's narrative call (see Divine Overview: Resurrection)  
 - **Replacement:** You can recruit a new cohort, but this takes time and roleplay. You can't just grab another one immediately.
 
 **Mourning period:** You cannot recruit a new cohort for 1 week per level the dead cohort had reached. This represents the emotional investment and reputation concerns of losing someone under your command. However, the DM should be reasonable, a hated Cohort probably won’t be mourned.
@@ -208,7 +208,7 @@ Cohorts are characters. Their death should matter.
 
 ### **Cohorts**
 
-- **Cap:** CHA ÷ 3 (max 3\)  
+- **Cap:** 1 (2 with CHA 9+, at a level penalty)  
 - **Level:** Your Level \- 2 (min 1\)  
 - **Combat:** Full participation  
 - **Sheet:** Player may create (DM approval)  
@@ -218,7 +218,7 @@ Cohorts are characters. Their death should matter.
 
 | Calculation | Formula |
 | :---- | :---- |
-| Maximum Cohorts | CHA ÷ 3 (min 1, max 3\) |
+| Maximum Cohorts | 1 (2 with CHA 9+, both at Level \- 3\) |
 | Cohort Level | Your Level \- 2 (min 1\) |
 | Morale Check | 1d12 \+ Leadership \+ CHA vs. DC 15 |
 | Recruitment DC | 15 ± circumstance modifiers |

@@ -141,7 +141,7 @@ When combining Nouns from multiple schools:
 
 ## Crafting in Play
 
-Custom spells must be **learned** before use. Both Arcane and Divine casters spend a Long Rest to permanently add the spell to their repertoire (using the standard Learning Spells rules: 2 hours and 50 Crown per Mana Cost).
+Custom spells must be **learned** before use. Both Arcane and Divine casters spend a Field Rest or Long Rest to permanently add the spell to their repertoire (using the standard Learning Spells rules: 2 hours and 50 Crown per Mana Cost).
 
 Once learned:
 

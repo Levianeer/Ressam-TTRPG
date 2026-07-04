@@ -16,7 +16,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You bought, sold, and transported goods \- learning to read markets and negotiate deals.*
 
-**Skill Bonuses:** Persuasion \+2, Historic Lore \+1  
+**Skill Bonuses:** Persuasion \+2, Identify \+1  
 **Starting Equipment:** Merchant's ledger, small lockbox, fine clothes  
 **Starting Coin:** 620 Crown
 
@@ -27,7 +27,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You studied texts, scrolls, and records \- perhaps in a library, university, or private collection.*
 
 **Skill Bonuses:** Historic Lore \+2, Arcane Lore \+1  
-**Starting Equipment:** Blank journal, quill and ink, reading glasses, common clothes  
+**Starting Equipment:** Writing supplies, reading glasses, common clothes  
 **Starting Coin:** 580 Crown
 
 ---
@@ -56,7 +56,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You were schooled by one of the masters \- whether for sport, honour, or sadism, you live by the debole of the thin blade.*
 
-**Skill Bonuses:** Rapiers & Fencing \+2, Historical Lore \+1  
+**Skill Bonuses:** Rapiers & Fencing \+2, Historic Lore \+1  
 **Starting Equipment:** Rapier, Dueling cape (buckler), fine clothes  
 **Starting Coin:** 520 Crown
 
@@ -229,7 +229,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You copied texts, kept records, or wrote letters for the illiterate.*
 
 **Skill Bonuses:** Historic Lore \+2, Insight \+1  
-**Starting Equipment:** Calligrapher's supplies, blank parchment (50 sheets), ink-stained clothes  
+**Starting Equipment:** Calligrapher's supplies, ink-stained clothes  
 **Starting Coin:** 560 Crown
 
 ---
@@ -279,7 +279,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You delivered messages, packages, and documents \- learning routes, contacts, and discretion.*
 
 **Skill Bonuses:** Athletics \+2, Deception \+1  
-**Starting Equipment:** Sealed message case, road map, traveler's clothes  
+**Starting Equipment:** Sealed message case, traveler's clothes  
 **Starting Coin:** 560 Crown
 
 ---

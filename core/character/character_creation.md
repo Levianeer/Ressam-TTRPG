@@ -1,5 +1,11 @@
 Character creation in Ressam builds your character through deliberate choices, not random rolls or class restrictions. Every decision shapes who your character is and what they can do.
 
+**What You'll Need:**
+
+- A character sheet ([Basic Character Creator](https://levianeer.github.io/Ressam-TTRPG/templates/character/character_sheet.html))
+- This rules (Core Rules, Combat, and Equipment chapters)
+- A concept in mind (or willingness to discover one)
+
 ## Step 1: Starting Experience
 
 Set **EXP to 100** (Level 1). You gain a level every 100 EXP.

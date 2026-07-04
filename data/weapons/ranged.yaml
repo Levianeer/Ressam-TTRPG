@@ -50,7 +50,7 @@ thrown_weapons:
     - name: Javelin
       damage: "1d6 Piercing"
       range: "30/60 ft"
-      properties: ["Versatile (Two-Handed 1d8)", "When thrown, ignores 3 AR"]
+      properties: ["Versatile (Two-Handed 1d8)", "Penetrant (when thrown)"]
       critical: null
       cost: "10 Crown"
       weight: "2 lb"

@@ -1,0 +1,103 @@
+xp_per_level: 30
+character_creation:
+  starting_skill_points: 24
+  starting_attribute_points: 36
+  starting_feats: 2
+
+levels:
+  - level: 1
+    total_xp: 30
+    skill_points_gained: 0
+    skill_cap: 3
+    attribute_points_gained: 0
+    attribute_cap: 7
+    feats_gained: 0
+    notes: "Can hire Followers"
+  - level: 2
+    total_xp: 120
+    skill_points_gained: 2
+    skill_cap: 4
+    attribute_points_gained: 0
+    attribute_cap: 7
+    feats_gained: 0
+    notes: null
+  - level: 3
+    total_xp: 270
+    skill_points_gained: 2
+    skill_cap: 5
+    attribute_points_gained: 0
+    attribute_cap: 7
+    feats_gained: 1
+    notes: "Can hire Cohorts"
+  - level: 4
+    total_xp: 480
+    skill_points_gained: 2
+    skill_cap: 6
+    attribute_points_gained: 2
+    attribute_cap: 8
+    feats_gained: 0
+    notes: null
+  - level: 5
+    total_xp: 750
+    skill_points_gained: 2
+    skill_cap: 7
+    attribute_points_gained: 0
+    attribute_cap: 8
+    feats_gained: 1
+    notes: "Can take a Prestige Feat"
+  - level: 6
+    total_xp: 1080
+    skill_points_gained: 2
+    skill_cap: 8
+    attribute_points_gained: 0
+    attribute_cap: 8
+    feats_gained: 0
+    notes: null
+  - level: 7
+    total_xp: 1470
+    skill_points_gained: 2
+    skill_cap: 9
+    attribute_points_gained: 0
+    attribute_cap: 8
+    feats_gained: 1
+    notes: null
+  - level: 8
+    total_xp: 1920
+    skill_points_gained: 2
+    skill_cap: 10
+    attribute_points_gained: 2
+    attribute_cap: 9
+    feats_gained: 0
+    notes: "Skill Cap reached."
+  - level: 9
+    total_xp: 2430
+    skill_points_gained: 2
+    skill_cap: 10
+    attribute_points_gained: 0
+    attribute_cap: 9
+    feats_gained: 1
+    notes: null
+  - level: 10
+    total_xp: 3000
+    skill_points_gained: 2
+    skill_cap: 10
+    attribute_points_gained: 0
+    attribute_cap: 9
+    feats_gained: 0
+    notes: null
+  - level: 11
+    total_xp: 3630
+    skill_points_gained: 2
+    skill_cap: 10
+    attribute_points_gained: 0
+    attribute_cap: 9
+    feats_gained: 1
+    notes: null
+  - level: 12
+    total_xp: 4320
+    skill_points_gained: 2
+    skill_cap: 10
+    attribute_points_gained: 2
+    attribute_cap: 10
+    feats_gained: 1
+    notes: "Attribute Cap reached."

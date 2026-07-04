@@ -1,8 +1,18 @@
 ### **Experience & Advancement**
 
 - Gain XP through completing missions, defeating enemies, roleplay  
-- Every **100 XP**, you gain a level  
-- Max level is **12 (1200 XP)**.
+- XP required for your next level is **(Current Level \+ Next Level) × 30** \- each level costs more than the last  
+- Max level is **12 (4320 XP total)**.
+
+**How XP is Earned:**
+
+- **Encounter XP:** Award XP per the Encounter tiers under Rewards & Treasure below to every character who took part in the fight.  
+- **Objective XP:** Before a session or arc, the GM sizes each quest objective to a Minor, Average, or Grand tier (below) and awards that XP to every character present and meaningfully involved when it's cleared, it isn't divided among the party.  
+- **Spotlight XP:** Once per session, the GM may award a small flat bonus (15-30 XP) to a character whose skill, career, or race feature was the reason a scene went the way it did.
+
+**Note:** XP is tracked per character, not shared out of a pool. If someone missed a session or an objective, give them a way to catch up, don't leave them behind.
+
+**Per Session:** Most sessions should award \~90 \- 120 XP per player, combining Encounter, Objective, and Spotlight XP. Because each level costs more than the last, expect a level up every session or two early on, and several sessions per level in the double digits.
 
 ### **Per Level Advancement**
 
@@ -14,42 +24,38 @@
 
 | Level | Total XP | Skills Points | Skill Cap | ATTR Points | ATTR Cap | Feats | Notes |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | ----- |
-| 1 | 100 | Start 24 | 3 | Start 36 | 7 | Start 2 | Can hire Followers |
-| 2 | 200 | \+2 | 4 | \- | 7 | \- | \- |
-| 3 | 300 | \+2 | 5 | \- | 7 | \+1 | Can hire Cohorts |
-| 4 | 400 | \+2 | 6 | \+2 | 8 | \- | \- |
-| 5 | 500 | \+2 | 7 | \- | 8 | \+1 | Can take a Prestige Feat |
-| 6 | 600 | \+2 | 8 | \- | 8 | \- | \- |
-| 7 | 700 | \+2 | 9 | \- | 8 | \+1 | \- |
-| 8 | 800 | \+2 | 10 | \+2 | 9 | \- | Skill Cap reached. |
-| 9 | 900 | \+2 | \- | \- | 9 | \+1 | \- |
-| 10 | 1000 | \+2 | \- | \- | 9 | \- | \- |
-| 11 | 1100 | \+2 | \- | \- | 9 | \+1 | \- |
-| 12 | 1200 | \+2 | \- | \+2 | 10 | \+1 | Attribute Cap reached. |
+| 1 | 30 | Start 24 | 3 | Start 36 | 7 | Start 2 | Can hire Followers |
+| 2 | 120 | \+2 | 4 | \- | 7 | \- | \- |
+| 3 | 270 | \+2 | 5 | \- | 7 | \+1 | Can hire Cohorts |
+| 4 | 480 | \+2 | 6 | \+2 | 8 | \- | \- |
+| 5 | 750 | \+2 | 7 | \- | 8 | \+1 | Can take a Prestige Feat |
+| 6 | 1080 | \+2 | 8 | \- | 8 | \- | \- |
+| 7 | 1470 | \+2 | 9 | \- | 8 | \+1 | \- |
+| 8 | 1920 | \+2 | 10 | \+2 | 9 | \- | Skill Cap reached. |
+| 9 | 2430 | \+2 | \- | \- | 9 | \+1 | \- |
+| 10 | 3000 | \+2 | \- | \- | 9 | \- | \- |
+| 11 | 3630 | \+2 | \- | \- | 9 | \+1 | \- |
+| 12 | 4320 | \+2 | \- | \+2 | 10 | \+1 | Attribute Cap reached. |
 
 ### **Rewards & Treasure**
 
-**Minor Encounter (10-25 XP):**
+**Minor Encounter (30-75 XP):**
 
 - 2d10 Crown  
 - Chance of 1 minor item (torch, rope, rations)
 
-**Average Encounter (25-35 XP):**
+**Average Encounter (75-105 XP):**
 
 - 5d10 Crown  
 - 1d3 minor items  
 - Chance of 1 weapon/armor piece
 
-**Grand Encounter (35-100 XP):**
+**Grand Encounter (105-300 XP):**
 
 - 10d10 Crown  
 - 2d4 minor items  
 - 1 decent weapon/armor piece  
 - Chance of minor magic item
-
-**Note:** Generally XP should be shared, but sometimes it simply doesn’t make sense, in these cases, make sure players don’t get left behind, give them opportunities to catch up.
-
-**Per Session:** Most sessions should award \~30 \- 40 XP per player.
 
 ---
 

@@ -24,10 +24,10 @@ Benediction channels divine judgment \- smiting enemies, rebuking heretics, and 
 - **Casting Time:** Major Action
 - **Range:** 30 ft
 - **Duration:** Channel
-- **Effect:** Radiant chains erupt from the ground, bind a target you can see. Make a spell overcome roll vs. the target's STR Ward.
+- **Effect:** Radiant chains erupt from the ground, binding a target you can see \- their weight judged by the target's own sins. Make a spell overcome roll vs. the target's STR Ward.
 
-  - **Overcome:** The target becomes Restrained. While Restrained by this spell, the target takes 1d8 radiant damage at the start of each of their turns.
-  - **Resist:** The target takes 1d8 radiant damage. The chains shatter and the spell ends.
+  - **Overcome:** The target becomes Restrained. While Restrained by this spell, the target takes 1d6 radiant damage at the start of each of their turns, plus 1d6 for every creature they have dealt damage to this combat (maximum \+3d6).
+  - **Resist:** The target takes 1d6 radiant damage. The chains shatter and the spell ends.
 
 - The target may use their Major Action to attempt to break free by rerolling the Ward vs. the original spell overcome roll.
 
@@ -41,6 +41,8 @@ Benediction channels divine judgment \- smiting enemies, rebuking heretics, and 
   - **Overcome:** 2d8+FAI radiant damage and blinded until the end of their next turn.
   - **Resist:** Half damage and not blinded.
 
+
+- Any creature marked by Divine Censure caught in the blast takes an additional 1d8 radiant damage and is blinded regardless of Resist \- their brand flares white-hot in the light.
 
 - You have advantage on this spell overcome roll against undead and fiends. The light momentarily illuminates the area as bright as daylight, dispelling magical darkness of Mana Cost 3 or lower.
 

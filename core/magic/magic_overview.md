@@ -1,6 +1,6 @@
 Magic is the manipulation of energy \- the two methods of manipulation fall into two schools of thought; precise formulae (Arcane) or divine petition (Divine). It is rare not just because people lack potential, but because they lack education and resources. With literacy rates below \~15%, magic remains confined to the wealthy, the religious, and the exceptionally lucky. Because talent is worthless if you have no way to learn.
 
-**The Literacy Barrier:** The vast majority of people will never read a spell formula or holy text. Even those with high ARC or FAI cannot learn what they cannot read.
+**The Literacy Barrier:** The vast majority of people will never read a spell formula or holy text. Even those with high ARC or FAI cannot learn what they cannot read \- see Literacy (Core Rules): only a character with **MIND 6+** is literate by default, and only a literate character can invest in an Arcane or Divine school.
 
 - **Arcane Magic** requires reading complex magical formulae, access to spellbooks or teachers, materials for scribing, and years of study.  
 - **Divine Magic** requires reading holy texts and scriptures, understanding theological doctrine, and genuine faith.
@@ -42,6 +42,8 @@ All spells use a single modifier when you cast:
 
 **Spell Modifier \= Magic School Skill \+ ARC or FAI \- Armor Penalty**
 
+**Trained:** As with all Skill-based rolls, ARC or FAI only applies once you have 1 or more ranks in that Magic School Skill (core_rules.md, Skill Check Formula).
+
 ### **Spell Attacks**
 
 Some spells require you to hit a target's physical defenses \- dodging, reflexes, and positioning.
@@ -64,7 +66,7 @@ Subtract the target's AR from spell damage, then apply remaining damage to HP.
 
 ### **Critical Hits**
 
-Spell Attacks can crit on a natural 12 (maximum damage \+ 1 Exhaustion). Spell Overcomes cannot crit \- their power lies in their effects, not raw damage.
+Spell Attacks can crit on a natural 12 (roll damage normally \+ 1 Exhaustion, per the Critical Hits rules in Combat). Spell Overcomes cannot crit \- their power lies in their effects, not raw damage.
 
 ## 
 
@@ -74,55 +76,81 @@ Spell Attacks can crit on a natural 12 (maximum damage \+ 1 Exhaustion). Spell O
 
 | Aspect | Arcane (Scribing) | Divine (Prayer) |
 | :---- | :---- | :---- |
-| **Preparation** | Scribe scrolls during Long Rest | Pray for 1 hour to refresh spells |
+| **Preparation** | Scribe scrolls during Field Rest or Long Rest | Pray for 1 hour to refresh spells |
 | **Casting** | Consume scroll (no Mana cost) | Spend Mana per cast |
 | **Flexibility** | Must predict what you'll need | Cast any known spell spontaneously |
 | **Repetition** | Can scribe same spell multiple times | Each spell usable once until Prayer |
 | **Sharing** | Can give scrolls to allies | Personal only |
-| **Risk** | Scrolls can be lost/destroyed; Instability | No physical component to lose |
+| **Risk** | Scrolls can be lost/destroyed; Instability (Stable-Scribed reserves only) | No physical component to lose |
 
 ### 
 
 ## Arcane Magic: Study & Scribing
 
-Each Long Rest, prepare spells by scribing them onto scrolls:
+Arcane spells are scribed onto scrolls, then consumed to cast. There are two ways to scribe: **Quick Scribing**, done for free during a Field Rest or Long Rest, and **Stable Scribing**, a slower and costlier process reserved for trained professionals. Both draw on the same Mana and the same Duplicate Resonance rule below \- the difference is time, cost, and how long the result lasts.
+
+|  | Quick Scribing | Stable Scribing |
+| :---- | :---- | :---- |
+| **Time** | During a Field Rest or Long Rest | 1 day per Mana Cost |
+| **Cost** | Mana \+ 1 sheet of Arcane Parchment per scroll | Mana \+ 1 sheet of Arcane Parchment per scroll \+ 100 Crown per Mana Cost |
+| **Source** | Any caster, anywhere | Mage's Guild workshop or master-level teacher |
+| **Decay** | Fades at your next Field Rest or Long Rest if unused | Does not decay |
+
+### **Quick Scribing**
+
+Each Field Rest or Long Rest, prepare spells by scribing them onto scrolls:
 
 1. Choose spells from those you know  
-2. Spend Mana equal to each spell's Mana Cost  
-3. Create scrolls (each \= one casting, consumed when used)
+2. Spend Mana equal to each spell's Mana Cost (see Duplicate Resonance below if you already hold a copy)  
+3. Consume 1 sheet of Arcane Parchment per scroll (Writing & Scholarly Supplies)  
+4. Create scrolls (each \= one casting, consumed when used)
 
-You can scribe the same spell multiple times. Scrolls can be traded, sold, or given to allies.
-
-**Example:** Marcus (MIND 5, 10 Mana) scribes: Ignis Lancet ×3 (3 Mana) \+ Conical Combustion (3 Mana) \+ Searing Heat (3 Mana) \= 9 Mana spent. He can cast each scroll once during the day at no additional cost.
+Scrolls can be traded, sold, or given to allies. A Quick-Scribed scroll's magic fades the moment you complete your next Field Rest or Long Rest, whether you used it or not \- the parchment survives, but the spell must be re-scribed. This is deliberate: Quick Scribing is a daily choice, not a stockpile. Decide what you'll need before you set out, because today's leftovers don't carry over to tomorrow.
 
 Casting a spell from a scroll is a Major Action and requires ranks in the spell's school equal to or exceeding its Mana Cost. Otherwise the scroll is inert in your hands.
 
 **Losing Your Spellbook:** If lost, you can only scribe memorized spells (DM discretion \- perhaps 1-2 favorites). This is catastrophic.
 
-### **Instability (Arcane only)**
+### **Duplicate Resonance**
 
-Carrying too many scrolls can make the concentrated magical potential dangerous.
+Concentrated magical energy is inherently unstable, and identical patterns amplify each other rather than simply adding up. Scribing a copy of a spell you already currently hold an unused copy of costs more, scaled by the spell's own Mana Cost:
+
+**Cost of a new copy \= Mana Cost × (copies you will hold after scribing it, including this one)**
+
+The 1st copy of a spell costs its normal Mana Cost, same as always. The 2nd costs double, the 3rd triple, and so on. This counts every copy you currently hold \- not just copies scribed in the same Field Rest or Long Rest \- so spreading scribing across several rests doesn't dodge the cost. Using or losing a scroll frees its slot for a future copy at the lower price again.
+
+**Example:** Marcus (MIND 5, 10 Mana) already holds one Stable-Scribed Searing Heat scroll (3 Mana Cost) commissioned at a Mage's Guild - it doesn't decay, so he's still carrying it. This morning he Quick-Scribes Ignis Lancet ×2 (1 Mana Cost each \= 1 \+ 2 \= 3 Mana) and Conical Combustion ×1 (3 Mana) \- 6 Mana so far. A second Searing Heat would be his 2nd copy, costing 3 × 2 \= 6 Mana, which would push him to 12 Mana with only 10 to spend. He scribes a second Ignis Lancet instead \- his 3rd copy, costing 1 × 3 \= 3 Mana \- for 9 Mana spent total.
+
+### **Stable Scribing**
+
+A scroll that resists decay takes far more effort to produce than a quick field-scribing \- precise, time-consuming work reserved for trained professionals rather than something managed between fights. Pay the Time and Crown cost above (in addition to the Mana cost, Arcane Parchment, and Duplicate Resonance) at a Mage's Guild workshop, or under a master-level teacher, to produce a scroll that survives past your next Field Rest or Long Rest.
+
+Stable Scribing is the only way to build a lasting reserve outside your daily prep \- and Instability below exists specifically to keep that reserve from growing into a bottomless armory.
+
+### **Instability (Stable-Scribed scrolls only)**
+
+Quick-Scribed scrolls never last long enough to build into a real hoard \- they're gone by your next Field Rest or Long Rest regardless. A permanent Stable-Scribed reserve is different: carrying too many of those can make the concentrated magical potential dangerous.
 
 **Instability Threshold \= Maximum Mana \+ MIND**  
-**Excess Mana \= Total scroll Mana Cost \- Instability Threshold**
+**Excess Mana \= Total Stable-Scribed scroll Mana Cost \- Instability Threshold**
 
-You may carry scrolls (from any source) up to a combined Mana Cost equal to your Instability Threshold. Additionally, a scroll's magic fades if not used within 3 days of scribing \- the parchment survives, but the spell must be re-scribed. Magic can be scribed permanently, but this takes exponentially more time and materials, and mostly reserved for established Mage’s guilds.
+You may carry Stable-Scribed scrolls up to a combined Mana Cost equal to your Instability Threshold. Quick-Scribed scrolls don't count against this.
 
 **Triggers:** Taking 10+ damage in one hit, critical hits, falling 10+ feet
 
-**Detonation:** Roll 1d8 per point of Excess Mana. Take that damage as arcane damage; everyone within 30 ft takes half (DEX Ward DC 23 for half again); all scrolls destroyed; knocked prone.
+**Detonation:** Roll 1d8 per point of Excess Mana. Take that damage as arcane damage; everyone within 30 ft takes half (DEX Ward DC 23 for half again); all Stable-Scribed scrolls destroyed; knocked prone.
 
-**Scroll Shielding (Reaction):** When triggered, destroy up to your MIND in scrolls to reduce Excess Mana by their total Mana Cost before rolling damage.
+**Scroll Shielding (Reaction):** When triggered, destroy up to your MIND in Stable-Scribed scrolls to reduce Excess Mana by their total Mana Cost before rolling damage.
 
-**Controlled Discharge (Short Rest):** Arcane Lore check (DC \= 10 \+ Excess Mana).  
-Success: destroy up to MIND scrolls safely.  
-Failure: destroy 1 scroll and trigger Instability.
+**Controlled Discharge (Short Rest):** Most nations legally require mages to periodically vent excess scrolls rather than let them sit and destabilize \- this check represents doing so. Arcane Lore check (DC \= 10 \+ Excess Mana).  
+Success: destroy up to MIND Stable-Scribed scrolls safely.  
+Failure: destroy 1 Stable-Scribed scroll and trigger Instability.
 
 **Warning Signs:**
 
-- 1-3 Excess: Scrolls feel warm  
-- 4-6 Excess: Scrolls shimmer, crackle; disadvantage on Stealth  
-- 7+ Excess: Scrolls glow visibly, automatically detected by magical senses
+- 1-3 Excess: Stable-Scribed scrolls feel warm  
+- 4-6 Excess: Stable-Scribed scrolls shimmer, crackle; disadvantage on Stealth  
+- 7+ Excess: Stable-Scribed scrolls glow visibly, automatically detected by magical senses
 
 ## Divine Magic: Faith & Prayer
 
@@ -183,14 +211,13 @@ If Prayer is interrupted before completion, make a Religious Lore check (DC 15).
 
 ## Channeling Spells
 
-Some spells have Channel as their duration, this means it requires concentration. You must make a MIND Ward check (DC \= 15 \+ the Spell's Mana Cost) at the beginning of each of your turns.
+Some spells have Channel as their duration, this means it requires concentration.
 
-- **Success:** The spell effect continues, until you must make the Ward again.  
-- **Failure:** You immediately stop channeling and the spell effect ends.
+**Upkeep:** At the start of each of your turns you continue channeling, you must pay half the spell's Mana Cost (rounded down) to sustain it. If you can't or choose not to pay, the spell ends immediately. A Held channeled spell pays this same half-cost the moment it's released instead, since it may resolve before your next turn arrives.
+
+**Breaking Concentration:** Whenever you take damage while channeling, you must succeed on a MIND Ward check or the spell ends immediately. The DC equals 15 or the damage you took, whichever is higher. Concentration also breaks automatically if you fall unconscious or die.
 
 **Limit:** Casting a new channeled spell immediately ends the previous one.
-
-**Breaking:** If you take damage to your HP, you must immediately make an END Ward check (DC \= 15 \+ the Spell's Mana Cost). Additionally, concentration also breaks if you fall unconscious, or die.
 
 ---
 
@@ -198,7 +225,7 @@ Some spells have Channel as their duration, this means it requires concentration
 
 Practitioners with **at least 1 rank** in a magic school can manifest small, instinctive effects requiring no Mana.
 
-**Roll:** 1d12 \+ Magic School Skill \+ ARC or FAI vs. DC (5 Trivial / 10 Simple / 15 Moderate / 20 Complex)
+**Roll:** 1d12 \+ Magic School Skill \+ ARC or FAI vs. DC (5 Very Easy / 10 Medium / 15 Hard / 20 Very Hard)
 
 **Restrictions  \-  Minor Magic cannot:**
 

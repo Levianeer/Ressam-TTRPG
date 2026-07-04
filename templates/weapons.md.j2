@@ -50,13 +50,17 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Trip:** On hit, you may forgo damage to force the target to make a Contested Athletics check or be knocked prone
 
+- **Penetrant:** Ignores AR equal to half your ranks in that weapon's associated Skill (rounded down)
+
+- **Bypasses Block:** This attack cannot be stopped by the Block Reaction, as though it were a Critical Hit for that purpose
+
 ## Criticals
 
 The entry in this column notes how the weapon is used with the rules for critical hits. When your character scores a critical hit.
 
 - **11-12** \- The weapon scores a threat on a natural roll of 11 or 12 (instead of just 12).  
 - **10-12** \- The weapon scores a threat on a natural roll of 10, 11, or 12 (instead of just 12).  
-- **9-12** \- The weapon scores a threat on a natural roll of 9, 11, 12, or 12 (instead of just 12).
+- **9-12** \- The weapon scores a threat on a natural roll of 9, 10, 11, or 12 (instead of just 12).
 
 ## Firearm Rules
 
@@ -64,11 +68,38 @@ All weapons in the Firearms category (Pistols, Long Guns, and Heavy Firearms) in
 
 ### **Ammunition & Reloading**
 
-- **Firearm:** You can use a weapon that has the firearm property to make a ranged attack only if you have ammunition to fire from the weapon. Every weapon with the firearm property uses Shot and Powder as ammunition.  
-- **Standard Reload:** Before a firearm can be used to make a ranged attack it must be loaded, which normally requires both a Major Action **and** a Minor Action to complete.  
-  - With the **Gunner** feat, this is reduced to just a **Major Action**  
-  - With **Quickdraw** and **Gunner**, reloading requires only a **Minor Action**  
-    - A reload with two Major Actions becomes a Major Action and a Minor Action.
+- **Firearm:** You can use a weapon that has the firearm property to make a ranged attack only if you have ammunition to fire from the weapon. Every weapon with the firearm property uses Shot and Powder as ammunition.
+- **Armor-Piercing:** A hit from a firearm degrades the target's armor by 2 AR instead of the normal 1, regardless of whether the hit deals any HP damage.
+- **Standard Reload:** Before a firearm can be used to make a ranged attack it must be loaded, which normally requires both a Major Action **and** a Minor Action to complete.
+  - With the **Rapid Reload** feat, this is reduced to just a **Minor Action**
+    - A reload that normally requires two Major Actions becomes a Major Action and a Minor Action.
+
+### **Lock Types**
+
+Pistols and Long Guns each come in three lock types. A weapon's Damage, Range, and Critical are
+set entirely by its category (Pistol or Musket) - lock type only changes Cost, Misfire, and the
+quirks below.
+
+- **Match-lock:** Cheapest, and the most reliable ignition (lowest Misfire score). Its slow match
+  must be lit \- a Minor Action, or done for free before combat starts \- and stays lit for 10
+  rounds. A match that's doused (see Black Powder, below) or burns out mid-fight must be relit
+  (Minor Action) before the weapon can fire again, and each weapon's match must be lit
+  individually, even if you're already carrying another lit one. A lit match glows and smolders
+  visibly: you gain no benefit from Stealth in darkness while carrying one lit.
+- **Snap-lock:** Expensive, and the least reliable ignition (highest Misfire score). Its flash pan
+  must be manually uncovered immediately before it can fire \- an Object Interaction, every time
+  you fire, not just on the reload turn. It trades money and reliability for having no lit match
+  to manage or give away your position.
+- **Wheel-lock:** Prohibitively expensive, with average reliability (its Misfire score sits between
+  the other two). It's self-contained and always ready to fire the instant it's loaded \- no match
+  to light, no pan to uncover, no extra step of any kind. All three lock types can be pre-loaded in
+  numbers and chain-fired the classic cavalry way \- drop the spent weapon as a Free Action, draw a
+  fresh loaded one as a single Object Interaction (see Action Economy, combat.md \- you may draw any
+  number of weapons this way at once, hands permitting), and fire it with your Major Action, all in
+  the same turn \- but Wheel-lock is the only one that can do it with no strings attached. Match-lock
+  only keeps pace if every spare was lit before the fight and its 10-round timer hasn't run out, and
+  Snap-lock can't draw and uncover the pan in the same turn (both want the same Object Interaction)
+  unless Quickdraw makes the draw a Free Action instead.
 
 ### **Environmental Limitations**
 

@@ -1,4 +1,4 @@
-Subjugation practitioners understand that belief is the most powerful weapon. Based upon ancient Dzinari magic that is still not fully understood, Subjugation represents the weaponization of cosmic truths that should have remained hidden. Where other faiths channel divine power, students of the Subjugation manipulate the fundamental laws that govern consciousness, identity, and free will. The Fe Alada officially denounces Subjugation as "manipulation of the divine gift of free will," yet a small number of their own Inquisitors secretly study it. None embody this school of violation more than its greatest practitioner, the Highest Devaraja of the Golden Throne.
+Subjugation practitioners understand that faith is fuel, not a gift \- and fuel can be stolen. Based upon ancient Dzinari technique that is still not fully understood, Subjugation petitions no god; it siphons the raw conviction that prayer generates, wherever that conviction can be found \- scraps of another's devotion, a martyr's dying oath, or, most efficiently and most illegally, torn directly from a living mind mid-thought. Where other Divine schools channel their own faith outward, students of Subjugation reach into a victim's and turn it back against them \- which is why its spells contest a target's FAI Ward rather than their MIND: the attack lands on their conviction, not their reasoning. The Fe Alada officially denounces Subjugation as "manipulation of the divine gift of free will," yet a small number of their own Inquisitors secretly study it. None embody this parasitism more completely than its greatest practitioner, the Highest Devaraja of the Golden Throne \- whose own claim to godhood remains bitterly disputed.
 
 ### **SPELLS**
 
@@ -64,7 +64,7 @@ Subjugation practitioners understand that belief is the most powerful weapon. Ba
 
 - **Casting Time:** Major Action
 - **Range:** 30 ft (requires direct eye contact)
-- **Duration:** 1 minute
+- **Duration:** Channel
 - **Effect:** Lock eyes with a target who can see you. Make a spell overcome roll vs. the target's FAI Ward. On success, they become ensnared in your gaze. While the spell is active, apply ONE of these effects for the duration:
 
 - **Overcome:**

@@ -16,13 +16,17 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Trip:** On hit, you may forgo damage to force the target to make a Contested Athletics check or be knocked prone
 
+- **Penetrant:** Ignores AR equal to half your ranks in that weapon's associated Skill (rounded down)
+
+- **Bypasses Block:** This attack cannot be stopped by the Block Reaction, as though it were a Critical Hit for that purpose
+
 ## Criticals
 
 The entry in this column notes how the weapon is used with the rules for critical hits. When your character scores a critical hit.
 
 - **11-12** \- The weapon scores a threat on a natural roll of 11 or 12 (instead of just 12).  
 - **10-12** \- The weapon scores a threat on a natural roll of 10, 11, or 12 (instead of just 12).  
-- **9-12** \- The weapon scores a threat on a natural roll of 9, 11, 12, or 12 (instead of just 12).
+- **9-12** \- The weapon scores a threat on a natural roll of 9, 10, 11, or 12 (instead of just 12).
 
 ## Firearm Rules
 
@@ -30,11 +34,38 @@ All weapons in the Firearms category (Pistols, Long Guns, and Heavy Firearms) in
 
 ### **Ammunition & Reloading**
 
-- **Firearm:** You can use a weapon that has the firearm property to make a ranged attack only if you have ammunition to fire from the weapon. Every weapon with the firearm property uses Shot and Powder as ammunition.  
-- **Standard Reload:** Before a firearm can be used to make a ranged attack it must be loaded, which normally requires both a Major Action **and** a Minor Action to complete.  
-  - With the **Gunner** feat, this is reduced to just a **Major Action**  
-  - With **Quickdraw** and **Gunner**, reloading requires only a **Minor Action**  
-    - A reload with two Major Actions becomes a Major Action and a Minor Action.
+- **Firearm:** You can use a weapon that has the firearm property to make a ranged attack only if you have ammunition to fire from the weapon. Every weapon with the firearm property uses Shot and Powder as ammunition.
+- **Armor-Piercing:** A hit from a firearm degrades the target's armor by 2 AR instead of the normal 1, regardless of whether the hit deals any HP damage.
+- **Standard Reload:** Before a firearm can be used to make a ranged attack it must be loaded, which normally requires both a Major Action **and** a Minor Action to complete.
+  - With the **Rapid Reload** feat, this is reduced to just a **Minor Action**
+    - A reload that normally requires two Major Actions becomes a Major Action and a Minor Action.
+
+### **Lock Types**
+
+Pistols and Long Guns each come in three lock types. A weapon's Damage, Range, and Critical are
+set entirely by its category (Pistol or Musket) - lock type only changes Cost, Misfire, and the
+quirks below.
+
+- **Match-lock:** Cheapest, and the most reliable ignition (lowest Misfire score). Its slow match
+  must be lit \- a Minor Action, or done for free before combat starts \- and stays lit for 10
+  rounds. A match that's doused (see Black Powder, below) or burns out mid-fight must be relit
+  (Minor Action) before the weapon can fire again, and each weapon's match must be lit
+  individually, even if you're already carrying another lit one. A lit match glows and smolders
+  visibly: you gain no benefit from Stealth in darkness while carrying one lit.
+- **Snap-lock:** Expensive, and the least reliable ignition (highest Misfire score). Its flash pan
+  must be manually uncovered immediately before it can fire \- an Object Interaction, every time
+  you fire, not just on the reload turn. It trades money and reliability for having no lit match
+  to manage or give away your position.
+- **Wheel-lock:** Prohibitively expensive, with average reliability (its Misfire score sits between
+  the other two). It's self-contained and always ready to fire the instant it's loaded \- no match
+  to light, no pan to uncover, no extra step of any kind. All three lock types can be pre-loaded in
+  numbers and chain-fired the classic cavalry way \- drop the spent weapon as a Free Action, draw a
+  fresh loaded one as a single Object Interaction (see Action Economy, combat.md \- you may draw any
+  number of weapons this way at once, hands permitting), and fire it with your Major Action, all in
+  the same turn \- but Wheel-lock is the only one that can do it with no strings attached. Match-lock
+  only keeps pace if every spare was lit before the fight and its 10-round timer hasn't run out, and
+  Snap-lock can't draw and uncover the pan in the same turn (both want the same Object Interaction)
+  unless Quickdraw makes the draw a Free Action instead.
 
 ### **Environmental Limitations**
 
@@ -70,24 +101,25 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 | Weapon | Damage | Properties | Critical | Cost | WGT |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Shortsword | 1d6 Piercing | Light | 10-12 | 35 Crown | 2 lb |
+| Shortsword | 1d6 \+ 1 Piercing | Light | 10-12 | 35 Crown | 2 lb |
 | Scimitar | 1d6 Slashing | Light, Finesse | 10-12 | 75 Crown | 2 lb |
-| Broadsword | 2d4 Slashing | \- | 11-12 | 85 Crown | 3 lb |
+| Broadsword | 1d10 Slashing | \- | \- | 85 Crown | 3 lb |
 
 **TWO-HANDED BLADES** *(Two-Handed Blades Skill)*
 
 | Weapon | Damage | Properties | Critical | Cost | WGT |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Longsword | 1d8 Slashing | Versatile (Two-Handed 2d4) | 11-12 | 100 Crown | 4 lb |
+| Longsword | 1d6 \+ 2 Slashing | Versatile (Two-Handed 1d8 \+ 2) | 11-12 | 100 Crown | 4 lb |
+| Greatsaber | 1d6 \+ 2 Slashing | Versatile (Two-Handed 2d6) | \- | 150 Crown | 5 lb |
 | Greatsword | 1d12 Slashing | Two-Handed | 11-12 | 200 Crown | 8 lb |
-| Bearing Sword | 2d6 Slashing | Two-Handed, Reach 10ft | \- | 500 Crown | 10 lb |
+| Warblade | 1d10 \+ 2 Slashing | Two-Handed | \- | 350 Crown | 9 lb |
 
 **RAPIERS & FENCING** *(Rapiers & Fencing Skill)*
 
 | Weapon | Damage | Properties | Critical | Cost | WGT |
 | :---- | :---- | ----- | :---: | ----- | :---: |
 | Rapier | 1d8 Piercing | Finesse | 10-12 | 120 Crown | 2 lb |
-| Estoc | 1d10 Piercing | Two-Handed, Finesse, Ignores 2 AR. | 10-12 | 150 Crown | 4 lb |
+| Estoc | 1d10 Piercing | Two-Handed, Finesse, Penetrant | 10-12 | 150 Crown | 4 lb |
 
 **AXES & HAMMERS** *(Axes & Hammers Skill)*
 
@@ -107,7 +139,7 @@ When a weapon with the firearm property is created, it may be made with more tha
 | Pike | 1d8 Piercing | Two-Handed, Reach 15ft | \- | 50 Crown | 9 lb |
 | Halberd | 1d10 Slashing / Piercing | Two-Handed, Reach 10ft | \- | 100 Crown | 8 lb |
 | Glaive | 2d4 Slashing | Two-Handed, Reach 10ft | 11-12 | 95 Crown | 10 lb |
-| Quarterstaff | 1d6 Bludgeoning | Versatile (Two-Handed 1d8) | \- | 5 Crown | 4 lb |
+| Quarterstaff | 1d6 Bludgeoning | Versatile (Two-Handed 2d4) | \- | 5 Crown | 4 lb |
 
 **Special Trait:** When you are wielding a Polearm with the Reach property, other creatures provoke an opportunity attack from you when they enter your Reach, if the attack hits the creature can’t willingly move closer to you until the end of their turn. Additionally, creatures adjacent to you cannot be targeted by a Polearm with the Reach property.
 
@@ -151,7 +183,7 @@ When a weapon with the firearm property is created, it may be made with more tha
 | Weapon | Damage | Range | Properties | Critical | Cost | WGT |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
 | Throwing Axe | 1d6 Slashing | 20/40 ft | Light | 9-12 | 15 Crown | 2 lb |
-| Javelin | 1d6 Piercing | 30/60 ft | Versatile (Two-Handed 1d8), When thrown, ignores 3 AR | \- | 10 Crown | 2 lb |
+| Javelin | 1d6 Piercing | 30/60 ft | Versatile (Two-Handed 1d8), Penetrant (when thrown) | \- | 10 Crown | 2 lb |
 | Dart | 1d4 Piercing | 20/40 ft | Light | \- | 5 Crown | 0.5 lb |
 
 **SLINGS & WHIPS** *(Slings & Whips Skill)*
@@ -168,22 +200,24 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 | Weapon | Damage | Range | Properties | Critical | Cost | WGT |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Match-lock Pistol | 3d4 Piercing | 30/60 ft | Reload (Major \+ Minor), Misfire 2 | \- | 200 Crown | 2 lb |
-| Wheel-lock Pistol | 3d4 Piercing | 40/80 ft | Reload (Major), Misfire 1 | \- | 400 Crown | 3 lb |
+| Match-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 1 | \- | 200 Crown | 2 lb |
+| Snap-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 3 | \- | 500 Crown | 2 lb |
+| Wheel-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 2 | \- | 800 Crown | 3 lb |
 
 **LONG GUNS** *(Long Guns Skill)*
 
 | Weapon | Damage | Range | Properties | Critical | Cost | WGT |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Match-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Reload (Major \+ Minor), Misfire 2 | \- | 300 Crown | 10 lb |
-| Wheel-lock Musket | 4d4 Piercing | 150/300 ft | Two-Handed, Reload (Major), Misfire 1 | \- | 600 Crown | 11 lb |
+| Match-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 1 | \- | 300 Crown | 10 lb |
+| Snap-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 3 | \- | 750 Crown | 10 lb |
+| Wheel-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 2 | \- | 1200 Crown | 11 lb |
 
 **HEAVY FIREARMS** *(Heavy Firearms Skill)*
 
 | Weapon | Damage | Range | Properties | Critical | Cost | WGT |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Blunderbuss | 4d4 Piercing | 30/60 ft | Two-Handed, Spread (30ft/15ft cone), Reload (Major \+ Minor), Misfire 2 | \- | 700 Crown | 6 lb |
-| Hand Mortar | 2d10 Piercing | 40/80 ft | Two-Handed, Explosive (20ft radius), Reload (Major \+ Minor), Misfire 3 | \- | 1200 Crown | 6 lb |
+| Blunderbuss | 4d4 Piercing | 30/60 ft | Two-Handed, Spread (30ft/15ft cone), Misfire 2 | \- | 700 Crown | 6 lb |
+| Hand Mortar | 2d10 Piercing | 40/80 ft | Two-Handed, Explosive (20ft radius), Misfire 3 | \- | 1200 Crown | 6 lb |
 | Hackbut | 6d6 Piercing | 200/400 ft | Two-Handed, Mounted, Reload (2 Major Actions), Misfire 1 | \- | 1500 Crown | 40 lb |
 
 **AMMUNITION**

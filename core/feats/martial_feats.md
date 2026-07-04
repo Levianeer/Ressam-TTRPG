@@ -4,23 +4,13 @@ These feats focus on combat prowess, weapon mastery, and tactical battlefield ab
 
 ## Weapon Mastery
 
-### **Improved Critical**
-
-Your intimate knowledge of your weapon allows you to strike with devastating precision.
-
-**Prerequisites:** \+4 ranks in a weapon Skill  
-**Benefit:** Your critical hit range with a chosen weapon skill increases by 1 (12 becomes 11-12 on 1d12). A weapon's critical range cannot be expanded beyond 9-12 by any combination of effects.  
-**Special:** This feat applies to only one weapon skill category. You may select this feat multiple times; each time it applies to a different weapon skill.
-
----
-
 ### **Deadly Critical**
 
 Your critical strikes can cripple even the hardiest opponents.
 
-**Prerequisites:** \+5 ranks in weapon Skill, Improved Critical  
-**Benefit:** When you score a critical hit, you may force the target to make an END Ward check (DC \= 5 \+ associated weapon Skill \+ associated Attribute) or they gain 1 Exhaustion immediately. This can only be used once per round.  
-**Special:** This feat applies to the same weapon skill as your Improved Critical feat. You may select this feat multiple times; each time it applies to a different weapon skill.
+**Prerequisites:** \+5 ranks in weapon Skill  
+**Benefit:** Your critical hit range with a chosen weapon skill increases by 1 (12 becomes 11-12 on 1d12). Additionally, when you score a critical hit with that weapon skill, you may force the target to make an END Ward check (DC \= 5 \+ associated weapon Skill \+ associated Attribute) or they gain 1 Exhaustion immediately. This can only be used once per round.  
+**Special:** This feat applies to only one weapon skill category. You may select this feat multiple times; each time it applies to a different weapon skill.
 
 ---
 
@@ -39,7 +29,7 @@ You can flow your weapon through multiple foes in one great swing.
 You've mastered the art of letting your blade's momentum carry through multiple targets.
 
 **Prerequisites:** Sweeping Strike, STR 6+, \+5 ranks in Two-Handed Blades, Polearms or Axes & Hammers  
-**Benefit:** When you use Sweeping Strike, the second attack no longer has disadvantage. You still cannot move until the start of your next turn.  
+**Benefit:** When you use Sweeping Strike, the second attack's disadvantage is replaced by a flat \-3 penalty to hit instead. You still cannot move until the start of your next turn.  
 **Special:** This is part of the Sweeping Strike chain.
 
 ---
@@ -118,7 +108,7 @@ You fight with cunning and improvisation, using your environment as a weapon.
 
 - **Blind:** Throw dirt/sand. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or they are Blinded
 - **Trip:** Kick/sweep. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or is knocked prone
-- **Disarm:** Grab their weapon. Contested check (your weapon skill \+ STR/DEX vs. their weapon skill \+ STR/DEX)
+- **Disarm:** Grab their weapon. Contested check (your weapon skill \+ STR/DEX/REF vs. their weapon skill \+ STR/DEX/REF)
 
 You can only use this once per turn.
 
@@ -129,9 +119,9 @@ You can only use this once per turn.
 Your opportunistic tactics are lightning-fast.
 
 **Prerequisites:** Dirty Fighting, DEX 6+ or REF 6+, \+5 ranks in weapon skill  
-**Benefit:** When you use Dirty Fighting, you may perform it as a Free Action instead of a Minor Action. Additionally, add the following options:
+**Benefit:** Add the following options:
 
-- **Throw:** Throw an object, or a Thrown Weapon. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or is Stunned. Additionally, if the target failed their Ward, and you threw a Thrown Weapon, it does damage like normal
+- **Throw:** As a Minor Action throw an item, or a Thrown Weapon. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or is Stunned. Additionally, if the target failed their Ward, and you threw a Thrown Weapon, it deals damage like normal
 
 ---
 
@@ -166,10 +156,20 @@ You make your shots count against those clad in metal and steel.
 
 ### **Gunner**
 
-You reload firearms with practiced efficiency.
+You keep your hands steady and your powder dry.
 
 **Prerequisites:** \+3 ranks in any firearm Skill  
-**Benefit:** Reloading a firearm requires only a Major Action instead of Major \+ Minor Action. If you also have the Quickdraw feat, reloading is reduced to a Minor Action only.  
+**Benefit:** As a Minor Action, provided you have not moved this turn, gain Advantage on your next firearm attack this turn. Your Speed is reduced to 0 until the end of the current turn. Additionally, reduce the Misfire score of firearms you wield by 1 (minimum 1).  
+**Special:** This is part of the Gunner chain.
+
+---
+
+### **Rapid Reload**
+
+Your hands move through the reloading drill without wasted motion.
+
+**Prerequisites:** Gunner, \+4 ranks in any firearm Skill  
+**Benefit:** Reloading a firearm requires only a Minor Action instead of a Major \+ Minor Action. A firearm that normally requires two Major Actions to reload (such as the Hackbut) instead requires a Major Action and a Minor Action.  
 **Special:** This is part of the Gunner chain.
 
 ---
@@ -179,7 +179,7 @@ You reload firearms with practiced efficiency.
 You seamlessly blend blade and pistol in combat.
 
 **Prerequisites:** Gunner, \+4 ranks in any firearm Skill  
-**Benefit:** When you use your Major Action to attack with a one-handed melee weapon, you may use your Minor Action to make one attack with a Pistol you are holding.  
+**Benefit:** When you use your Major Action to attack with a one-handed melee weapon, you may use your Minor Action to make one attack with a Pistol you are holding, at \-3 to hit.  
 **Special:** This is part of the Gunner chain.
 
 ---
@@ -200,7 +200,7 @@ You are deadly with ranged weapons at close quarters.
 You can adopt a protective stance that makes you difficult to hit.
 
 **Prerequisites:** \+4 ranks in any melee weapon Skill  
-**Benefit:** As a Minor Action, enter a defensive stance until the start of your next turn. While in this stance, you gain \+3 to Agility and \+2 to Parry attempts. Your damage rolls suffer \-2 until the start of your next turn.
+**Benefit:** As a Minor Action, enter a defensive stance until the start of your next turn. While in this stance, attacks against you have Disadvantage, your Parry attempts have Advantage. Your damage rolls suffer \-4 until the start of your next turn.
 
 ---
 
@@ -218,7 +218,7 @@ Your reflexes are so fast you can respond to multiple threats in a single round.
 
 Your reflexes are talked about across the plain, you are a god among men.
 
-**Prerequisites:** DEX 8+  
+**Prerequisites:** Combat Reflexes, DEX 8+  
 **Benefit:** You gain 1 additional Reaction per round.  
 **Special:** This is part of the Combat Reflexes chain.
 
@@ -383,7 +383,7 @@ You move so quickly that enemies cannot track your movements.
 You know how to strike where it hurts most.
 
 **Prerequisites:** DEX 6+, \+3 ranks in Stealth, \+3 ranks in any weapon Skill  
-**Benefit:** Once per turn, when you hit with a melee weapon attack that has advantage, you may deal extra damage. You may trigger Sneak Attack on opportunity attacks if you have advantage.
+**Benefit:** Once per turn, when you hit with a melee weapon attack that has advantage, you may deal extra damage \- but only if that attack is the only weapon attack you make on your turn. If any feature grants you an additional weapon attack on the same turn (Two-Weapon Fighting, Sweeping Strike, Swashbuckler, Iron Fist, etc.), none of your attacks that turn qualify for Sneak Attack. You may still trigger Sneak Attack on an Opportunity Attack taken as a Reaction on another creature's turn.
 
 **Extra Damage Scaling:**
 
@@ -440,5 +440,5 @@ You excel at wrestling opponents into submission.
 You specialise in unarmed combat, bridging the gap between sword and fist.
 
 **Prerequisites:** STR 6+, Brawling 3+  
-**Benefit:** As a Minor Action after hitting with an unarmed strike, you may immediately make a followup attack with an unarmed attack you haven't already made (e.g if you hit a Punch attack this turn, you may make a Kick, Headbutt or Grapple attack, but not another Punch Attack).
+**Benefit:** As a Minor Action after hitting with an unarmed strike, you may immediately make a followup attack, at \-5 to hit, with an unarmed attack you haven't already made (e.g if you hit a Punch attack this turn, you may make a Kick, Headbutt or Grapple attack, but not another Punch Attack).
 

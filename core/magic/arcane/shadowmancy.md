@@ -20,8 +20,11 @@ Shadowmancy is inherently silent, producing no noise when cast.
 
 - **Casting Time:** Major Action
 - **Range:** Touch
-- **Duration:** 1 hour (Channel; if given to more than just one creature)
-- **Effect:** A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends when the target makes an attack or casts a spell.
+- **Duration:** 1 hour / (Channel; if given to more than just one creature)
+- **Effect:** A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. This shroud is built for patient movement, not combat.
+
+- It ends the instant before the target makes an attack roll or casts a spell - that triggering action itself gains no benefit from the invisibility.
+- It also ends immediately if the target moves more than half their speed on a single turn (a Dash always ends it).
 
 **Blinding Shadow \- Mana Cost 2**
 
@@ -64,6 +67,16 @@ Shadowmancy is inherently silent, producing no noise when cast.
 - **Range:** 90 ft
 - **Duration:** Channel
 - **Effect:** You conjure a 20-foot radius sphere of devouring darkness centered on a point within range. Any creature other than you that starts its turn in the darkness or enters it for the first time on its turn takes 1d8 cold damage as the shadow drains their warmth. The darkness is absolute \- only magical darkvision can penetrate it. The area is heavily obscured.
+
+**Umbral Ambush \- Mana Cost 4**
+
+- **Casting Time:** Major Action
+- **Range:** Self
+- **Duration:** Until the end of your next turn
+- **Effect:** You cloak yourself in shadow thick enough to swallow a killing blow. You must be in dim light or darkness to cast this spell. You become invisible for the duration.
+
+- Unlike lesser shadow-work, this shroud does not collapse the instant you attack or cast a spell - your invisibility persists through that action, ending only once you deal damage with it (or at the end of your next turn, whichever comes first).
+- The shroud still ends immediately if you move more than half your speed on a single turn (a Dash always ends it) - it demands patience, not haste.
 
 **Void Shroud \- Mana Cost 5**
 

@@ -48,81 +48,45 @@ Essential equipment for travel, exploration, and survival.
 | Item | Cost | Weight | Notes |
 | :---- | :---: | :---: | :---: |
 | Backpack | 25 Crown | 5 lb | Required to carry anything. |
-| Saddlebags | 15 Crown | 8 lb | Requires mount |
 | Belt Pouch | 5 Crown | 0.5 lb | Holds coins, small items |
 | Bedroll | 8 Crown | 5 lb | Sleeping without one: \-2 to rest recovery HP |
 | Tent, 1-person | 10 Crown | 20 lb | Shelter from weather |
-| Tent, 2-person | 15 Crown | 30 lb | “ |
 | Tent, 4-person | 50 Crown | 50 lb | “ |
 | Waterskin | 2 Crown | 1 lb (full) |  \-  |
 | Rations, 1 day | 10 Scales | 1 lb | Dried meats, hardtack, cheese, daily intake of water |
-| Feed, animal (1 day) | 5 Scales | 10 lb | Grain and fodder |
+
+*Saddlebags and animal feed are listed under Mounts & Related Gear.*
 
 ### 
 
 ### **Light Sources**
 
-| Item | Cost | Weight | Duration | Radius |
-| :---- | :---: | :---: | :---: | :---: |
-| Candle | 1 Scale |  \-  | 1 hour | 5 ft |
-| Torch (bundle of 5\) | 1 Crown | 5 lb | 1 hour each | 20 ft |
-| Lantern, hooded | 10 Crown | 2 lb | 6 hours/flask | 30 ft |
-| Lantern, bullseye | 15 Crown | 3 lb | 6 hours/flask | 60 ft cone |
-| Oil flask | 5 Crown | 1 lb | Fuel for lantern |  \-  |
-| Tinderbox | 3 Crown | 1 lb | Lights fire in 1 minute |  \-  |
-
-**Lantern Notes:**
-
-- *Hooded lantern:* Can be shuttered to hide light (Object Interaction)  
-- *Bullseye lantern:* Projects a focused beam; 60 ft cone, 5 ft wide at origin
-
-### **Climbing & Rope**
-
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Rope, hemp (50 ft) | 6 Crown | 10 lb | Holds 500 lb; DC 12 to climb |
-| Rope, silk (50 ft) | 25 Crown | 5 lb | Holds 400 lb; DC 10 to climb |
-| Grappling hook | 8 Crown | 4 lb | \+2 to Athletics (climbing) when anchored |
-| Pitons (10) | 3 Crown | 2.5 lb | Iron spikes for climbing; hammer required |
-| Climbing harness | 12 Crown | 3 lb | Advantage on Athletics vs. falling |
-| Pulley | 5 Crown | 2 lb | Halves effective weight when lifting |
-
-### 
+| Item                 | Cost | Weight |         Duration          | Radius (bright/dim) |
+|:---------------------| :---: | :---: |:-------------------------:|:-------------------:|
+| Candle               | 1 Scale |  \-  | 1 hour / Fuel for lantern |       5/5 ft        |
+| Torch (bundle of 5\) | 1 Crown | 5 lb |        1 hour each        |      15/15 ft       |
+| Lantern              | 10 Crown | 2 lb |     1 hours / candle      |      20/20 ft       |
+| Oil flask            | 5 Crown | 1 lb |     Fuel for lantern      |         \-          |
 
 ### **Tools & Utility**
 
 | Item | Cost | Weight | Notes |
 | :---- | :---: | :---: | :---: |
 | Crowbar | 10 Crown | 5 lb | \+2 to STR checks for prying |
-| Hammer | 5 Crown | 3 lb | For pitons, construction |
+| Hammer | 5 Crown | 3 lb | For construction |
 | Shovel | 6 Crown | 5 lb | Digging, excavation |
 | Pickaxe | 10 Crown | 10 lb | Mining, breaking stone |
-| Hand saw | 8 Crown | 2 lb | Cutting wood, bone |
 | Chain (10 ft) | 15 Crown | 10 lb | Holds 1,000 lb; STR Ward DC 25 to break |
+| Rope (50 ft) | 6 Crown | 10 lb | Holds 500 lb; DC 12 to climb |
+| Grappling hook | 8 Crown | 4 lb | \+2 to Athletics (climbing) when anchored |
 | Lock, simple | 10 Crown | 1 lb | DC 12 to pick |
-| Lock, good | 25 Crown | 1 lb | DC 15 to pick |
 | Lock, superior | 50 Crown | 1 lb | DC 20 to pick |
-| Manacles | 15 Crown | 2 lb | DC 20 to escape; DC 18 to break |
+| Manacles | 15 Crown | 2 lb | DC 20 to escape; DC 20 to break |
 | Mirror, small steel | 8 Crown | 0.5 lb | Signaling, seeing around corners |
 | Whistle, signal | 2 Crown |  \-  | Audible 300 ft; simple codes |
-| Bell | 1 Crown |  \-  | Alarm tripwires, animal collars |
 | Chalk (10 pieces) | 1 Crown |  \-  | Marking paths, writing |
-| Charcoal sticks (10) | 50 Scales |  \-  | Writing, sketching |
-
----
-
-## Reconnaissance & Surveillance
-
-Equipment for gathering information and observing from safety.
-
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Ear trumpet | 20 Crown | 1 lb | \+2 to Perception (hearing) through doors/walls |
-| Mirror, hand | 8 Crown | 0.5 lb | See around corners without exposure |
 | Compass | 40 Crown |  \-  | Always know cardinal directions |
 | Map case, waterproof | 5 Crown | 1 lb | Protects documents from weather |
-| Hourglass | 15 Crown | 1 lb | Track time precisely |
-| Measuring cord (50 ft) | 2 Crown | 1 lb | Knotted at 1-ft intervals |
 
 ---
 
@@ -134,24 +98,17 @@ Tactical equipment for combat preparation and area control. These items give mar
 
 | Item | Cost | Weight | Notes |
 | :---- | :---: | :---: | :---: |
-| Caltrops (bag of 20\) | 5 Crown | 2 lb | Covers 5×5 ft; Ward DEX DC 12 or 1d4 damage \+ half speed |
-| Caltrops, barbed (20) | 12 Crown | 3 lb | Ward DEX DC 14 or 2d4 damage \+ half speed until healed |
-| Oil flask (combat) | 5 Crown | 1 lb | Covers 5×5 ft; Ward DEX DC 12 or fall prone; burns if ignited |
-| Tripwire kit | 8 Crown | 1 lb | 20 ft wire \+ stakes; DC 14 Perception to spot |
-| Bear trap | 25 Crown | 10 lb | DC 15 DEX or 2d6 damage \+ restrained |
-| Hunting snare | 3 Crown | 1 lb | For small game; Ward DEX DC 12 or restrained (Small creatures) |
+| Caltrops (bag of 20\) | 5 Crown | 2 lb | Covers 5×5 ft; Ward DEX DC 15 or 1d4 damage \+ half speed |
+| Bear trap | 25 Crown | 10 lb | DC 20 DEX or 2d6 damage \+ restrained |
 
 ### 
 
 ### **Thrown Items**
 
+For thrown bombs (smoke, fire, acid, flash, etc.), see the **Alchemy** chapter's Reactive/Protective/Sensory Oil recipes - they cover the same niches with scaling quality tiers instead of a fixed, non-scaling price. Holy water is the one thrown item alchemy can't replicate.
+
 | Item | Cost | Weight | Range | Notes |
 | :---- | :---: | :---: | :---: | :---: |
-| Smoke pot | 15 Crown | 1 lb | 30/60 ft | 10 ft radius, heavy obscurement; 3 rounds |
-| Flash powder | 20 Crown |  \-  | 10/20 ft | 10 ft radius, END Ward DC 13 or blinded 1 round |
-| Thunderstone | 25 Crown | 1 lb | 20/40 ft | 10 ft radius, END Ward DC 14 or deafened 1 minute; audible 300 ft |
-| Acid vial | 30 Crown | 1 lb | 20/40 ft | 5 ft square, 2d6 acid damage; degrades 1 AR on hit |
-| Eshzera bottle | 50 Crown | 1 lb | 20/40 ft | 15 ft radius, 1d6 fire/round for 3 rounds or until extinguished (DEX Ward DC 12\) or left radius |
 | Holy water | 25 Crown | 1 lb | 20/40 ft | 2d6 radiant to undead/fiends |
 
 **Using Thrown Items:** Ranged attack using REF \+ Athletics (or Thrown Weapons skill if you have it).
@@ -170,14 +127,13 @@ Tactical equipment for combat preparation and area control. These items give mar
 
 Equipment for treating injuries and stabilizing the dying.
 
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Healer's kit | 20 Crown | 5 lb | Advantage on stabilization; 10 uses |
-| Bandages (10) | 2 Crown | 0.5 lb | Gain 1d4 tHP |
-| Surgical tools | 25 Crown | 3 lb | Required for surgery; \+2 to Medical Lore |
-| Antitoxin | 50 Crown |  \-  | Advantage on Ward vs. poison for 1 hour |
-| Smelling salts | 10 Crown |  \-  | Wake unconscious creature (not dying); 5 uses |
-| Healing potion | 100 Crown | 0.5 lb | Restore 4d4 |
+| Item           |   Cost    | Weight |                   Notes                   |
+|:---------------|:---------:|:------:|:-----------------------------------------:|
+| Healer's kit   | 20 Crown  |  5 lb  |    Advantage on stabilization; 10 uses    |
+| Bandages (5)   |  5 Crown  | 0.5 lb |               Gain 1d4 tHP                |
+| Surgical tools | 25 Crown  |  3 lb  | Required for surgery; \+2 to Medical Lore |
+| Antitoxin      | 50 Crown  | 0.5 lb |      Removes the Posioned Condition       |
+| Healing potion | 100 Crown | 0.5 lb |                Restore 4d4                |
 
 ### 
 
@@ -195,21 +151,12 @@ Equipment for treating injuries and stabilizing the dying.
 
 ## Writing & Scholarly Supplies
 
-Equipment for the literate \- scholars, mages, and scribes.
+Material components required for Arcane casting.
 
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Parchment (50 sheets) | 5 Crown | 0.5 lb | Standard writing surface |
-| Arcane Parchment
-(50 sheets) | 25 Crown | 0.5 lb | Standard writing surface; waterproof |
-| Ink, common (vial) | 5 Crown |  \-  | Black; sufficient for 50 pages |
-| Quill (5) | 2 Crown |  \-  | Goose or crow feather |
-| Blank book | 50 Crown | 3 lb | 100 pages, leather bound |
-| Journal | 25 Crown | 1 lb | 50 pages, simple binding |
-| Scroll case | 5 Crown | 0.5 lb | Holds 12 scrolls; waterproof |
-| Map, local | 15 Crown |  \-  | A Map of a single region or city |
-| Map, regional | 50 Crown |  \-  | A Map of multiple territories |
-| Sealing wax | 3 Crown |  \-  | General wax; used for letters and sealing vessels |
+| Item                         | Cost | Weight | Notes |
+|:-----------------------------| :---: | :---: | :---: |
+| Arcane Parchment (50 sheets) | 25 Crown | 0.5 lb | Standard writing surface; waterproof |
+| Spellbook (blank book)       | 50 Crown | 3 lb | 100 pages, leather bound; the physical spellbook Arcane casters can lose (Losing Your Spellbook, magic_overview.md) |
 
 ### 
 
@@ -218,16 +165,13 @@ Equipment for the literate \- scholars, mages, and scribes.
 | Item | Cost | Weight | Notes |
 | :---- | :---: | :---: | :---: |
 | Religious codex | 100 Crown | 3 lb | Required for Divine casters |
-| Prayer beads | 15 Crown |  \-  | Holy symbol; focus for prayers |
-| Holy symbol, wooden | 5 Crown |  \-  | Basic divine focus |
-| Holy symbol, silver | 50 Crown |  \-  | Ornate divine focus |
-| Incense (10 sticks) | 5 Crown |  \-  | For rituals and offerings |
-| Offering bowl | 10 Crown | 1 lb | Ceremonial use |
+| Holy symbol | 5 Crown |  \-  | Required for Divine casters; focus for prayers |
+| Incense (10 sticks) | 5 Crown |  \-  | Ritual offering; can satisfy Deep Devotion's sacrifice requirement (magic_overview.md) |
 
 **Spell Supply Notes:**
 
-- Arcane scrolls require parchment \+ ink  
-- Divine casting requires a holy symbol and codex  
+- Arcane scrolls (Quick- or Stable-Scribed) consume 1 sheet of Arcane Parchment per scroll; Arcane spells are learned from a Spellbook \- see magic_overview.md  
+- Divine casting requires a Holy Symbol and Religious Codex  
 - Protect scrolls from water \- wet parchment is ruined
 
 ---
@@ -266,17 +210,9 @@ Specialized equipment for crafting and professional work. When a career grants �
 | Alchemist's supplies | 30 Crown | 8 lb | Alchemy |
 | Armorer's tools | 18 Crown | 12 lb | Armorer |
 | Blacksmith's tools | 20 Crown | 15 lb | Crafting (metal) |
-| Brewer's supplies | 15 Crown | 10 lb | Alchemy, Crafting |
-| Calligrapher's supplies | 15 Crown | 2 lb | Historic Lore, forgery |
+| Calligrapher's supplies | 15 Crown | 2 lb | Historic Lore, Deception |
 | Carpenter's tools | 15 Crown | 12 lb | Crafting (wood) |
-| Cartographer's tools | 25 Crown | 6 lb | Navigation, mapmaking |
-| Cook's utensils | 8 Crown | 10 lb | Survival |
-| Jeweler's tools | 25 Crown | 3 lb | Crafting (fine), appraisal |
-| Leatherworker's tools | 12 Crown | 8 lb | Crafting (leather) |
-| Mason's tools | 18 Crown | 20 lb | Crafting (stone) |
-| Painter's supplies | 15 Crown | 5 lb | Artistry, forgery |
-| Potter's tools | 10 Crown | 10 lb | Crafting (clay) |
-| Weaver's tools | 10 Crown | 6 lb | Crafting (cloth) |
+| Jeweler's tools | 25 Crown | 3 lb | Crafting (fine), Identify |
 
 ### 
 
@@ -299,15 +235,10 @@ Specialized gear for specific professions and activities. When a career grants �
 
 | Item | Cost | Weight | Use |
 | :---- | :---: | :---: | :---: |
-| Animal handler's kit | 8 Crown | 5 lb | \+2 to Animal Handling |
-| Fishing tackle | 5 Crown | 4 lb | Line, hooks, floats; Survival (fishing) |
 | Fishing net | 8 Crown | 10 lb | Catch fish or small game |
-| Hunting traps (3) | 15 Crown | 15 lb | Assorted snares for game |
 | Mining tools | 12 Crown | 12 lb | Pick, helmet, candle; excavation |
-| Navigator's tools | 30 Crown | 3 lb | Sextant, charts; \+2 to Navigation at sea |
+| Navigator's tools | 30 Crown | 3 lb | Sextant, charts; \+2 to Survival at sea |
 | Merchant's ledger | 10 Crown | 2 lb | Track transactions; \+1 to Persuasion |
-| Merchant's scale | 15 Crown | 3 lb | Weigh goods, detect coin clipping |
-| Forgery kit | 30 Crown | 2 lb | Create false documents; Deception |
 | Disguise kit | 25 Crown | 3 lb | Wigs, makeup, prosthetics; Deception |
 
 ---
@@ -316,25 +247,19 @@ Specialized gear for specific professions and activities. When a career grants �
 
 Equipment for criminals, spies, and those who work outside the law. When a career grants “Tools of Deception”, choose one type.
 
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Thieves' tools | 30 Crown | 1 lb | Required for Lockpicking checks |
-| Lockpicks, masterwork | 75 Crown | 1 lb | \+2 to Lockpicking |
-| Glass cutter | 20 Crown | 0.5 lb | Silent entry through windows |
-| Loaded dice | 5 Crown |  \-  | \+2 to Deception (gambling); DC 15 to detect |
-| Marked cards | 8 Crown |  \-  | \+2 to Deception (gambling); DC 15 to detect |
-| Hidden compartment (belt) | 20 Crown | 1 lb | Conceal 3 small items; DC 15 to find |
-| Hidden compartment (boot) | 15 Crown | 0.5 lb | Conceal 1 small item; DC 15 to find |
-| False documentation | 25+ Crown |  \-  | \+2 to Deception for false identity |
-| Garotte wire | 10 Crown |  \-  | Stealth attack; see Combat chapter |
-| Blinding powder | 8 Crown |  \-  | Thrown; DEX Ward DC 12 or blinded 1 round |
-| Caltrops, silent (20) | 15 Crown | 2 lb | Wrapped; no sound when scattered |
+| Item | Cost | Weight |                    Notes                     |
+| :---- | :---: |:------:|:--------------------------------------------:|
+| Thieves' tools | 30 Crown |  1 lb  |       Required for Lockpicking checks        |
+| Loaded dice | 5 Crown |   \-   | \+2 to Deception (gambling); DC 15 to detect |
+| Marked cards | 8 Crown |   \-   | \+2 to Deception (gambling); DC 15 to detect |
+| Hidden compartment (belt) | 20 Crown |  1 lb  |     Conceal 3 small items; DC 20 to find     |
+| False documentation | 25+ Crown |   \-   |     \+2 to Deception for false identity      |
 
 **False Documentation** prices vary by quality and complexity:
 
-- Simple papers (work permits, travel passes): 25 Crown  
-- Official documents (guild membership, military orders): 50 Crown  
-- Noble credentials (letters of introduction, land deeds): 100+ Crown
+- Simple papers (work permits, travel passes): 50 Crown  
+- Official documents (guild membership, military orders): 100 Crown  
+- Noble credentials (letters of introduction, land deeds): 500+ Crown
 
 Detection DC equals 10 \+ forger's Deception bonus.
 
@@ -344,18 +269,14 @@ Detection DC equals 10 \+ forger's Deception bonus.
 
 | Mount | Cost | Notes |
 | :---- | :---: | :---: |
-| Mule | 90 Crown | Sure-footed; stubborn |
-| Donkey | 50 Crown | Smaller, cheaper |
-| Horse, draft | 100 Crown | Work horse; not for combat |
-| Horse, riding | 140 Crown | General purpose |
-| Horse, war | 800 Crown | Trained for combat; won't flee |
-| Pony | 75 Crown | Suitable for Small riders |
+| Mule | 90 Crown | Hardy pack animal, stubborn and reliable (see Mount Stats, traveling.md) |
+| Riding Horse | 140 Crown | Swift travel mount, not trained for battle (see Mount Stats, traveling.md) |
+| War Horse | 800 Crown | Battle-trained destrier (see Mount Stats, traveling.md) |
 
 | Tack & Harness | Cost | Weight | Notes |
 | :---- | :---: | :---: | :---: |
 | Saddle, riding | 25 Crown | 25 lb | Required for mounted combat |
-| Saddle, military | 50 Crown | 30 lb | \+2 to checks vs. being dismounted |
-| Saddle, pack | 15 Crown | 15 lb | For mules/donkeys carrying gear |
+| Saddle, pack | 15 Crown | 15 lb | For mules carrying gear |
 | Saddlebags | 15 Crown | 8 lb | Holds 20 lb |
 | Bit and bridle | 5 Crown | 1 lb | Required to control mount |
 | Feed, 1 day | 5 Scales | 10 lb | Grain and fodder |
@@ -395,32 +316,7 @@ Detection DC equals 10 \+ forger's Deception bonus.
 
 ## Alchemical Components
 
-Ingredients for crafting potions, poisons, and alchemical items. See the **Alchemy** chapter for crafting rules.
-
-### **Oils (Base Effects)**
-
-Oils determine the primary effect of the concoction.
-
-| Oil Type | Common | Uncommon | Rare |
-| :---- | ----: | ----: | ----: |
-| Vital (healing/restoration) | 50 Crown | 100 Crown | 200 Crown |
-| Reactive (damage/offensive) | 50 Crown | 100 Crown | 200 Crown |
-| Protective (defense/resistance) | 50 Crown | 100 Crown | 200 Crown |
-| Sensory (perception/detection) | 50 Crown | 100 Crown | 200 Crown |
-
-### 
-
-### **Powders (Modifiers)**
-
-Powders modify the oil's effect.
-
-| Powder Type | Common | Uncommon | Rare |
-| :---- | ----: | ----: | ----: |
-| Amplifying (increased potency) | 50 Crown | 100 Crown | 200 Crown |
-| Prolonging (extended duration) | 50 Crown | 100 Crown | 200 Crown |
-| Stabilizing (reduced side effects) | 50 Crown | 100 Crown | 200 Crown |
-
-### 
+Ingredients for crafting potions, poisons, and alchemical items. See the **Alchemy** chapter for crafting rules and Oil/Powder types and pricing (Quality Tiers table). Catalyst pricing, unique to this list, is below.
 
 ### **Catalysts (Delivery Method)**
 
@@ -467,22 +363,14 @@ Pre-assembled equipment packages for common character types.
 
 Backpack, bedroll, tinderbox, torches (10), rations (7 days), waterskin, rope (50 ft), belt pouch
 
-### **Explorer's Kit (95 Crown, 45 lb)**
-
-Adventurer's Kit \+ grappling hook, pitons (10), hammer, chalk (10), mirror
-
 ### **Healer's Kit (50 Crown, 12 lb)**
 
 Healer's kit, bandages (20), splint set, antitoxin
 
 ### **Scholar's Kit (110 Crown, 12 lb)**
 
-Blank book, parchment (50), ink (2 vials), quills (5), scroll case, candles (10)
+Spellbook (blank book), Arcane Parchment (50 sheets), candles (10)
 
 ### **Infiltrator's Kit (90 Crown, 8 lb)**
 
-Thieves' tools, dark clothing, grappling hook, silk rope (50 ft), caltrops (silent), blinding powder
-
-### **Scout's Kit (65 Crown, 15 lb)**
-
-Compass, signal mirror, whistle, map case, traveling clothes, rations (7 days)
+Thieves' tools, dark clothing, grappling hook, rope (50 ft), caltrops, whistle

@@ -26,7 +26,7 @@ Armor is your primary defense against physical attacks. In Ressam, armor absorbs
 | **MEDIUM ARMOR** |  |  |  |  |  |
 | Mail Shirt | 9 | \-2 | \-2 | 150 Crown | 20 lb |
 | Chain Mail | 11 | \-3 | \-3 | 200 Crown | 25 lb |
-| Brigandine | 13 | \-3 | \- | 350 Crown | 20 lb |
+| Brigandine | 13 | \-3 | \-1 | 350 Crown | 20 lb |
 | Breastplate | 14 | \-4 | \-2 | 700 Crown | 30 lb |
 | **HEAVY ARMOR** |  |  |  |  |  |
 | Half-Plate | 15 | \-5 | \-3 | 1,000 Crown | 45 lb |
@@ -155,7 +155,7 @@ Characters with the Armorer skill can repair armor outside of combat. This requi
 
 | Armorer Rank | Repair Capability |
 | :---: | :---- |
-| 1+ | Repair during Long Rest: restore 2d6 durability |
+| 1+ | Repair during Field Rest or Long Rest: restore 2d6 durability |
 | 3+ | Repair during Short Rest: restore 2d6 durability |
 | 5+ | Quick repair (10 minutes): restore 2d6 durability, once per day |
 | 7+ | Combat repair (Major Action): restore 1d6 durability to your own armor, once per day |
@@ -204,7 +204,7 @@ Shields provide active and passive defenses.
 
 | Shield | AR Bonus | Penalty | Properties | Price | Weight |
 | :---- | :---: | :---: | :---: | :---: | :---: |
-| Buckler | \- | \- | \+2 Agility | 40 Crown | 3 lb |
+| Buckler | \- | \- | \+1 Agility | 40 Crown | 3 lb |
 | Targe | \+1 | \- | \- | 60 Crown | 6 lb |
 | Rotella | \+2 | \-1 | \- | 90 Crown | 10 lb |
 | Heater Shield | \+2 | \-1 | \- | 80 Crown | 12 lb |

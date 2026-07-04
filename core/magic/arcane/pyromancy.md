@@ -4,23 +4,20 @@ Pyromancy is destruction incarnate. Fire consumes, purifies, and transforms \- a
 
 **Ignis Lancet \- Mana Cost 1**
 
-- **Casting Time:** Major Action
-- **Range:** 120 ft
+- **Casting Time:** Minor Action
+- **Range:** 60 ft
+- **Duration:** 1 minute
+- **Effect:** Choose one creature you can see within range and set their weapon alight with magical flame. For the duration, their weapon deals an additional 1d6 fire damage on a hit, and casting Bright Light in a 15-foot radius and Dim Light for an additional 15 feet.
+
+**Flare Ward \- Mana Cost 2**
+
+- **Casting Time:** Reaction (when you or an ally within 15 ft is about to be hit by a melee attack)
+- **Range:** 15 ft
 - **Duration:** Instant
-- **Effect:** Make a spell attack roll vs. target's Evasion. On hit, deal 1d10 \+ ARC fire damage.
+- **Effect:** The attacker's weapon or limb flares with sudden heat. Make a spell overcome roll vs. the attacker's END Ward.
 
-**Consuming Flame \- Mana Cost 2**
-
-- **Casting Time:** Major Action
-- **Range:** 30 ft
-- **Duration:** Until extinguished
-- **Effect:** Target a creature you can see. Make a spell overcome roll vs. their DEX Ward.
--
-  - **Overcome:** Target is set ablaze. A burning creature takes 1d6 fire damage at the start of each of their turns. They (or an adjacent ally) can spend a Major Action to attempt to extinguish the flames by rolling 1d12 \+ DEX \+ best DEX skill vs. the original spell roll.
-  - **Resist:** The flames lick the target but don't take hold \- they take 1d6 fire damage and the spell ends.
-
-
-- If a burning creature ends their turn adjacent to another creature, that creature catches fire if their DEX Ward is lower than the original spell roll.
+  - **Overcome:** They take 1d8 \+ ARC fire damage and must roll their attack roll again, taking the lowest result.
+  - **Resist:** They take 1d4 fire damage.
 
 **Growing Inferno \- Mana Cost 3**
 
@@ -29,24 +26,21 @@ Pyromancy is destruction incarnate. Fire consumes, purifies, and transforms \- a
 - **Duration:** Instant
 - **Effect:** Unleash a cone of flame from your hands. Make a spell overcome roll vs. each creature's DEX Ward in the cone.
 
-  - **Overcome:** 2d10+ARC fire damage.
+  - **Overcome:** 2d10+ARC fire damage. The creature is burning until the start of their next turn.
   - **Resist:** Deals half damage.
 
 
 - You may cast this spell again on your next turn; if you do, this spell deals an additional 1d6 fire damage and you have advantage on the spell overcome roll, this bonus does not stack.
 
-**Searing Heat \- Mana Cost 3**
+**Ashfall Curtain \- Mana Cost 3**
 
 - **Casting Time:** Major Action
-- **Range:** 30 ft
+- **Range:** Self (20 ft line)
 - **Duration:** Channel
-- **Effect:** You superheat the metal worn or carried by a creature you can see. Make a spell overcome roll vs. the target's END Ward.
+- **Effect:** You raise a wall of roiling flame and smoke, up to 20 ft long, 10 ft high, and 5 ft thick, anchored to the ground along its entire length. The wall blocks line of sight and heavily obscures the far side.
 
-  - **Overcome:** They take 2d8 fire damage immediately. At the start of each of their turns while you channel, they take an additional 1d8 fire damage and have disadvantage on attack rolls and ability checks as the burning metal sears their flesh.
-  - **Resist:** They take half the initial damage and the spell ends.
-
-
-- A creature can use its Major Action to drop a held metal item or doff metal armor (taking normal doffing time) to end the effect on that item. Creatures wearing no metal are unaffected.
+  - Any creature that moves through the wall takes 1d6 fire damage and is burning until the start of their next turn.
+  - You may reposition the wall to any point within 30 ft as a Minor Action while channeling.
 
 **Immolation \- Mana Cost 4**
 
@@ -69,5 +63,7 @@ Pyromancy is destruction incarnate. Fire consumes, purifies, and transforms \- a
   - **Overcome:** 4d10 \+ ARC fire damage.
   - **Resist:** Half damage.
 
+
+- Any creature in the area that is already burning instead takes an additional 2d10 fire damage, and the fire explosively spreads to every creature adjacent to it \- those creatures must also make the DEX Ward check above (Overcome/Resist as normal, without the bonus damage).
 
 - The area continues burning for 1 minute. Any creature that enters the area for the first time on a turn or starts its turn there takes 1d6 fire damage.

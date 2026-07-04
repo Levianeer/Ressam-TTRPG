@@ -13,16 +13,6 @@ You are remarkably hardy and difficult to kill.
 
 ---
 
-### **Improved Tough**
-
-You are the peak of physical endurance \- few can rival you.
-
-**Prerequisites:** Tough, END 6+  
-**Benefit:** You gain an additional \+1 HP per level (including retroactively for previous levels).  
-**Special:** This is part of the Tough chain.
-
----
-
 ### **Keen Mind**
 
 You have an exceptional memory and sense of direction.
@@ -77,7 +67,7 @@ You notice details others miss.
 Fortune favors you in your endeavors.
 
 **Prerequisites:** CHA 8+  
-**Benefit:** You have 3 luck points. When you make an attack roll, Skill check, or Ward check, you may spend 1 luck point to reroll a die and choose which result to use. You regain all luck points after a Long Rest.
+**Benefit:** You have 3 luck points. When you make an attack roll, Skill check, or Ward check, you may spend 1 luck point to reroll a die and choose which result to use. You regain all luck points after a Field Rest or Long Rest.
 
 ---
 
@@ -106,7 +96,7 @@ Your will allows you to shrug off effects that would fell others.
 You have a gift for treating the wounded.
 
 **Prerequisites:** None  
-**Benefit:** You can spend 1 minute tending to a creature and restore 1d10 \+ their END. That creature can't regain HP this way again until they finish a Short or Long Rest.
+**Benefit:** You can spend 1 minute tending to a creature and restore 1d10 \+ their END. That creature can't regain HP this way again until they finish a Short Rest, Field Rest, or Long Rest.
 
 ---
 
@@ -115,7 +105,7 @@ You have a gift for treating the wounded.
 Your encouragement helps allies push through pain and fatigue.
 
 **Prerequisites:** CHA 6+  
-**Benefit:** You can spend 10 minutes encouraging your allies. Choose up to 6 friendly creatures (including yourself) who can see or hear you. For the next hour, each creature ignores half their penalty from their Exhaustion (a creature at Exhaustion 4 functions as Exhaustion 2\) (rounded down). This does not reduce actual Exhaustion levels. A creature can't benefit from this again until they finish a Long Rest.
+**Benefit:** You can spend 10 minutes encouraging your allies. Choose up to 6 friendly creatures (including yourself) who can see or hear you. For the next hour, each creature ignores half their penalty from their Exhaustion (a creature at Exhaustion 4 functions as Exhaustion 2\) (rounded down). This does not reduce actual Exhaustion levels. A creature can't benefit from this again until they finish a Field Rest or Long Rest.
 
 ---
 
@@ -145,16 +135,14 @@ You have natural resistance to one type of elemental damage.
 Your magical reserves run deeper than most casters.
 
 **Prerequisites:** \+3 ranks in any Arcane or Divine school  
-**Benefit:** Your Maximum Mana increases by 5\.  
-**Special:** This is the first feat in the Magically Gifted chain.
+**Benefit:** Your Maximum Mana increases by 5\.
 
 ---
 
-### **Magical Prodigy**
+### **Unbreakable Focus**
 
-You are a true virtuoso, born to manipulate the fabric of the world.
+You are a being of unshakable will and unbending resolve.
 
-**Prerequisites:** Magically Gifted, \+5 ranks in any Arcane or Divine school  
-**Benefit:** Your Maximum Mana increases by an additional 5\.  
-**Special:** This is part of the Magically Gifted chain.
+**Prerequisites:** END 6+, MIND 6+ or FAI 6+, \+4 ranks in any skill under that attribute  
+**Benefit:** When you are targeted by an overcome roll you are aware of, you may use your Reaction to gain \+4 to the contested Ward. If the overcome still succeeds, you may choose to suffer 1 Exhaustion to reduce it to the Resist effect instead. Once per round\.
 

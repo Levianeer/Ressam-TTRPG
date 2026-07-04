@@ -66,7 +66,7 @@
   mana_cost: 5
   casting_time: Major Action
   range: Self
-  duration: Until ended
+  duration: Channel
   effect: |-
     You tear your soul completely from your body and reshape yourself around it \- your flesh becomes a vessel for your own weaponized self. Spectral blades erupt from your limbs. Your voice echoes with your Familiar's distorted cries.
 
@@ -77,7 +77,7 @@
       - You have resistance to non-magical physical damage
       - At the end of each of your turns, gain 1 Strain
 
-    - **Escalating Power:** Your attacks deal \+1d6 lightning damage per Strain (maximum \+4d6).
+    - **Escalating Power:** Your attacks deal \+1d4 lightning damage per Strain (maximum \+4d4).
 
     - **Ending Apotheosis:** At the start of your turn before acting, you may end the transformation. When it ends: take 1d8 damage per Strain and gain 1 Exhaustion. If reduced to 0 HP while transformed, Apotheosis ends immediately and you begin Dying.
 

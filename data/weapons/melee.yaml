@@ -3,7 +3,7 @@ one_handed_blades:
   skill: "One-Handed Blades Skill"
   weapons:
     - name: Shortsword
-      damage: "1d6 Piercing"
+      damage: "1d6 \\+ 1 Piercing"
       properties: ["Light"]
       critical: "10-12"
       cost: "35 Crown"
@@ -15,9 +15,9 @@ one_handed_blades:
       cost: "75 Crown"
       weight: "2 lb"
     - name: Broadsword
-      damage: "2d4 Slashing"
+      damage: "1d10 Slashing"
       properties: []
-      critical: "11-12"
+      critical: null
       cost: "85 Crown"
       weight: "3 lb"
 
@@ -26,23 +26,29 @@ two_handed_blades:
   skill: "Two-Handed Blades Skill"
   weapons:
     - name: Longsword
-      damage: "1d8 Slashing"
-      properties: ["Versatile (Two-Handed 2d4)"]
+      damage: "1d6 \\+ 2 Slashing"
+      properties: ["Versatile (Two-Handed 1d8 \\+ 2)"]
       critical: "11-12"
       cost: "100 Crown"
       weight: "4 lb"
+    - name: Greatsaber
+      damage: "1d6 \\+ 2 Slashing"
+      properties: ["Versatile (Two-Handed 2d6)"]
+      critical: null
+      cost: "150 Crown"
+      weight: "5 lb"
     - name: Greatsword
       damage: "1d12 Slashing"
       properties: ["Two-Handed"]
       critical: "11-12"
       cost: "200 Crown"
       weight: "8 lb"
-    - name: Bearing Sword
-      damage: "2d6 Slashing"
-      properties: ["Two-Handed", "Reach 10ft"]
+    - name: Warblade
+      damage: "1d10 \\+ 2 Slashing"
+      properties: ["Two-Handed"]
       critical: null
-      cost: "500 Crown"
-      weight: "10 lb"
+      cost: "350 Crown"
+      weight: "9 lb"
 
 rapiers_fencing:
   category: "RAPIERS & FENCING"
@@ -56,7 +62,7 @@ rapiers_fencing:
       weight: "2 lb"
     - name: Estoc
       damage: "1d10 Piercing"
-      properties: ["Two-Handed", "Finesse", "Ignores 2 AR."]
+      properties: ["Two-Handed", "Finesse", "Penetrant"]
       critical: "10-12"
       cost: "150 Crown"
       weight: "4 lb"
@@ -126,7 +132,7 @@ polearms:
       weight: "10 lb"
     - name: Quarterstaff
       damage: "1d6 Bludgeoning"
-      properties: ["Versatile (Two-Handed 1d8)"]
+      properties: ["Versatile (Two-Handed 2d4)"]
       critical: null
       cost: "5 Crown"
       weight: "4 lb"

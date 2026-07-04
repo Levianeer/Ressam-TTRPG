@@ -1,7 +1,7 @@
 - name: Buckler
   ar_bonus: null
   penalty: null
-  properties: ['\+2 Agility']
+  properties: ['\+1 Agility']
   price: "40 Crown"
   weight: "3 lb"
 - name: Targe

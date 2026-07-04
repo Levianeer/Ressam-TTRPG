@@ -82,7 +82,7 @@ Your vision is extraordinarily sharp.
 Your threats can break the will of even hardened warriors.
 
 **Prerequisites:** \+6 ranks in Intimidation, CHA 6+ or STR 6+  
-**Benefit:** As a Major Action, make an Intimidation check and choose one target within 30 ft who can see or hear you. They must make a CHA Ward (DC \= your Intimidation check result) or become frightened of you for 1 minute. Frightened creatures can repeat the Ward at the end of each of their turns (with advantage if they are more than 30 ft away from you). You may use this ability a number of times per Long Rest equal to your CHA or STR (whichever you use for Intimidation).
+**Benefit:** As a Major Action, make an Intimidation check and choose one target within 30 ft who can see or hear you. They must make a CHA Ward (DC \= your Intimidation check result) or become frightened of you for 1 minute. Frightened creatures can repeat the Ward at the end of each of their turns (with advantage if they are more than 30 ft away from you). You may use this ability a number of times per Field Rest or Long Rest equal to your CHA or STR (whichever you use for Intimidation).
 
 ---
 
@@ -111,7 +111,7 @@ You can read people like books.
 You have encyclopedic knowledge of arcane magic.
 
 **Prerequisites:** \+4 ranks in Arcane Lore  
-**Benefit:** You can identify magical items with 10 minutes of study (no check required). You have advantage on Arcane Lore checks. Once per Long Rest, you may ask the DM one specific question about arcane magic, history, or creatures.
+**Benefit:** You can identify magical items with 10 minutes of study (no check required). You have advantage on Arcane Lore checks. Once per Field Rest or Long Rest, you may ask the DM one specific question about arcane magic, history, or creatures.
 
 ---
 
@@ -160,7 +160,7 @@ You know how to find and prepare medicinal plants.
 You can create potions and alchemical substances with ease.
 
 **Prerequisites:** \+4 ranks in Alchemy  
-**Benefit:** You can craft potions, poisons, and alchemical items at half the normal cost and time. Once per Long Rest, you may create one potion of a formula you know without spending materials.
+**Benefit:** You can craft potions, poisons, and alchemical items at half the normal cost and time. Once per Field Rest or Long Rest, you may create one potion of a formula you know without spending materials.
 
 ---
 
@@ -169,5 +169,5 @@ You can create potions and alchemical substances with ease.
 Your crafted items are of exceptional quality.
 
 **Prerequisites:** \+6 ranks in Crafting  
-**Benefit:** You can craft items at half the normal cost and time. Items you craft have \+1 to their quality (weapons: \+1 damage, armor: Armor Max AR increased by 1, tools: advantage on checks using them). Once per Long Rest, you may repair a broken item during a Short Rest.
+**Benefit:** You can craft items at half the normal cost and time. Items you craft have \+1 to their quality (weapons: \+1 damage, armor: Armor Max AR increased by 1, tools: advantage on checks using them). Once per Field Rest or Long Rest, you may repair a broken item during a Short Rest.
 

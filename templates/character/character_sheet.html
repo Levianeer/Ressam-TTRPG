@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ressam Character Sheet</title>
+<style>
+  :root{
+    --bg:#f5f1e8;
+    --panel:#fffdf7;
+    --ink:#241f18;
+    --muted:#6b6252;
+    --line:#cabf9f;
+    --accent:#7a3b2e;
+    --accent-ink:#fff8ef;
+    --computed-bg:#ece4d0;
+    --input-bg:#ffffff;
+    --danger:#a3352a;
+    --header-bg:#2c231a;
+    --header-ink:#f4ead4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1c1812;
+      --panel:#251f17;
+      --ink:#ede4d2;
+      --muted:#a89a7d;
+      --line:#4a4133;
+      --accent:#c97a5f;
+      --accent-ink:#241108;
+      --computed-bg:#332b1f;
+      --input-bg:#171310;
+      --danger:#e07a6a;
+      --header-bg:#120e0a;
+      --header-ink:#ede4d2;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    background:var(--bg);
+    color:var(--ink);
+  }
+  h1,h2,h3{
+    font-family:"Trajan Pro","Copperplate",Georgia,serif;
+    letter-spacing:0.03em;
+    margin:0 0 0.4em 0;
+  }
+  input,select,textarea,button{
+    font-family:inherit;
+    font-size:0.95rem;
+    color:var(--ink);
+  }
+  input,select,textarea{
+    background:var(--input-bg);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:0.3em 0.4em;
+  }
+  input[readonly],.computed{
+    background:var(--computed-bg);
+    color:var(--ink);
+    font-weight:600;
+  }
+  input:invalid{ border-color:var(--danger); }
+  /* Hide the native +/- steppers on number inputs - they get in the way more than they help */
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }
+  input[type=number]{ -moz-appearance:textfield; }
+
+  .field{ display:flex; flex-direction:column; min-width:0; }
+  .field input, .field select, .field textarea{ width:100%; min-width:0; box-sizing:border-box; }
+
+  /* --- Header --- */
+  header.sheet-header{
+    position:sticky; top:0; z-index:10;
+    background:var(--header-bg);
+    color:var(--header-ink);
+    padding:0.6em 1em;
+    display:flex; flex-wrap:wrap; gap:0.6em 1.2em; align-items:flex-end;
+    border-bottom:3px solid var(--accent);
+  }
+  header.sheet-header h1{
+    font-size:1.3rem; color:var(--header-ink); margin-right:auto; flex:1 1 220px;
+  }
+  header.sheet-header .field{ display:flex; flex-direction:column; font-size:0.7rem; }
+  header.sheet-header .field label{ color:#cbbf9f; text-transform:uppercase; letter-spacing:0.06em; }
+  header.sheet-header input, header.sheet-header select{ width:9em; }
+  header.sheet-header #characterName{ width:18em; }
+  header.sheet-header #level{
+    width:3.5em; text-align:center; border:1px solid var(--line); border-radius:4px; padding:0.3em 0.4em;
+  }
+  .actions{ display:flex; gap:0.4em; flex-wrap:wrap; }
+  .actions button{
+    background:var(--accent); color:var(--accent-ink); border:none;
+    border-radius:4px; padding:0.4em 0.7em; cursor:pointer; font-weight:600;
+  }
+  .actions button:hover{ filter:brightness(1.1); }
+
+  /* --- Tabs --- */
+  nav.tabs{
+    display:flex; flex-wrap:wrap; gap:0.2em; padding:0.6em 1em 0;
+    background:var(--bg); position:sticky; top:64px; z-index:9;
+    border-bottom:1px solid var(--line);
+  }
+  nav.tabs button{
+    background:transparent; border:1px solid var(--line); border-bottom:none;
+    border-radius:6px 6px 0 0; padding:0.5em 1em; cursor:pointer; color:var(--muted);
+  }
+  nav.tabs button.active{ background:var(--panel); color:var(--ink); font-weight:700; }
+
+  main{ max-width:1100px; margin:0 auto; padding:1em; }
+  section.tab-panel{ display:none; background:var(--panel); border:1px solid var(--line); border-radius:0 6px 6px 6px; padding:1em 1.2em; }
+  section.tab-panel.active{ display:block; }
+
+  .card{ border:1px solid var(--line); border-radius:6px; padding:0.8em 1em; margin-bottom:1em; background:var(--panel); }
+  .card h2{ font-size:1.05rem; border-bottom:1px solid var(--line); padding-bottom:0.3em; }
+  .card h3{ font-size:0.95rem; color:var(--muted); margin-top:0.8em; }
+
+  .grid{ display:grid; gap:0.6em; }
+  .grid-attrs{ grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); }
+  .grid-stats{ grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); }
+  .attr-box{ border:1px solid var(--line); border-radius:6px; padding:0.5em 0.7em; }
+  .attr-box .name{ font-weight:700; display:flex; justify-content:space-between; }
+  .attr-box .name .abbr{ color:var(--muted); font-weight:400; font-size:0.8rem; }
+  .attr-row{ display:flex; gap:0.4em; align-items:center; margin-top:0.3em; }
+  .attr-row label{ font-size:0.7rem; color:var(--muted); width:3em; }
+  .attr-row input{ width:3.6em; text-align:center; }
+  .attr-row .total{ width:3.6em; text-align:center; }
+
+  .stat-box{ border:1px solid var(--line); border-radius:6px; padding:0.5em 0.7em; text-align:center; }
+  .stat-box .label{ font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); }
+  .stat-box .value{ font-size:1.3rem; font-weight:700; }
+  .stat-box .sub{ display:flex; justify-content:center; gap:0.3em; align-items:center; margin-top:0.2em; }
+  .stat-box .sub input{ width:3.6em; text-align:center; }
+
+  table{ width:100%; border-collapse:collapse; margin-bottom:0.6em; }
+  th,td{ border:1px solid var(--line); padding:0.25em 0.4em; font-size:0.85rem; text-align:left; }
+  th{ background:var(--computed-bg); }
+  tr.cat-row td{ background:var(--header-bg); color:var(--header-ink); font-weight:700; font-size:0.8rem; }
+  td input,td select{ width:100%; }
+  td input[type=number]{ text-align:center; }
+  td input[type=checkbox]{ width:auto; }
+  .num-sm{ width:4em !important; }
+
+  .row-add{ background:transparent; border:1px dashed var(--line); border-radius:4px; padding:0.3em 0.8em; cursor:pointer; color:var(--muted); }
+  .row-add:hover{ color:var(--ink); border-color:var(--accent); }
+  .btn-mini{ background:transparent; border:1px dashed var(--line); border-radius:4px; padding:0.2em 0.6em; margin-top:0.3em; cursor:pointer; color:var(--muted); font-size:0.78rem; }
+  .btn-mini:hover{ color:var(--ink); border-color:var(--accent); }
+  .row-remove{ background:transparent; border:none; color:var(--danger); cursor:pointer; font-weight:700; }
+
+  .ward-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:0.5em; }
+
+  .spell-list{ display:flex; flex-direction:column; gap:0.8em; margin-bottom:0.6em; }
+  .spell-card{ border:1px solid var(--line); border-radius:6px; padding:0.6em 0.8em; }
+  .spell-card-head{ display:flex; flex-wrap:wrap; gap:0.6em; align-items:flex-end; margin-bottom:0.5em; }
+  .spell-card-head.prep-row-head{ align-items:flex-start; }
+  .spell-card-head .field{ flex:1 1 8em; }
+  .spell-card-head .field-name{ flex:2 1 16em; }
+  .spell-card .field label{ font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); }
+  .spell-card-head .row-remove{ font-size:1.1rem; align-self:center; margin-left:auto; }
+  .spell-card textarea{ min-height:5em; }
+  .prep-field{ flex:1 1 16em; margin-left:auto; }
+  .prep-field .prep-row{ display:flex; align-items:center; gap:0.5em; flex-wrap:wrap; }
+  .prep-toggle{ display:flex; align-items:center; gap:0.35em; font-size:0.85rem; }
+  .prep-note{ font-size:0.78rem; color:var(--muted); }
+  .note{ font-size:0.78rem; color:var(--muted); margin:0.3em 0; }
+  textarea{ width:100%; min-height:4em; resize:vertical; }
+  .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:1em; }
+  @media (max-width:700px){ .two-col{ grid-template-columns:1fr; } }
+
+  #importFile{ display:none; }
+</style>
+</head>
+<body>
+
+<header class="sheet-header">
+  <h1>Ressam Character Sheet</h1>
+  <div class="field"><label for="characterName">Name</label><input type="text" id="characterName" name="characterName"></div>
+  <div class="field"><label for="race">Race</label><input type="text" id="race" name="race"></div>
+  <div class="field"><label for="career">Career</label><input type="text" id="career" name="career"></div>
+  <div class="field"><label for="size">Size</label>
+    <select id="size" name="size">
+      <option value="0.5">Small (x0.5)</option>
+      <option value="1" selected>Medium (x1)</option>
+      <option value="2">Large (x2)</option>
+      <option value="4">Huge (x4)</option>
+    </select>
+  </div>
+  <div class="field"><label for="level">Level</label><div class="computed" id="level" title="Derived from EXP (data/progression.yaml: level N = 30 x N^2 total XP)">1</div></div>
+  <div class="field"><label for="exp">EXP</label><input type="number" id="exp" name="exp" min="0" value="30"></div>
+  <div class="actions">
+    <button type="button" id="btnSave" title="Save to this browser">Save</button>
+    <button type="button" id="btnExport" title="Download as a JSON file">Export</button>
+    <button type="button" id="btnImportTrigger" title="Load a JSON file">Import</button>
+    <input type="file" id="importFile" accept="application/json,.json">
+  </div>
+</header>
+
+<nav class="tabs">
+  <button class="tab-btn active" data-tab="overview">Overview</button>
+  <button class="tab-btn" data-tab="skills">Skills</button>
+  <button class="tab-btn" data-tab="equipment">Equipment</button>
+  <button class="tab-btn" data-tab="magic">Magic</button>
+  <button class="tab-btn" data-tab="progression">Progression</button>
+  <button class="tab-btn" data-tab="backstory">Backstory</button>
+</nav>
+
+<main>
+
+<!-- ============================= OVERVIEW ============================= -->
+<section class="tab-panel active" id="tab-overview">
+
+  <div class="card">
+    <h2>Attributes</h2>
+    <p class="note">BASE = points spent from your attribute budget. MOD = racial/other modifiers (free, applied after point allocation). TOTAL = BASE + MOD.</p>
+    <div class="grid grid-attrs" id="attrGrid"></div>
+  </div>
+
+  <div class="card">
+    <h2>Currency</h2>
+    <p class="note">core/equipment/supplies.md - three regional currencies</p>
+    <div class="grid grid-stats">
+      <div class="field"><label>Crown</label><input type="number" name="crown" min="0" value="0"></div>
+      <div class="field"><label>Scales <span class="note">(100 = 1 Crown)</span></label><input type="number" name="scales" min="0" max="99" value="0"></div>
+      <div class="field"><label>Renos</label><input type="number" name="renos" min="0" value="0"></div>
+      <div class="field"><label>Ferrins <span class="note">(100 = 1 Renos)</span></label><input type="number" name="ferrins" min="0" max="99" value="0"></div>
+      <div class="field"><label>Mar Scrips</label><input type="number" name="scrips" min="0" value="0"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Combat Stats</h2>
+    <div class="grid grid-stats">
+      <div class="stat-box">
+        <div class="label">Hit Points</div>
+        <div class="value"><span class="computed" id="out-hpMax">10</span></div>
+        <div class="sub"><input type="number" name="hpCurrent" placeholder="cur"><span>/</span><input type="number" name="hpTemp" placeholder="temp"></div>
+        <div class="note">Current / Temp HP (Max includes Feat Bonus, see Progression)</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Mana</div>
+        <div class="value"><span class="computed" id="out-manaMax">0</span></div>
+        <div class="sub"><input type="number" name="manaCurrent" placeholder="cur"></div>
+        <div class="note">Current Mana (Max includes Feat Bonus, see Progression). 0 Mana + cast = death</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Armor Rating</div>
+        <div class="value computed" id="out-ar">0</div>
+        <button type="button" class="btn-mini" id="btnArHit" title="Apply a hit: reduce AR (not Max AR) of every currently worn armor piece by 1, armor.md">&minus;1 AR (Hit)</button>
+        <div class="note">From worn armor (Equipment tab)</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Armor Penalty</div>
+        <div class="value computed" id="out-armorPenalty">0</div>
+        <div class="note">Reduced by Armorer skill / 2</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Evasion</div>
+        <div class="value computed" id="out-evasion">5</div>
+        <div class="note">Includes equipped shield's Agility Bonus (e.g. Buckler)</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Dodge</div>
+        <div class="value computed" id="out-dodge">10</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Max Dodges/Short Rest</div>
+        <div class="value computed" id="out-maxDodges">0</div>
+        <div class="sub"><input type="number" name="dodgesCurrent" placeholder="left" title="Dodges left this Short Rest"></div>
+        <div class="note">Dodges left this Short Rest</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Initiative Bonus</div>
+        <div class="value computed" id="out-initiative">0</div>
+        <div class="note">+1d12 when rolled</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Carry Capacity</div>
+        <div class="value"><span class="computed" id="out-carryCurrent">0</span> / <span class="computed" id="out-carryMax">10</span> lb</div>
+        <div class="note">Current load auto-sums Equipment tab weights</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Block Bonus (Maneuver)</div>
+        <div class="value computed" id="out-blockBonus">0</div>
+        <div class="note">END + Shields/2 (halved again w/ 2H weapon), maneuvers.md</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Shield AR (when Blocking)</div>
+        <div class="value computed" id="out-shieldAR">0</div>
+        <div class="note">From equipped shield, armor.md</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Ward DC by Attribute</h2>
+    <p class="note">Ward = 5 + Attribute + your highest-ranked skill governed by that attribute (magic_overview.md). This is what Spell Overcomes (and other effects) roll against.</p>
+    <div class="ward-grid" id="wardGrid"></div>
+  </div>
+
+</section>
+
+<!-- ============================= SKILLS ============================= -->
+<section class="tab-panel" id="tab-skills">
+  <div class="card">
+    <h2>Skills</h2>
+    <p class="note">BASE = ranks bought from your skill point budget. MOD = free modifiers (career/racial/feat). TOTAL = BASE + MOD + governing Attribute, the bonus added to 1d12 for that skill check. Trained: the Attribute only applies once BASE is 1 or higher - a skill with 0 Base is untrained and rolls without it.</p>
+    <table id="skillsTable">
+      <thead>
+        <tr><th>Skill</th><th class="num-sm">Base</th><th class="num-sm">Mod</th><th class="num-sm">Total</th></tr>
+      </thead>
+      <tbody id="skillsBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================= EQUIPMENT ============================= -->
+<section class="tab-panel" id="tab-equipment">
+
+  <div class="card">
+    <h2>Armor</h2>
+    <p class="note">Check "Worn" for the armor piece(s) currently equipped - only worn armor contributes to AR / Armor Penalty above. AR is your armor's Durability: it starts equal to Max AR and drops by 1 each time you're hit (armor.md); Max AR is the original value used as the repair cap.</p>
+    <table class="dyn-table" data-table="armor" id="tbl-armor">
+      <thead><tr><th>Name</th><th>Type</th><th class="num-sm">AR</th><th class="num-sm">Max AR</th><th class="num-sm">Penalty</th><th class="num-sm">Stealth</th><th class="num-sm">Weight</th><th>Worn</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <button type="button" class="row-add" data-add-target="armor">+ Add Armor</button>
+    <template id="row-armor">
+      <tr data-row>
+        <td><input type="text" data-col="name"></td>
+        <td><input type="text" data-col="type" placeholder="Light/Medium/Heavy/Clothing"></td>
+        <td><input type="number" data-col="ar" class="num-sm" value="0" title="Current AR - this is also your armor's current Durability"></td>
+        <td><input type="number" data-col="maxAr" class="num-sm" value="0" title="Original AR - the repair cap"></td>
+        <td><input type="number" data-col="penalty" class="num-sm" value="0" title="Enter as a positive magnitude"></td>
+        <td><input type="number" data-col="stealth" class="num-sm" value="0"></td>
+        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td style="text-align:center"><input type="checkbox" data-col="worn"></td>
+        <td><button type="button" class="row-remove">&times;</button></td>
+      </tr>
+    </template>
+  </div>
+
+  <div class="card">
+    <h2>Shields</h2>
+    <p class="note">AR Bonus only applies when actively Blocking (a Reaction, maneuvers.md/armor.md) and is shown separately on Overview, not added into your standing AR. Agility Bonus is a passive skill bonus (e.g. Buckler's \+2 Agility) that always applies while the shield is Equipped, feeding into Evasion and Dodge on Overview.</p>
+    <table class="dyn-table" data-table="shields" id="tbl-shields">
+      <thead><tr><th>Name</th><th class="num-sm">AR Bonus</th><th class="num-sm">Agility Bonus</th><th class="num-sm">Penalty</th><th class="num-sm">Weight</th><th>Equipped</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <button type="button" class="row-add" data-add-target="shields">+ Add Shield</button>
+    <template id="row-shields">
+      <tr data-row>
+        <td><input type="text" data-col="name"></td>
+        <td><input type="number" data-col="arbonus" class="num-sm" value="0" title="Added to AR only while actively Blocking"></td>
+        <td><input type="number" data-col="agilityBonus" class="num-sm" value="0" title="Passive bonus to Agility skill, e.g. Buckler +2 - affects Evasion and Dodge whenever equipped"></td>
+        <td><input type="number" data-col="penalty" class="num-sm" value="0"></td>
+        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td style="text-align:center"><input type="checkbox" data-col="equipped"></td>
+        <td><button type="button" class="row-remove">&times;</button></td>
+      </tr>
+    </template>
+  </div>
+
+  <div class="card">
+    <h2>Weapons</h2>
+    <p class="note">Pick the skill used to attack with each weapon - Attack Bonus (skill Total + governing Attribute) computes automatically. Trained: the Attribute only applies if that skill has 1+ Base ranks.</p>
+    <table class="dyn-table" data-table="weapons" id="tbl-weapons">
+      <thead><tr><th>Name</th><th>Skill</th><th class="num-sm">Atk Bonus</th><th>Damage</th><th>Range</th><th>Properties</th><th class="num-sm">Crit Range</th><th class="num-sm">Weight</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <button type="button" class="row-add" data-add-target="weapons">+ Add Weapon</button>
+    <template id="row-weapons">
+      <tr data-row>
+        <td><input type="text" data-col="name"></td>
+        <td>
+          <select data-col="skill">
+            <option value="">-</option>
+            <option>One-Handed Blades</option>
+            <option>Two-Handed Blades</option>
+            <option>Axes &amp; Hammers</option>
+            <option>Polearms</option>
+            <option>Brawling</option>
+            <option>Slings &amp; Whips</option>
+            <option>Rapiers &amp; Fencing</option>
+            <option>Daggers &amp; Knives</option>
+            <option>Bows &amp; Crossbows</option>
+            <option>Thrown Weapons</option>
+            <option>Pistols</option>
+            <option>Long Guns</option>
+            <option>Heavy Firearms</option>
+          </select>
+        </td>
+        <td class="computed" data-col-out="atkBonus">-</td>
+        <td><input type="text" data-col="damage" placeholder="1d8 Slashing"></td>
+        <td><input type="text" data-col="range" placeholder="Melee"></td>
+        <td><input type="text" data-col="properties"></td>
+        <td><input type="number" data-col="critRange" class="num-sm" min="9" max="12" value="12" title="Crits on this value through 12 (Natural 12 by default; some weapons expand it to 11-12, 10-12, or 9-12)"></td>
+        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td><button type="button" class="row-remove">&times;</button></td>
+      </tr>
+    </template>
+  </div>
+
+  <div class="card">
+    <h2>Clothes</h2>
+    <table class="dyn-table" data-table="clothes" id="tbl-clothes">
+      <thead><tr><th>Name</th><th class="num-sm">Unlocked Lv.</th><th>Type</th><th>Worn</th><th class="num-sm">Cost</th><th class="num-sm">Weight</th><th>Benefits</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <button type="button" class="row-add" data-add-target="clothes">+ Add Clothing</button>
+    <template id="row-clothes">
+      <tr data-row>
+        <td><input type="text" data-col="name"></td>
+        <td><input type="number" data-col="unlockedLevel" class="num-sm"></td>
+        <td><input type="text" data-col="type"></td>
+        <td style="text-align:center"><input type="checkbox" data-col="worn"></td>
+        <td><input type="text" data-col="cost" class="num-sm"></td>
+        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td><input type="text" data-col="benefits"></td>
+        <td><button type="button" class="row-remove">&times;</button></td>
+      </tr>
+    </template>
+  </div>
+
+  <div class="card">
+    <h2>Backpack Items</h2>
+    <table class="dyn-table" data-table="backpack" id="tbl-backpack">
+      <thead><tr><th>Name</th><th class="num-sm">Qty</th><th class="num-sm">Weight (ea.)</th><th>Description</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <button type="button" class="row-add" data-add-target="backpack">+ Add Item</button>
+    <template id="row-backpack">
+      <tr data-row>
+        <td><input type="text" data-col="name"></td>
+        <td><input type="number" data-col="qty" class="num-sm" value="1"></td>
+        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td><input type="text" data-col="description"></td>
+        <td><button type="button" class="row-remove">&times;</button></td>
+      </tr>
+    </template>
+  </div>
+
+</section>
+
+<!-- ============================= MAGIC ============================= -->
+<section class="tab-panel" id="tab-magic">
+
+  <div class="card">
+    <h2>Magic Skills by School</h2>
+    <p class="note">Skill Total = Base + Mod + governing Attribute, same as the Skills tab (Trained: the Attribute only applies once Base is 1 or higher). Your Spell Modifier (magic_overview.md), used for Spell Attacks vs. Evasion and Spell Overcomes vs. Ward, is this Skill Total minus Armor Penalty.</p>
+    <table>
+      <thead><tr><th>School</th><th>Attribute</th><th class="num-sm">Skill Total</th><th class="num-sm">Armor Penalty</th></tr></thead>
+      <tbody id="spellModBody"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Spells Known</h2>
+    <p class="note">Each card holds one spell's header fields plus a full-width Effect box for the actual rules text. Preparation tracking is derived from the spell's School (magic_overview.md): Arcane spells are only castable from a scribed scroll, so track how many you're carrying; Divine spells are always known and castable by spending Mana, so just toggle whether you've already used it since your last hour of prayer.</p>
+    <div class="dyn-table spell-list" data-table="spells" id="tbl-spells"></div>
+    <button type="button" class="row-add" data-add-target="spells">+ Add Spell</button>
+    <template id="row-spells">
+      <div class="spell-card" data-row>
+        <div class="spell-card-head">
+          <div class="field field-name"><label>Name</label><input type="text" data-col="name"></div>
+          <div class="field"><label>Mana Cost</label><input type="number" data-col="manaCost" class="num-sm"></div>
+          <div class="field"><label>Casting Time</label><input type="text" data-col="castingTime"></div>
+          <div class="field"><label>Range</label><input type="text" data-col="range"></div>
+          <div class="field"><label>Duration</label><input type="text" data-col="duration"></div>
+          <button type="button" class="row-remove" title="Remove spell">&times;</button>
+        </div>
+        <div class="spell-card-head prep-row-head">
+          <div class="field"><label>School</label>
+            <select data-col="school">
+              <option value="">-</option>
+              <optgroup label="Arcane">
+                <option>Aeromancy</option><option>Geomancy</option><option>Hydromancy</option>
+                <option>Pyromancy</option><option>Shadowmancy</option>
+              </optgroup>
+              <optgroup label="Divine">
+                <option>Benediction</option><option>Invocation</option><option>Necration</option>
+                <option>Cultivation</option><option>Subjugation</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="field prep-field">
+            <label data-role="prepLabel">Preparation</label>
+            <div class="prep-row">
+              <input type="number" data-col="scrollCount" class="num-sm" min="0" value="0" data-role="prepScrolls" style="display:none" title="Scribed scrolls of this spell currently on hand">
+              <label class="prep-toggle" data-role="prepUsedWrap" style="display:none">
+                <input type="checkbox" data-col="used" data-role="prepUsed">
+                <span>Used since last prayer</span>
+              </label>
+              <span class="prep-note" data-role="prepNote">Pick a School to see prep mechanics.</span>
+            </div>
+          </div>
+        </div>
+        <div class="field"><label>Effect</label><textarea data-col="effect" rows="5" placeholder="Effect / description"></textarea></div>
+      </div>
+    </template>
+  </div>
+
+</section>
+
+<!-- ============================= PROGRESSION ============================= -->
+<section class="tab-panel" id="tab-progression">
+
+  <div class="card">
+    <h2>Point Budgets</h2>
+    <p class="note">Attribute/Skill points spent are the sums of every BASE value on the Overview/Skills tabs (MOD columns are free modifiers and don't count). Budgets and caps below are looked up from the Level field by year/level table (data/progression.yaml).</p>
+    <div class="grid grid-stats">
+      <div class="stat-box"><div class="label">Attribute Points</div><div class="value"><span class="computed" id="out-attrSpent">0</span> / <span class="computed" id="out-attrBudget">36</span></div></div>
+      <div class="stat-box"><div class="label">Attribute Cap</div><div class="value computed" id="out-attrCap">7</div></div>
+      <div class="stat-box"><div class="label">Skill Points</div><div class="value"><span class="computed" id="out-skillSpent">0</span> / <span class="computed" id="out-skillBudget">24</span></div></div>
+      <div class="stat-box"><div class="label">Skill Cap</div><div class="value computed" id="out-skillCap">3</div></div>
+      <div class="stat-box"><div class="label">Feat Slots</div><div class="value computed" id="out-featsTotal">2</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Feats</h2>
+    <table>
+      <thead><tr><th style="width:9em">Slot</th><th>Feat Name</th></tr></thead>
+      <tbody id="featSlotsBody"></tbody>
+    </table>
+    <h3>Feat Bonuses</h3>
+    <p class="note">Flat bonuses granted by feats that don't fit the Base/Mod pattern elsewhere (e.g. Tough's +2 HP/level, Magically Gifted's +5 Max Mana). Added into the Overview tab's Max HP / Max Mana.</p>
+    <div class="grid grid-stats">
+      <div class="field"><label>Max HP Bonus</label><input type="number" name="hpBonus" value="0"></div>
+      <div class="field"><label>Max Mana Bonus</label><input type="number" name="manaBonus" value="0"></div>
+    </div>
+    <h3>Feat Notes / Prerequisites</h3>
+    <textarea name="featNotes"></textarea>
+  </div>
+
+  <div class="card two-col">
+    <div>
+      <h3>Racial Features</h3>
+      <textarea name="racialFeatures"></textarea>
+    </div>
+    <div>
+      <h3>Tool Proficiencies</h3>
+      <textarea name="toolProficiencies"></textarea>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Languages</h3>
+    <textarea name="languagesFull"></textarea>
+  </div>
+
+</section>
+
+<!-- ============================= BACKSTORY ============================= -->
+<section class="tab-panel" id="tab-backstory">
+
+  <div class="card two-col">
+    <div>
+      <h3>Appearance</h3>
+      <textarea name="appearance"></textarea>
+    </div>
+    <div>
+      <h3>Connections</h3>
+      <textarea name="connections"></textarea>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Personality</h3>
+    <div class="two-col">
+      <div class="field"><label>Trait</label><textarea name="personalityTrait"></textarea></div>
+      <div class="field"><label>Flaw</label><textarea name="personalityFlaw"></textarea></div>
+    </div>
+    <div class="field"><label>Bond</label><textarea name="personalityBond"></textarea></div>
+  </div>
+
+  <div class="card two-col">
+    <div>
+      <h3>Short-Term Goals</h3>
+      <textarea name="goalsShort"></textarea>
+    </div>
+    <div>
+      <h3>Long-Term Goals</h3>
+      <textarea name="goalsLong"></textarea>
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<script>
+(function(){
+  'use strict';
+
+  // --- Reference data, mirrored from the rulebook -------------------------
+
+  var ATTRIBUTES = [
+    {key:'STR', name:'Strength'},
+    {key:'REF', name:'Reflex'},
+    {key:'END', name:'Endurance'},
+    {key:'DEX', name:'Dexterity'},
+    {key:'MIND', name:'Mind'},
+    {key:'ARC', name:'Arcane'},
+    {key:'FAI', name:'Faith'},
+    {key:'CHA', name:'Charisma'}
+  ];
+
+  // Mirrors core_rules.md:109-134 Skill Categories tables
+  var SKILL_CATEGORIES = [
+    {attr:'STR', category:'Brawn & Melee', skills:['One-Handed Blades','Two-Handed Blades','Axes & Hammers','Polearms','Brawling','Slings & Whips']},
+    {attr:'REF', category:'Finesse & Ranged', skills:['Rapiers & Fencing','Daggers & Knives','Bows & Crossbows','Thrown Weapons','Pistols','Long Guns','Heavy Firearms']},
+    {attr:'END', category:'Defense & Survival', skills:['Athletics','Armorer','Survival','Shields','Riding']},
+    {attr:'DEX', category:'Adroitness & Subterfuge', skills:['Agility','Acrobatics','Stealth','Lockpicking','Sleight of Hand','Crafting','Perception']},
+    {attr:'MIND', category:'Intellectual', skills:['Alchemy','Enchanting','Spell Crafting','Historic Lore','Medical Lore','Nature Lore','Identify']},
+    {attr:'ARC', category:'Arcane Schools', skills:['Arcane Lore','Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy']},
+    {attr:'FAI', category:'Divine Schools', skills:['Religious Lore','Benediction','Invocation','Necration','Cultivation','Subjugation']},
+    {attr:'CHA', category:'Socialising & Interaction', skills:['Persuasion','Deception','Intimidation','Leadership','Animal Handling','Insight','Performance']}
+  ];
+
+  var ARCANE_SCHOOLS = ['Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy'];
+  var DIVINE_SCHOOLS = ['Benediction','Invocation','Necration','Cultivation','Subjugation'];
+
+  // Mirrors data/progression.yaml (character_creation + levels 1-12)
+  // data/progression.yaml:1 - level N requires 30 * N^2 total XP (totalXp below)
+  var PROGRESSION = {
+    1:{skillCap:3, attrCap:7, skillPts:24, attrPts:36, feats:2, totalXp:30},
+    2:{skillCap:4, attrCap:7, skillPts:26, attrPts:36, feats:2, totalXp:120},
+    3:{skillCap:5, attrCap:7, skillPts:28, attrPts:36, feats:3, totalXp:270},
+    4:{skillCap:6, attrCap:8, skillPts:30, attrPts:38, feats:3, totalXp:480},
+    5:{skillCap:7, attrCap:8, skillPts:32, attrPts:38, feats:4, totalXp:750},
+    6:{skillCap:8, attrCap:8, skillPts:34, attrPts:38, feats:4, totalXp:1080},
+    7:{skillCap:9, attrCap:8, skillPts:36, attrPts:38, feats:5, totalXp:1470},
+    8:{skillCap:10, attrCap:9, skillPts:38, attrPts:40, feats:5, totalXp:1920},
+    9:{skillCap:10, attrCap:9, skillPts:40, attrPts:40, feats:6, totalXp:2430},
+    10:{skillCap:10, attrCap:9, skillPts:42, attrPts:40, feats:6, totalXp:3000},
+    11:{skillCap:10, attrCap:9, skillPts:44, attrPts:40, feats:7, totalXp:3630},
+    12:{skillCap:10, attrCap:10, skillPts:46, attrPts:42, feats:8, totalXp:4320}
+  };
+
+  var FEAT_SLOTS = [
+    {label:'Starter Feat 1', level:1},
+    {label:'Starter Feat 2', level:1},
+    {label:'Level 3 Feat', level:3},
+    {label:'Level 5 Feat (Prestige available)', level:5},
+    {label:'Level 7 Feat', level:7},
+    {label:'Level 9 Feat', level:9},
+    {label:'Level 11 Feat', level:11},
+    {label:'Level 12 Feat', level:12}
+  ];
+
+  // skill name -> {attr, category} lookup, built from SKILL_CATEGORIES
+  var SKILL_INFO = {};
+  SKILL_CATEGORIES.forEach(function(cat){
+    cat.skills.forEach(function(name){
+      SKILL_INFO[name] = {attr:cat.attr, category:cat.category};
+    });
+  });
+
+  function num(v){ var n = parseFloat(v); return isNaN(n) ? 0 : n; }
+  function el(tag, attrs, children){
+    var e = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function(k){ e.setAttribute(k, attrs[k]); });
+    (children||[]).forEach(function(c){ e.appendChild(c); });
+    return e;
+  }
+  function text(t){ return document.createTextNode(t); }
+
+  // --- Build static-shaped UI (attributes, skills, ward, spell mod, feats) --
+
+  function buildAttributes(){
+    var grid = document.getElementById('attrGrid');
+    ATTRIBUTES.forEach(function(a){
+      var box = el('div', {class:'attr-box'});
+      box.appendChild(el('div', {class:'name'}, [text(a.name), el('span', {class:'abbr'}, [text(a.key)])]));
+      var row = el('div', {class:'attr-row'});
+      row.appendChild(el('label', {}, [text('Base')]));
+      row.appendChild(el('input', {type:'number', name:'attr:'+a.key+':base', min:'1', max:'10', value:'1'}));
+      row.appendChild(el('label', {}, [text('Mod')]));
+      row.appendChild(el('input', {type:'number', name:'attr:'+a.key+':mod', value:'0'}));
+      row.appendChild(el('label', {}, [text('Total')]));
+      row.appendChild(el('output', {class:'total computed', id:'attrTotal-'+a.key}, [text('1')]));
+      box.appendChild(row);
+      grid.appendChild(box);
+    });
+  }
+
+  function buildSkills(){
+    var body = document.getElementById('skillsBody');
+    SKILL_CATEGORIES.forEach(function(cat){
+      var catRow = el('tr', {class:'cat-row'});
+      var td = el('td', {colspan:'4'});
+      td.appendChild(text(cat.category + ' (' + cat.attr + ')'));
+      catRow.appendChild(td);
+      body.appendChild(catRow);
+      cat.skills.forEach(function(name){
+        var tr = el('tr', {'data-skill':name, 'data-skill-attr':cat.attr});
+        tr.appendChild(el('td', {}, [text(name)]));
+        var tdBase = el('td', {});
+        tdBase.appendChild(el('input', {type:'number', class:'num-sm', name:'skill:'+name+':base', 'data-role':'base', min:'0', max:'10', value:'0'}));
+        tr.appendChild(tdBase);
+        var tdMod = el('td', {});
+        tdMod.appendChild(el('input', {type:'number', class:'num-sm', name:'skill:'+name+':mod', 'data-role':'mod', value:'0'}));
+        tr.appendChild(tdMod);
+        var tdTotal = el('td', {});
+        tdTotal.appendChild(el('output', {class:'computed', 'data-skill-total':name}, [text('0')]));
+        tr.appendChild(tdTotal);
+        body.appendChild(tr);
+      });
+    });
+  }
+
+  function buildWard(){
+    var grid = document.getElementById('wardGrid');
+    ATTRIBUTES.forEach(function(a){
+      var box = el('div', {class:'stat-box'});
+      box.appendChild(el('div', {class:'label'}, [text(a.key + ' Ward')]));
+      box.appendChild(el('div', {class:'value computed', id:'ward-'+a.key}, [text('5')]));
+      grid.appendChild(box);
+    });
+  }
+
+  function buildFeatSlots(){
+    var body = document.getElementById('featSlotsBody');
+    FEAT_SLOTS.forEach(function(slot, i){
+      var tr = el('tr', {});
+      tr.appendChild(el('td', {}, [text(slot.label)]));
+      var td = el('td', {});
+      td.appendChild(el('input', {type:'text', name:'feat:'+i}));
+      tr.appendChild(td);
+      body.appendChild(tr);
+    });
+  }
+
+  // --- Dynamic (add/remove) row tables -------------------------------------
+
+  function addRow(tableKey){
+    var tbl = document.querySelector('.dyn-table[data-table="'+tableKey+'"]');
+    var tpl = document.getElementById('row-'+tableKey);
+    var container = tbl.querySelector('tbody') || tbl;
+    var node = tpl.content.cloneNode(true);
+    var row = node.querySelector('[data-row]');
+    container.appendChild(node);
+    return row;
+  }
+
+  document.addEventListener('click', function(e){
+    var addBtn = e.target.closest('.row-add');
+    if (addBtn){ addRow(addBtn.getAttribute('data-add-target')); recompute(); return; }
+    var rmBtn = e.target.closest('.row-remove');
+    if (rmBtn){ rmBtn.closest('[data-row]').remove(); recompute(); return; }
+    if (e.target.id === 'btnSave'){ saveLocal(); flash(e.target); return; }
+    if (e.target.id === 'btnExport'){ exportJSON(); return; }
+    if (e.target.id === 'btnImportTrigger'){ document.getElementById('importFile').click(); return; }
+    if (e.target.id === 'btnArHit'){
+      document.querySelectorAll('#tbl-armor [data-row]').forEach(function(tr){
+        if (tr.querySelector('[data-col="worn"]').checked){
+          var arInput = tr.querySelector('[data-col="ar"]');
+          arInput.value = Math.max(0, num(arInput.value) - 1);
+        }
+      });
+      recompute();
+      return;
+    }
+  });
+
+  function flash(btn){
+    var orig = btn.textContent;
+    btn.textContent = 'Saved!';
+    setTimeout(function(){ btn.textContent = orig; }, 1200);
+  }
+
+  document.getElementById('importFile').addEventListener('change', function(e){
+    var file = e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function(){
+      try{
+        var data = JSON.parse(reader.result);
+        restore(data);
+      }catch(err){
+        alert('Could not read that file as a Ressam character JSON.');
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  });
+
+  // --- Tabs -----------------------------------------------------------------
+
+  document.querySelectorAll('.tab-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById('tab-'+btn.getAttribute('data-tab')).classList.add('active');
+    });
+  });
+
+  // --- Recompute --------------------------------------------------------------
+
+  function recompute(){
+    // 1. Attributes
+    var attrTotals = {};
+    ATTRIBUTES.forEach(function(a){
+      var base = num(document.querySelector('[name="attr:'+a.key+':base"]').value);
+      var mod = num(document.querySelector('[name="attr:'+a.key+':mod"]').value);
+      var total = base + mod;
+      attrTotals[a.key] = total;
+      document.getElementById('attrTotal-'+a.key).textContent = total;
+    });
+
+    // 2. Skills
+    // Trained: a skill only adds its governing Attribute to checks (Skill Total,
+    // Attack Bonus, Spell Modifier) once it has at least 1 point of Base ranks.
+    // An untrained skill (Base 0) rolls without the Attribute bonus.
+    var skillTotals = {};
+    var skillBase = {};
+    var categoryMax = {};
+    document.querySelectorAll('#skillsBody tr[data-skill]').forEach(function(tr){
+      var name = tr.getAttribute('data-skill');
+      var attr = tr.getAttribute('data-skill-attr');
+      var base = num(tr.querySelector('[data-role="base"]').value);
+      var mod = num(tr.querySelector('[data-role="mod"]').value);
+      var total = base + mod;
+      skillTotals[name] = total;
+      skillBase[name] = base;
+      var trainedAttr = base >= 1 ? attrTotals[attr] : 0;
+      tr.querySelector('[data-skill-total]').textContent = total + trainedAttr;
+      if (!(attr in categoryMax) || total > categoryMax[attr]) categoryMax[attr] = total;
+    });
+    function trainedAttrBonus(skillName, attrKey){
+      return (skillBase[skillName]||0) >= 1 ? (attrTotals[attrKey]||0) : 0;
+    }
+
+    // 3. Armor penalty + AR from worn armor rows
+    var ar = 0, armorPenaltyRaw = 0;
+    document.querySelectorAll('#tbl-armor [data-row]').forEach(function(tr){
+      var worn = tr.querySelector('[data-col="worn"]').checked;
+      if (!worn) return;
+      ar += num(tr.querySelector('[data-col="ar"]').value);
+      armorPenaltyRaw += num(tr.querySelector('[data-col="penalty"]').value);
+    });
+    var armorerRanks = skillTotals['Armorer'] || 0;
+    var armorPenalty = Math.max(0, armorPenaltyRaw - Math.floor(armorerRanks/2));
+    document.getElementById('out-ar').textContent = ar;
+    document.getElementById('out-armorPenalty').textContent = armorPenalty;
+
+    // Shield readouts (armor.md "Using Shields" / maneuvers.md "Blocking")
+    // AR Bonus is informational (only applies while actively Blocking); Agility Bonus
+    // is passive (e.g. Buckler's +2 Agility) and feeds Evasion/Dodge below whenever equipped.
+    var shieldAR = 0, shieldAgilityBonus = 0;
+    document.querySelectorAll('#tbl-shields [data-row]').forEach(function(tr){
+      if (tr.querySelector('[data-col="equipped"]').checked){
+        shieldAR += num(tr.querySelector('[data-col="arbonus"]').value);
+        shieldAgilityBonus += num(tr.querySelector('[data-col="agilityBonus"]').value);
+      }
+    });
+    document.getElementById('out-shieldAR').textContent = shieldAR;
+    var shieldsSkill = skillTotals['Shields'] || 0;
+    document.getElementById('out-blockBonus').textContent = attrTotals['END'] + Math.floor(shieldsSkill/2);
+
+    // 4. Single-pass derived stats
+    var hpMax = attrTotals['END']*3 + 10 + num(document.querySelector('[name="hpBonus"]').value);
+    var manaMax = attrTotals['MIND']*2 + num(document.querySelector('[name="manaBonus"]').value);
+    var sizeMult = num(document.querySelector('[name="size"]').value) || 1;
+    var carryMax = ((attrTotals['END'] + attrTotals['STR'])*10 + 10) * sizeMult;
+    var agility = skillTotals['Agility'] || 0;
+    var evasion = 5 + agility + shieldAgilityBonus + attrTotals['DEX'] - armorPenalty;
+    var dodge = evasion + 5;
+    var maxDodges = Math.floor(attrTotals['DEX']/2);
+    var initiative = Math.floor((attrTotals['REF'] + attrTotals['DEX'])/2);
+
+    document.getElementById('out-hpMax').textContent = hpMax;
+    document.getElementById('out-manaMax').textContent = manaMax;
+    document.getElementById('out-carryMax').textContent = carryMax;
+    document.getElementById('out-evasion').textContent = evasion;
+    document.getElementById('out-dodge').textContent = dodge;
+    document.getElementById('out-maxDodges').textContent = maxDodges;
+    document.getElementById('out-initiative').textContent = (initiative>=0?'+':'') + initiative;
+
+    // Current load: sum every weight column across all inventory tables
+    var carryCurrent = 0;
+    document.querySelectorAll('.dyn-table [data-col="weight"]').forEach(function(inp){
+      var row = inp.closest('[data-row]');
+      var qty = row.querySelector('[data-col="qty"]');
+      var q = qty ? num(qty.value) : 1;
+      carryCurrent += num(inp.value) * (q || 1);
+    });
+    var carryOut = document.getElementById('out-carryCurrent');
+    carryOut.textContent = carryCurrent;
+    carryOut.style.color = carryCurrent > carryMax ? 'var(--danger)' : '';
+
+    // 5. Ward DC per attribute
+    ATTRIBUTES.forEach(function(a){
+      var best = categoryMax[a.key] || 0;
+      var ward = 5 + attrTotals[a.key] + best;
+      document.getElementById('ward-'+a.key).textContent = ward;
+    });
+
+    // 6. Magic school Skill Total per school - same Base + Mod + trained Attribute
+    // logic as the Skills tab's Total column (magic_overview.md's Spell Modifier
+    // is this value minus Armor Penalty, shown separately above). Only schools
+    // with at least 1 Base skill point (i.e. trained) are listed here.
+    var spellModBody = document.getElementById('spellModBody');
+    spellModBody.innerHTML = '';
+    var trainedSchools = [];
+    function collectTrainedSchool(school, attrKey){
+      if ((skillBase[school] || 0) < 1) return;
+      trainedSchools.push({
+        school: school,
+        attr: attrKey,
+        skillTotal: (skillTotals[school] || 0) + trainedAttrBonus(school, attrKey)
+      });
+    }
+    ARCANE_SCHOOLS.forEach(function(s){ collectTrainedSchool(s, 'ARC'); });
+    DIVINE_SCHOOLS.forEach(function(s){ collectTrainedSchool(s, 'FAI'); });
+    if (trainedSchools.length === 0){
+      var emptyTr = el('tr', {});
+      var emptyTd = el('td', {colspan:'4', class:'note'});
+      emptyTd.appendChild(text('No magic training - invest at least 1 skill point in a magic school skill (Skills tab) to see it here.'));
+      emptyTr.appendChild(emptyTd);
+      spellModBody.appendChild(emptyTr);
+    } else {
+      trainedSchools.forEach(function(r){
+        var tr = el('tr', {'data-school-row':r.school});
+        tr.appendChild(el('td', {}, [text(r.school)]));
+        tr.appendChild(el('td', {}, [text(r.attr)]));
+        tr.appendChild(el('td', {class:'computed'}, [text(String(r.skillTotal))]));
+        tr.appendChild(el('td', {class:'computed'}, [text(String(armorPenalty))]));
+        spellModBody.appendChild(tr);
+      });
+    }
+
+    // 6b. Spells Known - prep mechanic per card, derived from School
+    // (magic_overview.md). Replaces a separate global Casting Path selector
+    // since each spell's School already implies which tradition prepares it.
+    // Arcane spells aren't always available - only a scribed scroll lets you
+    // cast one, so the tracked quantity is "how many scrolls on hand" (a
+    // number that goes up when you scribe, down when you consume one).
+    // Divine spells are always known and castable via Mana - nothing to run
+    // out of - so the only thing worth tracking is whether you've already
+    // spent it since your last hour of prayer (a toggle).
+    document.querySelectorAll('#tbl-spells [data-row]').forEach(function(card){
+      var note = card.querySelector('[data-role="prepNote"]');
+      if (!note) return;
+      var label = card.querySelector('[data-role="prepLabel"]');
+      var scrolls = card.querySelector('[data-role="prepScrolls"]');
+      var usedWrap = card.querySelector('[data-role="prepUsedWrap"]');
+      var school = card.querySelector('[data-col="school"]').value;
+      if (ARCANE_SCHOOLS.indexOf(school) !== -1){
+        label.textContent = 'Scrolls on Hand';
+        scrolls.style.display = '';
+        usedWrap.style.display = 'none';
+        note.textContent = 'Arcane - scribe scrolls during a Field/Long Rest; consume one to cast for no Mana cost.';
+      } else if (DIVINE_SCHOOLS.indexOf(school) !== -1){
+        label.textContent = 'Preparation';
+        scrolls.style.display = 'none';
+        usedWrap.style.display = '';
+        note.textContent = 'Divine - always known; pray 1 hour to refresh, then cast by spending Mana.';
+      } else {
+        label.textContent = 'Preparation';
+        scrolls.style.display = 'none';
+        usedWrap.style.display = 'none';
+        note.textContent = 'Pick a School to see prep mechanics.';
+      }
+    });
+
+    // 7. Weapon Attack Bonus
+    document.querySelectorAll('#tbl-weapons [data-row]').forEach(function(tr){
+      var skillSel = tr.querySelector('[data-col="skill"]');
+      var out = tr.querySelector('[data-col-out="atkBonus"]');
+      var skillName = skillSel.value;
+      if (!skillName || !SKILL_INFO[skillName]){ out.textContent = '-'; return; }
+      var info = SKILL_INFO[skillName];
+      var bonus = (skillTotals[skillName]||0) + trainedAttrBonus(skillName, info.attr);
+      out.textContent = (bonus>=0?'+':'') + bonus;
+    });
+
+    // 8. Level (derived from EXP) + Progression tab: point budgets vs. level
+    var xp = Math.max(0, num(document.getElementById('exp').value));
+    var level = 1;
+    for (var lv = 12; lv >= 1; lv--){
+      if (xp >= PROGRESSION[lv].totalXp){ level = lv; break; }
+    }
+    document.getElementById('level').textContent = level;
+    var prog = PROGRESSION[level];
+    var attrSpent = 0;
+    ATTRIBUTES.forEach(function(a){ attrSpent += num(document.querySelector('[name="attr:'+a.key+':base"]').value); });
+    var skillSpent = 0;
+    document.querySelectorAll('#skillsBody tr[data-skill]').forEach(function(tr){
+      skillSpent += num(tr.querySelector('[data-role="base"]').value);
+    });
+    document.getElementById('out-attrSpent').textContent = attrSpent;
+    document.getElementById('out-attrBudget').textContent = prog.attrPts;
+    document.getElementById('out-attrCap').textContent = prog.attrCap;
+    document.getElementById('out-skillSpent').textContent = skillSpent;
+    document.getElementById('out-skillBudget').textContent = prog.skillPts;
+    document.getElementById('out-skillCap').textContent = prog.skillCap;
+    document.getElementById('out-featsTotal').textContent = prog.feats;
+
+    saveLocal();
+  }
+
+  document.addEventListener('input', function(e){
+    if (e.target.closest('main') || e.target.closest('header.sheet-header')){
+      recompute();
+    }
+  });
+  document.addEventListener('change', function(e){
+    if (e.target.closest('main') || e.target.closest('header.sheet-header')){ recompute(); }
+  });
+
+  // --- Persistence ------------------------------------------------------------
+
+  var STORAGE_KEY = 'ressam-character-sheet-v1';
+
+  function serialize(){
+    var data = {fields:{}, tables:{}};
+    document.querySelectorAll('[name]').forEach(function(elm){
+      if (elm.closest('template')) return;
+      if (elm.type === 'checkbox') data.fields[elm.name] = elm.checked;
+      else data.fields[elm.name] = elm.value;
+    });
+    document.querySelectorAll('.dyn-table').forEach(function(tbl){
+      var key = tbl.getAttribute('data-table');
+      var rows = [];
+      tbl.querySelectorAll('[data-row]').forEach(function(tr){
+        var row = {};
+        tr.querySelectorAll('[data-col]').forEach(function(inp){
+          row[inp.getAttribute('data-col')] = inp.type === 'checkbox' ? inp.checked : inp.value;
+        });
+        rows.push(row);
+      });
+      data.tables[key] = rows;
+    });
+    return data;
+  }
+
+  function restore(data){
+    if (!data) return;
+    var fieldMap = {};
+    document.querySelectorAll('[name]').forEach(function(elm){
+      if (!elm.closest('template')) fieldMap[elm.name] = elm;
+    });
+    Object.keys(data.fields||{}).forEach(function(name){
+      var elm = fieldMap[name];
+      if (!elm) return;
+      var val = data.fields[name];
+      if (elm.type === 'checkbox') elm.checked = !!val; else elm.value = val;
+    });
+    Object.keys(data.tables||{}).forEach(function(key){
+      var tbl = document.querySelector('.dyn-table[data-table="'+key+'"]');
+      if (!tbl) return;
+      var container = tbl.querySelector('tbody') || tbl;
+      container.innerHTML = '';
+      (data.tables[key]||[]).forEach(function(rowData){
+        var tr = addRow(key);
+        Object.keys(rowData).forEach(function(col){
+          var inp = tr.querySelector('[data-col="'+col+'"]');
+          if (!inp) return;
+          if (inp.type === 'checkbox') inp.checked = !!rowData[col]; else inp.value = rowData[col];
+        });
+      });
+    });
+    recompute();
+  }
+
+  function saveLocal(){
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(serialize())); }catch(e){}
+  }
+
+  function exportJSON(){
+    var blob = new Blob([JSON.stringify(serialize(), null, 2)], {type:'application/json'});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    var nameField = document.getElementById('characterName');
+    var fname = (nameField.value || 'character').trim().replace(/\s+/g,'_') || 'character';
+    a.href = url;
+    a.download = fname + '.ressam.json';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  // --- Init ---------------------------------------------------------------
+
+  buildAttributes();
+  buildSkills();
+  buildWard();
+  buildFeatSlots();
+
+  var saved = null;
+  try{ var raw = localStorage.getItem(STORAGE_KEY); if (raw) saved = JSON.parse(raw); }catch(e){}
+  if (saved) restore(saved); else recompute();
+
+})();
+</script>
+
+</body>
+</html>

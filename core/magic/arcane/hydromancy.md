@@ -7,7 +7,7 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
 - **Casting Time:** Major Action
 - **Range:** Touch
 - **Duration:** Instant
-- **Effect:** Frost crawls across a creature you can see. Make a melee spell attack roll vs. target's Evasion. On hit, deal 1d6 \+ ARC cold damage. The target's movement speed is reduced by 15 ft until the end of their next turn.
+- **Effect:** Frost crawls across a creature you can see. Make a melee spell attack roll vs. target's Evasion. On hit, deal 1d6 \+ ARC cold damage. The target's movement speed is reduced by 15 ft until the end of their next turn. If this reduces their speed to 0, ice locks them solid \- they cannot take Reactions until the end of their next turn.
 
 **Rime Slick \- Mana Cost 2**
 
@@ -31,18 +31,15 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
 
 - While channeling, you can move the mist up to 20 ft as a Minor Action.
 
-**Drowning Gasp \- Mana Cost 3**
+**Waterlock \- Mana Cost 3**
 
-- **Casting Time:** Major Action
-- **Range:** 30 ft
-- **Duration:** Channel
-- **Effect:** You conjure water that forces itself into a creature's lungs. Make a spell overcome roll vs. the target's END Ward.
+- **Casting Time:** Reaction (when a creature you can see begins casting a spell)
+- **Range:** 60 ft
+- **Duration:** Instant
+- **Effect:** You force water into a creature's throat as they speak their incantation. Make a spell overcome roll vs. the target's END Ward.
 
-  - **Overcome:** The target is Silenced and takes 1d8+ARC cold damage at the start of each of their turns.
-  - **Resist:** They cough the water free, taking 1d8+ARC cold damage and the spell ends.
-
-
-- At the end of each of their turns, the target may attempt to expel the water by rolling 1d12 \+ END \+ best END skill vs. the original spell roll. On success, the effect ends.
+  - **Overcome:** Their spell fails immediately \- any Mana spent or scroll consumed is still lost. They are Silenced until the end of their next turn.
+  - **Resist:** Their spell still takes effect, but they take 1d8 cold damage as water floods their lungs.
 
 **Glacial Hold \- Mana Cost 4**
 
@@ -51,8 +48,8 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
 - **Duration:** Instant
 - **Effect:** You solidify the humidity above your opponents, dropping a wave of killing cold water onto them from a point you can see. Make a spell overcome roll vs. each creature's DEX Ward within a 15 ft radius.
 
-  - **Overcome:** 3d8+ARC cold damage. Their speed becomes 0 until the end of their next turn as ice locks their limbs.
-  - **Resist:** Half damage. Their speed is reduced by 15 ft until the end of their next turn.
+  - **Overcome:** 3d8+ARC cold damage. Their feet freeze to the ground as they fall \- they are knocked Prone.
+  - **Resist:** Half damage. They remain standing but the ground beneath them is now treacherous.
 
 
 - The ground in the area freezes solid (as Rime Slick) for 1 minute.

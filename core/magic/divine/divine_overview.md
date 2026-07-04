@@ -14,6 +14,13 @@ Prayer is spiritual recalibration \- you reconnect with your deity and demonstra
 
 - **War God:** Recount a recent battle while reading from scripture  
 - **Nature Deity:** Pray surrounded by growing things, holy texts open  
-- **God of Secrets:** Whisper prayers over burning incense
+- **God of Secrets:** Whisper prayers over burning incense  
+- **Subjugation (no true faith):** Recite words torn from someone else's genuine prayer, spoken back with venom
 
 Work with your DM to establish your deity's requirements.
+
+### **Resurrection**
+
+Bringing back the dead is not something any player character \- or any mortal Divine caster \- can do. It sits far beyond the ceiling of even the strongest printed spell (Mana Cost 5 doesn't come close). True resurrection belongs to the highest tiers of church hierarchy: archbishops, saints, and similarly exalted figures whose connection to their god goes beyond what any career of adventuring could grant.
+
+**For the DM:** Resurrection is a narrative tool, not a purchasable service or a player-facing mechanic. If you want to give a fallen character a way back, let it come through story \- a boon owed by a powerful NPC, a miracle demanded at a terrible price, a quest to earn a figure's attention \- rather than a fixed Crown cost or success chance. Use it sparingly enough that it still feels like a miracle.

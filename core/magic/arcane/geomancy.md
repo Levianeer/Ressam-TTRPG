@@ -29,7 +29,7 @@ Geomancy bends stone, earth, and all that is grounded. Its practitioners underst
   - **Resist:** Half damage and remain standing.
 
 
-- Unsecured objects in the area are knocked over. The affected area becomes difficult terrain until cleared.
+- The tremor doesn't discriminate between friend and foe \- any wall, barricade, or structure within range, including your own Earthen Barricade or Lithic Ruina, takes 4d8 bludgeoning damage. Unsecured objects are knocked over, and the affected area becomes difficult terrain until cleared.
 
 **Stoneflesh \- Mana Cost 3**
 

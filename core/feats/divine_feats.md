@@ -38,7 +38,7 @@ Your devotion strengthens the potency of your divine invocations.
 You can channel raw divine power into miraculous effects.
 
 **Prerequisites:** \+4 ranks in any Divine school, FAI 6+  
-**Benefit:** Once per Long Rest, you may channel raw divine energy as a Major Action. Choose one effect:
+**Benefit:** Once per Field Rest or Long Rest, you may channel raw divine energy as a Major Action. Choose one effect:
 
 1. **Divine Healing:** Grant 2d8 temporary HP to all allies within 30 ft
 2. **Divine Blessing:** All allies within 30 ft gain advantage on their next attack or Ward
@@ -74,7 +74,7 @@ Your presence inspires and protects your allies.
 You can invoke a protective barrier infused with divine power.
 
 **Prerequisites:** \+4 ranks in any Divine school, FAI 5+  
-**Benefit:** As a Reaction when you or an ally within 30 ft takes damage from an attack or spell, you may expend 2 Mana to grant the target resistance to that damage type for the attack (halving the damage). You can use this feature a number of times per Long Rest equal to your FAI ÷ 3 (minimum 1).
+**Benefit:** As a Reaction when you or an ally within 30 ft takes damage from an attack or spell, you may expend 2 Mana to grant the target resistance to that damage type for the attack (halving the damage). You can use this feature a number of times per Field Rest or Long Rest equal to your FAI ÷ 3 (minimum 1).
 
 ---
 
@@ -92,7 +92,7 @@ Your resolve in faith makes you harder to sway or harm through supernatural mean
 You can channel divine fury into devastating attacks.
 
 **Prerequisites:** \+6 ranks in Benediction, FAI 7+  
-**Benefit:** Once per Long Rest, enter a state of divine fervor for 1 minute (Major Action). While in this state: your Benediction spells deal an additional 1d8 radiant damage, you have advantage on attack rolls against creatures that have damaged your allies, and you gain temporary HP equal to your FAI.
+**Benefit:** Once per Field Rest or Long Rest, enter a state of divine fervor for 1 minute (Major Action). While in this state: your Benediction spells deal an additional 1d8 radiant damage, you have advantage on attack rolls against creatures that have damaged your allies, and you gain temporary HP equal to your FAI.
 
 ---
 

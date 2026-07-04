@@ -39,15 +39,15 @@ Oils and Powders come in three qualities based on their rarity.
 
 **Requirements:** Alchemist's Supplies, 1 Oil \+ 1 Powder \+ 1 Catalyst
 
-**Time:** 30 minutes (Simple), 1 hour (Moderate), 2 hours (Complex)
+**Time:** 30 minutes (Medium), 1 hour (Hard), 2 hours (Very Hard)
 
 **Check:** 1d12 \+ Alchemy \+ MIND
 
 | Complexity | DC | Examples |
 | :---- | :---: | :---- |
-| Simple | 10 | Basic healing, simple poison |
-| Moderate | 15 | Resistance potion, bombs |
-| Complex | 20 | Powerful effects, advanced toxins |
+| Medium | 10 | Basic healing, simple poison |
+| Hard | 15 | Resistance potion, bombs |
+| Very Hard | 20 | Powerful effects, advanced toxins |
 
 **Note:** All ingredients (excluding Catalysts) must be of the same quality.
 
@@ -79,7 +79,7 @@ Oils and Powders come in three qualities based on their rarity.
 
 ## Vital Oil Recipes
 
-### **Healing Potion (Simple, DC 10\)**
+### **Healing Potion (Medium, DC 10\)**
 
 - **Ingredients:** Vital Oil \+ Amplifying Powder \+ Abkasp  
 - **Effect:** Drink (Minor Action). Restores HP  
@@ -88,7 +88,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** Gain **4d4 \+ Bonus** HP  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
-### **Revitalizing Bomb (Moderate, DC 15\)**
+### **Revitalizing Bomb (Hard, DC 15\)**
 
 - **Ingredients:** Vital Oil \+ Prolonging Powder \+ Eshzera  
 - **Effect:** Thrown (20/40 ft), 10 ft radius. Creatures gain Temporary HP  
@@ -97,7 +97,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** Allies gain **2d8 \+ Bonus** tHP  
 - **Value:** 75 Crown (Common), 95 Crown (Uncommon), 135 Crown (Rare)
 
-### **Endurance Salve (Simple, DC 10\)**
+### **Endurance Salve (Medium, DC 10\)**
 
 - **Ingredients:** Vital Oil \+ Stabilizing Powder \+ Nat’khor  
 - **Effect:** Apply before a Short Rest. During that rest, regain additional HP  
@@ -111,7 +111,7 @@ Oils and Powders come in three qualities based on their rarity.
 
 ## Reactive Oil Recipes
 
-### **Corrosive Draught (Moderate, DC 15\)**
+### **Corrosive Draught (Hard, DC 15\)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Abkasp  
 - **Effect:** Coat weapon (Minor Action). Your next melee attack within 1 minute deals bonus acid damage and ignores 3 AR, can also be Thrown (20/40 ft), 10 ft radius, lowers AR by 3 while the target is standing in the area.  
@@ -120,7 +120,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** **1d8 \+ Bonus** acid damage  
 - **Value:** 50 Crown (Common), 70 Crown (Uncommon), 110 Crown (Rare)
 
-### **Firebomb (Moderate, DC 15\)**
+### **Firebomb (Hard, DC 15\)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Eshzera  
 - **Effect:** Thrown (20/40 ft), 10 ft radius, DEX Ward DC 20 for half  
@@ -129,10 +129,10 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** **3d6 \+ Bonus** fire damage  
 - **Value:** 75 Crown (Common), 95 Crown (Uncommon), 135 Crown (Rare)
 
-### **Venomshade (Moderate, DC 15\)**
+### **Venomshade (Hard, DC 15\)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Nat’khor  
-- **Effect:** Coat weapon (Minor Action). Next hit deals bonus poison damage, END Ward DC 13 or poisoned for 1 minute  
+- **Effect:** Coat weapon (Minor Action). Next hit deals bonus poison damage, END Ward DC 15 or poisoned for 1 minute  
   - **Common:** **2d6 \+ Bonus** poison damage  
   - **Uncommon: 2d6 \+ Bonus** poison damage  
   - **Rare:** **2d6 \+ Bonus** poison damage  
@@ -142,7 +142,7 @@ Oils and Powders come in three qualities based on their rarity.
 
 ## Protective Oil Recipes
 
-### **Antitoxin (Simple, DC 10\)**
+### **Antitoxin (Medium, DC 10\)**
 
 - **Ingredients:** Protective Oil \+ Stabilizing Powder \+ Abkasp  
 - **Effect:** Drink (Minor Action). Advantage on poison Wards  
@@ -151,7 +151,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** **3 \+ Bonus** hours duration  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
-### **Smoke Bomb (Simple, DC 10\)**
+### **Smoke Bomb (Medium, DC 10\)**
 
 - **Ingredients:** Protective Oil \+ Stabilizing Powder \+ Eshzera  
 - **Effect:** Thrown (20/40 ft), 15 ft radius of obscuring smoke. Blocks line of sight beyond 5 ft  
@@ -160,7 +160,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** 3 minutes duration  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
-### **Stoneskin Salve (Complex, DC 20\)**
+### **Stoneskin Salve (Very Hard, DC 20\)**
 
 - **Ingredients:** Protective Oil \+ Prolonging Powder \+ Nat’khor  
 - **Effect:** Apply (Major Action). Gain bonus AR for 10 minutes  
@@ -173,7 +173,7 @@ Oils and Powders come in three qualities based on their rarity.
 
 ## Sensory Oil Recipes
 
-### **Clarity Tonic (Simple, DC 10\)**
+### **Clarity Tonic (Medium, DC 10\)**
 
 - **Ingredients:** Sensory Oil \+ Amplifying Powder \+ Abkasp  
 - **Effect:** Drink (Minor Action). Advantage on Perception checks  
@@ -182,16 +182,16 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** **15 × Bonus** minutes duration  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
-### **Flashbang (Moderate, DC 15\)**
+### **Flashbang (Hard, DC 15\)**
 
 - **Ingredients:** Sensory Oil \+ Stabilizing Powder \+ Eshzera  
 - **Effect:** Thrown (20/40 ft), 10 ft radius. CHA Ward or blinded and deafened for 1 round  
-  - **Common:** **DC 13 \+ Bonus**  
-  - **Uncommon:** **DC 13 \+ Bonus**  
-  - **Rare:** **DC 13 \+ Bonus**  
+  - **Common:** **DC 15 \+ Bonus**  
+  - **Uncommon:** **DC 15 \+ Bonus**  
+  - **Rare:** **DC 15 \+ Bonus**  
 - **Value:** 50 Crown (Common), 70 Crown (Uncommon), 110 Crown (Rare)
 
-### **Alertness Salve (Simple, DC 10\)**
+### **Alertness Salve (Medium, DC 10\)**
 
 - **Ingredients:** Sensory Oil \+ Prolonging Powder \+ Nat’khor  
 - **Effect:** Apply (Minor Action). Cannot be surprised. \+2 to initiative rolls  

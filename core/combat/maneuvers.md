@@ -94,7 +94,7 @@ Use your adroit agility to escape danger.
 
 Use your shield to absorb incoming attacks.
 
-**Prerequisites:** A shield in your hand, or a Two-Handed Weapon  
+**Prerequisites:** A shield in your hand, or a melee weapon with the Two-Handed property. A Versatile weapon being wielded with both hands does not count as a Two-Handed Weapon for this purpose - only a melee weapon whose property list includes Two-Handed qualifies (a two-handed ranged weapon or firearm does not).  
 **Action:** Reaction (physical attack you can see)  
 **Effect:** Your AR briefly increases by END \+ Shields Skill ÷ 2 for that attack. (Half it again if you are using a Two-Handed Weapon to block)
 
