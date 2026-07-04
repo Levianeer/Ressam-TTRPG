@@ -1,0 +1,38 @@
+{% macro spell_list(spells) -%}
+{% for s in spells %}
+**{{ s.name }} \- Mana Cost {{ s.mana_cost }}**
+
+- **Casting Time:** {{ s.casting_time }}
+- **Range:** {{ s.range }}
+- **Duration:** {{ s.duration }}
+- **Effect:** {{ s.effect }}
+
+{% endfor -%}
+{%- endmacro %}
+Invocation is the act of torturing your soul, forcing it from your body and giving it an independent form as a ‘Familiar’. The process is agonizing, unnatural, and leaves the caster fundamentally less than they were. Invocation is self-mutilation masquerading as power. The common folk consider it one of the greatest heresies in Ressam \- the soul is sacred and indivisible, and to split it is to defile yourself and reject the gods' design. Invokers are hunted with the same fervor as Necromancers. That said, the average person cannot even tell what Invocation magic even is, it’s not nearly as flashy and obvious as the practitioners of Necration. The Fe Alada's position is unambiguous: "The soul is inviolate. To divide it is to reject the Dragon’s gift of wholeness. Invokers are walking blasphemies and must be purged."
+
+### **The Severing (Becoming an Invoker)**
+
+When you first invest ranks in Invocation, you must perform the Severing \- a ritual that tears a fragment from your soul to create your Familiar.
+
+#### **The Ritual:**
+
+- Requires 8 hours of isolated meditation and self-inflicted pain.
+- You take 2d6 damage that cannot be healed until your next Long Rest.
+- Upon completion, your Familiar manifests for the first time.
+
+#### **Your Familiar:**
+
+- Invisible and intangible when not manifested by a spell.
+- Exists as a cold pressure behind your sternum, an ache in your bones.
+- When manifested, it appears as a translucent, ghostly form \- vaguely appearing in whatever form you wish, but *wrong*, with its features stretched and distorted.
+- Its "voice" is your voice, delayed, echoing and distorted.
+- Anyone with magical sight or divine sensitivity can see the Familiar coiled within you \- and knows immediately what you are.
+
+### **HP Loss Rule**
+
+You may cast Invocation spells using HP equal to Mana Cost × 2 instead of Mana, paid when you cast. This loss cannot be reduced or prevented but can use tHP.
+
+### **SPELLS**
+
+{{ spell_list(spells) | trim }}

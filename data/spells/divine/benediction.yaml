@@ -1,0 +1,59 @@
+- name: Smite
+  mana_cost: 1
+  casting_time: Minor Action
+  range: Self
+  duration: Instant
+  effect: You speak a word of divine condemnation, blessing your next attack. On your next attack, deal an additional 1d8+FAI radiant damage and your target has disadvantage on their next attack roll before the end of their next turn.
+- name: Divine Censure
+  mana_cost: 2
+  casting_time: Major Action
+  range: 60 ft
+  duration: Channel
+  effect: |-
+    You declare a creature guilty before your god. Make a spell overcome roll vs. the target's MIND Ward.
+
+      - **Overcome:** they are marked with a faintly glowing brand visible to all, and they cannot benefit from invisibility against you or your allies and tracking them is far easier. Additionally, while marked, the first attack that hits them each round deals an additional 1d8 radiant damage.
+      - **Resist:** The brand flickers and fades, but the creature is briefly illuminated \- they cannot benefit from invisibility until the end of their next turn.
+- name: Chains of Penance
+  mana_cost: 3
+  casting_time: Major Action
+  range: 30 ft
+  duration: Channel
+  effect: |-
+    Radiant chains erupt from the ground, bind a target you can see. Make a spell overcome roll vs. the target's STR Ward.
+
+      - **Overcome:** The target becomes Restrained. While Restrained by this spell, the target takes 1d8 radiant damage at the start of each of their turns.
+      - **Resist:** The target takes 1d8 radiant damage. The chains shatter and the spell ends.
+
+    - The target may use their Major Action to attempt to break free by rerolling the Ward vs. the original spell overcome roll.
+- name: Radiant Burst
+  mana_cost: 3
+  casting_time: Major Action
+  range: Self (30 ft radius)
+  duration: Instant
+  effect: |-
+    You raise your holy symbol and release a blinding pulse of divine judgment. Make a spell overcome roll vs. the FAI Ward of all creatures of your choice within range.
+
+      - **Overcome:** 2d8+FAI radiant damage and blinded until the end of their next turn.
+      - **Resist:** Half damage and not blinded.
+
+
+    - You have advantage on this spell overcome roll against undead and fiends. The light momentarily illuminates the area as bright as daylight, dispelling magical darkness of Mana Cost 3 or lower.
+- name: Anathema Brand
+  mana_cost: 4
+  casting_time: Major Action
+  range: 30 ft
+  duration: Instant
+  effect: You pronounce divine judgment upon a creature, and holy fire answers. Make a spell attack roll vs. target's Evasion. On hit, deal 2d8 \+ FAI radiant damage. For each time the target has dealt damage to you or your allies during this combat, add 1d8 to the damage (maximum \+2d8). If this damage reduces the target to 0 HP, their body is consumed in radiant flame \- they cannot be raised as undead or resurrected by normal means.
+- name: Martyrdom's Price
+  mana_cost: 5
+  casting_time: Major Action
+  range: 60 ft
+  duration: 1 minute
+  effect: |-
+    You offer your suffering to the divine as payment for your enemy's destruction. Choose a creature you can see.
+
+    - For the duration:
+      - Whenever you take damage, the target takes radiant damage equal to the damage you received.
+
+      - Whenever the target takes damage from any source other than this spell's own effects, you may take 1d8 radiant damage to add 1d10+FAI radiant damage to that attack. You can use this no more than once per turn.

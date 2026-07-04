@@ -1,0 +1,16 @@
+{% macro spell_list(spells) -%}
+{% for s in spells %}
+**{{ s.name }} \- Mana Cost {{ s.mana_cost }}**
+
+- **Casting Time:** {{ s.casting_time }}
+- **Range:** {{ s.range }}
+- **Duration:** {{ s.duration }}
+- **Effect:** {{ s.effect }}
+
+{% endfor -%}
+{%- endmacro %}
+Geomancy bends stone, earth, and all that is grounded. Its practitioners understand how the God-Dragons anchored the world, and they exploit those principles to reshape terrain, raise walls, or crush enemies beneath slabs of rock. Geomancy is methodical, patient, and brutal \- like the earth itself. Lords and merchants value Geomancers for fortifications and mining, but the common folk remember the stories: buried villages, triggered landslides, and tunnels that collapsed "mysteriously" during labor disputes. Useful? Absolutely. Trustworthy? Only when you're paying them more than your enemies are. People nod respectfully to Geomancers in public and bar their doors at night.
+
+### **SPELLS**
+
+{{ spell_list(spells) | trim }}

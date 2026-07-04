@@ -1,0 +1,16 @@
+{% macro spell_list(spells) -%}
+{% for s in spells %}
+**{{ s.name }} \- Mana Cost {{ s.mana_cost }}**
+
+- **Casting Time:** {{ s.casting_time }}
+- **Range:** {{ s.range }}
+- **Duration:** {{ s.duration }}
+- **Effect:** {{ s.effect }}
+
+{% endfor -%}
+{%- endmacro %}
+Pyromancy is destruction incarnate. Fire consumes, purifies, and transforms \- and Pyromancers wield it with terrifying efficiency. The formulae for flame are among the simplest to learn and the hardest to control. One mistake, and you're ash. Mastery means turning enemies into cinders without igniting yourself. Every village wants a Pyromancer to light forges and cauterize wounds, but no one wants to live next to one. The jokes write themselves: "the mage sneezed and burned down the tavern," "lost his temper and took the whole barn with him," "one bad dream and half the street went up." Armies pay fortunes for Pyromancers, but even soldiers give them a wide berth in camp. You're a walking disaster waiting to happen, and everyone knows it.
+
+### **SPELLS**
+
+{{ spell_list(spells) | trim }}

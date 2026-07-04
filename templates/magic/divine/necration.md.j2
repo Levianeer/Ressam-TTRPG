@@ -1,0 +1,16 @@
+{% macro spell_list(spells) -%}
+{% for s in spells %}
+**{{ s.name }} \- Mana Cost {{ s.mana_cost }}**
+
+- **Casting Time:** {{ s.casting_time }}
+- **Range:** {{ s.range }}
+- **Duration:** {{ s.duration }}
+- **Effect:** {{ s.effect }}
+
+{% endfor -%}
+{%- endmacro %}
+Necration is the manipulation of death, decay, and the threshold between life and oblivion. Necromancers don't just raise the dead \- they drain vitality, accelerate rot, and bind souls. The God-Dragons never intended death to be reversible, and Necration spits on that design. It is unnatural, blasphemous, and almost universally reviled. Necromancers are hunted by the Fe Alada, executed by secular authorities, and burned by mobs. There is no such thing as a "good" Necromancer in public opinion \- only those who haven't been caught yet. Even other mages avoid them. Practicing Necration is a death sentence in most nations. The only places it's tolerated are Mafsoleios City and lawless badlands, and even there, you sleep with a weapon. The Fe Alada's position is clear: "The dead are sacred. To defile them is to defile the Dragon’s final mercy. Burn the heretics."
+
+### **SPELLS**
+
+{{ spell_list(spells) | trim }}

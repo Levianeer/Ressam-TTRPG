@@ -1,0 +1,16 @@
+- name: Punch
+  damage: "1d6 Bludgeoning"
+  properties: []
+  critical: "11-12"
+- name: Kick
+  damage: "1d8 Bludgeoning"
+  properties: []
+  critical: null
+- name: Headbutt
+  damage: "1d10 Bludgeoning"
+  properties: ['You take the same damage dealt. Target must make an END Ward (DC damage \+ your Brawling Skill) or be Stunned.']
+  critical: null
+- name: Grapple
+  damage: "Special"
+  properties: ["Contested Brawling check to Restrain target"]
+  critical: null

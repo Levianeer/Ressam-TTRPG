@@ -1,0 +1,78 @@
+Aeromancy is the manipulation of air currents, atmospheric pressure, and the wind. Practitioners study how the God-Dragons shaped the breath of the world, learning to compress air into cutting blades, create vacuums, or ride updrafts. The formulae are elegant but unforgiving \- a miscalculation can implode your lungs or send you plummeting from the sky. Common folk see Aeromancers as dangerous curiosities \- useful for predicting weather or propelling ships, but fundamentally unsettling. Anyone who can steal the air from your lungs is someone you don't turn your back on. Sailors pay well for favorable winds, but they might not share a drink with you afterward. The unspoken rule: Aeromancers are hired help, not neighbors.
+
+### **SPELLS**
+
+**Ventus Lancet \- Mana Cost 1**
+
+- **Casting Time:** Major Action
+- **Range:** 60 ft
+- **Duration:** Instant
+- **Effect:** A precise burst of wind strikes a creature you can see. Make a spell attack roll vs. target's Evasion. On hit, deal 1d6 \+ ARC bludgeoning damage and choose one:
+
+  - **Push:** Force the target 15 ft directly away from you
+  - **Pull:** Drag the target 15 ft directly toward you
+
+
+- If the target collides with a solid surface or another creature, both take an additional 1d6 bludgeoning damage.
+
+**Zephyr Slip \- Mana Cost 2**
+
+- **Casting Time:** Reaction (when you or a willing creature within 30 ft is targeted by an attack or a spell overcome roll against their DEX Ward)
+- **Range:** 30 ft
+- **Duration:** Instant
+- **Effect:** Wind carries the target out of harm's way. Move the target up to 15 ft to an unoccupied space. This movement does not provoke opportunity attacks.
+
+- If this movement takes the target out of range or area of the triggering effect, the attack automatically misses or the effect automatically fails.
+
+**Gale Barrier \- Mana Cost 2**
+
+- **Casting Time:** Major Action
+- **Range:** Self (15 ft line)
+- **Duration:** Channel
+- **Effect:** You conjure a howling curtain of wind in a line 15 ft long, 10 ft high, and 5 ft thick. The barrier provides the following effects:
+
+  - Ranged weapon attacks passing through the barrier have disadvantage
+  - Small or smaller flying creatures cannot pass through
+  - Creatures moving through the barrier treat it as difficult terrain
+  - Gases, fog, and airborne effects cannot pass through
+
+
+- You can reposition the barrier to any point within 30 ft as a Minor Action while channeling.
+
+**Vortex Snare \- Mana Cost 3**
+
+- **Casting Time:** Major Action
+- **Range:** 60 ft
+- **Duration:** Instant
+- **Effect:** You create a howling vortex at a point you can see. Make a spell overcome roll vs. each creature's STR Ward within 20 ft of that point.
+
+  - **Overcome:** Pulled to the nearest unoccupied space adjacent to the center point and knocked prone.
+  - **Resist:** Pulled 10 ft toward the center (stopping if they hit an obstacle or creature) but remain standing.
+
+- Creatures that collide with each other during this movement each take 1d8 bludgeoning damage.
+
+**Gale Step \- Mana Cost 4**
+
+- **Casting Time:** Major Action
+- **Range:** 60 ft
+- **Duration:** Instant
+- **Effect:** You launch yourself into the air and drop down at another location. Choose an unoccupied space you can see within 60 ft \- you instantly appear there. This movement does not provoke opportunity attacks and ignores difficult terrain. When you appear, make a spell overcome roll vs. each creature's STR Ward within 10 ft of your destination.
+
+  - **Overcome:** Targets are pushed 10 ft away from you.
+  - **Resist:** Targets are not pushed.
+
+**Tempest Sovereign \- Mana Cost 5**
+
+- **Casting Time:** Major Action
+- **Range:** Self (30 ft radius)
+- **Duration:** Channel
+- **Effect:** You become the eye of a churning storm. While channeling:
+
+  - At the start of each of your turns, choose a direction. Make a spell overcome roll vs. each creature's STR Ward within 30 ft.
+    - **Overcome:** Creatures are pushed 15 ft in that direction.
+    - **Resist:** Creatures are pushed 5 ft.
+  - Your movement speed increases by 20 ft and you can move through enemies' spaces (but cannot end your turn there).
+  - Ranged weapon attacks against you have disadvantage.
+
+
+- You may change the wind direction each round, herding enemies where you want them.

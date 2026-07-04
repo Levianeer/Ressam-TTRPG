@@ -1,0 +1,41 @@
+{% macro prestige_entry(f) -%}
+## {{ f.name }}
+
+*{{ f.flavor }}*
+
+**Prerequisites:** {{ f.prerequisites }}
+
+**Ritual:** {{ f.ritual }}
+
+**Effect:** {{ f.effect }}
+
+**Mechanical Changes:**{{ f.mechanical_changes }}
+{%- endmacro %}
+Prestige Feats represent fundamental transformations in how a character interacts with the world. They are not simply powerful \- they are different. Taking a Prestige Feat means accepting a new way of existing, often with costs as meaningful as the benefits.
+
+**Requirements:**
+
+- Character must be Level 5\.
+- Must meet the listed Skill and Attribute prerequisites.
+  - This can be done *after* all other Level 5 Skill/Attribute changes.
+  - The ritual is required for the Feat to ‘do anything’.
+- Must complete the narrative ritual described.
+  - DM discretion on specifics, the example rituals are guides, not hard rules.
+
+**Restrictions:**
+
+- You may only have ONE Prestige Feat.
+- Prestige Feats can be unlearned with extraordinary circumstances.
+  - Pick a replacement non-Prestige Feat.
+  - DM discretion on specifics.
+
+---
+
+{% for f in prestige_feats %}
+{% if not loop.first %}
+---
+
+{% endif -%}
+{{ prestige_entry(f) }}
+
+{% endfor -%}

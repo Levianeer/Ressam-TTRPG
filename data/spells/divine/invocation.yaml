@@ -1,0 +1,84 @@
+- name: Sever
+  mana_cost: 1
+  casting_time: Major Action
+  range: Touch
+  duration: Instant
+  effect: Briefly wrench your Familiar into the shape of a blade and strike. Make a melee spell attack roll vs. target's Evasion. On hit, deal 2d4 \+ FAI lightning damage.
+- name: Phantom Aegis
+  mana_cost: 2
+  casting_time: Reaction (when you are hit by an attack)
+  range: Self
+  duration: Instant
+  effect: |-
+    Your Familiar interposes itself, absorbing the impact. Reduce the damage by 2d8 \+ FAI. If this reduces the damage to 0, the attack is considered to have missed for armor degradation purposes.
+
+    - If the original damage is less than the loss of HP Phantom Aegis inflicted, your speed is halved until the end of your next turn.
+- name: Agonizing Tether
+  mana_cost: 2
+  casting_time: Major Action
+  range: 30 ft
+  duration: Channel
+  effect: |-
+    You bind a thread of your Familiar to a creature's shadow, linking your suffering to theirs. Make a spell overcome roll vs. the target's CHA Ward.
+
+      - **Overcome:** Whenever you lose HP while channeling (from any source, including Invocation spell costs), the target takes lightning damage equal to half the HP you lost.
+      - **Resist:** The tether snaps \- the target takes 1d6 lightning damage and the spell ends.
+
+
+    - The tether is visible as a faint spectral line. It breaks if the target moves more than 60 ft from you.
+- name: Spectral Reach
+  mana_cost: 3
+  casting_time: Major Action
+  range: 60 ft
+  duration: Instant
+  effect: |-
+    Hurl a shard of your Familiar at a creature you can see. Make a spell attack roll vs. target's Evasion. On hit, deal 2d8 \+ FAI lightning damage.
+
+    - The shard lodges in the wound. Until the end of your next turn, your Touch spells can target this creature from up to 30 ft away.
+- name: Soul Armament
+  mana_cost: 4
+  casting_time: Major Action
+  range: Self
+  duration: 1 hour
+  effect: |-
+    Drag your Familiar through shapes of agony until it becomes a weapon of terrible purpose. Choose one armament:
+
+    - **Soullance:** A spectral spear manifests in your hands.
+      - Reach 10 ft
+      - Melee spell attacks deal 2d8 \+ FAI lightning damage
+      - On a critical hit, the target is impaled by a spectral copy \- they take an additional 2d8 damage and their speed is 0 until they use a Major Action to wrench free
+
+
+    - **Soulblade:** A massive curved blade shimmers into existence.
+      - When you attack, target all creatures in a 10 ft cone (single attack roll against each)
+      - Each target hit takes 2d6 \+ FAI lightning damage
+      - Disadvantage on attacks against single targets
+
+
+    - **Soulward:** A suit of armor and a shield of compressed spirit encase you.
+      - Gain \+5 AR (does not degrade), gain access to a spectral shield
+      - Your movement speed is reduced by 5 ft
+      - When a creature hits you with a melee attack, they take 1d6 lightning damage
+      - While you have a Soulward active, your spell attack rolls and overcome rolls have disadvantage
+
+    - **Dismissal:** You can dismiss the armament as a Free Action. You cannot have multiple armaments active.
+- name: Apotheosis
+  mana_cost: 5
+  casting_time: Major Action
+  range: Self
+  duration: Until ended
+  effect: |-
+    You tear your soul completely from your body and reshape yourself around it \- your flesh becomes a vessel for your own weaponized self. Spectral blades erupt from your limbs. Your voice echoes with your Familiar's distorted cries.
+
+    - While Transformed:
+      - Your melee attacks have 10 ft reach
+      - Your unarmed strikes deal 2d8 \+ FAI lightning damage
+      - You may attack twice when you take the Attack action
+      - You have resistance to non-magical physical damage
+      - At the end of each of your turns, gain 1 Strain
+
+    - **Escalating Power:** Your attacks deal \+1d6 lightning damage per Strain (maximum \+4d6).
+
+    - **Ending Apotheosis:** At the start of your turn before acting, you may end the transformation. When it ends: take 1d8 damage per Strain and gain 1 Exhaustion. If reduced to 0 HP while transformed, Apotheosis ends immediately and you begin Dying.
+
+    - **Losing Control:** At Strain 5+, you must spend your turn moving toward and attacking the nearest creature (ally or enemy). You can no longer voluntarily end Apotheosis.

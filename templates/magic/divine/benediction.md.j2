@@ -1,0 +1,16 @@
+{% macro spell_list(spells) -%}
+{% for s in spells %}
+**{{ s.name }} \- Mana Cost {{ s.mana_cost }}**
+
+- **Casting Time:** {{ s.casting_time }}
+- **Range:** {{ s.range }}
+- **Duration:** {{ s.duration }}
+- **Effect:** {{ s.effect }}
+
+{% endfor -%}
+{%- endmacro %}
+Benediction channels divine judgment \- smiting enemies, rebuking heretics, and enforcing your god's will through righteous fury. It's not subtle. Benediction casters are warriors of faith who believe suffering can be holy if it punishes the wicked. The magic burns with radiant authority, and those who wield it rarely question their righteousness. Villagers bow to Benediction priests out of reverence and self-preservation. A Benediction priest declaring you "marked by the gods" is effectively a death warrant, and everyone knows the Fe Alada's Inquisitors are almost exclusively Benediction casters. People respect you the way they respect an executioner \- it's your job, and someone has to do it, but some may cross the street to avoid you. You're the gods' fist, not their embrace.
+
+### **SPELLS**
+
+{{ spell_list(spells) | trim }}

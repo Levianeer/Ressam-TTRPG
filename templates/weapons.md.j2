@@ -1,0 +1,145 @@
+{% macro melee_table(block) -%}
+**{{ block.category }}** *({{ block.skill }})*
+
+| Weapon | Damage | Properties | Critical | Cost | WGT |
+| :---- | :---- | ----- | :---: | ----- | :---: |
+{% for w in block.weapons -%}
+| {{ w.name }} | {{ w.damage }} | {{ w.properties | proplist }} | {{ w.critical | dash }} | {{ w.cost }} | {{ w.weight }} |
+{% endfor -%}
+{%- endmacro %}
+{% macro ranged_table(block) -%}
+**{{ block.category }}** *({{ block.skill }})*
+
+| Weapon | Damage | Range | Properties | Critical | Cost | WGT |
+| :---- | :---- | :---- | ----- | :---: | ----- | :---: |
+{% for w in block.weapons -%}
+| {{ w.name }} | {{ w.damage }} | {{ w.range }} | {{ w.properties | proplist }} | {{ w.critical | dash }} | {{ w.cost }} | {{ w.weight }} |
+{% endfor -%}
+{%- endmacro %}
+{% macro ammo_table(ammo) -%}
+| Ammo Type | Cost | 1/WGT |
+| :---- | :---- | :---: |
+{% for a in ammo -%}
+| {{ a.name }} | {{ a.cost }} | {{ a.weight }} |
+{% endfor -%}
+{%- endmacro %}
+{% macro unarmed_table(entries) -%}
+**BRAWLING** *(Brawling Skill)*
+
+| Attack | Damage | Properties | Critical |
+| :---- | :---- | ----- | :---: |
+{% for u in entries -%}
+| {{ u.name }} | {{ u.damage }} | {{ u.properties | proplist }} | {{ u.critical | dash }} |
+{% endfor -%}
+{%- endmacro %}
+Weapons are usually broken up into three types of damage; Physical Damage: **Piercing**, **Slashing** and **Bludgeoning**. These represent the usage and style of weapon.
+
+## Weapon Properties
+
+- **Light:** Can dual-wield with another light weapon
+
+- **Two-Handed:** Requires both hands to use
+
+- **Finesse:** You may use your REF instead of your STR on attack and damage roll
+
+- **Versatile:** Can be used one or two-handed with different damage
+
+- **Reach:** Can strike opponents X ft away
+
+- **Throwable:** Can be thrown (normal range/max range in feet)
+
+- **Trip:** On hit, you may forgo damage to force the target to make a Contested Athletics check or be knocked prone
+
+## Criticals
+
+The entry in this column notes how the weapon is used with the rules for critical hits. When your character scores a critical hit.
+
+- **11-12** \- The weapon scores a threat on a natural roll of 11 or 12 (instead of just 12).  
+- **10-12** \- The weapon scores a threat on a natural roll of 10, 11, or 12 (instead of just 12).  
+- **9-12** \- The weapon scores a threat on a natural roll of 9, 11, 12, or 12 (instead of just 12).
+
+## Firearm Rules
+
+All weapons in the Firearms category (Pistols, Long Guns, and Heavy Firearms) innately have the following properties:
+
+### **Ammunition & Reloading**
+
+- **Firearm:** You can use a weapon that has the firearm property to make a ranged attack only if you have ammunition to fire from the weapon. Every weapon with the firearm property uses Shot and Powder as ammunition.  
+- **Standard Reload:** Before a firearm can be used to make a ranged attack it must be loaded, which normally requires both a Major Action **and** a Minor Action to complete.  
+  - With the **Gunner** feat, this is reduced to just a **Major Action**  
+  - With **Quickdraw** and **Gunner**, reloading requires only a **Minor Action**  
+    - A reload with two Major Actions becomes a Major Action and a Minor Action.
+
+### **Environmental Limitations**
+
+- **Very Loud:** Firearms are loud, shooting one alerts everyone within **300 ft**  
+- **Black Powder:** A firearm submerged in water or drenched in particularly heavy rain can't be fired unless dried for at least 1 hour, any wet ammunition is lost.
+
+### **Multiple Barrels**
+
+When a weapon with the firearm property is created, it may be made with more than one barrel (excluding the Hackbut and Hand Mortar).
+
+- Additional barrels add to the misfire score. Each additional barrel increases misfire by \+1. For every 2 barrels after the first, the misfire increases by an additional \+1. (Example: 2 barrels \= \+1 misfire, 4 barrels \= \+2 misfire).  
+- Each extra barrel adds **50 Crowns** to the price, and 1/2 lbs to the weight for a pistol and 1 lb to the weight for a musket or blunderbuss.  
+- If a firearm has multiple barrels, each barrel requires the weapon's normal reload time. A double-barreled pistol (Reload: Major) requires 2 Major Actions to fully reload (typically over 2 turns).
+
+### **Firearm Special Properties**
+
+- **Reload (action):**  
+  Requires specified action(s) to reload between shots  
+- **Misfire X:**  
+  If you roll under your misfire score on the d12 roll when you attack with your firearm, it misfires. You must use a Major Action and Minor Action on your turn to clear the misfire. You cannot make attacks or reload until the misfire is cleared  
+- **Mounted:**  
+  Requires Major Action to deploy, cannot fire at enemies within 5 ft, must be redeployed if moved  
+- **Spread (X/Y ft cone):**  
+- Targets all creatures in specified cone, the length of the cone precedes the width of the cone  
+- **Explosive** **(X ft radius):**  
+- Deals its damage to all targets in its radius
+
+# Weapons
+
+## MELEE WEAPONS
+
+{{ melee_table(weapons.melee.one_handed_blades) }}
+{{ melee_table(weapons.melee.two_handed_blades) }}
+{{ melee_table(weapons.melee.rapiers_fencing) }}
+{{ melee_table(weapons.melee.axes_hammers) }}
+{{ melee_table(weapons.melee.polearms) }}
+**Special Trait:** When you are wielding a Polearm with the Reach property, other creatures provoke an opportunity attack from you when they enter your Reach, if the attack hits the creature can’t willingly move closer to you until the end of their turn. Additionally, creatures adjacent to you cannot be targeted by a Polearm with the Reach property.
+
+{{ melee_table(weapons.melee.daggers_knives) }}
+{{ melee_table(weapons.melee.slings_whips) }}
+---
+
+## RANGED WEAPONS
+
+**Note:** Making a ranged attack while an enemy is within adjacent imposes disadvantage.
+
+{{ ranged_table(weapons.ranged.bows) }}
+{{ ranged_table(weapons.ranged.crossbows) }}
+{{ ranged_table(weapons.ranged.thrown_weapons) }}
+{{ ranged_table(weapons.ranged.slings_whips) }}
+---
+
+**FIREARMS**
+
+{{ ranged_table(weapons.firearms.pistols) }}
+{{ ranged_table(weapons.firearms.long_guns) }}
+{{ ranged_table(weapons.firearms.heavy_firearms) }}
+**AMMUNITION**
+
+{{ ammo_table(weapons.ammunition) }}
+**COLLECTING AMMUNITION**  
+After combat, roll 1d6:
+
+- 1: Lose all expended ammunition used  
+- 2-5: Recover half ammunition used (rounded down)  
+- 6: Recover all ammunition used
+
+**Note:** You cannot recover ‘Shot & Powder’ / ‘Hand Mortar Grenades’
+
+---
+
+**UNARMED**
+
+{{ unarmed_table(weapons.unarmed) }}

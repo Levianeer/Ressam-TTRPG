@@ -1,0 +1,172 @@
+one_handed_blades:
+  category: "ONE-HANDED BLADES"
+  skill: "One-Handed Blades Skill"
+  weapons:
+    - name: Shortsword
+      damage: "1d6 Piercing"
+      properties: ["Light"]
+      critical: "10-12"
+      cost: "35 Crown"
+      weight: "2 lb"
+    - name: Scimitar
+      damage: "1d6 Slashing"
+      properties: ["Light", "Finesse"]
+      critical: "10-12"
+      cost: "75 Crown"
+      weight: "2 lb"
+    - name: Broadsword
+      damage: "2d4 Slashing"
+      properties: []
+      critical: "11-12"
+      cost: "85 Crown"
+      weight: "3 lb"
+
+two_handed_blades:
+  category: "TWO-HANDED BLADES"
+  skill: "Two-Handed Blades Skill"
+  weapons:
+    - name: Longsword
+      damage: "1d8 Slashing"
+      properties: ["Versatile (Two-Handed 2d4)"]
+      critical: "11-12"
+      cost: "100 Crown"
+      weight: "4 lb"
+    - name: Greatsword
+      damage: "1d12 Slashing"
+      properties: ["Two-Handed"]
+      critical: "11-12"
+      cost: "200 Crown"
+      weight: "8 lb"
+    - name: Bearing Sword
+      damage: "2d6 Slashing"
+      properties: ["Two-Handed", "Reach 10ft"]
+      critical: null
+      cost: "500 Crown"
+      weight: "10 lb"
+
+rapiers_fencing:
+  category: "RAPIERS & FENCING"
+  skill: "Rapiers & Fencing Skill"
+  weapons:
+    - name: Rapier
+      damage: "1d8 Piercing"
+      properties: ["Finesse"]
+      critical: "10-12"
+      cost: "120 Crown"
+      weight: "2 lb"
+    - name: Estoc
+      damage: "1d10 Piercing"
+      properties: ["Two-Handed", "Finesse", "Ignores 2 AR."]
+      critical: "10-12"
+      cost: "150 Crown"
+      weight: "4 lb"
+
+axes_hammers:
+  category: "AXES & HAMMERS"
+  skill: "Axes & Hammers Skill"
+  weapons:
+    - name: Battle Axe
+      damage: "1d8 Slashing"
+      properties: ["Versatile (Two-Handed 1d10)"]
+      critical: "10-12"
+      cost: "70 Crown"
+      weight: "6 lb"
+    - name: Mace
+      damage: "1d8 Bludgeoning"
+      properties: ["Light"]
+      critical: null
+      cost: "60 Crown"
+      weight: "2 lb"
+    - name: Warhammer
+      damage: "1d10 Bludgeoning"
+      properties: ["Two-Handed", "AR degrades by 2 instead of 1"]
+      critical: "11-12"
+      cost: "100 Crown"
+      weight: "5 lb"
+    - name: Club
+      damage: "1d6 Bludgeoning"
+      properties: []
+      critical: null
+      cost: "5 Crown"
+      weight: "3 lb"
+    - name: Greatclub
+      damage: "2d4 Bludgeoning"
+      properties: ["Two-Handed"]
+      critical: null
+      cost: "10 Crown"
+      weight: "8 lb"
+
+polearms:
+  category: "POLEARMS"
+  skill: "Polearms Skill"
+  weapons:
+    - name: Spear
+      damage: "1d6 Piercing"
+      properties: ["Versatile (Two-Handed 1d8)", "Reach 10ft", "Throwable (20/40 ft)"]
+      critical: null
+      cost: "30 Crown"
+      weight: "4 lb"
+    - name: Pike
+      damage: "1d8 Piercing"
+      properties: ["Two-Handed", "Reach 15ft"]
+      critical: null
+      cost: "50 Crown"
+      weight: "9 lb"
+    - name: Halberd
+      damage: "1d10 Slashing / Piercing"
+      properties: ["Two-Handed", "Reach 10ft"]
+      critical: null
+      cost: "100 Crown"
+      weight: "8 lb"
+    - name: Glaive
+      damage: "2d4 Slashing"
+      properties: ["Two-Handed", "Reach 10ft"]
+      critical: "11-12"
+      cost: "95 Crown"
+      weight: "10 lb"
+    - name: Quarterstaff
+      damage: "1d6 Bludgeoning"
+      properties: ["Versatile (Two-Handed 1d8)"]
+      critical: null
+      cost: "5 Crown"
+      weight: "4 lb"
+
+daggers_knives:
+  category: "DAGGERS & KNIVES"
+  skill: "Daggers & Knives Skill"
+  weapons:
+    - name: Dagger
+      damage: "1d4 Piercing"
+      properties: ["Light", "Finesse"]
+      critical: "9-12"
+      cost: "20 Crown"
+      weight: "1 lb"
+    - name: Knife
+      damage: "1d4 Piercing"
+      properties: ["Light", "Throwable (20/40 ft)"]
+      critical: "10-12"
+      cost: "5 Crown"
+      weight: "1 lb"
+
+slings_whips:
+  category: "SLINGS & WHIPS"
+  skill: "Slings & Whips Skill"
+  weapons:
+    - name: Whip
+      damage: "1d4 Slashing"
+      properties: ["Finesse", "Reach 10ft", "Trip"]
+      critical: null
+      cost: "10 Crown"
+      weight: "2 lb"
+    - name: Weighted Chain
+      damage: "1d6 Bludgeoning"
+      properties: ["Reach 10ft", "Can grapple at Reach"]
+      critical: null
+      cost: "20 Crown"
+      weight: "4 lb"
+    - name: Chain Flail
+      damage: "1d8 Bludgeoning"
+      properties: ["Bypasses Block"]
+      critical: "11-12"
+      cost: "80 Crown"
+      weight: "5 lb"

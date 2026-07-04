@@ -1,0 +1,50 @@
+- name: Thaumaturge
+  mana_cost: 1
+  casting_time: Minor Action
+  range: Touch
+  duration: Instant
+  effect: Channel vital energy into a wounded creature. The target gains 1d8+FAI temporary hit points. You may spend additional Mana to have the target gain 1d4 tHP per additional Mana.
+- name: Parasitic Tendrils
+  mana_cost: 2
+  casting_time: Major Action
+  range: 30 ft
+  duration: 1 minute
+  effect: |-
+    Summon draining vines that latch onto a creature. Make a spell overcome roll vs. the target's STR Ward.
+
+      - **Overcome:** The target’s movement speed is reduced to 15 ft. At the start of their turn, the target takes 1d8+FAI necrotic damage and you regain tHP equal to half the damage dealt.
+      - **Resist:** The tendrils lash the target before falling away \- they take 1d8+FAI necrotic damage.
+
+
+    - They may use a Major Action to attempt to break free by rolling 1d12 \+ STR \+ best STR skill vs. the original spell roll.
+- name: Ironwood Flesh
+  mana_cost: 2
+  casting_time: Major Action
+  range: Touch
+  duration: 1 hour
+  effect: |-
+    You channel vital energy into a creature's muscles and sinews, hardening them like living wood. For the duration, the target gains:
+
+      - You gain \+2 to all Cultivation spell rolls.
+      - You gain \+2 AR (does not degrade) and advantage on STR Wards
+
+
+    - When the spell ends, the target's muscles ache \- they have disadvantage on DEX checks and Wards for 10 minutes as their body readjusts.
+- name: Arboreal Integument
+  mana_cost: 3
+  casting_time: Major Action
+  range: Self (15 ft radius)
+  duration: Channel
+  effect: You become a wellspring of restorative energy. When you cast this spell and at the start of each of your turns while channeling, each ally within range gains 1d4+FAI temporary hit points.
+- name: Respite from Ruin
+  mana_cost: 4
+  casting_time: Major Action
+  range: Touch
+  duration: Instant
+  effect: You fortify a creature's body against accumulated trauma. The target gains 3d8+FAI temporary hit points. Additionally, if the target has any levels of Exhaustion, remove 1 level.
+- name: Temporal Fortification
+  mana_cost: 5
+  casting_time: Major Action
+  range: Touch
+  duration: 10 rounds
+  effect: As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. The target gains 10 temporary END (this gains the target HP (END × 3 \= HP)). At the start of each of the target's turns, this bonus decreases by 1\. When the bonus reaches 0 or the spell ends, they immediately suffer 2 levels of Exhaustion.

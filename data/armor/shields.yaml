@@ -1,0 +1,36 @@
+- name: Buckler
+  ar_bonus: null
+  penalty: null
+  properties: ['\+2 Agility']
+  price: "40 Crown"
+  weight: "3 lb"
+- name: Targe
+  ar_bonus: 1
+  penalty: null
+  properties: []
+  price: "60 Crown"
+  weight: "6 lb"
+- name: Rotella
+  ar_bonus: 2
+  penalty: -1
+  properties: []
+  price: "90 Crown"
+  weight: "10 lb"
+- name: Heater Shield
+  ar_bonus: 2
+  penalty: -1
+  properties: []
+  price: "80 Crown"
+  weight: "12 lb"
+- name: Kite Shield
+  ar_bonus: 3
+  penalty: -2
+  properties: []
+  price: "100 Crown"
+  weight: "15 lb"
+- name: Pavise
+  ar_bonus: 4
+  penalty: -3
+  properties: ['Deployable, \-5 ft speed']
+  price: "120 Crown"
+  weight: "25 lb"

@@ -1,0 +1,16 @@
+{% macro spell_list(spells) -%}
+{% for s in spells %}
+**{{ s.name }} \- Mana Cost {{ s.mana_cost }}**
+
+- **Casting Time:** {{ s.casting_time }}
+- **Range:** {{ s.range }}
+- **Duration:** {{ s.duration }}
+- **Effect:** {{ s.effect }}
+
+{% endfor -%}
+{%- endmacro %}
+Cultivation governs vitality itself \- its flow, transfer, and transformation. Cultivators understand that life and death are not opposites but a cycle: death feeds life, healing requires sacrifice, and the body can be coaxed to endure beyond its limits. It's the magic of those who understand nature's brutal honesty. Cultivators are simultaneously essential and unsettling. Villages welcome them for healing the sick and ensuring harvests, but watch nervously when they drain a dying animal to save a child. You're expected to heal freely and endlessly \- and resented when you can't. The Fe Alada tolerates Cultivation because it follows "natural law," but that tolerance is thin.
+
+### **SPELLS**
+
+{{ spell_list(spells) | trim }}

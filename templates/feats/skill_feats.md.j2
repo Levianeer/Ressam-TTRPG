@@ -1,0 +1,28 @@
+{% macro feat_entry(f) -%}
+### **{{ f.name }}**
+
+{{ f.flavor }}
+
+{{ f | feat_body }}
+{%- endmacro %}
+These feats represent mastery of specific non-combat abilities and specialized training.
+
+---
+
+{% for sc in subcategories %}
+{% set outer_loop = loop %}
+## {{ sc.name }}
+
+{% if sc.blurb %}
+*{{ sc.blurb }}*
+
+{% endif -%}
+{% for f in sc.feats %}
+{{ feat_entry(f) }}
+
+{% if not (outer_loop.last and loop.last) %}
+---
+
+{% endif -%}
+{% endfor %}
+{% endfor -%}

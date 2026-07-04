@@ -1,0 +1,115 @@
+- name: Attribute Enhancement
+  blurb: null
+  feats:
+  - name: Tough
+    flavor: You are remarkably hardy and difficult to kill.
+    prerequisites: END 6+
+    benefit: You gain \+2 HP per level (including retroactively for previous levels).
+    extra: []
+    special: null
+  - name: Improved Tough
+    flavor: You are the peak of physical endurance \- few can rival you.
+    prerequisites: Tough, END 6+
+    benefit: You gain an additional \+1 HP per level (including retroactively for previous levels).
+    extra: []
+    special: This is part of the Tough chain.
+    requires_feats:
+    - Tough
+  - name: Keen Mind
+    flavor: You have an exceptional memory and sense of direction.
+    prerequisites: MIND 6+
+    benefit: You always know which direction is north and how many hours until sunrise/sunset. You can accurately recall anything you've seen or heard in the past month. You gain \+1 MIND (maximum 10).
+    extra: []
+    special: null
+- name: Awareness & Reflexes
+  blurb: null
+  feats:
+  - name: Alert
+    flavor: You are always on guard and difficult to surprise.
+    prerequisites: \+4 ranks in Perception
+    benefit: You gain \+2 to initiative rolls. You have advantage on Perception checks to avoid being surprised. Hidden creatures don't gain advantage on attacks against you.
+    extra: []
+    special: null
+  - name: Battle Reflexes
+    flavor: You react to combat with lightning speed.
+    prerequisites: DEX 5+
+    benefit: You gain \+2 to initiative rolls. When you roll initiative, you may immediately move up to your movement speed without provoking opportunity attacks.
+    extra: []
+    special: null
+  - name: Danger Sense
+    flavor: Your instincts warn you of danger before it strikes.
+    prerequisites: \+4 ranks in Perception
+    benefit: You have advantage on DEX Wards against effects you can see, such as traps and spells. You cannot be surprised while you are conscious and not incapacitated.
+    extra: []
+    special: null
+  - name: Observant
+    flavor: You notice details others miss.
+    prerequisites: \+3 ranks in Perception or Insight
+    benefit: You can read lips if you can see a creature's mouth. You have a \+2 bonus to Perception and Insight. You may automatically notice some details that others might miss (DM may provide hints).
+    extra: []
+    special: null
+- name: Willpower & Fortune
+  blurb: null
+  feats:
+  - name: Lucky
+    flavor: Fortune favors you in your endeavors.
+    prerequisites: CHA 8+
+    benefit: You have 3 luck points. When you make an attack roll, Skill check, or Ward check, you may spend 1 luck point to reroll a die and choose which result to use. You regain all luck points after a Long Rest.
+    extra: []
+    special: null
+  - name: Iron Will
+    flavor: Your mind is a fortress against mental intrusion.
+    prerequisites: MIND 6+ or FAI 6+
+    benefit: You have advantage on Wards against being charmed, frightened, or possessed. When you succeed on a Ward, you can immediately make one weapon attack or cast a Mana cost 2 spell as a Reaction without spending Mana.
+    extra: []
+    special: null
+  - name: Indomitable
+    flavor: Your will allows you to shrug off effects that would fell others.
+    prerequisites: END 7+, \+4 ranks in Athletics
+    benefit: When you fail a Ward check, you may choose to reroll it and must use the new result. Additionally, while you are below half your maximum HP, you gain advantage on all STR and END Wards.
+    extra: []
+    special: null
+- name: Utility & Social
+  blurb: null
+  feats:
+  - name: Healer
+    flavor: You have a gift for treating the wounded.
+    prerequisites: null
+    benefit: You can spend 1 minute tending to a creature and restore 1d10 \+ their END. That creature can't regain HP this way again until they finish a Short or Long Rest.
+    extra: []
+    special: null
+  - name: Inspiring Leader
+    flavor: Your encouragement helps allies push through pain and fatigue.
+    prerequisites: CHA 6+
+    benefit: You can spend 10 minutes encouraging your allies. Choose up to 6 friendly creatures (including yourself) who can see or hear you. For the next hour, each creature ignores half their penalty from their Exhaustion (a creature at Exhaustion 4 functions as Exhaustion 2\) (rounded down). This does not reduce actual Exhaustion levels. A creature can't benefit from this again until they finish a Long Rest.
+    extra: []
+    special: null
+- name: Magical Utility
+  blurb: null
+  feats:
+  - name: Mental Dodge
+    flavor: Through sheer mental focus and magical energy, you can predict and evade incoming attacks.
+    prerequisites: MIND 6+
+    benefit: As a Reaction when you would be targeted by an attack, you may spend 2 Mana Points to gain \+5 to your Agility against that attack. This mental enhancement lasts only for that single attack. You may use this with either Evasion or Dodging.
+    extra: []
+    special: null
+  - name: Elemental Resistance
+    flavor: You have natural resistance to one type of elemental damage.
+    prerequisites: null
+    benefit: Choose one elemental damage type (fire, cold, lightning, acid, necrotic, radiant). You have resistance to that damage type (take half damage).
+    extra: []
+    special: You may take this feat multiple times, selecting a different damage type each time.
+  - name: Magically Gifted
+    flavor: Your magical reserves run deeper than most casters.
+    prerequisites: \+3 ranks in any Arcane or Divine school
+    benefit: Your Maximum Mana increases by 5\.
+    extra: []
+    special: This is the first feat in the Magically Gifted chain.
+  - name: Magical Prodigy
+    flavor: You are a true virtuoso, born to manipulate the fabric of the world.
+    prerequisites: Magically Gifted, \+5 ranks in any Arcane or Divine school
+    benefit: Your Maximum Mana increases by an additional 5\.
+    extra: []
+    special: This is part of the Magically Gifted chain.
+    requires_feats:
+    - Magically Gifted

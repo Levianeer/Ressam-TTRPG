@@ -1,0 +1,126 @@
+- name: General Skill Feats
+  blurb: null
+  feats:
+  - name: Skill Focus
+    flavor: You have focused training in one particular skill.
+    prerequisites: null
+    benefit: Choose one Skill. You gain \+2 bonus to that Skill.
+    extra: []
+    special: You may take this feat multiple times, selecting a different Skill each time.
+  - name: Expertise
+    flavor: You are so skilled that you rarely fail at your specialty.
+    prerequisites: \+6 ranks in a Skill
+    benefit: Choose one Skill you have at least 6 ranks in. You may reroll 1s and 2s on Skill checks with this Skill.
+    extra: []
+    special: You may take this feat multiple times, selecting a different Skill each time.
+- name: Physical Skill Feats
+  blurb: null
+  feats:
+  - name: Athleticism
+    flavor: You are a natural athlete with exceptional physical prowess.
+    prerequisites: \+3 ranks in Athletics
+    benefit: You gain a climbing speed equal to your movement speed and can jump twice as far. You have advantage on Athletics checks to swim, climb, or jump.
+    extra: []
+    special: null
+  - name: Acrobatic Movement
+    flavor: Your agility allows you to move in ways others cannot.
+    prerequisites: \+5 ranks in Acrobatics
+    benefit: You can move through enemy spaces and don't provoke opportunity attacks when you move at least 10 ft in your turn.
+    extra: []
+    special: null
+- name: Stealth & Subterfuge
+  blurb: null
+  feats:
+  - name: Master Lockpick
+    flavor: You can defeat even the most complex locks and traps.
+    prerequisites: \+6 ranks in Lockpicking
+    benefit: You can pick locks in half the normal time. You have advantage on Lockpicking checks, and you gain a \+5 to detect traps when you search for them.
+    extra: []
+    special: null
+  - name: Shadow Stalker
+    flavor: You move like a ghost through darkness and shadow.
+    prerequisites: \+6 ranks in Stealth
+    benefit: You can attempt to hide even when lightly obscured. You have advantage on Stealth checks while in dim light or darkness. Moving up to half your speed doesn't impose disadvantage on Stealth checks.
+    extra: []
+    special: null
+- name: Perception & Awareness
+  blurb: null
+  feats:
+  - name: Eagle Eye
+    flavor: Your vision is extraordinarily sharp.
+    prerequisites: \+6 ranks in Perception
+    benefit: You can see clearly up to 1 mile away and have advantage on Perception checks to spot distant objects. You have advantage on initiative rolls and Perception checks to avoid being surprised.
+    extra: []
+    special: null
+- name: Social Skills
+  blurb: null
+  feats:
+  - name: Intimidating Presence
+    flavor: Your threats can break the will of even hardened warriors.
+    prerequisites: \+6 ranks in Intimidation, CHA 6+ or STR 6+
+    benefit: As a Major Action, make an Intimidation check and choose one target within 30 ft who can see or hear you. They must make a CHA Ward (DC \= your Intimidation check result) or become frightened of you for 1 minute. Frightened creatures can repeat the Ward at the end of each of their turns (with advantage if they are more than 30 ft away from you). You may use this ability a number of times per Long Rest equal to your CHA or STR (whichever you use for Intimidation).
+    extra: []
+    special: null
+  - name: Beast Friend
+    flavor: You have an innate connection with animals.
+    prerequisites: \+4 ranks in Animal Handling
+    benefit: You can communicate simple ideas with beasts. Beasts have a starting attitude of friendly toward you unless provoked. You may train animals in half the normal time.
+    extra: []
+    special: null
+  - name: Insightful
+    flavor: You can read people like books.
+    prerequisites: \+6 ranks in Insight
+    benefit: You can always tell when someone is lying to you (they may still deceive you about the truth, but you know they're being dishonest). You have advantage on Insight checks. You can read surface emotions of creatures you interact with.
+    extra: []
+    special: null
+- name: Knowledge Skills
+  blurb: null
+  feats:
+  - name: Arcane Scholar
+    flavor: You have encyclopedic knowledge of arcane magic.
+    prerequisites: \+4 ranks in Arcane Lore
+    benefit: You can identify magical items with 10 minutes of study (no check required). You have advantage on Arcane Lore checks. Once per Long Rest, you may ask the DM one specific question about arcane magic, history, or creatures.
+    extra: []
+    special: null
+  - name: Divine Scholar
+    flavor: You are an expert in religious matters and divine magic.
+    prerequisites: \+4 ranks in Religious Lore
+    benefit: You can identify divine magic, holy symbols, and religious artifacts automatically. You have advantage on Religious Lore checks. You know the basic tenets of all major religions.
+    extra: []
+    special: null
+  - name: Historian
+    flavor: You are a repository of historical knowledge.
+    prerequisites: \+4 ranks in Historic Lore
+    benefit: When you encounter ruins, artifacts, or ancient texts, the DM provides you with one piece of relevant historical information. You have advantage on Historic Lore checks about your home nation or culture.
+    extra: []
+    special: null
+- name: Medical & Survival
+  blurb: null
+  feats:
+  - name: Field Medic
+    flavor: You can stabilize dying creatures with remarkable speed.
+    prerequisites: \+6 ranks in Medical Lore
+    benefit: You may use Medical Lore to stabilize dying creatures as a Minor Action instead of Major. When you successfully stabilize a creature, they regain 1 HP. During Short Rests, creatures you tend to regain an additional 1d8 HP.
+    extra: []
+    special: null
+  - name: Herbalist
+    flavor: You know how to find and prepare medicinal plants.
+    prerequisites: \+4 ranks in Nature Lore or Survival
+    benefit: During a Short Rest, you can forage for herbs. Make a Survival or Nature Lore check (DC 15). On success, create one healing poultice (restores 2d4+2 HP, requires 10 minutes to apply). You may create a number of poultices per day equal to your MIND ÷ 2\.
+    extra: []
+    special: null
+- name: Crafting Skills
+  blurb: null
+  feats:
+  - name: Expert Alchemist
+    flavor: You can create potions and alchemical substances with ease.
+    prerequisites: \+4 ranks in Alchemy
+    benefit: You can craft potions, poisons, and alchemical items at half the normal cost and time. Once per Long Rest, you may create one potion of a formula you know without spending materials.
+    extra: []
+    special: null
+  - name: Master Craftsman
+    flavor: Your crafted items are of exceptional quality.
+    prerequisites: \+6 ranks in Crafting
+    benefit: 'You can craft items at half the normal cost and time. Items you craft have \+1 to their quality (weapons: \+1 damage, armor: Armor Max AR increased by 1, tools: advantage on checks using them). Once per Long Rest, you may repair a broken item during a Short Rest.'
+    extra: []
+    special: null

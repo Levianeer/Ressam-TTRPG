@@ -1,0 +1,69 @@
+- name: Ignis Lancet
+  mana_cost: 1
+  casting_time: Major Action
+  range: 120 ft
+  duration: Instant
+  effect: Make a spell attack roll vs. target's Evasion. On hit, deal 1d10 \+ ARC fire damage.
+- name: Consuming Flame
+  mana_cost: 2
+  casting_time: Major Action
+  range: 30 ft
+  duration: Until extinguished
+  effect: |-
+    Target a creature you can see. Make a spell overcome roll vs. their DEX Ward.
+    -
+      - **Overcome:** Target is set ablaze. A burning creature takes 1d6 fire damage at the start of each of their turns. They (or an adjacent ally) can spend a Major Action to attempt to extinguish the flames by rolling 1d12 \+ DEX \+ best DEX skill vs. the original spell roll.
+      - **Resist:** The flames lick the target but don't take hold \- they take 1d6 fire damage and the spell ends.
+
+
+    - If a burning creature ends their turn adjacent to another creature, that creature catches fire if their DEX Ward is lower than the original spell roll.
+- name: Growing Inferno
+  mana_cost: 3
+  casting_time: Major Action
+  range: 15 x 15 ft cone
+  duration: Instant
+  effect: |-
+    Unleash a cone of flame from your hands. Make a spell overcome roll vs. each creature's DEX Ward in the cone.
+
+      - **Overcome:** 2d10+ARC fire damage.
+      - **Resist:** Deals half damage.
+
+
+    - You may cast this spell again on your next turn; if you do, this spell deals an additional 1d6 fire damage and you have advantage on the spell overcome roll, this bonus does not stack.
+- name: Searing Heat
+  mana_cost: 3
+  casting_time: Major Action
+  range: 30 ft
+  duration: Channel
+  effect: |-
+    You superheat the metal worn or carried by a creature you can see. Make a spell overcome roll vs. the target's END Ward.
+
+      - **Overcome:** They take 2d8 fire damage immediately. At the start of each of their turns while you channel, they take an additional 1d8 fire damage and have disadvantage on attack rolls and ability checks as the burning metal sears their flesh.
+      - **Resist:** They take half the initial damage and the spell ends.
+
+
+    - A creature can use its Major Action to drop a held metal item or doff metal armor (taking normal doffing time) to end the effect on that item. Creatures wearing no metal are unaffected.
+- name: Immolation
+  mana_cost: 4
+  casting_time: Major Action
+  range: Self (15 ft radius)
+  duration: Channel
+  effect: |-
+    Wreathe yourself in protective flames. While channeling:
+
+    - You have resistance to cold damage (take half damage).
+    - Deal 2d10 fire damage to all creatures that start their turn.
+    - You shed bright light in a 15 ft radius and dim light for an additional 15 ft.
+- name: Incinerate
+  mana_cost: 5
+  casting_time: Major Action
+  range: 120 ft
+  duration: Instant
+  effect: |-
+    Unleash a devastating explosion of fire at a point you can see. Make a spell overcome roll vs. each creature's DEX Ward within a 20 ft radius.
+
+      - **Overcome:** 4d10 \+ ARC fire damage.
+      - **Resist:** Half damage.
+
+
+    - The area continues burning for 1 minute. Any creature that enters the area for the first time on a turn or starts its turn there takes 1d6 fire damage.

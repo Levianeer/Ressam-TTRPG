@@ -1,0 +1,75 @@
+bows:
+  category: "BOWS"
+  skill: "Bows & Crossbows Skill"
+  weapons:
+    - name: Shortbow
+      damage: "1d6 Piercing"
+      range: "80/160 ft"
+      properties: ["Two-Handed"]
+      critical: "10-12"
+      cost: "50 Crown"
+      weight: "2 lb"
+    - name: Longbow
+      damage: "1d8 Piercing"
+      range: "150/300 ft"
+      properties: ["Two-Handed"]
+      critical: "11-12"
+      cost: "100 Crown"
+      weight: "3 lb"
+
+crossbows:
+  category: "CROSSBOWS"
+  skill: "Bows & Crossbows Skill"
+  weapons:
+    - name: Light Crossbow
+      damage: "1d10 Piercing"
+      range: "100/200 ft"
+      properties: ["Two-Handed", "Reload (Minor)"]
+      critical: null
+      cost: "125 Crown"
+      weight: "4 lb"
+    - name: Heavy Crossbow
+      damage: "1d12 Piercing"
+      range: "120/240 ft"
+      properties: ["Two-Handed", "Reload (Minor)"]
+      critical: null
+      cost: "175 Crown"
+      weight: "8 lb"
+
+thrown_weapons:
+  category: "THROWN WEAPONS"
+  skill: "Thrown Weapons Skill"
+  weapons:
+    - name: Throwing Axe
+      damage: "1d6 Slashing"
+      range: "20/40 ft"
+      properties: ["Light"]
+      critical: "9-12"
+      cost: "15 Crown"
+      weight: "2 lb"
+    - name: Javelin
+      damage: "1d6 Piercing"
+      range: "30/60 ft"
+      properties: ["Versatile (Two-Handed 1d8)", "When thrown, ignores 3 AR"]
+      critical: null
+      cost: "10 Crown"
+      weight: "2 lb"
+    - name: Dart
+      damage: "1d4 Piercing"
+      range: "20/40 ft"
+      properties: ["Light"]
+      critical: null
+      cost: "5 Crown"
+      weight: "0.5 lb"
+
+slings_whips:
+  category: "SLINGS & WHIPS"
+  skill: "Slings & Whips Skill"
+  weapons:
+    - name: Sling
+      damage: "1d6 Bludgeoning"
+      range: "200/400 ft"
+      properties: ["Light", "Uses Ammunition"]
+      critical: null
+      cost: "5 Crown"
+      weight: "0.1 lb"

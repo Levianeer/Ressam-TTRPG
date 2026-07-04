@@ -1,0 +1,329 @@
+- name: Weapon Mastery
+  blurb: null
+  feats:
+  - name: Improved Critical
+    flavor: Your intimate knowledge of your weapon allows you to strike with devastating precision.
+    prerequisites: \+4 ranks in a weapon Skill
+    benefit: Your critical hit range with a chosen weapon skill increases by 1 (12 becomes 11-12 on 1d12). A weapon's critical range cannot be expanded beyond 9-12 by any combination of effects.
+    extra: []
+    special: This feat applies to only one weapon skill category. You may select this feat multiple times; each time it applies to a different weapon skill.
+  - name: Deadly Critical
+    flavor: Your critical strikes can cripple even the hardiest opponents.
+    prerequisites: \+5 ranks in weapon Skill, Improved Critical
+    benefit: When you score a critical hit, you may force the target to make an END Ward check (DC \= 5 \+ associated weapon Skill \+ associated Attribute) or they gain 1 Exhaustion immediately. This can only be used once per round.
+    extra: []
+    special: This feat applies to the same weapon skill as your Improved Critical feat. You may select this feat multiple times; each time it applies to a different weapon skill.
+    requires_feats:
+    - Improved Critical
+  - name: Sweeping Strike
+    flavor: You can flow your weapon through multiple foes in one great swing.
+    prerequisites: STR 5+, \+3 ranks in Two-Handed Blades, Polearms or Axes & Hammers
+    benefit: When you hit with a two-handed melee weapon, you may immediately make one additional attack against a different creature within reach. The second attack is made at disadvantage. You cannot move until the start of your next turn. You can only use this once per turn.
+    extra: []
+    special: This is the first feat in the Sweeping Strike chain.
+  - name: Improved Sweeping Strike
+    flavor: You've mastered the art of letting your blade's momentum carry through multiple targets.
+    prerequisites: Sweeping Strike, STR 6+, \+5 ranks in Two-Handed Blades, Polearms or Axes & Hammers
+    benefit: When you use Sweeping Strike, the second attack no longer has disadvantage. You still cannot move until the start of your next turn.
+    extra: []
+    special: This is part of the Sweeping Strike chain.
+    requires_feats:
+    - Sweeping Strike
+  - name: Power Attack
+    flavor: You sacrifice accuracy for devastating power.
+    prerequisites: STR 4+, \+3 ranks in melee weapon Skill
+    benefit: Before making an attack roll with a melee weapon, you may choose to take disadvantage on the attack roll. If the attack hits, add \+5 to the damage roll. You must declare a Power Attack before rolling the attack (cannot decide after seeing the result) and cannot make another weapon attack this turn.
+    extra: []
+    special: This is part of the Power Attack chain.
+  - name: Improved Power Attack
+    flavor: Your attacks are even stronger, you were born to destroy.
+    prerequisites: Power Attack, STR 5+, \+4 ranks in melee weapon Skill
+    benefit: Your power attack damage increases from \+5 to \+10.
+    extra: []
+    special: This is part of the Power Attack chain.
+    requires_feats:
+    - Power Attack
+  - name: Precise Strike
+    flavor: Your attacks find the gaps in armor with unerring accuracy.
+    prerequisites: REF 5+, \+3 ranks in a finesse or ranged weapon Skill
+    benefit: When you make an attack with a finesse or ranged weapon, you may take a \-2 penalty to the attack roll to ignore up to 5 AR instead.
+    extra: []
+    special: null
+  - name: Armor Breaker
+    flavor: Your powerful blows shatter armor and shields.
+    prerequisites: STR 7+, \+4 ranks in Axes & Hammers or Two-Handed Blades
+    benefit: When you hit an enemy and cause their armor to degrade, their armor loses 1 additional AR beyond normal (2 total per hit instead of 1).
+    extra: []
+    special: null
+  - name: Brutal Strike
+    flavor: Your attacks can knock opponents off their feet.
+    prerequisites: \+4 ranks in a melee weapon Skill, STR 7+
+    benefit: Once per turn when you hit with a STR-based melee weapon, you may choose to deal an additional 1d6 damage. If you do, the target must make a STR Ward check (DC \= 5 \+ your STR \+ weapon Skill) or be knocked prone.
+    extra: []
+    special: null
+  - name: Opportunist
+    flavor: You strike with lethal precision when enemies leave themselves exposed.
+    prerequisites: REF 5+, \+3 ranks in Stealth or \+3 ranks in Daggers & Knives
+    benefit: When you deal damage with an opportunity attack, you may reroll the damage dice and choose which result to use.
+    extra: []
+    special: null
+  - name: Feint
+    flavor: You are adept at using your guile to open your opponent up to your strikes.
+    prerequisites: \+3 in a melee weapon Skill, \+3 in Deception Skill
+    benefit: As a minor action, you may make a Deception Skill check contested by your opponent's Insight, if you succeed, you gain advantage on all weapon attacks you make this turn.
+    extra: []
+    special: null
+  - name: Dirty Fighting
+    flavor: You fight with cunning and improvisation, using your environment as a weapon.
+    prerequisites: DEX 5+ or REF 5+, \+3 ranks in a one-handed weapon skill
+    benefit: |-
+      While your other hand is empty, you may use a Minor Action to perform one of the following:
+
+      - **Blind:** Throw dirt/sand. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or they are Blinded
+      - **Trip:** Kick/sweep. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or is knocked prone
+      - **Disarm:** Grab their weapon. Contested check (your weapon skill \+ STR/DEX vs. their weapon skill \+ STR/DEX)
+
+      You can only use this once per turn.
+    extra: []
+    special: null
+  - name: Improved Dirty Fighting
+    flavor: Your opportunistic tactics are lightning-fast.
+    prerequisites: Dirty Fighting, DEX 6+ or REF 6+, \+5 ranks in weapon skill
+    benefit: |-
+      When you use Dirty Fighting, you may perform it as a Free Action instead of a Minor Action. Additionally, add the following options:
+
+      - **Throw:** Throw an object, or a Thrown Weapon. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or is Stunned. Additionally, if the target failed their Ward, and you threw a Thrown Weapon, it does damage like normal
+    extra: []
+    special: null
+    requires_feats:
+    - Dirty Fighting
+  - name: Savage Attacker
+    flavor: You strike with brutal force.
+    prerequisites: STR 6+ or REF 6+
+    benefit: When you roll damage for a melee weapon attack, you may also reroll any 1s or 2s on any of the damage dice.
+    extra: []
+    special: null
+  - name: Charger
+    flavor: Your charges are devastating.
+    prerequisites: STR 6+ or REF 6+, \+3 ranks in melee weapon skill
+    benefit: If you move at least 20 ft in a straight line toward a creature before hitting them with a melee attack, you deal an additional 2d6 damage on that attack and may push them 10 ft.
+    extra: []
+    special: null
+- name: Ranged Combat
+  blurb: null
+  feats:
+  - name: Double Charge
+    flavor: You make your shots count against those clad in metal and steel.
+    prerequisites: \+3 ranks in any firearm Skill
+    benefit: You fill your firearm with double the normal powder. The next attack with that firearm uses two pieces of ammunition instead of one but damage bypasses half the target's AR. Additionally the misfire chance is doubled for that attack.
+    extra: []
+    special: null
+  - name: Gunner
+    flavor: You reload firearms with practiced efficiency.
+    prerequisites: \+3 ranks in any firearm Skill
+    benefit: Reloading a firearm requires only a Major Action instead of Major \+ Minor Action. If you also have the Quickdraw feat, reloading is reduced to a Minor Action only.
+    extra: []
+    special: This is part of the Gunner chain.
+  - name: Swashbuckler
+    flavor: You seamlessly blend blade and pistol in combat.
+    prerequisites: Gunner, \+4 ranks in any firearm Skill
+    benefit: When you use your Major Action to attack with a one-handed melee weapon, you may use your Minor Action to make one attack with a Pistol you are holding.
+    extra: []
+    special: This is part of the Gunner chain.
+    requires_feats:
+    - Gunner
+  - name: Point Blank Shot
+    flavor: You are deadly with ranged weapons at close quarters.
+    prerequisites: \+6 ranks in a ranged weapon Skill
+    benefit: You don't suffer disadvantage when making ranged attacks while an enemy is within 5 ft of you. Additionally, you gain \+2 to ranged attack and damage rolls against targets within 10 ft.
+    extra: []
+    special: null
+- name: Defensive Combat
+  blurb: null
+  feats:
+  - name: Defensive Fighting
+    flavor: You can adopt a protective stance that makes you difficult to hit.
+    prerequisites: \+4 ranks in any melee weapon Skill
+    benefit: As a Minor Action, enter a defensive stance until the start of your next turn. While in this stance, you gain \+3 to Agility and \+2 to Parry attempts. Your damage rolls suffer \-2 until the start of your next turn.
+    extra: []
+    special: null
+  - name: Combat Reflexes
+    flavor: Your reflexes are so fast you can respond to multiple threats in a single round.
+    prerequisites: DEX 6+
+    benefit: You gain 1 additional Reaction per round.
+    extra: []
+    special: This is part of the Combat Reflexes chain.
+  - name: Improved Combat Reflexes
+    flavor: Your reflexes are talked about across the plain, you are a god among men.
+    prerequisites: DEX 8+
+    benefit: You gain 1 additional Reaction per round.
+    extra: []
+    special: This is part of the Combat Reflexes chain.
+  - name: Improved Parry
+    flavor: You turn defensive parries into devastating counterattacks.
+    prerequisites: \+5 ranks in a melee weapon Skill
+    benefit: When you successfully parry an attack, you may immediately make one melee attack against the attacker as part of the same Reaction. You can only make one counterattack per turn from this feat, regardless of how many Reactions you have.
+    extra: []
+    special: null
+  - name: Riposte
+    flavor: When your enemy's attack fails, you strike back with lightning speed.
+    prerequisites: \+5 ranks in Rapiers & Fencing, One-Handed Blades or Daggers & Knives
+    benefit: When an enemy misses a melee weapon attack against you, you may use your Reaction to make one melee attack against them. You can only make one counterattack per turn from this feat, regardless of how many Reactions you have.
+    extra: []
+    special: null
+  - name: Defensive Duelist
+    flavor: Your defensive reflexes are exceptional.
+    prerequisites: REF 6+
+    benefit: When wielding a finesse weapon and an enemy makes a melee attack against you, you may use your Reaction to add your REF to your Dodge, potentially causing the attack to miss.
+    extra: []
+    special: null
+  - name: Deflect Missiles
+    flavor: You can knock aside incoming projectiles with lightning reflexes.
+    prerequisites: REF 5+, \+3 ranks in Brawling or Acrobatics
+    benefit: When you are hit by a ranged weapon attack (not firearms or spells), you may use your Reaction to reduce the damage by 1d10 \+ REF \+ Brawling ranks. If you reduce the damage to 0, the projectile is harmlessly deflected.
+    extra:
+    - label: Restriction
+      body: You must have at least one free hand. Cannot be used while wearing Heavy Armor.
+    special: This is the first feat in the Deflect Missiles chain.
+  - name: Snatch Missiles
+    flavor: Your reflexes are so honed you can pluck projectiles from the air and hurl them back.
+    prerequisites: Deflect Missiles, REF 6+, \+5 ranks in Brawling or Acrobatics
+    benefit: When you use Deflect Missiles and reduce the damage to 0, you catch the projectile instead of deflecting it. You may immediately throw it back at the attacker (or another target within 30 ft) as part of the same Reaction. Make a ranged attack using REF \+ Brawling (or Thrown Weapons if higher). On hit, deal the weapon's normal damage.
+    extra: []
+    special: This is part of the Deflect Missiles chain.
+    requires_feats:
+    - Deflect Missiles
+- name: Shield Mastery
+  blurb: null
+  feats:
+  - name: Breakthrough
+    flavor: In your hands a shield is a tool to create openings in the enemy's defences.
+    prerequisites: \+5 ranks in Shields Skill
+    benefit: When you successfully use your shield to block all damage from an incoming attack, you may immediately make one melee attack against the attacker as part of the same reaction. You can only make one counterattack per round from this feat, regardless of how many Reactions you have.
+    extra: []
+    special: null
+  - name: Shield Wall Defense
+    flavor: You can use massive shields to create mobile fortifications.
+    prerequisites: \+6 ranks in Shields, STR 6+
+    benefit: When wielding a Pavise Shield, you may use your Major Action to gain cover until the start of your next turn. You cannot attack or move while in this stance. Adjacent allies may use your shield as cover as well.
+    extra: []
+    special: null
+- name: Two-Weapon Fighting
+  blurb: null
+  feats:
+  - name: Two-Weapon Fighting
+    flavor: You can fight effectively with a weapon in each hand.
+    prerequisites: REF 5+
+    benefit: When wielding two light weapons, you may attack with both as a Major Action. Make your normal attack with your primary weapon, then make a second attack with your off-hand weapon at \-5 to hit with no bonus to damage.
+    extra: []
+    special: This is the first feat in the Two-Weapon Fighting chain.
+  - name: Dual Wielder
+    flavor: You have learned to fight with any combination of one-handed weapons.
+    prerequisites: REF 6+, Two-Weapon Fighting, \+4 ranks in a melee weapon Skill
+    benefit: You may dual wield weapons even if they're not light (but they must be one-handed). You gain \+1 to Agility while wielding two weapons.
+    extra: []
+    special: This is part of the Two-Weapon Fighting chain.
+    requires_feats:
+    - Two-Weapon Fighting
+  - name: Improved Two-Weapon Fighting
+    flavor: Your off-hand strikes are as effective as your primary attacks.
+    prerequisites: REF 6+, Two-Weapon Fighting, \+4 ranks in a melee weapon Skill
+    benefit: The penalty for your off-hand attack is reduced to \-3. Both attacks use your full damage bonus.
+    extra: []
+    special: This is part of the Two-Weapon Fighting chain.
+    requires_feats:
+    - Two-Weapon Fighting
+  - name: Two-Weapon Mastery
+    flavor: Your dual blades move as extensions of a single will.
+    prerequisites: REF 7+, Improved Two-Weapon Fighting, \+6 ranks in a melee weapon Skill
+    benefit: The penalty for your off-hand attack is reduced to 0\. Additionally, once per turn when you hit with your off-hand attack, you may impose disadvantage on the target's next attack roll before the start of your next turn.
+    extra: []
+    special: This is part of the Two-Weapon Fighting chain.
+    requires_feats:
+    - Improved Two-Weapon Fighting
+- name: Mounted Combat
+  blurb: null
+  feats:
+  - name: Mounted Combat
+    flavor: You are a skilled rider who fights effectively from horseback.
+    prerequisites: \+3 ranks in Riding
+    benefit: When mounted, you have advantage on melee attacks against unmounted creatures smaller than your mount. If your mount is targeted by an attack, you may use your Reaction to force the attacker to reroll and take the lower result.
+    extra: []
+    special: null
+- name: Mobility
+  blurb: null
+  feats:
+  - name: Skirmisher
+    flavor: You excel at hit-and-run tactics.
+    prerequisites: DEX 6+
+    benefit: You can move 5 ft as a Reaction when an enemy ends their movement within 5 ft of you. This movement doesn't provoke opportunity attacks.
+    extra: []
+    special: null
+  - name: Mobile
+    flavor: Your natural agility makes you faster than most.
+    prerequisites: DEX 5+
+    benefit: Your movement speed increases by 10 ft.
+    extra: []
+    special: This is the first feat in the Mobility chain.
+  - name: Elusive
+    flavor: You move so quickly that enemies cannot track your movements.
+    prerequisites: Mobile, DEX 6+
+    benefit: While wearing Medium or Light Armor, when you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of your turn.
+    extra: []
+    special: This is part of the Mobility chain.
+    requires_feats:
+    - Mobile
+- name: Special Attacks
+  blurb: null
+  feats:
+  - name: Sneak Attack
+    flavor: You know how to strike where it hurts most.
+    prerequisites: DEX 6+, \+3 ranks in Stealth, \+3 ranks in any weapon Skill
+    benefit: Once per turn, when you hit with a melee weapon attack that has advantage, you may deal extra damage. You may trigger Sneak Attack on opportunity attacks if you have advantage.
+    extra:
+    - label: Extra Damage Scaling
+      body: |2-
+
+
+        - **Stealth ≥ 3:** \+1d6 damage
+        - **Stealth ≥ 6:** \+2d6 damage
+        - **Stealth ≥ 9:** \+3d6 damage
+    - label: Note
+      body: This extra damage applies only to the weapon's damage, not to any additional damage from spells or other sources added to the attack.
+    special: null
+  - name: Quickdraw
+    flavor: Your hands move with blinding speed.
+    prerequisites: DEX 5+, REF 5+
+    benefit: You can draw or sheathe any number of weapons as part of making an attack (free action). When combat begins, you act first in any initiative tie.
+    extra: []
+    special: null
+- name: Armor Training
+  blurb: null
+  feats:
+  - name: Combat Vigor
+    flavor: You leverage your armor's protection to fight more aggressively.
+    prerequisites: \+3 ranks in Armorer Skill
+    benefit: Once per turn when wearing Light or Medium Armor, as a Minor Action gain tHP equal to 1d10 \+ your level.
+    extra: []
+    special: null
+  - name: Heavy Armor Master
+    flavor: You know how to use armor's weight and bulk to your advantage.
+    prerequisites: \+6 ranks in Armorer
+    benefit: When wearing Heavy Armor, you have advantage on Wards to resist being knocked prone or pushed. Additionally, when wearing Heavy Armor, your armor's Max AR increases by 1\.
+    extra: []
+    special: null
+- name: Unarmed Combat
+  blurb: null
+  feats:
+  - name: Grappler
+    flavor: You excel at wrestling opponents into submission.
+    prerequisites: STR 6+, Brawling 2+
+    benefit: You have advantage on attack rolls against creatures you're grappling. When you successfully grapple a creature, you may use a Minor Action to immediately make one unarmed attack against them as part of the same action.
+    extra: []
+    special: null
+  - name: Iron Fist
+    flavor: You specialise in unarmed combat, bridging the gap between sword and fist.
+    prerequisites: STR 6+, Brawling 3+
+    benefit: As a Minor Action after hitting with an unarmed strike, you may immediately make a followup attack with an unarmed attack you haven't already made (e.g if you hit a Punch attack this turn, you may make a Kick, Headbutt or Grapple attack, but not another Punch Attack).
+    extra: []
+    special: null

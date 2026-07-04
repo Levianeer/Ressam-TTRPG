@@ -1,0 +1,16 @@
+{% macro spell_list(spells) -%}
+{% for s in spells %}
+**{{ s.name }} \- Mana Cost {{ s.mana_cost }}**
+
+- **Casting Time:** {{ s.casting_time }}
+- **Range:** {{ s.range }}
+- **Duration:** {{ s.duration }}
+- **Effect:** {{ s.effect }}
+
+{% endfor -%}
+{%- endmacro %}
+Hydromancy governs water, ice, and all that flows. From freezing blood in veins to parting rivers, Hydromancers study the God-Dragon of Water's eternal lesson: adapt or drown. Their magic is fluid, versatile, and coldly precise. Ice doesn't negotiate. Cities tolerate Hydromancers because they purify water and break droughts, but people call them "the cold ones" and mean it in every sense. There's something wrong about someone who can stop your heart by freezing the blood within. Sailors both fear and worship them \- a Hydromancer who calms storms is a miracle, but the same mage could drown your entire crew with a gesture. You pay them, you thank them, and you don't ask questions about what they did before they found honest work.
+
+### **SPELLS**
+
+{{ spell_list(spells) | trim }}
