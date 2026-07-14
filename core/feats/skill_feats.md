@@ -71,7 +71,7 @@ You move like a ghost through darkness and shadow.
 Your vision is extraordinarily sharp.
 
 **Prerequisites:** \+6 ranks in Perception  
-**Benefit:** You can see clearly up to 1 mile away and have advantage on Perception checks to spot distant objects. You have advantage on initiative rolls and Perception checks to avoid being surprised.
+**Benefit:** You can see clearly up to 1 mile away and have advantage on Perception checks to spot distant objects.
 
 ---
 

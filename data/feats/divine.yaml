@@ -10,15 +10,9 @@
   - name: Devoted Servant
     flavor: Your faith allows you to commune with the divine more quickly.
     prerequisites: \+4 ranks in any Divine school
-    benefit: You may Pray as a 30-minute activity instead of 1 hour. Additionally, when you complete a Pray, regain HP equal to 1d4.
+    benefit: You may Pray as a 30-minute activity instead of 1 hour.
     extra: []
     special: null
-  - name: Empowered Prayers
-    flavor: Your devotion strengthens the potency of your divine invocations.
-    prerequisites: \+5 ranks in any Divine school, FAI 5+
-    benefit: When you Pray, all spells you prepare from Divine schools gain a \+1 bonus to all spell rolls until your next Prayer.
-    extra: []
-    special: You may select this feat multiple times. Each time, the bonus increases by \+1 (maximum \+3).
   - name: Channel Divinity
     flavor: You can channel raw divine power into miraculous effects.
     prerequisites: \+4 ranks in any Divine school, FAI 6+
@@ -53,12 +47,6 @@
     flavor: You can invoke a protective barrier infused with divine power.
     prerequisites: \+4 ranks in any Divine school, FAI 5+
     benefit: As a Reaction when you or an ally within 30 ft takes damage from an attack or spell, you may expend 2 Mana to grant the target resistance to that damage type for the attack (halving the damage). You can use this feature a number of times per Field Rest or Long Rest equal to your FAI ÷ 3 (minimum 1).
-    extra: []
-    special: null
-  - name: Unyielding Devotion
-    flavor: Your resolve in faith makes you harder to sway or harm through supernatural means.
-    prerequisites: \+3 ranks in Religious Lore, FAI 4+
-    benefit: You gain \+2 to all Wards against effects that would charm, frighten, or possess you. If you succeed on such a Ward, you regain 1d6 HP as divine favor rewards your steadfastness.
     extra: []
     special: null
   - name: Wrath of the Faithful

@@ -10,7 +10,7 @@
   - name: Keen Mind
     flavor: You have an exceptional memory and sense of direction.
     prerequisites: MIND 6+
-    benefit: You always know which direction is north and how many hours until sunrise/sunset. You can accurately recall anything you've seen or heard in the past month. You gain \+1 MIND (maximum 10).
+    benefit: You always know which direction is north and how many hours until sunrise/sunset. You can accurately recall anything you've seen or heard in the past month.
     extra: []
     special: null
 - name: Awareness & Reflexes
@@ -19,19 +19,13 @@
   - name: Alert
     flavor: You are always on guard and difficult to surprise.
     prerequisites: \+4 ranks in Perception
-    benefit: You gain \+2 to initiative rolls. You have advantage on Perception checks to avoid being surprised. Hidden creatures don't gain advantage on attacks against you.
+    benefit: You have advantage on Perception checks to avoid being surprised, and hidden creatures don't gain advantage on attacks against you. You also have advantage on DEX Wards against effects you can see, such as traps and spells. Once you have \+6 ranks in Perception, you cannot be surprised at all while conscious and not incapacitated.
     extra: []
     special: null
   - name: Battle Reflexes
     flavor: You react to combat with lightning speed.
     prerequisites: DEX 5+
     benefit: You gain \+2 to initiative rolls. When you roll initiative, you may immediately move up to your movement speed without provoking opportunity attacks.
-    extra: []
-    special: null
-  - name: Danger Sense
-    flavor: Your instincts warn you of danger before it strikes.
-    prerequisites: \+4 ranks in Perception
-    benefit: You have advantage on DEX Wards against effects you can see, such as traps and spells. You cannot be surprised while you are conscious and not incapacitated.
     extra: []
     special: null
   - name: Observant
@@ -85,12 +79,6 @@
     benefit: As a Reaction when you would be targeted by an attack, you may spend 2 Mana Points to gain \+5 to your Agility against that attack. This mental enhancement lasts only for that single attack. You may use this with either Evasion or Dodging.
     extra: []
     special: null
-  - name: Elemental Resistance
-    flavor: You have natural resistance to one type of elemental damage.
-    prerequisites: null
-    benefit: Choose one elemental damage type (fire, cold, lightning, acid, necrotic, radiant). You have resistance to that damage type (take half damage).
-    extra: []
-    special: You may take this feat multiple times, selecting a different damage type each time.
   - name: Magically Gifted
     flavor: Your magical reserves run deeper than most casters.
     prerequisites: \+3 ranks in any Arcane or Divine school

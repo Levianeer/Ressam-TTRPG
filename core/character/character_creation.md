@@ -8,7 +8,7 @@ Character creation in Ressam builds your character through deliberate choices, n
 
 ## Step 1: Starting Experience
 
-Set **EXP to 100** (Level 1). You gain a level every 100 EXP.
+Set **EXP to 30** (Level 1). XP required for your next level is **(Current Level \+ Next Level) × 30** \- each level costs more than the last. See the **Progression & Rewards** chapter for the full advancement table.
 
 ---
 
@@ -99,7 +99,7 @@ See the **Feats** chapter for the complete list.
 | :---- | :---- |
 | **Hit Points (HP)** | (END × 3\) \+ 10 |
 | **Mana Points (MP)** | MIND × 2 |
-| **Carrying Capacity** | ((END \+ STR) × 10\) \+ 10 lbs |
+| **Slots** | STR \+ END |
 | **Evasion** | 5 \+ Agility \+ DEX − Armor Penalty |
 | **Dodge** | Evasion \+ 5 |
 | **Max Dodges/Short Rest** | DEX ÷ 2 |

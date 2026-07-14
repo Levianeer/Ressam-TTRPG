@@ -187,7 +187,7 @@ When you Pray, choose your devotion level. Higher devotion grants more power but
 - Refresh all known spells  
 - Choose two spell schools \- spells from those schools gain \+1 to spell rolls until next Prayer  
 - Regain 2d6 HP  
-- Requires thematic act \+ meaningful sacrifice (destroy 50+ Crown of incense/offerings, spend mana on an Empowered Minor Magic ritual with no gameplay benefit, accept 1 Exhaustion from fasting, etc.)
+- Requires thematic act \+ meaningful sacrifice (destroy 50+ Crown of incense/offerings, spend mana on a Minor Magic ritual with no gameplay benefit (minor_magic.md), accept 1 Exhaustion from fasting, etc.)
 
 ### **Interrupted Prayer**
 
@@ -221,62 +221,4 @@ Some spells have Channel as their duration, this means it requires concentration
 
 ---
 
-## Minor Magic
-
-Practitioners with **at least 1 rank** in a magic school can manifest small, instinctive effects requiring no Mana.
-
-**Roll:** 1d12 \+ Magic School Skill \+ ARC or FAI vs. DC (5 Very Easy / 10 Medium / 15 Hard / 20 Very Hard)
-
-**Restrictions  \-  Minor Magic cannot:**
-
-- Deal damage or heal  
-- Replicate spell effects  
-- Force Ward checks  
-- Provide combat bonuses  
-- Create lasting effects (nothing beyond 1 minute)
-
-**Scope:** Small (5-foot cube max), brief, and thematic to your school.
-
-| School | Examples |
-| :---- | :---- |
-| Aeromancy | Light breeze, amplify voice, blow out candles |
-| Geomancy | Sense vibrations through stone, make pebbles tremble, leave temporary marks in rock |
-| Hydromancy | Chill a drink, create a splash, frost a surface |
-| Pyromancy | Light/snuff flames, warm hands, color fire |
-| Shadowmancy | Deepen nearby shadows, make shadows flicker, dim a candle |
-| Benediction | Make holy symbol glow faintly, speak with divine echo, sense unholy presence |
-| Cultivation | Encourage blooming, sense plant health, make leaves rustle |
-| Invocation | Feel your familiar stir, make familiar briefly visible, sense soul fragments |
-| Necration | Sense nearby corpses, make a corpse twitch, chill touch |
-| Subjugation | Sense surface emotions, project a whisper, make eye contact unsettling |
-
-### 
-
-### **Empowered Minor Magic**
-
-By spending Mana, casters can push minor magic further \- larger scale, longer duration, or greater complexity. The same restrictions apply: no damage, no healing, no combat bonuses, no replicating spells.
-
-| Mana | Scale | Duration |
-| :---: | :---- | :---- |
-| **1** | 10 ft cube | Up to 10 minutes |
-| **2** | 20 ft cube | Up to 1 hour |
-| **3** | 30 ft cube | Up to 8 hours |
-
-**Roll:** Same as Minor Magic. On failure, the Mana is spent but the effect fizzles or manifests weakly.
-
-**Expanded Examples:**
-
-| School | 1 Mana | 2-3 Mana |
-| :---- | :---- | :---- |
-| Aeromancy | Carry whispered messages 60 ft, ventilate a small room | Clear smoke from a large area, favorable winds for a small boat |
-| Geomancy | Shape soft earth into a seat, smooth a rocky path | Excavate a shallow pit, reinforce a doorframe |
-| Hydromancy | Purify a waterskin, create drinking water for one | Fill a trough, keep an area cool through desert heat |
-| Pyromancy | Create torch-light (no damage), warm a cold room | Maintain shelter warmth for hours, dry soaked clothing instantly |
-| Shadowmancy | Muffle footsteps, create illusory darkness | Silence a small room, maintain darkness despite light sources |
-| Benediction | Project voice with authority, consecrate a small area | Create a zone of calm  |
-| Cultivation | Cause flowers to bloom, ripen fruit | Grow concealing vegetation (not cover), purify spoiled food |
-| Invocation | Familiar manipulates small objects at range | Maintain familiar visibility for hours of scouting |
-| Necration | Preserve a corpse, make it speak a recorded phrase | Animate a corpse for simple labor (no combat, 1 HP) |
-| Subjugation | Send a mental image to a willing target | Short-range telepathy with a willing creature |
-
-**DM Note:** Empowered Minor Magic covers practical utility that doesn't warrant full spells \- lighting camps, purifying water, sending messages. If an effect would trivialize a challenge or replicate a spell's purpose, require the actual spell instead.
+**For small, instinctive Mana effects that fall outside a normal spell, see Minor Magic (minor_magic.md).**

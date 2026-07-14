@@ -94,7 +94,7 @@ def compute_stats(archetype, snapshot, weapon_index, armor_index, shield_index) 
     attrs = snapshot.attributes
     stats = {
         "hp": formulas.hp(attrs["END"]),
-        "carrying_capacity": formulas.carrying_capacity(attrs["END"], attrs["STR"]),
+        "slots": formulas.slots(attrs["END"], attrs["STR"]),
     }
 
     weapon = weapon_index[snapshot.equipment.weapon]

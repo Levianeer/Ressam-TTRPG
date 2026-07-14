@@ -48,6 +48,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks, HP, 
 ## Magic
 
 - [Magic Overview](magic_overview) - universal rules shared by both casting paths
+- [Minor Magic](minor_magic) - small, instinctive Mana effects (minimum 1 Mana) that fall outside a normal spell
 - [Spell Crafting](spell_crafting)
 
 **Arcane path:**
@@ -87,6 +88,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks, HP, 
 ## Exploration
 
 - [Traveling](traveling) - hex travel, mounts
+- [Dungeon Turns](dungeon_turns) - the 10-minute exploration turn, light tracking, wandering encounters
 - [Downtime](downtime) - revelry and celebrations
 - [Leadership](leadership) - followers and cohorts
 

@@ -38,7 +38,7 @@ Attributes range from 1 (severely impaired) to 10 (peak mortal potential).
 
 | Attribute | Abbr. | Governs |
 | :---- | :---: | :---- |
-| **Strength** | STR | Physical power, melee damage, carrying capacity |
+| **Strength** | STR | Physical power, melee damage, carrying slots |
 | **Reflex** | REF | Reaction speed, ranged accuracy, initiative |
 | **Endurance** | END | Toughness, hit points, resisting fatigue |
 | **Dexterity** | DEX | Agility, fine motor control, dodging |
@@ -55,7 +55,7 @@ Reading and writing are far from universal in Ressam \- most people never learn.
 
 **Automatic Literacy:** A character with **MIND 6+** at character creation is literate, able to read and write every language they know.
 
-**Below MIND 6:** Illiterate by default. Literacy determined this way is fixed at character creation \- raising MIND afterward (leveling, Keen Mind, etc.) does not retroactively grant it.
+**Below MIND 6:** Illiterate by default. Literacy determined this way is fixed at character creation \- raising MIND afterward (leveling, etc.) does not retroactively grant it.
 
 **Learning to Read Later:** An illiterate character can still choose to learn to read during play. This isn't automatic and has no fixed cost or timeline \- work it out with your DM.
 
@@ -162,22 +162,26 @@ Ressam uses an eight-tier DC scale for Skill Checks, Ward Checks, Minor Magic, a
 
 At 0 HP:
 
-1. You immediately fall Prone and become Unconscious. Dropping any equipment you were holding.  
-2. You gain HP equal to your END. If your HP increases above this, you are no longer Dying or Unconscious.  
-3. For every round you are Dying you gain 2 levels of Exhaustion. If this gets you to 10 levels of Exhaustion, you automatically die.
+1.  You immediately fall Prone and become Unconscious, dropping any equipment you were holding. Excess damage is ignored.
+2.  Your **Death Clock** starts at your **END**. At the start of each of your turns, reduce it by 1. When it reaches 0, you die.
+3.  You gain 1 level of Exhaustion the moment you drop, and 1 more for every full round you remain Dying. This Exhaustion persists after rescue \- going down always leaves a mark.
+4.  **While Dying, you cannot regain HP.** Healing magic, potions, and similar effects instead *pause* your Death Clock until the start of your next turn \- they buy time, they don't save you. Only Stabilization ends Dying.
 
-### **Coup De Grace:**
+### **Coup de Grace**
 
-A dying creature can be executed by attacking them.
+A Dying creature can be executed by attacking it.
 
-- Hitting a Dying creature and dealing damage over their END HP kills them instantly.  
-- Enemies can also do this, and will use this to their advantage.
+-   Attacks against a Dying creature automatically hit (it's Unconscious). Each instance of damage reduces its Death Clock by 2.
+-   A creature that spends a Major Action adjacent to a Dying creature to deliberately execute it kills it outright, no roll required.
+-   Enemies can and will do this.
 
 ### **Stabilization**
 
-- **Action:** Major Action while adjacent  
-- **Check:** Medical Lore \+ MIND vs. DC (10 \+ target's Exhaustion)  
-- **Healer's Kit:** Grants advantage
+-   **Action:** Major Action while adjacent
+-   **Check:** Medical Lore + MIND vs. DC (10 + target's Exhaustion)
+-   **Healer's Kit:** Grants advantage
+-   **Success:** The target is no longer Dying. They remain at 0 HP, Unconscious, and Prone until they regain at least 1 HP \- at which point healing works on them normally again.
+-   **Failure:** No progress; the clock keeps ticking. You may try again next round.
 
 ### **Falling**
 
@@ -185,7 +189,7 @@ Take 1d6 bludgeoning damage per 5 ft fallen, creature is forced prone unless dam
 
 ### **Food and Water**
 
-On average, a character can go three days without rations, each day after they gain a level of Exhaustion and cannot be healed until they have consumed a ration.
+On average, a character can go three days without rations, each day after they gain a level of Exhaustion and cannot be healed until they have consumed a ration. A full day of hex travel also consumes 1 ration per character (see Traveling).
 
 ### **Suffocation**
 
@@ -202,23 +206,39 @@ Temporary Hit Points, or tHP represents your temporary patching of a wound or in
 
 ---
 
-## Carrying Capacity
+## Slots
 
-**Carrying Capacity \= ((END \+ STR) × 10\) \+ 10 lbs**
+Carrying capacity is tracked in **Slots**, not weight. Check your Slots when you decide what to carry \- not on every purchase or pickup.
 
-**Encumbered (over capacity):** Speed drops to 5 ft; disadvantage on physical checks.
+**Slots \= STR \+ END**
 
-**Push/Drag/Lift:** Up to 2× carrying capacity, but speed drops to 5 ft.
+Size modifies your Slot total, rounding down:
 
-| Size | Capacity Modifier | Space \& Reach |
-| :---: | :---: | :---: |
-| Small | × 0.5 | 5 ft |
-| Medium | × 1 | 5 ft |
-| Large | × 2 | 10 ft |
-| Huge | × 4 | 15 ft |
+|  Size  | Slots Modifier | Space \& Reach |
+|:------:|:--------------:|:--------------:|
+| Small  |     × 0.5      |      5 ft      |
+| Medium |      × 1       |      5 ft      |
+| Large  |      × 2       |     10 ft      |
+|  Huge  |      × 4       |     15 ft      |
 
 **Space:** How much room a creature occupies.
 **Reach:** How far its unarmed melee reach extends (see Combat for reach-based rules like Opportunity Attacks).
+
+**Encumbered (items exceed Slots):** Speed drops to 5 ft; disadvantage on physical checks; cannot rest.
+
+**Push/Drag/Lift:** Up to 2× your Slot capacity in equivalent bulk, but speed drops to 5 ft.
+
+### **Slot Costs**
+
+- **Tiny items** (trinkets, ammunition, small tools): 3 identical or similar items per Slot. A Belt Pouch holds 3 Tiny items for free.
+- **Standard items** (most weapons, tools, clothing): 1 Slot.
+- **Heavy items** (armor, larger tools): 2 Slots.
+- **Bulky items** (tents, large furniture): 3 Slots.
+- Anything larger: 1 Slot per 10 lb-equivalent of bulk, rounded up.
+- **Coins:** 100 coins \= 1 Slot.
+- **Bundles:** Torches, Candles, Rations, and Oil flasks are each sold and carried in bundles of 3 \= 1 Slot.
+
+A **Backpack** costs no Slots itself, but is required to use your full Slot count \- without one, you can only carry STR Slots worth of gear. Worn armor and an equipped weapon or shield cost no Slots; the Slots value on an item only applies while it's carried as a spare.
 
 ---
 
@@ -256,12 +276,12 @@ Temporary Hit Points, or tHP represents your temporary patching of a wound or in
 
 Exhaustion represents accumulated injuries, stresses and trauma beyond HP loss.
 
-| Level | Effect |
-| :---- | :---- |
-| 1-2 | Manageable |
-| 3-4 | Dangerous |
-| 5-9 | Critical |
-| 10 | **Automatic Death** |
+| Level | Effect              |
+|:------|:--------------------|
+| 1-2   | Manageable          |
+| 3-4   | Dangerous           |
+| 5-9   | Critical            |
+| 10    | **Automatic Death** |
 
 **Note:** These labels describe how dangerous your condition is narratively \- the mechanical penalty scales continuously (subtract your current Exhaustion level from all rolls). No separate effect triggers at each band on its own.
 
@@ -290,11 +310,13 @@ Exhaustion represents accumulated injuries, stresses and trauma beyond HP loss.
 | **Dim Light** | Disadvantage on attacks and sight-based Perception, blurry and difficult to make out details |
 | **Darkness** | Effectively blinded without darkvision, pitch-black with no discernable features |
 
-| Source | Bright | Dim | Duration |
-| :---- | :---- | :---- | :---- |
-| Candle | 5 ft | \+5 ft | 1 hour |
-| Torch | 20 ft | \+20 ft | 2 hours |
-| Lantern | 30 ft | \+30 ft | 12 hours |
+| Source  | Bright | Dim     | Duration             |
+|:--------|:-------|:--------|:---------------------|
+| Candle  | 5 ft   | \+5 ft  | 6 turns              |
+| Torch   | 20 ft  | \+20 ft | 6 turns              |
+| Lantern | 30 ft  | \+30 ft | 36 turns / oil flask |
+
+**Turns:** A Turn is 10 minutes, the standard unit of dungeon/site exploration (see Dungeon Turns, Exploration). Light durations above are tracked on one shared party tracker, not per character. **Optional Rule:** groups who prefer real-time light tracking may instead treat these durations as 1 hour (Candle), 2 hours (Torch), and 12 hours per flask (Lantern) \- but this abandons the shared-tracker/wandering-encounter tie-in below.
 
 **Low-Light Vision:** Treat dim light as bright within range.  
 **Darkvision:** See darkness as dim light within range (grayscale only).

@@ -19,28 +19,7 @@ Your critical strikes can cripple even the hardiest opponents.
 You can flow your weapon through multiple foes in one great swing.
 
 **Prerequisites:** STR 5+, \+3 ranks in Two-Handed Blades, Polearms or Axes & Hammers  
-**Benefit:** When you hit with a two-handed melee weapon, you may immediately make one additional attack against a different creature within reach. The second attack is made at disadvantage. You cannot move until the start of your next turn. You can only use this once per turn.  
-**Special:** This is the first feat in the Sweeping Strike chain.
-
----
-
-### **Improved Sweeping Strike**
-
-You've mastered the art of letting your blade's momentum carry through multiple targets.
-
-**Prerequisites:** Sweeping Strike, STR 6+, \+5 ranks in Two-Handed Blades, Polearms or Axes & Hammers  
-**Benefit:** When you use Sweeping Strike, the second attack's disadvantage is replaced by a flat \-3 penalty to hit instead. You still cannot move until the start of your next turn.  
-**Special:** This is part of the Sweeping Strike chain.
-
----
-
-### **Power Attack**
-
-You sacrifice accuracy for devastating power.
-
-**Prerequisites:** STR 4+, \+3 ranks in melee weapon Skill  
-**Benefit:** Before making an attack roll with a melee weapon, you may choose to take disadvantage on the attack roll. If the attack hits, add \+5 to the damage roll. You must declare a Power Attack before rolling the attack (cannot decide after seeing the result) and cannot make another weapon attack this turn.  
-**Special:** This is part of the Power Attack chain.
+**Benefit:** When you hit with a two-handed melee weapon, you may immediately make one additional attack against a different creature within reach. The second attack is made at disadvantage, or at a flat \-3 penalty instead once you have \+5 ranks in that weapon Skill. You cannot move until the start of your next turn. You can only use this once per turn.
 
 ---
 
@@ -48,18 +27,8 @@ You sacrifice accuracy for devastating power.
 
 Your attacks are even stronger, you were born to destroy.
 
-**Prerequisites:** Power Attack, STR 5+, \+4 ranks in melee weapon Skill  
-**Benefit:** Your power attack damage increases from \+5 to \+10.  
-**Special:** This is part of the Power Attack chain.
-
----
-
-### **Precise Strike**
-
-Your attacks find the gaps in armor with unerring accuracy.
-
-**Prerequisites:** REF 5+, \+3 ranks in a finesse or ranged weapon Skill  
-**Benefit:** When you make an attack with a finesse or ranged weapon, you may take a \-2 penalty to the attack roll to ignore up to 5 AR instead.
+**Prerequisites:** STR 5+, \+4 ranks in melee weapon Skill  
+**Benefit:** Your Power Attack Maneuver's damage bonus increases from \+5 to \+10.
 
 ---
 
@@ -78,59 +47,6 @@ Your attacks can knock opponents off their feet.
 
 **Prerequisites:** \+4 ranks in a melee weapon Skill, STR 7+  
 **Benefit:** Once per turn when you hit with a STR-based melee weapon, you may choose to deal an additional 1d6 damage. If you do, the target must make a STR Ward check (DC \= 5 \+ your STR \+ weapon Skill) or be knocked prone.
-
----
-
-### **Opportunist**
-
-You strike with lethal precision when enemies leave themselves exposed.
-
-**Prerequisites:** REF 5+, \+3 ranks in Stealth or \+3 ranks in Daggers & Knives  
-**Benefit:** When you deal damage with an opportunity attack, you may reroll the damage dice and choose which result to use.
-
----
-
-### **Feint**
-
-You are adept at using your guile to open your opponent up to your strikes.
-
-**Prerequisites:** \+3 in a melee weapon Skill, \+3 in Deception Skill  
-**Benefit:** As a minor action, you may make a Deception Skill check contested by your opponent's Insight, if you succeed, you gain advantage on all weapon attacks you make this turn.
-
----
-
-### **Dirty Fighting**
-
-You fight with cunning and improvisation, using your environment as a weapon.
-
-**Prerequisites:** DEX 5+ or REF 5+, \+3 ranks in a one-handed weapon skill  
-**Benefit:** While your other hand is empty, you may use a Minor Action to perform one of the following:
-
-- **Blind:** Throw dirt/sand. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or they are Blinded
-- **Trip:** Kick/sweep. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or is knocked prone
-- **Disarm:** Grab their weapon. Contested check (your weapon skill \+ STR/DEX/REF vs. their weapon skill \+ STR/DEX/REF)
-
-You can only use this once per turn.
-
----
-
-### **Improved Dirty Fighting**
-
-Your opportunistic tactics are lightning-fast.
-
-**Prerequisites:** Dirty Fighting, DEX 6+ or REF 6+, \+5 ranks in weapon skill  
-**Benefit:** Add the following options:
-
-- **Throw:** As a Minor Action throw an item, or a Thrown Weapon. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or is Stunned. Additionally, if the target failed their Ward, and you threw a Thrown Weapon, it deals damage like normal
-
----
-
-### **Savage Attacker**
-
-You strike with brutal force.
-
-**Prerequisites:** STR 6+ or REF 6+  
-**Benefit:** When you roll damage for a melee weapon attack, you may also reroll any 1s or 2s on any of the damage dice.
 
 ---
 
@@ -195,50 +111,21 @@ You are deadly with ranged weapons at close quarters.
 
 ## Defensive Combat
 
-### **Defensive Fighting**
-
-You can adopt a protective stance that makes you difficult to hit.
-
-**Prerequisites:** \+4 ranks in any melee weapon Skill  
-**Benefit:** As a Minor Action, enter a defensive stance until the start of your next turn. While in this stance, attacks against you have Disadvantage, your Parry attempts have Advantage. Your damage rolls suffer \-4 until the start of your next turn.
-
----
-
 ### **Combat Reflexes**
 
 Your reflexes are so fast you can respond to multiple threats in a single round.
 
 **Prerequisites:** DEX 6+  
-**Benefit:** You gain 1 additional Reaction per round.  
-**Special:** This is part of the Combat Reflexes chain.
-
----
-
-### **Improved Combat Reflexes**
-
-Your reflexes are talked about across the plain, you are a god among men.
-
-**Prerequisites:** Combat Reflexes, DEX 8+  
-**Benefit:** You gain 1 additional Reaction per round.  
-**Special:** This is part of the Combat Reflexes chain.
-
----
-
-### **Improved Parry**
-
-You turn defensive parries into devastating counterattacks.
-
-**Prerequisites:** \+5 ranks in a melee weapon Skill  
-**Benefit:** When you successfully parry an attack, you may immediately make one melee attack against the attacker as part of the same Reaction. You can only make one counterattack per turn from this feat, regardless of how many Reactions you have.
+**Benefit:** You gain 1 additional Reaction per round. Once you reach DEX 8+, this becomes 2 additional Reactions per round instead.
 
 ---
 
 ### **Riposte**
 
-When your enemy's attack fails, you strike back with lightning speed.
+You turn a failed enemy attack, a parried blow, or a shield block into a devastating counterattack.
 
-**Prerequisites:** \+5 ranks in Rapiers & Fencing, One-Handed Blades or Daggers & Knives  
-**Benefit:** When an enemy misses a melee weapon attack against you, you may use your Reaction to make one melee attack against them. You can only make one counterattack per turn from this feat, regardless of how many Reactions you have.
+**Prerequisites:** \+5 ranks in a melee weapon Skill or Shields Skill  
+**Benefit:** When you successfully Parry an attack, fully Block an attack, or an enemy misses a melee weapon attack against you, you may immediately make one melee attack against the attacker as part of the same Reaction. You can only make one counterattack per turn from this feat, regardless of how many Reactions you have.
 
 ---
 
@@ -269,26 +156,6 @@ Your reflexes are so honed you can pluck projectiles from the air and hurl them 
 **Prerequisites:** Deflect Missiles, REF 6+, \+5 ranks in Brawling or Acrobatics  
 **Benefit:** When you use Deflect Missiles and reduce the damage to 0, you catch the projectile instead of deflecting it. You may immediately throw it back at the attacker (or another target within 30 ft) as part of the same Reaction. Make a ranged attack using REF \+ Brawling (or Thrown Weapons if higher). On hit, deal the weapon's normal damage.  
 **Special:** This is part of the Deflect Missiles chain.
-
----
-
-## Shield Mastery
-
-### **Breakthrough**
-
-In your hands a shield is a tool to create openings in the enemy's defences.
-
-**Prerequisites:** \+5 ranks in Shields Skill  
-**Benefit:** When you successfully use your shield to block all damage from an incoming attack, you may immediately make one melee attack against the attacker as part of the same reaction. You can only make one counterattack per round from this feat, regardless of how many Reactions you have.
-
----
-
-### **Shield Wall Defense**
-
-You can use massive shields to create mobile fortifications.
-
-**Prerequisites:** \+6 ranks in Shields, STR 6+  
-**Benefit:** When wielding a Pavise Shield, you may use your Major Action to gain cover until the start of your next turn. You cannot attack or move while in this stance. Adjacent allies may use your shield as cover as well.
 
 ---
 
@@ -361,18 +228,7 @@ You excel at hit-and-run tactics.
 Your natural agility makes you faster than most.
 
 **Prerequisites:** DEX 5+  
-**Benefit:** Your movement speed increases by 10 ft.  
-**Special:** This is the first feat in the Mobility chain.
-
----
-
-### **Elusive**
-
-You move so quickly that enemies cannot track your movements.
-
-**Prerequisites:** Mobile, DEX 6+  
-**Benefit:** While wearing Medium or Light Armor, when you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of your turn.  
-**Special:** This is part of the Mobility chain.
+**Benefit:** Your movement speed increases by 10 ft. Once you reach DEX 6+, while wearing Medium or Light Armor, you also don't provoke opportunity attacks from a creature for the rest of your turn after you make a melee attack against it.
 
 ---
 

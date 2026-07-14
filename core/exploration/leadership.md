@@ -44,7 +44,7 @@ There's no hard cap on followers \- you can hire as many as you can afford and m
 ### **Sample Follower (No Full Statblock)**
 
 **Tomas, Camp Porter:**  
-*Function:* Carries up to 100 lb of gear, sets up camp, tends fire  
+*Function:* Carries up to 10 Slots of gear, sets up camp, tends fire  
 *Wage:* 5 Crown/week  
 *Notes:* Will not enter dungeons. Flees at first sign of danger. Complains about the weather.
 
@@ -129,6 +129,20 @@ Either way, the DM has final approval. Your cohort is an NPC \- they have their 
 
 ---
 
+## Payroll
+
+Instead of tracking each follower's and cohort's wage separately, track one party number.
+
+**Payroll (Crown/week) \= sum of all Follower weekly wages \+ Cohort weekly wage(s).**
+
+**Settling up:** Pay your Payroll at each settlement visit \- weeks elapsed × Payroll, in one lump sum. Don't track it between settlements.
+
+**Enforcement:** Unpaid wages already carry a \+3 Morale DC modifier (see Loyalty Modifiers, below) \- Payroll changes the bookkeeping, not the consequence. No new mechanic.
+
+A Cohort's 10% treasure share and equipment costs stay separate, event-driven expenses \- paid when treasure is split or gear is bought, not folded into the weekly Payroll number.
+
+---
+
 ## Morale & Loyalty
 
 Followers and cohorts aren't mindless automatons. They have limits.
@@ -204,7 +218,7 @@ Cohorts are characters. Their death should matter.
 - **Level:** Always 1  
 - **Combat:** None \- they flee or die  
 - **Sheet:** DM creates as needed  
-- **Upkeep:** 5-30 Crown/week depending on skill
+- **Upkeep:** Weekly wage (1-10 Crown depending on skill), added to party Payroll
 
 ### **Cohorts**
 
@@ -212,7 +226,7 @@ Cohorts are characters. Their death should matter.
 - **Level:** Your Level \- 2 (min 1\)  
 - **Combat:** Full participation  
 - **Sheet:** Player may create (DM approval)  
-- **Upkeep:** 50 Crown/month \+ equipment \+ 10% treasure share
+- **Upkeep:** Weekly wage (25 Crown), added to party Payroll \+ equipment \+ 10% treasure share (paid separately, event-driven)
 
 ### **Key Formulas**
 
@@ -222,6 +236,7 @@ Cohorts are characters. Their death should matter.
 | Cohort Level | Your Level \- 2 (min 1\) |
 | Morale Check | 1d12 \+ Leadership \+ CHA vs. DC 15 |
 | Recruitment DC | 15 ± circumstance modifiers |
+| Payroll | Sum of Follower \+ Cohort weekly wages, settled at each settlement visit |
 
 ---
 

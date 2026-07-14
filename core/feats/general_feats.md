@@ -18,7 +18,7 @@ You are remarkably hardy and difficult to kill.
 You have an exceptional memory and sense of direction.
 
 **Prerequisites:** MIND 6+  
-**Benefit:** You always know which direction is north and how many hours until sunrise/sunset. You can accurately recall anything you've seen or heard in the past month. You gain \+1 MIND (maximum 10).
+**Benefit:** You always know which direction is north and how many hours until sunrise/sunset. You can accurately recall anything you've seen or heard in the past month.
 
 ---
 
@@ -29,7 +29,7 @@ You have an exceptional memory and sense of direction.
 You are always on guard and difficult to surprise.
 
 **Prerequisites:** \+4 ranks in Perception  
-**Benefit:** You gain \+2 to initiative rolls. You have advantage on Perception checks to avoid being surprised. Hidden creatures don't gain advantage on attacks against you.
+**Benefit:** You have advantage on Perception checks to avoid being surprised, and hidden creatures don't gain advantage on attacks against you. You also have advantage on DEX Wards against effects you can see, such as traps and spells. Once you have \+6 ranks in Perception, you cannot be surprised at all while conscious and not incapacitated.
 
 ---
 
@@ -39,15 +39,6 @@ You react to combat with lightning speed.
 
 **Prerequisites:** DEX 5+  
 **Benefit:** You gain \+2 to initiative rolls. When you roll initiative, you may immediately move up to your movement speed without provoking opportunity attacks.
-
----
-
-### **Danger Sense**
-
-Your instincts warn you of danger before it strikes.
-
-**Prerequisites:** \+4 ranks in Perception  
-**Benefit:** You have advantage on DEX Wards against effects you can see, such as traps and spells. You cannot be surprised while you are conscious and not incapacitated.
 
 ---
 
@@ -117,16 +108,6 @@ Through sheer mental focus and magical energy, you can predict and evade incomin
 
 **Prerequisites:** MIND 6+  
 **Benefit:** As a Reaction when you would be targeted by an attack, you may spend 2 Mana Points to gain \+5 to your Agility against that attack. This mental enhancement lasts only for that single attack. You may use this with either Evasion or Dodging.
-
----
-
-### **Elemental Resistance**
-
-You have natural resistance to one type of elemental damage.
-
-**Prerequisites:** None  
-**Benefit:** Choose one elemental damage type (fire, cold, lightning, acid, necrotic, radiant). You have resistance to that damage type (take half damage).  
-**Special:** You may take this feat multiple times, selecting a different damage type each time.
 
 ---
 

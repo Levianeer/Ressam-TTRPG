@@ -20,18 +20,7 @@ You have learned to weave magic into your defensive techniques.
 You can channel spells through your weapon strikes.
 
 **Prerequisites:** \+4 ranks in a weapon Skill, \+4 ranks in a magic Skill  
-**Benefit:** Once per turn, when making a weapon attack, you may cast a spell (costs \+3 Mana Cost extra) with the same action. The spell must target or hit only the creature you hit with its area of effect.  
-**Special:** This is the first feat in the Spell Strike chain.
-
----
-
-### **Improved Spell Strike**
-
-Your spell strikes can channel more powerful magic.
-
-**Prerequisites:** Spell Strike, \+6 ranks in a weapon Skill, \+6 ranks in a magic Skill  
-**Benefit:** Reduces the extra Mana Cost to 2 instead of 3 for Spell Strike.  
-**Special:** This is part of the Spell Strike chain.
+**Benefit:** Once per turn, when making a weapon attack, you may cast a spell (costs \+3 Mana Cost extra, or \+2 once you have \+6 ranks in both the weapon Skill and magic Skill used) with the same action. The spell must target or hit only the creature you hit with its area of effect.
 
 ---
 

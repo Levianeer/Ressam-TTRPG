@@ -1,34 +1,18 @@
 - name: Metamagic
   blurb: These feats allow Arcane spellcasters to modify their spells in powerful ways.
   feats:
-  - name: Metamagic Initiate
+  - name: Metamagic
     flavor: You have learned to modify your spells while casting.
     prerequisites: \+4 ranks in any Arcane school, MIND 5+
     benefit: |-
-      Learn one metamagic option from the following list. You can apply this metamagic when casting scribed spells from any Arcane school you know:
+      Learn one metamagic option from the following list. You can apply this metamagic when casting scribed spells from any Arcane school you know. Once you have \+3 ranks in two Arcane schools, learn two additional options. Once you have \+6 ranks in any Arcane school and MIND 6+, the Mana Cost of all metamagics you know is reduced by 1 (minimum 1).
 
       - **Empower Spell:** When you cast a spell that deals damage, increase all damage dice by one size (d6→d8, d8→d10, d10→d12). Costs \+3 Mana.
       - **Widen Spell:** When you cast an area-of-effect spell, you may widen it to double its radius/area. Costs \+2 Mana to cast.
       - **Lengthen Spell:** When you cast a spell with a duration, you may increase it to double its max duration. Costs \+2 Mana to cast.
       - **Silent Spell:** When you cast a spell, you may make it silent. Costs \+2 Mana to cast.
     extra: []
-    special: This is the first feat in the Metamagic chain.
-  - name: Metamagic Adept
-    flavor: Your understanding of spell modification deepens.
-    prerequisites: Metamagic Initiate, \+3 ranks in two Arcane schools, MIND 5+
-    benefit: Learn two additional metamagic options from the Metamagic Initiate list.
-    extra: []
-    special: This is part of the Metamagic chain.
-    requires_feats:
-    - Metamagic Initiate
-  - name: Metamagic Mastery
-    flavor: You have perfected one metamagic technique.
-    prerequisites: Metamagic Adept, \+6 ranks in any Arcane school, MIND 6+
-    benefit: The Mana Cost of all metamagics you know have their cost reduced by 1 (minimum 1).
-    extra: []
-    special: This is part of the Metamagic chain.
-    requires_feats:
-    - Metamagic Adept
+    special: null
 - name: Arcane Specialization
   blurb: null
   feats:
@@ -41,7 +25,7 @@
   - name: Spell Penetration
     flavor: Your spells break through magical defenses with ease.
     prerequisites: \+6 ranks in any Arcane school
-    benefit: When you hit an enemy with a spell attack and cause their armor to degrade, their armor loses 1 additional AR beyond normal (2 total per hit instead of 1). Additionally you gain \+1 to all spell rolls.
+    benefit: When you hit an enemy with a spell attack and cause their armor to degrade, their armor loses 1 additional AR beyond normal (2 total per hit instead of 1).
     extra: []
     special: null
   - name: War Caster
@@ -83,12 +67,6 @@
     flavor: You can weave protective magic at a moment's notice.
     prerequisites: \+5 ranks in any Arcane school, ARC 6+
     benefit: As a Reaction when you would be targeted by an attack, you may spend 2 Mana Points to gain \+5 AR against that attack. This magical armor lasts only for that single attack.
-    extra: []
-    special: null
-  - name: Arcane Recovery
-    flavor: You can meditate to recover magical energy between battles.
-    prerequisites: \+4 ranks in Arcane Lore, MIND 6+
-    benefit: Once per Field Rest or Long Rest, during a Short Rest, you may spend 30 minutes in meditation to recover Mana Points equal to half your Arcane Lore Skill ranks (rounded down, maximum \= half your MIND score). Mana regained through Arcane Recovery can be used to scribe scrolls immediately.
     extra: []
     special: null
 - name: Elemental Magic

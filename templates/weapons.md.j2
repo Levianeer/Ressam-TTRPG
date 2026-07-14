@@ -1,26 +1,26 @@
 {% macro melee_table(block) -%}
 **{{ block.category }}** *({{ block.skill }})*
 
-| Weapon | Damage | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
 {% for w in block.weapons -%}
-| {{ w.name }} | {{ w.damage }} | {{ w.properties | proplist }} | {{ w.critical | dash }} | {{ w.cost }} | {{ w.weight }} |
+| {{ w.name }} | {{ w.damage }} | {{ w.properties | proplist }} | {{ w.critical | dash }} | {{ w.cost }} | {{ w.slots }} |
 {% endfor -%}
 {%- endmacro %}
 {% macro ranged_table(block) -%}
 **{{ block.category }}** *({{ block.skill }})*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
 {% for w in block.weapons -%}
-| {{ w.name }} | {{ w.damage }} | {{ w.range }} | {{ w.properties | proplist }} | {{ w.critical | dash }} | {{ w.cost }} | {{ w.weight }} |
+| {{ w.name }} | {{ w.damage }} | {{ w.range }} | {{ w.properties | proplist }} | {{ w.critical | dash }} | {{ w.cost }} | {{ w.slots }} |
 {% endfor -%}
 {%- endmacro %}
 {% macro ammo_table(ammo) -%}
-| Ammo Type | Cost | 1/WGT |
+| Ammo Type | Cost | Slots |
 | :---- | :---- | :---: |
 {% for a in ammo -%}
-| {{ a.name }} | {{ a.cost }} | {{ a.weight }} |
+| {{ a.name }} | {{ a.cost }} | {{ a.slots }} |
 {% endfor -%}
 {%- endmacro %}
 {% macro unarmed_table(entries) -%}
@@ -53,6 +53,8 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 - **Penetrant:** Ignores AR equal to half your ranks in that weapon's associated Skill (rounded down)
 
 - **Bypasses Block:** This attack cannot be stopped by the Block Reaction, as though it were a Critical Hit for that purpose
+
+**Carrying Slots:** A weapon in hand or in a sheath/holster you're actively wearing costs no Slots. The Slots column applies to a weapon carried as a spare. Weapons with the Two-Handed property cost a minimum of 2 Slots this way regardless of bulk.
 
 ## Criticals
 
@@ -111,7 +113,7 @@ quirks below.
 When a weapon with the firearm property is created, it may be made with more than one barrel (excluding the Hackbut and Hand Mortar).
 
 - Additional barrels add to the misfire score. Each additional barrel increases misfire by \+1. For every 2 barrels after the first, the misfire increases by an additional \+1. (Example: 2 barrels \= \+1 misfire, 4 barrels \= \+2 misfire).  
-- Each extra barrel adds **50 Crowns** to the price, and 1/2 lbs to the weight for a pistol and 1 lb to the weight for a musket or blunderbuss.  
+- Each extra barrel adds **50 Crowns** to the price. Slots are unaffected \- a multi-barreled firearm still carries at its base Slots value.
 - If a firearm has multiple barrels, each barrel requires the weapon's normal reload time. A double-barreled pistol (Reload: Major) requires 2 Major Actions to fully reload (typically over 2 turns).
 
 ### **Firearm Special Properties**

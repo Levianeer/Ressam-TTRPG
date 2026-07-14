@@ -35,6 +35,10 @@ The party pushes beyond normal limits. Add \+4 to their daily hex point allowanc
 - Most Followers or Cohorts so fatigued will press for at least one full rest day; refusal may provoke Morale checks.  
 - If ambushed, the party is surprised.
 
+### **Rations on the Road**
+
+Each full travel day consumes **1 ration per character**, on top of the Field Long Rest ration cost (see Core Rules, Food and Water). Traveling Clothes' "consume rations every 2 days instead of daily" benefit is an exception to this rule, not a separate one.
+
 ---
 
 ## Mount Stats
@@ -58,7 +62,7 @@ The party pushes beyond normal limits. Add \+4 to their daily hex point allowanc
 
 **Special Traits:**
 
-- **Beast of Burden:** Can carry 120 lbs without penalty  
+- **Beast of Burden:** Can carry 12 Slots without penalty  
 - **Sure-Footed:** Advantage on Wards against being knocked prone  
 - **Stubborn:** Disadvantage on Animal Handling checks to make it do something dangerous
 
@@ -85,7 +89,7 @@ The party pushes beyond normal limits. Add \+4 to their daily hex point allowanc
 
 **Special Traits:**
 
-- **Beast of Burden:** Can carry 120 lb without penalty  
+- **Beast of Burden:** Can carry 12 Slots without penalty  
 - **Fleet-Footed:** Can Dash as a Minor Action  
 - **Skittish:** When taking 10+ damage, must make DC 13 Animal Handling check or panic (moves randomly, rider must make DEX Ward DC 20 or fall)
 
@@ -112,7 +116,7 @@ The party pushes beyond normal limits. Add \+4 to their daily hex point allowanc
 
 **Special Traits:**
 
-- **Beast of Burden:** Can carry 150 lb without penalty  
+- **Beast of Burden:** Can carry 15 Slots without penalty  
 - **Warhorse Training:** Automatically acts on rider's initiative. Can attack without Animal Handling checks  
 - **Fearless Charge:** If the horse moves at least 30 ft in a straight line before attacking, deals an additional 2d6 damage and target must make STR Ward (DC 14\) or be knocked prone  
 - **Battle Hardened:** Advantage on Wards against fear and being startled. Only panics when reduced below half HP

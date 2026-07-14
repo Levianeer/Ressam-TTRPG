@@ -44,6 +44,44 @@ Force an enemy to drop their weapon or a held item.
 
 ---
 
+### **Power Attack**
+
+Sacrifice accuracy for devastating power.
+
+**Action:** Major (as part of a melee weapon attack)  
+**Effect:** Before making the attack roll, you may choose to take disadvantage on it. If the attack hits, add \+5 to the damage roll. You must declare this before rolling the attack (cannot decide after seeing the result), and cannot make another weapon attack this turn.
+
+---
+
+### **Precise Strike**
+
+Aim for the gaps in an opponent's armor.
+
+**Action:** Major (as part of an attack with a finesse or ranged weapon)  
+**Effect:** Before making the attack roll, you may take a \-2 penalty to it. If the attack hits, ignore up to 5 AR on that attack.
+
+---
+
+### **Feint**
+
+Use guile to open an opponent up to your strikes.
+
+**Action:** Minor  
+**Check:** Deception vs. target's Insight  
+**Success:** You gain advantage on all weapon attacks you make this turn.
+
+---
+
+### **Blind**
+
+Throw dirt, sand, or grit into an opponent's eyes.
+
+**Action:** Minor (one hand free)  
+**Check:** Target makes a DEX Ward (DC \= 5 \+ your DEX \+ weapon skill)  
+**Failure:** Target is Blinded until the end of their next turn.
+
+---
+
 ### **Grappling**
 
 Seize and restrain an opponent.
@@ -69,6 +107,15 @@ Seize and restrain an opponent.
 ---
 
 ## Defensive Maneuvers
+
+### **Defensive Stance**
+
+Adopt a protective stance that makes you difficult to hit.
+
+**Action:** Minor  
+**Effect:** Until the start of your next turn, attacks against you have Disadvantage and your Parry attempts have Advantage. Your damage rolls suffer \-4 until the start of your next turn.
+
+---
 
 ### **Dodging**
 

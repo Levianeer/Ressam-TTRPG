@@ -2,6 +2,8 @@
 
 **Three types:** Oil (base effect), Powder (modifier), Catalyst (delivery method) all of which must be contained in vials or flasks.
 
+Note: Ingredients are Tiny items \- 3 vials to a Slot.
+
 ### **Oils**
 
 - **Vital** → Healing/Stamina  
@@ -15,21 +17,25 @@
 - **Prolonging** → Increases Effect Bonus for potions with Durations: **0/+1/+2**  
 - **Stabilizing** → Increases Effect Bonus for potions with DC Wards: **0/+1/+2**
 
-### **Catalysts** (Catalysts do not have quality tiers.)
+### **Catalysts (Delivery Method)**
 
-- **Abkasp** → Instant (Potions)  
-- **Eshzera** → Explosive (Bombs)  
-- **Nat’khor** → Duration (Salves)
+Catalysts determine how the final product is used.
+
+| Catalyst |      Cost | Delivery        |
+|:---------|----------:|:----------------|
+| Abkasp   |  25 Crown | Potion (drink)  |
+| Eshzera  |  40 Crown | Bomb (thrown)   |
+| Nat'khor |  30 Crown | Salve (applied) |
 
 ### **Quality Tiers**
 
 Oils and Powders come in three qualities based on their rarity.
 
-| Tier | Effect Bonus | Cost |
-| :---- | :---: | :---- |
-| Common | \+0 | 50 Crown |
-| Uncommon | \+1 | 100 Crown |
-| Rare | \+2 | 200 Crown |
+| Tier     | Effect Bonus | Cost      |
+|:---------|:------------:|:----------|
+| Common   |     \+0      | 50 Crown  |
+| Uncommon |     \+1      | 100 Crown |
+| Rare     |     \+2      | 200 Crown |
 
 **Example:** You find a Vial of Eshzera, a Vial of Uncommon Stabilizing Powder and a Vial of Rare Vital Oil in a chest.
 
@@ -43,11 +49,11 @@ Oils and Powders come in three qualities based on their rarity.
 
 **Check:** 1d12 \+ Alchemy \+ MIND
 
-| Complexity | DC | Examples |
-| :---- | :---: | :---- |
-| Medium | 10 | Basic healing, simple poison |
-| Hard | 15 | Resistance potion, bombs |
-| Very Hard | 20 | Powerful effects, advanced toxins |
+| Complexity | DC | Examples                          |
+|:-----------|:--:|:----------------------------------|
+| Medium     | 10 | Basic healing, simple poison      |
+| Hard       | 15 | Resistance potion, bombs          |
+| Very Hard  | 20 | Powerful effects, advanced toxins |
 
 **Note:** All ingredients (excluding Catalysts) must be of the same quality.
 
@@ -60,7 +66,7 @@ Oils and Powders come in three qualities based on their rarity.
 - **Failure:** Ingredients wasted  
 - **Failure by 5+:** Explosion (1d8 damage, lose ingredients)
 
-**Note:** All potions made via Alchemy weigh 0.5 lb.  
+**Note:** All potions made via Alchemy are Tiny items \- 3 to a Slot.  
 ---
 
 ## Acquiring Ingredients

@@ -6,25 +6,25 @@ clothing:
       penalty: null
       stealth: null
       price: "10 Crown"
-      weight: "5 lb"
+      slots: "1"
     - name: Work Clothes
       ar: null
       penalty: null
       stealth: null
       price: "15 Crown"
-      weight: "8 lb"
+      slots: "2"
     - name: Travel Clothes
       ar: null
       penalty: null
       stealth: null
       price: "50 Crown"
-      weight: "11 lb"
+      slots: "2"
     - name: Fine Clothes
       ar: null
       penalty: null
       stealth: null
       price: "200 Crown"
-      weight: "9 lb"
+      slots: "2"
 
 light_armor:
   category: "LIGHT ARMOR"
@@ -34,13 +34,13 @@ light_armor:
       penalty: -1
       stealth: null
       price: "75 Crown"
-      weight: "10 lb"
+      slots: "2"
     - name: Buff Coat
       ar: 6
       penalty: -1
       stealth: null
       price: "120 Crown"
-      weight: "12 lb"
+      slots: "2"
 
 medium_armor:
   category: "MEDIUM ARMOR"
@@ -50,25 +50,25 @@ medium_armor:
       penalty: -2
       stealth: -2
       price: "150 Crown"
-      weight: "20 lb"
+      slots: "3"
     - name: Chain Mail
       ar: 11
       penalty: -3
       stealth: -3
       price: "200 Crown"
-      weight: "25 lb"
+      slots: "3"
     - name: Brigandine
       ar: 13
       penalty: -3
       stealth: -1
       price: "350 Crown"
-      weight: "20 lb"
+      slots: "3"
     - name: Breastplate
       ar: 14
       penalty: -4
       stealth: -2
       price: "700 Crown"
-      weight: "30 lb"
+      slots: "3"
 
 heavy_armor:
   category: "HEAVY ARMOR"
@@ -78,10 +78,10 @@ heavy_armor:
       penalty: -5
       stealth: -3
       price: "1,000 Crown"
-      weight: "45 lb"
+      slots: "5"
     - name: Full Plate
       ar: 16
       penalty: -5
       stealth: -4
       price: "2,000 Crown"
-      weight: "55 lb"
+      slots: "6"

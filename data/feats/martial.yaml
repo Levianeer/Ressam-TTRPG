@@ -10,35 +10,13 @@
   - name: Sweeping Strike
     flavor: You can flow your weapon through multiple foes in one great swing.
     prerequisites: STR 5+, \+3 ranks in Two-Handed Blades, Polearms or Axes & Hammers
-    benefit: When you hit with a two-handed melee weapon, you may immediately make one additional attack against a different creature within reach. The second attack is made at disadvantage. You cannot move until the start of your next turn. You can only use this once per turn.
+    benefit: When you hit with a two-handed melee weapon, you may immediately make one additional attack against a different creature within reach. The second attack is made at disadvantage, or at a flat \-3 penalty instead once you have \+5 ranks in that weapon Skill. You cannot move until the start of your next turn. You can only use this once per turn.
     extra: []
-    special: This is the first feat in the Sweeping Strike chain.
-  - name: Improved Sweeping Strike
-    flavor: You've mastered the art of letting your blade's momentum carry through multiple targets.
-    prerequisites: Sweeping Strike, STR 6+, \+5 ranks in Two-Handed Blades, Polearms or Axes & Hammers
-    benefit: When you use Sweeping Strike, the second attack's disadvantage is replaced by a flat \-3 penalty to hit instead. You still cannot move until the start of your next turn.
-    extra: []
-    special: This is part of the Sweeping Strike chain.
-    requires_feats:
-    - Sweeping Strike
-  - name: Power Attack
-    flavor: You sacrifice accuracy for devastating power.
-    prerequisites: STR 4+, \+3 ranks in melee weapon Skill
-    benefit: Before making an attack roll with a melee weapon, you may choose to take disadvantage on the attack roll. If the attack hits, add \+5 to the damage roll. You must declare a Power Attack before rolling the attack (cannot decide after seeing the result) and cannot make another weapon attack this turn.
-    extra: []
-    special: This is part of the Power Attack chain.
+    special: null
   - name: Improved Power Attack
     flavor: Your attacks are even stronger, you were born to destroy.
-    prerequisites: Power Attack, STR 5+, \+4 ranks in melee weapon Skill
-    benefit: Your power attack damage increases from \+5 to \+10.
-    extra: []
-    special: This is part of the Power Attack chain.
-    requires_feats:
-    - Power Attack
-  - name: Precise Strike
-    flavor: Your attacks find the gaps in armor with unerring accuracy.
-    prerequisites: REF 5+, \+3 ranks in a finesse or ranged weapon Skill
-    benefit: When you make an attack with a finesse or ranged weapon, you may take a \-2 penalty to the attack roll to ignore up to 5 AR instead.
+    prerequisites: STR 5+, \+4 ranks in melee weapon Skill
+    benefit: Your Power Attack Maneuver's damage bonus increases from \+5 to \+10.
     extra: []
     special: null
   - name: Armor Breaker
@@ -51,48 +29,6 @@
     flavor: Your attacks can knock opponents off their feet.
     prerequisites: \+4 ranks in a melee weapon Skill, STR 7+
     benefit: Once per turn when you hit with a STR-based melee weapon, you may choose to deal an additional 1d6 damage. If you do, the target must make a STR Ward check (DC \= 5 \+ your STR \+ weapon Skill) or be knocked prone.
-    extra: []
-    special: null
-  - name: Opportunist
-    flavor: You strike with lethal precision when enemies leave themselves exposed.
-    prerequisites: REF 5+, \+3 ranks in Stealth or \+3 ranks in Daggers & Knives
-    benefit: When you deal damage with an opportunity attack, you may reroll the damage dice and choose which result to use.
-    extra: []
-    special: null
-  - name: Feint
-    flavor: You are adept at using your guile to open your opponent up to your strikes.
-    prerequisites: \+3 in a melee weapon Skill, \+3 in Deception Skill
-    benefit: As a minor action, you may make a Deception Skill check contested by your opponent's Insight, if you succeed, you gain advantage on all weapon attacks you make this turn.
-    extra: []
-    special: null
-  - name: Dirty Fighting
-    flavor: You fight with cunning and improvisation, using your environment as a weapon.
-    prerequisites: DEX 5+ or REF 5+, \+3 ranks in a one-handed weapon skill
-    benefit: |-
-      While your other hand is empty, you may use a Minor Action to perform one of the following:
-
-      - **Blind:** Throw dirt/sand. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or they are Blinded
-      - **Trip:** Kick/sweep. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or is knocked prone
-      - **Disarm:** Grab their weapon. Contested check (your weapon skill \+ STR/DEX/REF vs. their weapon skill \+ STR/DEX/REF)
-
-      You can only use this once per turn.
-    extra: []
-    special: null
-  - name: Improved Dirty Fighting
-    flavor: Your opportunistic tactics are lightning-fast.
-    prerequisites: Dirty Fighting, DEX 6+ or REF 6+, \+5 ranks in weapon skill
-    benefit: |-
-      Add the following options:
-
-      - **Throw:** As a Minor Action throw an item, or a Thrown Weapon. Target makes a DEX Ward (DC \= 5 \+ DEX \+ weapon skill) or is Stunned. Additionally, if the target failed their Ward, and you threw a Thrown Weapon, it deals damage like normal
-    extra: []
-    special: null
-    requires_feats:
-    - Dirty Fighting
-  - name: Savage Attacker
-    flavor: You strike with brutal force.
-    prerequisites: STR 6+ or REF 6+
-    benefit: When you roll damage for a melee weapon attack, you may also reroll any 1s or 2s on any of the damage dice.
     extra: []
     special: null
   - name: Charger
@@ -141,34 +77,16 @@
 - name: Defensive Combat
   blurb: null
   feats:
-  - name: Defensive Fighting
-    flavor: You can adopt a protective stance that makes you difficult to hit.
-    prerequisites: \+4 ranks in any melee weapon Skill
-    benefit: As a Minor Action, enter a defensive stance until the start of your next turn. While in this stance, attacks against you have Disadvantage, your Parry attempts have Advantage. Your damage rolls suffer \-4 until the start of your next turn.
-    extra: []
-    special: null
   - name: Combat Reflexes
     flavor: Your reflexes are so fast you can respond to multiple threats in a single round.
     prerequisites: DEX 6+
-    benefit: You gain 1 additional Reaction per round.
-    extra: []
-    special: This is part of the Combat Reflexes chain.
-  - name: Improved Combat Reflexes
-    flavor: Your reflexes are talked about across the plain, you are a god among men.
-    prerequisites: Combat Reflexes, DEX 8+
-    benefit: You gain 1 additional Reaction per round.
-    extra: []
-    special: This is part of the Combat Reflexes chain.
-  - name: Improved Parry
-    flavor: You turn defensive parries into devastating counterattacks.
-    prerequisites: \+5 ranks in a melee weapon Skill
-    benefit: When you successfully parry an attack, you may immediately make one melee attack against the attacker as part of the same Reaction. You can only make one counterattack per turn from this feat, regardless of how many Reactions you have.
+    benefit: You gain 1 additional Reaction per round. Once you reach DEX 8+, this becomes 2 additional Reactions per round instead.
     extra: []
     special: null
   - name: Riposte
-    flavor: When your enemy's attack fails, you strike back with lightning speed.
-    prerequisites: \+5 ranks in Rapiers & Fencing, One-Handed Blades or Daggers & Knives
-    benefit: When an enemy misses a melee weapon attack against you, you may use your Reaction to make one melee attack against them. You can only make one counterattack per turn from this feat, regardless of how many Reactions you have.
+    flavor: You turn a failed enemy attack, a parried blow, or a shield block into a devastating counterattack.
+    prerequisites: \+5 ranks in a melee weapon Skill or Shields Skill
+    benefit: When you successfully Parry an attack, fully Block an attack, or an enemy misses a melee weapon attack against you, you may immediately make one melee attack against the attacker as part of the same Reaction. You can only make one counterattack per turn from this feat, regardless of how many Reactions you have.
     extra: []
     special: null
   - name: Defensive Duelist
@@ -193,21 +111,6 @@
     special: This is part of the Deflect Missiles chain.
     requires_feats:
     - Deflect Missiles
-- name: Shield Mastery
-  blurb: null
-  feats:
-  - name: Breakthrough
-    flavor: In your hands a shield is a tool to create openings in the enemy's defences.
-    prerequisites: \+5 ranks in Shields Skill
-    benefit: When you successfully use your shield to block all damage from an incoming attack, you may immediately make one melee attack against the attacker as part of the same reaction. You can only make one counterattack per round from this feat, regardless of how many Reactions you have.
-    extra: []
-    special: null
-  - name: Shield Wall Defense
-    flavor: You can use massive shields to create mobile fortifications.
-    prerequisites: \+6 ranks in Shields, STR 6+
-    benefit: When wielding a Pavise Shield, you may use your Major Action to gain cover until the start of your next turn. You cannot attack or move while in this stance. Adjacent allies may use your shield as cover as well.
-    extra: []
-    special: null
 - name: Two-Weapon Fighting
   blurb: null
   feats:
@@ -262,17 +165,9 @@
   - name: Mobile
     flavor: Your natural agility makes you faster than most.
     prerequisites: DEX 5+
-    benefit: Your movement speed increases by 10 ft.
+    benefit: Your movement speed increases by 10 ft. Once you reach DEX 6+, while wearing Medium or Light Armor, you also don't provoke opportunity attacks from a creature for the rest of your turn after you make a melee attack against it.
     extra: []
-    special: This is the first feat in the Mobility chain.
-  - name: Elusive
-    flavor: You move so quickly that enemies cannot track your movements.
-    prerequisites: Mobile, DEX 6+
-    benefit: While wearing Medium or Light Armor, when you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of your turn.
-    extra: []
-    special: This is part of the Mobility chain.
-    requires_feats:
-    - Mobile
+    special: null
 - name: Special Attacks
   blurb: null
   feats:

@@ -22,11 +22,11 @@ which case ask where (there is no existing bestiary location to default to).
 Do not skip this even on a second/third conversion in the same session -
 grep for the current line numbers, don't reuse ones from memory:
 
-- `core/core_rules.md` - HP, Wards, Skills, DC tiers, Exhaustion, Carrying Capacity
+- `core/core_rules.md` - HP, Wards, Skills, DC tiers, Exhaustion, Slots
 - `core/combat/combat.md` - Evasion, AR/damage, attack rolls, initiative, crits, conditions
 - `scripts/formulas.py` - the same formulas as pure functions (`hp`, `evasion`,
   `attack_bonus`, `damage_bonus`, `ward_dc`, `initiative_bonus`,
-  `carrying_capacity`). Prefer computing through these via
+  `slots`). Prefer computing through these via
   `.venv/bin/python -c "from scripts.formulas import *; print(...)"` over hand
   arithmetic - it's the same source of truth `balance_report.py` uses, so
   numbers stay consistent with the rest of the toolchain.

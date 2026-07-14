@@ -6,6 +6,7 @@ Armor is your primary defense against physical attacks. In Ressam, armor absorbs
 - **Penalty:** How much the armor restricts agility and spellcasting  
 - **Stealth:** How much the armor restricts Stealth rolls and checks  
 - **Durability:** Your armor's current condition (starts equal to AR, decreases when hit)
+- **Carrying Slots:** Worn armor and an equipped shield cost no Slots. The Slots column applies only to armor or a shield carried as a spare, not currently worn/equipped. A carried Pavise costs 2 Slots regardless of its bulk.
 
 ---
 
@@ -13,24 +14,24 @@ Armor is your primary defense against physical attacks. In Ressam, armor absorbs
 
 ### **Armor Table**
 
-| Armor | AR | Penalty | Stealth | Price | Weight |
+| Armor | AR | Penalty | Stealth | Price | Slots |
 | :---- | :---: | :---: | :---: | :---: | :---: |
 | **CLOTHING** |  |  |  |  |  |
-| Common Clothes | \- | \- | \- | 10 Crown | 5 lb |
-| Work Clothes | \- | \- | \- | 15 Crown | 8 lb |
-| Travel Clothes | \- | \- | \- | 50 Crown | 11 lb |
-| Fine Clothes | \- | \- | \- | 200 Crown | 9 lb |
+| Common Clothes | \- | \- | \- | 10 Crown | 1 |
+| Work Clothes | \- | \- | \- | 15 Crown | 2 |
+| Travel Clothes | \- | \- | \- | 50 Crown | 2 |
+| Fine Clothes | \- | \- | \- | 200 Crown | 2 |
 | **LIGHT ARMOR** |  |  |  |  |  |
-| Gambeson | 5 | \-1 | \- | 75 Crown | 10 lb |
-| Buff Coat | 6 | \-1 | \- | 120 Crown | 12 lb |
+| Gambeson | 5 | \-1 | \- | 75 Crown | 2 |
+| Buff Coat | 6 | \-1 | \- | 120 Crown | 2 |
 | **MEDIUM ARMOR** |  |  |  |  |  |
-| Mail Shirt | 9 | \-2 | \-2 | 150 Crown | 20 lb |
-| Chain Mail | 11 | \-3 | \-3 | 200 Crown | 25 lb |
-| Brigandine | 13 | \-3 | \-1 | 350 Crown | 20 lb |
-| Breastplate | 14 | \-4 | \-2 | 700 Crown | 30 lb |
+| Mail Shirt | 9 | \-2 | \-2 | 150 Crown | 3 |
+| Chain Mail | 11 | \-3 | \-3 | 200 Crown | 3 |
+| Brigandine | 13 | \-3 | \-1 | 350 Crown | 3 |
+| Breastplate | 14 | \-4 | \-2 | 700 Crown | 3 |
 | **HEAVY ARMOR** |  |  |  |  |  |
-| Half-Plate | 15 | \-5 | \-3 | 1,000 Crown | 45 lb |
-| Full Plate | 16 | \-5 | \-4 | 2,000 Crown | 55 lb |
+| Half-Plate | 15 | \-5 | \-3 | 1,000 Crown | 5 |
+| Full Plate | 16 | \-5 | \-4 | 2,000 Crown | 6 |
 
 ### 
 
@@ -151,7 +152,7 @@ When armor reaches 0 durability:
 
 ### **Field Repair (Armorer Skill)**
 
-Characters with the Armorer skill can repair armor outside of combat. This requires **Armorer's Tools** (25 Crown, 8 lb).
+Characters with the Armorer skill can repair armor outside of combat. This requires **Armorer's Tools** (25 Crown, 2 Slots).
 
 | Armorer Rank | Repair Capability |
 | :---: | :---- |
@@ -202,14 +203,14 @@ Shields provide active and passive defenses.
 
 ### **Shield Table**
 
-| Shield | AR Bonus | Penalty | Properties | Price | Weight |
+| Shield | AR Bonus | Penalty | Properties | Price | Slots |
 | :---- | :---: | :---: | :---: | :---: | :---: |
-| Buckler | \- | \- | \+1 Agility | 40 Crown | 3 lb |
-| Targe | \+1 | \- | \- | 60 Crown | 6 lb |
-| Rotella | \+2 | \-1 | \- | 90 Crown | 10 lb |
-| Heater Shield | \+2 | \-1 | \- | 80 Crown | 12 lb |
-| Kite Shield | \+3 | \-2 | \- | 100 Crown | 15 lb |
-| Pavise | \+4 | \-3 | Deployable, \-5 ft speed | 120 Crown | 25 lb |
+| Buckler | \- | \- | \+1 Agility | 40 Crown | 1 |
+| Targe | \+1 | \- | \- | 60 Crown | 2 |
+| Rotella | \+2 | \-1 | \- | 90 Crown | 2 |
+| Heater Shield | \+2 | \-1 | \- | 80 Crown | 2 |
+| Kite Shield | \+3 | \-2 | \- | 100 Crown | 2 |
+| Pavise | \+4 | \-3 | Deployable, \-5 ft speed | 120 Crown | 2 |
 
 ### 
 

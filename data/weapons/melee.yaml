@@ -7,19 +7,19 @@ one_handed_blades:
       properties: ["Light"]
       critical: "10-12"
       cost: "35 Crown"
-      weight: "2 lb"
+      slots: "1"
     - name: Scimitar
       damage: "1d6 Slashing"
       properties: ["Light", "Finesse"]
       critical: "10-12"
       cost: "75 Crown"
-      weight: "2 lb"
+      slots: "1"
     - name: Broadsword
       damage: "1d10 Slashing"
       properties: []
       critical: null
       cost: "85 Crown"
-      weight: "3 lb"
+      slots: "1"
 
 two_handed_blades:
   category: "TWO-HANDED BLADES"
@@ -30,25 +30,25 @@ two_handed_blades:
       properties: ["Versatile (Two-Handed 1d8 \\+ 2)"]
       critical: "11-12"
       cost: "100 Crown"
-      weight: "4 lb"
+      slots: "1"
     - name: Greatsaber
       damage: "1d6 \\+ 2 Slashing"
       properties: ["Versatile (Two-Handed 2d6)"]
       critical: null
       cost: "150 Crown"
-      weight: "5 lb"
+      slots: "1"
     - name: Greatsword
       damage: "1d12 Slashing"
       properties: ["Two-Handed"]
       critical: "11-12"
       cost: "200 Crown"
-      weight: "8 lb"
+      slots: "2"
     - name: Warblade
       damage: "1d10 \\+ 2 Slashing"
       properties: ["Two-Handed"]
       critical: null
       cost: "350 Crown"
-      weight: "9 lb"
+      slots: "2"
 
 rapiers_fencing:
   category: "RAPIERS & FENCING"
@@ -59,13 +59,13 @@ rapiers_fencing:
       properties: ["Finesse"]
       critical: "10-12"
       cost: "120 Crown"
-      weight: "2 lb"
+      slots: "1"
     - name: Estoc
       damage: "1d10 Piercing"
       properties: ["Two-Handed", "Finesse", "Penetrant"]
       critical: "10-12"
       cost: "150 Crown"
-      weight: "4 lb"
+      slots: "2"
 
 axes_hammers:
   category: "AXES & HAMMERS"
@@ -76,31 +76,31 @@ axes_hammers:
       properties: ["Versatile (Two-Handed 1d10)"]
       critical: "10-12"
       cost: "70 Crown"
-      weight: "6 lb"
+      slots: "2"
     - name: Mace
       damage: "1d8 Bludgeoning"
       properties: ["Light"]
       critical: null
       cost: "60 Crown"
-      weight: "2 lb"
+      slots: "1"
     - name: Warhammer
       damage: "1d10 Bludgeoning"
       properties: ["Two-Handed", "AR degrades by 2 instead of 1"]
       critical: "11-12"
       cost: "100 Crown"
-      weight: "5 lb"
+      slots: "2"
     - name: Club
       damage: "1d6 Bludgeoning"
       properties: []
       critical: null
       cost: "5 Crown"
-      weight: "3 lb"
+      slots: "1"
     - name: Greatclub
       damage: "2d4 Bludgeoning"
       properties: ["Two-Handed"]
       critical: null
       cost: "10 Crown"
-      weight: "8 lb"
+      slots: "2"
 
 polearms:
   category: "POLEARMS"
@@ -111,31 +111,31 @@ polearms:
       properties: ["Versatile (Two-Handed 1d8)", "Reach 10ft", "Throwable (20/40 ft)"]
       critical: null
       cost: "30 Crown"
-      weight: "4 lb"
+      slots: "1"
     - name: Pike
       damage: "1d8 Piercing"
       properties: ["Two-Handed", "Reach 15ft"]
       critical: null
       cost: "50 Crown"
-      weight: "9 lb"
+      slots: "2"
     - name: Halberd
       damage: "1d10 Slashing / Piercing"
       properties: ["Two-Handed", "Reach 10ft"]
       critical: null
       cost: "100 Crown"
-      weight: "8 lb"
+      slots: "2"
     - name: Glaive
       damage: "2d4 Slashing"
       properties: ["Two-Handed", "Reach 10ft"]
       critical: "11-12"
       cost: "95 Crown"
-      weight: "10 lb"
+      slots: "2"
     - name: Quarterstaff
       damage: "1d6 Bludgeoning"
       properties: ["Versatile (Two-Handed 2d4)"]
       critical: null
       cost: "5 Crown"
-      weight: "4 lb"
+      slots: "1"
 
 daggers_knives:
   category: "DAGGERS & KNIVES"
@@ -146,13 +146,13 @@ daggers_knives:
       properties: ["Light", "Finesse"]
       critical: "9-12"
       cost: "20 Crown"
-      weight: "1 lb"
+      slots: "1"
     - name: Knife
       damage: "1d4 Piercing"
       properties: ["Light", "Throwable (20/40 ft)"]
       critical: "10-12"
       cost: "5 Crown"
-      weight: "1 lb"
+      slots: "1"
 
 slings_whips:
   category: "SLINGS & WHIPS"
@@ -163,16 +163,16 @@ slings_whips:
       properties: ["Finesse", "Reach 10ft", "Trip"]
       critical: null
       cost: "10 Crown"
-      weight: "2 lb"
+      slots: "1"
     - name: Weighted Chain
       damage: "1d6 Bludgeoning"
       properties: ["Reach 10ft", "Can grapple at Reach"]
       critical: null
       cost: "20 Crown"
-      weight: "4 lb"
+      slots: "1"
     - name: Chain Flail
       damage: "1d8 Bludgeoning"
       properties: ["Bypasses Block"]
       critical: "11-12"
       cost: "80 Crown"
-      weight: "5 lb"
+      slots: "1"

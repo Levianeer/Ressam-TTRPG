@@ -277,9 +277,9 @@
         <div class="note">+1d12 when rolled</div>
       </div>
       <div class="stat-box">
-        <div class="label">Carry Capacity</div>
-        <div class="value"><span class="computed" id="out-carryCurrent">0</span> / <span class="computed" id="out-carryMax">10</span> lb</div>
-        <div class="note">Current load auto-sums Equipment tab weights</div>
+        <div class="label">Slots</div>
+        <div class="value"><span class="computed" id="out-carryCurrent">0</span> / <span class="computed" id="out-carryMax">10</span></div>
+        <div class="note">Current load auto-sums Equipment tab Slots (worn armor/clothes, equipped shields/weapons excluded)</div>
       </div>
       <div class="stat-box">
         <div class="label">Block Bonus (Maneuver)</div>
@@ -323,7 +323,7 @@
     <h2>Armor</h2>
     <p class="note">Check "Worn" for the armor piece(s) currently equipped - only worn armor contributes to AR / Armor Penalty above. AR is your armor's Durability: it starts equal to Max AR and drops by 1 each time you're hit (armor.md); Max AR is the original value used as the repair cap.</p>
     <table class="dyn-table" data-table="armor" id="tbl-armor">
-      <thead><tr><th>Name</th><th>Type</th><th class="num-sm">AR</th><th class="num-sm">Max AR</th><th class="num-sm">Penalty</th><th class="num-sm">Stealth</th><th class="num-sm">Weight</th><th>Worn</th><th></th></tr></thead>
+      <thead><tr><th>Name</th><th>Type</th><th class="num-sm">AR</th><th class="num-sm">Max AR</th><th class="num-sm">Penalty</th><th class="num-sm">Stealth</th><th class="num-sm">Slots</th><th>Worn</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
     <button type="button" class="row-add" data-add-target="armor">+ Add Armor</button>
@@ -335,7 +335,7 @@
         <td><input type="number" data-col="maxAr" class="num-sm" value="0" title="Original AR - the repair cap"></td>
         <td><input type="number" data-col="penalty" class="num-sm" value="0" title="Enter as a positive magnitude"></td>
         <td><input type="number" data-col="stealth" class="num-sm" value="0"></td>
-        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
         <td style="text-align:center"><input type="checkbox" data-col="worn"></td>
         <td><button type="button" class="row-remove">&times;</button></td>
       </tr>
@@ -346,7 +346,7 @@
     <h2>Shields</h2>
     <p class="note">AR Bonus only applies when actively Blocking (a Reaction, maneuvers.md/armor.md) and is shown separately on Overview, not added into your standing AR. Agility Bonus is a passive skill bonus (e.g. Buckler's \+2 Agility) that always applies while the shield is Equipped, feeding into Evasion and Dodge on Overview.</p>
     <table class="dyn-table" data-table="shields" id="tbl-shields">
-      <thead><tr><th>Name</th><th class="num-sm">AR Bonus</th><th class="num-sm">Agility Bonus</th><th class="num-sm">Penalty</th><th class="num-sm">Weight</th><th>Equipped</th><th></th></tr></thead>
+      <thead><tr><th>Name</th><th class="num-sm">AR Bonus</th><th class="num-sm">Agility Bonus</th><th class="num-sm">Penalty</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
     <button type="button" class="row-add" data-add-target="shields">+ Add Shield</button>
@@ -356,7 +356,7 @@
         <td><input type="number" data-col="arbonus" class="num-sm" value="0" title="Added to AR only while actively Blocking"></td>
         <td><input type="number" data-col="agilityBonus" class="num-sm" value="0" title="Passive bonus to Agility skill, e.g. Buckler +2 - affects Evasion and Dodge whenever equipped"></td>
         <td><input type="number" data-col="penalty" class="num-sm" value="0"></td>
-        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
         <td style="text-align:center"><input type="checkbox" data-col="equipped"></td>
         <td><button type="button" class="row-remove">&times;</button></td>
       </tr>
@@ -365,9 +365,9 @@
 
   <div class="card">
     <h2>Weapons</h2>
-    <p class="note">Pick the skill used to attack with each weapon - Attack Bonus (skill Total + governing Attribute) computes automatically. Trained: the Attribute only applies if that skill has 1+ Base ranks.</p>
+    <p class="note">Pick the skill used to attack with each weapon - Attack Bonus (skill Total + governing Attribute) computes automatically. Trained: the Attribute only applies if that skill has 1+ Base ranks. Check "Equipped" for weapons you're wielding - like worn armor/shields, equipped weapons don't count towards Slots.</p>
     <table class="dyn-table" data-table="weapons" id="tbl-weapons">
-      <thead><tr><th>Name</th><th>Skill</th><th class="num-sm">Atk Bonus</th><th>Damage</th><th>Range</th><th>Properties</th><th class="num-sm">Crit Range</th><th class="num-sm">Weight</th><th></th></tr></thead>
+      <thead><tr><th>Name</th><th>Skill</th><th class="num-sm">Atk Bonus</th><th>Damage</th><th>Range</th><th>Properties</th><th class="num-sm">Crit Range</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
     <button type="button" class="row-add" data-add-target="weapons">+ Add Weapon</button>
@@ -397,7 +397,8 @@
         <td><input type="text" data-col="range" placeholder="Melee"></td>
         <td><input type="text" data-col="properties"></td>
         <td><input type="number" data-col="critRange" class="num-sm" min="9" max="12" value="12" title="Crits on this value through 12 (Natural 12 by default; some weapons expand it to 11-12, 10-12, or 9-12)"></td>
-        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
+        <td style="text-align:center"><input type="checkbox" data-col="equipped"></td>
         <td><button type="button" class="row-remove">&times;</button></td>
       </tr>
     </template>
@@ -406,7 +407,7 @@
   <div class="card">
     <h2>Clothes</h2>
     <table class="dyn-table" data-table="clothes" id="tbl-clothes">
-      <thead><tr><th>Name</th><th class="num-sm">Unlocked Lv.</th><th>Type</th><th>Worn</th><th class="num-sm">Cost</th><th class="num-sm">Weight</th><th>Benefits</th><th></th></tr></thead>
+      <thead><tr><th>Name</th><th class="num-sm">Unlocked Lv.</th><th>Type</th><th>Worn</th><th class="num-sm">Cost</th><th class="num-sm">Slots</th><th>Benefits</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
     <button type="button" class="row-add" data-add-target="clothes">+ Add Clothing</button>
@@ -417,7 +418,7 @@
         <td><input type="text" data-col="type"></td>
         <td style="text-align:center"><input type="checkbox" data-col="worn"></td>
         <td><input type="text" data-col="cost" class="num-sm"></td>
-        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
         <td><input type="text" data-col="benefits"></td>
         <td><button type="button" class="row-remove">&times;</button></td>
       </tr>
@@ -427,7 +428,7 @@
   <div class="card">
     <h2>Backpack Items</h2>
     <table class="dyn-table" data-table="backpack" id="tbl-backpack">
-      <thead><tr><th>Name</th><th class="num-sm">Qty</th><th class="num-sm">Weight (ea.)</th><th>Description</th><th></th></tr></thead>
+      <thead><tr><th>Name</th><th class="num-sm">Qty</th><th class="num-sm">Slots</th><th>Description</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
     <button type="button" class="row-add" data-add-target="backpack">+ Add Item</button>
@@ -435,7 +436,7 @@
       <tr data-row>
         <td><input type="text" data-col="name"></td>
         <td><input type="number" data-col="qty" class="num-sm" value="1"></td>
-        <td><input type="number" data-col="weight" class="num-sm" step="0.1" value="0"></td>
+        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
         <td><input type="text" data-col="description"></td>
         <td><button type="button" class="row-remove">&times;</button></td>
       </tr>
@@ -866,7 +867,7 @@
     var hpMax = attrTotals['END']*3 + 10 + num(document.querySelector('[name="hpBonus"]').value);
     var manaMax = attrTotals['MIND']*2 + num(document.querySelector('[name="manaBonus"]').value);
     var sizeMult = num(document.querySelector('[name="size"]').value) || 1;
-    var carryMax = ((attrTotals['END'] + attrTotals['STR'])*10 + 10) * sizeMult;
+    var carryMax = Math.floor((attrTotals['END'] + attrTotals['STR']) * sizeMult);
     var agility = skillTotals['Agility'] || 0;
     var evasion = 5 + agility + shieldAgilityBonus + attrTotals['DEX'] - armorPenalty;
     var dodge = evasion + 5;
@@ -881,13 +882,21 @@
     document.getElementById('out-maxDodges').textContent = maxDodges;
     document.getElementById('out-initiative').textContent = (initiative>=0?'+':'') + initiative;
 
-    // Current load: sum every weight column across all inventory tables
+    // Current load: sum every Slots column across all inventory tables. Worn
+    // armor/clothes and equipped shields/weapons don't count - you're
+    // wearing/wielding them, not carrying them. Backpack Slots is a flat
+    // per-line value, not multiplied by Qty.
     var carryCurrent = 0;
-    document.querySelectorAll('.dyn-table [data-col="weight"]').forEach(function(inp){
+    var EQUIP_COL_BY_TABLE = {armor:'worn', shields:'equipped', weapons:'equipped', clothes:'worn'};
+    document.querySelectorAll('.dyn-table [data-col="slots"]').forEach(function(inp){
       var row = inp.closest('[data-row]');
-      var qty = row.querySelector('[data-col="qty"]');
-      var q = qty ? num(qty.value) : 1;
-      carryCurrent += num(inp.value) * (q || 1);
+      var tbl = row.closest('.dyn-table');
+      var equipCol = EQUIP_COL_BY_TABLE[tbl ? tbl.getAttribute('data-table') : ''];
+      if (equipCol){
+        var equipInput = row.querySelector('[data-col="'+equipCol+'"]');
+        if (equipInput && equipInput.checked) return;
+      }
+      carryCurrent += num(inp.value);
     });
     var carryOut = document.getElementById('out-carryCurrent');
     carryOut.textContent = carryCurrent;

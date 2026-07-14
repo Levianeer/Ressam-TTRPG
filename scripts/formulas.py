@@ -28,11 +28,11 @@ def mana_pool(mind: int) -> int:
     return mind * 2
 
 
-def carrying_capacity(end: int, str_: int, size_multiplier: float = 1.0) -> float:
-    """Carrying Capacity = ((END + STR) x 10) + 10 lbs, x size multiplier.
-    Mirrors core_rules.md:151 (base formula) and the size table at
-    core_rules.md:157-163 (size_multiplier)."""
-    return ((end + str_) * 10 + 10) * size_multiplier
+def slots(end: int, str_: int, size_multiplier: float = 1.0) -> int:
+    """Slots = STR + END, x size multiplier, rounded down.
+    Mirrors core_rules.md:209 (base formula) and the size table at
+    core_rules.md:213-219 (size_multiplier)."""
+    return int((end + str_) * size_multiplier)
 
 
 def effective_armor_penalty(base_penalty: int, armorer_ranks: int) -> int:

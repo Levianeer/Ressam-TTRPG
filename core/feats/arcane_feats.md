@@ -6,39 +6,17 @@ These feats represent advanced study of Arcane magic and are available only to A
 
 *These feats allow Arcane spellcasters to modify their spells in powerful ways.*
 
-### **Metamagic Initiate**
+### **Metamagic**
 
 You have learned to modify your spells while casting.
 
 **Prerequisites:** \+4 ranks in any Arcane school, MIND 5+  
-**Benefit:** Learn one metamagic option from the following list. You can apply this metamagic when casting scribed spells from any Arcane school you know:
+**Benefit:** Learn one metamagic option from the following list. You can apply this metamagic when casting scribed spells from any Arcane school you know. Once you have \+3 ranks in two Arcane schools, learn two additional options. Once you have \+6 ranks in any Arcane school and MIND 6+, the Mana Cost of all metamagics you know is reduced by 1 (minimum 1).
 
 - **Empower Spell:** When you cast a spell that deals damage, increase all damage dice by one size (d6→d8, d8→d10, d10→d12). Costs \+3 Mana.
 - **Widen Spell:** When you cast an area-of-effect spell, you may widen it to double its radius/area. Costs \+2 Mana to cast.
 - **Lengthen Spell:** When you cast a spell with a duration, you may increase it to double its max duration. Costs \+2 Mana to cast.
 - **Silent Spell:** When you cast a spell, you may make it silent. Costs \+2 Mana to cast.
-
-**Special:** This is the first feat in the Metamagic chain.
-
----
-
-### **Metamagic Adept**
-
-Your understanding of spell modification deepens.
-
-**Prerequisites:** Metamagic Initiate, \+3 ranks in two Arcane schools, MIND 5+  
-**Benefit:** Learn two additional metamagic options from the Metamagic Initiate list.  
-**Special:** This is part of the Metamagic chain.
-
----
-
-### **Metamagic Mastery**
-
-You have perfected one metamagic technique.
-
-**Prerequisites:** Metamagic Adept, \+6 ranks in any Arcane school, MIND 6+  
-**Benefit:** The Mana Cost of all metamagics you know have their cost reduced by 1 (minimum 1).  
-**Special:** This is part of the Metamagic chain.
 
 ---
 
@@ -59,7 +37,7 @@ You have specialized in one school of Arcane magic.
 Your spells break through magical defenses with ease.
 
 **Prerequisites:** \+6 ranks in any Arcane school  
-**Benefit:** When you hit an enemy with a spell attack and cause their armor to degrade, their armor loses 1 additional AR beyond normal (2 total per hit instead of 1). Additionally you gain \+1 to all spell rolls.
+**Benefit:** When you hit an enemy with a spell attack and cause their armor to degrade, their armor loses 1 additional AR beyond normal (2 total per hit instead of 1).
 
 ---
 
@@ -118,15 +96,6 @@ You can weave protective magic at a moment's notice.
 
 **Prerequisites:** \+5 ranks in any Arcane school, ARC 6+  
 **Benefit:** As a Reaction when you would be targeted by an attack, you may spend 2 Mana Points to gain \+5 AR against that attack. This magical armor lasts only for that single attack.
-
----
-
-### **Arcane Recovery**
-
-You can meditate to recover magical energy between battles.
-
-**Prerequisites:** \+4 ranks in Arcane Lore, MIND 6+  
-**Benefit:** Once per Field Rest or Long Rest, during a Short Rest, you may spend 30 minutes in meditation to recover Mana Points equal to half your Arcane Lore Skill ranks (rounded down, maximum \= half your MIND score). Mana regained through Arcane Recovery can be used to scribe scrolls immediately.
 
 ---
 

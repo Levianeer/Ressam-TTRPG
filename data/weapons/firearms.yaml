@@ -8,21 +8,21 @@ pistols:
       properties: ["Misfire 1"]
       critical: null
       cost: "200 Crown"
-      weight: "2 lb"
+      slots: "1"
     - name: Snap-lock Pistol
       damage: "3d4 Piercing"
       range: "30/60 ft"
       properties: ["Misfire 3"]
       critical: null
       cost: "500 Crown"
-      weight: "2 lb"
+      slots: "1"
     - name: Wheel-lock Pistol
       damage: "3d4 Piercing"
       range: "30/60 ft"
       properties: ["Misfire 2"]
       critical: null
       cost: "800 Crown"
-      weight: "3 lb"
+      slots: "1"
 
 long_guns:
   category: "LONG GUNS"
@@ -34,21 +34,21 @@ long_guns:
       properties: ["Two-Handed", "Misfire 1"]
       critical: null
       cost: "300 Crown"
-      weight: "10 lb"
+      slots: "2"
     - name: Snap-lock Musket
       damage: "4d4 Piercing"
       range: "120/240 ft"
       properties: ["Two-Handed", "Misfire 3"]
       critical: null
       cost: "750 Crown"
-      weight: "10 lb"
+      slots: "2"
     - name: Wheel-lock Musket
       damage: "4d4 Piercing"
       range: "120/240 ft"
       properties: ["Two-Handed", "Misfire 2"]
       critical: null
       cost: "1200 Crown"
-      weight: "11 lb"
+      slots: "2"
 
 heavy_firearms:
   category: "HEAVY FIREARMS"
@@ -60,18 +60,18 @@ heavy_firearms:
       properties: ["Two-Handed", "Spread (30ft/15ft cone)", "Misfire 2"]
       critical: null
       cost: "700 Crown"
-      weight: "6 lb"
+      slots: "2"
     - name: Hand Mortar
       damage: "2d10 Piercing"
       range: "40/80 ft"
       properties: ["Two-Handed", "Explosive (20ft radius)", "Misfire 3"]
       critical: null
       cost: "1200 Crown"
-      weight: "6 lb"
+      slots: "2"
     - name: Hackbut
       damage: "6d6 Piercing"
       range: "200/400 ft"
       properties: ["Two-Handed", "Mounted", "Reload (2 Major Actions)", "Misfire 1"]
       critical: null
       cost: "1500 Crown"
-      weight: "40 lb"
+      slots: "4"

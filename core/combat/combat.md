@@ -30,7 +30,7 @@ Actions resolve highest to lowest each round.
 - **Per Round:** Refreshes at the start of your *next* turn  
 - **Reactions:** Usable on anyone's turn
 - **Drawing multiple weapons:** As a single Object Interaction, you may draw any number of weapons at once, provided you have a free hand for each one.
-- **Reactions are a single shared pool:** Dodge, Block, Parry, and Opportunity Attacks all draw from the same 1 Reaction/round above \- and so does every other Reaction-based Feat, spell, or Maneuver you have (Riposte, Deflect Missiles, Ward of Faith, Dominating Stare, and the like). They compete for your one Reaction, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes, Improved Combat Reflexes) increases this pool.
+- **Reactions are a single shared pool:** Dodge, Block, Parry, and Opportunity Attacks all draw from the same 1 Reaction/round above \- and so does every other Reaction-based Feat, spell, or Maneuver you have (Riposte, Deflect Missiles, Ward of Faith, Dominating Stare, and the like). They compete for your one Reaction, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
 
 ---
 
@@ -204,20 +204,3 @@ Conditions can be applied by numerous different sources and in a multitude of wa
 | **Silenced** | Can't speak or cast spells. |
 | **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment. |
 | **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it automatically hit, and any melee hit is a critical hit. |
-
----
-
-## Mythic Actions
-
-Mythic creatures \- campaign-defining bosses and other singular threats \- act on a different rhythm than player characters.
-
-**Mythic Action:** A Mythic creature takes one Mythic Action immediately after the turn of each player character, not just once per round. With a 4-player party, that's 4 Mythic Action opportunities per round.
-
-**Repetition:** Most individual Mythic Actions can only be chosen once per round, even though multiple opportunities occur that round. Some, such as basic attacks and Mythical Resistance, are exempt from that restriction and can be chosen at every opportunity if needed.
-
-### **Mythical Resistance**
-
-A Mythic creature may choose one condition, spell, or other ongoing effect currently affecting it and roll 1d12. On a 6 or higher, the chosen effect ends immediately.
-
-- This targets an ongoing effect \- a condition, a channeled spell's grip on it, a duration-based ensnarement, and so on \- not a single instantaneous resolution that has already fully resolved and left nothing behind.
-- A Mythic creature can use this Mythic Action even if it would otherwise be unable to take actions, even if another creature currently controls its actions, and even if a spell or effect has altered its game statistics.

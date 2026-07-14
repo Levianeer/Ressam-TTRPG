@@ -10,24 +10,22 @@ The world uses three major currencies, each dominant in different regions.
 
 ### **Currency Types**
 
-| Currency | Subdivision | Primary Region |
-| :---- | :---- | :---- |
-| **Crown** | 100 Scales \= 1 Crown | Tor’Az Triumvirate, accepted almost everywhere |
-| **Renos** | 100 Ferrins \= 1 Renos | Holy Reino Empire and its many vassal states |
-| **Scrips** |  \-  | Tagarian Coalition and their many frontier colonies |
-
-### 
+| Currency   | Subdivision            | Primary Region                                      |
+|:-----------|:-----------------------|:----------------------------------------------------|
+| **Crown**  | 100 Scales \= 1 Crown  | Tor’Az Triumvirate, accepted almost everywhere      |
+| **Renos**  | 100 Ferrins \= 1 Renos | Holy Reino Empire and its many vassal states        |
+| **Scrips** | \-                     | Tagarian Coalition and their many frontier colonies |
 
 ### **Exchange Rates**
 
-| From | To | Rate |
-| :---: | :---: | :---: |
-| 1 Crown | Renos | 1.5 |
-| 1 Crown | Scrips | 2 |
-| 1 Renos | Crown | 0.67 |
-| 1 Renos | Scrips | 1.33 |
-| 1 Scrips | Crown | 0.5 |
-| 1 Scrips | Renos | 0.75 |
+|   From   |   To   | Rate |
+|:--------:|:------:|:----:|
+| 1 Crown  | Renos  | 1.5  |
+| 1 Crown  | Scrips |  2   |
+| 1 Renos  | Crown  | 0.67 |
+| 1 Renos  | Scrips | 1.33 |
+| 1 Scrips | Crown  | 0.5  |
+| 1 Scrips | Renos  | 0.75 |
 
 **Example:** A merchant offers 150 Renos for an item. In Crowns, that's 100 Crown (150 × 0.67).
 
@@ -43,50 +41,52 @@ The world uses three major currencies, each dominant in different regions.
 
 Essential equipment for travel, exploration, and survival.
 
+**How Slots Work:** Your carrying capacity is Slots (STR \+ END, see Core Rules), checked when you decide what to carry \- not on every purchase. Tiny items (small tools, single-use trinkets) pack 3 to a Slot; a Belt Pouch holds 3 Tiny items for free. Standard gear costs 1 Slot, Heavy gear 2, Bulky gear 3, and coins are 100 per Slot. Torches, Candles, Rations, and Oil flasks are all sold and carried in bundles of 3 that cost 1 Slot per bundle.
+
 ### **Travel & Shelter**
 
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Backpack | 25 Crown | 5 lb | Required to carry anything. |
-| Belt Pouch | 5 Crown | 0.5 lb | Holds coins, small items |
-| Bedroll | 8 Crown | 5 lb | Sleeping without one: \-2 to rest recovery HP |
-| Tent, 1-person | 10 Crown | 20 lb | Shelter from weather |
-| Tent, 4-person | 50 Crown | 50 lb | “ |
-| Waterskin | 2 Crown | 1 lb (full) |  \-  |
-| Rations, 1 day | 10 Scales | 1 lb | Dried meats, hardtack, cheese, daily intake of water |
+| Item                  |   Cost   | Slots |                     Notes                     |
+|:----------------------|:--------:|:-----:|:---------------------------------------------:|
+| Backpack              | 25 Crown |   0   | Required to use your full Slot count \(without one, carry only STR Slots\) |
+| Belt Pouch            | 5 Crown  |   1   |           Holds 3 Tiny items free            |
+| Bedroll               | 8 Crown  |   1   | Sleeping without one: \-2 to rest recovery HP |
+| Tent, 1-person        | 10 Crown |   3   |             Shelter from weather              |
+| Tent, 4-person        | 50 Crown |   5   |                       “                       |
+| Waterskin             | 2 Crown  |   1   |                      \-                       |
+| Rations (bundle of 3) | 60 Scale |   1   |        Includes daily intake of water         |
 
 *Saddlebags and animal feed are listed under Mounts & Related Gear.*
 
-### 
-
 ### **Light Sources**
 
-| Item                 | Cost | Weight |         Duration          | Radius (bright/dim) |
-|:---------------------| :---: | :---: |:-------------------------:|:-------------------:|
-| Candle               | 1 Scale |  \-  | 1 hour / Fuel for lantern |       5/5 ft        |
-| Torch (bundle of 5\) | 1 Crown | 5 lb |        1 hour each        |      15/15 ft       |
-| Lantern              | 10 Crown | 2 lb |     1 hours / candle      |      20/20 ft       |
-| Oil flask            | 5 Crown | 1 lb |     Fuel for lantern      |         \-          |
+| Item                  |   Cost   | Slots |      Duration      | Radius (bright/dim) |
+|:----------------------|:--------:|:-----:|:-------------------:|:--------------------:|
+| Candle (bundle of 3\) | 3 Scale  |   1   |    6 turns each     |        5/5 ft        |
+| Torch (bundle of 3\)  | 60 Scale |   1   |    6 turns each     |      15/15 ft        |
+| Lantern               | 10 Crown |   1   | 36 turns per flask  |      30/30 ft         |
+| Oil flask (bundle of 3\) | 15 Crown |   1   |          \-          |          \-           |
+
+**Turns:** See Core Rules (Light and Vision) and Dungeon Turns for what a Turn is and how the shared party tracker works.
 
 ### **Tools & Utility**
 
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Crowbar | 10 Crown | 5 lb | \+2 to STR checks for prying |
-| Hammer | 5 Crown | 3 lb | For construction |
-| Shovel | 6 Crown | 5 lb | Digging, excavation |
-| Pickaxe | 10 Crown | 10 lb | Mining, breaking stone |
-| Chain (10 ft) | 15 Crown | 10 lb | Holds 1,000 lb; STR Ward DC 25 to break |
-| Rope (50 ft) | 6 Crown | 10 lb | Holds 500 lb; DC 12 to climb |
-| Grappling hook | 8 Crown | 4 lb | \+2 to Athletics (climbing) when anchored |
-| Lock, simple | 10 Crown | 1 lb | DC 12 to pick |
-| Lock, superior | 50 Crown | 1 lb | DC 20 to pick |
-| Manacles | 15 Crown | 2 lb | DC 20 to escape; DC 20 to break |
-| Mirror, small steel | 8 Crown | 0.5 lb | Signaling, seeing around corners |
-| Whistle, signal | 2 Crown |  \-  | Audible 300 ft; simple codes |
-| Chalk (10 pieces) | 1 Crown |  \-  | Marking paths, writing |
-| Compass | 40 Crown |  \-  | Always know cardinal directions |
-| Map case, waterproof | 5 Crown | 1 lb | Protects documents from weather |
+| Item                |   Cost   | Slots |              Notes              |
+|:--------------------|:--------:|:-----:|:-------------------------------:|
+| Crowbar             | 10 Crown |   1   |           For prying            |
+| Hammer              | 5 Crown  |   1   |        For construction         |
+| Shovel              | 6 Crown  |   1   |       Digging, excavation       |
+| Pickaxe             | 10 Crown |   2   |     Mining, breaking stone      |
+| Chain (10 ft)       | 15 Crown |   2   |     STR Ward DC 25 to break     |
+| Rope (50 ft)        | 6 Crown  |   2   |         DC 12 to climb          |
+| Grappling hook      | 8 Crown  |   1   |               \-                |
+| Lock, simple        | 10 Crown |   1   |          DC 12 to pick          |
+| Lock, superior      | 50 Crown |   1   |          DC 20 to pick          |
+| Manacles            | 15 Crown |   1   | DC 20 to escape; DC 20 to break |
+| Mirror, small steel | 8 Crown  |  1/3  |               \-                |
+| Whistle, signal     | 2 Crown  |  1/3  |         Audible 300 ft          |
+| Chalk (10 pieces)   | 1 Crown  |  1/3  |               \-                |
+| Compass             | 40 Crown |  1/3  |               \-                |
+| Wooden stakes (10)  | 3 Crown  |   2   |               \-                |
 
 ---
 
@@ -96,30 +96,20 @@ Tactical equipment for combat preparation and area control. These items give mar
 
 ### **Area Denial**
 
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Caltrops (bag of 20\) | 5 Crown | 2 lb | Covers 5×5 ft; Ward DEX DC 15 or 1d4 damage \+ half speed |
-| Bear trap | 25 Crown | 10 lb | DC 20 DEX or 2d6 damage \+ restrained |
-
-### 
+| Item                  |   Cost   | Slots |                           Notes                           |
+|:----------------------|:--------:|:-----:|:-----------------------------------------------------------:|
+| Caltrops (bag of 20\) | 5 Crown  |   1   | Covers 5×5 ft; Ward DEX DC 15 or 1d4 damage \+ half speed |
+| Bear trap             | 25 Crown |   2   |           DC 20 DEX or 2d6 damage \+ restrained           |
 
 ### **Thrown Items**
 
 For thrown bombs (smoke, fire, acid, flash, etc.), see the **Alchemy** chapter's Reactive/Protective/Sensory Oil recipes - they cover the same niches with scaling quality tiers instead of a fixed, non-scaling price. Holy water is the one thrown item alchemy can't replicate.
 
-| Item | Cost | Weight | Range | Notes |
-| :---- | :---: | :---: | :---: | :---: |
-| Holy water | 25 Crown | 1 lb | 20/40 ft | 2d6 radiant to undead/fiends |
+| Item       |   Cost   | Slots |  Range   |            Notes             |
+|:-----------|:--------:|:-----:|:--------:|:----------------------------:|
+| Holy water | 25 Crown |   1   | 20/40 ft | 2d6 radiant to undead/fiends |
 
 **Using Thrown Items:** Ranged attack using REF \+ Athletics (or Thrown Weapons skill if you have it).
-
-### **Barricade & Cover**
-
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Wooden stakes (10) | 3 Crown | 10 lb | Can create difficult terrain, tie ropes or kill Strygs |
-| Portable barricade | 35 Crown | 25 lb | Half cover when deployed; 1 minute to set up |
-| Pavise shield | 120 Crown | 25 lb | Cover when deployed; see Shields section |
 
 ---
 
@@ -127,15 +117,13 @@ For thrown bombs (smoke, fire, acid, flash, etc.), see the **Alchemy** chapter's
 
 Equipment for treating injuries and stabilizing the dying.
 
-| Item           |   Cost    | Weight |                   Notes                   |
-|:---------------|:---------:|:------:|:-----------------------------------------:|
-| Healer's kit   | 20 Crown  |  5 lb  |    Advantage on stabilization; 10 uses    |
-| Bandages (5)   |  5 Crown  | 0.5 lb |               Gain 1d4 tHP                |
-| Surgical tools | 25 Crown  |  3 lb  | Required for surgery; \+2 to Medical Lore |
-| Antitoxin      | 50 Crown  | 0.5 lb |      Removes the Posioned Condition       |
-| Healing potion | 100 Crown | 0.5 lb |                Restore 4d4                |
-
-### 
+| Item           |   Cost    | Slots |                   Notes                   |
+|:---------------|:---------:|:-----:|:-----------------------------------------:|
+| Healer's kit   |  20 Crown |   1   |    Advantage on stabilization; 10 uses    |
+| Bandages (5)   |  5 Crown  |  1/3  |               Gain 1d4 tHP                |
+| Surgical tools |  25 Crown |   1   | Required for surgery; \+2 to Medical Lore |
+| Antitoxin      |  50 Crown |  1/3  |      Removes the Poisoned Condition       |
+| Healing potion | 100 Crown |  1/3  |                Restore 4d4                |
 
 ### **Healing Potion Rules**
 
@@ -153,20 +141,18 @@ Equipment for treating injuries and stabilizing the dying.
 
 Material components required for Arcane casting.
 
-| Item                         | Cost | Weight | Notes |
-|:-----------------------------| :---: | :---: | :---: |
-| Arcane Parchment (50 sheets) | 25 Crown | 0.5 lb | Standard writing surface; waterproof |
-| Spellbook (blank book)       | 50 Crown | 3 lb | 100 pages, leather bound; the physical spellbook Arcane casters can lose (Losing Your Spellbook, magic_overview.md) |
-
-### 
+| Item                         |   Cost   | Slots |    Notes   |
+|:-----------------------------|:--------:|:-----:|:----------:|
+| Arcane Parchment (50 sheets) | 25 Crown |  1/3  |     \-     |
+| Spellbook (blank book)       | 50 Crown |   1   | Waterproof |
 
 ### **Religious Texts**
 
-| Item | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Religious codex | 100 Crown | 3 lb | Required for Divine casters |
-| Holy symbol | 5 Crown |  \-  | Required for Divine casters; focus for prayers |
-| Incense (10 sticks) | 5 Crown |  \-  | Ritual offering; can satisfy Deep Devotion's sacrifice requirement (magic_overview.md) |
+| Item                |   Cost    | Slots |                                          Notes                                         |
+|:--------------------|:---------:|:-----:|:--------------------------------------------------------------------------------------:|
+| Religious codex     | 100 Crown |   1   |                               Required for Divine casters                              |
+| Holy symbol         |  5 Crown  |  1/3  |                     Required for Divine casters; focus for prayers                     |
+| Incense (10 sticks) |  5 Crown  |  1/3  | Ritual offering; can satisfy Deep Devotion's sacrifice requirement (magic_overview.md) |
 
 **Spell Supply Notes:**
 
@@ -180,14 +166,12 @@ Material components required for Arcane casting.
 
 What you wear communicates status, profession, and intent. The right clothing opens doors; the wrong clothing closes them.
 
-| Type | Cost | Weight | Benefit |
-| :---- | :---: | :---: | :---: |
-| Common clothes | 10 Crown | 5 lb |  \-  |
-| Work clothes | 15 Crown | 8 lb | \+2 to downtime labor income |
-| Traveling clothes | 50 Crown | 11 lb | Consume rations every 2 days instead of daily |
-| Fine clothes | 200 Crown | 9 lb | \+2 to CHA-based skill checks |
-
-### 
+| Type              |   Cost    | Slots |                    Benefit                    |
+|:------------------|:---------:|:-----:|:-----------------------------------------------:|
+| Common clothes    | 10 Crown  |   1   |                      \-                       |
+| Work clothes      | 15 Crown  |   2   |         \+2 to downtime labor income          |
+| Traveling clothes | 50 Crown  |   2   | Consume rations every 2 days instead of daily |
+| Fine clothes      | 200 Crown |   2   |         \+2 to CHA-based skill checks         |
 
 ### **Clothing Guidelines**
 
@@ -205,16 +189,15 @@ A noble in common clothes draws suspicion. A peasant in fine clothes draws more.
 
 Specialized equipment for crafting and professional work. When a career grants “Artisan's Tools”, choose one type.
 
-| Tool Set | Cost | Weight | Primary Skill |
-| :---- | :---: | :---: | :---: |
-| Alchemist's supplies | 30 Crown | 8 lb | Alchemy |
-| Armorer's tools | 18 Crown | 12 lb | Armorer |
-| Blacksmith's tools | 20 Crown | 15 lb | Crafting (metal) |
-| Calligrapher's supplies | 15 Crown | 2 lb | Historic Lore, Deception |
-| Carpenter's tools | 15 Crown | 12 lb | Crafting (wood) |
-| Jeweler's tools | 25 Crown | 3 lb | Crafting (fine), Identify |
-
-### 
+| Tool Set                |   Cost   | Slots |       Primary Skill      |
+|:------------------------|:--------:|:-----:|:------------------------:|
+| Alchemist's supplies    | 30 Crown |   2   |          Alchemy         |
+| Armorer's tools         | 18 Crown |   2   |          Armorer         |
+| Calligrapher's supplies | 15 Crown |   1   | Historic Lore, Deception |
+| Blacksmith's tools      | 20 Crown |   2   |     Crafting (metal)     |
+| Carpenter's tools       | 15 Crown |   2   |      Crafting (wood)     |
+| Jeweler's tools         | 25 Crown |   1   | Crafting (fine), Identify |
+| Thieves' tools          | 30 Crown |   1   | Required for Lockpicking |
 
 ### **Tool Proficiency**
 
@@ -229,122 +212,63 @@ Attempting skilled work **without proper tools:**
 
 ---
 
-## Professional Equipment
-
-Specialized gear for specific professions and activities. When a career grants “Professional Equipment”, choose one type.
-
-| Item | Cost | Weight | Use |
-| :---- | :---: | :---: | :---: |
-| Fishing net | 8 Crown | 10 lb | Catch fish or small game |
-| Mining tools | 12 Crown | 12 lb | Pick, helmet, candle; excavation |
-| Navigator's tools | 30 Crown | 3 lb | Sextant, charts; \+2 to Survival at sea |
-| Merchant's ledger | 10 Crown | 2 lb | Track transactions; \+1 to Persuasion |
-| Disguise kit | 25 Crown | 3 lb | Wigs, makeup, prosthetics; Deception |
-
----
-
-## Tools of Deception
-
-Equipment for criminals, spies, and those who work outside the law. When a career grants “Tools of Deception”, choose one type.
-
-| Item | Cost | Weight |                    Notes                     |
-| :---- | :---: |:------:|:--------------------------------------------:|
-| Thieves' tools | 30 Crown |  1 lb  |       Required for Lockpicking checks        |
-| Loaded dice | 5 Crown |   \-   | \+2 to Deception (gambling); DC 15 to detect |
-| Marked cards | 8 Crown |   \-   | \+2 to Deception (gambling); DC 15 to detect |
-| Hidden compartment (belt) | 20 Crown |  1 lb  |     Conceal 3 small items; DC 20 to find     |
-| False documentation | 25+ Crown |   \-   |     \+2 to Deception for false identity      |
-
-**False Documentation** prices vary by quality and complexity:
-
-- Simple papers (work permits, travel passes): 50 Crown  
-- Official documents (guild membership, military orders): 100 Crown  
-- Noble credentials (letters of introduction, land deeds): 500+ Crown
-
-Detection DC equals 10 \+ forger's Deception bonus.
-
----
-
 ## Mounts & Related Gear
 
-| Mount | Cost | Notes |
-| :---- | :---: | :---: |
-| Mule | 90 Crown | Hardy pack animal, stubborn and reliable (see Mount Stats, traveling.md) |
+| Mount        |   Cost    |                                   Notes                                    |
+|:-------------|:---------:|:--------------------------------------------------------------------------:|
+| Mule         | 90 Crown  |  Hardy pack animal, stubborn and reliable (see Mount Stats, traveling.md)  |
 | Riding Horse | 140 Crown | Swift travel mount, not trained for battle (see Mount Stats, traveling.md) |
-| War Horse | 800 Crown | Battle-trained destrier (see Mount Stats, traveling.md) |
+| War Horse    | 800 Crown |          Battle-trained destrier (see Mount Stats, traveling.md)           |
 
-| Tack & Harness | Cost | Weight | Notes |
-| :---- | :---: | :---: | :---: |
-| Saddle, riding | 25 Crown | 25 lb | Required for mounted combat |
-| Saddle, pack | 15 Crown | 15 lb | For mules carrying gear |
-| Saddlebags | 15 Crown | 8 lb | Holds 20 lb |
-| Bit and bridle | 5 Crown | 1 lb | Required to control mount |
-| Feed, 1 day | 5 Scales | 10 lb | Grain and fodder |
+| Tack & Harness |   Cost   | Slots |            Notes           |
+|:---------------|:--------:|:-----:|:--------------------------:|
+| Saddle, riding | 25 Crown |   3   | Required for mounted combat |
+| Saddle, bags   | 15 Crown |   2   |       Holds 4 Slots        |
+| Bit and bridle | 5 Crown  |   1   | Required to control mount  |
+
+*Feed for mounts is abstracted away \- see Stabling under Services, below, which includes feed.*
 
 ---
 
 ## Services
 
-| Service | Cost | Notes |
-| :---- | :---: | :---: |
-| **Lodging** |  |  |
-| Inn, poor | 1 Crown/night | Shared room, straw pallet |
-| Inn, common | 5 Crown/night | Private room, simple bed |
-| Inn, comfortable | 10 Crown/night | Good room, quality bedding |
-| Inn, wealthy | 50 Crown/night | Suite, attendant service |
-| **Food** |  |  |
-| Meal, poor | 25 Scales | Bread, thin soup |
-| Meal, common | 50 Scales | Stew, bread, ale |
-| Meal, fine | 2 Crown | Multiple courses, wine |
-| Ale, mug | 5 Scales |  \-  |
-| Wine, common (bottle) | 50 Scales |  \-  |
-| Wine, fine (bottle) | 5 Crown |  \-  |
-| **Other Services** |  |  |
-| Stabling | 75 Scales/night | Feed included |
-| Bath, public | 25 Scales |  \-  |
-| Bath, private | 1 Crown | Heated water |
-| Laundry | 25 Scales |  \-  |
-| Messenger, local | 50 Scales | Within city |
-| Messenger, distant | 5 Crown+ | Per day of travel |
-| Scribe services | 1 Crown/page | Copying documents |
-| Hireling, unskilled | 1 Crown/day | Labor, portering |
-| Hireling, skilled | 5 Crown/day | Specific trade work |
-| Guide, local | 3 Crown/day | City or nearby wilderness |
-| Guard, hired | 5 Crown/day | Protection; combat-capable |
-
----
-
-## Alchemical Components
-
-Ingredients for crafting potions, poisons, and alchemical items. See the **Alchemy** chapter for crafting rules and Oil/Powder types and pricing (Quality Tiers table). Catalyst pricing, unique to this list, is below.
-
-### **Catalysts (Delivery Method)**
-
-Catalysts determine how the final product is used.
-
-| Catalyst | Cost | Delivery |
-| :---- | ----: | :---- |
-| Abkasp | 25 Crown | Potion (drink) |
-| Eshzera | 40 Crown | Bomb (thrown) |
-| Nat'khor | 30 Crown | Salve (applied) |
-
-**Component Notes:**
-
-- All weights: 0.25 lb per vial  
-- Components must be stored in proper vials  
-- Cannot mix different quality tiers in one recipe  
-- Higher quality \= stronger effects (see Alchemy chapter)
+| Service               |      Cost       |           Notes            |
+|:----------------------|:---------------:|:--------------------------:|
+| **Lodging**           |                 |                            |
+| Inn, poor             |  1 Crown/night  | Shared room, straw pallet  |
+| Inn, common           |  5 Crown/night  |  Private room, simple bed  |
+| Inn, comfortable      | 10 Crown/night  | Good room, quality bedding |
+| Inn, wealthy          | 50 Crown/night  |  Suite, attendant service  |
+| Stabling              | 75 Scales/night |       Feed included        |
+| **Food**              |                 |                            |
+| Meal, poor            |    25 Scales    |      Bread, thin soup      |
+| Meal, common          |    50 Scales    |      Stew, bread, ale      |
+| Meal, fine            |     2 Crown     |   Multiple courses, wine   |
+| Ale, mug              |    5 Scales     |             \-             |
+| Wine, common (bottle) |    50 Scales    |             \-             |
+| Wine, fine (bottle)   |     5 Crown     |             \-             |
+| **Other Services**    |                 |                            |
+| Bath, public          |    25 Scales    |             \-             |
+| Bath, private         |     1 Crown     |        Heated water        |
+| Laundry               |    25 Scales    |             \-             |
+| Messenger, local      |    50 Scales    |        Within city         |
+| Messenger, distant    |    5 Crown+     |     Per day of travel      |
+| Scribe services       |  1 Crown/page   |     Copying documents      |
+| Hireling, unskilled   |   1 Crown/day   |      Labor, portering      |
+| Hireling, skilled     |   5 Crown/day   |    Specific trade work     |
+| Guide, local          |   3 Crown/day   | City or nearby wilderness  |
+| Guard, hired          |   5 Crown/day   | Protection; combat-capable |
 
 ---
 
 ## Selling Equipment
 
-| Condition | Sale Price |
-| :---- | :---: |
-| New/Excellent | 50-60% of purchase price |
-| Good/Used | 40-50% of purchase price |
-| Poor/Damaged | 20-30% of purchase price |
-| Broken | 10% or unsellable |
+| Condition     |        Sale Price        |
+|:--------------|:------------------------:|
+| New/Excellent | 60-80% of purchase price |
+| Good/Used     | 50-60% of purchase price |
+| Poor/Damaged  | 30-50% of purchase price |
+| Broken        |    20% or unsellable     |
 
 **Factors affecting price:**
 
@@ -357,20 +281,24 @@ Catalysts determine how the final product is used.
 
 ## Essential Kits
 
-Pre-assembled equipment packages for common character types.
+Pre-assembled equipment packages for common character types. Every kit bundles the same survival base \- Backpack, Bedroll, Waterskin, Rations (6 days), and Torches (3) \- with gear suited to that archetype, priced at roughly a 10% discount over buying every item piecemeal.
 
-### **Adventurer's Kit (58 Crown, 35 lb)**
+### **Adventurer's Kit (45 Crown, ~10 Slots)**
 
-Backpack, bedroll, tinderbox, torches (10), rations (7 days), waterskin, rope (50 ft), belt pouch
+Backpack, bedroll, waterskin, rations (6 days), torches (9), belt pouch, rope (50 ft)
 
-### **Healer's Kit (50 Crown, 12 lb)**
+### **Healer's Kit (125 Crown, ~8 Slots)**
 
-Healer's kit, bandages (20), splint set, antitoxin
+Backpack, bedroll, waterskin, rations (6 days), torches (3), Healer's kit, bandages (10), surgical tools, antitoxin
 
-### **Scholar's Kit (110 Crown, 12 lb)**
+### **Scholar's Kit (100 Crown, ~9 Slots)**
 
-Spellbook (blank book), Arcane Parchment (50 sheets), candles (10)
+Backpack, bedroll, waterskin, rations (6 days), torches (3), Spellbook (blank book), Arcane Parchment (50 sheets), candles (9)
 
-### **Infiltrator's Kit (90 Crown, 8 lb)**
+### **Devotee's Kit (130 Crown, ~7 Slots)**
 
-Thieves' tools, dark clothing, grappling hook, rope (50 ft), caltrops, whistle
+Backpack, bedroll, waterskin, rations (6 days), torches (3), Religious codex, Holy symbol, Incense (10 sticks)
+
+### **Infiltrator's Kit (80 Crown, ~10 Slots)**
+
+Backpack, bedroll, waterskin, rations (6 days), torches (3), Thieves' tools, grappling hook, rope (50 ft), caltrops, whistle

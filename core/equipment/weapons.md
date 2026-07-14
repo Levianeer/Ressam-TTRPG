@@ -20,6 +20,8 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Bypasses Block:** This attack cannot be stopped by the Block Reaction, as though it were a Critical Hit for that purpose
 
+**Carrying Slots:** A weapon in hand or in a sheath/holster you're actively wearing costs no Slots. The Slots column applies to a weapon carried as a spare. Weapons with the Two-Handed property cost a minimum of 2 Slots this way regardless of bulk.
+
 ## Criticals
 
 The entry in this column notes how the weapon is used with the rules for critical hits. When your character scores a critical hit.
@@ -77,7 +79,7 @@ quirks below.
 When a weapon with the firearm property is created, it may be made with more than one barrel (excluding the Hackbut and Hand Mortar).
 
 - Additional barrels add to the misfire score. Each additional barrel increases misfire by \+1. For every 2 barrels after the first, the misfire increases by an additional \+1. (Example: 2 barrels \= \+1 misfire, 4 barrels \= \+2 misfire).  
-- Each extra barrel adds **50 Crowns** to the price, and 1/2 lbs to the weight for a pistol and 1 lb to the weight for a musket or blunderbuss.  
+- Each extra barrel adds **50 Crowns** to the price. Slots are unaffected \- a multi-barreled firearm still carries at its base Slots value.
 - If a firearm has multiple barrels, each barrel requires the weapon's normal reload time. A double-barreled pistol (Reload: Major) requires 2 Major Actions to fully reload (typically over 2 turns).
 
 ### **Firearm Special Properties**
@@ -99,64 +101,64 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 **ONE-HANDED BLADES** *(One-Handed Blades Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Shortsword | 1d6 \+ 1 Piercing | Light | 10-12 | 35 Crown | 2 lb |
-| Scimitar | 1d6 Slashing | Light, Finesse | 10-12 | 75 Crown | 2 lb |
-| Broadsword | 1d10 Slashing | \- | \- | 85 Crown | 3 lb |
+| Shortsword | 1d6 \+ 1 Piercing | Light | 10-12 | 35 Crown | 1 |
+| Scimitar | 1d6 Slashing | Light, Finesse | 10-12 | 75 Crown | 1 |
+| Broadsword | 1d10 Slashing | \- | \- | 85 Crown | 1 |
 
 **TWO-HANDED BLADES** *(Two-Handed Blades Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Longsword | 1d6 \+ 2 Slashing | Versatile (Two-Handed 1d8 \+ 2) | 11-12 | 100 Crown | 4 lb |
-| Greatsaber | 1d6 \+ 2 Slashing | Versatile (Two-Handed 2d6) | \- | 150 Crown | 5 lb |
-| Greatsword | 1d12 Slashing | Two-Handed | 11-12 | 200 Crown | 8 lb |
-| Warblade | 1d10 \+ 2 Slashing | Two-Handed | \- | 350 Crown | 9 lb |
+| Longsword | 1d6 \+ 2 Slashing | Versatile (Two-Handed 1d8 \+ 2) | 11-12 | 100 Crown | 1 |
+| Greatsaber | 1d6 \+ 2 Slashing | Versatile (Two-Handed 2d6) | \- | 150 Crown | 1 |
+| Greatsword | 1d12 Slashing | Two-Handed | 11-12 | 200 Crown | 2 |
+| Warblade | 1d10 \+ 2 Slashing | Two-Handed | \- | 350 Crown | 2 |
 
 **RAPIERS & FENCING** *(Rapiers & Fencing Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Rapier | 1d8 Piercing | Finesse | 10-12 | 120 Crown | 2 lb |
-| Estoc | 1d10 Piercing | Two-Handed, Finesse, Penetrant | 10-12 | 150 Crown | 4 lb |
+| Rapier | 1d8 Piercing | Finesse | 10-12 | 120 Crown | 1 |
+| Estoc | 1d10 Piercing | Two-Handed, Finesse, Penetrant | 10-12 | 150 Crown | 2 |
 
 **AXES & HAMMERS** *(Axes & Hammers Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Battle Axe | 1d8 Slashing | Versatile (Two-Handed 1d10) | 10-12 | 70 Crown | 6 lb |
-| Mace | 1d8 Bludgeoning | Light | \- | 60 Crown | 2 lb |
-| Warhammer | 1d10 Bludgeoning | Two-Handed, AR degrades by 2 instead of 1 | 11-12 | 100 Crown | 5 lb |
-| Club | 1d6 Bludgeoning | \- | \- | 5 Crown | 3 lb |
-| Greatclub | 2d4 Bludgeoning | Two-Handed | \- | 10 Crown | 8 lb |
+| Battle Axe | 1d8 Slashing | Versatile (Two-Handed 1d10) | 10-12 | 70 Crown | 2 |
+| Mace | 1d8 Bludgeoning | Light | \- | 60 Crown | 1 |
+| Warhammer | 1d10 Bludgeoning | Two-Handed, AR degrades by 2 instead of 1 | 11-12 | 100 Crown | 2 |
+| Club | 1d6 Bludgeoning | \- | \- | 5 Crown | 1 |
+| Greatclub | 2d4 Bludgeoning | Two-Handed | \- | 10 Crown | 2 |
 
 **POLEARMS** *(Polearms Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Spear | 1d6 Piercing | Versatile (Two-Handed 1d8), Reach 10ft, Throwable (20/40 ft) | \- | 30 Crown | 4 lb |
-| Pike | 1d8 Piercing | Two-Handed, Reach 15ft | \- | 50 Crown | 9 lb |
-| Halberd | 1d10 Slashing / Piercing | Two-Handed, Reach 10ft | \- | 100 Crown | 8 lb |
-| Glaive | 2d4 Slashing | Two-Handed, Reach 10ft | 11-12 | 95 Crown | 10 lb |
-| Quarterstaff | 1d6 Bludgeoning | Versatile (Two-Handed 2d4) | \- | 5 Crown | 4 lb |
+| Spear | 1d6 Piercing | Versatile (Two-Handed 1d8), Reach 10ft, Throwable (20/40 ft) | \- | 30 Crown | 1 |
+| Pike | 1d8 Piercing | Two-Handed, Reach 15ft | \- | 50 Crown | 2 |
+| Halberd | 1d10 Slashing / Piercing | Two-Handed, Reach 10ft | \- | 100 Crown | 2 |
+| Glaive | 2d4 Slashing | Two-Handed, Reach 10ft | 11-12 | 95 Crown | 2 |
+| Quarterstaff | 1d6 Bludgeoning | Versatile (Two-Handed 2d4) | \- | 5 Crown | 1 |
 
 **Special Trait:** When you are wielding a Polearm with the Reach property, other creatures provoke an opportunity attack from you when they enter your Reach, if the attack hits the creature can’t willingly move closer to you until the end of their turn. Additionally, creatures adjacent to you cannot be targeted by a Polearm with the Reach property.
 
 **DAGGERS & KNIVES** *(Daggers & Knives Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Dagger | 1d4 Piercing | Light, Finesse | 9-12 | 20 Crown | 1 lb |
-| Knife | 1d4 Piercing | Light, Throwable (20/40 ft) | 10-12 | 5 Crown | 1 lb |
+| Dagger | 1d4 Piercing | Light, Finesse | 9-12 | 20 Crown | 1 |
+| Knife | 1d4 Piercing | Light, Throwable (20/40 ft) | 10-12 | 5 Crown | 1 |
 
 **SLINGS & WHIPS** *(Slings & Whips Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Whip | 1d4 Slashing | Finesse, Reach 10ft, Trip | \- | 10 Crown | 2 lb |
-| Weighted Chain | 1d6 Bludgeoning | Reach 10ft, Can grapple at Reach | \- | 20 Crown | 4 lb |
-| Chain Flail | 1d8 Bludgeoning | Bypasses Block | 11-12 | 80 Crown | 5 lb |
+| Whip | 1d4 Slashing | Finesse, Reach 10ft, Trip | \- | 10 Crown | 1 |
+| Weighted Chain | 1d6 Bludgeoning | Reach 10ft, Can grapple at Reach | \- | 20 Crown | 1 |
+| Chain Flail | 1d8 Bludgeoning | Bypasses Block | 11-12 | 80 Crown | 1 |
 
 ---
 
@@ -166,31 +168,31 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 **BOWS** *(Bows & Crossbows Skill)*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Shortbow | 1d6 Piercing | 80/160 ft | Two-Handed | 10-12 | 50 Crown | 2 lb |
-| Longbow | 1d8 Piercing | 150/300 ft | Two-Handed | 11-12 | 100 Crown | 3 lb |
+| Shortbow | 1d6 Piercing | 80/160 ft | Two-Handed | 10-12 | 50 Crown | 2 |
+| Longbow | 1d8 Piercing | 150/300 ft | Two-Handed | 11-12 | 100 Crown | 2 |
 
 **CROSSBOWS** *(Bows & Crossbows Skill)*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Light Crossbow | 1d10 Piercing | 100/200 ft | Two-Handed, Reload (Minor) | \- | 125 Crown | 4 lb |
-| Heavy Crossbow | 1d12 Piercing | 120/240 ft | Two-Handed, Reload (Minor) | \- | 175 Crown | 8 lb |
+| Light Crossbow | 1d10 Piercing | 100/200 ft | Two-Handed, Reload (Minor) | \- | 125 Crown | 2 |
+| Heavy Crossbow | 1d12 Piercing | 120/240 ft | Two-Handed, Reload (Minor) | \- | 175 Crown | 2 |
 
 **THROWN WEAPONS** *(Thrown Weapons Skill)*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Throwing Axe | 1d6 Slashing | 20/40 ft | Light | 9-12 | 15 Crown | 2 lb |
-| Javelin | 1d6 Piercing | 30/60 ft | Versatile (Two-Handed 1d8), Penetrant (when thrown) | \- | 10 Crown | 2 lb |
-| Dart | 1d4 Piercing | 20/40 ft | Light | \- | 5 Crown | 0.5 lb |
+| Throwing Axe | 1d6 Slashing | 20/40 ft | Light | 9-12 | 15 Crown | 1 |
+| Javelin | 1d6 Piercing | 30/60 ft | Versatile (Two-Handed 1d8), Penetrant (when thrown) | \- | 10 Crown | 1 |
+| Dart | 1d4 Piercing | 20/40 ft | Light | \- | 5 Crown | 1/3 |
 
 **SLINGS & WHIPS** *(Slings & Whips Skill)*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Sling | 1d6 Bludgeoning | 200/400 ft | Light, Uses Ammunition | \- | 5 Crown | 0.1 lb |
+| Sling | 1d6 Bludgeoning | 200/400 ft | Light, Uses Ammunition | \- | 5 Crown | 1/3 |
 
 ---
 
@@ -198,37 +200,37 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 **PISTOLS** *(Pistols Skill)*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Match-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 1 | \- | 200 Crown | 2 lb |
-| Snap-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 3 | \- | 500 Crown | 2 lb |
-| Wheel-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 2 | \- | 800 Crown | 3 lb |
+| Match-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 1 | \- | 200 Crown | 1 |
+| Snap-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 3 | \- | 500 Crown | 1 |
+| Wheel-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 2 | \- | 800 Crown | 1 |
 
 **LONG GUNS** *(Long Guns Skill)*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Match-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 1 | \- | 300 Crown | 10 lb |
-| Snap-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 3 | \- | 750 Crown | 10 lb |
-| Wheel-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 2 | \- | 1200 Crown | 11 lb |
+| Match-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 1 | \- | 300 Crown | 2 |
+| Snap-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 3 | \- | 750 Crown | 2 |
+| Wheel-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 2 | \- | 1200 Crown | 2 |
 
 **HEAVY FIREARMS** *(Heavy Firearms Skill)*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | WGT |
+| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Blunderbuss | 4d4 Piercing | 30/60 ft | Two-Handed, Spread (30ft/15ft cone), Misfire 2 | \- | 700 Crown | 6 lb |
-| Hand Mortar | 2d10 Piercing | 40/80 ft | Two-Handed, Explosive (20ft radius), Misfire 3 | \- | 1200 Crown | 6 lb |
-| Hackbut | 6d6 Piercing | 200/400 ft | Two-Handed, Mounted, Reload (2 Major Actions), Misfire 1 | \- | 1500 Crown | 40 lb |
+| Blunderbuss | 4d4 Piercing | 30/60 ft | Two-Handed, Spread (30ft/15ft cone), Misfire 2 | \- | 700 Crown | 2 |
+| Hand Mortar | 2d10 Piercing | 40/80 ft | Two-Handed, Explosive (20ft radius), Misfire 3 | \- | 1200 Crown | 2 |
+| Hackbut | 6d6 Piercing | 200/400 ft | Two-Handed, Mounted, Reload (2 Major Actions), Misfire 1 | \- | 1500 Crown | 4 |
 
 **AMMUNITION**
 
-| Ammo Type | Cost | 1/WGT |
+| Ammo Type | Cost | Slots |
 | :---- | :---- | :---: |
-| Arrow, Quiver (24) | 1 Crown | 0.125 lb |
-| Crossbow Bolt, Case (20) | 1 Crown | 0.1 lb |
-| Sling Bullet, Bag (50) | 20 Scale | 0.2 lb |
-| Shot & Powder, Pouch & Horn (20) | 20 Crown | 0.1 lb |
-| Hand Mortar Grenade (1) | 25 Crown | 1 lb |
+| Arrow, Quiver (24) | 1 Crown | 1 |
+| Crossbow Bolt, Case (20) | 1 Crown | 1 |
+| Sling Bullet, Bag (50) | 20 Scale | 2 |
+| Shot & Powder, Pouch & Horn (20) | 20 Crown | 1 |
+| Hand Mortar Grenade (1) | 25 Crown | 1 |
 
 **COLLECTING AMMUNITION**  
 After combat, roll 1d6:

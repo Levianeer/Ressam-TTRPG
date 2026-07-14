@@ -32,6 +32,7 @@
 
 **Magic**
 - [Overview](magic_overview)
+- [Minor Magic](minor_magic)
 - [Spell Crafting](spell_crafting)
 
 **Arcane Magic**
@@ -68,6 +69,7 @@
 
 **Exploration**
 - [Traveling](traveling)
+- [Dungeon Turns](dungeon_turns)
 - [Downtime](downtime)
 - [Leadership](leadership)
 

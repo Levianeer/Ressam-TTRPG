@@ -1,18 +1,18 @@
 {% macro armor_table(blocks) -%}
-| Armor | AR | Penalty | Stealth | Price | Weight |
+| Armor | AR | Penalty | Stealth | Price | Slots |
 | :---- | :---: | :---: | :---: | :---: | :---: |
 {% for block in blocks -%}
 | **{{ block.category }}** |  |  |  |  |  |
 {% for a in block.armors -%}
-| {{ a.name }} | {{ a.ar | dash }} | {{ a.penalty | signed }} | {{ a.stealth | signed }} | {{ a.price }} | {{ a.weight }} |
+| {{ a.name }} | {{ a.ar | dash }} | {{ a.penalty | signed }} | {{ a.stealth | signed }} | {{ a.price }} | {{ a.slots }} |
 {% endfor -%}
 {% endfor -%}
 {%- endmacro %}
 {% macro shield_table(shields) -%}
-| Shield | AR Bonus | Penalty | Properties | Price | Weight |
+| Shield | AR Bonus | Penalty | Properties | Price | Slots |
 | :---- | :---: | :---: | :---: | :---: | :---: |
 {% for s in shields -%}
-| {{ s.name }} | {{ s.ar_bonus | signed }} | {{ s.penalty | signed }} | {{ s.properties | proplist }} | {{ s.price }} | {{ s.weight }} |
+| {{ s.name }} | {{ s.ar_bonus | signed }} | {{ s.penalty | signed }} | {{ s.properties | proplist }} | {{ s.price }} | {{ s.slots }} |
 {% endfor -%}
 {%- endmacro %}
 Armor is your primary defense against physical attacks. In Ressam, armor absorbs damage but degrades with each hit \- protection is a finite resource that must be maintained and managed.
@@ -23,6 +23,7 @@ Armor is your primary defense against physical attacks. In Ressam, armor absorbs
 - **Penalty:** How much the armor restricts agility and spellcasting  
 - **Stealth:** How much the armor restricts Stealth rolls and checks  
 - **Durability:** Your armor's current condition (starts equal to AR, decreases when hit)
+- **Carrying Slots:** Worn armor and an equipped shield cost no Slots. The Slots column applies only to armor or a shield carried as a spare, not currently worn/equipped. A carried Pavise costs 2 Slots regardless of its bulk.
 
 ---
 
@@ -150,7 +151,7 @@ When armor reaches 0 durability:
 
 ### **Field Repair (Armorer Skill)**
 
-Characters with the Armorer skill can repair armor outside of combat. This requires **Armorer's Tools** (25 Crown, 8 lb).
+Characters with the Armorer skill can repair armor outside of combat. This requires **Armorer's Tools** (25 Crown, 2 Slots).
 
 | Armorer Rank | Repair Capability |
 | :---: | :---- |

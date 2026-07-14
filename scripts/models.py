@@ -9,7 +9,7 @@ class WeaponEntry(BaseModel):
     properties: list[str] = Field(default_factory=list)
     critical: Optional[str] = None
     cost: str
-    weight: str
+    slots: str
     range: Optional[str] = None
 
 
@@ -37,7 +37,7 @@ class WeaponBlock(BaseModel):
 class AmmoEntry(BaseModel):
     name: str
     cost: str
-    weight: str
+    slots: str
 
 
 class UnarmedEntry(BaseModel):
@@ -53,7 +53,7 @@ class ArmorEntry(BaseModel):
     penalty: Optional[int] = None
     stealth: Optional[int] = None
     price: str
-    weight: str
+    slots: str
 
 
 class ArmorBlock(BaseModel):
@@ -67,4 +67,4 @@ class ShieldEntry(BaseModel):
     penalty: Optional[int] = None
     properties: list[str] = Field(default_factory=list)
     price: str
-    weight: str
+    slots: str
