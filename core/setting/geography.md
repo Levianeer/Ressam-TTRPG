@@ -61,7 +61,7 @@ Mitéra and Patéras are more than celestial phenomena; they are vital to Ressam
 
 **Overview.** Lustralis is the largest western continent, a place of great extremes, with sprawling deserts, lush coastal rainforests, rolling savannahs, and coral-rich coastlines. Its heart is dominated by the Great Salt Expanse, a vast, arid basin where shimmering mirages and dangerous predators lure travelers to their doom. Despite its dangers, Lustralis is a land of innovation and survival.
 
-**Inhabitants.** Humanity and the reptilian Alsahli have made this diverse land their home. Humans thrive in coastal cities and fertile plains, while the Alsahli form nomadic bands in the deserts.
+**Inhabitants.** Humanity and the reptilian Alsahli have made this diverse land their home. Humans thrive in coastal cities and fertile plains, while the Alsahli form nomadic bands in the deserts. Varulf haunt the misted woods and forgotten valleys further inland \- feared rather than counted among Lustralis' settled peoples.
 
 **Key Locations.**
 
@@ -158,7 +158,17 @@ Mitéra and Patéras are more than celestial phenomena; they are vital to Ressam
 
 ### Trere
 
-*To be written.*
+**Overview.** Trere is Ressam's most southwestern continent: its eastern edge joins Halig, its northern reaches share a land border with Lustralis along the Great Sand, and the South Seas divide it from the Southlands further south still. The land shifts through a full gradient of biomes as it runs south: the dunes of the Great Sand give way to open savanna, then tropical seasonal forest, then deciduous woodland, before dissolving into temperate rainforest and wetland at its southern coast. Three empires once ruled here before the Sundering. Two left recognizable heirs \- Mafsoleios and the Gilded Hwispian Maw both trace back to Trere's fallen dynasties \- while the third has all but vanished from memory, its remnants said to linger somewhere between the Southlands and Trere itself.
+
+**Inhabitants.** Mafsoleios, on the western coast, and Svarnanagaram, further inland, are Trere's only true settlements, and both stand apart from the rest of the continent in almost every way \- a lich-ruled, agrarian city-state and a fortress-capital inherited by the Gilded Hwispian Maw, amid otherwise scattered, decentralized peoples. Away from their walls, pockets of Alashar Tribes and Desert Nomads range the northern Great Sand \- the same desert, and the same peoples, that continue north into Lustralis. South of the Eldritch Passage, Trere Island is close to empty, its coastline marked only by a handful of Tagarian Coalition colonies.
+
+**Key Locations.**
+
+* **Mafsoleios.** One of Trere's two major settlements, ruled by the Undying Senate \- see Nations for its government, economy, and the Grand Gnosion.
+* **Svarnanagaram.** The Gilded Hwispian Maw's capital and the other of Trere's two major settlements \- the old imperial seat of one of Trere's three fallen pre-Sundering empires, inherited whole by the Maw rather than built. Far less grand and esoteric than the Chorus of Murmurs' Aegislith Veil, it remains blunt fortified stone \- see Nations for the Maw's government and the Golden Choir.
+* **The Sea of Trere.** The waters off Mafsoleios' western coast, home to the city's only dock.
+* **The Eldritch Passage.** The sea route separating mainland Trere from Trere Island \- avoided less for any real danger than for its evil reputation, unpredictable tides, ceaseless quakes, and near-constant foul weather, one of the regions most affected by the moons. Used almost exclusively by Tagarian Coalition traders bound for Mafsoleios and Holy Reino Empire prison ships making the long voyage north to Noskirk Colony, past the Sawolleas Sea.
+* **Trere Island.** A largely abandoned landmass south of the Eldritch Passage, home only to a few small Tagarian Coalition colonies serving as naval waypoints.
 
 ---
 

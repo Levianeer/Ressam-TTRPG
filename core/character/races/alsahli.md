@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Alsahli are a cursed reptilian race, their sleek, multi-eyed forms a testament to divine retribution for ancient hubris. Once human, they now stalk the deserts as four-armed predators, their short frilled necks and spines marking them as both feared mercenaries and cultural pragmatists. Though their curse binds them to the scorching sands, they have turned survival into an art \- scavenging, trading, and selling their blades to the highest bidder, so long as the gold flows. Betray them, however, and the dunes will whisper your name to the vultures.
+The Alsahli are a cursed reptilian race, their sleek, multi-eyed forms a testament to divine retribution for an ancient plunder that went too far. Once human, they now stalk the deserts as four-armed predators, their short frilled necks and spines marking them as both feared mercenaries and cultural pragmatists. Though their curse binds them to the scorching sands, they have turned survival into an art \- scavenging, trading, and selling their blades to the highest bidder, so long as the gold flows. Betray them, however, and the dunes will whisper your name to the vultures.
 
 **Homeland:** Lustralis  
 **Starting Attributes:** \+1 DEX, \+1 END, \-1 CHA  
@@ -26,30 +26,34 @@ The Alsahli are a cursed reptilian race, their sleek, multi-eyed forms a testame
 
 ## Physical Appearance
 
-The Alsahli are lean and muscular, standing around six feet tall, with considerable strength belied by their lightweight, hollow-boned frames. Their smooth, heat-reflective scales range from ash-white to charcoal grey or sun-bleached ivory, often etched with intricate clan markings. Six eyes grant them unparalleled perception \- two large, forward-facing orbs with slit pupils, flanked by four smaller, wide-angle eyes that detect even the slightest movement, even amidst swirling sandstorms. Their four arms are a lethal advantage: the upper pair is human-like in dexterity, while the lower set is slightly shorter due to its backwards offset, but they can excel at grappling or wielding multiple weapons. Digitigrade legs lend them explosive speed, and their flaring neck frills serve as both intimidation and symbols of status. Though they can live up to 120 years, maturing by 20, their cold-blooded nature forces them to bask in the sun or bundle in insulating wraps when venturing into cooler lands.
+The Alsahli are lean and muscular, with lightweight, hollow-boned frames belying considerable strength. Their smooth, heat-reflective scales range from ash-white to charcoal grey or sun-bleached ivory, etched with clan markings, and six eyes \- two large forward-facing orbs flanked by four smaller wide-angle ones \- grant them near-unmatched perception, even in a sandstorm. Their four arms give a lethal edge in grappling or dual-wielding, digitigrade legs lend explosive speed, and flaring neck frills mark both status and threat. Cold-blooded, they bask in the sun or bundle in wraps when venturing into cooler lands.
 
 ## Origins and Mythology
 
-The Alsahli whisper of a time when they were godly kings \- ancient human conquerors who spilled the blood of a god's favoured children. In punishment, the Hwispian Devaraja, the highest of the Golden Throne, reshaped them into reptiles, forcing them to "scuttle like the serpents they revered in war." Their mythos is meant to warn against unchecked ambition, yet they twist the lesson: "The god made us hunters instead of lords, but teeth outlast crowns." Some Alsahli still seek to break the curse; most embrace it as a gift of survival.
+The Alsahli whisper of a time when they were human conquerors, kings who warred not for glory but for gold \- sacking cities and burial-vaults alike, until a raid chasing one hoard too many spilled the blood of a god's favoured children. In punishment, the Devaraja reshaped them into reptiles, forcing them to scuttle and hoard like the serpents they'd once only robbed. The lesson was meant to warn against insatiable want; the Alsahli twist it instead: "They took our crowns and left us our appetite \- a fair trade, in the end."
 
 ## Culture and Society
 
-**Social Structure:** Nomadic clans led by the eldest spined ("Thorned Ones"), who arbitrate disputes and assign contracts. Loyalty is fluid \- gold outweighs blood ties.
+**Social Structure:** Nomadic clans led by the eldest spined, the **Ash-Shuyukh**, who arbitrate disputes and assign contracts. Loyalty is fluid \- gold outweighs blood ties.
 
-**Traditions and Rites:** Sand Mourning sees traitors buried alive in the dunes, their frills cut off so "the wind cannot hear their lies." Spine Ceremonies celebrate a youth's first spine with a duel; the scarred are deemed worthy adults.
+**Traditions and Rites:** The **Niyahat ar-Raml** buries traitors alive in the dunes, frills cut off so "the wind cannot hear their lies." The **Hafl ash-Shawka** marks a youth's first spine with a duel; the scarred are deemed worthy adults.
 
-**Language and Names:** A hissing, vowel-heavy tongue called *Zakhrafan*, though many speak Common to broker deals. Names denote deeds (e.g., *Mundir al-Kertesh* \- "Mundir of the Scorched Dunes").
+**Language and Names:** A hissing, vowel-heavy tongue called *Zakhrafan*, though many speak Common to broker deals. Names denote deeds (*Mundir al-Kertesh* \- "Mundir of the Scorched Dunes").
 
-**Arts and Craftsmanship:** Master leather-workers (using hides of desert beasts) and engineers of compact, collapsible weapons.
+**Arts and Craftsmanship:** Master leather-workers and engineers of compact, collapsible weapons.
 
 ## Homeland and Distribution
 
-The Alsahli come primarily from the Great Sand and Scorched Dunes of Ressam, though more specifically they occupy the steppes of Tushtai on the border of the Desert Nomads and Reino Empire. They carve temporary strongholds into sandstone mesas, abandoning them when resources dwindle. Rare enclaves exist in urban shadows, trading their skills for warmth.
+The Alsahli occupy the steppes of Tushtai, on the border of the Desert Nomads and the Reino Empire, carving temporary strongholds into sandstone mesas and abandoning them when resources dwindle. Rare enclaves survive in urban shadows, trading their skills for warmth.
 
 ## Relations with Other Races
 
-Distrusted but utilised, their reputation for mutiny makes them dreaded allies, although despite this reputation, the Alsahli are honourable to their deals and agreements - you just make sure you hold your end. As the stereotype goes: "Hire an Alsahli, but count your fingers after shaking hands."
+Distrusted but utilised \- their reputation for mutiny makes them dreaded allies, though the Alsahli are in fact scrupulously honourable to their deals, so long as you hold up your end. As the stereotype goes: "Hire an Alsahli, but count your fingers after shaking hands."
 
 ## Faith and Philosophy
 
-*To be written.*
+Few Alsahli worship the Devaraja outright \- cursing him would mean admitting the curse still matters \- but fewer still deny he's owed something for it, and a heretical handful venerate him quietly as a hard, honest teacher of what want actually costs. Most keep no god at all, holding instead to a working creed closer to superstition than faith: debts get paid, in gold or in blood, and the sand keeps no memory of kings, only of the fed and the eaten. Living on the Desert Nomads' border, some Alsahli know the Light of Lehovil's radical hospitality well enough to envy it, even as their own culture runs on the opposite instinct; a rare convert takes up its laws in full, and is treated by other Alsahli as someone still working off an old debt.
+
+## Variations and Subgroups
+
+Most Alsahli fall on one side of a settled question: whether the curse is a punishment still worth escaping, or a tool too useful to give up. The greater number have made peace with it, and treat scale and venom as just another trade good, sharper teeth for a harder trade. A smaller number still chase a cure \- through old Devaraja-adjacent lore, through Ederani hospitality-rites they weren't born to, through anyone who claims to know a way back to whatever their ancestors were before the gold-hunger got them killed. Clan Alsahli and the rarer urban enclaves split along similar lines: a clan measures a member by contracts honoured and spines earned, while an enclave Alsahli has usually traded some of that reputation away for a warm roof and steady work, and is regarded by clan kin as neither quite exiled nor quite trusted.

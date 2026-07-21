@@ -26,42 +26,28 @@ Born not of womb but of war, the Khoridae are flesh-forged monstrosities, the br
 
 ## Physical Appearance
 
-Khoridae tower over most mortal races, standing well above eight feet at the shoulder and stretching longer than a warhorse. Their upper halves resemble grotesquely muscular Orkhs \- broad-shouldered, horned, and scarred \- while their lower halves are quadrupedal and basilisk-like, covered in ridged, volcanic-scale plating. Spines jut from their shoulders and ribs, while a massive, barbed tail coils behind them, capable of injecting hallucinogenic venom or crushing bones with a single strike.
-
-Their eyes glow with a perpetual, molten gold \- not a true petrifying gaze, but something worse: a stare that calcifies the spirit. Victims report paralysis, fractured memory, and a sudden certainty of death. Some Khoridae can exhale ash clouds laced with venom, which harden inside lungs and cause victims to drown in their own blood.
+Khoridae tower well above eight feet, their upper halves a grotesquely muscular Orkh \- broad-shouldered, horned, scarred \- atop quadrupedal, basilisk-like lower halves plated in ridged volcanic scale. Spines jut from shoulders and ribs, and a massive barbed tail coils behind them, capable of injecting hallucinogenic venom or crushing bone in a single strike. Their eyes glow a perpetual molten gold \- not a true petrifying gaze, but something worse: a stare that calcifies the spirit, leaving victims paralysed, memory-fractured, and suddenly certain of death. Some can exhale venom-laced ash that hardens in the lungs, drowning victims in their own blood.
 
 ## Origins and Mythology
 
-The Khoridae were not born \- they were forged in torment. At the height of the Orkhaden rise, God-King Khor sought to create a new breed of warrior that embodied the agony and chaos of conquest. His answer: the Trial Pits of Pyral Spire, vast crucibles where dying Basilisks and battle-broken Orkhs were hurled together, chained in molten iron, and submerged in volcanic ichor said to flow from the earth's first wound.
+The Khoridae were forged, not born. At the height of the Orkhaden rise, God-King Khor sought a breed of warrior embodying conquest's agony and chaos: the Trial Pits of Pyral Spire, where dying Basilisks and battle-broken Orkhs were chained in molten iron and submerged in volcanic ichor said to flow from the earth's first wound. What emerged was neither beast nor kin, but the Khoridae \- the "Second Voice of Khor," a blasphemous miracle the world still recoils from.
 
-What emerged was no longer beasts nor kin, but the Khoridae \- the "Second Voice of Khor."
-
-According to Orkhaden legend, their birth was a blasphemous miracle. The world, they say, still recoils from their creation, and the air around them carries the scent of grief-born flame.
-
-The first of their kind \- whose name was scoured from memory \- was entombed beneath the Spire in a cage of molten bone, buried alive. It is said that when Khor falls, this ancient terror will rise \- not as a servant, but as the unbound vengeance of all that Khor ever wronged.
+The first of their kind, whose name was scoured from memory, was entombed beneath the Spire in a cage of molten bone, buried alive. Legend holds that when Khor falls, this ancient terror will rise \- not as a servant, but as the unbound vengeance of all he ever wronged.
 
 ## Culture and Society
 
-Khoridae do not form societies in the traditional sense. Instead, they exist in packs, cults, or solitary exile, bound by shared pain and loyalty to Khor \- or the memory of him. Wound-Speakers act as shamans, carving runic memories into their own flesh to preserve ancestral agonies. Ashmarked are elite Khoridae whose petrifying ash is potent enough to strip breath from entire ranks; they are treated with reverence and terror alike. Graveborn are those who died and rose again \- Khoridae who were slain but refused the peace of death \- and often act as dread messengers or executioners.
+Khoridae form no societies in the traditional sense, existing instead in packs, cults, or solitary exile, bound by shared pain and loyalty to Khor or his memory. **Wound-Speakers** are shamans who carve runic memories into their own flesh; **Ashmarked** are elite Khoridae whose petrifying ash can strip breath from entire ranks, held in reverence and terror alike; **Graveborn** are those slain and risen again, who serve as dread messengers or executioners. They do not fear death \- pain is remembrance, and agony a path to immortality \- and ritually reopen old wounds before battle for clarity and strength.
 
-Khoridae do not fear death, for to them, pain is remembrance and agony is a path to immortality. Before a battle, they ritualistically reopen old wounds, believing the blood of past battles brings clarity and strength.
-
-**Traditions and Rites:** In the Scarring Rites, scars are treated as sacred, for every mark is a memory, and to heal fully is considered shameful. Before battle, Khoridae observe the Howl of Names, chanting the names of every kin they've seen die; if no names are spoken, they are expected to add their own. Bone-Feeding follows in the aftermath, wherein fallen foes are reduced to ash and mixed with volcanic soil, then consumed before long campaigns in the belief that it will anchor rage. And under the Silence of the First, speaking the name of the first Khoridae is punishable by death \- to know it is a curse, and to speak it aloud is to summon fire.
+**Traditions and Rites:** In the Scarring Rites, every mark is sacred memory, and to heal fully is shameful. Before battle they observe the Howl of Names, chanting every kin they've seen die (or adding their own, if none remain to name). Bone-Feeding follows victory, fallen foes reduced to ash and consumed to anchor rage before long campaigns. Under the Silence of the First, speaking the name of the first Khoridae is punishable by death \- to know it is a curse, to speak it is to summon fire.
 
 ## Homeland and Distribution
 
-The Khoridae are most commonly found in or near the Orkhaden homeland Inggaz, especially in proximity to Pyral Spire, the obsidian fortress-temple where they were first made \- a jagged monolith rising from the caldera of a dormant god volcano, home to the Trial Pits and breeding crucibles. Beyond the Spire lie the Ash Vales, barren volcanic plains scarred by previous rampages, where Khoridae roam freely, killing anything they deem unworthy. Deeper still run the Deepmarches, subterranean battle paths once used by Khor's legions, now haunted by half-feral Khoridae in endless drills.
-
-Though rare, some have escaped \- wandering west, feral and forgotten, or even enslaved by powerful warlocks who mistake them for tameable beasts.
+Khoridae are found in or near Inggaz, especially around Pyral Spire, the obsidian fortress-temple where they were first made \- a jagged monolith rising from a dormant god-volcano's caldera, home to the Trial Pits. Beyond it lie the Ash Vales, volcanic plains scarred by past rampages where Khoridae roam free, and the Deepmarches, subterranean battle-paths once used by Khor's legions, now haunted by half-feral Khoridae in endless drills. A rare few escape west, feral and forgotten, or fall into the hands of warlocks who mistake them for tameable beasts.
 
 ## Relations with Other Races
 
-Khoridae are considered living weapons, not people, and few races bother to parley with them \- they are feared, not negotiated with. Most Orkhs revere the Khoridae as the peak of their bloodline \- but never as equals. Dwergaz forges call them "Anathema-Wrought," and human knights regard them as harbingers of the apocalypse. Among Aelves, the Khoridae are known as "Griefwalkers," cursed beings that carry the sound of the Sundering in their bones.
+Khoridae are treated as living weapons, not people \- feared rather than negotiated with. Most Orkhs revere them as the peak of their bloodline, but never as equals; Dwergaz forges call them "Anathema-Wrought," human knights see them as harbingers of apocalypse, and Aelves know them as "Griefwalkers," cursed beings carrying the Sundering's sound in their bones.
 
 ## Faith and Philosophy
 
-The Khoridae do not worship, but they remember.
-
-Their belief system revolves around pain as continuity, with every scar a scripture, every scream a psalm. While many still offer guttural prayers to Khor, others view his legacy as a betrayal \- believing their creation was not exultation, but abandonment.
-
-Among the Ashmarked, a darker creed grows: that the First Khoridae \- the one buried beneath the Spire \- was never meant to sleep. Their rituals often centre on dreams, seeking signs from the "nameless one" whose rage will one day burn Khor's empire to ash.
+The Khoridae do not worship, but they remember: every scar a scripture, every scream a psalm, pain treated as continuity. Many still offer guttural prayers to Khor; others view his legacy as betrayal rather than exultation. Among the Ashmarked, a darker creed holds that the First Khoridae, buried beneath the Spire, was never meant to sleep \- their rituals seek signs from the "nameless one" whose rage will one day burn Khor's empire to ash.

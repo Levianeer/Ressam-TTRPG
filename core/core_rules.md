@@ -53,9 +53,9 @@ Attributes range from 1 (severely impaired) to 10 (peak mortal potential).
 
 Reading and writing are far from universal in Ressam \- most people never learn.
 
-**Automatic Literacy:** A character with **MIND 6+** at character creation is literate, able to read and write every language they know.
+**Automatic Literacy:** A character with **MIND 6+** at character creation is literate, able to read and write every language they know. Certain Careers (see Careers) grant literacy as well, regardless of MIND.
 
-**Below MIND 6:** Illiterate by default. Literacy determined this way is fixed at character creation \- raising MIND afterward (leveling, etc.) does not retroactively grant it.
+**Below MIND 6:** Illiterate by default, unless literacy is granted by Career. Literacy determined this way is fixed at character creation \- raising MIND afterward (leveling, etc.) does not retroactively grant it.
 
 **Learning to Read Later:** An illiterate character can still choose to learn to read during play. This isn't automatic and has no fixed cost or timeline \- work it out with your DM.
 

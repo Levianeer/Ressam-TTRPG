@@ -107,12 +107,13 @@ The faction is led by the countless-named Highest Devaraja of the Golden Throne.
 * **Expansionist Conquest:** Unlike the Chorus, who manipulate from the shadows, the Gilded Maw carves out territory openly through systematic conquest. However, their expansion follows a careful strategy of legitimizing their rule \- they must make their conquests appear rightful and inevitable, building genuine belief in their authority rather than simply overwhelming opposition through raw force.
 * **The Golden Choir:** An elite guard of Dzinari soldiers who have undergone surgical removal of not just their voices, but their entire capacity for communication or expression. This procedure \- considered the ultimate dishonor in Dzinari culture \- strips them of the ability to convey ideas through any means: speech, writing, gesture, or art. They exist in perfect psychological isolation, able to receive the Devaraja's telepathic commands but incapable of response, betrayal, or even communication with each other. The Devaraja appears to them as the sole source of beauty and connection in their otherwise silent existence, creating absolute psychological dependency alongside their loyalty. They serve as both honor guard and elite heavy infantry, their combat prowess undiminished by their sacrifice, and they are easily the strongest infantry unit in Ressam \- a threat to even minor immortal gods.
 * **Strategic Patience:** The Maw's expansion is methodical rather than reckless, guided by their leader's understanding that true dominion requires the conquered to accept their defeat as legitimate. They wage wars of attrition and psychological manipulation as much as military campaigns, ensuring that each victory strengthens their claim to rightful rule rather than simply adding territory through force.
+* **Svarnanagaram:** The Maw's capital sits on Trere itself \- the old imperial seat of one of the continent's three fallen pre-Sundering empires, inherited whole rather than built. Where the Chorus of Murmurs raised Aegislith Veil from centuries of whisper-magic, Svarnanagaram remains blunt, fortified stone, kept deliberately unchanged as proof of the Maw's claim to rightful inheritance.
 
 ---
 
 ## The Mafsoleios City-State
 
-**Overview.** A small city-state on the western coast of Lustralis, mostly made up of humans. Led by a council of powerful Liches, known only as the Undying Senate. A relatively benevolent state, especially for Liches.
+**Overview.** A small city-state on the western coast of Trere, mostly made up of humans. Led by a council of powerful Liches, known only as the Undying Senate. A relatively benevolent state, especially for Liches.
 
 **Key Details:**
 

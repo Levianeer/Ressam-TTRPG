@@ -17,6 +17,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You bought, sold, and transported goods \- learning to read markets and negotiate deals.*
 
 **Skill Bonuses:** Persuasion \+2, Identify \+1  
+**Grants Literacy:** Yes, regardless of MIND  
 **Starting Equipment:** Merchant's ledger, small lockbox, fine clothes  
 **Starting Coin:** 620 Crown
 
@@ -27,6 +28,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You studied texts, scrolls, and records \- perhaps in a library, university, or private collection.*
 
 **Skill Bonuses:** Historic Lore \+2, Arcane Lore \+1  
+**Grants Literacy:** Yes, regardless of MIND  
 **Starting Equipment:** Writing supplies, reading glasses, common clothes  
 **Starting Coin:** 580 Crown
 
@@ -37,6 +39,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You served a religious order \- performing rites, tending to the faithful, or studying sacred texts.*
 
 **Skill Bonuses:** Religious Lore \+2, Persuasion \+1  
+**Grants Literacy:** Yes, regardless of MIND  
 **Starting Equipment:** Religious symbol, prayer book, ceremonial robes  
 **Starting Coin:** 560 Crown
 
@@ -229,6 +232,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You copied texts, kept records, or wrote letters for the illiterate.*
 
 **Skill Bonuses:** Historic Lore \+2, Insight \+1  
+**Grants Literacy:** Yes, regardless of MIND  
 **Starting Equipment:** Calligrapher's supplies, ink-stained clothes  
 **Starting Coin:** 560 Crown
 

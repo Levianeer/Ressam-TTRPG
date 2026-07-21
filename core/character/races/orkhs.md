@@ -26,36 +26,30 @@ Orkhs are towering, volcanic beings of passion and wrath, forged in defiance and
 
 ## Physical Appearance
 
-Imposing and broad-shouldered, Orkhs average between 6 and 7 feet in height, their forms carved with dense muscle and seared with glowing fractures. Bony ridges crest their brows, shoulders, and backs, and large horns top their head \- like obsidian armour grown from within. Many bear glowing veins, reminiscent of molten metal beneath the skin, pulsing brighter in rage or grief. Their eyes burn like coals, lacking whites or pupils, and flicker in rhythm with their emotions.
+Imposing and broad-shouldered, Orkhs are carved with dense muscle and seared with glowing fractures. Bony ridges crest their brows, shoulders, and backs beneath obsidian-like horns, and molten veins pulse brighter beneath their skin in rage or grief. Their eyes burn like coals, lacking whites or pupils, flickering in rhythm with their emotions.
 
 ## Origins and Mythology
 
-Orkhs are an impossible people. Not crafted by the Painters nor born of natural law, they are believed to be the first self-willed race, forged not from divine design, but from defiance. They came into being at the end of an ancient age, when something \- perhaps a forgotten god or broken dragon \- was dying, and its divine flame was stolen. That flame was not meant to grant life, and yet life took root. Orkhs arose from the ashes of that crime, shaped by grief and forged by wrath. Their glowing spines are not bone, but divine furnace shards, parasitised and ignited, and their inner fire is not elemental but existential pain \- a birth that should never have occurred.
-
-The other races paint them as aberrations or curses. The Orkhs, if they speak of it at all, say only this: "We are the fire no one asked for."
+Orkhs are an impossible people \- neither crafted by the Painters nor born of natural law, but the first self-willed race, forged from defiance. They arose when a forgotten god or broken dragon was dying and its divine flame was stolen; that flame was never meant to grant life, yet life took root in the ashes. Their glowing spines are divine furnace shards, parasitised and ignited, and their inner fire is not elemental but existential pain \- a birth that should never have occurred. Other races call them aberrations. The Orkhs, if they speak of it at all, say only: "We are the fire no one asked for."
 
 ## Culture and Society
 
-Orkh society revolves around tribes called "Firesworn," each bound by oaths and rituals etched into volcanic stone and seared into flesh. A Firesworn band may be nomadic or settled around ancient lava flows, but all honour strength, resilience, and memory. Within each Firesworn band, the Ash-Kin form the tightest familial unit \- akin to a bloodline \- forged by shared scars and victories, while the Furnace-Mothers are revered matriarchs who guide spiritual rites and birth new warriors, seen as midwives of flame. Those who prove themselves in the Trial of Coals earn the title of Forge-Blooded; young Orkhs who do not pass are not exiled, but burned and reshaped anew.
+Orkh society revolves around tribes called **Firesworn**, bound by oaths seared into flesh and stone, nomadic or settled around ancient lava flows. Within a band, the **Ash-Kin** form the tightest family unit, forged by shared scars and victories, while **Furnace-Mothers**, revered matriarchs, guide spiritual rites and birth new warriors. Those who pass the **Trial of Coals** earn the title Forge-Blooded; those who fail are not exiled but burned and reshaped anew. Leadership is earned through trial, ordeal, and dream vision, often under the sacred heat-hallucinogen Skorchroot.
 
-Leadership is earned through a mix of trial, ordeal, and dream vision \- often under the influence of sacred heat hallucinogens known as Skorchroot.
+**Traditions and Rites:** Newborns are held over flame \- a flare marks them God-Touched. Coming of age is the barefoot Trial of Coals; marriage is the Bond-Branding, lovers burning shared sigils into each other's backs; the dead are burned in Hollow Pyres, their essence refusing to rise.
 
-**Traditions and Rites:** Newborns are held aloft over flame; if the fire flares, the child is marked as God-Touched \- a bearer of unknowable fate. Coming of age is marked by the Trial of Coals \- barefoot walks across ember fields, guided only by memory and rage. Marriage is known as the Bond-Branding, in which lovers burn shared sigils into each other's backs, permanent and unchangeable. In death, the dead are placed into Hollow Pyres \- volcanic vents or sacred forges where their bodies are burned, but their essence refuses to rise.
-
-**Taboos and Rites of Madness:** Orkhs can sometimes undergo the Recall, an illegal rite that lets them access twisted echoes of lives they've never lived \- memories warped by grief and passion, known as Smoke Memories. These memories are dangerous: too many, and an Orkh may lose their name, their face, or their will to live. Whisperforges are forbidden crypts where the dead scream endlessly \- Skeggs claim to hear them in the walls.
+**Taboos and Rites of Madness:** The illegal Recall rite grants twisted Smoke Memories of lives never lived \- too many, and an Orkh can lose their name, face, or will to live. Whisperforges are forbidden crypts where the dead scream endlessly; Skeggs claim to hear them in the walls.
 
 ## Homeland and Distribution
 
-The Orkh homeland is the fiery continent of Inggaz, a land of extremes, between smouldering mountains, glassy obsidian plains, and ancient magma trenches that clash with frozen sheets and frigid plains. It is a continent cracked by grief and still burning. At its heart lies the Ashmarrow Wastes, the core region and remains of a shattered god, where the fire never dims. Its most sacred site is the Furnace-Heart, a semi-mythic molten lake said to be the origin of the first Orkh tribes. Many Firesworn now maintain outposts across the wider world, roaming as mercenaries, exiles, or emissaries.
+Inggaz is a continent of extremes \- smouldering mountains, glassy obsidian plains, and magma trenches beside frozen sheets \- cracked by grief and still burning. At its heart lie the Ashmarrow Wastes, remains of a shattered god where the fire never dims, and the semi-mythic Furnace-Heart, a molten lake said to be the first Orkh tribes' origin. Many Firesworn now maintain outposts abroad as mercenaries, exiles, or emissaries.
 
 ## Relations with Other Races
 
-The Aelves view Orkhs as a blasphemy \- a race without wind, without song \- and Orkhs in turn see them as brittle and self-deluded. Between Orkhs and the Dwergaz there is nothing but utter disdain, the two peoples locked in an unending war against one another for eons. Humans are more varied in their regard: some admire Orkh strength and hire them as gladiators or soldiers, while others fear their unfiltered nature.
+Aelves see Orkhs as blasphemy \- a race without wind or song \- and Orkhs return the favour, calling them brittle and self-deluded. Orkhs and Dwergaz share nothing but disdain, locked in an unending war. Humans are more varied, some hiring Orkhs as gladiators or soldiers, others fearing their unfiltered nature.
 
 ## Faith and Philosophy
 
-The Orkhs worship no gods but their own \- those who ascended through will and flame. At its heart stands Khor, the God-King, a mortal warlord who burned his way into divinity by uniting the Orkh tribes. His essence lingers in every ember, his creed simple: "The weak kneel. The strong rise. The worthy burn eternal." His living will is Ghorzuk Firemaw, the cunning Champion, whose word is law and whose strategies prove that fire without purpose is waste.
+The Orkhs worship no gods but their own: Khor, the God-King, a mortal warlord who burned his way into divinity by uniting the tribes, his creed simple \- "The weak kneel. The strong rise. The worthy burn eternal." His living will is Ghorzuk Firemaw, the Champion, whose cunning proves fire without purpose is waste.
 
-Orkhs honour strength as prayer and war as worship. They endure the Trial of Coals, branding the worthy with molten scars, and bind oaths by searing sigils into flesh. The dead are burned in Hollow Pyres, their smoke whispering secrets instead of fading. Some Orkhs risk madness by inhaling these Smoke Memories, chasing echoes of past lives.
-
-To outsiders, this is heresy \- a faith without gods. But the Orkhs know the truth: divinity is not given. It is taken. Khor proved it. Ghorzuk enforces it. And every Orkh who walks the ember-path defies the world that never wanted them. "We are the fire no one asked for," they say \- and so they burn all the brighter.
+Strength is prayer, and war is worship: the Trial of Coals brands the worthy, oaths are sealed in searing sigils, and the dead burn in Hollow Pyres whose smoke whispers instead of fading. To outsiders this looks like heresy \- a faith without gods. The Orkhs know better: divinity isn't given, it's taken. "We are the fire no one asked for," they say \- and burn all the brighter for it.

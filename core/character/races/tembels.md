@@ -25,30 +25,30 @@ The Tembels are slow-moving, contemplative beings descended from a cursed Orkh w
 
 ## Physical Appearance
 
-Tembels are average sized, fur-covered humanoids with sloth-like features. They typically stand around 5 feet tall, though some elder Tembels grow much larger as their bodies slow and swell with age. Their limbs are long and slightly curved, ending in heavy claws more suited for climbing and balance than for combat. Their faces are animalistic \- flat-nosed, soft-eyed, and framed by short fur in earthen tones of brown, black, and, rarely, ghostly white. Their hunched gait and heavy-lidded eyes give the impression of constant drowsiness, yet beneath the sluggish exterior lies quiet attentiveness. Tembels live around a century, though their final years are marked by an increasingly burdensome lethargy that eventually claims them through gentle starvation, as their bodies fail to keep up with life's demands.
+Tembels are fur-covered, sloth-like humanoids, some elders growing much larger as their bodies slow and swell with age. Their long, slightly curved limbs end in heavy claws suited to climbing rather than combat, and their flat-nosed, soft-eyed faces are framed by short earthen-toned fur. A hunched gait and heavy-lidded eyes suggest constant drowsiness, masking a quiet attentiveness beneath. Their final years bring an ever-deepening lethargy that eventually claims them through gentle starvation, as their bodies fail to keep pace with life's demands.
 
 ## Origins and Mythology
 
-Tembel legend holds that they were once fierce warriors \- an Orkh warband that desecrated a sacred forest during the Sundering's aftermath. In retribution, a Tapio spirit unleashed a powerful curse upon them: stripping their aggression, sapping their strength, and binding their essence to the slow pulse of nature. Rather than fight the curse, the survivors embraced it, seeing in their stillness a chance for peace. Over generations, the Tembels became something new \- gentle stewards of balance, seeking wisdom in slowness and harmony in decline. Many revere the Tapio who cursed them, not as an enemy, but as a teacher who saved their spirits from self-destruction.
+Tembel legend holds they were once an Orkh warband who desecrated a sacred forest in the Sundering's aftermath. In retribution, a Tapio spirit stripped their aggression and strength, binding their essence to nature's slow pulse. Rather than fight the curse, the survivors embraced it, becoming gentle stewards of balance who seek wisdom in slowness and harmony in decline. Many revere the Tapio who cursed them not as an enemy, but as the teacher who saved their spirits from self-destruction.
 
 ## Culture and Society
 
-**Social Structure:** Tembel communities are small, isolated, and monastic in tone. Leadership falls to elder-healers or meditative philosophers known as Still Ones. There is little hierarchy \- only age, experience, and wisdom mark one's social standing.
+**Social Structure:** Small, isolated, monastic communities led by elder-healers known as Still Ones. Hierarchy is minimal \- only age, experience, and wisdom mark standing.
 
-**Traditions and Rites:** Their most sacred tradition is The Still Vigil, where a dying Tembel chooses a place of peace and meditates until their body petrifies \- becoming a statue that future generations clean and decorate. These statues line villages and forest paths, silent witnesses to the passage of time. Birth is met with quiet joy and soft drumming; death with shared meals and slow chants.
+**Traditions and Rites:** In the Still Vigil, a dying Tembel meditates in a place of peace until their body petrifies into a statue, which future generations clean and decorate \- these line villages and forest paths as silent witnesses to time. Birth is met with quiet joy and soft drumming; death, with shared meals and slow chants.
 
-**Language and Names:** Tembels speak Common and Orkhish, though their Orkhish is slow, poetic, and often interspersed with meditative silences. Names are gifted by the community and often reference natural elements or personal virtues \- e.g., Loam-Bound, Gentle River, Bale, or Suhma. Surnames are rare; titles of respect are more common.
+**Language and Names:** Tembels speak Common and a slow, poetic dialect of Orkhish threaded with meditative silence. Names reference natural elements or virtues (*Loam-Bound, Gentle River, Bale, Suhma*); surnames are rare, titles of respect more common.
 
-**Arts and Craftsmanship:** Tembels are known for creating beautiful gardens, natural dyes, and healing balms. Their crafts favour patience: intricate weaving, polished woodcarvings, and slow-grown gardens designed to bloom over decades. Their art, like their lives, unfolds gradually.
+**Arts and Craftsmanship:** Gardens, natural dyes, and healing balms, all favouring patience \- intricate weaving, polished woodcarving, and gardens grown to bloom over decades.
 
 ## Homeland and Distribution
 
-Most Tembels dwell in Halig, a dry and vast savanna, where they've built hidden villages. Some remain in Inggaz, their ancestral homeland, often shunned by Orkhs who see them as shameful echoes of lost strength. Tembels are reclusive but not hostile \- migrating only when pushed, they rarely establish footholds outside of their small homes, preferring places of still water and slow winds.
+Most Tembels dwell in hidden villages across Halig's dry savanna; some remain in ancestral Inggaz, shunned by Orkhs who see them as echoes of lost strength. Reclusive but not hostile, they migrate only when pushed, preferring places of still water and slow wind.
 
 ## Relations with Other Races
 
-Tembels are seen by many as peaceful mystics or harmless eccentrics. Aelfs tend to respect their quietude and natural attunement. Dwergaz often find them too passive, though appreciate their knowledge of healing herbs. Orkhs, particularly the war-like clans of the Orkhaden Horde, despise or pity Tembels \- viewing them as cowards cursed into irrelevance. However, there are stories of lone Orkhs who visit Aurkhan seeking redemption through the Tembel way. Tembels harbour no bitterness, but they remain wary of Orkh aggression. They trade sparingly, mostly offering medicine or wisdom in exchange for protection or goods they cannot grow themselves.
+Seen by most as peaceful mystics or harmless eccentrics, Tembels are respected by the Aelves for their quietude, found too passive by the Dwergaz (who value their healing herbs anyway), and pitied or despised by the war-like Orkhaden Horde as cowards cursed into irrelevance \- though lone Orkhs occasionally seek redemption through the Tembel way. Tembels harbour no bitterness but stay wary of Orkh aggression, trading sparingly, offering medicine or wisdom for what they cannot grow themselves.
 
 ## Faith and Philosophy
 
-The Tembel worldview is shaped by the Curse of Stillness, which they interpret as divine instruction. Most follow a spiritual path they call The Rhythm Beneath, a belief that true harmony comes from aligning oneself with the slow, subtle patterns of the world. Some venerate the Tapio who cursed them, treating her as a tutelary figure akin to a Painter. Others follow aspects of the Vessel or Tythe traditions, reframed through their own patient lens. Above all, they believe that healing \- of the self, the land, and others \- is the truest form of worship.
+The Tembel worldview centres on the Curse of Stillness as divine instruction, followed as **The Rhythm Beneath** \- the belief that harmony comes from aligning with the world's slow, subtle patterns. Some venerate the Tapio who cursed them as a tutelary figure akin to a Painter; others follow the Vessel or Tythe traditions, reframed through their own patient lens. Above all, healing \- of self, land, and others \- is the truest form of worship.
