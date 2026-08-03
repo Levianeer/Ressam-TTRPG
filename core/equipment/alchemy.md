@@ -88,28 +88,28 @@ Oils and Powders come in three qualities based on their rarity.
 ### **Healing Potion (Medium, DC 10\)**
 
 - **Ingredients:** Vital Oil \+ Amplifying Powder \+ Abkasp  
-- **Effect:** Drink (Minor Action). Restores HP  
-  - **Common:** Gain **4d4 \+ Bonus**  HP  
-  - **Uncommon:** Gain **4d4 \+ Bonus** HP  
-  - **Rare:** Gain **4d4 \+ Bonus** HP  
+- **Effect:** Drink (Minor Action). Restores Wounds  
+  - **Common:** Gain **3 \+ Bonus**  Wounds  
+  - **Uncommon:** Gain **3 \+ Bonus** Wounds  
+  - **Rare:** Gain **3 \+ Bonus** Wounds  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
 ### **Revitalizing Bomb (Hard, DC 15\)**
 
 - **Ingredients:** Vital Oil \+ Prolonging Powder \+ Eshzera  
-- **Effect:** Thrown (20/40 ft), 10 ft radius. Creatures gain Temporary HP  
-  - **Common:** Allies gain **2d8 \+ Bonus** tHP  
-  - **Uncommon:** Allies gain **2d8 \+ Bonus** tHP  
-  - **Rare:** Allies gain **2d8 \+ Bonus** tHP  
+- **Effect:** Thrown (20/40 ft), 10 ft radius. Creatures gain Temporary Wounds  
+  - **Common:** Allies gain **2 \+ Bonus** Temp Wounds  
+  - **Uncommon:** Allies gain **2 \+ Bonus** Temp Wounds  
+  - **Rare:** Allies gain **2 \+ Bonus** Temp Wounds  
 - **Value:** 75 Crown (Common), 95 Crown (Uncommon), 135 Crown (Rare)
 
 ### **Endurance Salve (Medium, DC 10\)**
 
 - **Ingredients:** Vital Oil \+ Stabilizing Powder \+ Nat’khor  
-- **Effect:** Apply before a Short Rest. During that rest, regain additional HP  
-  - **Common:** Gain **4d4 \+ Bonus** HP during Short Rest  
-  - **Uncommon:** Gain **4d4 \+ Bonus** HP during Short Rest  
-  - **Rare:** Gain **4d4 \+ Bonus** HP during Short Rest  
+- **Effect:** Apply before a Short Rest. That Short Rest also automatically removes 1 additional level of Trauma, on top of any Trauma it would otherwise remove  
+  - **Common:** Remove 1 additional level of Trauma  
+  - **Uncommon:** Remove 1 additional level of Trauma  
+  - **Rare:** Remove 1 additional level of Trauma  
 - **Note:** Endurance Salves do not count towards your Healing Potions per rest.  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 

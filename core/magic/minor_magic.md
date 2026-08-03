@@ -30,7 +30,7 @@ Practitioners with **at least 1 rank** in a magic school can manifest small, ins
 | Benediction | Make holy symbol glow faintly, speak with divine echo, sense unholy presence, project voice with authority, consecrate a small area | Create a zone of calm |
 | Cultivation | Encourage blooming, sense plant health, make leaves rustle, ripen fruit | Grow concealing vegetation (not cover), purify spoiled food |
 | Invocation | Feel your familiar stir, make familiar briefly visible, sense soul fragments, familiar manipulates small objects at range | Maintain familiar visibility for hours of scouting |
-| Necration | Sense nearby corpses, make a corpse twitch, chill touch, preserve a corpse, make it speak a recorded phrase | Animate a corpse for simple labor (no combat, 1 HP) |
+| Necration | Sense nearby corpses, make a corpse twitch, chill touch, preserve a corpse, make it speak a recorded phrase | Animate a corpse for simple labor (no combat, 1 Wound) |
 | Subjugation | Sense surface emotions, project a whisper, make eye contact unsettling, send a mental image to a willing target | Short-range telepathy with a willing creature |
 
 **DM Note:** Minor Magic covers practical utility that doesn't warrant full spells \- lighting campfires, purifying water, sending messages. If an effect would trivialize a challenge or replicate a spell's purpose, require the actual spell instead.

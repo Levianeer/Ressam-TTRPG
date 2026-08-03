@@ -1,6 +1,6 @@
 Magic is the manipulation of energy \- the two methods of manipulation fall into two schools of thought; precise formulae (Arcane) or divine petition (Divine). It is rare not just because people lack potential, but because they lack education and resources. With literacy rates below \~15%, magic remains confined to the wealthy, the religious, and the exceptionally lucky. Because talent is worthless if you have no way to learn.
 
-**The Literacy Barrier:** The vast majority of people will never read a spell formula or holy text. Even those with high ARC or FAI cannot learn what they cannot read \- see Literacy (Core Rules): only a character with **MIND 6+** is literate by default, and only a literate character can invest in an Arcane or Divine school.
+**The Literacy Barrier:** The vast majority of people will never read a spell formula or holy text. Even those with high ARC or FAI cannot learn what they cannot read \- see Literacy (Core Rules): only a character with **MIND 3+** is literate by default, and only a literate character can invest in an Arcane or Divine school.
 
 - **Arcane Magic** requires reading complex magical formulae, access to spellbooks or teachers, materials for scribing, and years of study.  
 - **Divine Magic** requires reading holy texts and scriptures, understanding theological doctrine, and genuine faith.
@@ -54,19 +54,17 @@ Some spells require you to hit a target's physical defenses \- dodging, reflexes
 
 Some spells target a creature's mental fortitude, physical resilience, or force of will rather than their ability to dodge. You roll to overcome the target's Ward.
 
-**Roll:** 1d12 \+ Spell Modifier vs. target's **Ward**
+**Roll:** 1d12 \+ Spell Modifier vs. target's Ward (5 \+ Attribute \+ highest Skill under that Attribute)
 
-**Ward \= 5 \+ Attribute \+ highest Skill under that Attribute**
-
-Each attribute has its own Ward, calculated from the skills tied to it. A spell will specify which attribute it targets (e.g. "Roll vs. target's MIND Ward"). The target's Ward is determined by their score in that attribute and their highest-ranked skill governed by it.
+Each attribute has its own Ward, calculated from the skills tied to it. A spell will specify which attribute it targets (e.g. "Roll vs. target's MIND Ward"). This is a Contested Check (see core_rules.md) \- the target's Ward is their static defensive score, not a roll.
 
 ### **Magic Damage**
 
-Subtract the target's AR from spell damage, then apply remaining damage to HP.
+Subtract the target's AR from spell damage, then convert remaining damage to Wounds via the Wound Thresholds (see core_rules.md's Wounds and Survival).
 
 ### **Critical Hits**
 
-Spell Attacks can crit on a natural 12 (roll damage normally \+ 1 Exhaustion, per the Critical Hits rules in Combat). Spell Overcomes cannot crit \- their power lies in their effects, not raw damage.
+Spell Attacks can crit on a natural 12 (roll damage twice, take the higher result, per the Critical Hits rules in Combat). Spell Overcomes cannot crit \- their power lies in their effects, not raw damage.
 
 ## 
 
@@ -186,8 +184,8 @@ When you Pray, choose your devotion level. Higher devotion grants more power but
 
 - Refresh all known spells  
 - Choose two spell schools \- spells from those schools gain \+1 to spell rolls until next Prayer  
-- Regain 2d6 HP  
-- Requires thematic act \+ meaningful sacrifice (destroy 50+ Crown of incense/offerings, spend mana on a Minor Magic ritual with no gameplay benefit (minor_magic.md), accept 1 Exhaustion from fasting, etc.)
+- Regain 2d6 Wounds  
+- Requires thematic act \+ meaningful sacrifice (destroy 50+ Crown of incense/offerings, spend mana on a Minor Magic ritual with no gameplay benefit (minor_magic.md), accept 1 Trauma from fasting, etc.)
 
 ### **Interrupted Prayer**
 

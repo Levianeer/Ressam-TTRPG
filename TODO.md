@@ -1,0 +1,53 @@
+# TODO
+
+## DC tier table and success-rate table need recalibration
+
+`core/core_rules.md`'s DC tier table (Very Easy 5 ... Impossible 30) is still the same literal numbers as before the Skills/Attributes 1-10 -> 1-5 rescale. The table itself was never mathematically derived from the skill/attribute scale, but its calibration assumption has broken: the maximum possible roll dropped from `1d12 + 20 = 32` (Skill 10 + Attribute 10) to `1d12 + 10 = 22` (Skill 5 + Attribute 5). **DC 25 (Incredibly Hard) and DC 30 (Impossible) are now mathematically unreachable by anyone, ever** - even a fully maxed specialist rolling a natural 12 caps out at 22.
+
+The old success-rate table (previously under "Setting a Difficulty Class (DC)") was removed outright rather than hand-recalculated against a guess, since it was explicitly derived math ("Skill 3 + Attribute 7 at level 1, scaling to Skill 10 + Attribute 10 at level 12").
+
+**When picking this up:**
+- Recompute a new success-rate table against the actual new progression curve (`core/character/progression_&_rewards.md`'s per-level skill cap/attribute cap columns, now capped at 5).
+- Decide whether the 8 DC tiers themselves should compress (e.g. roughly halve) to keep Incredibly Hard/Impossible reachable, or whether the top 1-2 tiers should be redefined as deliberately unreachable-without-help (magic, advantage, etc.) - that's a design call, not a math one.
+- Once resolved, delete this section (and this file, if nothing else is outstanding).
+
+## ENCOUNTER_GUIDE.md is now stale against both the compressed player AR table AND the Wounds rework
+
+`data/armor/armor.yaml` adopted HEALTH_REWORK_TRIAL.md's compressed AR table (Full Plate 16->8, Brigandine 13->6, etc.) alongside the Rigid/Flexible Penalty rework (Rigid: Penalty = AR, Flexible: Penalty = AR÷2 rounded down; Armorer's reduction is now 1:1 per rank instead of ranks÷2). `ENCOUNTER_GUIDE.md`'s "Stat Ranges by Tier" AR column (`core/`-adjacent, hand-authored, not templated) still cites the *old* player armor scale in its parentheticals - e.g. Tier 1 Tank "6-10 (chain)" when player Chain Mail is now AR 5, Tier 3 Tank "12-15 (half/full plate)" when player Half-Plate/Full Plate are now AR 7-8. These parentheticals were meant to read as "roughly what a player wearing this armor tier would have," and no longer do.
+
+This got much bigger with the Wounds & Defense System rework (`wounds-system-design-doc.md`, folded into `core/` directly - `HEALTH_REWORK_TRIAL.md` and its harness scripts were deleted as superseded): Maximum Wounds is now just `END` (a 1-5 range), replacing `(END × 3) + 10` (a 13-40 range). `ENCOUNTER_GUIDE.md`'s entire "Player baselines" and "Stat Ranges by Tier" HP columns (16-95 across the tiers) are now off by roughly an order of magnitude, not just the AR column. Its crit-Trauma text is also now wrong twice over: it says crits "deal maximum damage" (already contradicted the shipped rules before this rework) and describes expanded crit range as stacking flat crit-Trauma, which no longer exists as a baseline (see core_rules.md's Trauma section and combat.md's Critical Hits - Trauma from crits is now the paid `Deadly Critical` feat only).
+
+**When picking this up:**
+- Re-derive each tier's monster Wounds AND AR range against the new player scales - this is real design/balance work (monster stat calibration against the new pool/AR sizes, likely with monsters needing a different pool concept entirely given how small `Wounds = END` is), not a mechanical find-and-replace, so budget time accordingly.
+- Fix the two crit-related wording bugs while there (both flagged above).
+
+## Numeric fallout from the Wounds rework needs a dedicated rebalance pass
+
+Every flat-Wounds-granting feat, spell, or item was calibrated against the old `(END × 3) + 10` pool (13-40) and was badly miscalibrated against the tiny `Wounds = END` pool (1-5) - a single use could dwarf or trivialize the entire pool. Renamed (HP -> Wounds, tHP -> Temp Wounds) but not re-tuned at rename time.
+
+**Resolved (2026-08-03):** every non-feat item in this category has been rescaled - `Thaumaturge`/`Arboreal Integument`/`Respite from Ruin`/`Temporal Fortification` (Cultivation), `Bandages`, `Healing Potion` (item and Alchemy recipe), `Revitalizing Bomb`, Varulf's transformation, Tembels' `Natural Born Healer`, Strygs' `Vampiric Regeneration`/`Blood Drinker`, Golems' Armorer repair, `Invocation`'s Wound Loss Rule (now Mana Cost ÷ 2, was × 2), Necration's `Raise Thrall`, Geomancy's Earthen Barricade/Lithic Ruina/Terra Sepultura, `traveling.md`'s mounts, and `leadership.md`'s sample cohort's Wounds value. (Aelves' Tradition of Ash and Necration's Mortis Harvest Transfer were checked and already scale correctly, since both are expressed as a fraction of a Wounds stat rather than a flat die.) These were design judgment calls, not derived math - revisit via playtest if they feel off.
+
+**Resolved (2026-08-03) as a side effect of the feats simplification pass below:** `Tough`, `Healer`, `Herbalist`, and `Wrath of the Faithful` were all cut outright (none survived the cut to 3-5 feats per category), which resolves their Wounds-scaling debt by deletion rather than rescale. `Divine Healing` (a Channel Divinity option, kept) was rescaled from 2d8 to 1d4 Temporary Wounds in the same pass.
+
+**Still outstanding - Prestige Feats only (exempt from the category-count trim, not touched by the pass below):**
+
+- `Fallen Wing`'s Chest-necrotic-inversion healing math.
+- `Blood-Rule` prestige feat (cast spells using Wounds instead of Mana - now extremely lethal even for a 1-Mana spell).
+
+## Feats system cut from ~90 feats to 3-5 per category (2026-08-03)
+
+`core/feats/general_feats.md`, `martial_feats.md`, `arcane_feats.md`, `divine_feats.md`, and `skill_feats.md` were trimmed to their 3-5 most distinctive feats each, at the user's request, following the Wounds & Defense System rework. Two rules drove every cut: no feat that flatly adds damage, and no feat that grants an extra attack (proactive or reactive/reaction-triggered - e.g. Sweeping Strike, Two-Weapon Fighting, Riposte, Grappler's follow-up, Sneak Attack all cut on this basis, even where a non-damage rider like Brutal Strike's trip or Charger's push could have been preserved standalone). `hybrid_feats.md` (4 feats) and `prestige_feats.md` (8 feats) were left untouched - both already skewed toward unique, non-generic mechanics rather than flat bonuses, and Prestige in particular is capped at one-per-character by design, not a menu to prune. Some chain feats were consolidated into their root instead of deleted outright where another file depended on their name (`Rapid Reload`'s reload-speed benefit folded into `Gunner`, since `weapons.md` referenced it by name; `Elemental Affinity` + `Elemental Mastery` merged into one `Elemental Specialization` feat). `feats_overview.md` still only lists 5 of the 7 category headers (missing Hybrid and Prestige) - a pre-existing gap, not introduced by this pass, left as-is.
+
+**Update (2026-08-03):** the Hybrid category (`hybrid_feats.md`) was deleted outright at the user's request, rather than trimmed - the "missing Hybrid" gap noted above no longer applies, since there is no longer a Hybrid category to list.
+
+**When picking this up:** same treatment as the resolved items above - real design work against the new pool size, ideally playtested, not a blind divide-by-N.
+
+**Also noted but explicitly out of scope for any Wounds pass:** `leadership.md`'s sample cohort (Mira Valdros) has attributes (STR 5, END 5, PRE 4, DEX 4...) summing to 30 against an 18-point/Level-2 budget with a cap of 4 - a pre-existing bug from the earlier Skills/Attributes rescale, unrelated to Wounds. Her Wounds value was set to match her (currently-invalid) listed END rather than fixing the whole sheet.
+
+## Reaction economy: wounds-system-design-doc.md's §5 language doesn't match shipped rules
+
+**Resolved (2026-08-03):** Dodge, Block, and Parry were unified into a single `Counter Roll` Reaction (`maneuvers.md`) with three Styles (Parry/Block/Dodge), each rolling a contested check against the incoming attack roll and resolving off a shared margin table (Riposte at +3 or more, Stopped at 0-2, Minimized at -1/-2, Failed at -3 or worse). This is the "Counter Rolls" concept the design doc gestured at, now actually specified: still 1 Reaction/round from the shared pool (no separate DEX÷2 cap - Dodge's old overtime-self-Wound mechanic was cut, since a Failed margin already carries real risk). A margin of +3 or more grants a free counterattack (not just a rider) - a deliberate, considered exception to the "no reaction-triggered extra attacks" rule that got Riposte/Grappler's-follow-up/Sneak-Attack cut as Feats (see the Feats section below): this is gated behind winning a contested roll by 3+, not a flat unconditional trigger, so it isn't reopening that door so much as moving the same payoff from a Feat tax into a universal, roll-gated core mechanic. Also fixed in passing: `armor.md`'s Block formula ("add shield's AR bonus") and `maneuvers.md`'s old Block formula ("END + Shields Skill ÷ 2") contradicted each other - now unified on the shield's AR Bonus stat (Shield Table), and armor.md's undocumented "Shields skill rank 2+" gate (absent from maneuvers.md) was dropped to match.
+
+## Block untying from the shield/Two-Handed requirement (HEALTH_REWORK_TRIAL.md v4, not carried forward)
+
+Before it was deleted as superseded, `HEALTH_REWORK_TRIAL.md`'s v4 revision had a separately-decided, PvP-validated fix: Block's prerequisite gains a second path (wearing any armor also qualifies, using Armorer Skill instead of Shields Skill), and Block's trigger drops the "physical attack" restriction to also cover Spell Attacks (AR already mitigates spell damage post-hit, so excluding Spell Attacks was an inconsistency). Validated result: Frontline Fighter's PvP win rate against Armored-Lane casters improved +14-15 percentage points at L6/L8 from this alone. This was **not** part of the Wounds & Defense System rework (out of scope for that pass) and is not currently adopted anywhere in `core/`. If revisiting: `maneuvers.md`'s Blocking section (prerequisite: "A shield in your hand, or a melee weapon with the Two-Handed property"; effect formula: `END + Shields Skill ÷ 2`) is where both changes would land.

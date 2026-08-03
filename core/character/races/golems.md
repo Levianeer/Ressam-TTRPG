@@ -7,23 +7,23 @@
 A golem is bound purpose wearing a body \- stone, metal, earth, or flesh animated by a will not its own. Most form deliberately, shaped by a mage who binds intent into inert matter and anchors it with an Innsigli; the rest coalesce by accident, where ambient divine energy pools thick enough to force purpose onto dead material. Dwergaz artificers make the deliberate kind more often than any other people in Ressam, though the craft isn't theirs alone. A golem is not to be confused with a Tierratuar of Terrevault's Labyrinthine Caverns \- a Tierratuar is grown, a captured Orkh's or Daemon's flesh reworked and soul-bound by the Dromgadol Guild's experiments into a living weapon. A golem has no such body underneath. It is matter that was never alive, made to move as if it were.
 
 **Homeland:** Found worldwide, most commonly wherever Dwergaz artificers work  
-**Starting Attributes:** \+3 STR, \+2 END, \-2 MIND  
+**Starting Attributes:** \+2 STR, \+1 END, \-1 MIND  
 **Age:** Formed at adulthood, age by material (Flesh age as Humans)  
 **Alignment:** Neutral  
 **Size:** Large (8-16 ft)  
 **Base Speed:** 25 feet  
-**Starting Languages:** You understand creator's language (can speak it if MIND 3+)  
+**Starting Languages:** You understand creator's language (can speak it if MIND 2+)  
 **Starting Skills:** \+2 Athletics
 
 **Level Adjustment:** \+2
 
 ### **Features**
 
-**Mystikal Heritage:** You have advantage on Wards vs charmed and fear effects. When killed, the soul explosively returns to primordial energy. The creature can only be restored back to life by means of a god's miracle.  
+**Mystikal Heritage:** You have \+3 to Wards vs charmed and fear effects. When killed, the soul explosively returns to primordial energy. The creature can only be restored back to life by means of a god's miracle.  
 **Boundless Strength:** Your current STR Attribute CAP is increased by 2 (to a maximum of 12 at level 12).  
 **Built for Impact:** Your unarmed strikes deal an additional 2 damage.  
 **Constructed Nature:** You are immune to poison and disease. You don't need food, water, or air to survive.  
-**Cannot Heal Naturally:** Cannot heal from natural rest but CAN be healed by Cultivation/Benediction magic. You must be healed magically or repaired using an Armorer check (DC 13, 1 hour, restores 2d6 HP). You can repair yourself if you have Armorer ranks and Armorer's Tools.  
+**Cannot Heal Naturally:** Cannot heal from natural rest but CAN be healed by Cultivation/Benediction magic. You must be healed magically or repaired using an Armorer check (DC 13, 1 hour, restores 2 Wounds). You can repair yourself if you have Armorer ranks and Armorer's Tools.  
 **Choose 1 Elemental Form:**
 
 | Form | Attribute Penalty | Benefit |

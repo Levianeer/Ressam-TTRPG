@@ -57,7 +57,6 @@
 - [Martial](martial_feats)
 - [Arcane](arcane_feats)
 - [Divine](divine_feats)
-- [Hybrid](hybrid_feats)
 - [Skill](skill_feats)
 - [Prestige](prestige_feats)
 

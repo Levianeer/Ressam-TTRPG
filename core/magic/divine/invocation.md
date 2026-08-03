@@ -18,11 +18,11 @@ When you first invest ranks in Invocation, you must perform the Severing \- a ri
 - Its "voice" is your voice, delayed, echoing and distorted.
 - Anyone with magical sight or divine sensitivity can see the Familiar coiled within you \- and knows immediately what you are.
 
-### **HP Loss Rule**
+### **Wound Loss Rule**
 
-You may cast Invocation spells using HP equal to Mana Cost × 2 instead of Mana, paid when you cast. This loss cannot be reduced or prevented but can use tHP.
+You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up, minimum 1\) instead of Mana, paid when you cast. This loss cannot be reduced or prevented but can use Temp Wounds.
 
-**Note:** This rate always applies to Invocation spells, even for casters who convert Mana costs to HP through other means (such as the Blood-Rule Prestige Feat) \- it does not stack with or get discounted by those effects.
+**Note:** This rate always applies to Invocation spells, even for casters who convert Mana costs to Wounds through other means (such as the Blood-Rule Prestige Feat) \- it does not stack with or get discounted by those effects.
 
 ### **SPELLS**
 
@@ -40,7 +40,7 @@ You may cast Invocation spells using HP equal to Mana Cost × 2 instead of Mana,
 - **Duration:** Instant
 - **Effect:** Your Familiar interposes itself, absorbing the impact. Reduce the damage by 2d8 \+ FAI. If this reduces the damage to 0, the attack is considered to have missed for armor degradation purposes.
 
-- If the original damage is less than the loss of HP Phantom Aegis inflicted, your speed is halved until the end of your next turn.
+- If the original damage is less than the loss of Wounds Phantom Aegis inflicted, your speed is halved until the end of your next turn.
 
 **Agonizing Tether \- Mana Cost 2**
 
@@ -49,7 +49,7 @@ You may cast Invocation spells using HP equal to Mana Cost × 2 instead of Mana,
 - **Duration:** Channel
 - **Effect:** You bind a thread of your Familiar to a creature's shadow, linking your suffering to theirs. Make a spell overcome roll vs. the target's CHA Ward.
 
-  - **Overcome:** Whenever you lose HP while channeling (from any source, including Invocation spell costs), the target takes lightning damage equal to half the HP you lost.
+  - **Overcome:** Whenever you lose Wounds while channeling (from any source, including Invocation spell costs), the target takes lightning damage equal to half the Wounds you lost.
   - **Resist:** The tether snaps \- the target takes 1d6 lightning damage and the spell ends.
 
 
@@ -107,6 +107,6 @@ You may cast Invocation spells using HP equal to Mana Cost × 2 instead of Mana,
 
 - **Escalating Power:** Your attacks deal \+1d4 lightning damage per Strain (maximum \+4d4).
 
-- **Ending Apotheosis:** At the start of your turn before acting, you may end the transformation. When it ends: take 1d8 damage per Strain and gain 1 Exhaustion. If reduced to 0 HP while transformed, Apotheosis ends immediately and you begin Dying.
+- **Ending Apotheosis:** At the start of your turn before acting, you may end the transformation. When it ends: take 1d8 damage per Strain and gain 1 Trauma. If reduced to 0 Wounds while transformed, Apotheosis ends immediately and you begin Dying.
 
 - **Losing Control:** At Strain 5+, you must spend your turn moving toward and attacking the nearest creature (ally or enemy). You can no longer voluntarily end Apotheosis.

@@ -234,10 +234,10 @@
     <h2>Combat Stats</h2>
     <div class="grid grid-stats">
       <div class="stat-box">
-        <div class="label">Hit Points</div>
-        <div class="value"><span class="computed" id="out-hpMax">10</span></div>
+        <div class="label">Wounds</div>
+        <div class="value"><span class="computed" id="out-hpMax">1</span></div>
         <div class="sub"><input type="number" name="hpCurrent" placeholder="cur"><span>/</span><input type="number" name="hpTemp" placeholder="temp"></div>
-        <div class="note">Current / Temp HP (Max includes Feat Bonus, see Progression)</div>
+        <div class="note">Current / Temp Wounds (Max includes Feat Bonus, see Progression)</div>
       </div>
       <div class="stat-box">
         <div class="label">Mana</div>
@@ -527,9 +527,9 @@
       <tbody id="featSlotsBody"></tbody>
     </table>
     <h3>Feat Bonuses</h3>
-    <p class="note">Flat bonuses granted by feats that don't fit the Base/Mod pattern elsewhere (e.g. Tough's +2 HP/level, Magically Gifted's +5 Max Mana). Added into the Overview tab's Max HP / Max Mana.</p>
+    <p class="note">Flat bonuses granted by feats that don't fit the Base/Mod pattern elsewhere (e.g. Tough's +2 Wounds/level, Magically Gifted's +5 Max Mana). Added into the Overview tab's Wounds / Max Mana.</p>
     <div class="grid grid-stats">
-      <div class="field"><label>Max HP Bonus</label><input type="number" name="hpBonus" value="0"></div>
+      <div class="field"><label>Max Wounds Bonus</label><input type="number" name="hpBonus" value="0"></div>
       <div class="field"><label>Max Mana Bonus</label><input type="number" name="manaBonus" value="0"></div>
     </div>
     <h3>Feat Notes / Prerequisites</h3>
@@ -600,7 +600,7 @@
 
   var ATTRIBUTES = [
     {key:'STR', name:'Strength'},
-    {key:'REF', name:'Reflex'},
+    {key:'PRE', name:'Precision'},
     {key:'END', name:'Endurance'},
     {key:'DEX', name:'Dexterity'},
     {key:'MIND', name:'Mind'},
@@ -612,7 +612,7 @@
   // Mirrors core_rules.md:109-134 Skill Categories tables
   var SKILL_CATEGORIES = [
     {attr:'STR', category:'Brawn & Melee', skills:['One-Handed Blades','Two-Handed Blades','Axes & Hammers','Polearms','Brawling','Slings & Whips']},
-    {attr:'REF', category:'Finesse & Ranged', skills:['Rapiers & Fencing','Daggers & Knives','Bows & Crossbows','Thrown Weapons','Pistols','Long Guns','Heavy Firearms']},
+    {attr:'PRE', category:'Finesse & Ranged', skills:['Rapiers & Fencing','Daggers & Knives','Bows & Crossbows','Thrown Weapons','Pistols','Long Guns','Heavy Firearms']},
     {attr:'END', category:'Defense & Survival', skills:['Athletics','Armorer','Survival','Shields','Riding']},
     {attr:'DEX', category:'Adroitness & Subterfuge', skills:['Agility','Acrobatics','Stealth','Lockpicking','Sleight of Hand','Crafting','Perception']},
     {attr:'MIND', category:'Intellectual', skills:['Alchemy','Enchanting','Spell Crafting','Historic Lore','Medical Lore','Nature Lore','Identify']},
@@ -627,18 +627,18 @@
   // Mirrors data/progression.yaml (character_creation + levels 1-12)
   // data/progression.yaml:1 - level N requires 30 * N^2 total XP (totalXp below)
   var PROGRESSION = {
-    1:{skillCap:3, attrCap:7, skillPts:24, attrPts:36, feats:2, totalXp:30},
-    2:{skillCap:4, attrCap:7, skillPts:26, attrPts:36, feats:2, totalXp:120},
-    3:{skillCap:5, attrCap:7, skillPts:28, attrPts:36, feats:3, totalXp:270},
-    4:{skillCap:6, attrCap:8, skillPts:30, attrPts:38, feats:3, totalXp:480},
-    5:{skillCap:7, attrCap:8, skillPts:32, attrPts:38, feats:4, totalXp:750},
-    6:{skillCap:8, attrCap:8, skillPts:34, attrPts:38, feats:4, totalXp:1080},
-    7:{skillCap:9, attrCap:8, skillPts:36, attrPts:38, feats:5, totalXp:1470},
-    8:{skillCap:10, attrCap:9, skillPts:38, attrPts:40, feats:5, totalXp:1920},
-    9:{skillCap:10, attrCap:9, skillPts:40, attrPts:40, feats:6, totalXp:2430},
-    10:{skillCap:10, attrCap:9, skillPts:42, attrPts:40, feats:6, totalXp:3000},
-    11:{skillCap:10, attrCap:9, skillPts:44, attrPts:40, feats:7, totalXp:3630},
-    12:{skillCap:10, attrCap:10, skillPts:46, attrPts:42, feats:8, totalXp:4320}
+    1:{skillCap:2, attrCap:4, skillPts:12, attrPts:18, feats:2, totalXp:30},
+    2:{skillCap:2, attrCap:4, skillPts:13, attrPts:18, feats:2, totalXp:120},
+    3:{skillCap:3, attrCap:4, skillPts:14, attrPts:18, feats:3, totalXp:270},
+    4:{skillCap:3, attrCap:4, skillPts:15, attrPts:19, feats:3, totalXp:480},
+    5:{skillCap:4, attrCap:4, skillPts:16, attrPts:19, feats:4, totalXp:750},
+    6:{skillCap:4, attrCap:4, skillPts:17, attrPts:19, feats:4, totalXp:1080},
+    7:{skillCap:5, attrCap:4, skillPts:18, attrPts:19, feats:5, totalXp:1470},
+    8:{skillCap:5, attrCap:5, skillPts:19, attrPts:20, feats:5, totalXp:1920},
+    9:{skillCap:5, attrCap:5, skillPts:20, attrPts:20, feats:6, totalXp:2430},
+    10:{skillCap:5, attrCap:5, skillPts:21, attrPts:20, feats:6, totalXp:3000},
+    11:{skillCap:5, attrCap:5, skillPts:22, attrPts:20, feats:7, totalXp:3630},
+    12:{skillCap:5, attrCap:5, skillPts:23, attrPts:21, feats:8, totalXp:4320}
   };
 
   var FEAT_SLOTS = [
@@ -678,7 +678,7 @@
       box.appendChild(el('div', {class:'name'}, [text(a.name), el('span', {class:'abbr'}, [text(a.key)])]));
       var row = el('div', {class:'attr-row'});
       row.appendChild(el('label', {}, [text('Base')]));
-      row.appendChild(el('input', {type:'number', name:'attr:'+a.key+':base', min:'1', max:'10', value:'1'}));
+      row.appendChild(el('input', {type:'number', name:'attr:'+a.key+':base', min:'1', max:'5', value:'1'}));
       row.appendChild(el('label', {}, [text('Mod')]));
       row.appendChild(el('input', {type:'number', name:'attr:'+a.key+':mod', value:'0'}));
       row.appendChild(el('label', {}, [text('Total')]));
@@ -700,7 +700,7 @@
         var tr = el('tr', {'data-skill':name, 'data-skill-attr':cat.attr});
         tr.appendChild(el('td', {}, [text(name)]));
         var tdBase = el('td', {});
-        tdBase.appendChild(el('input', {type:'number', class:'num-sm', name:'skill:'+name+':base', 'data-role':'base', min:'0', max:'10', value:'0'}));
+        tdBase.appendChild(el('input', {type:'number', class:'num-sm', name:'skill:'+name+':base', 'data-role':'base', min:'0', max:'5', value:'0'}));
         tr.appendChild(tdBase);
         var tdMod = el('td', {});
         tdMod.appendChild(el('input', {type:'number', class:'num-sm', name:'skill:'+name+':mod', 'data-role':'mod', value:'0'}));
@@ -864,7 +864,7 @@
     document.getElementById('out-blockBonus').textContent = attrTotals['END'] + Math.floor(shieldsSkill/2);
 
     // 4. Single-pass derived stats
-    var hpMax = attrTotals['END']*3 + 10 + num(document.querySelector('[name="hpBonus"]').value);
+    var hpMax = attrTotals['END'] + num(document.querySelector('[name="hpBonus"]').value);
     var manaMax = attrTotals['MIND']*2 + num(document.querySelector('[name="manaBonus"]').value);
     var sizeMult = num(document.querySelector('[name="size"]').value) || 1;
     var carryMax = Math.floor((attrTotals['END'] + attrTotals['STR']) * sizeMult);
@@ -872,7 +872,7 @@
     var evasion = 5 + agility + shieldAgilityBonus + attrTotals['DEX'] - armorPenalty;
     var dodge = evasion + 5;
     var maxDodges = Math.floor(attrTotals['DEX']/2);
-    var initiative = Math.floor((attrTotals['REF'] + attrTotals['DEX'])/2);
+    var initiative = Math.floor((attrTotals['PRE'] + attrTotals['DEX'])/2);
 
     document.getElementById('out-hpMax').textContent = hpMax;
     document.getElementById('out-manaMax').textContent = manaMax;

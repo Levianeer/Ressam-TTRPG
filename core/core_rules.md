@@ -2,9 +2,9 @@
 
 ### **Ressam is not Dungeons & Dragons.**
 
-If you're coming from 5th Edition, you'll notice this system asks more of you. Armor degrades and needs repair. Exhaustion builds up over time. Magic is rarer, costlier, and comes with social baggage. Your choices \- tactical and strategic \- carry more weight than you might be used to. This is intentional but it's not meant to be a meat grinder.
+If you're coming from other TTRPGs, you'll notice this system asks more of you. Armor degrades and needs repair. Trauma builds up over time. Magic is rarer, costlier, and comes with social baggage. Your choices \- tactical and strategic \- carry more weight than you might be used to. This is intentional but it's not meant to be a meat grinder.
 
-Ressam sits somewhere between the relative safety of modern D\&D and the punishing lethality of dedicated survival games. You won't die to a single unlucky roll, but you also can't ignore your wounds and push through every encounter. Think of it as *consequential* rather than brutal \- a system where preparation matters, retreating is sometimes the smart play, and victory feels earned.
+Ressam sits somewhere between the relative safety of modern D\&D and the punishing lethality of dedicated survival games. You can't ignore your wounds and push through every encounter. Think of it as *consequential* rather than brutal \- a system where preparation matters, retreating is sometimes the smart play, and victory feels earned.
 
 **Combat is the heart of this game.** Ressam is crunchy where it matters \- positioning, resource management, decisions with real trade-offs. The mechanics outside of combat exist primarily to support that loop: resting recovers what you'll spend in the next fight, equipment requires upkeep, and downtime prepares you for what's ahead. This isn't a game with elaborate subsystems for every pillar of play. Everything outside of combat is meant to be played loosely and with a ‘rulings not rules’ mentality.
 
@@ -34,13 +34,13 @@ Ressam uses d4, d6, d8, d10, and d12 dice. The d12 is your primary resolution di
 
 ## Attributes
 
-Attributes range from 1 (severely impaired) to 10 (peak mortal potential).
+Attributes range from 1 (severely impaired) to 5 (peak mortal potential).
 
 | Attribute | Abbr. | Governs |
 | :---- | :---: | :---- |
 | **Strength** | STR | Physical power, melee damage, carrying slots |
-| **Reflex** | REF | Reaction speed, ranged accuracy, initiative |
-| **Endurance** | END | Toughness, hit points, resisting fatigue |
+| **Precision** | PRE | Reaction speed, ranged accuracy, initiative |
+| **Endurance** | END | Toughness, Wounds, resisting fatigue |
 | **Dexterity** | DEX | Agility, fine motor control, dodging |
 | **Mind** | MIND | Intelligence, reasoning, mana pool |
 | **Arcane** | ARC | Arcane magical aptitude |
@@ -53,9 +53,9 @@ Attributes range from 1 (severely impaired) to 10 (peak mortal potential).
 
 Reading and writing are far from universal in Ressam \- most people never learn.
 
-**Automatic Literacy:** A character with **MIND 6+** at character creation is literate, able to read and write every language they know. Certain Careers (see Careers) grant literacy as well, regardless of MIND.
+**Automatic Literacy:** A character with **MIND 3+** at character creation is literate, able to read and write every language they know. Certain Careers (see Careers) grant literacy as well, regardless of MIND.
 
-**Below MIND 6:** Illiterate by default, unless literacy is granted by Career. Literacy determined this way is fixed at character creation \- raising MIND afterward (leveling, etc.) does not retroactively grant it.
+**Below MIND 3:** Illiterate by default, unless literacy is granted by Career. Literacy determined this way is fixed at character creation \- raising MIND afterward (leveling, etc.) does not retroactively grant it.
 
 **Learning to Read Later:** An illiterate character can still choose to learn to read during play. This isn't automatic and has no fixed cost or timeline \- work it out with your DM.
 
@@ -65,7 +65,7 @@ Reading and writing are far from universal in Ressam \- most people never learn.
 
 ## Skills
 
-Skills range from 0 (untrained) to 10 (world-renowned master). Each is tied to one attribute.
+Skills range from 0 (untrained) to 5 (world-renowned master). Each is tied to one attribute.
 
 ### **Skill Check Formula**
 
@@ -93,21 +93,6 @@ Ressam uses an eight-tier DC scale for Skill Checks, Ward Checks, Minor Magic, a
 
 **What to expect at the table:** A character actively trained in the relevant Skill clears Very Easy through Medium almost automatically at any level, and Tricky not long after. Hard is a real coin flip early on and becomes reliable by mid-game. Very Hard is a long shot for a level 1 character and doesn't become dependable until roughly level 10\+. Incredibly Hard and Impossible should stay hard even for a maxed-out specialist \- they're meant to represent genuinely exceptional feats, not routine business.
 
-| Tier | DC | Level 1 (trained) | Level 6 (trained) | Level 12 (trained) |
-| :---- | :---: | :---: | :---: | :---: |
-| Very Easy | 5 | 100% | 100% | 100% |
-| Easy | 8 | 100% | 100% | 100% |
-| Medium | 10 | 100% | 100% | 100% |
-| Tricky | 12 | \~92% | 100% | 100% |
-| Hard | 15 | \~67% | 100% | 100% |
-| Very Hard | 20 | \~25% | \~75% | 100% |
-| Incredibly Hard | 25 | 0% | \~33% | \~67% |
-| Impossible | 30 | 0% | 0% | \~25% |
-
-*Success rates assume a character whose Skill Ranks and governing Attribute both scale from a level 1 specialist (Skill 3 \+ Attribute 7\) to a level 12 specialist (Skill 10 \+ Attribute 10\), the typical progression curve for a trained frontline build.*
-
-**Coming from D\&D?** Don't reuse D\&D's DC numbers directly. D\&D's 1d20 \+ modifier rarely exceeds \+11, even at high level, so its DCs stay meaningful across the whole level range by design (bounded accuracy). Ressam's 1d12 \+ Skill \+ Attribute can climb to \+20 for a maxed specialist, so the same numeric DC means something very different in each system \- a DC that's brutally hard in D\&D can become close to automatic for a Ressam specialist, and vice versa for an untrained character. Set DCs by narrative difficulty using the tiers above, not by porting a number from another game.
-
 ### **Skill Categories**
 
 **Combat Skills**
@@ -115,7 +100,7 @@ Ressam uses an eight-tier DC scale for Skill Checks, Ward Checks, Minor Magic, a
 | Category                | Attr. | Skills |
 |:------------------------| :---: | :---- |
 | Brawn & Melee           | STR | One-Handed Blades, Two-Handed Blades, Axes & Hammers, Polearms, Brawling, Slings & Whips |
-| Finesse & Ranged        | REF | Rapiers & Fencing, Daggers & Knives, Bows & Crossbows, Thrown Weapons, Pistols, Long Guns, Heavy Firearms |
+| Finesse & Ranged        | PRE | Rapiers & Fencing, Daggers & Knives, Bows & Crossbows, Thrown Weapons, Pistols, Long Guns, Heavy Firearms |
 | Defense & Survival      | END | Athletics, Armorer, Survival, Shields, Riding |
 | Adroitness & Subterfuge | DEX | Agility, Acrobatics, Stealth, Lockpicking, Sleight of Hand, Crafting, Perception |
 
@@ -143,29 +128,46 @@ Ressam uses an eight-tier DC scale for Skill Checks, Ward Checks, Minor Magic, a
 
 **Ward Check:** Wards represent a split-second reaction to danger. Roll 1d12 \+ Attribute \+ your highest-ranked Skill governed by that Attribute ≥ DC
 
-**Note:** Your Ward also works as a passive, static defensive score \- **Ward \= 5 \+ Attribute \+ your highest-ranked Skill governed by that Attribute** \- representing the same resistance without requiring you to roll. Spells and other effects that target a Ward instead of Evasion roll against this score directly (see Magic Overview).
+**Passive Ward \= 5 \+ Attribute \+ your highest-ranked Skill governed by that Attribute** \- a quick-reference defensive score standing in for a Ward Check without requiring you to roll.
+
+**Contested Checks:** Whenever a Feat, Feature, Maneuver, or Spell Overcome pits one creature's Skill or Ward directly against another's (rather than a flat DC from the tier table above), only the instigator rolls: **1d12 \+ the named Attribute \+ the named Skill** (their Spell Modifier, for spells) against the defender's static score \- **5 \+ the defender's associated Attribute \+ their relevant Skill** (their highest-ranked Skill governed by that Attribute, for a **Contested Ward**; a specific named Skill instead, where the rule says so, such as Acrobatics defending a Grapple). The defender never rolls. Ties go to the instigator, same as a Skill Check meeting a DC exactly.
 
 | Situation | Roll Type |
 | :---- | :---- |
 | Climbing a cliff | Athletics Check |
 | Grabbing a ledge when pushed | STR Ward |
 | Sneaking past guards | Stealth Check |
-| Surprised by an assassin | REF Ward |
+| Surprised by an assassin | PRE Ward |
 
 ---
 
-## Hit Points and Survival
+## Wounds and Survival
 
-**Maximum HP \= (END × 3\) \+ 10**
+**Maximum Wounds \= END**
+
+Damage remaining after AR reduction converts to Wounds via thresholds, rather than subtracting 1-for-1:
+
+| Damage (after AR) | Wounds inflicted |
+|:---|:---:|
+| 1-9 | 1 |
+| 10-15 | 2 |
+| 16+ | 3 |
+
+**Design intent:** Big weapons genuinely threaten multi-wound hits; armor's job is dragging a 2-wound hit down into 1-wound territory; Reactions that shave even a few points of damage can drop a hit below a threshold and are therefore decisive, not marginal.
+
+### **Wound Penalty**
+
+Each Wound you're currently missing from your maximum imposes **\-1 to all non-combat rolls**, cumulative. There is deliberately **no combat death spiral** \- a character on their last Wound fights at full capability. The cost of injury is paid on the strategic layer afterward, not in the fight itself.
+
+**Design philosophy:** Wound penalties are not punishment; they are the privilege of being alive. A tough character walking around at a steep penalty is doing so *because* anyone less tough would already be dead. END is not the stat that makes you good at surviving \- it's the stat that lets you afford to be hurt.
 
 ### **Dying**
 
-At 0 HP:
+At 0 Wounds:
 
 1.  You immediately fall Prone and become Unconscious, dropping any equipment you were holding. Excess damage is ignored.
 2.  Your **Death Clock** starts at your **END**. At the start of each of your turns, reduce it by 1. When it reaches 0, you die.
-3.  You gain 1 level of Exhaustion the moment you drop, and 1 more for every full round you remain Dying. This Exhaustion persists after rescue \- going down always leaves a mark.
-4.  **While Dying, you cannot regain HP.** Healing magic, potions, and similar effects instead *pause* your Death Clock until the start of your next turn \- they buy time, they don't save you. Only Stabilization ends Dying.
+3.  **While Dying, you cannot regain Wounds.** Healing magic, potions, and similar effects instead *pause* your Death Clock until the start of your next turn \- they buy time, they don't save you. Only Stabilization ends Dying.
 
 ### **Coup de Grace**
 
@@ -178,9 +180,9 @@ A Dying creature can be executed by attacking it.
 ### **Stabilization**
 
 -   **Action:** Major Action while adjacent
--   **Check:** Medical Lore + MIND vs. DC (10 + target's Exhaustion)
+-   **Check:** Medical Lore + MIND vs. DC (10 + target's Trauma)
 -   **Healer's Kit:** Grants advantage
--   **Success:** The target is no longer Dying. They remain at 0 HP, Unconscious, and Prone until they regain at least 1 HP \- at which point healing works on them normally again.
+-   **Success:** The target is no longer Dying. They remain at 0 Wounds, Unconscious, and Prone until they regain at least 1 Wound \- at which point healing works on them normally again.
 -   **Failure:** No progress; the clock keeps ticking. You may try again next round.
 
 ### **Falling**
@@ -189,20 +191,28 @@ Take 1d6 bludgeoning damage per 5 ft fallen, creature is forced prone unless dam
 
 ### **Food and Water**
 
-On average, a character can go three days without rations, each day after they gain a level of Exhaustion and cannot be healed until they have consumed a ration. A full day of hex travel also consumes 1 ration per character (see Traveling).
+On average, a character can go three days without rations, each day after they gain a level of Trauma and cannot be healed until they have consumed a ration. A full day of hex travel also consumes 1 ration per character (see Traveling).
 
 ### **Suffocation**
 
-You can hold your breath for END minutes. After that, you drop to 0 HP and begin to die.
+You can hold your breath for END minutes. After that, you drop to 0 Wounds and begin to die.
 
-### **Temporary Hit Points**
+### **Temporary Wounds**
 
-Temporary Hit Points, or tHP represents your temporary patching of a wound or injury. Keeping you in the fight until you can rest.
+Temporary Wounds, or Temp Wounds represents your temporary patching of a wound or injury. Keeping you in the fight until you can rest.
 
-- **Maximum tHP:** Total HP − current HP  
+- **Maximum Temp Wounds:** Total Wounds − current Wounds  
 - **Stacking:** Multiple sources add together  
-- **Damage Order:** tHP lost before HP  
+- **Damage Order:** Temp Wounds lost before Wounds  
 - **Duration:** Disappears after next Rest
+
+### **Wound Recovery**
+
+Wounds don't refill on the Short/Field/Long Rest cadence (see Resting, below, for Mana and Trauma recovery) \- they heal on their own, slower track:
+
+-   **Attended:** Regain **1 Wound per 2 days** while actively attended by a medic or doctor (this may be a party member). The patient must rest and do nothing beyond light physical work; the medic is likewise occupied and cannot spend that time doing anything else productive.
+-   **Unattended:** Regain **1 Wound per 2 weeks**. This is a deliberately punitive floor \- a medic-less party isn't stuck healing forever, but attended care is dramatically better.
+-   A **Dying** character who has been Stabilized recovers their first Wound (ending Unconsciousness) on this same track \- Attended or Unattended, same rates as anyone else.
 
 ---
 
@@ -244,27 +254,26 @@ A **Backpack** costs no Slots itself, but is required to use your full Slot coun
 
 ## Resting
 
+**Note:** Wounds do not heal on this ladder \- see Wound Recovery, above.
+
 ### **Short Rest (1 Hour)**
 
-- Regain HP equal to **END**  
 - No Mana recovery  
-- Exhaustion: Medical Lore DC 15 to remove 1 level  
+- Trauma: Medical Lore DC 15 to remove 1 level  
 - Can use: Armorer (rank 3+), Medical Lore, Scribing, Prayer etc  
 - Interrupted by combat
 
 ### **Field Rest (6 Hours)**
 
-- Regain HP equal to **END × 2**  
 - Regain Mana equal to **MIND**  
-- Exhaustion: Medical Lore DC 15 to remove 2 additional level  
+- Trauma: Medical Lore DC 15 to remove 2 additional level  
 - Can use: Armorer (rank 3+), Medical Lore, Scribing, Prayer etc  
 - **Requires:** Shelter, watch rotation, defensible position, 1 ration per character
 
 ### **Long Rest (8 Hours)**
 
-- Regain HP equal to **END × 4**, up to your Maximum HP  
 - Regain Mana equal to **MIND × 3**, up to your Maximum Mana  
-- Exhaustion: Remove 1 level automatically, Medical Lore DC 15 to remove 2 additional level  
+- Trauma: Remove 1 level automatically, Medical Lore DC 15 to remove 2 additional level  
 - Can use: Armorer (rank 3+), Medical Lore, Scribing, Prayer etc  
 - **Requires:** Permanent structure in civilization with security (inn, barracks, temple, etc.)
 
@@ -272,9 +281,9 @@ A **Backpack** costs no Slots itself, but is required to use your full Slot coun
 
 ---
 
-## Exhaustion
+## Trauma
 
-Exhaustion represents accumulated injuries, stresses and trauma beyond HP loss.
+Trauma represents accumulated stress and strain beyond Wound loss \- fatigue, privation, and the toll of pushing your body or mind past their limits. It is a separate track from Wounds and the Wound Penalty, above: those cover the physical cost of being hit, Trauma covers everything else that wears you down.
 
 | Level | Effect              |
 |:------|:--------------------|
@@ -283,9 +292,125 @@ Exhaustion represents accumulated injuries, stresses and trauma beyond HP loss.
 | 5-9   | Critical            |
 | 10    | **Automatic Death** |
 
-**Note:** These labels describe how dangerous your condition is narratively \- the mechanical penalty scales continuously (subtract your current Exhaustion level from all rolls). No separate effect triggers at each band on its own.
+**Note:** These labels describe how dangerous your condition is narratively \- the mechanical penalty scales continuously (subtract your current Trauma level from all rolls). No separate effect triggers at each band on its own.
 
-**Penalties:** Subtract Exhaustion level from **all** d12 rolls, wards and checks.
+**Penalties:** Subtract Trauma level from **all** d12 rolls, wards and checks.
+
+**Sources:** Trauma is not a byproduct of ordinary combat damage \- there is no automatic Trauma from taking a hit, dropping to 0 Wounds, or being Dying (that cost is paid through the Wound Penalty instead). Trauma accrues only from specific, named sources: privation (starvation, Forced March \- see Food and Water and Traveling), a handful of paid Feat and spell costs that explicitly grant it (Deadly Critical's crit rider, Unbreakable Focus, Deep Devotion's fasting, Temporal Fortification's backlash, and similar), and anything else that explicitly says so. If a rule doesn't name Trauma, it doesn't grant it.
+
+---
+
+## Basic Moves
+
+Basic Moves are the simple, universal actions everyone can take on their turn - proactively setting up an exchange, rather than the reactive Maneuver (see Combat) that answers one.
+
+### **Dashing**
+
+Sprint as fast as your body allows.
+
+**Action:** Major  
+**Effect:** Increase your movement this turn by an amount equal to your current speed (after all modifiers, difficult terrain, etc.).
+
+---
+
+### **Disengaging**
+
+Move carefully and swiftly to avoid attacks.
+
+**Action:** Major  
+**Effect:** Until the end of your current turn, your movement does not provoke **Opportunity Attacks**.
+
+---
+
+### **Shoving**
+
+Push an enemy back or knock them down.
+
+**Action:** Major (replaces attack as a Martial Weapon Attack)  
+**Check:** Athletics or Brawling vs. target's static Athletics or Acrobatics (Contested Check)  
+**Success:** Push 5 ft OR knock prone
+
+---
+
+### **Disarming**
+
+Force an enemy to drop their weapon or a held item.
+
+**Action:** Major (replaces attack as a Martial Weapon Attack)  
+**Check:** Weapon skill vs. target's static weapon skill (Contested Check)  
+**Success:** Target drops one held item of your choice
+
+---
+
+### **Feint**
+
+Use guile to open an opponent up to your strikes.
+
+**Action:** Minor  
+**Check:** Deception vs. target's static Insight (Contested Check)  
+**Success:** You gain advantage on all weapon attacks you make this turn.
+
+---
+
+### **Blind**
+
+Throw dirt, sand, or grit into an opponent's eyes.
+
+**Action:** Minor (one hand free)  
+**Check:** **1d12 \+ your DEX \+ weapon skill** vs. target's DEX Ward (Contested Ward)  
+**Success:** Target is Blinded until the end of their next turn.
+
+---
+
+### **Grappling**
+
+Seize and restrain an opponent.
+
+**Action:** Major (replaces attack as a Martial Weapon Attack)  
+**Check:** Athletics or Brawling vs. target's static Athletics or Acrobatics (Contested Check)  
+**Restriction:** Target at most one size larger  
+**Prerequisites:** Must have one hand free
+
+**Success:**
+
+- Target is **Restrained**  
+- You can drag and move target at half speed
+
+**While Grappling:**
+
+- Advantage on melee attacks against the target  
+- Casting requires a MIND Ward check (DC 20\) or spell fails  
+- Your melee attacks ignore half the target's AR
+
+**Escape:** Major Action, repeat contested check.
+
+---
+
+### **Defensive Stance**
+
+Adopt a protective stance that makes you difficult to hit.
+
+**Action:** Minor  
+**Effect:** Until the start of your next turn, attacks against you have Disadvantage and your Maneuver attempts have Advantage. Your damage rolls suffer \-4 until the start of your next turn.
+
+---
+
+### **Taunting**
+
+Draw an enemy's focus entirely onto you, making it harder for them to threaten anyone else.
+
+**Action:** Minor Action  
+**Check:** Deception or Intimidation vs. target's MIND Ward  
+**Restriction:** Target must be able to see and hear you. Target must be within 30 ft.
+
+**Success:** Until the start of your next turn, the target has disadvantage on all attack rolls made against creatures other than you.
+
+**Failure:** The target is unaffected and cannot be Taunted by you again until the start of your next turn.
+
+**Limitations:**
+
+- Does **not** work against creatures that cannot be frightened, charmed, or otherwise psychologically affected (e.g. constructs, undead without INT, etc.) \- GM's discretion.  
+- Does **not** stack with itself. Taunting an already Taunted creature refreshes the duration rather than adding additional effects.
 
 ---
 

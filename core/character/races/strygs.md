@@ -7,7 +7,7 @@
 The Strygs are nightmares given flesh, spawned from the primal fear of death and the unknown and drawn into the waking world from the Fields of Nocturne. Unlike the Varulf, who still carry the echo of a mortal life before their curse, a Stryg has no mortal life to remember \- it is dread that grew a spine and teeth. A Stryg doesn't kill to feed; it drains a victim to erase them, and treats the act as a sacrament rather than a meal.
 
 **Homeland:** Fields of Nocturne  
-**Starting Attributes:** \+2 DEX, \+1 STR, \+1 CHA, \-2 END  
+**Starting Attributes:** \+1 DEX, \+1 STR, \+1 CHA, \-1 END  
 **Age:** Do not age  
 **Alignment:** Chaotic  
 **Size:** You retain the Size of the mortal you were before transformation.  
@@ -21,11 +21,11 @@ The Strygs are nightmares given flesh, spawned from the primal fear of death and
 
 **Darkvision:** You treat nonmagical darkness as dim light up to 60 ft.  
 **Shroud of Lies:** You gain \+2 to Deception and Intimidation, advantage on Stealth outside sunlight.  
-**Vampiric Regeneration:** While below 10 \+ your Level in HP, you regain 1 HP at the start of each turn. This regeneration is suppressed while in direct sunlight or submerged in running water.  
-**Blood Drinker:** You gain a Bite attack (1d6+STR piercing). If it deals damage, regain HP equal to damage dealt, this only occurs once per turn.  
-**Undead Nature:** You don't need food, water, or air but must feed on blood weekly or gain 1 Exhaustion.  
+**Vampiric Regeneration:** While below half your maximum Wounds, you regain 1 Wound at the start of each turn. This regeneration is suppressed while in direct sunlight or submerged in running water.  
+**Blood Drinker:** You gain a Bite attack (1d6+STR piercing). If it deals damage, regain Wounds equal to the Wounds inflicted, this only occurs once per turn.  
+**Undead Nature:** You don't need food, water, or air but must feed on blood weekly or gain 1 Trauma.  
 **Sunlight Weakness:** While in direct sunlight: you receive \-2 to all rolls, cannot heal, magical or otherwise.  
-**Stake Through Heart:** If you're reduced to 0 HP, or hit while Dying by a Stake, you are instantly destroyed.
+**Stake Through Heart:** If you're reduced to 0 Wounds, or hit while Dying by a Stake, you are instantly destroyed.
 
 ---
 

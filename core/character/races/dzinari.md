@@ -7,7 +7,7 @@
 The Dzinari are pale, uncannily tall beings, Aelf-like in silhouette but far more alien in demeanour, for whom secrets function as both currency and craft. They treat a held secret as property and a traded one as a weapon, and rarely say anything plainly that could be implied instead. Most Dzinari answer to the **Council of Murmurs**, the shifting governing body of the Chorus of Murmurs; a rogue faction, the Gilded Hwispian Maw, answers instead to the Devaraja and no longer recognises the Council's authority.
 
 **Homeland:** Gelidia  
-**Starting Attributes:** \+2 CHA, \+1 ARC, \-1 STR, \-1 END  
+**Starting Attributes:** \+1 CHA, \+1 ARC, \-1 STR, \-1 END  
 **Age:** Adult \~100, Immortal  
 **Alignment:** Chaotic  
 **Size:** Medium (5-6 ft)  
@@ -17,7 +17,7 @@ The Dzinari are pale, uncannily tall beings, Aelf-like in silhouette but far mor
 
 ### **Features**
 
-**Mystikal Heritage:** You have advantage on Wards vs charmed and fear effects. When killed, the soul explosively returns to primordial energy. The creature can only be restored back to life by means of a god's miracle.  
+**Mystikal Heritage:** You have \+3 to Wards vs charmed and fear effects. When killed, the soul explosively returns to primordial energy. The creature can only be restored back to life by means of a god's miracle.  
 **Meditative Trance:** You don't sleep, instead you meditate 4 hours for the benefits of a Field Rest or Long Rest.  
 **Windform:** Once per Field Rest or Long Rest, as an Major Action, become incorporeal wind for up to 1 minute. While in Windform: you are immune to nonmagical physical damage, you can fly up to 30 feet per turn, you cannot attack or cast spells, and you cannot interact with physical objects. The form ends early if you choose, if you take magical damage, or if you become unconscious.
 

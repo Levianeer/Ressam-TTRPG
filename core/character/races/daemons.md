@@ -7,7 +7,7 @@
 Born not of the flesh but of fracture, Daemons are parasitic horrors \- manifestations of entropy and madness that claw their way into the waking world through mortal vessels. They are not conquerors nor creators, but unmakers, intent on unravelling the world thread by thread. Some whisper that Daemons are not invaders from beyond but reflections of the worst within \- nightmares made animate by mortal guilt, fear, and desire.
 
 **Homeland:** Fields of Nocturne  
-**Starting Attributes:** 3 points to distribute among mental Attributes (MIND, ARC, FAI, CHA)  
+**Starting Attributes:** 2 points to distribute among mental Attributes (MIND, ARC, FAI, CHA)  
 **Age:** Immortal (return to Fields of Nocturne instead of dying)  
 **Alignment:** Chaotic  
 **Size:** Dependent on host race  
@@ -23,7 +23,7 @@ Born not of the flesh but of fracture, Daemons are parasitic horrors \- manifest
 **Parasitic Existence:** You have no physical form and cannot interact with the material world without a host. When you possess a host, their consciousness is suppressed \- they are unaware of events during possession and remember nothing afterward. You use the host's physical Attributes (STR, DEX, END), size, speed, and natural abilities (such as darkvision or natural weapons), but not their learned Skills or Feats. The host body ages normally.  
 **Starting Host:** At character creation, choose a host (DM approval required). You use the host's physical Attributes (STR, DEX, END) and your own mental Attributes.  
 **Host Death:** When your host dies, you are expelled and become a disembodied haunt bound to the location of death. While haunting: you are invisible and incorporeal, you can perceive your surroundings but cannot interact with physical objects, you cannot move more than 100 feet from where the host died, and you can only be detected by magical means. You may attempt possession as described. If 7 days pass without obtaining a new host, you dissipate permanently, returning to Nocturne.  
-**Possession:** While haunting a location, you may attempt to possess any sleeping creature with MIND 3+. The target makes a FAI Ward (DC \= 15 \+ your CHA). On failure, you possess them at dawn. Willing targets may forgo the Ward. Creatures immune to charm are immune to possession.  
+**Possession:** While haunting a location, you may attempt to possess any sleeping creature with MIND 2+. Make a **1d12 \+ your CHA \+ your highest-ranked Skill governed by CHA** roll against their FAI Ward (Contested Ward). If it beats their Ward, you possess them at dawn. Willing targets may forgo the Ward. Creatures immune to charm are immune to possession.  
 **Host Switch Ritual:** You can perform an 8-hour Possession ritual (requires 1,000 Crown in materials and a sleeping target) to transfer to a host with superior physical Attributes.
 
 ---

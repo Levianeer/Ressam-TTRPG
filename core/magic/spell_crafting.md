@@ -2,7 +2,7 @@ Spell Crafting is an alternative to the normal spells, meant as a better express
 
 **Requirements:**
 
-- **Minimum Skill Rank 3** in the relevant magic school  
+- **Minimum Skill Rank 2** in the relevant magic school  
 - **Arcane:** Access to research materials (spellbooks, grimoires, alchemical texts)  
 - **Divine:** Theological texts and understanding of your deity's domain
 
@@ -54,7 +54,7 @@ All verbs include conjuration as needed \- you pay for the effect, not whether t
 
 Cost depends on your skill rank in the relevant school:
 
-| Skill Rank | 3 | 6 | 8 | 10 |
+| Skill Rank | 2 | 3 | 4 | 5 |
 | :---- | :---: | :---: | :---: | :---: |
 | **Point Cost** | 4 | 3 | 2 | 1 |
 

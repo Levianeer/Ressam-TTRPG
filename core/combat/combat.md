@@ -1,12 +1,12 @@
 Combat in Ressam is lethal. Armor breaks, injuries accumulate, and death is always one bad decision away. This chapter covers everything from initiative to dying \- read it carefully.
 
-Ressam is not a game where heroes fight to the last hit point. Exhaustion from critical hits represents accumulating injuries that will kill you if ignored. When your Exhaustion reaches 3 or higher, consider tactical withdrawal. At 5+, retreat should be your priority. There is no shame in living to fight another day.
+Ressam is not a game where heroes fight to the last Wound. You won't fight worse for being hurt \- the Wound Penalty only bites outside combat \- but a small pool empties fast, and a big hit can take two or three Wounds at once. When you've lost half your Wounds, consider tactical withdrawal. Near 0, retreat should be your priority. There is no shame in living to fight another day.
 
 ---
 
 ## Initiative
 
-**Initiative \= 1d12 \+ ((REF \+ DEX) ÷ 2\)**
+**Initiative \= 1d12 \+ ((PRE \+ DEX) ÷ 2\)**
 
 Actions resolve highest to lowest each round.
 
@@ -23,14 +23,14 @@ Actions resolve highest to lowest each round.
 | **Major Action** | 1/round | Attack, cast spell, reload weapon, Dash, Disengage, Dodge      |
 | **Minor Action** | 1/round | Sheathe weapon, drink potion, open door                        |
 | **Object Interaction** | 1/round | Draw ammunition, pick up weapon, flip lever                    |
-| **Reaction** | 1/round | Held Action, Dodge, Parry, Block, Opportunity Attack           |
+| **Reaction** | 1/round | Held Action, Maneuver (Parry/Block/Dodge), Reactive Casting, Opportunity Attack |
 | **Free Action** | Unlimited | Drop item, speak briefly, stop channeling, etc                 |
 | **Move Action** | Unlimited | Move up to your maximum speed, can be broken up into multiples |
 
 - **Per Round:** Refreshes at the start of your *next* turn  
 - **Reactions:** Usable on anyone's turn
 - **Drawing multiple weapons:** As a single Object Interaction, you may draw any number of weapons at once, provided you have a free hand for each one.
-- **Reactions are a single shared pool:** Dodge, Block, Parry, and Opportunity Attacks all draw from the same 1 Reaction/round above \- and so does every other Reaction-based Feat, spell, or Maneuver you have (Riposte, Deflect Missiles, Ward of Faith, Dominating Stare, and the like). They compete for your one Reaction, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
+- **Reactions are a single shared pool:** Maneuver (in any of its Parry, Block, or Dodge Styles), Reactive Casting, and Opportunity Attacks all draw from the same 1 Reaction/round above \- and so does every other Reaction-based Feat or spell you have (Deflect Missiles, Ward of Faith, Dominating Stare, and the like). They compete for your one Reaction, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
 
 ---
 
@@ -44,9 +44,9 @@ Actions resolve highest to lowest each round.
 
 ### **Damage Roll**
 
-**Weapon Damage \+ associated Attribute − Target's AR \= HP Damage**
+**Weapon Damage \+ associated Attribute − Target's AR \= Wound Damage**
 
-Damage ≤ AR deals 0 HP damage but still degrades armor by 1\.
+Damage ≤ AR deals 0 Wound damage but still degrades armor by 1\.
 
 ---
 
@@ -66,10 +66,10 @@ Critical Hits occur on a **Natural 12** on attack rolls.
 
 **Effects:**
 
-- Roll damage normally \- there is no bonus to the damage roll itself.  
-- Target gains **1 Exhaustion** (if damage exceeds AR).  
-  - A creature can gain Exhaustion from critical hits only once per round, regardless of how many critical hits it suffers.  
-- Bypasses Block and Parry
+- **Roll damage twice, take the higher result.**  
+- Bypasses the Parry and Block Styles of Maneuver (Dodge is unaffected - see maneuvers.md)
+
+Crits don't grant Trauma on their own \- their pressure is indirect, since rolling twice raises the odds of landing in a higher Wound tier (see Wounds and Survival). `Deadly Critical` (see Feats) is the one deliberate, paid-for exception that converts a crit directly into Trauma.
 
 **Expanded Crit Range:** Some weapons crit on 11-12, 10-12 or even 9-12.  
 Features and Feats can expand this further.
@@ -98,24 +98,24 @@ When hit:
 
 1. Subtract AR from damage  
 2. Armor loses 1 AR (degradation)  
-3. Remaining damage hits HP
+3. Remaining damage converts to Wounds (see Wounds and Survival)
 
-**Note:** If a Critical Hit deals no damage after AR reduction, you do not suffer any Exhaustion from the Critical.
+**Note:** A Critical Hit can still deal 0 Wound damage against fresh, heavy armor \- that's coherent with the armor fiction, not a bug.
 
 ### **Degradation**
 
-Every hit (regardless of HP damage) reduces armor by 1 AR.
+Every hit (regardless of Wound damage) reduces armor by 1 AR.
 
 | AR Status | Effect |
 | :---- | :---- |
 | AR 1+ | Functions normally |
 | AR 0 | **Broken** \- no protection, cannot be field-repaired |
 
-**Broken Armor:** Medium and Heavy armor must be reforged by a blacksmith (50% of original price). Light Armor can be field-repaired like normal.
+**Broken Armor:** Rigid armor must be reforged by a blacksmith (50% of original price). Flexible Armor can be field-repaired like normal.
 
 ### **Armor Penalty**
 
-Reduces Evasion, Dodge and your Spell Modifier.
+Reduces Evasion, your Dodge Style roll (Maneuver, maneuvers.md), and your Spell Modifier.
 
 **Reducing Penalty:** Each 2 ranks in Armorer reduces Penalty by 1 (minimum 0).
 
@@ -126,9 +126,9 @@ Requires Armorer's Tools. Cannot exceed starting AR or repair broken (0 AR) armo
 | Armorer Rank | Repair Time |
 | :---- | :---- |
 | 1+ | Field Rest or Long Rest: restore 2d6 AR |
-| 3+ | Short Rest: restore 2d6 AR |
-| 5+ | 10 minutes: restore 2d6 AR (1/day) |
-| 7+ | Combat (Major \+ Minor): restore 1d6 AR (1/day) |
+| 2+ | Short Rest: restore 2d6 AR |
+| 3+ | 10 minutes: restore 2d6 AR (1/day) |
+| 4+ | Combat (Major \+ Minor): restore 1d6 AR (1/day) |
 
 ---
 
@@ -148,11 +148,10 @@ When a creature **leaves your melee reach**, you may use your Reaction for one m
 
 **Does NOT Provoke:**
 
-- Moving within reach  
+- Moving within reach (Polearms excepted)
 - Standing from prone  
-- Forced movement (push, pull, teleport)  
-- Teleporting  
-- Disengage action  
+- Forced movement (push, pull, teleport)
+- Moving after taking the Disengage action
 - Ranged attacks in melee (just disadvantage)
 
 ---
@@ -200,7 +199,7 @@ Conditions can be applied by numerous different sources and in a multitude of wa
 | **Petrified** | Incapacitated, Speed 0, and unaware of its surroundings. Becomes a nonmagical stone object: weight ×10, aging stops, resistance to all damage. All other conditions and ongoing effects are suspended until it's freed. |
 | **Poisoned** | Disadvantage on attack rolls and Skill checks. |
 | **Prone** | Disadvantage on attack rolls. Melee attack rolls against it have advantage; ranged attack rolls against it have disadvantage. Can't move except to stand up, which costs half its maximum movement. |
-| **Restrained** | Speed 0; disadvantage on attack rolls and DEX Wards; casting requires a MIND Ward (DC 23\) or the spell fails. |
+| **Restrained** | Speed 0; disadvantage on attack rolls; \-3 to DEX Wards; casting requires a MIND Ward (DC 23\) or the spell fails. |
 | **Silenced** | Can't speak or cast spells. |
 | **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment. |
 | **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it automatically hit, and any melee hit is a critical hit. |

@@ -4,7 +4,7 @@ Ressam is a crunchy, lethal alternative to other TTRPGs, set in a world balanced
 
 ## Start Here
 
-Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks, HP, and the other foundational mechanics nearly every other chapter assumes.
+Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks, Wounds, and the other foundational mechanics nearly every other chapter assumes.
 
 ## Character
 
@@ -43,7 +43,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks, HP, 
 ## Combat
 
 - [Combat](combat) - turn structure, action economy, attacks, damage, critical hits
-- [Maneuvers](maneuvers) - dashing, shoving, grappling, dodging, and more
+- [Maneuvers](maneuvers) - the reactive Maneuver Reaction (Parry/Block/Dodge Styles) and its Effects, plus Reactive Casting
 
 ## Magic
 
@@ -74,7 +74,6 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks, HP, 
 - [Martial](martial_feats)
 - [Arcane](arcane_feats)
 - [Divine](divine_feats)
-- [Hybrid](hybrid_feats)
 - [Skill](skill_feats)
 - [Prestige](prestige_feats)
 

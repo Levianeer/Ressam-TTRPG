@@ -29,7 +29,7 @@ No defensive tricks. High HP and damage output that creates urgency. Brutes don'
 
 ### **Tank**
 
-Heavy armour plus the Block reaction. Hard to damage early, but the armour degrades under pressure \- a Tank gets progressively easier to damage as the fight goes on. Design encounters with this arc in mind: the first few rounds are rough, the last few aren't. A Tank with Armorer 5+ that can field-repair mid-fight is a fundamentally different and more dangerous threat.
+Heavy armour plus the Block reaction. Hard to damage early, but the armour degrades under pressure \- a Tank gets progressively easier to damage as the fight goes on. Design encounters with this arc in mind: the first few rounds are rough, the last few aren't. A Tank with Armorer 3+ that can field-repair mid-fight is a fundamentally different and more dangerous threat.
 
 **Primary defence:** Armour (high AR) \+ Block  
 **Reaction:** Block (prioritise over opportunity attacks)  
@@ -71,14 +71,14 @@ Natural armour on monsters (scales, thick hide, stone skin) should be noted as *
 
 ### **Tier 1 \- Levels 1–3**
 
-**Player baselines:** Max Evasion 15–17 · Max to-hit \+10 to \+12 · HP 25–35
+**Player baselines:** Max Evasion 11–12 · Max to-hit \+6 to \+7 · HP 16–22
 
 | Archetype | HP | AR (armour type) | Evasion | To-hit | Avg damage | Primary defence |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Brute | 25–45 | 2–4 (hide/leather) | 7–9 | \+5 to \+8 | 1d8 \+ STR 4–5 | HP pool |
-| Tank | 20–30 | 6–10 (chain) | 8–10 | \+6 to \+9 | 1d6 \+ STR 4–5 | Armour \+ Block |
-| Skirmisher | 14–22 | 2–3 (leather) | 11–13 | \+6 to \+9 | 1d6 \+ REF 4–5 | Evasion |
-| Caster | 14–22 | 0–2 (robes) | 10–12 | \+5 to \+8 ✦ | 1d8 \+ FAI/ARC 4–5 | Ward saves |
+| Brute | 25–45 | 2–4 (hide/leather) | 4–5 | \+3 to \+4 | 1d8 \+ STR 2–3 | HP pool |
+| Tank | 20–30 | 6–10 (chain) | 4–5 | \+3 to \+5 | 1d6 \+ STR 2–3 | Armour \+ Block |
+| Skirmisher | 14–22 | 2–3 (leather) | 6–7 | \+3 to \+5 | 1d6 \+ PRE 2–3 | Evasion |
+| Caster | 14–22 | 0–2 (robes) | 5–6 | \+3 to \+4 ✦ | 1d8 \+ FAI/ARC 2–3 | Ward saves |
 
 ✦ *Spell to-hit bonus.*
 
@@ -88,52 +88,52 @@ Natural armour on monsters (scales, thick hide, stone skin) should be noted as *
 
 ### **Tier 2 \- Levels 4–6**
 
-**Player baselines:** Max Evasion 19–21 · Max to-hit \+14 to \+16 · HP 25–40
+**Player baselines:** Max Evasion 12–13 · Max to-hit \+7 to \+8 · HP 19–22
 
 | Archetype | HP | AR (armour type) | Evasion | To-hit | Avg damage | Primary defence |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Brute | 38–55 | 3–6 (hide) | 7–9 | \+9 to \+12 | 2d6 \+ STR 6–7 | HP pool |
-| Tank | 30–45 | 9–13 (brigandine) | 9–11 | \+10 to \+13 | 1d8 \+ STR 6–7 | Armour \+ Block |
-| Skirmisher | 22–35 | 2–4 (leather) | 13–16 | \+10 to \+13 | 1d6 \+ REF 6–7 | Evasion |
-| Caster | 22–35 | 0–3 (gambeson) | 11–13 | \+9 to \+12 ✦ | 1d10 \+ FAI/ARC 6–7 | Ward saves \+ Aegis |
+| Brute | 38–55 | 3–6 (hide) | 4–5 | \+5 to \+6 | 2d6 \+ STR 3–4 | HP pool |
+| Tank | 30–45 | 9–13 (brigandine) | 5–6 | \+5 to \+7 | 1d8 \+ STR 3–4 | Armour \+ Block |
+| Skirmisher | 22–35 | 2–4 (leather) | 7–8 | \+5 to \+7 | 1d6 \+ PRE 3–4 | Evasion |
+| Caster | 22–35 | 0–3 (gambeson) | 6–7 | \+5 to \+6 ✦ | 1d10 \+ FAI/ARC 3–4 | Ward saves \+ Aegis |
 
 ✦ *Spell to-hit bonus.*
 
-**Notes for this tier:** Players have Prestige Feat access at level 5 \- expect characters to feel more defined. Tanks can now plausibly have Armorer 3+ and repair armour during short rests. Add Pack Tactics or group dynamics to Skirmishers. Casters can begin using Phantom Aegis as their one reactive option.
+**Notes for this tier:** Players have Prestige Feat access at level 5 \- expect characters to feel more defined. Tanks can now plausibly have Armorer 2+ and repair armour during short rests. Add Pack Tactics or group dynamics to Skirmishers. Casters can begin using Phantom Aegis as their one reactive option.
 
 ---
 
 ### **Tier 3 \- Levels 7–9**
 
-**Player baselines:** Max Evasion 22–24 · Max to-hit \+17 to \+19 · HP 28–40 · Skill cap reached at L8
+**Player baselines:** Max Evasion 14–15 · Max to-hit \+9 to \+10 · HP 19–22 · Skill cap reached at L7
 
 | Archetype | HP | AR (armour type) | Evasion | To-hit | Avg damage | Primary defence |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Brute | 50–75 | 4–7 (monster hide) | 8–10 | \+12 to \+15 | 2d8 \+ STR 7–8 | HP pool \+ Regen |
-| Tank | 40–58 | 12–15 (half/full plate) | 9–12 | \+12 to \+16 | 1d10 \+ STR 7–8 | Armour \+ Block |
-| Skirmisher | 30–45 | 3–5 (leather) | 15–18 | \+12 to \+16 | 1d8 \+ REF 7–8 | Evasion \+ Parry |
-| Caster | 30–48 | 0–4 (gambeson) | 11–14 | \+12 to \+15 ✦ | 2d6 \+ FAI/ARC 7–8 | Wards \+ Aegis \+ 1 Dodge |
+| Brute | 50–75 | 4–7 (monster hide) | 4–5 | \+6 to \+8 | 2d8 \+ STR 4 | HP pool \+ Regen |
+| Tank | 40–58 | 12–15 (half/full plate) | 5–6 | \+6 to \+8 | 1d10 \+ STR 4 | Armour \+ Block |
+| Skirmisher | 30–45 | 3–5 (leather) | 8–9 | \+6 to \+8 | 1d8 \+ PRE 4 | Evasion \+ Parry |
+| Caster | 30–48 | 0–4 (gambeson) | 6–7 | \+6 to \+8 ✦ | 2d6 \+ FAI/ARC 4 | Wards \+ Aegis \+ 1 Dodge |
 
 ✦ *Spell to-hit bonus.*
 
-**Notes for this tier:** The L8 skill cap means the plateau has begun \- expect players to feel powerful between levels 9 and 11\. Skirmishers with Evasion 15–18 now force average players to roll 7+ to hit. Brutes with Regeneration create urgency (kill it before it heals). Tank field repair (Armorer 5+) is now viable \- a Tank restoring 2d6 AR in a 10-minute window is a meaningful pacing threat if the encounter is timed.
+**Notes for this tier:** The L7 skill cap means the plateau has begun \- expect players to feel powerful between levels 8 and 12\. Skirmishers with Evasion 8–9 now force average players to roll 4+ to hit. Brutes with Regeneration create urgency (kill it before it heals). Tank field repair (Armorer 3+) is now viable \- a Tank restoring 2d6 AR in a 10-minute window is a meaningful pacing threat if the encounter is timed.
 
 ---
 
 ### **Tier 4 \- Levels 10–12**
 
-**Player baselines:** Max Evasion 24–25 · Max to-hit \+19 to \+20 · HP 30–40 · Plateau L9–11, \+1 bump at L12
+**Player baselines:** Max Evasion 15 · Max to-hit \+10 · HP 19–25 · Flat from L8 through L12 (attribute cap already maxed)
 
 | Archetype | HP | AR (armour type) | Evasion | To-hit | Avg damage | Primary defence |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Brute | 65–95 | 5–8 (monster) | 8–11 | \+15 to \+18 | 2d10 \+ STR 9–10 | HP pool \+ Regen |
-| Tank | 50–70 | 14–16 (full plate) | 10–13 | \+15 to \+19 | 2d6 \+ STR 9–10 | Armour \+ Block \+ combat repair |
-| Skirmisher | 38–55 | 3–6 (leather) | 17–20 | \+15 to \+18 | 1d10 \+ REF 9–10 | Evasion \+ 2–3 Dodges |
-| Caster | 38–58 | 0–5 (gambeson) | 12–15 | \+15 to \+18 ✦ | 3d6 \+ FAI/ARC 9–10 | Wards \+ Reflect \+ Aegis |
+| Brute | 65–95 | 5–8 (monster) | 4–6 | \+8 to \+9 | 2d10 \+ STR 5 | HP pool \+ Regen |
+| Tank | 50–70 | 14–16 (full plate) | 5–7 | \+8 to \+10 | 2d6 \+ STR 5 | Armour \+ Block \+ combat repair |
+| Skirmisher | 38–55 | 3–6 (leather) | 9–10 | \+8 to \+9 | 1d10 \+ PRE 5 | Evasion \+ 2–3 Dodges |
+| Caster | 38–58 | 0–5 (gambeson) | 6–8 | \+8 to \+9 ✦ | 3d6 \+ FAI/ARC 5 | Wards \+ Reflect \+ Aegis |
 
 ✦ *Spell to-hit bonus.*
 
-**Notes for this tier:** Skirmisher Evasion 17–20 means players need to roll 7–11+ to hit \- these enemies feel nearly untouchable and should. Tank combat repair (Armorer 7+, Major \+ Minor action, 1/day) can restore 1d6 AR mid-fight; use it once, at a turning point. Caster Ward reflection on a missed spell punishes player casters hard \- reserve it for a boss-tier caster, not a standard enemy.
+**Notes for this tier:** Skirmisher Evasion 9–10 means players need to roll 4–6+ to hit \- these enemies feel nearly untouchable and should. Tank combat repair (Armorer 4+, Major \+ Minor action, 1/day) can restore 1d6 AR mid-fight; use it once, at a turning point. Caster Ward reflection on a missed spell punishes player casters hard \- reserve it for a boss-tier caster, not a standard enemy.
 
 ---
 
@@ -149,20 +149,20 @@ Both use **Skill \+ Attribute**, so they scale identically. The permanent gap be
 
 | Level | Skill cap | Attr max | Max attack bonus | Avg roll | Max evasion | Min to hit max evasion |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | 3 | 7 | \+10 | 16.5 | 15 | 5+ |
-| 2 | 4 | 7 | \+11 | 17.5 | 16 | 5+ |
-| 3 | 5 | 7 | \+12 | 18.5 | 17 | 5+ |
-| 4 ★ | 6 | 8 | \+14 | 20.5 | 19 | 5+ |
-| 5 | 7 | 8 | \+15 | 21.5 | 20 | 5+ |
-| 6 | 8 | 8 | \+16 | 22.5 | 21 | 5+ |
-| 7 | 9 | 8 | \+17 | 23.5 | 22 | 5+ |
-| 8 ★ | 10 | 9 | \+19 | 25.5 | 24 | 5+ |
-| 9 | 10 | 9 | \+19 | 25.5 | 24 | 5+ |
-| 10 | 10 | 9 | \+19 | 25.5 | 24 | 5+ |
-| 11 | 10 | 9 | \+19 | 25.5 | 24 | 5+ |
-| 12 ★ | 10 | 10 | \+20 | 26.5 | 25 | 5+ |
+| 1 | 2 | 4 | \+6 | 12.5 | 11 | 5+ |
+| 2 | 2 | 4 | \+6 | 12.5 | 11 | 5+ |
+| 3 | 3 | 4 | \+7 | 13.5 | 12 | 5+ |
+| 4 | 3 | 4 | \+7 | 13.5 | 12 | 5+ |
+| 5 | 4 | 4 | \+8 | 14.5 | 13 | 5+ |
+| 6 | 4 | 4 | \+8 | 14.5 | 13 | 5+ |
+| 7 | 5 | 4 | \+9 | 15.5 | 14 | 5+ |
+| 8 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
+| 9 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
+| 10 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
+| 11 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
+| 12 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
 
-★ *Breakpoints where skill cap and attribute ceiling increase simultaneously, causing a \+2 jump to both attack bonus and max Evasion.*
+*Growth is now staggered by a single \+1 step at a time (skill cap leads at L3/L5/L7, attribute cap catches up at L8) rather than jumping by 2 - the compressed 1-5 scale doesn't have room left for the old double-jump breakpoints.*
 
 **Reading this table for encounter design:**
 
@@ -179,7 +179,7 @@ Both use **Skill \+ Attribute**, so they scale identically. The permanent gap be
 
 ### **Armour degrades \- account for the arc**
 
-A heavily armoured enemy starts the fight hard to damage and gets progressively easier. A knight in Full Plate (AR 16\) can take roughly 16 hits before their armour breaks entirely. In a long fight, that Tank is nearly unprotected by the end. Use this arc intentionally: the fight should feel grinding at first and urgent at the end as armour fails. Natural armour that doesn't degrade (scales, stone hide) tells a completely different story \- consistent and relentless \- and should be used deliberately on monsters where that reliability matters.
+A heavily armoured enemy starts the fight hard to damage and gets progressively easier. A knight in Full Plate (AR 8\) can take roughly 8 hits before their armour breaks entirely. In a long fight, that Tank is nearly unprotected by the end. Use this arc intentionally: the fight should feel grinding at first and urgent at the end as armour fails. Natural armour that doesn't degrade (scales, stone hide) tells a completely different story \- consistent and relentless \- and should be used deliberately on monsters where that reliability matters.
 
 ### **Crits are your lethality dial**
 

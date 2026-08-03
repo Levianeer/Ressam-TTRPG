@@ -17,7 +17,7 @@ Followers are common folk who work for you \- servants, porters, scribes, grooms
 
 ### **Follower Limitations**
 
-- **No combat stats:** Followers don't have HP, Evasion, or AR in any meaningful sense. If targeted, they die or they flee.  
+- **No combat stats:** Followers don't have Wounds, Evasion, or AR in any meaningful sense. If targeted, they die or they flee.  
 - **No player-created sheets:** The DM creates followers as needed. You describe what role you're hiring; the DM provides the person.  
 - **Require upkeep:** Followers expect payment and reasonable treatment (see Upkeep below).
 
@@ -63,7 +63,7 @@ Cohorts are trained combatants who follow you into battle \- squires, mercenary 
 
 ### **Maximum Cohorts**
 
-**Maximum Cohorts: 1\.** With CHA 9+, you may instead maintain up to 2, but while you have two cohorts, both are one additional level lower (your level −3).
+**Maximum Cohorts: 1\.** With CHA 5+, you may instead maintain up to 2, but while you have two cohorts, both are one additional level lower (your level −3).
 
 ### **Cohort Level**
 
@@ -125,7 +125,7 @@ Either way, the DM has final approval. Your cohort is an NPC \- they have their 
 - **Initiative:** Cohorts act on your initiative, immediately after your turn  
 - **Commands:** You can issue one command per round (no action required). Without commands, cohorts defend themselves and stay near you.  
 - **Independent action:** Complex tactics require Leadership checks (DC 10-15)  
-- **Death:** Cohorts reduced to 0 HP follow normal dying rules. You can stabilize them.
+- **Death:** Cohorts reduced to 0 Wounds follow normal dying rules. You can stabilize them.
 
 ---
 
@@ -202,7 +202,7 @@ Followers die easily. If caught in combat, targeted by area effects, or facing a
 
 Cohorts are characters. Their death should matter.
 
-- **Dying:** Cohorts reduced to 0 HP follow standard dying rules (END rounds to stabilize)  
+- **Dying:** Cohorts reduced to 0 Wounds follow standard dying rules (END rounds to stabilize)  
 - **Resurrection:** Same as player characters \- not something you can arrange or purchase. If a dead cohort returns, it's entirely the DM's narrative call (see Divine Overview: Resurrection)  
 - **Replacement:** You can recruit a new cohort, but this takes time and roleplay. You can't just grab another one immediately.
 
@@ -222,7 +222,7 @@ Cohorts are characters. Their death should matter.
 
 ### **Cohorts**
 
-- **Cap:** 1 (2 with CHA 9+, at a level penalty)  
+- **Cap:** 1 (2 with CHA 5+, at a level penalty)  
 - **Level:** Your Level \- 2 (min 1\)  
 - **Combat:** Full participation  
 - **Sheet:** Player may create (DM approval)  
@@ -232,7 +232,7 @@ Cohorts are characters. Their death should matter.
 
 | Calculation | Formula |
 | :---- | :---- |
-| Maximum Cohorts | 1 (2 with CHA 9+, both at Level \- 3\) |
+| Maximum Cohorts | 1 (2 with CHA 5+, both at Level \- 3\) |
 | Cohort Level | Your Level \- 2 (min 1\) |
 | Morale Check | 1d12 \+ Leadership \+ CHA vs. DC 15 |
 | Recruitment DC | 15 ± circumstance modifiers |
@@ -244,9 +244,9 @@ Cohorts are characters. Their death should matter.
 
 **Mira Valdros, Squire** *Level 2 Human*
 
-**HP:** 22 | **Evasion:** 11 | **AR:** 6 (Gambeson) **Initiative:** \+4
+**Wounds:** 5 | **Evasion:** 11 | **AR:** 6 (Gambeson) **Initiative:** \+4
 
-**Attributes:** STR 5, REF 4, END 5, DEX 4, MIND 4, ARC 2, FAI 3, CHA 3
+**Attributes:** STR 5, PRE 4, END 5, DEX 4, MIND 4, ARC 2, FAI 3, CHA 3
 
 **Skills:** One-Handed Blades \+3, Shields \+2, Athletics \+2, Armorer \+2, Riding \+2, Perception \+1
 
@@ -259,7 +259,7 @@ Cohorts are characters. Their death should matter.
 
 **Personality:** Eager to prove herself, follows orders without question, secretly terrified of dying before making her name.
 
-**Tactics:** Stays near her knight, blocks incoming attacks, flanks enemies when possible. Retreats if reduced below 10 HP unless ordered otherwise.
+**Tactics:** Stays near her knight, blocks incoming attacks, flanks enemies when possible. Retreats if reduced below half her maximum Wounds unless ordered otherwise.
 
 ---
 

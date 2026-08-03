@@ -7,7 +7,7 @@
 The Tapio are sorrow-bound caretakers of forgotten wilds \- mystikal beings born not of flesh, but of memory and grief. Formed from the First Forest, the final dream of the Four Great Artists, the Tapio remember a world that no longer is. They are guardians of beauty long lost, embodiments of mourning so deep it takes root in the land itself. Where neglect festers and nature falls silent, a Tapio may emerge \- not to reclaim what was lost, but to bear witness. To encounter one is to be seen by the forest itself, and to feel, however briefly, the weight of a vanished age pressing against the skin.
 
 **Homeland:** Anywhere with nature  
-**Starting Attributes:** \+1 END, \+2 FAI, \-1 MIND, \-1 CHA  
+**Starting Attributes:** \+1 END, \+1 FAI, \-1 MIND, \-1 CHA  
 **Age:** Immortal  
 **Alignment:** Neutral  
 **Size:** You choose your size (Small, Medium, or Large) at character creation.  
@@ -18,7 +18,7 @@ You may change it using the Size Changing feature.
 
 ### **Features**
 
-**Mystikal Heritage:** You have advantage on Wards vs charmed and fear effects. When killed, the soul explosively returns to primordial energy. The creature can only be restored back to life by means of a god's miracle.  
+**Mystikal Heritage:** You have \+3 to Wards vs charmed and fear effects. When killed, the soul explosively returns to primordial energy. The creature can only be restored back to life by means of a god's miracle.  
 **Nature's Form:** Natural AR \+2 (bark skin), vulnerable to fire damage.  
 **Photosynthesis:** You gain the benefits of a Short Rest if you bask in sunlight for 1 hour.  
 **Size Changing:** With 1 minute concentration (out of combat), adjust size:
@@ -28,7 +28,7 @@ You may change it using the Size Changing feature.
 - **Large:** \+1 to STR checks and \+1 melee damage, disadvantage on Stealth.
 
 **One with Nature:** You can cast Parasitic Tendrils (Cultivation) once per Field Rest or Long Rest without needing ranks in the skill.  
-**Rooted Recovery:** During a Field Rest or Long Rest in a natural environment, you regain additional HP equal to your Level.
+**Rooted Recovery:** During a Field Rest or Long Rest in a natural environment, that rest also removes 1 additional level of Trauma automatically.
 
 ---
 

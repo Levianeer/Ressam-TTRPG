@@ -49,7 +49,7 @@ Essential equipment for travel, exploration, and survival.
 |:----------------------|:--------:|:-----:|:---------------------------------------------:|
 | Backpack              | 25 Crown |   0   | Required to use your full Slot count \(without one, carry only STR Slots\) |
 | Belt Pouch            | 5 Crown  |   1   |           Holds 3 Tiny items free            |
-| Bedroll               | 8 Crown  |   1   | Sleeping without one: \-2 to rest recovery HP |
+| Bedroll               | 8 Crown  |   1   | Sleeping without one: disadvantage on Medical Lore checks to remove Trauma that rest |
 | Tent, 1-person        | 10 Crown |   3   |             Shelter from weather              |
 | Tent, 4-person        | 50 Crown |   5   |                       “                       |
 | Waterskin             | 2 Crown  |   1   |                      \-                       |
@@ -109,7 +109,7 @@ For thrown bombs (smoke, fire, acid, flash, etc.), see the **Alchemy** chapter's
 |:-----------|:--------:|:-----:|:--------:|:----------------------------:|
 | Holy water | 25 Crown |   1   | 20/40 ft | 2d6 radiant to undead/fiends |
 
-**Using Thrown Items:** Ranged attack using REF \+ Athletics (or Thrown Weapons skill if you have it).
+**Using Thrown Items:** Ranged attack using PRE \+ Athletics (or Thrown Weapons skill if you have it).
 
 ---
 
@@ -120,20 +120,20 @@ Equipment for treating injuries and stabilizing the dying.
 | Item           |   Cost    | Slots |                   Notes                   |
 |:---------------|:---------:|:-----:|:-----------------------------------------:|
 | Healer's kit   |  20 Crown |   1   |    Advantage on stabilization; 10 uses    |
-| Bandages (5)   |  5 Crown  |  1/3  |               Gain 1d4 tHP                |
+| Bandages (5)   |  5 Crown  |  1/3  |          Gain 1d2 Temp Wounds             |
 | Surgical tools |  25 Crown |   1   | Required for surgery; \+2 to Medical Lore |
 | Antitoxin      |  50 Crown |  1/3  |      Removes the Poisoned Condition       |
-| Healing potion | 100 Crown |  1/3  |                Restore 4d4                |
+| Healing potion | 100 Crown |  1/3  |                Restore 3 Wounds            |
 
 ### **Healing Potion Rules**
 
 - **Action:** Minor Action to drink  
-- **Effect:** Restore HP equal to your 4d4.  
-- **Limit:** Drinking multiple potions between rests causes Exhaustion  
+- **Effect:** Restore 3 Wounds.  
+- **Limit:** Drinking multiple potions between rests causes Trauma  
   - First potion: No penalty  
-  - Each additional potion: \+1 Exhaustion
+  - Each additional potion: \+1 Trauma
 
-**Example:** Marcus drinks a healing potion, restoring 10 HP. Later that same day (before resting), he drinks another \- he heals 10 HP but gains 1 Exhaustion.
+**Example:** Marcus drinks a healing potion, restoring 3 Wounds. Later that same day (before resting), he drinks another \- he heals 3 Wounds but gains 1 Trauma.
 
 ---
 

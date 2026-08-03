@@ -6,7 +6,7 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Two-Handed:** Requires both hands to use
 
-- **Finesse:** You may use your REF instead of your STR on attack and damage roll
+- **Finesse:** You may use your PRE instead of your STR on attack and damage roll
 
 - **Versatile:** Can be used one or two-handed with different damage
 
@@ -18,7 +18,7 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Penetrant:** Ignores AR equal to half your ranks in that weapon's associated Skill (rounded down)
 
-- **Bypasses Block:** This attack cannot be stopped by the Block Reaction, as though it were a Critical Hit for that purpose
+- **Bypasses Block:** This attack cannot be stopped by the Block Style of Maneuver, as though it were a Critical Hit for that purpose
 
 **Carrying Slots:** A weapon in hand or in a sheath/holster you're actively wearing costs no Slots. The Slots column applies to a weapon carried as a spare. Weapons with the Two-Handed property cost a minimum of 2 Slots this way regardless of bulk.
 
@@ -37,9 +37,9 @@ All weapons in the Firearms category (Pistols, Long Guns, and Heavy Firearms) in
 ### **Ammunition & Reloading**
 
 - **Firearm:** You can use a weapon that has the firearm property to make a ranged attack only if you have ammunition to fire from the weapon. Every weapon with the firearm property uses Shot and Powder as ammunition.
-- **Armor-Piercing:** A hit from a firearm degrades the target's armor by 2 AR instead of the normal 1, regardless of whether the hit deals any HP damage.
+- **Armor-Piercing:** A hit from a firearm degrades the target's armor by 2 AR instead of the normal 1, regardless of whether the hit deals any Wound damage.
 - **Standard Reload:** Before a firearm can be used to make a ranged attack it must be loaded, which normally requires both a Major Action **and** a Minor Action to complete.
-  - With the **Rapid Reload** feat, this is reduced to just a **Minor Action**
+  - With the **Gunner** feat, this is reduced to just a **Minor Action**
     - A reload that normally requires two Major Actions becomes a Major Action and a Minor Action.
 
 ### **Lock Types**
@@ -251,6 +251,6 @@ After combat, roll 1d6:
 | :---- | :---- | ----- | :---: |
 | Punch | 1d6 Bludgeoning | \- | 11-12 |
 | Kick | 1d8 Bludgeoning | \- | \- |
-| Headbutt | 1d10 Bludgeoning | You take the same damage dealt. Target must make an END Ward (DC damage \+ your Brawling Skill) or be Stunned. | \- |
+| Headbutt | 1d10 Bludgeoning | You take the same damage dealt. Make a **1d12 \+ your STR \+ Brawling** roll against target's END Ward (Contested Ward) - if it beats their Ward, they are Stunned. | \- |
 | Grapple | Special | Contested Brawling check to Restrain target | \- |
 

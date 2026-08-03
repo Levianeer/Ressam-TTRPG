@@ -46,7 +46,7 @@ Shadowmancy is inherently silent, producing no noise when cast.
 - **Duration:** Instant
 - **Effect:** You can manifest a shadow of yourself in an unoccupied space you can see. This shadow is a translucent, gray image of you that lasts until it is destroyed, until you dismiss it as a Minor Action, until you manifest another shadow, or until you're unconscious.
 
-- Your shadow has Evasion 14 \+ ARC, 1 HP, and immunity to all conditions. Its Ward values equal yours. It is the same size as you, and it occupies its own space. On your turn, you can mentally command the shadow to move up to 30 feet in any direction (no action required). If your shadow is ever more than 30 feet from you at the end of your turn, it is destroyed.
+- Your shadow has Evasion 14 \+ ARC, 1 Wound, and immunity to all conditions. Its Ward values equal yours. It is the same size as you, and it occupies its own space. On your turn, you can mentally command the shadow to move up to 30 feet in any direction (no action required). If your shadow is ever more than 30 feet from you at the end of your turn, it is destroyed.
 
 - As a Minor Action, you can magically swap places with your shadow at a cost of 3 Mana and 15 feet of your movement, regardless of the distance between the two of you.
 

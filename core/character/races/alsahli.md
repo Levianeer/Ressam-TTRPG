@@ -20,7 +20,7 @@ The Alsahli are a cursed reptilian race, their sleek, multi-eyed forms a testame
 
 **Cold-Blooded:** You have resistance to fire damage. When you take cold damage, make an END Ward (DC 20\) or your speed is halved until the end of your next turn.  
 **Four Arms:** You have a secondary pair of arms below your primary pair. These extra limbs can hold objects, perform simple tasks, draw or stow weapons, reload weapons, or be used for spells. You do not gain additional attacks beyond what your Feats or Features allow.  
-**Desert Born:** You do not gain extra Exhaustion while in the desert. You only need 1 Ration per 2 days.
+**Desert Born:** You do not gain extra Trauma while in the desert. You only need 1 Ration per 2 days.
 
 ---
 

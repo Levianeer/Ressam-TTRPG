@@ -7,7 +7,7 @@
 The Varulf are cursed reflections of humanity \- neither fully man nor wholly beast, born from a nightmare shared by mankind: the fear of losing control, of the savage lurking beneath civility. Transformed through bite and blood, a Varulf walks a tormented line between monstrous hunger and human conscience. Some exile themselves to the wilds in shame; others make a legend of their power instead. Either way, the howl follows them.
 
 **Homeland:** Lustralis  
-**Starting Attributes:** \+2 STR, \+1 END, \-1 FAI  
+**Starting Attributes:** \+1 STR, \+1 END, \-1 FAI  
 **Age:** Lives 100s of years  
 **Alignment:** Chaotic  
 **Size:** Medium (5-6 ft)  
@@ -25,10 +25,10 @@ The Varulf are cursed reflections of humanity \- neither fully man nor wholly be
 
 - \+10 ft speed, \+1 STR, \+1 END.  
 - \+2 Natural AR.  
-- Gain 10 temporary HP.  
+- Gain 2 Temporary Wounds.  
 - Gain natural weapons: Claws (1d8+STR slashing), Bite (1d10+STR piercing). These count as magical.
 
-When the transformation ends, you lose any remaining temporary HP and revert to your human form. If you are unconscious when the transformation ends, you remain unconscious.
+When the transformation ends, you lose any remaining Temporary Wounds and revert to your human form. If you are unconscious when the transformation ends, you remain unconscious.
 
 **Curse of the Beast:** When you fail a MIND Ward, make an additional END Ward DC 23 or enter Feral Frenzy:
 

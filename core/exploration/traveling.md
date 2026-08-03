@@ -29,9 +29,9 @@ The party slows their pace to better spot and avoid alerting potential enemies. 
 
 ### **Forced March**
 
-The party pushes beyond normal limits. Add \+4 to their daily hex point allowance, but all characters gain 2 levels of Exhaustion at day’s end.
+The party pushes beyond normal limits. Add \+4 to their daily hex point allowance, but all characters gain 2 levels of Trauma at day’s end.
 
-- Such a pace can be kept up until a marcher reaches 6 levels of Exhaustion.  
+- Such a pace can be kept up until a marcher reaches 6 levels of Trauma.  
 - Most Followers or Cohorts so fatigued will press for at least one full rest day; refusal may provoke Morale checks.  
 - If ambushed, the party is surprised.
 
@@ -49,16 +49,16 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 | Stat | Value |
 | :---- | :---- |
-| **HP** | 25 |
-| **Evasion** | 8 |
+| **Wounds** | 4 |
+| **Evasion** | 7 |
 | **AR** | 1 (thick hide) |
 | **Speed** | 40 ft |
 | **Daily Hex Pts** | 10 |
-| **Attributes** | STR 5, END 6, DEX 3, REF 4 |
+| **Attributes** | STR 3, END 3, DEX 2, PRE 2 |
 
 **Attacks:**
 
-- **Kick:** \+3 to hit, 1d6+2 bludgeoning damage (only when spooked or cornered)
+- **Kick:** \+1 to hit, 1d6+2 bludgeoning damage (only when spooked or cornered)
 
 **Special Traits:**
 
@@ -76,16 +76,16 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 | Stat | Value |
 | :---- | :---- |
-| **HP** | 35 |
-| **Evasion** | 11 |
+| **Wounds** | 5 |
+| **Evasion** | 8 |
 | **AR** | 2 |
 | **Speed** | 70 ft |
 | **Daily Hex Pts** | 12 |
-| **Attributes** | STR 6, END 6, DEX 6, REF 5 |
+| **Attributes** | STR 3, END 3, DEX 3, PRE 3 |
 
 **Attacks:**
 
-- **Hooves:** \+4 to hit, 1d8+3 bludgeoning damage (only when panicked, or if you travelled at least 30ft before attacking a target medium or smaller)
+- **Hooves:** \+1 to hit, 1d8+3 bludgeoning damage (only when panicked, or if you travelled at least 30ft before attacking a target medium or smaller)
 
 **Special Traits:**
 
@@ -103,22 +103,22 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 | Stat | Value |
 | :---- | :---- |
-| **HP** | 55 |
-| **Evasion** | 10 |
+| **Wounds** | 8 |
+| **Evasion** | 8 |
 | **AR** | 3 (can wear barding for \+3 AR) |
 | **Speed** | 60 ft |
 | **Daily Hex Pts** | 12 |
-| **Attributes** | STR 8, END 7, DEX 5, REF 4 |
+| **Attributes** | STR 4, END 4, DEX 3, PRE 2 |
 
 **Attacks:**
 
-- **Hooves:** \+6 to hit, 2d6+4 bludgeoning damage
+- **Hooves:** \+2 to hit, 2d6+4 bludgeoning damage
 
 **Special Traits:**
 
 - **Beast of Burden:** Can carry 15 Slots without penalty  
 - **Warhorse Training:** Automatically acts on rider's initiative. Can attack without Animal Handling checks  
 - **Fearless Charge:** If the horse moves at least 30 ft in a straight line before attacking, deals an additional 2d6 damage and target must make STR Ward (DC 14\) or be knocked prone  
-- **Battle Hardened:** Advantage on Wards against fear and being startled. Only panics when reduced below half HP
+- **Battle Hardened:** Advantage on Wards against fear and being startled. Only panics when reduced below half Wounds
 
-**Behavior:** Trained for combat. Will attack enemies on command and defend its rider. Requires DC 10 Animal Handling if reduced below half HP to prevent fleeing.
+**Behavior:** Trained for combat. Will attack enemies on command and defend its rider. Requires DC 10 Animal Handling if reduced below half Wounds to prevent fleeing.

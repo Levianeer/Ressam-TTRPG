@@ -21,21 +21,20 @@ Armor is your primary defense against physical attacks. In Ressam, armor absorbs
 | Work Clothes | \- | \- | \- | 15 Crown | 2 |
 | Travel Clothes | \- | \- | \- | 50 Crown | 2 |
 | Fine Clothes | \- | \- | \- | 200 Crown | 2 |
-| **LIGHT ARMOR** |  |  |  |  |  |
-| Gambeson | 5 | \-1 | \- | 75 Crown | 2 |
-| Buff Coat | 6 | \-1 | \- | 120 Crown | 2 |
-| **MEDIUM ARMOR** |  |  |  |  |  |
-| Mail Shirt | 9 | \-2 | \-2 | 150 Crown | 3 |
-| Chain Mail | 11 | \-3 | \-3 | 200 Crown | 3 |
-| Brigandine | 13 | \-3 | \-1 | 350 Crown | 3 |
-| Breastplate | 14 | \-4 | \-2 | 700 Crown | 3 |
-| **HEAVY ARMOR** |  |  |  |  |  |
-| Half-Plate | 15 | \-5 | \-3 | 1,000 Crown | 5 |
-| Full Plate | 16 | \-5 | \-4 | 2,000 Crown | 6 |
+| **FLEXIBLE ARMOR** |  |  |  |  |  |
+| Gambeson | 2 | \-1 | \- | 75 Crown | 2 |
+| Buff Coat | 3 | \-1 | \- | 120 Crown | 2 |
+| Mail Shirt | 4 | \-2 | \-2 | 150 Crown | 3 |
+| Chain Mail | 5 | \-2 | \-3 | 200 Crown | 3 |
+| Brigandine | 6 | \-3 | \-1 | 350 Crown | 3 |
+| **RIGID ARMOR** |  |  |  |  |  |
+| Breastplate | 6 | \-6 | \-2 | 700 Crown | 3 |
+| Half-Plate | 7 | \-7 | \-3 | 1,000 Crown | 5 |
+| Full Plate | 8 | \-8 | \-4 | 2,000 Crown | 6 |
 
-### 
+###
 
-**Note:** While wearing Heavy Armor, your Evasion is 5 − Armor Penalty (you cannot add Agility or DEX), and you cannot Dodge.
+**Note:** Rigid Armor uses the normal Evasion formula (5 \+ Agility \+ DEX − Armor Penalty) like anything else \- there's no special ban on Agility, DEX, or Dodging. Its Penalty (equal to its full AR, see Armor Penalty below) is what makes it costly, not a separate restriction on top.
 
 ### **Armor Descriptions**
 
@@ -71,40 +70,33 @@ Your AR determines how much damage your armor absorbs from each hit.
 
 **When you're hit by an attack:**
 
-1. Attacker rolls damage  
-2. Subtract your current AR from the damage  
-3. Remaining damage (if any) is dealt to your HP  
+1. Attacker rolls damage
+2. Subtract your current AR from the damage
+3. Remaining damage (if any) converts to Wounds via the Wound Thresholds (see core_rules.md's Wounds and Survival)
 4. Your armor loses 1 durability (reducing your AR by 1\)
 
-**Example:** You're wearing brigandine (AR 13). An attacker hits you for 10 damage. Your armor absorbs all 10 damage, but your AR drops to 12\. Next hit, you'll only absorb 12 damage.
+**Example:** You're wearing brigandine (AR 6). An attacker hits you for 4 damage. Your armor absorbs all 4 damage, but your AR drops to 5\. Next hit, you'll only absorb 5 damage.
 
 ### **Armor Penalty**
 
 Penalty represents how armor restricts movement. It applies to:
 
-- **Agility skill checks** (dodging, acrobatics, balance)  
-- **Stealth skill checks** (if armor has a Stealth penalty)  
-- **Spellcasting rolls** (both attack rolls and Ward DCs)  
+- **Agility skill checks** (dodging, acrobatics, balance)
+- **Stealth skill checks** (if armor has a Stealth penalty)
+- **Spellcasting rolls** (both attack rolls and Ward DCs)
 - **Evasion and Dodge calculations**
 
-The **Armorer skill** reduces penalty: every 2 ranks in Armorer reduces your armor's penalty by 1 (minimum 0).
+Penalty is derived directly from an armor's AR, not tracked separately: **Rigid armor's Penalty equals its AR**, while **Flexible armor's Penalty is half its AR (rounded down)**. A Rigid piece always costs you something no matter how it's built - that's the tradeoff for wearing plate.
 
-| Armorer Rank | Penalty Reduction |
-| :---: | :---: |
-| 0-1 | None |
-| 2-3 | \-1 |
-| 4-5 | \-2 |
-| 6-7 | \-3 |
-| 8-9 | \-4 |
-| 10 | \-5 |
+The **Armorer skill** reduces penalty: every rank in Armorer reduces your armor's penalty by 1 (minimum 0).
 
-**Example:** Kira wears chain mail (Penalty \-3) and has Armorer 4\. Her effective penalty is only \-1.
+**Example:** Kira wears Full Plate (Penalty \-8) and has Armorer 5, the maximum. Her effective penalty is still \-3 \- Rigid armor never fully cancels, even at maxed Armorer.
 
 ### **Stealth Penalty**
 
 Some armor imposes an *additional* penalty specifically to Stealth checks. This stacks with the normal penalty.
 
-**Example:** Chain mail has Penalty \-3 and Stealth \-3. A character with no Armorer skill takes \-6 total to Stealth checks while wearing it.
+**Example:** Chain mail has Penalty \-2 and Stealth \-3. A character with no Armorer skill takes \-5 total to Stealth checks while wearing it.
 
 Brigandine notably has no Stealth penalty despite its protection \- the fabric exterior muffles the metal plates within.
 
@@ -126,17 +118,17 @@ Your armor's durability starts equal to its AR and decreases each time you're hi
 
 ### **Degradation Example**
 
-Kira starts a fight wearing chain mail (AR 11, Durability 11).
+Kira starts a fight wearing chain mail (AR 5, Durability 5).
 
 | Event | Damage Taken | AR After |
 | :---- | :---: | :---: |
-| Start |  \-  | 11 |
-| Hit for 8 damage | 0 HP (absorbed) | 10 |
-| Hit for 14 damage | 4 HP | 9 |
-| Hit for 6 damage | 0 HP (absorbed) | 8 |
-| Hit for 12 damage | 4 HP | 7 |
+| Start |  \-  | 5 |
+| Hit for 4 damage | 0 Wound Damage (absorbed) | 4 |
+| Hit for 7 damage | 3 Wound Damage | 3 |
+| Hit for 3 damage | 0 Wound Damage (absorbed) | 2 |
+| Hit for 6 damage | 4 Wound Damage | 1 |
 
-After four hits, her chain mail only provides AR 7\. She's taken 8 HP damage, but without armor she'd have taken 40\.
+After four hits, her chain mail only provides AR 1\. She's taken 7 Wound Damage, but without armor she'd have taken 20\.
 
 ### **Destroyed Armor (0 AR)**
 
@@ -157,9 +149,9 @@ Characters with the Armorer skill can repair armor outside of combat. This requi
 | Armorer Rank | Repair Capability |
 | :---: | :---- |
 | 1+ | Repair during Field Rest or Long Rest: restore 2d6 durability |
-| 3+ | Repair during Short Rest: restore 2d6 durability |
-| 5+ | Quick repair (10 minutes): restore 2d6 durability, once per day |
-| 7+ | Combat repair (Major Action): restore 1d6 durability to your own armor, once per day |
+| 2+ | Repair during Short Rest: restore 2d6 durability |
+| 3+ | Quick repair (10 minutes): restore 2d6 durability, once per day |
+| 4+ | Combat repair (Major Action): restore 1d6 durability to your own armor, once per day |
 
 **Limitations:**
 
@@ -189,11 +181,13 @@ Armor at 0 durability must be taken to a blacksmith for reforging:
 
 | Armor Type | Don | Doff | Rushed Don |
 | :---- | :---: | :---: | :---: |
-| Light | 1 minute | 1 minute | 5 rounds |
-| Medium | 5 minutes | 3 minutes | 1 minute |
-| Heavy | 10 minutes | 5 minutes | 3 minutes |
+| Gambeson/Buff Coat | 1 minute | 1 Action | 5 rounds |
+| Mail Shirt/Chain Mail/Brigandine | 5 minutes | 1 Action | 1 minute |
+| Rigid Armor | 10 minutes | 1 Action | 3 minutes |
 
-**Help:** Another character can reduce don/doff time by half if they have Armorer 1+.
+**Doffing** is fast regardless of armor type \- shedding armor is a single Action on your turn, provokes no Reactions, and is one-way: you cannot re-don armor mid-combat, only take it off.
+
+**Help:** Another character can reduce don time by half if they have Armorer 1+.
 
 ---
 
@@ -216,7 +210,7 @@ Shields provide active and passive defenses.
 
 ### **Shield Descriptions**
 
-**Buckler** is a small fist-held shield used for parrying rather than blocking. Popular in civilian dueling and among those who value mobility. Grants \+2 to Agility skill (affecting Evasion and Dodge) but provides no AR bonus when blocking.
+**Buckler** is a small fist-held shield used for parrying rather than blocking. Popular in civilian dueling and among those who value mobility. Grants \+1 to Agility skill (affecting Evasion and your Dodge Style roll) but has no AR Bonus, so it reduces nothing on a Block Style Minimized result.
 
 **Targe** is a small round shield gripped or strapped to the forearm. Common among skirmishers and those who need a free hand. Offers modest protection without hindering movement.
 
@@ -234,15 +228,11 @@ Shields provide active and passive defenses.
 **Blocking** requires:
 
 - A shield equipped in one hand  
-- Shields skill rank 3+  
 - Your Reaction for the round
 
-When you Block (see Combat chapter):
+Block is one Style of the Maneuver Reaction (see Combat chapter) - on a Minimized result, your shield's AR Bonus reduces the incoming damage. Whether the attack is Dominant, Stopped, Minimized, or Failed, your armor and shield degrade as normal.
 
-- Add your shield's AR bonus to your armor's AR for that attack  
-- If the attack still hits, your armor degrades as normal
-
-**Buckler Exception:** The buckler grants no AR bonus when blocking. Its benefit is the passive \+2 to Agility, which improves your Evasion and Dodge values.
+**Buckler Exception:** The buckler grants no AR Bonus, so it reduces nothing on a Block Style Minimized result. Its benefit is the passive \+1 to Agility, which improves your Evasion and Dodge Style roll instead.
 
 ### **Shield Durability**
 
@@ -260,7 +250,7 @@ When repairing armor, you repair the shield simultaneously.
 
 | Role | Recommended Armor | Why |
 | :---- | :---- | :---- |
-| **Melee Fighter** | Brigandine or Breastplate | High AR, manageable penalty |
+| **Melee Fighter** | Brigandine or Breastplate | High AR; Breastplate's Rigid Penalty (equal to its full AR) is steep, but Evasion still scales normally |
 | **Archer/Crossbowman** | Gambeson or Buff Coat | Low penalty for aiming |
 | **Spellcaster** | None or Gambeson | Penalty hurts spellcasting |
 | **Skirmisher/Scout** | Gambeson | Stealth-compatible |
@@ -294,4 +284,4 @@ Higher AR means better damage absorption but worse:
 
 **Spellcasters** favor low or no armor \- penalty directly reduces their effectiveness.
 
-**Hybrid characters** often choose brigandine \- high AR (13) with only \-3 penalty and no Stealth penalty.
+**Hybrid characters** often choose brigandine \- high AR (6) with only \-3 penalty and no Stealth penalty.

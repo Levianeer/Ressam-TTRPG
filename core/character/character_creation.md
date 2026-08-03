@@ -36,17 +36,17 @@ See the **Careers** chapter. Record:
 
 ## Step 4: Distribute Attribute Points
 
-You have **36 points** to distribute across 8 Attributes.
+You have **18 points** to distribute across 8 Attributes.
 
 ### **Attribute Generation Methods**
 
 | Method | Rules |
 | :---- | :---- |
-| **Point Buy (Default)** | Distribute **36** points. |
-| **Standard Array** | Assign **7, 6, 5, 5, 4, 4, 3, 2** to Attributes. Each value is used once. |
-| **Rolled** | For each **8** attributes, roll **3d6**, **divide by 3** (round to nearest whole) and **add 1**. You can assign these results freely between each attribute. |
+| **Point Buy (Default)** | Distribute **18** points. |
+| **Standard Array** | Assign **4, 3, 3, 2, 2, 2, 1, 1** to Attributes. Each value is used once. |
+| **Rolled** | For each **8** attributes, roll **2d6**, **divide by 3** (round to nearest whole) and **add 1**. You can assign these results freely between each attribute. |
 
-**Note:** No Attribute can start **below 2** before racial modifiers, **below 1** after, or **above 8** after racial modifiers.
+**Note:** No Attribute can start **below 1**, or **above 4** after racial modifiers.
 
 ### 
 
@@ -54,12 +54,10 @@ You have **36 points** to distribute across 8 Attributes.
 
 | Level | Maximum (before racial mods) |
 | :---: | :---: |
-| 1-3 | 7 |
-| 4-7 | 8 |
-| 8-11 | 9 |
-| 12+ | 10 |
+| 1-7 | 4 |
+| 8+ | 5 |
 
-**Minimum:** No Attribute below 2 before racial modifiers, or below 1 after.
+**Minimum:** No Attribute below 1.
 
 **Racial increases/decreases** are applied after distributing points to your modifier.
 
@@ -67,17 +65,16 @@ You have **36 points** to distribute across 8 Attributes.
 
 ## Step 5: Distribute Skill Points
 
-You have **24 Skill points** to distribute. Career skill bonuses are free and applied first.
+You have **12 Skill points** to distribute. Career skill bonuses are free and applied first.
 
 ### **Skill Limits**
 
 | Level | Maximum Rank |
 | :---: | :---: |
-| 1 | 3 |
-| 2 | 4 |
-| 3 | 5 |
-| ... | Level \+ 2 |
-| 8+ | 10 (cap) |
+| 1-2 | 2 |
+| 3-4 | 3 |
+| 5-6 | 4 |
+| 7+ | 5 (cap) |
 
 ---
 
@@ -97,13 +94,11 @@ See the **Feats** chapter for the complete list.
 
 | Stat | Formula |
 | :---- | :---- |
-| **Hit Points (HP)** | (END × 3\) \+ 10 |
+| **Wounds** | END |
 | **Mana Points (MP)** | MIND × 2 |
 | **Slots** | STR \+ END |
 | **Evasion** | 5 \+ Agility \+ DEX − Armor Penalty |
-| **Dodge** | Evasion \+ 5 |
-| **Max Dodges/Short Rest** | DEX ÷ 2 |
-| **Initiative** | 1d12 \+ ((REF \+ DEX) ÷ 2\) |
+| **Initiative** | 1d12 \+ ((PRE \+ DEX) ÷ 2\) |
 | **Armor Rating (AR)** | Equipped armor's AR value |
 
 ---
@@ -112,7 +107,7 @@ See the **Feats** chapter for the complete list.
 
 Your career provides starting equipment and currency. Purchase additional items from the **Equipment** chapter.
 
-**Armor Reminder:** Armor Penalty affects Evasion, Dodge, and spellcasting. Each 2 ranks in Armorer reduces that penalty by 1\.
+**Armor Reminder:** Armor Penalty affects Evasion, your Dodge Style roll for Maneuver (see Combat), and spellcasting. Each 2 ranks in Armorer reduces that penalty by 1\.
 
 ---
 

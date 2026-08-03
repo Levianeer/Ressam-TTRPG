@@ -22,7 +22,7 @@ Prestige Feats represent fundamental transformations in how a character interact
 
 *“The warbands of Inggaz have no word for "parry." When an Orkh commits to violence, they do not dance around their enemy \- they move through them. Temür Zam, the Iron Path, is less a technique than a state of being: the absolute certainty that nothing between you and your destination matters. Scholars who have witnessed practitioners describe it as "fighting a landslide." The philosophy has spread beyond Orkhaden borders, adopted by anyone who has learned that overwhelming force solves problems skill cannot.”*
 
-**Prerequisites:** STR 7+, \+5 ranks in Athletics, \+3 ranks in any melee weapon skill
+**Prerequisites:** STR 4+, \+3 ranks in Athletics, \+2 ranks in any melee weapon skill
 
 **Ritual:** Carry something that should break you. Not in comfort, not with rest \- carry it until your body fails and your will is all that remains. The weight itself matters less than the refusal to set it down. Those who complete the path describe the same realization: nothing is heavy anymore.
 
@@ -32,7 +32,7 @@ Prestige Feats represent fundamental transformations in how a character interact
 
 - Your damage is completely fixed \- no variation, no damage dice.
 - You can no longer score critical hits.
-- You cannot use Finesse weapons and can longer take the Parry Maneuver,
+- You cannot use Finesse weapons and can no longer use the Parry Style of Maneuver,
 - Effects that add damage dice instead add only 1 additional damage (adding 3d4 instead adds 3 flat damage).
 - Effects that add flat damage instead add only half their additional damage (adding 10 instead adds 5 flat damage).
 
@@ -42,7 +42,7 @@ Prestige Feats represent fundamental transformations in how a character interact
 
 *“In the fighting schools of the Tagarian Coalition, there exists a heretical teaching \- that speed is weakness. The Colpo Finale tradition holds that the first strike reveals everything: intention, stance, commitment, fear. The counter-striker who waits sees all of this, and responds not to what their enemy does, but to what their enemy has already decided to do. The style is associated with the Donati, though they neither confirm nor deny its origins. Those who master it describe combat as a conversation where they always speak the last word.”*
 
-**Prerequisites:** REF 7+, \+5 ranks in Perception or Insight, \+3 ranks in any weapon skill
+**Prerequisites:** PRE 4+, \+3 ranks in Perception or Insight, \+2 ranks in any weapon skill
 
 **Ritual:** Allow an enemy to land a blow you could have prevented. Do this with full knowledge, not from hesitation. Then, in the moment of their overextension, end them. Repeat until the urge to act first feels like a stranger's instinct.
 
@@ -60,22 +60,22 @@ Prestige Feats represent fundamental transformations in how a character interact
 
 *“The scholars of the Grand Gnosion have long understood that life force and magical energy are not separate currencies \- they are the same coin, differently spent. Haimokrateia, "blood-rule," is the practical application of this theory: the caster's own vitality becomes the fuel for their workings. The technique is neither forbidden nor encouraged in Mafsoleios; it is simply acknowledged as one of many paths. Among Strygs who learn this discipline, the blood itself becomes something else entirely \- Bloodfire, a writhing crimson flame that burns with stolen life.”*
 
-**Prerequisites:** END 7+, \+4 ranks in any magic school, \+3 ranks in Medical Lore
+**Prerequisites:** END 4+, \+2 ranks in any magic school, \+2 ranks in Medical Lore
 
 **Ritual:** Drain yourself to the threshold. Not through violence or accident, but deliberately, in a place where power gathers. Stabilize yourself with nothing but will. The body must learn that emptiness is not death \- it is potential.
 
-**Effect:** You may cast any spell you know using HP instead of Mana. The HP cost equals the spell's Mana Cost.
+**Effect:** You may cast any spell you know using Wounds instead of Mana. The Wound cost equals the spell's Mana Cost.
 
 Additionally, if you are a Stryg, you may convert any damage dealt by you into Bloodfire damage. Bloodfire manifests as a thick, writhing crimson flame laced with black \- viscous and pulsing like living blood \- that drips in heavy strands and bursts in wet explosions on impact, burning with a dark, organic heat unlike ordinary fire.
 
 **Mechanical Changes:**
 
 - Your Maximum Mana is reduced to 0, it can never be increased beyond 0\.
-- Temporary HP cannot be used for spell costs.
-- Any effect that would use Mana, instead uses your Hit Points.
-- HP spent as a casting cost is a cost, not damage \- it does not trigger effects that respond to taking damage.
-- If you die from HP spent on casting, the spell fails and you begin dying.
-- Does not affect Invocation spells, which already use their own HP conversion \- Invocation spells still cost HP equal to Mana Cost × 2, not × 1, and this feat doesn't change or discount that.
+- Temporary Wounds cannot be used for spell costs.
+- Any effect that would use Mana, instead uses your Wounds.
+- Wounds spent as a casting cost is a cost, not damage \- it does not trigger effects that respond to taking damage.
+- If you die from Wounds spent on casting, the spell fails and you begin dying.
+- Does not affect Invocation spells, which already use their own Wound conversion \- Invocation spells still cost Wounds equal to Mana Cost × 2, not × 1, and this feat doesn't change or discount that.
 
 ---
 
@@ -83,7 +83,7 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 
 *“The Sword Sages of the Ederani Al'Nur embody living theology, demonstrating Lehovil's protective light for those who follow his path. Their pinnacle technique, Sarab al-Nur \- the Mirage of Light \- allows practitioners to traverse not space, but perception, flickering like desert heat and reappearing with blade drawn where the eye denies possibility. Elders attribute this gift to Lehovil's favor, yet they conceal its shadows: origins traced to the Dunestrife War, where Sages studied the Hwispian Maw's wind-dancers and returned altered; ancient texts penned in Dzinariel, with forms echoing the abhorred Windform of desert monstrosities. The young are taught only of love's invincibility \- perhaps that's true enough.”*
 
-**Prerequisites:** DEX 7+, \+5 ranks in Acrobatics, \+3 ranks in Stealth or Agility
+**Prerequisites:** DEX 4+, \+3 ranks in Acrobatics, \+2 ranks in Stealth or Agility
 
 **Ritual:** Cross a path that should kill you without relying on your senses. A chasm's edge. A trapped corridor. A collapsing structure. Trust not in balance or sight, but in the certainty that where danger expects you, you are already elsewhere.
 
@@ -111,7 +111,7 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 
 *“Henri Gachet Gautier, built his theology on protection \- of homes, of people, of the structures that let mortals thrive. His Order of Protectors, Les Falaises, train builders and healers and defenders in equal measure. Rempart d'Esprit is the purest expression of that doctrine: the caster's own power becomes the wall between harm and the innocent. The technique requires absolute conviction. Doubt creates cracks, and cracks let death through. Those who master it describe incoming blows as "requests they deny."”*
 
-**Prerequisites:** MIND 7+, \+4 ranks in any magic school, \+3 ranks in Arcane Lore or Religious Lore
+**Prerequisites:** MIND 4+, \+2 ranks in any magic school, \+2 ranks in Arcane Lore or Religious Lore
 
 **Ritual:** Stand between something precious and something terrible, with nothing but your will as shield. No armor. No blade raised. No ally to intervene. Hold until the threat breaks or you do.
 
@@ -129,7 +129,7 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 
 *"Before the Tor'Az standardized runic education, the old clans carved power into their own flesh. A warrior's scars told you what magic they carried  \-  and how much pain they could endure. The practice fell from favor as industry rose; too painful, too personal, too permanent for an age of mass-produced scrolls and assembly-line enchantment. But in the deep holds where the old ways linger, some still take the brand. They carry fewer spells than a scroll-mage but they never run out of ink."*
 
-**Prerequisites:** ARC 7+, \+5 ranks in any arcane magic school, \+3 ranks in Crafting
+**Prerequisites:** ARC 4+, \+3 ranks in any arcane magic school, \+2 ranks in Crafting
 
 **Ritual:** Destroy your spellbook  \-  every page, every scroll, every scrap of parchment that holds your magic. Melt the ink. Burn the vellum. Then, with chisel and your own blood as pigment, carve the first rune into your flesh. Work until the stone of your body accepts it. When the wound closes around the mark and the power answers your hand instead of your pen, you will never need parchment again.
 
@@ -143,7 +143,7 @@ You have a number of **Rune Charges** equal to your Crafting skill ÷ 2 (rounded
 
 **Mechanical Changes:**
 
-- You cannot scribe, carry, use, or benefit from spell scrolls in any form. Feats or effects that reduce scroll Mana costs (such as Arcane Focus) do not apply to you.
+- You cannot scribe, carry, use, or benefit from spell scrolls in any form. Feats or effects that reduce scroll Mana costs do not apply to you.
 - Brands cannot be shared with or activated by allies.
 - Instability does not apply to your scribed Runes.
 - Your brands glow faintly when you cast or take damage. You have disadvantage on Stealth checks to conceal your nature as a spellcaster.
@@ -154,13 +154,13 @@ You have a number of **Rune Charges** equal to your Crafting skill ÷ 2 (rounded
 
 *“The great cathedrals of Gran Reino preach devotion to the God-Dragons \- light, order, the certainty of divine judgment. But every faith casts a shadow, and Fe Alada's shadow is long indeed. Alada Caída, the Fallen Wing, is what happens when a believer looks too closely at the nature of their devotion and finds something hungry looking back. The healing light curdles. The blessed words rot in the throat. The High Lord's inquisitors hunt practitioners when they find them, which only confirms what the fallen already know: the church fears this path because it works.”*
 
-**Prerequisites:** FAI 7+, \+5 ranks in any divine magic school, \+3 ranks in Religious Lore
+**Prerequisites:** FAI 4+, \+3 ranks in any divine magic school, \+2 ranks in Religious Lore
 
 **Ritual:** Betray the God-Dragons in their house. The method matters less than the sincerity \- a defiled altar, a slain priest, a prayer spoken backward with genuine intent. Feel the familiar warmth of faith curdle into something colder, and understand: the power never left. Only its direction changed.
 
-**Effect:** All your divine spells deal necrotic damage (instead of radiant). When you cast a spell that would heal a creature, you may choose to invert it: the spell deals necrotic damage to the target and you gain temporary HP equal to half the damage dealt.
+**Effect:** All your divine spells deal necrotic damage (instead of radiant). When you cast a spell that would heal a creature, you may choose to invert it: the spell deals necrotic damage to the target and you gain Temporary Wounds equal to half the damage dealt.
 
-Once per combat, when you successfully damage a creature with a Benediction or Cultivation spell, you may force them to make a FAI Ward check (DC \= 5 \+ your FAI \+ spell school rank) or become Frightened of you until the end of your next turn.
+Once per combat, when you successfully damage a creature with a Benediction or Cultivation spell, you may make a **1d12 \+ your FAI \+ spell school rank** roll against their FAI Ward (Contested Ward) - if it beats their Ward, they become Frightened of you until the end of your next turn.
 
 **Mechanical Changes:**
 
@@ -171,11 +171,11 @@ Once per combat, when you successfully damage a creature with a Benediction or C
 
 **Fallen Thrall Statistics:**
 
-- HP: Your FAI × 4
+- Wounds: Your FAI × 4
 - Evasion: 8 \+ your FAI
 - AR: 2 (decayed flesh)
 - Speed: 30 ft
-- Attributes: STR 4, REF 3, END 5, DEX 3, MIND 1, ARC 0, FAI 0, CHA 1
+- Attributes: STR 2, PRE 2, END 3, DEX 2, MIND 1, ARC 0, FAI 0, CHA 1
 - Attack: Slam \+your spell modifier to hit, 1d6 \+ your FAI necrotic damage
 - Special: Shares your initiative, acts immediately after your turn
 
@@ -185,11 +185,11 @@ Once per combat, when you successfully damage a creature with a Benediction or C
 
 *“The Elar'laevien tradition of Bloodwood crafting proves that weapons can hold a piece of their wielder. Anamcheangal, the Soul-Bond, takes this principle further \- and asks less of the material. Any blade, any bow, any humble club can become an extension of the self if the practitioner is willing to give enough of themselves to it. The technique has spread far from its Aurkhani origins, adopted by warriors who understand that the deadliest weapon is the one that knows you completely. The bond is not metaphorical. The weapon listens. Sometimes, it answers.”*
 
-**Prerequisites:** CHA 7+, \+4 ranks in any CHA skill, \+3 ranks in any weapon skill
+**Prerequisites:** CHA 4+, \+2 ranks in any CHA skill, \+2 ranks in any weapon skill
 
 **Ritual:** Speak to your weapon. Not as a performance \- truly speak, every night, for a turning of the moon. Tell it what you fear. What you want. What you have never told anyone living. On the final night, feed it your blood. If you were sincere, you will know. If you were not, you have wasted a month talking to metal.
 
-**Effect:** Choose one weapon you own. It is now bound to your soul. You use CHA for attack and damage rolls with this weapon, instead of STR or REF.
+**Effect:** Choose one weapon you own. It is now bound to your soul. You use CHA for attack and damage rolls with this weapon, instead of STR or PRE.
 
 **Mechanical Changes:**
 

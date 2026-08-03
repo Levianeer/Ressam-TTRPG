@@ -51,7 +51,7 @@ Benediction channels divine judgment \- smiting enemies, rebuking heretics, and 
 - **Casting Time:** Major Action
 - **Range:** 30 ft
 - **Duration:** Instant
-- **Effect:** You pronounce divine judgment upon a creature, and holy fire answers. Make a spell attack roll vs. target's Evasion. On hit, deal 2d8 \+ FAI radiant damage. For each time the target has dealt damage to you or your allies during this combat, add 1d8 to the damage (maximum \+2d8). If this damage reduces the target to 0 HP, their body is consumed in radiant flame \- they cannot be raised as undead or resurrected by normal means.
+- **Effect:** You pronounce divine judgment upon a creature, and holy fire answers. Make a spell attack roll vs. target's Evasion. On hit, deal 2d8 \+ FAI radiant damage. For each time the target has dealt damage to you or your allies during this combat, add 1d8 to the damage (maximum \+2d8). If this damage reduces the target to 0 Wounds, their body is consumed in radiant flame \- they cannot be raised as undead or resurrected by normal means.
 
 **Martyrdom's Price \- Mana Cost 5**
 

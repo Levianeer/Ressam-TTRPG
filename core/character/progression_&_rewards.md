@@ -17,25 +17,25 @@
 ### **Per Level Advancement**
 
 - **Every level:** Gain \+2 Skill Points every level  
-  - Skill Maximum increases by \+1 (maximum cap of 10 reached at level 8\)  
+  - Skill Maximum increases by \+1 (maximum cap of 5 reached at level 7\)  
 - **Every 2 levels (and at level 12):** Gain a Feat  
 - **Every 4 levels:** Gain \+2 Attribute Points  
-  - Attribute Maximum increases by \+1 (maximum cap of 10 reached at level 12\)
+  - Attribute Maximum increases by \+1 (maximum cap of 5 reached at level 8\)
 
 | Level | Total XP | Skills Points | Skill Cap | ATTR Points | ATTR Cap | Feats | Notes |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | ----- |
-| 1 | 30 | Start 24 | 3 | Start 36 | 7 | Start 2 | Can hire Followers |
-| 2 | 120 | \+2 | 4 | \- | 7 | \- | \- |
-| 3 | 270 | \+2 | 5 | \- | 7 | \+1 | Can hire Cohorts |
-| 4 | 480 | \+2 | 6 | \+2 | 8 | \- | \- |
-| 5 | 750 | \+2 | 7 | \- | 8 | \+1 | Can take a Prestige Feat |
-| 6 | 1080 | \+2 | 8 | \- | 8 | \- | \- |
-| 7 | 1470 | \+2 | 9 | \- | 8 | \+1 | \- |
-| 8 | 1920 | \+2 | 10 | \+2 | 9 | \- | Skill Cap reached. |
-| 9 | 2430 | \+2 | \- | \- | 9 | \+1 | \- |
-| 10 | 3000 | \+2 | \- | \- | 9 | \- | \- |
-| 11 | 3630 | \+2 | \- | \- | 9 | \+1 | \- |
-| 12 | 4320 | \+2 | \- | \+2 | 10 | \+1 | Attribute Cap reached. |
+| 1 | 30 | Start 12 | 2 | Start 18 | 4 | Start 2 | Can hire Followers |
+| 2 | 120 | \+1 | \- | \- | 4 | \- | \- |
+| 3 | 270 | \+1 | 3 | \- | 4 | \+1 | Can hire Cohorts |
+| 4 | 480 | \+1 | \- | \+1 | 4 | \- | \- |
+| 5 | 750 | \+1 | 4 | \- | 4 | \+1 | Can take a Prestige Feat |
+| 6 | 1080 | \+1 | \- | \- | 4 | \- | \- |
+| 7 | 1470 | \+1 | 5 | \- | 4 | \+1 | Skill Cap reached. |
+| 8 | 1920 | \+1 | \- | \+1 | 5 | \- | Attribute Cap reached. |
+| 9 | 2430 | \+1 | \- | \- | 5 | \+1 | \- |
+| 10 | 3000 | \+1 | \- | \- | 5 | \- | \- |
+| 11 | 3630 | \+1 | \- | \- | 5 | \+1 | \- |
+| 12 | 4320 | \+1 | \- | \+1 | 5 | \+1 | \- |
 
 ### **Rewards & Treasure**
 

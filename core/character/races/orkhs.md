@@ -7,7 +7,7 @@
 Orkhs are towering, volcanic beings of passion and wrath, forged in defiance and tempered by suffering. Equal parts destructive and creative, they are creatures of raw will \- unstoppable when roused, and terrifying when broken. Known for their molten visages, volatile tempers, and deep, tribal loyalties, Orkhs thrive on contest, pain, and the brutal honesty of fire. While often misunderstood as brutish or savage, their cunning and spiritual depth reveal a people burdened by a truth no other race dares claim: they were never meant to be.
 
 **Homeland:** Inggaz  
-**Starting Attributes:** \+2 STR, \-1 MIND  
+**Starting Attributes:** \+1 STR, \-1 MIND  
 **Age:** Adult \~15, Lives to \~50  
 **Alignment:** Chaotic  
 **Size:** Medium (6-7 ft)  

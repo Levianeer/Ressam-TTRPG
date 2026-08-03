@@ -7,7 +7,7 @@
 Humanity is the most widespread and adaptable of the Artefolk, defined less by a singular origin than by their relentless will to survive and thrive. Though short-lived compared to other races, humans possess a flexibility that allows them to flourish in nearly every climate, every political structure, and every philosophical pursuit. They are engineers of cities, architects of empire, bearers of faith, and wielders of both sword and spirit. Whether united under common banners or fractured into resistance cells, humans are rarely idle, and their impact on Ressam \- whether through war, worship, or wonder \- can be felt in every corner of the world.
 
 **Homeland:** Lustralis  
-**Starting Attributes:** \+2 to any Attribute, \-1 any Attribute  
+**Starting Attributes:** \+1 to any Attribute, \-1 any Attribute  
 **Age:** Adult \~18, Lives to \~70  
 **Alignment:** Law  
 **Size:** Medium (5-6 ft)  

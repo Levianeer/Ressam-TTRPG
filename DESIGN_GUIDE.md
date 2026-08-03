@@ -56,7 +56,7 @@ Faith magic always requires Faith \- no exceptions. The source doesn't have to b
 
 ## Healing
 
-Magical healing should almost always restore Temporary HP rather than permanent HP, outside of exceptional circumstances.
+Magical healing should almost always restore Temporary Wounds rather than permanent Wounds, outside of exceptional circumstances.
 
 ## Bypass
 

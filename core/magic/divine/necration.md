@@ -7,7 +7,7 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Casting Time:** Major Action
 - **Range:** Touch
 - **Duration:** Instant
-- **Effect:** Make a melee spell attack roll vs. target's Evasion. On hit, deal 1d6+FAI necrotic damage. You gain tHP equal to half the damage dealt to the target (after AR reduction).
+- **Effect:** Make a melee spell attack roll vs. target's Evasion. On hit, deal 1d6+FAI necrotic damage. You gain Temp Wounds equal to half the damage dealt to the target (after AR reduction).
 
 **Creeping Rot \- Mana Cost 2**
 
@@ -42,17 +42,17 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Casting Time:** Major Action
 - **Range:** Touch
 - **Duration:** 24 hour
-- **Effect:** You animate a humanoid corpse as an undead thrall under your control. The thrall acts immediately after your turn, following simple verbal commands (no action required). It has HP equal to your FAI × 4, AR 0, Evasion 10, and attacks with STR 4 using whatever weapon it held in life (or 1d4 bludgeoning unarmed). The thrall cannot speak, use skills, or take reactions. When the spell ends, the corpse collapses \- it cannot be animated again for 8 hours.
+- **Effect:** You animate a humanoid corpse as an undead thrall under your control. The thrall acts immediately after your turn, following simple verbal commands (no action required). It has Wounds equal to your FAI × 3, AR 0, Evasion 10, and attacks with STR 4 using whatever weapon it held in life (or 1d4 bludgeoning unarmed). The thrall cannot speak, use skills, or take reactions. When the spell ends, the corpse collapses \- it cannot be animated again for 8 hours.
 
 **Mortis Harvest \- Mana Cost 4**
 
-- **Casting Time:** Reaction (when a creature within range drops to 0 HP)
+- **Casting Time:** Reaction (when a creature within range drops to 0 Wounds)
 - **Range:** 30 ft
 - **Duration:** Instant
 - **Effect:** You rip the departing life force from a dying creature. Choose one effect:
 
 - **Consume:** Regain Mana equal to half the creature's END (rounded down, minimum 1).
-- **Transfer:** Grant an ally within 30 ft temporary HP equal to the creature's maximum HP ÷ 2\.
+- **Transfer:** Grant an ally within 30 ft Temporary Wounds equal to the creature's maximum Wounds ÷ 2\.
 - **Bind:** Store the essence. You may release it within the next hour to cast the spell Raise Thrall with no Mana Cost (Must know the spell Raise Thrall).
 
 **Soul Rend \- Mana Cost 5**
@@ -65,4 +65,4 @@ Necration is the manipulation of death, decay, and the threshold between life an
   - **Overcome:** 4d8 \+ FAI necrotic damage and the target’s armor degrades by 2 AR.
   - **Resist:** Half damage and their armor does not degrade.
 
-- If this spell reduces a creature to 0 HP, you may immediately animate their corpse as per Raise Thrall without spending additional Mana or requiring concentration (this thrall lasts 1 hour, then collapses permanently).
+- If this spell reduces a creature to 0 Wounds, you may immediately animate their corpse as per Raise Thrall without spending additional Mana or requiring concentration (this thrall lasts 1 hour, then collapses permanently).

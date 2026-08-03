@@ -7,7 +7,7 @@
 Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture tends to be rooted in philosophy and art, and many see the Wind as a source of wisdom, guiding them toward enlightenment. Aelves live for centuries, but their long lives have made them somewhat detached from the everyday struggles of other races, resulting in a cool, often distant demeanour, however, not to be mistaken for disdain, they just struggle to build attachment to those with such short lives. They are highly valued as scouts and archers, moving unseen like the Wind itself.
 
 **Homeland:** Aurkhan  
-**Starting Attributes:** \+2 REF, \-1 END  
+**Starting Attributes:** \+1 PRE, \-1 END  
 **Age:** Adult \~100, Lives to \~500  
 **Alignment:** See Subcultures  
 **Size:** Medium (\~6 ft)  
@@ -43,7 +43,7 @@ Bloodwood weapons are considered worthless, as they are only usable by their ori
 
 **Weapon Training:** You gain \+1 Two-Handed Blades and \+1 Survival.  
 **Tradition of Fire:** You can cast Ignis Lancet (Pyromancy) once per Field Rest or Long Rest without needing ranks in the skill.  
-**Tradition of Ash:** When you reduce a creature to 0 HP with fire damage, regain HP equal to your END (once per Short Rest).  
+**Tradition of Ash:** When you reduce a creature to 0 Wounds with fire damage, regain Wounds equal to your END (once per Short Rest).  
 **Tradition of War:** When you would have advantage on a weapon attack, you may forgo the advantage to make an additional weapon attack at a \-5 penalty. Once used, this feature cannot be used again until you complete a Short Rest.
 
 ---

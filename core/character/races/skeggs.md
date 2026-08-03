@@ -7,7 +7,7 @@
 Skeggs are wiry, sharp-eyed subterranean kin of the Orkhs, infamous for their cunning, adaptability, and brutal efficiency in the dark. While Orkhs rage and roar beneath war banners, Skeggs thrive in silence and shadow \- skirmishers, saboteurs, and poisoners who live and die by a different code of strength. They are frequently underestimated by surface folk for their small size and feline gait, but to their enemies, the name Skegg means ambush, venom, and vanishing before vengeance can be dealt.
 
 **Homeland:** Inggaz (underground)  
-**Starting Attributes:** \+2 DEX, \-1 END  
+**Starting Attributes:** \+1 DEX, \-1 END  
 **Age:** Adult \~16, Lives to \~60  
 **Alignment:** Chaotic  
 **Size:** Small (3-4 ft)  
