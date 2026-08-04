@@ -76,7 +76,7 @@ Essential equipment for travel, exploration, and survival.
 | Hammer              | 5 Crown  |   1   |        For construction         |
 | Shovel              | 6 Crown  |   1   |       Digging, excavation       |
 | Pickaxe             | 10 Crown |   2   |     Mining, breaking stone      |
-| Chain (10 ft)       | 15 Crown |   2   |     STR Ward DC 25 to break     |
+| Chain (10 ft)       | 15 Crown |   2   |     STR Ward DC 22 to break     |
 | Rope (50 ft)        | 6 Crown  |   2   |         DC 12 to climb          |
 | Grappling hook      | 8 Crown  |   1   |               \-                |
 | Lock, simple        | 10 Crown |   1   |          DC 12 to pick          |

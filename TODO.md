@@ -1,14 +1,13 @@
 # TODO
 
-## DC tier table and success-rate table need recalibration
+## DC tier table needs a success-rate table to go with it
 
-`core/core_rules.md`'s DC tier table (Very Easy 5 ... Impossible 30) is still the same literal numbers as before the Skills/Attributes 1-10 -> 1-5 rescale. The table itself was never mathematically derived from the skill/attribute scale, but its calibration assumption has broken: the maximum possible roll dropped from `1d12 + 20 = 32` (Skill 10 + Attribute 10) to `1d12 + 10 = 22` (Skill 5 + Attribute 5). **DC 25 (Incredibly Hard) and DC 30 (Impossible) are now mathematically unreachable by anyone, ever** - even a fully maxed specialist rolling a natural 12 caps out at 22.
+**Resolved (2026-08-03):** `core/core_rules.md`'s DC tier table was stale against the Skills/Attributes 1-10 -> 1-5 rescale - the maximum possible roll had dropped from `1d12 + 20 = 32` (old Skill 10 + Attribute 10) to `1d12 + 10 = 22` (new Skill 5 + Attribute 5, capped at level 8), leaving DC 25 (Incredibly Hard) and DC 30 (Impossible) mathematically unreachable by anyone. Fixed by compressing only the two broken top tiers and anchoring them to the actual new ceiling, per the user's explicit call: Incredibly Hard 25 -> 22 (natural 12 + capped Skill 5 + Attribute 5, no magic), Impossible 30 -> 25 (that same natural 12, plus the +3 max magic items can add - the true system ceiling). Very Easy through Very Hard (5/8/10/12/15/20) were left untouched - they already check out against the new math, and Medium/Hard/Very Hard still need to line up 1:1 with Minor Magic's and Alchemy's own hardcoded DC 10/15/20 tiers, which weren't touched. `equipment/supplies.md`'s Chain-breaking DC (cited by name in the Note as an Incredibly Hard example) was moved from 25 to 22 to match.
 
-The old success-rate table (previously under "Setting a Difficulty Class (DC)") was removed outright rather than hand-recalculated against a guess, since it was explicitly derived math ("Skill 3 + Attribute 7 at level 1, scaling to Skill 10 + Attribute 10 at level 12").
+The old success-rate table (previously under "Setting a Difficulty Class (DC)") is still missing - it was removed outright rather than hand-recalculated against a guess, since it was explicitly derived math ("Skill 3 + Attribute 7 at level 1, scaling to Skill 10 + Attribute 10 at level 12") and nothing has replaced it.
 
 **When picking this up:**
 - Recompute a new success-rate table against the actual new progression curve (`core/character/progression_&_rewards.md`'s per-level skill cap/attribute cap columns, now capped at 5).
-- Decide whether the 8 DC tiers themselves should compress (e.g. roughly halve) to keep Incredibly Hard/Impossible reachable, or whether the top 1-2 tiers should be redefined as deliberately unreachable-without-help (magic, advantage, etc.) - that's a design call, not a math one.
 - Once resolved, delete this section (and this file, if nothing else is outstanding).
 
 ## ENCOUNTER_GUIDE.md is now stale against both the compressed player AR table AND the Wounds rework

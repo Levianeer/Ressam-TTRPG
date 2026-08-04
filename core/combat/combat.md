@@ -30,7 +30,7 @@ Actions resolve highest to lowest each round.
 - **Per Round:** Refreshes at the start of your *next* turn  
 - **Reactions:** Usable on anyone's turn
 - **Drawing multiple weapons:** As a single Object Interaction, you may draw any number of weapons at once, provided you have a free hand for each one.
-- **Reactions are a single shared pool:** Maneuver (in any of its Parry, Block, or Dodge Styles), Reactive Casting, and Opportunity Attacks all draw from the same 1 Reaction/round above \- and so does every other Reaction-based Feat or spell you have (Deflect Missiles, Ward of Faith, Dominating Stare, and the like). They compete for your one Reaction, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
+- **Reactions are a single shared pool:** Maneuver (in any of its Parry, Block, or Dodge Styles), Reactive Casting, and Opportunity Attacks all draw from the same 1 Reaction/round above \- and so does every other Reaction-based Feat or spell you have (Stress Inoculation, Ward of Faith, Dominating Stare, and the like). They compete for your one Reaction, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
 
 ---
 

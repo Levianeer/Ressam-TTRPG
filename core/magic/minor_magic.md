@@ -2,7 +2,7 @@
 
 Practitioners with **at least 1 rank** in a magic school can manifest small, instinctive effects by spending Mana \- larger scale, longer duration, or greater complexity costs more. There is no free-form casting; even the smallest trick costs **at least 1 Mana**.
 
-**Roll:** 1d12 \+ Magic School Skill \+ ARC or FAI vs. DC (5 Very Easy / 10 Medium / 15 Hard / 20 Very Hard). On failure, the Mana is spent but the effect fizzles or manifests weakly.
+**Roll:** 1d12 \+ Magic School Skill \+ ARC or FAI vs. DC \- pick Very Easy, Medium, Hard, or Very Hard off the DC tier table (core\_rules.md) by how ambitious the effect's scale/duration is. On failure, the Mana is spent but the effect fizzles or manifests weakly.
 
 **Restrictions  \-  Minor Magic cannot:**
 

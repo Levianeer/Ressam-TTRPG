@@ -47,13 +47,13 @@ Oils and Powders come in three qualities based on their rarity.
 
 **Time:** 30 minutes (Medium), 1 hour (Hard), 2 hours (Very Hard)
 
-**Check:** 1d12 \+ Alchemy \+ MIND
+**Check:** 1d12 \+ Alchemy \+ MIND vs. DC \- set by Complexity, using the DC tier table (core\_rules.md).
 
-| Complexity | DC | Examples                          |
-|:-----------|:--:|:----------------------------------|
-| Medium     | 10 | Basic healing, simple poison      |
-| Hard       | 15 | Resistance potion, bombs          |
-| Very Hard  | 20 | Powerful effects, advanced toxins |
+| Complexity | Examples                          |
+|:-----------|:-----------------------------------|
+| Medium     | Basic healing, simple poison      |
+| Hard       | Resistance potion, bombs          |
+| Very Hard  | Powerful effects, advanced toxins |
 
 **Note:** All ingredients (excluding Catalysts) must be of the same quality.
 

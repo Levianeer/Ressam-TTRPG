@@ -86,12 +86,12 @@ Ressam uses an eight-tier DC scale for Skill Checks, Ward Checks, Minor Magic, a
 | Tricky | 12 | Balancing on a narrow ledge, talking down a nervous guard |
 | Hard | 15 | Persuading a skeptical noble, disarming a snare |
 | Very Hard | 20 | Forging a noble's seal, scaling a sheer cliff in a storm |
-| Incredibly Hard | 25 | Snapping manacles bare-handed, resisting a curse's full grip |
-| Impossible | 30 | Outrunning a warhorse on foot, staring down a god without flinching |
+| Incredibly Hard | 22 | Snapping manacles bare-handed, resisting a curse's full grip |
+| Impossible | 25 | Outrunning a warhorse on foot, staring down a god without flinching |
 
-**Note:** Medium, Hard, and Very Hard line up with the DC 10/15/20 used for Minor Magic and Alchemy crafting, so a spell or potion pegged "Moderate" in those chapters is a Hard check by this scale. Incredibly Hard shows up informally elsewhere (breaking Chains, Curse of the Beast, casting while Restrained) for feats meant to be exceptional even for a specialist; Impossible is there to mark tasks a DM shouldn't be calling for a roll on at all \- if the answer's really "no, unless something extraordinary happens," don't make the player roll for it.
+**Note:** Minor Magic and Alchemy crafting no longer keep their own copy of these numbers - both read Medium, Hard, and Very Hard directly off this table, so a spell or potion pegged "Hard" in those chapters always means DC 15 here, with nothing left to fall out of sync. The top two tiers are pinned to the actual ceiling of the d12 \+ Skill \+ Attribute system: a fully capped character (Skill 5, Attribute 5, both reached by level 8\) rolling a natural 12 hits 22 with no magical help at all \- that's Incredibly Hard. Magic items add at most \+3 on top of that, putting the true maximum possible roll anyone can ever produce at 25 \- that's Impossible, reachable only by a maxed, magically-equipped character on a natural 12\. Incredibly Hard shows up informally elsewhere (breaking Chains, Curse of the Beast, casting while Restrained) for feats meant to be exceptional even for a specialist; Impossible is there to mark tasks a DM shouldn't be calling for a roll on at all \- if the answer's really "no, unless something extraordinary happens," don't make the player roll for it.
 
-**What to expect at the table:** A character actively trained in the relevant Skill clears Very Easy through Medium almost automatically at any level, and Tricky not long after. Hard is a real coin flip early on and becomes reliable by mid-game. Very Hard is a long shot for a level 1 character and doesn't become dependable until roughly level 10\+. Incredibly Hard and Impossible should stay hard even for a maxed-out specialist \- they're meant to represent genuinely exceptional feats, not routine business.
+**What to expect at the table:** A character actively trained in the relevant Skill clears Very Easy through Medium almost automatically at any level, and Tricky not long after. Hard is a real coin flip early on and becomes reliable by mid-game. Very Hard is out of reach at level 1 (even a maxed roll can't touch it) and stays a real risk even at the level cap without magical help. Incredibly Hard demands nothing short of a natural 12, even from a fully capped specialist \- and Impossible needs that same natural 12 stacked with the best magic gear money can buy. Neither is meant to be routine business.
 
 ### **Skill Categories**
 
@@ -296,7 +296,7 @@ Trauma represents accumulated stress and strain beyond Wound loss \- fatigue, pr
 
 **Penalties:** Subtract Trauma level from **all** d12 rolls, wards and checks.
 
-**Sources:** Trauma is not a byproduct of ordinary combat damage \- there is no automatic Trauma from taking a hit, dropping to 0 Wounds, or being Dying (that cost is paid through the Wound Penalty instead). Trauma accrues only from specific, named sources: privation (starvation, Forced March \- see Food and Water and Traveling), a handful of paid Feat and spell costs that explicitly grant it (Deadly Critical's crit rider, Unbreakable Focus, Deep Devotion's fasting, Temporal Fortification's backlash, and similar), and anything else that explicitly says so. If a rule doesn't name Trauma, it doesn't grant it.
+**Sources:** Trauma is not a byproduct of ordinary combat damage \- there is no automatic Trauma from taking a hit, dropping to 0 Wounds, or being Dying (that cost is paid through the Wound Penalty instead). Trauma accrues only from specific, named sources: privation (starvation, Forced March \- see Food and Water and Traveling), a handful of paid Feat and spell costs that explicitly grant it (Deadly Critical's crit rider, Stress Inoculation, Deep Devotion's fasting, Temporal Fortification's backlash, and similar), and anything else that explicitly says so. If a rule doesn't name Trauma, it doesn't grant it.
 
 ---
 
@@ -339,16 +339,6 @@ Force an enemy to drop their weapon or a held item.
 **Action:** Major (replaces attack as a Martial Weapon Attack)  
 **Check:** Weapon skill vs. target's static weapon skill (Contested Check)  
 **Success:** Target drops one held item of your choice
-
----
-
-### **Feint**
-
-Use guile to open an opponent up to your strikes.
-
-**Action:** Minor  
-**Check:** Deception vs. target's static Insight (Contested Check)  
-**Success:** You gain advantage on all weapon attacks you make this turn.
 
 ---
 

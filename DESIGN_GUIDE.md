@@ -65,3 +65,19 @@ Spells should not bypass existing mechanics without a meaningful cost or drawbac
 ## Spellblades
 
 Magic should not directly enable a Gish (martial/mage hybrid) playstyle. Invocation is the sole exception, with Benediction a partial one. A Gish should always be a compromise \- a character who uses Feats to bridge the gap, not one who naturally blends both modes without trade-offs.
+
+---
+
+# Feat Design Guidelines
+
+## Real-World Grounding
+
+General, Martial, and Skill Feats must be traceable to a real historical or modern martial art, tactic, or trade skill \- not an invented fantasy trick. Name and flavor plainly (describe the technique, don't reach for foreign or archaic jargon): "Double Charge" for double-shotting a matchlock, "Locksmith" for a feel for tension and pins, not an invented style name. Arcane and Divine Feats are the explicit exception \- magic is allowed the leeway these three categories aren't.
+
+## No Flat Damage, No Extra Attacks
+
+A Feat should never simply add flat damage to a hit, and should never grant an extra proactive attack. Bypassing AR (Seek the Seam, Double Charge), expanding crit range (Deadly Critical), or a Reaction-gated Riposte already earned through a won Maneuver exchange (maneuvers.md) are the sanctioned ways a Feat makes a fight more lethal \- not a bonus die tacked onto a hit.
+
+## Lean Categories
+
+Keep General, Martial, and Skill Feats to roughly 5-6 entries apiece. Prestige is exempt (capped at one-per-character by design, not a menu to prune or pad) and Arcane/Divine scale with their schools. A thin, sharply distinct list beats a long one padded with near-duplicates - if a new Feat doesn't fill a niche nothing else in its category covers, it doesn't earn a slot.
