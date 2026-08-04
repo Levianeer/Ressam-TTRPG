@@ -163,7 +163,6 @@
   .spell-card textarea{ min-height:5em; }
   .prep-field{ flex:1 1 16em; margin-left:auto; }
   .prep-field .prep-row{ display:flex; align-items:center; gap:0.5em; flex-wrap:wrap; }
-  .prep-toggle{ display:flex; align-items:center; gap:0.35em; font-size:0.85rem; }
   .prep-note{ font-size:0.78rem; color:var(--muted); }
   .note{ font-size:0.78rem; color:var(--muted); margin:0.3em 0; }
   textarea{ width:100%; min-height:4em; resize:vertical; }
@@ -459,7 +458,7 @@
 
   <div class="card">
     <h2>Spells Known</h2>
-    <p class="note">Each card holds one spell's header fields plus a full-width Effect box for the actual rules text. Preparation tracking is derived from the spell's School (magic_overview.md): Arcane spells are only castable from a scribed scroll, so track how many you're carrying; Divine spells are always known and castable by spending Mana, so just toggle whether you've already used it since your last hour of prayer.</p>
+    <p class="note">Each card holds one spell's header fields plus a full-width Effect box for the actual rules text. Preparation tracking is derived from the spell's School (magic_overview.md): Arcane spells are only castable from a scribed scroll, so track how many you're carrying; Divine spells are cast straight from your Mana pool with no separate prep step - just spend the Mana Cost. Divine Mana only recovers through Prayer (1/hour prayed), never through Field/Long Rest.</p>
     <div class="dyn-table spell-list" data-table="spells" id="tbl-spells"></div>
     <button type="button" class="row-add" data-add-target="spells">+ Add Spell</button>
     <template id="row-spells">
@@ -490,10 +489,6 @@
             <label data-role="prepLabel">Preparation</label>
             <div class="prep-row">
               <input type="number" data-col="scrollCount" class="num-sm" min="0" value="0" data-role="prepScrolls" style="display:none" title="Scribed scrolls of this spell currently on hand">
-              <label class="prep-toggle" data-role="prepUsedWrap" style="display:none">
-                <input type="checkbox" data-col="used" data-role="prepUsed">
-                <span>Used since last prayer</span>
-              </label>
               <span class="prep-note" data-role="prepNote">Pick a School to see prep mechanics.</span>
             </div>
           </div>
@@ -947,30 +942,25 @@
     // Arcane spells aren't always available - only a scribed scroll lets you
     // cast one, so the tracked quantity is "how many scrolls on hand" (a
     // number that goes up when you scribe, down when you consume one).
-    // Divine spells are always known and castable via Mana - nothing to run
-    // out of - so the only thing worth tracking is whether you've already
-    // spent it since your last hour of prayer (a toggle).
+    // Divine spells have no prep step or per-spell refresh anymore - they're
+    // cast straight from the shared Mana pool, which only Prayer refills.
     document.querySelectorAll('#tbl-spells [data-row]').forEach(function(card){
       var note = card.querySelector('[data-role="prepNote"]');
       if (!note) return;
       var label = card.querySelector('[data-role="prepLabel"]');
       var scrolls = card.querySelector('[data-role="prepScrolls"]');
-      var usedWrap = card.querySelector('[data-role="prepUsedWrap"]');
       var school = card.querySelector('[data-col="school"]').value;
       if (ARCANE_SCHOOLS.indexOf(school) !== -1){
         label.textContent = 'Scrolls on Hand';
         scrolls.style.display = '';
-        usedWrap.style.display = 'none';
-        note.textContent = 'Arcane - scribe scrolls during a Field/Long Rest; consume one to cast for no Mana cost.';
+        note.textContent = 'Arcane - scribe scrolls during a Field/Long Rest (Mana spent at scribing); consume one to cast for no Mana cost at cast time.';
       } else if (DIVINE_SCHOOLS.indexOf(school) !== -1){
         label.textContent = 'Preparation';
         scrolls.style.display = 'none';
-        usedWrap.style.display = '';
-        note.textContent = 'Divine - always known; pray 1 hour to refresh, then cast by spending Mana.';
+        note.textContent = 'Divine - no prep needed; cast anytime by spending Mana. Mana only recovers via Prayer (1/hour prayed).';
       } else {
         label.textContent = 'Preparation';
         scrolls.style.display = 'none';
-        usedWrap.style.display = 'none';
         note.textContent = 'Pick a School to see prep mechanics.';
       }
     });

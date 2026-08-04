@@ -118,7 +118,7 @@ Every hit (regardless of Wound damage) reduces armor by 1 AR.
 
 Reduces Evasion, your Dodge Style roll (Maneuver, maneuvers.md), and your Spell Modifier.
 
-**Reducing Penalty:** Each 2 ranks in Armorer reduces Penalty by 1 (minimum 0).
+**Reducing Penalty:** Each rank in Armorer reduces Penalty by 1 (minimum 0).
 
 ---
 
