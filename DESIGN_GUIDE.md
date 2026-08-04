@@ -28,7 +28,7 @@ The power gap between Martials and Casters is a known problem. Ressam aims to na
 
 # Spell Design Guidelines
 
-Magic is difficult to balance in a system grounded in 16th-century martial combat. Every spell should be evaluated through the following lenses.
+Magic is difficult to balance in a system grounded in 16th-century martial combat. Every spell should be evaluated through the following lenses. Several of these (Creation, Healing, Summoning, Faith, Bypass) are the production-side rule for something `core/magic/laws_of_magic.md` states as in-fiction physics (Borrowed Substance, Conservation, the Soul, Reciprocity) - that file is where the *why* lives, and where to check when a proposed spell's legality isn't obvious from these lenses alone.
 
 ## Damage
 
@@ -81,3 +81,41 @@ A Feat should never simply add flat damage to a hit, and should never grant an e
 ## Lean Categories
 
 Keep General, Martial, and Skill Feats to roughly 5-6 entries apiece. Prestige is exempt (capped at one-per-character by design, not a menu to prune or pad) and Arcane/Divine scale with their schools. A thin, sharply distinct list beats a long one padded with near-duplicates - if a new Feat doesn't fill a niche nothing else in its category covers, it doesn't earn a slot.
+
+---
+
+# Arcane & Divine Feat Guidelines
+
+Feats that touch spellcasting sit closer to the Spell Design Guidelines above than to General/Martial/Skill Feats - lore and power creep are both easier to get wrong here than with an extra attack. Evaluate every Arcane or Divine Feat against these, on top of the shared Feat Design Guidelines above (Real-World Grounding is the one exception - Arcane and Divine remain exempt from that one, per its own text).
+
+## Healing Stays Temporary
+
+A Feat's healing effect follows the same rule as a spell's (Healing, above): restore Temporary Wounds, not permanent ones, outside of exceptional circumstances. A Feat is not itself the exceptional circumstance - don't use one as a side door to permanent healing a spell wouldn't be allowed to grant.
+
+## Anything Created Is Temporary
+
+Same logic as Creation, above, extended to Feats: a Feat that conjures a wall, a weapon, a light source, or any other object is describing something that fades, melts, or dissipates - never a permanent addition to the world. This protects Scarcity the same way Creation does for spells; a Feat is not a loophole around it.
+
+## Damage Riders and Buffs Should Be Rare
+
+Arcane and Divine Feats are exempt from the flat "No Flat Damage" ban that governs General/Martial/Skill Feats (Feat Design Guidelines, above) - some genuinely earn a small damage or buff rider (Elemental Specialization's resistance-piercing, for instance). But the exemption should stay rare and earned, not the default shape of a magic Feat. If a Feat's whole benefit is "+X to a roll" or "+Xd_ damage," it's a Spell Crafting upgrade wearing a Feat's name, not a Feat.
+
+## Must Not Invalidate a Martial's Niche
+
+Mirrors Distinction, above. A magic Feat should never let a caster match or beat a Martial at sustained single-target damage or close/long-range weapon combat - that's the Martial's lane. Casters win at control, area effect, and utility; a Feat that blurs this at the Feat layer undoes what Distinction is already protecting at the spell layer.
+
+## Must Not Bypass Mechanics for Free
+
+Mirrors Bypass, above. A Feat that skips a Ward, an AR check, a Mana cost, or an action-economy cost needs a real, matching cost of its own - a worse trade-off, a Reaction spent, a resource consumed. "Free" is the failure state, not the goal.
+
+## Scale With Investment, Not Just Level
+
+A magic Feat's power should grow with the rank you've put into the relevant school (or the Mana you spend), not sit as a flat, level-independent bonus. Metamagic and Elemental Specialization already do this - more options at \+2 ranks in a second school, resistance scaling per element chosen. Hold every new Feat to the same shape; it's the same "reward the climb, not the stat" instinct behind every other balance pass in this project.
+
+## Faith Is Never Optional
+
+Extends Faith, above, to the Feat layer specifically: a Divine Feat must be gated on Faith investment (FAI and/or a Divine school rank), like every current one already is. A Divine Feat that only checks CHA, or nothing at all, reopens the exact hole Unyielding Devotion was cut for.
+
+## No Free Extra Casts
+
+A Feat should never grant an additional spell cast, at reduced cost or for free, outside the existing Reactive Casting mechanic - this is magic's version of the "No Extra Attacks" rule (Feat Design Guidelines, above). If a Feat wants to let a caster do "more magic," it should shape or empower a cast already being paid for (Metamagic's model), not hand out a second one for free.

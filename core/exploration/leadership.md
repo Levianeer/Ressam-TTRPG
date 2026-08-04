@@ -244,9 +244,9 @@ Cohorts are characters. Their death should matter.
 
 **Mira Valdros, Squire** *Level 2 Human*
 
-**Wounds:** 5 | **Evasion:** 11 | **AR:** 6 (Gambeson) **Initiative:** \+4
+**Wounds:** 4 | **Evasion:** 11 | **AR:** 6 (Gambeson) **Initiative:** \+2
 
-**Attributes:** STR 5, PRE 4, END 5, DEX 4, MIND 4, ARC 2, FAI 3, CHA 3
+**Attributes:** STR 4, PRE 2, END 4, DEX 3, MIND 2, ARC 0, FAI 1, CHA 2
 
 **Skills:** One-Handed Blades \+3, Shields \+2, Athletics \+2, Armorer \+2, Riding \+2, Perception \+1
 

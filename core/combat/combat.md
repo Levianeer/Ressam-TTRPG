@@ -23,14 +23,15 @@ Actions resolve highest to lowest each round.
 | **Major Action** | 1/round | Attack, cast spell, reload weapon, Dash, Disengage, Dodge      |
 | **Minor Action** | 1/round | Sheathe weapon, drink potion, open door                        |
 | **Object Interaction** | 1/round | Draw ammunition, pick up weapon, flip lever                    |
-| **Reaction** | 1/round | Held Action, Maneuver (Parry/Block/Dodge), Reactive Casting, Opportunity Attack |
+| **Reaction** | (DEX \+ PRE) ÷ 3, rounded down | Held Action, Maneuver (Parry/Block/Dodge), Reactive Casting, Opportunity Attack |
 | **Free Action** | Unlimited | Drop item, speak briefly, stop channeling, etc                 |
 | **Move Action** | Unlimited | Move up to your maximum speed, can be broken up into multiples |
 
 - **Per Round:** Refreshes at the start of your *next* turn  
 - **Reactions:** Usable on anyone's turn
 - **Drawing multiple weapons:** As a single Object Interaction, you may draw any number of weapons at once, provided you have a free hand for each one.
-- **Reactions are a single shared pool:** Maneuver (in any of its Parry, Block, or Dodge Styles), Reactive Casting, and Opportunity Attacks all draw from the same 1 Reaction/round above \- and so does every other Reaction-based Feat or spell you have (Stress Inoculation, Ward of Faith, Dominating Stare, and the like). They compete for your one Reaction, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
+- **Reactions/round \= (DEX \+ PRE) ÷ 3, rounded down.** Recalculate whenever DEX or PRE changes (leveling, injury, equipment). A low enough total rounds down to 0 \- a character who dumps both DEX and PRE cannot Parry, Dodge, Hold an Action, cast reactively, or make an Opportunity Attack at all.
+- **Reactions are a single shared pool:** Maneuver (in any of its Parry, Block, or Dodge Styles), Reactive Casting, and Opportunity Attacks all draw from the same pool above \- and so does every other Reaction-based Feat or spell you have (Stress Inoculation, Ward of Faith, Dominating Stare, and the like). They compete for your Reactions, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
 
 ---
 

@@ -34,7 +34,7 @@ Ressam uses d4, d6, d8, d10, and d12 dice. The d12 is your primary resolution di
 
 ## Attributes
 
-Attributes range from 1 (severely impaired) to 5 (peak mortal potential).
+Attributes range from 0 (wholly absent) to 5 (peak mortal potential).
 
 | Attribute | Abbr. | Governs |
 | :---- | :---: | :---- |
@@ -46,6 +46,8 @@ Attributes range from 1 (severely impaired) to 5 (peak mortal potential).
 | **Arcane** | ARC | Arcane magical aptitude |
 | **Faith** | FAI | Divine connection and conviction |
 | **Charisma** | CHA | Social influence, force of personality |
+
+**A 0 in an Attribute** is a complete absence of that capacity, not just poor - the same way an unranked Skill sits at 0 until trained. It's a legitimate choice at character creation (see Character Creation), not only a racial exception. **An Attribute can never go below 0** - if an effect would push one lower, the character dies.
 
 ---
 

@@ -1,4 +1,4 @@
-Feats represent specialized training, natural talents, or hard-won experience. Characters begin with 2 feats at 1st level and gain an additional feat every 2 levels (and at 12th level).
+Feats represent specialized training, natural talents, or hard-won experience. Characters begin with 2 feats at 1st level and gain an additional feat at 4th, 6th, 9th, and 12th level.
 
 **Prerequisites & Bonuses:**  
 Racial and Career skill bonuses DO count toward feat prerequisites \- not only invested skill ranks.

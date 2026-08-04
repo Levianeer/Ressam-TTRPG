@@ -7,7 +7,7 @@ A Maneuver is your reactive answer to an incoming attack - the moment where ever
 Answer an incoming attack with your own contested roll, instead of simply eating the hit or hoping your Passive Evasion holds.
 
 **Trigger:** An attack against you that you can see, and that beats your Passive Evasion (i.e. it would otherwise hit).  
-**Action:** Reaction (shared 1/round pool, see Action Economy)  
+**Action:** Reaction (shared pool, see Action Economy)  
 **Choose a Style** below when you react - Parry, Block, or Dodge - each with its own prerequisites, restrictions, and roll. Then compare your result to the attack roll:
 
 **Margin \= Your Style's roll − the attacker's attack roll**
@@ -92,7 +92,7 @@ Use your adroit agility to escape danger.
 Answer an incoming attack by snapping off a spell before it lands, instead of intercepting the blow itself.
 
 **Trigger:** Same as Maneuver - an attack against you that you can see, and that beats your Passive Evasion (i.e. it would otherwise hit).  
-**Action:** Reaction (shared 1/round pool, see Action Economy - this competes with Maneuver and Opportunity Attacks for the same Reaction).  
+**Action:** Reaction (shared pool, see Action Economy - this competes with Maneuver and Opportunity Attacks for the same Reaction).  
 **Prerequisites:** 1+ rank in the relevant Casting Skill, and a spell you're able to cast.  
 **Roll:** Your normal spell roll (Casting Skill \+ Attribute) vs. the attacker's attack roll.
 

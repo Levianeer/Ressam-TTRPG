@@ -46,7 +46,7 @@ You have **18 points** to distribute across 8 Attributes.
 | **Standard Array** | Assign **4, 3, 3, 2, 2, 2, 1, 1** to Attributes. Each value is used once. |
 | **Rolled** | For each **8** attributes, roll **2d6**, **divide by 3** (round to nearest whole) and **add 1**. You can assign these results freely between each attribute. |
 
-**Note:** No Attribute can start **below 1**, or **above 4** after racial modifiers.
+**Note:** No Attribute can start **below 0**, or **above 4** after racial modifiers.
 
 ### 
 
@@ -57,7 +57,7 @@ You have **18 points** to distribute across 8 Attributes.
 | 1-7 | 4 |
 | 8+ | 5 |
 
-**Minimum:** No Attribute below 1.
+**Minimum:** No Attribute below 0. An Attribute can never be reduced below 0 by any effect either - if one would, the character dies (see Attributes in Core Rules).
 
 **Racial increases/decreases** are applied after distributing points to your modifier.
 
@@ -99,6 +99,7 @@ See the **Feats** chapter for the complete list.
 | **Slots** | STR \+ END |
 | **Evasion** | 5 \+ Agility \+ DEX − Armor Penalty |
 | **Initiative** | 1d12 \+ ((PRE \+ DEX) ÷ 2\) |
+| **Reactions/round** | (DEX \+ PRE) ÷ 3, rounded down |
 | **Armor Rating (AR)** | Equipped armor's AR value |
 
 ---

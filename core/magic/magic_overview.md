@@ -7,6 +7,8 @@ Magic is the manipulation of energy \- the two methods of manipulation fall into
 
 This is why hedge wizards are suspicious, wandering priests are valuable, and spellbooks are worth more than gold.
 
+**For the deeper physics behind why magic behaves this way - and how to rule on an effect no spell list covers - see Laws of Magic (laws\_of\_magic.md).**
+
 ---
 
 ## Universal Magic Rules

@@ -48,6 +48,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks, Woun
 ## Magic
 
 - [Magic Overview](magic_overview) - universal rules shared by both casting paths
+- [Laws of Magic](laws_of_magic) - the Five Laws, Three Costs, and adjudication framework behind every spell, ritual, and miracle
 - [Minor Magic](minor_magic) - small, instinctive Mana effects (minimum 1 Mana) that fall outside a normal spell
 - [Spell Crafting](spell_crafting)
 

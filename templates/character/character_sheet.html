@@ -188,7 +188,7 @@
       <option value="4">Huge (x4)</option>
     </select>
   </div>
-  <div class="field"><label for="level">Level</label><div class="computed" id="level" title="Derived from EXP (data/progression.yaml: level N = 30 x N^2 total XP)">1</div></div>
+  <div class="field"><label for="level">Level</label><div class="computed" id="level" title="Derived from EXP (core/character/progression_&_rewards.md: level N = 30 x N^2 total XP)">1</div></div>
   <div class="field"><label for="exp">EXP</label><input type="number" id="exp" name="exp" min="0" value="30"></div>
   <div class="actions">
     <button type="button" id="btnSave" title="Save to this browser">Save</button>
@@ -254,7 +254,7 @@
       <div class="stat-box">
         <div class="label">Armor Penalty</div>
         <div class="value computed" id="out-armorPenalty">0</div>
-        <div class="note">Reduced by Armorer skill / 2</div>
+        <div class="note">Reduced 1:1 by Armorer skill rank</div>
       </div>
       <div class="stat-box">
         <div class="label">Evasion</div>
@@ -262,19 +262,19 @@
         <div class="note">Includes equipped shield's Agility Bonus (e.g. Buckler)</div>
       </div>
       <div class="stat-box">
-        <div class="label">Dodge</div>
-        <div class="value computed" id="out-dodge">10</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Max Dodges/Short Rest</div>
-        <div class="value computed" id="out-maxDodges">0</div>
-        <div class="sub"><input type="number" name="dodgesCurrent" placeholder="left" title="Dodges left this Short Rest"></div>
-        <div class="note">Dodges left this Short Rest</div>
+        <div class="label">Dodge Bonus (Maneuver)</div>
+        <div class="value computed" id="out-dodgeBonus">0</div>
+        <div class="note">Agility + DEX (trained) - maneuvers.md Dodge Style: 1d12 + this vs. attacker's roll</div>
       </div>
       <div class="stat-box">
         <div class="label">Initiative Bonus</div>
         <div class="value computed" id="out-initiative">0</div>
         <div class="note">+1d12 when rolled</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Reactions/round</div>
+        <div class="value computed" id="out-reactions">0</div>
+        <div class="note">(DEX + PRE) / 3, rounded down</div>
       </div>
       <div class="stat-box">
         <div class="label">Slots</div>
@@ -284,7 +284,7 @@
       <div class="stat-box">
         <div class="label">Block Bonus (Maneuver)</div>
         <div class="value computed" id="out-blockBonus">0</div>
-        <div class="note">END + Shields/2 (halved again w/ 2H weapon), maneuvers.md</div>
+        <div class="note">END + Shields Skill (full) - maneuvers.md Block Style: 1d12 + this vs. attacker's roll</div>
       </div>
       <div class="stat-box">
         <div class="label">Shield AR (when Blocking)</div>
@@ -510,12 +510,12 @@
 
   <div class="card">
     <h2>Point Budgets</h2>
-    <p class="note">Attribute/Skill points spent are the sums of every BASE value on the Overview/Skills tabs (MOD columns are free modifiers and don't count). Budgets and caps below are looked up from the Level field by year/level table (data/progression.yaml).</p>
+    <p class="note">Attribute/Skill points spent are the sums of every BASE value on the Overview/Skills tabs (MOD columns are free modifiers and don't count). Budgets and caps below are looked up from the Level field by the per-level table (core/character/progression_&_rewards.md).</p>
     <div class="grid grid-stats">
-      <div class="stat-box"><div class="label">Attribute Points</div><div class="value"><span class="computed" id="out-attrSpent">0</span> / <span class="computed" id="out-attrBudget">36</span></div></div>
-      <div class="stat-box"><div class="label">Attribute Cap</div><div class="value computed" id="out-attrCap">7</div></div>
-      <div class="stat-box"><div class="label">Skill Points</div><div class="value"><span class="computed" id="out-skillSpent">0</span> / <span class="computed" id="out-skillBudget">24</span></div></div>
-      <div class="stat-box"><div class="label">Skill Cap</div><div class="value computed" id="out-skillCap">3</div></div>
+      <div class="stat-box"><div class="label">Attribute Points</div><div class="value"><span class="computed" id="out-attrSpent">0</span> / <span class="computed" id="out-attrBudget">18</span></div></div>
+      <div class="stat-box"><div class="label">Attribute Cap</div><div class="value computed" id="out-attrCap">4</div></div>
+      <div class="stat-box"><div class="label">Skill Points</div><div class="value"><span class="computed" id="out-skillSpent">0</span> / <span class="computed" id="out-skillBudget">12</span></div></div>
+      <div class="stat-box"><div class="label">Skill Cap</div><div class="value computed" id="out-skillCap">2</div></div>
       <div class="stat-box"><div class="label">Feat Slots</div><div class="value computed" id="out-featsTotal">2</div></div>
     </div>
   </div>
@@ -624,31 +624,29 @@
   var ARCANE_SCHOOLS = ['Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy'];
   var DIVINE_SCHOOLS = ['Benediction','Invocation','Necration','Cultivation','Subjugation'];
 
-  // Mirrors data/progression.yaml (character_creation + levels 1-12)
-  // data/progression.yaml:1 - level N requires 30 * N^2 total XP (totalXp below)
+  // Mirrors core/character/progression_&_rewards.md (character_creation.md + levels 1-12)
+  // level N requires 30 * N^2 total XP (totalXp below)
   var PROGRESSION = {
     1:{skillCap:2, attrCap:4, skillPts:12, attrPts:18, feats:2, totalXp:30},
-    2:{skillCap:2, attrCap:4, skillPts:13, attrPts:18, feats:2, totalXp:120},
-    3:{skillCap:3, attrCap:4, skillPts:14, attrPts:18, feats:3, totalXp:270},
-    4:{skillCap:3, attrCap:4, skillPts:15, attrPts:19, feats:3, totalXp:480},
-    5:{skillCap:4, attrCap:4, skillPts:16, attrPts:19, feats:4, totalXp:750},
-    6:{skillCap:4, attrCap:4, skillPts:17, attrPts:19, feats:4, totalXp:1080},
-    7:{skillCap:5, attrCap:4, skillPts:18, attrPts:19, feats:5, totalXp:1470},
-    8:{skillCap:5, attrCap:5, skillPts:19, attrPts:20, feats:5, totalXp:1920},
-    9:{skillCap:5, attrCap:5, skillPts:20, attrPts:20, feats:6, totalXp:2430},
-    10:{skillCap:5, attrCap:5, skillPts:21, attrPts:20, feats:6, totalXp:3000},
-    11:{skillCap:5, attrCap:5, skillPts:22, attrPts:20, feats:7, totalXp:3630},
-    12:{skillCap:5, attrCap:5, skillPts:23, attrPts:21, feats:8, totalXp:4320}
+    2:{skillCap:2, attrCap:4, skillPts:14, attrPts:18, feats:2, totalXp:120},
+    3:{skillCap:3, attrCap:4, skillPts:16, attrPts:18, feats:2, totalXp:270},
+    4:{skillCap:3, attrCap:4, skillPts:18, attrPts:19, feats:3, totalXp:480},
+    5:{skillCap:4, attrCap:4, skillPts:20, attrPts:19, feats:3, totalXp:750},
+    6:{skillCap:4, attrCap:4, skillPts:22, attrPts:19, feats:4, totalXp:1080},
+    7:{skillCap:5, attrCap:4, skillPts:24, attrPts:19, feats:4, totalXp:1470},
+    8:{skillCap:5, attrCap:5, skillPts:26, attrPts:20, feats:4, totalXp:1920},
+    9:{skillCap:5, attrCap:5, skillPts:28, attrPts:20, feats:5, totalXp:2430},
+    10:{skillCap:5, attrCap:5, skillPts:30, attrPts:20, feats:5, totalXp:3000},
+    11:{skillCap:5, attrCap:5, skillPts:32, attrPts:20, feats:5, totalXp:3630},
+    12:{skillCap:5, attrCap:5, skillPts:34, attrPts:21, feats:6, totalXp:4320}
   };
 
   var FEAT_SLOTS = [
     {label:'Starter Feat 1', level:1},
     {label:'Starter Feat 2', level:1},
-    {label:'Level 3 Feat', level:3},
-    {label:'Level 5 Feat (Prestige available)', level:5},
-    {label:'Level 7 Feat', level:7},
+    {label:'Level 4 Feat', level:4},
+    {label:'Level 6 Feat (Prestige available)', level:6},
     {label:'Level 9 Feat', level:9},
-    {label:'Level 11 Feat', level:11},
     {label:'Level 12 Feat', level:12}
   ];
 
@@ -678,7 +676,7 @@
       box.appendChild(el('div', {class:'name'}, [text(a.name), el('span', {class:'abbr'}, [text(a.key)])]));
       var row = el('div', {class:'attr-row'});
       row.appendChild(el('label', {}, [text('Base')]));
-      row.appendChild(el('input', {type:'number', name:'attr:'+a.key+':base', min:'1', max:'5', value:'1'}));
+      row.appendChild(el('input', {type:'number', name:'attr:'+a.key+':base', min:'0', max:'5', value:'1'}));
       row.appendChild(el('label', {}, [text('Mod')]));
       row.appendChild(el('input', {type:'number', name:'attr:'+a.key+':mod', value:'0'}));
       row.appendChild(el('label', {}, [text('Total')]));
@@ -845,7 +843,7 @@
       armorPenaltyRaw += num(tr.querySelector('[data-col="penalty"]').value);
     });
     var armorerRanks = skillTotals['Armorer'] || 0;
-    var armorPenalty = Math.max(0, armorPenaltyRaw - Math.floor(armorerRanks/2));
+    var armorPenalty = Math.max(0, armorPenaltyRaw - armorerRanks);
     document.getElementById('out-ar').textContent = ar;
     document.getElementById('out-armorPenalty').textContent = armorPenalty;
 
@@ -861,7 +859,7 @@
     });
     document.getElementById('out-shieldAR').textContent = shieldAR;
     var shieldsSkill = skillTotals['Shields'] || 0;
-    document.getElementById('out-blockBonus').textContent = attrTotals['END'] + Math.floor(shieldsSkill/2);
+    document.getElementById('out-blockBonus').textContent = shieldsSkill + trainedAttrBonus('Shields', 'END');
 
     // 4. Single-pass derived stats
     var hpMax = attrTotals['END'] + num(document.querySelector('[name="hpBonus"]').value);
@@ -870,17 +868,17 @@
     var carryMax = Math.floor((attrTotals['END'] + attrTotals['STR']) * sizeMult);
     var agility = skillTotals['Agility'] || 0;
     var evasion = 5 + agility + shieldAgilityBonus + attrTotals['DEX'] - armorPenalty;
-    var dodge = evasion + 5;
-    var maxDodges = Math.floor(attrTotals['DEX']/2);
+    var dodgeBonus = agility + trainedAttrBonus('Agility', 'DEX');
     var initiative = Math.floor((attrTotals['PRE'] + attrTotals['DEX'])/2);
+    var reactions = Math.floor((attrTotals['DEX'] + attrTotals['PRE'])/3);
 
     document.getElementById('out-hpMax').textContent = hpMax;
     document.getElementById('out-manaMax').textContent = manaMax;
     document.getElementById('out-carryMax').textContent = carryMax;
     document.getElementById('out-evasion').textContent = evasion;
-    document.getElementById('out-dodge').textContent = dodge;
-    document.getElementById('out-maxDodges').textContent = maxDodges;
+    document.getElementById('out-dodgeBonus').textContent = dodgeBonus;
     document.getElementById('out-initiative').textContent = (initiative>=0?'+':'') + initiative;
+    document.getElementById('out-reactions').textContent = reactions;
 
     // Current load: sum every Slots column across all inventory tables. Worn
     // armor/clothes and equipped shields/weapons don't count - you're

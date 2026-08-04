@@ -41,7 +41,7 @@ Every flat-Wounds-granting feat, spell, or item was calibrated against the old `
 
 **When picking this up:** same treatment as the resolved items above - real design work against the new pool size, ideally playtested, not a blind divide-by-N.
 
-**Also noted but explicitly out of scope for any Wounds pass:** `leadership.md`'s sample cohort (Mira Valdros) has attributes (STR 5, END 5, PRE 4, DEX 4...) summing to 30 against an 18-point/Level-2 budget with a cap of 4 - a pre-existing bug from the earlier Skills/Attributes rescale, unrelated to Wounds. Her Wounds value was set to match her (currently-invalid) listed END rather than fixing the whole sheet.
+**Resolved (2026-08-03), as a side effect of the Progression rework below:** `leadership.md`'s sample cohort (Mira Valdros) had attributes (STR 5, END 5, PRE 4, DEX 4...) summing to 30 against an 18-point/Level-2 budget with a cap of 4 - a pre-existing bug from the earlier Skills/Attributes rescale, unrelated to Wounds. Rebuilt within budget (STR 4, PRE 2, END 4, DEX 3, MIND 2, ARC 0, FAI 1, CHA 2 = 18, all ≤4), with Wounds and Initiative recomputed to match. Evasion/AR were left untouched (already loosely-derived flavor text, not part of this bug).
 
 ## Reaction economy: wounds-system-design-doc.md's §5 language doesn't match shipped rules
 

@@ -32,6 +32,7 @@
 
 **Magic**
 - [Overview](magic_overview)
+- [Laws of Magic](laws_of_magic)
 - [Minor Magic](minor_magic)
 - [Spell Crafting](spell_crafting)
 
