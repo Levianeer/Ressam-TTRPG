@@ -89,14 +89,3 @@ A mind you've already cracked once doesn't close all the way back up - the secon
 
 **Prerequisites:** \+2 ranks in Subjugation, FAI 3+  
 **Benefit:** When a creature fails to resist one of your Subjugation spells' overcome roll, the intrusion leaves a hook behind. The next Subjugation spell you cast against that same creature, before your next Prayer or Field Rest or Long Rest, is made with advantage on its overcome roll. This bonus doesn't stack, and is lost if that follow-up roll fails to overcome them.
-
----
-
-## Faith's Burden
-
-### **Unbroken Vow**
-
-Some devotions survive being interrupted mid-word - the god was never listening to your throat, only your intent.
-
-**Prerequisites:** \+2 ranks in any Divine school, FAI 4+  
-**Benefit:** Once between each Prayer, when your Interrupted Prayer check (magic\_overview.md) would fail, you may instead succeed automatically by accepting 1 Trauma \- your god answers regardless, but the toll lands on your body instead of your standing with them.

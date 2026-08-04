@@ -2,15 +2,15 @@ Divine magic bypasses formulae and scrolls entirely. Through genuine faith and s
 
 But faith alone is not enough. The gods' will is written. Every divine tradition has its holy texts, scriptures, and liturgy. To channel divine power, you must first *read* what the gods demand, understand their commandments, and learn the prayers that invoke them. A faithful farmer may love his god deeply, but without literacy, he cannot learn the prayers.
 
-**For core mechanics (Prayer, Mana, spell refreshment), see The Nature of Magic.**
+**For core mechanics (Prayer, Mana), see The Nature of Magic.**
 
-### **Why Limited Casts?**
+### **Why Prayer, Not Rest?**
 
-Faith is not infinite. Each miracle strains your spiritual connection, leaving you temporarily unable to channel that specific manifestation again. Unlike Arcane magic (where you physically consume scrolls), Divine magic exhausts your conviction. The power is always there \- you simply need to remember *why* you believe.
+Faith is not infinite, but unlike Arcane power it isn't something a body simply recovers by sleeping. Divine casters draw their Mana straight from their god, not from their own reserves, so Field Rest and Long Rest do nothing for it \- only genuine, active petition does, and only for as long as you actually kneel and hold that connection. This is the trade for spontaneity: no scrolls to prepare or predict, but the moment you and your god fall out of contact, so does your Mana.
 
 ### **Prayer Requirements**
 
-Prayer is spiritual recalibration \- you reconnect with your deity and demonstrate your devotion. Different gods demand different proofs:
+Prayer is spiritual recalibration \- you reconnect with your deity and demonstrate your devotion. This is purely thematic (no mechanical bonus is tied to it), but it's worth roleplaying: different gods expect different proofs:
 
 - **War God:** Recount a recent battle while reading from scripture  
 - **Nature Deity:** Pray surrounded by growing things, holy texts open  

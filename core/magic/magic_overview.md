@@ -32,7 +32,7 @@ Mana is your magical fuel, shared between Arcane and Divine magic if you practic
 
 ### **Armor and Spellcasting**
 
-Armor Penalty applies to all spell rolls. Each 2 ranks in Armorer reduces the penalty by 1 (minimum 0).
+Armor Penalty applies to all spell rolls. Each rank in Armorer reduces the penalty by 1 (minimum 0).
 
 ---
 
@@ -76,18 +76,20 @@ Spell Attacks can crit on a natural 12 (roll damage twice, take the higher resul
 
 | Aspect | Arcane (Scribing) | Divine (Prayer) |
 | :---- | :---- | :---- |
-| **Preparation** | Scribe scrolls during Field Rest or Long Rest | Pray for 1 hour to refresh spells |
-| **Casting** | Consume scroll (no Mana cost) | Spend Mana per cast |
+| **Mana Source** | Field Rest (partial) or Long Rest (full) | Prayer, 1 Mana per hour prayed |
+| **Preparation** | Scribe scrolls, spending Mana in advance | None \- cast straight from your Mana pool |
+| **Casting** | Consume scroll (no Mana cost at cast time) | Spend Mana per cast |
 | **Flexibility** | Must predict what you'll need | Cast any known spell spontaneously |
-| **Repetition** | Can scribe same spell multiple times | Each spell usable once until Prayer |
 | **Sharing** | Can give scrolls to allies | Personal only |
-| **Risk** | Scrolls can be lost/destroyed; Instability (Stable-Scribed reserves only) | No physical component to lose |
+| **Risk** | Scrolls can be lost/destroyed; Stable-Scribed reserves have a carry cap | No physical component to lose |
+
+Both paths draw from the same Mana pool if you practice both \- Arcane tops it up on Rest, Divine tops it up on Prayer, and a hybrid caster benefits from either.
 
 ### 
 
 ## Arcane Magic: Study & Scribing
 
-Arcane spells are scribed onto scrolls, then consumed to cast. There are two ways to scribe: **Quick Scribing**, done for free during a Field Rest or Long Rest, and **Stable Scribing**, a slower and costlier process reserved for trained professionals. Both draw on the same Mana and the same Duplicate Resonance rule below \- the difference is time, cost, and how long the result lasts.
+Arcane spells are scribed onto scrolls, then consumed to cast. There are two ways to scribe: **Quick Scribing**, done for free during a Field Rest or Long Rest, and **Stable Scribing**, a slower and costlier process reserved for trained professionals. Both draw on the same Mana \- the difference is time, cost, and how long the result lasts.
 
 |  | Quick Scribing | Stable Scribing |
 | :---- | :---- | :---- |
@@ -101,97 +103,39 @@ Arcane spells are scribed onto scrolls, then consumed to cast. There are two way
 Each Field Rest or Long Rest, prepare spells by scribing them onto scrolls:
 
 1. Choose spells from those you know  
-2. Spend Mana equal to each spell's Mana Cost (see Duplicate Resonance below if you already hold a copy)  
+2. Spend Mana equal to each spell's Mana Cost  
 3. Consume 1 sheet of Arcane Parchment per scroll (Writing & Scholarly Supplies)  
 4. Create scrolls (each \= one casting, consumed when used)
 
 Scrolls can be traded, sold, or given to allies. A Quick-Scribed scroll's magic fades the moment you complete your next Field Rest or Long Rest, whether you used it or not \- the parchment survives, but the spell must be re-scribed. This is deliberate: Quick Scribing is a daily choice, not a stockpile. Decide what you'll need before you set out, because today's leftovers don't carry over to tomorrow.
 
-Casting a spell from a scroll is a Major Action and requires ranks in the spell's school equal to or exceeding its Mana Cost. Otherwise the scroll is inert in your hands.
-
 **Losing Your Spellbook:** If lost, you can only scribe memorized spells (DM discretion \- perhaps 1-2 favorites). This is catastrophic.
-
-### **Duplicate Resonance**
-
-Concentrated magical energy is inherently unstable, and identical patterns amplify each other rather than simply adding up. Scribing a copy of a spell you already currently hold an unused copy of costs more, scaled by the spell's own Mana Cost:
-
-**Cost of a new copy \= Mana Cost × (copies you will hold after scribing it, including this one)**
-
-The 1st copy of a spell costs its normal Mana Cost, same as always. The 2nd costs double, the 3rd triple, and so on. This counts every copy you currently hold \- not just copies scribed in the same Field Rest or Long Rest \- so spreading scribing across several rests doesn't dodge the cost. Using or losing a scroll frees its slot for a future copy at the lower price again.
-
-**Example:** Marcus (MIND 5, 10 Mana) already holds one Stable-Scribed Searing Heat scroll (3 Mana Cost) commissioned at a Mage's Guild - it doesn't decay, so he's still carrying it. This morning he Quick-Scribes Ignis Lancet ×2 (1 Mana Cost each \= 1 \+ 2 \= 3 Mana) and Conical Combustion ×1 (3 Mana) \- 6 Mana so far. A second Searing Heat would be his 2nd copy, costing 3 × 2 \= 6 Mana, which would push him to 12 Mana with only 10 to spend. He scribes a second Ignis Lancet instead \- his 3rd copy, costing 1 × 3 \= 3 Mana \- for 9 Mana spent total.
 
 ### **Stable Scribing**
 
-A scroll that resists decay takes far more effort to produce than a quick field-scribing \- precise, time-consuming work reserved for trained professionals rather than something managed between fights. Pay the Time and Crown cost above (in addition to the Mana cost, Arcane Parchment, and Duplicate Resonance) at a Mage's Guild workshop, or under a master-level teacher, to produce a scroll that survives past your next Field Rest or Long Rest.
+A scroll that resists decay takes far more effort to produce than a quick field-scribing \- precise, time-consuming work reserved for trained professionals rather than something managed between fights. Pay the Time and Crown cost above (in addition to the Mana cost and Arcane Parchment) at a Mage's Guild workshop, or under a master-level teacher, to produce a scroll that survives past your next Field Rest or Long Rest.
 
-Stable Scribing is the only way to build a lasting reserve outside your daily prep \- and Instability below exists specifically to keep that reserve from growing into a bottomless armory.
+Stable Scribing is the only way to build a lasting reserve outside your daily prep \- and the carry cap below exists specifically to keep that reserve from growing into a bottomless armory.
 
 ### **Instability (Stable-Scribed scrolls only)**
 
-Quick-Scribed scrolls never last long enough to build into a real hoard \- they're gone by your next Field Rest or Long Rest regardless. A permanent Stable-Scribed reserve is different: carrying too many of those can make the concentrated magical potential dangerous.
+Quick-Scribed scrolls never last long enough to build into a real hoard \- they're gone by your next Field Rest or Long Rest regardless. A permanent Stable-Scribed reserve is different: carrying too much concentrated, undecaying magic at once is dangerous, so it's capped outright.
 
-**Instability Threshold \= Maximum Mana \+ MIND**  
-**Excess Mana \= Total Stable-Scribed scroll Mana Cost \- Instability Threshold**
-
-You may carry Stable-Scribed scrolls up to a combined Mana Cost equal to your Instability Threshold. Quick-Scribed scrolls don't count against this.
-
-**Triggers:** Taking 10+ damage in one hit, critical hits, falling 10+ feet
-
-**Detonation:** Roll 1d8 per point of Excess Mana. Take that damage as arcane damage; everyone within 30 ft takes half (DEX Ward DC 23 for half again); all Stable-Scribed scrolls destroyed; knocked prone.
-
-**Scroll Shielding (Reaction):** When triggered, destroy up to your MIND in Stable-Scribed scrolls to reduce Excess Mana by their total Mana Cost before rolling damage.
-
-**Controlled Discharge (Short Rest):** Most nations legally require mages to periodically vent excess scrolls rather than let them sit and destabilize \- this check represents doing so. Arcane Lore check (DC \= 10 \+ Excess Mana).  
-Success: destroy up to MIND Stable-Scribed scrolls safely.  
-Failure: destroy 1 Stable-Scribed scroll and trigger Instability.
-
-**Warning Signs:**
-
-- 1-3 Excess: Stable-Scribed scrolls feel warm  
-- 4-6 Excess: Stable-Scribed scrolls shimmer, crackle; disadvantage on Stealth  
-- 7+ Excess: Stable-Scribed scrolls glow visibly, automatically detected by magical senses
+**Carry Cap \= Maximum Mana.** You may carry Stable-Scribed scrolls up to a combined Mana Cost equal to your Maximum Mana. Quick-Scribed scrolls don't count against this. No Mage's Guild will scribe you past the cap, and any excess scroll you acquire by other means (looted, gifted) must be sold, given away, or destroyed before you can carry it.
 
 ## Divine Magic: Faith & Prayer
 
-Divine magic has two limiting factors:
-
-1. **Mana:** Each spell costs Mana equal to its Mana Cost  
-2. **Spell Refreshment:** Each known spell can be cast **once** per Prayer
-
-Both limits must be satisfied to cast.
+Divine magic is limited by Mana alone, same as Arcane \- the difference is where that Mana comes from. Arcane casters recharge on Rest; Divine casters recharge on Prayer, and only on Prayer (Field Rest and Long Rest do not restore Mana for Divine casting).
 
 ### **Prayer (Divine Only)**
 
-**Duration:** 1 hour (counts as Short Rest benefits)
+**Rate:** Regain 1 Mana per hour spent in Prayer, up to your Maximum Mana. This is the only way a Divine caster recovers Mana.
 
-**Effect:** All known spells become available again. Mana is NOT restored.
+Pray for as long as suits the moment - a spare hour recovers a little, a night's vigil can refill you completely. Praying for the duration of a Short, Field, or Long Rest also grants that Rest's other benefits (Trauma recovery, etc.) as normal, provided its requirements (shelter, safety) are met.
 
-### **Devotion Tiers**
+**Interrupted Prayer:** You keep any Mana already regained; the interrupted hour itself simply grants nothing.
 
-When you Pray, choose your devotion level. Higher devotion grants more power but requires more from you.
-
-**Minimal Devotion (No Requirements)**
-
-- Refresh all known spells  
-- Quick meditation, no special conditions needed
-
-**Moderate Devotion (Thematic Requirement)**
-
-- Refresh all known spells  
-- Choose one spell school \- spells from that school gain \+1 to spell rolls until next Prayer  
-- Must perform a thematic act matching your faith (recount battles for war god, pray in nature for nature deity, meditate on secrets for knowledge god, etc.)
-
-**Deep Devotion (Thematic \+ Sacrifice)**
-
-- Refresh all known spells  
-- Choose two spell schools \- spells from those schools gain \+1 to spell rolls until next Prayer  
-- Regain 2d6 Wounds  
-- Requires thematic act \+ meaningful sacrifice (destroy 50+ Crown of incense/offerings, spend mana on a Minor Magic ritual with no gameplay benefit (minor_magic.md), accept 1 Trauma from fasting, etc.)
-
-### **Interrupted Prayer**
-
-If Prayer is interrupted before completion, make a Religious Lore check (DC 15). Success: retain half your available spell slots (DM choice). Failure: no spells refresh.
+See divine_overview.md for the thematic act each faith expects during Prayer \- purely a roleplay expectation, not a mechanical requirement.
 
 ---
 
@@ -199,13 +143,13 @@ If Prayer is interrupted before completion, make a Religious Lore check (DC 15).
 
 **Learning New Spells:** Learning new spells requires time, money and practice. When creating a new character you may spend 50 Crown per Mana Cost to ‘buy’ your starting spells. Otherwise you must invest the following:
 
-|  | Arcane | Divine |
-| :---: | :---- | :---- |
-| **Time** | 2 hours per Mana Cost (1 hour with scroll) | 2 hours prayer per Mana Cost (1 hour with divine scroll) |
-| **Cost** | 50 Crown per Mana Cost in materials | 50 Crown per Mana Cost in offerings |
-| **Source** | Scroll, spellbook, or teacher | Holy scroll, vision, or priest teacher |
+|            | Arcane                              | Divine                                 |
+|:----------:|:------------------------------------|:---------------------------------------|
+|  **Time**  | 1 day studying per Mana Cost        | 1 day studying per Mana Cost           |
+|  **Cost**  | 50 Crown per Mana Cost in materials | 50 Crown per Mana Cost in offerings    |
+| **Source** | Scroll, spellbook, or teacher       | Holy scroll, vision, or priest teacher |
 
-**Spell Access:** Your skill rank must **equal or exceed** the spell's Mana Cost.
+**Spell Access:** Your skill rank must **equal or exceed** the spell's Mana Cost, both for character creation and learning new spells after.
 
 ---
 
@@ -213,7 +157,7 @@ If Prayer is interrupted before completion, make a Religious Lore check (DC 15).
 
 Some spells have Channel as their duration, this means it requires concentration.
 
-**Upkeep:** At the start of each of your turns you continue channeling, you must pay half the spell's Mana Cost (rounded down) to sustain it. If you can't or choose not to pay, the spell ends immediately. A Held channeled spell pays this same half-cost the moment it's released instead, since it may resolve before your next turn arrives.
+**Upkeep:** At the start of each of your turns you continue channeling, you must pay half the spell's Mana Cost (rounded down, minimum 1) to sustain it. If you can't or choose not to pay, the spell ends immediately. A Held channeled spell pays this same half-cost the moment it's released instead, since it may resolve before your next turn arrives.
 
 **Breaking Concentration:** Whenever you take damage while channeling, you must succeed on a MIND Ward check or the spell ends immediately. The DC equals 15 or the damage you took, whichever is higher. Concentration also breaks automatically if you fall unconscious or die.
 

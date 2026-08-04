@@ -110,26 +110,15 @@ Every hit (regardless of Wound damage) reduces armor by 1 AR.
 | AR Status | Effect |
 | :---- | :---- |
 | AR 1+ | Functions normally |
-| AR 0 | **Broken** \- no protection, cannot be field-repaired |
+| AR 0 | **Broken** \- no protection |
 
-**Broken Armor:** Rigid armor must be reforged by a blacksmith (50% of original price). Flexible Armor can be field-repaired like normal.
+**Broken Armor:** Rigid armor cannot be field-repaired once broken and must be reforged by a blacksmith (1/2 of original price); Flexible armor can still be field-repaired. See armor.md for full repair rules.
 
 ### **Armor Penalty**
 
 Reduces Evasion, your Dodge Style roll (Maneuver, maneuvers.md), and your Spell Modifier.
 
 **Reducing Penalty:** Each 2 ranks in Armorer reduces Penalty by 1 (minimum 0).
-
-### **Repairing Armor**
-
-Requires Armorer's Tools. Cannot exceed starting AR or repair broken (0 AR) armor.
-
-| Armorer Rank | Repair Time |
-| :---- | :---- |
-| 1+ | Field Rest or Long Rest: restore 2d6 AR |
-| 2+ | Short Rest: restore 2d6 AR |
-| 3+ | 10 minutes: restore 2d6 AR (1/day) |
-| 4+ | Combat (Major \+ Minor): restore 1d6 AR (1/day) |
 
 ---
 

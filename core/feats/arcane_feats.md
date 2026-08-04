@@ -101,7 +101,7 @@ The old lesson every elemental caster learns the hard way: fanning a flame that'
 A scribe who never lets their reserve outrun their control - the difference between a workshop and a powder keg.
 
 **Prerequisites:** \+2 ranks in Crafting or Arcane Lore, \+2 ranks in any Arcane school  
-**Benefit:** Your Instability Threshold (magic\_overview.md) increases by your Crafting or Arcane Lore rank, whichever is higher. Additionally, you have advantage on Controlled Discharge checks (Instability, magic\_overview.md).
+**Benefit:** Your Stable-Scribed carry cap (Instability, magic\_overview.md) increases by your Crafting or Arcane Lore rank, whichever is higher \- a steady hand can safely hold more concentrated reserve than the cap otherwise allows.
 
 ---
 

@@ -132,11 +132,10 @@ After four hits, her chain mail only provides AR 1\. She's taken 7 Wound Damage,
 
 ### **Destroyed Armor (0 AR)**
 
-When armor reaches 0 durability:
+When armor reaches 0 durability, it provides no protection.
 
-- It provides no protection  
-- It cannot be field-repaired  
-- It must be professionally reforged (see Repair, below)
+- **Flexible armor** can still be field-repaired using the Armorer skill (see Repairing Armor, below) - cloth, leather, and rings can be patched and re-riveted no matter how battered.
+- **Rigid armor** cannot be field-repaired once broken. It must be taken to a blacksmith for reforging (see Professional Repair, below).
 
 ---
 
@@ -144,36 +143,25 @@ When armor reaches 0 durability:
 
 ### **Field Repair (Armorer Skill)**
 
-Characters with the Armorer skill can repair armor outside of combat. This requires **Armorer's Tools** (25 Crown, 2 Slots).
+Characters with the Armorer skill can repair armor during downtime, using **Armorer's Tools** (see Supplies). Repairing restores **durability equal to your Armorer rank, per hour spent working** (an untrained character, 0 Ranks, restores nothing).
 
-| Armorer Rank | Repair Capability |
-| :---: | :---- |
-| 1+ | Repair during Field Rest or Long Rest: restore 2d6 durability |
-| 2+ | Repair during Short Rest: restore 2d6 durability |
-| 3+ | Quick repair (10 minutes): restore 2d6 durability, once per day |
-| 4+ | Combat repair (Major Action): restore 1d6 durability to your own armor, once per day |
+This time can be spent during any Rest (Short, Field, or Long) without losing that Rest's other benefits, or as dedicated downtime outside of a Rest.
+
+**Example:** Kira (Armorer 3) repairs her brigandine (AR 6), currently at 2 durability. At 3 durability per hour, she needs 2 hours - well within a 6-hour Field Rest, but more than a 1-hour Short Rest allows. A rank 5 master would finish the same repair in under an hour; an untrained companion with the same tools restores nothing.
 
 **Limitations:**
 
 - Cannot restore durability above the armor's original AR  
-- Cannot repair armor that has reached 0 durability  
-- Requires Armorer's Tools
+- Rigid armor cannot be field-repaired once it reaches 0 durability (see Destroyed Armor, above) - only Flexible armor can be repaired from Broken  
+- Requires Armorer's Tools and the character's full attention for that time (no other activity during those hours)
 
 ### **Professional Repair**
 
-Armor at 0 durability must be taken to a blacksmith for reforging:
+Any armor can instead be taken to a blacksmith for reforging - useful if nobody in the party has Armorer ranks, and mandatory for Rigid armor that's reached 0 durability, which cannot be field-repaired at all:
 
 - **Cost:** Half the armor's original price  
 - **Time:** Typically 1-3 days depending on armor complexity  
 - **Result:** Fully restores durability to original AR
-
-| Armor | Reforge Cost |
-| :---- | ----: |
-| Gambeson | 37 Crown |
-| Chain Mail | 100 Crown |
-| Brigandine | 175 Crown |
-| Breastplate | 350 Crown |
-| Full Plate | 1,000 Crown |
 
 ---
 
@@ -256,18 +244,6 @@ When repairing armor, you repair the shield simultaneously.
 | **Skirmisher/Scout** | Gambeson | Stealth-compatible |
 | **Tank** | Full Plate \+ Shield | Maximum protection |
 | **Duelist** | Buff Coat \+ Buckler | Mobility \+ Agility bonus |
-
-### 
-
-### **Armor Economics**
-
-| Budget | Best Choice |
-| :---- | :---- |
-| Under 100 Crown | Gambeson (75) |
-| 100-250 Crown | Chain Mail (200) or Buff Coat \+ Targe (180) |
-| 250-500 Crown | Brigandine (350) |
-| 500-1,000 Crown | Breastplate (700) |
-| 1,000+ Crown | Half-Plate or Full Plate |
 
 ### 
 

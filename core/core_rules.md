@@ -262,21 +262,21 @@ A **Backpack** costs no Slots itself, but is required to use your full Slot coun
 
 - No Mana recovery  
 - Trauma: Medical Lore DC 15 to remove 1 level  
-- Can use: Armorer (rank 3+), Medical Lore, Scribing, Prayer etc  
+- Can use: Armorer, Medical Lore, Scribing, Prayer etc  
 - Interrupted by combat
 
 ### **Field Rest (6 Hours)**
 
-- Regain Mana equal to **MIND**  
+- Regain Mana equal to **MIND** (Arcane casters only \- Divine Mana is restored solely through Prayer, see magic_overview.md)  
 - Trauma: Medical Lore DC 15 to remove 2 additional level  
-- Can use: Armorer (rank 3+), Medical Lore, Scribing, Prayer etc  
+- Can use: Armorer, Medical Lore, Scribing, Prayer etc  
 - **Requires:** Shelter, watch rotation, defensible position, 1 ration per character
 
 ### **Long Rest (8 Hours)**
 
-- Regain Mana equal to **MIND × 3**, up to your Maximum Mana  
+- Regain Mana equal to **MIND × 3**, up to your Maximum Mana (Arcane casters only \- Divine Mana is restored solely through Prayer, see magic_overview.md)  
 - Trauma: Remove 1 level automatically, Medical Lore DC 15 to remove 2 additional level  
-- Can use: Armorer (rank 3+), Medical Lore, Scribing, Prayer etc  
+- Can use: Armorer, Medical Lore, Scribing, Prayer etc  
 - **Requires:** Permanent structure in civilization with security (inn, barracks, temple, etc.)
 
 **Note:** Field Rests and Long Rests provide no benefits if their shelter requirements aren't met.
