@@ -203,7 +203,7 @@ Followers die easily. If caught in combat, targeted by area effects, or facing a
 Cohorts are characters. Their death should matter.
 
 - **Dying:** Cohorts reduced to 0 Wounds follow standard dying rules (END rounds to stabilize)  
-- **Resurrection:** Same as player characters \- not something you can arrange or purchase. If a dead cohort returns, it's entirely the DM's narrative call (see Divine Overview: Resurrection)  
+- **Resurrection:** Same as player characters \- not something you can arrange or purchase. If a dead cohort returns, it's entirely the DM's narrative call (see [[Resurrection|divine_overview]])  
 - **Replacement:** You can recruit a new cohort, but this takes time and roleplay. You can't just grab another one immediately.
 
 **Mourning period:** You cannot recruit a new cohort for 1 week per level the dead cohort had reached. This represents the emotional investment and reputation concerns of losing someone under your command. However, the DM should be reasonable, a hated Cohort probably won’t be mourned.

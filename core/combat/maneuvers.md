@@ -1,4 +1,4 @@
-A Maneuver is your reactive answer to an incoming attack - the moment where every turn spent setting up the exchange (see Basic Moves, core\_rules.md) pays off. Instead of simply eating a hit or hoping your Passive Evasion holds, you answer it with a contested roll of your own. Everyone has access to this as long as they fulfil the prerequisites.
+A Maneuver is your reactive answer to an incoming attack - the moment where every turn spent setting up the exchange (see [[Basic Moves|core_rules]]) pays off. Instead of simply eating a hit or hoping your Passive Evasion holds, you answer it with a contested roll of your own. Everyone has access to this as long as they fulfil the prerequisites.
 
 ---
 
@@ -7,7 +7,7 @@ A Maneuver is your reactive answer to an incoming attack - the moment where ever
 Answer an incoming attack with your own contested roll, instead of simply eating the hit or hoping your Passive Evasion holds.
 
 **Trigger:** An attack against you that you can see, and that beats your Passive Evasion (i.e. it would otherwise hit).  
-**Action:** Reaction (shared pool, see Action Economy)  
+**Action:** Reaction (shared pool, see [[Action Economy|combat]])  
 **Choose a Style** below when you react - Parry, Block, or Dodge - each with its own prerequisites, restrictions, and roll. Then compare your result to the attack roll:
 
 **Margin \= Your Style's roll − the attacker's attack roll**
@@ -19,7 +19,7 @@ Answer an incoming attack with your own contested roll, instead of simply eating
 | \-1 to \-2 | **Minimized** \- Attack connects, but reduce the damage (see your Style, below). |
 | \-3 or lower | **Failed** \- Full damage. Your Reaction is spent for nothing. |
 
-**Ties favor you, the defender** (Margin of exactly 0 falls under Stopped) - a deliberate exception to the normal Contested Check convention (core\_rules.md), preserving how Parrying has always resolved. Reactive Casting (below) carries the same tie-favors-you principle, expressed through its Mana Value formula instead.
+**Ties favor you, the defender** (Margin of exactly 0 falls under Stopped) - a deliberate exception to the normal [[Contested Check|core_rules]] convention, preserving how Parrying has always resolved. Reactive Casting (below) carries the same tie-favors-you principle, expressed through its Mana Value formula instead.
 
 **Critical Hits:** A Natural 12 bypasses the Parry and Block Styles entirely - a blow that committed is too fast or too heavy to intercept, so reacting with either Style automatically Fails. Dodge is the exception: it works by not being where the blow lands rather than intercepting it, so it still resolves normally against a Crit.
 
@@ -29,7 +29,7 @@ Casters have a fourth option instead of a Style - **Reactive Casting** (below) -
 
 On a Dominant or Stopped result, you're not just surviving the exchange - your margin bought you the initiative in it. Effects resolve automatically off the Margin you already rolled; none of them need a further check. Every Style shares one Effect, and brings one signature Effect of its own that only makes sense for how that Style defends:
 
-- **Riposte** *(any Style)* \- Make one weapon (or unarmed) attack against the attacker as part of this Reaction.
+- **Riposte** *(any Style)* \- Make one weapon (or unarmed) attack against the attacker as part of this Reaction. Requires the attacker to be within your weapon's Reach - if their Reach put them farther away than yours reaches (a Long Pike against your Short dagger, say), you can't Riposte; pick a different Effect instead. Dodge's Reposition can close that gap first if you pick both at Dominant.
 - **Exploit Opening** *(any Style)* \- You read their guard. Your next attack roll against the attacker before the start of your next turn has Advantage.
 - Plus your Style's signature Effect (Parry: **Guard Break** or **Bind Weapon**; Block: **Push Back** or **Stagger**; Dodge: **Reposition** or **Untouchable** - see below).
 
@@ -43,7 +43,7 @@ Deflect an incoming melee attack with your weapon.
 
 **Prerequisites:** A melee weapon in your hand, and 1+ rank in that weapon's Skill.  
 **Restrictions:** Melee attacks only. Does **not** work against AoE or unseen attacks.  
-**Roll:** Your normal attack roll (Weapon Skill \+ Attribute).  
+**Roll:** Your normal attack roll (Weapon Skill \+ Attribute). Disadvantage if the attacker's weapon Reach Category is strictly greater than yours (see [[Reach Categories|weapons]]).  
 **Minimized:** Reduce damage by your weapon's damage die (roll it).
 
 **Signature Effects:**
@@ -60,7 +60,7 @@ Use your shield, or a Two-Handed weapon, to absorb incoming attacks.
 **Prerequisites:** A shield in your hand, or a melee weapon with the Two-Handed property, and 1+ rank in Shields. A Versatile weapon being wielded with both hands does not count as a Two-Handed Weapon for this purpose - only a melee weapon whose property list includes Two-Handed qualifies (a two-handed ranged weapon or firearm does not).  
 **Restrictions:** Works against melee and ranged physical attacks if you're using a shield; a Two-Handed weapon only blocks melee. Does **not** work against AoE or unseen attacks.  
 **Roll:** 1d12 \+ Shields Skill \+ END.  
-**Minimized:** Reduce damage by your shield's AR Bonus (Shield Table, equipment/armor.md), or by Shields Skill ÷ 2 (rounded down) if you're blocking with a Two-Handed weapon instead of a shield. (A Buckler has no AR Bonus and reduces nothing here - see Shield Descriptions, equipment/armor.md, for what it offers instead.)
+**Minimized:** Reduce damage by your shield's AR Bonus ([[Shield Table|armor]]), or by Shields Skill ÷ 2 (rounded down) if you're blocking with a Two-Handed weapon instead of a shield. (A Buckler has no AR Bonus and reduces nothing here - see [[Shield Descriptions|armor]] for what it offers instead.)
 
 **Protecting Allies:** You may Block for an adjacent ally; the attack targets you instead, your armor degrades as normal, and you take any damage that gets through.
 

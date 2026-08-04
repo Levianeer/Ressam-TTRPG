@@ -41,7 +41,7 @@ The world uses three major currencies, each dominant in different regions.
 
 Essential equipment for travel, exploration, and survival.
 
-**How Slots Work:** Your carrying capacity is Slots (STR \+ END, see Core Rules), checked when you decide what to carry \- not on every purchase. Tiny items (small tools, single-use trinkets) pack 3 to a Slot; a Belt Pouch holds 3 Tiny items for free. Standard gear costs 1 Slot, Heavy gear 2, Bulky gear 3, and coins are 100 per Slot. Torches, Candles, Rations, and Oil flasks are all sold and carried in bundles of 3 that cost 1 Slot per bundle.
+**How Slots Work:** Your carrying capacity is Slots (STR \+ END, see [[Slots|core_rules]]), checked when you decide what to carry \- not on every purchase. Tiny items (small tools, single-use trinkets) pack 3 to a Slot; a Belt Pouch holds 3 Tiny items for free. Standard gear costs 1 Slot, Heavy gear 2, Bulky gear 3, and coins are 100 per Slot. Torches, Candles, Rations, and Oil flasks are all sold and carried in bundles of 3 that cost 1 Slot per bundle.
 
 ### **Travel & Shelter**
 
@@ -123,17 +123,8 @@ Equipment for treating injuries and stabilizing the dying.
 | Bandages (5)   |  5 Crown  |  1/3  |          Gain 1d2 Temp Wounds             |
 | Surgical tools |  25 Crown |   1   | Required for surgery; \+2 to Medical Lore |
 | Antitoxin      |  50 Crown |  1/3  |      Removes the Poisoned Condition       |
-| Healing potion | 100 Crown |  1/3  |                Restore 3 Wounds            |
 
-### **Healing Potion Rules**
-
-- **Action:** Minor Action to drink  
-- **Effect:** Restore 3 Wounds.  
-- **Limit:** Drinking multiple potions between rests causes Trauma  
-  - First potion: No penalty  
-  - Each additional potion: \+1 Trauma
-
-**Example:** Marcus drinks a healing potion, restoring 3 Wounds. Later that same day (before resting), he drinks another \- he heals 3 Wounds but gains 1 Trauma.
+**Note:** For premade Healing Potions, see the Alchemy chapter's Vital Oil Recipes - Alchemy is the one system that produces them, so its Common/Uncommon/Rare tiers are the only stats you need.
 
 ---
 
@@ -152,11 +143,11 @@ Material components required for Arcane casting.
 |:--------------------|:---------:|:-----:|:--------------------------------------------------------------------------------------:|
 | Religious codex     | 100 Crown |   1   |                               Required for Divine casters                              |
 | Holy symbol         |  5 Crown  |  1/3  |                     Required for Divine casters; focus for prayers                     |
-| Incense (10 sticks) |  5 Crown  |  1/3  | Ritual offering; can satisfy Deep Devotion's sacrifice requirement (magic_overview.md) |
+| Incense (10 sticks) |  5 Crown  |  1/3  | Ritual offering; can satisfy Deep Devotion's sacrifice requirement ([[Magic Overview|magic_overview]]) |
 
 **Spell Supply Notes:**
 
-- Arcane scrolls (Quick- or Stable-Scribed) consume 1 sheet of Arcane Parchment per scroll; Arcane spells are learned from a Spellbook \- see magic_overview.md  
+- Arcane scrolls (Quick- or Stable-Scribed) consume 1 sheet of Arcane Parchment per scroll; Arcane spells are learned from a Spellbook \- see [[Magic Overview|magic_overview]]  
 - Divine casting requires a Holy Symbol and Religious Codex  
 - Protect scrolls from water \- wet parchment is ruined
 
@@ -216,9 +207,9 @@ Attempting skilled work **without proper tools:**
 
 | Mount        |   Cost    |                                   Notes                                    |
 |:-------------|:---------:|:--------------------------------------------------------------------------:|
-| Mule         | 90 Crown  |  Hardy pack animal, stubborn and reliable (see Mount Stats, traveling.md)  |
-| Riding Horse | 140 Crown | Swift travel mount, not trained for battle (see Mount Stats, traveling.md) |
-| War Horse    | 800 Crown |          Battle-trained destrier (see Mount Stats, traveling.md)           |
+| Mule         | 90 Crown  |  Hardy pack animal, stubborn and reliable (see [[Mount Stats|traveling]])  |
+| Riding Horse | 140 Crown | Swift travel mount, not trained for battle (see [[Mount Stats|traveling]]) |
+| War Horse    | 800 Crown |          Battle-trained destrier (see [[Mount Stats|traveling]])           |
 
 | Tack & Harness |   Cost   | Slots |            Notes           |
 |:---------------|:--------:|:-----:|:--------------------------:|

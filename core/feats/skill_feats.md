@@ -18,7 +18,7 @@ You move like a hunter closing on game - low profile, weight on the outside of t
 A lock is a puzzle with a time limit - one that gives up its secrets to steady hands, a feel for tension, and an ear for the pins.
 
 **Prerequisites:** \+2 ranks in Lockpicking  
-**Benefit:** You have advantage on Lockpicking checks against any lock you've had at least 1 minute to inspect first. When you lack proper Thieves' Tools, your Improvised Efforts penalty (equipment/supplies.md) for Lockpicking is only \-2 instead of \-6 \- a hairpin or blade tip is enough for you. Once you have \+3 ranks in Lockpicking, picking a lock with a DC of 12 or lower only takes a Minor Action.
+**Benefit:** You have advantage on Lockpicking checks against any lock you've had at least 1 minute to inspect first. When you lack proper Thieves' Tools, your Improvised Efforts penalty ([[Supplies|supplies]]) for Lockpicking is only \-2 instead of \-6 \- a hairpin or blade tip is enough for you. Once you have \+3 ranks in Lockpicking, picking a lock with a DC of 12 or lower only takes a Minor Action.
 
 ---
 

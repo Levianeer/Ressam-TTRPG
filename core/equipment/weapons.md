@@ -10,7 +10,7 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Versatile:** Can be used one or two-handed with different damage
 
-- **Reach:** Can strike opponents X ft away
+- **Reach:** How far a weapon threatens, given as a Reach Category rather than a raw distance - see Reach Categories, below. Wielding a weapon at Medium Reach or higher means a creature moving from outside your Reach to within it provokes an Opportunity Attack from you, and you cannot target an adjacent creature with it. Reach Category also governs Parry - see [[Maneuver|maneuvers]]
 
 - **Throwable:** Can be thrown (normal range/max range in feet)
 
@@ -19,6 +19,20 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 - **Penetrant:** Ignores AR equal to half your ranks in that weapon's associated Skill (rounded down)
 
 - **Bypasses Block:** This attack cannot be stopped by the Block Style of Maneuver, as though it were a Critical Hit for that purpose
+
+### Reach Categories
+
+| Reach Category | Squares | Who has it |
+| :---- | :---: | :---- |
+| Touch | Adjacent only | Unarmed/Brawling attacks |
+| Short | Adjacent only | One-handed sidearms - Dagger, Knife, Shortsword, Scimitar, Broadsword, Mace, Club, Battle Axe |
+| Medium | 2 squares (10 ft) | Two-handed swords and long thrusting blades (Longsword, Greatsaber, Greatsword, Warblade, Rapier, Estoc), plus other staff-length arms (Spear, Quarterstaff, Whip, Weighted Chain, Warhammer, Greatclub) |
+| Long | 3 squares (15 ft) | Dedicated infantry polearms - Halberd, Glaive |
+| Very Long | 4+ squares (20 ft+) | The pike, alone - built to out-reach everything else on the field |
+
+Touch and Short both only reach Adjacent - the split is purely ordinal, not spatial: Touch still ranks below Short in a direct comparison (see [[Reach|combat]]), it just never runs into a "can't reach them" problem the way Medium+ can.
+
+**Parry vs. Reach:** Your Parry roll has Disadvantage if the attacker's weapon Reach Category is strictly greater than your Parry weapon's ([[Maneuver|maneuvers]]).
 
 **Carrying Slots:** A weapon in hand or in a sheath/holster you're actively wearing costs no Slots. The Slots column applies to a weapon carried as a spare. Weapons with the Two-Handed property cost a minimum of 2 Slots this way regardless of bulk.
 
@@ -62,7 +76,7 @@ quirks below.
   the other two). It's self-contained and always ready to fire the instant it's loaded \- no match
   to light, no pan to uncover, no extra step of any kind. All three lock types can be pre-loaded in
   numbers and chain-fired the classic cavalry way \- drop the spent weapon as a Free Action, draw a
-  fresh loaded one as a single Object Interaction (see Action Economy, combat.md \- you may draw any
+  fresh loaded one as a single Object Interaction (see [[Action Economy|combat]] \- you may draw any
   number of weapons this way at once, hands permitting), and fire it with your Major Action, all in
   the same turn \- but Wheel-lock is the only one that can do it with no strings attached. Match-lock
   only keeps pace if every spare was lit before the fight and its 10-round timer hasn't run out, and
@@ -111,17 +125,17 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 | Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Longsword | 1d6 \+ 2 Slashing | Versatile (Two-Handed 1d8 \+ 2) | 11-12 | 100 Crown | 1 |
-| Greatsaber | 1d6 \+ 2 Slashing | Versatile (Two-Handed 2d6) | \- | 150 Crown | 1 |
-| Greatsword | 1d12 Slashing | Two-Handed | 11-12 | 200 Crown | 2 |
-| Warblade | 1d10 \+ 2 Slashing | Two-Handed | \- | 350 Crown | 2 |
+| Longsword | 1d6 \+ 2 Slashing | Versatile (Two-Handed 1d8 \+ 2), Reach (Medium) | 11-12 | 100 Crown | 1 |
+| Greatsaber | 1d6 \+ 2 Slashing | Versatile (Two-Handed 2d6), Reach (Medium) | \- | 150 Crown | 1 |
+| Greatsword | 1d12 Slashing | Two-Handed, Reach (Medium) | 11-12 | 200 Crown | 2 |
+| Warblade | 1d10 \+ 2 Slashing | Two-Handed, Reach (Medium) | \- | 350 Crown | 2 |
 
 **RAPIERS & FENCING** *(Rapiers & Fencing Skill)*
 
 | Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Rapier | 1d8 Piercing | Finesse | 10-12 | 120 Crown | 1 |
-| Estoc | 1d10 Piercing | Two-Handed, Finesse, Penetrant | 10-12 | 150 Crown | 2 |
+| Rapier | 1d8 Piercing | Finesse, Reach (Medium) | 10-12 | 120 Crown | 1 |
+| Estoc | 1d10 Piercing | Two-Handed, Finesse, Penetrant, Reach (Medium) | 10-12 | 150 Crown | 2 |
 
 **AXES & HAMMERS** *(Axes & Hammers Skill)*
 
@@ -129,21 +143,19 @@ When a weapon with the firearm property is created, it may be made with more tha
 | :---- | :---- | ----- | :---: | ----- | :---: |
 | Battle Axe | 1d8 Slashing | Versatile (Two-Handed 1d10) | 10-12 | 70 Crown | 2 |
 | Mace | 1d8 Bludgeoning | Light | \- | 60 Crown | 1 |
-| Warhammer | 1d10 Bludgeoning | Two-Handed, AR degrades by 2 instead of 1 | 11-12 | 100 Crown | 2 |
+| Warhammer | 1d10 Bludgeoning | Two-Handed, AR degrades by 2 instead of 1, Reach (Medium) | 11-12 | 100 Crown | 2 |
 | Club | 1d6 Bludgeoning | \- | \- | 5 Crown | 1 |
-| Greatclub | 2d4 Bludgeoning | Two-Handed | \- | 10 Crown | 2 |
+| Greatclub | 2d4 Bludgeoning | Two-Handed, Reach (Medium) | \- | 10 Crown | 2 |
 
 **POLEARMS** *(Polearms Skill)*
 
 | Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Spear | 1d6 Piercing | Versatile (Two-Handed 1d8), Reach 10ft, Throwable (20/40 ft) | \- | 30 Crown | 1 |
-| Pike | 1d8 Piercing | Two-Handed, Reach 15ft | \- | 50 Crown | 2 |
-| Halberd | 1d10 Slashing / Piercing | Two-Handed, Reach 10ft | \- | 100 Crown | 2 |
-| Glaive | 2d4 Slashing | Two-Handed, Reach 10ft | 11-12 | 95 Crown | 2 |
-| Quarterstaff | 1d6 Bludgeoning | Versatile (Two-Handed 2d4) | \- | 5 Crown | 1 |
-
-**Special Trait:** When you are wielding a Polearm with the Reach property, other creatures provoke an opportunity attack from you when they enter your Reach, if the attack hits the creature can’t willingly move closer to you until the end of their turn. Additionally, creatures adjacent to you cannot be targeted by a Polearm with the Reach property.
+| Spear | 1d6 Piercing | Versatile (Two-Handed 1d8), Reach (Medium), Throwable (20/40 ft) | \- | 30 Crown | 1 |
+| Pike | 1d8 Piercing | Two-Handed, Reach (Very Long) | \- | 50 Crown | 2 |
+| Halberd | 1d10 Slashing / Piercing | Two-Handed, Reach (Long) | \- | 100 Crown | 2 |
+| Glaive | 2d4 Slashing | Two-Handed, Reach (Long) | 11-12 | 95 Crown | 2 |
+| Quarterstaff | 1d6 Bludgeoning | Versatile (Two-Handed 2d4), Reach (Medium) | \- | 5 Crown | 1 |
 
 **DAGGERS & KNIVES** *(Daggers & Knives Skill)*
 
@@ -156,8 +168,8 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 | Weapon | Damage | Properties | Critical | Cost | Slots |
 | :---- | :---- | ----- | :---: | ----- | :---: |
-| Whip | 1d4 Slashing | Finesse, Reach 10ft, Trip | \- | 10 Crown | 1 |
-| Weighted Chain | 1d6 Bludgeoning | Reach 10ft, Can grapple at Reach | \- | 20 Crown | 1 |
+| Whip | 1d4 Slashing | Finesse, Reach (Medium), Trip | \- | 10 Crown | 1 |
+| Weighted Chain | 1d6 Bludgeoning | Reach (Medium), Can grapple at Reach | \- | 20 Crown | 1 |
 | Chain Flail | 1d8 Bludgeoning | Bypasses Block | 11-12 | 80 Crown | 1 |
 
 ---

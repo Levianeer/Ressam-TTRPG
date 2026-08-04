@@ -47,7 +47,7 @@ Attributes range from 0 (wholly absent) to 5 (peak mortal potential).
 | **Faith** | FAI | Divine connection and conviction |
 | **Charisma** | CHA | Social influence, force of personality |
 
-**A 0 in an Attribute** is a complete absence of that capacity, not just poor - the same way an unranked Skill sits at 0 until trained. It's a legitimate choice at character creation (see Character Creation), not only a racial exception. **An Attribute can never go below 0** - if an effect would push one lower, the character dies.
+**A 0 in an Attribute** is a complete absence of that capacity, not just poor - the same way an unranked Skill sits at 0 until trained. It's a legitimate choice at character creation (see [[Character Creation|character_creation]]), not only a racial exception. **An Attribute can never go below 0** - if an effect would push one lower, the character dies.
 
 ---
 
@@ -55,13 +55,13 @@ Attributes range from 0 (wholly absent) to 5 (peak mortal potential).
 
 Reading and writing are far from universal in Ressam \- most people never learn.
 
-**Automatic Literacy:** A character with **MIND 3+** at character creation is literate, able to read and write every language they know. Certain Careers (see Careers) grant literacy as well, regardless of MIND.
+**Automatic Literacy:** A character with **MIND 3+** at character creation is literate, able to read and write every language they know. Certain Careers (see [[Careers|careers]]) grant literacy as well, regardless of MIND.
 
 **Below MIND 3:** Illiterate by default, unless literacy is granted by Career. Literacy determined this way is fixed at character creation \- raising MIND afterward (leveling, etc.) does not retroactively grant it.
 
 **Learning to Read Later:** An illiterate character can still choose to learn to read during play. This isn't automatic and has no fixed cost or timeline \- work it out with your DM.
 
-**Note:** Spellcasting requires literacy (see Magic Overview) \- an illiterate character cannot invest in an Arcane or Divine school, regardless of ARC or FAI, until they learn to read.
+**Note:** Spellcasting requires literacy (see [[Magic Overview|magic_overview]]) \- an illiterate character cannot invest in an Arcane or Divine school, regardless of ARC or FAI, until they learn to read.
 
 ---
 
@@ -74,11 +74,11 @@ Skills range from 0 (untrained) to 5 (world-renowned master). Each is tied to on
 **1d12 \+ Skill Ranks \+ Attribute** vs. **DC**  
 **Note:** Only call for rolls when failure is reasonably possible.
 
-**Trained:** The Attribute only applies once you have 1 or more Skill Ranks in that skill. An untrained skill (0 Ranks) rolls **1d12** alone \- no Skill Ranks, no Attribute. This applies anywhere a Skill adds an Attribute to a roll, including Weapon Skill on Attack Rolls (see Combat) and Magic School Skill on Spell Modifier (see Magic Overview).
+**Trained:** The Attribute only applies once you have 1 or more Skill Ranks in that skill. An untrained skill (0 Ranks) rolls **1d12** alone \- no Skill Ranks, no Attribute. This applies anywhere a Skill adds an Attribute to a roll, including Weapon Skill on Attack Rolls (see [[Combat|combat]]) and Magic School Skill on Spell Modifier (see [[Magic Overview|magic_overview]]).
 
 ### **Setting a Difficulty Class (DC)**
 
-Ressam uses an eight-tier DC scale for Skill Checks, Ward Checks, Minor Magic, and Alchemy crafting alike. Pick a tier by how difficult the task is narratively; you rarely need to reach for a number outside this list.
+Ressam uses a nine-tier DC scale for Skill Checks, Ward Checks, Minor Magic, and Alchemy crafting alike. Pick a tier by how difficult the task is narratively; you rarely need to reach for a number outside this list.
 
 | Tier | DC | Example |
 | :---- | :---: | :---- |
@@ -87,6 +87,7 @@ Ressam uses an eight-tier DC scale for Skill Checks, Ward Checks, Minor Magic, a
 | Medium | 10 | Picking a simple lock, patching a minor wound |
 | Tricky | 12 | Balancing on a narrow ledge, talking down a nervous guard |
 | Hard | 15 | Persuading a skeptical noble, disarming a snare |
+| Grueling | 17 | Picking a masterwork lock under time pressure, holding a collapsing line |
 | Very Hard | 20 | Forging a noble's seal, scaling a sheer cliff in a storm |
 | Incredibly Hard | 22 | Snapping manacles bare-handed, resisting a curse's full grip |
 | Impossible | 25 | Outrunning a warhorse on foot, staring down a god without flinching |
@@ -193,7 +194,7 @@ Take 1d6 bludgeoning damage per 5 ft fallen, creature is forced prone unless dam
 
 ### **Food and Water**
 
-On average, a character can go three days without rations, each day after they gain a level of Trauma and cannot be healed until they have consumed a ration. A full day of hex travel also consumes 1 ration per character (see Traveling).
+On average, a character can go three days without rations, each day after they gain a level of Trauma and cannot be healed until they have consumed a ration. A full day of hex travel also consumes 1 ration per character (see [[Traveling|traveling]]).
 
 ### **Suffocation**
 
@@ -206,11 +207,13 @@ Temporary Wounds, or Temp Wounds represents your temporary patching of a wound o
 - **Maximum Temp Wounds:** Total Wounds − current Wounds  
 - **Stacking:** Multiple sources add together  
 - **Damage Order:** Temp Wounds lost before Wounds  
-- **Duration:** Disappears after next Rest
+- **Duration:** Disappears after next Rest  
+- **Wound Penalty:** Not reduced by Temp Wounds. The penalty is based on your real, missing Wounds alone \- Temp Wounds buy you survival in the fight, not a reprieve from the penalty (see Wound Penalty, above)  
+- **Recovery:** Short, Field, and Long Rest each grant Temp Wounds \- see Resting, below
 
 ### **Wound Recovery**
 
-Wounds don't refill on the Short/Field/Long Rest cadence (see Resting, below, for Mana and Trauma recovery) \- they heal on their own, slower track:
+Permanent Wounds don't refill on the Short/Field/Long Rest cadence (see Resting, below, for Mana, Trauma, and Temp Wound recovery) \- they heal on their own, slower track:
 
 -   **Attended:** Regain **1 Wound per 2 days** while actively attended by a medic or doctor (this may be a party member). The patient must rest and do nothing beyond light physical work; the medic is likewise occupied and cannot spend that time doing anything else productive.
 -   **Unattended:** Regain **1 Wound per 2 weeks**. This is a deliberately punitive floor \- a medic-less party isn't stuck healing forever, but attended care is dramatically better.
@@ -226,15 +229,15 @@ Carrying capacity is tracked in **Slots**, not weight. Check your Slots when you
 
 Size modifies your Slot total, rounding down:
 
-|  Size  | Slots Modifier | Space \& Reach |
-|:------:|:--------------:|:--------------:|
-| Small  |     × 0.5      |      5 ft      |
-| Medium |      × 1       |      5 ft      |
-| Large  |      × 2       |     10 ft      |
-|  Huge  |      × 4       |     15 ft      |
+|  Size  | Slots Modifier | Space (Squares) | Reach Category |
+|:------:|:--------------:|:--------------:|:--------------:|
+| Small  |     × 0.5      |   5 ft (1×1)   |      Short      |
+| Medium |      × 1       |   5 ft (1×1)   |      Short      |
+| Large  |      × 2       |  10 ft (2×2)   |     Medium      |
+|  Huge  |      × 4       |  15 ft (3×3)   |      Long       |
 
-**Space:** How much room a creature occupies.
-**Reach:** How far its unarmed melee reach extends (see Combat for reach-based rules like Opportunity Attacks).
+**Space:** How much room a creature occupies, in grid squares (see [[Battlemap \& Positioning|combat]]).
+**Reach:** How far its unarmed melee reach extends, as a Reach Category (see [[Reach|weapons]] for what Reach Category means for the Maneuver and Opportunity Attack rules).
 
 **Encumbered (items exceed Slots):** Speed drops to 5 ft; disadvantage on physical checks; cannot rest.
 
@@ -256,30 +259,33 @@ A **Backpack** costs no Slots itself, but is required to use your full Slot coun
 
 ## Resting
 
-**Note:** Wounds do not heal on this ladder \- see Wound Recovery, above.
+**Note:** Permanent Wounds do not heal on this ladder \- see Wound Recovery, above. Temp Wounds do, below.
 
-### **Short Rest (1 Hour)**
+### **Short Rest (2 Hours)**
 
-- No Mana recovery  
+- Regain 1 Temp Wound  
+- Arcane: Regain 1 Mana. Divine Mana is restored solely through Prayer, not this ladder (see [[Magic Overview|magic_overview]])  
 - Trauma: Medical Lore DC 15 to remove 1 level  
 - Can use: Armorer, Medical Lore, Scribing, Prayer etc  
 - Interrupted by combat
 
-### **Field Rest (6 Hours)**
+### **Field Rest (8 Hours)**
 
-- Regain Mana equal to **MIND** (Arcane casters only \- Divine Mana is restored solely through Prayer, see magic_overview.md)  
-- Trauma: Medical Lore DC 15 to remove 2 additional level  
+- Regain 2 Temp Wounds  
+- Arcane: Regain Mana equal to **MIND**. Divine Mana is restored solely through Prayer, not this ladder (see [[Magic Overview|magic_overview]])  
+- Trauma: Medical Lore DC 15 to remove 2 levels  
 - Can use: Armorer, Medical Lore, Scribing, Prayer etc  
-- **Requires:** Shelter, watch rotation, defensible position, 1 ration per character
+- **Requires:** Shelter (a tent, lean-to, or similar \- not a permanent structure), watch rotation, defensible position, 1 ration per character (trail food)
 
 ### **Long Rest (8 Hours)**
 
-- Regain Mana equal to **MIND × 3**, up to your Maximum Mana (Arcane casters only \- Divine Mana is restored solely through Prayer, see magic_overview.md)  
-- Trauma: Remove 1 level automatically, Medical Lore DC 15 to remove 2 additional level  
+- Regain Temp Wounds equal to your missing Wounds (fully topped off)  
+- Arcane: Regain Mana equal to **MIND × 3**, up to your Maximum Mana. Divine Mana is restored solely through Prayer, not this ladder (see [[Magic Overview|magic_overview]])  
+- Trauma: Medical Lore DC 15 to remove 3 levels  
 - Can use: Armorer, Medical Lore, Scribing, Prayer etc  
-- **Requires:** Permanent structure in civilization with security (inn, barracks, temple, etc.)
+- **Requires:** **Good Shelter** (a permanent, secure structure \- inn, barracks, temple, private home, etc. \- not a tent or camp), **Good Food** (a proper hot meal, Meal common or better \- see [[Supplies|supplies]], not trail rations), civilization with security
 
-**Note:** Field Rests and Long Rests provide no benefits if their shelter requirements aren't met.
+**Note:** Field Rests and Long Rests provide no benefits if their shelter and food requirements aren't met. Field Rest and Long Rest take the same 8 hours \- what separates them is the quality of shelter and food required, not the time spent.
 
 ---
 
@@ -289,22 +295,22 @@ Trauma represents accumulated stress and strain beyond Wound loss \- fatigue, pr
 
 | Level | Effect              |
 |:------|:--------------------|
-| 1-2   | Manageable          |
-| 3-4   | Dangerous           |
-| 5-9   | Critical            |
-| 10    | **Automatic Death** |
+| 1     | Manageable          |
+| 2     | Dangerous           |
+| 3-4   | Critical            |
+| 5     | **Automatic Death** |
 
 **Note:** These labels describe how dangerous your condition is narratively \- the mechanical penalty scales continuously (subtract your current Trauma level from all rolls). No separate effect triggers at each band on its own.
 
 **Penalties:** Subtract Trauma level from **all** d12 rolls, wards and checks.
 
-**Sources:** Trauma is not a byproduct of ordinary combat damage \- there is no automatic Trauma from taking a hit, dropping to 0 Wounds, or being Dying (that cost is paid through the Wound Penalty instead). Trauma accrues only from specific, named sources: privation (starvation, Forced March \- see Food and Water and Traveling), a handful of paid Feat and spell costs that explicitly grant it (Deadly Critical's crit rider, Stress Inoculation, Deep Devotion's fasting, Temporal Fortification's backlash, and similar), and anything else that explicitly says so. If a rule doesn't name Trauma, it doesn't grant it.
+**Sources:** Trauma is not a byproduct of ordinary combat damage \- there is no automatic Trauma from taking a hit, dropping to 0 Wounds, or being Dying (that cost is paid through the Wound Penalty instead). Trauma accrues only from specific, named sources: privation (starvation, Forced March \- see Food and Water and [[Traveling|traveling]]), a handful of paid Feat and spell costs that explicitly grant it (Stress Inoculation, Deep Devotion's fasting, Temporal Fortification's backlash, and similar), and anything else that explicitly says so. If a rule doesn't name Trauma, it doesn't grant it.
 
 ---
 
 ## Basic Moves
 
-Basic Moves are the simple, universal actions everyone can take on their turn - proactively setting up an exchange, rather than the reactive Maneuver (see Combat) that answers one.
+Basic Moves are the simple, universal actions everyone can take on their turn - proactively setting up an exchange, rather than the reactive Maneuver (see [[Combat|combat]]) that answers one.
 
 ### **Dashing**
 
@@ -433,7 +439,7 @@ Draw an enemy's focus entirely onto you, making it harder for them to threaten a
 | Torch   | 20 ft  | \+20 ft | 6 turns              |
 | Lantern | 30 ft  | \+30 ft | 36 turns / oil flask |
 
-**Turns:** A Turn is 10 minutes, the standard unit of dungeon/site exploration (see Dungeon Turns, Exploration). Light durations above are tracked on one shared party tracker, not per character. **Optional Rule:** groups who prefer real-time light tracking may instead treat these durations as 1 hour (Candle), 2 hours (Torch), and 12 hours per flask (Lantern) \- but this abandons the shared-tracker/wandering-encounter tie-in below.
+**Turns:** A Turn is 10 minutes, the standard unit of dungeon/site exploration (see [[Dungeon Turns|dungeon_turns]]). Light durations above are tracked on one shared party tracker, not per character. **Optional Rule:** groups who prefer real-time light tracking may instead treat these durations as 1 hour (Candle), 2 hours (Torch), and 12 hours per flask (Lantern) \- but this abandons the shared-tracker/wandering-encounter tie-in below.
 
 **Low-Light Vision:** Treat dim light as bright within range.  
 **Darkvision:** See darkness as dim light within range (grayscale only).

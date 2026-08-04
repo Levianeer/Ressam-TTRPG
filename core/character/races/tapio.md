@@ -20,7 +20,7 @@ You may change it using the Size Changing feature.
 
 **Mystikal Heritage:** You have \+3 to Wards vs charmed and fear effects. When killed, the soul explosively returns to primordial energy. The creature can only be restored back to life by means of a god's miracle.  
 **Nature's Form:** Natural AR \+2 (bark skin), vulnerable to fire damage.  
-**Photosynthesis:** You gain the benefits of a Short Rest if you bask in sunlight for 1 hour.  
+**Photosynthesis:** You gain the benefits of a Short Rest if you bask in sunlight for 2 hours.  
 **Size Changing:** With 1 minute concentration (out of combat), adjust size:
 
 - **Small:** \+1 to DEX Wards and Stealth, \-5 ft movement.  

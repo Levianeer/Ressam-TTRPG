@@ -23,7 +23,7 @@ A golem is bound purpose wearing a body \- stone, metal, earth, or flesh animate
 **Boundless Strength:** Your current STR Attribute CAP is increased by 2 (to a maximum of 12 at level 12).  
 **Built for Impact:** Your unarmed strikes deal an additional 2 damage.  
 **Constructed Nature:** You are immune to poison and disease. You don't need food, water, or air to survive.  
-**Cannot Heal Naturally:** Cannot heal from natural rest but CAN be healed by Cultivation/Benediction magic. You must be healed magically or repaired using an Armorer check (DC 13, 1 hour, restores 2 Wounds). You can repair yourself if you have Armorer ranks and Armorer's Tools.  
+**Cannot Heal Naturally:** Cannot heal from natural rest but CAN be healed by Cultivation magic. You must be healed magically or repaired using an Armorer check (DC 13, 1 hour, restores 2 Wounds). You can repair yourself if you have Armorer ranks and Armorer's Tools.  
 **Choose 1 Elemental Form:**
 
 | Form | Attribute Penalty | Benefit |

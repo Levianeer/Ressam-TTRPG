@@ -56,7 +56,9 @@ Faith magic always requires Faith \- no exceptions. The source doesn't have to b
 
 ## Healing
 
-Magical healing should almost always restore Temporary Wounds rather than permanent Wounds, outside of exceptional circumstances.
+Magical healing should almost always restore Temporary Wounds rather than permanent Wounds, outside of exceptional circumstances. Wounds are worth more than the old HP pool ever was, so a single healing effect should restore **1 Temporary Wound** as the baseline; **2-3** is reserved for effects that cost noticeably more (higher Mana Cost, an Action economy tax, a real drawback), and **no single effect should ever exceed 3**, even at its highest scaling tier. This caps both flat amounts and anything that scales off a variable (a target's max Wounds, additional Mana spent, dice size) - scaling healing off an open-ended variable is the thing to avoid, not just picking a big flat number.
+
+**Cultivation and Alchemy are the only two sanctioned healing systems.** Every other school, Feat, or piece of equipment should route around Wound restoration entirely rather than adding a smaller version of it - a Necromancer's life-drain should refund Mana, not Wounds; a Divine Feat available to non-Cultivation casters shouldn't hand out Temp Wounds. This exists so healing stays legible as two deliberate build choices rather than a background hum every class and item quietly does a bit of. Racial traits are the narrow exception - a race's inherent, self-only, heavily-drawback-gated healing (a vampire's regeneration, a kill-triggered battlefield trait) is identity, not a repeatable system a party can lean on, and doesn't compete with Cultivation/Alchemy the way a spell or Feat available to any caster of a type would.
 
 ## Bypass
 

@@ -29,15 +29,15 @@ The party slows their pace to better spot and avoid alerting potential enemies. 
 
 ### **Forced March**
 
-The party pushes beyond normal limits. Add \+4 to their daily hex point allowance, but all characters gain 2 levels of Trauma at day’s end.
+The party pushes beyond normal limits. Add \+4 to their daily hex point allowance, but all characters gain 1 level of Trauma at day’s end.
 
-- Such a pace can be kept up until a marcher reaches 6 levels of Trauma.  
+- Such a pace can be kept up until a marcher reaches 3 levels of Trauma.  
 - Most Followers or Cohorts so fatigued will press for at least one full rest day; refusal may provoke Morale checks.  
 - If ambushed, the party is surprised.
 
 ### **Rations on the Road**
 
-Each full travel day consumes **1 ration per character**, on top of the Field Long Rest ration cost (see Core Rules, Food and Water). Traveling Clothes' "consume rations every 2 days instead of daily" benefit is an exception to this rule, not a separate one.
+Each full travel day consumes **1 ration per character**, on top of the Field Long Rest ration cost (see [[Food and Water|core_rules]]). Traveling Clothes' "consume rations every 2 days instead of daily" benefit is an exception to this rule, not a separate one.
 
 ---
 

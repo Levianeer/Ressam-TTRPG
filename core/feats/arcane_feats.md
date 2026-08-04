@@ -69,7 +69,7 @@ You feed extra power into a single casting the way a gunner double-loads a barre
 You've learned to work the way the best Shadowmancers always have \- muffling the shine and thinning the stain a casting leaves behind, rather than pretending it leaves none at all.
 
 **Prerequisites:** \+2 ranks in Shadowmancy  
-**Benefit:** Creatures who aren't actively watching for magic don't notice you cast a Shadowmancy spell unless they succeed on a Perception check contested by your Stealth. Anyone attempting to read the arcane residue you leave behind (Signature, laws\_of\_magic.md) has disadvantage on that check, and it fades in a tenth of the usual time. Once you have \+4 ranks in Shadowmancy, residue from your castings fades before most investigators can arrive at all \- treat the fade time as instant for any check made more than 1 hour after casting.
+**Benefit:** Creatures who aren't actively watching for magic don't notice you cast a Shadowmancy spell unless they succeed on a Perception check contested by your Stealth. Anyone attempting to read the arcane residue you leave behind ([[Signature|laws_of_magic]]) has disadvantage on that check, and it fades in a tenth of the usual time. Once you have \+4 ranks in Shadowmancy, residue from your castings fades before most investigators can arrive at all \- treat the fade time as instant for any check made more than 1 hour after casting.
 
 ---
 
@@ -78,7 +78,7 @@ You've learned to work the way the best Shadowmancers always have \- muffling th
 The first cut from the dark is the one that counts \- everything after it, your target is already looking for you.
 
 **Prerequisites:** \+3 ranks in Shadowmancy, DEX 3+  
-**Benefit:** While a creature cannot perceive you (you are unseen, hidden, or invisible to them), your spell attack rolls against that creature score a critical hit on 10-12 instead of just 12 (Critical Hits, combat.md). The instant they perceive you, this reverts to normal \- it rewards the strike from nothing, not a sustained edge.
+**Benefit:** While a creature cannot perceive you (you are unseen, hidden, or invisible to them), your spell attack rolls against that creature score a critical hit on 10-12 instead of just 12 ([[Critical Hits|combat]]). The instant they perceive you, this reverts to normal \- it rewards the strike from nothing, not a sustained edge.
 
 ---
 
@@ -89,7 +89,7 @@ The first cut from the dark is the one that counts \- everything after it, your 
 The old lesson every elemental caster learns the hard way: fanning a flame that's already lit costs a fraction of what conjuring one from nothing does.
 
 **Prerequisites:** \+2 ranks in Aeromancy, Geomancy, Hydromancy, or Pyromancy  
-**Benefit:** Choose one of your chosen elemental schools. When you attempt a Minor Magic effect (minor\_magic.md) with that school that redirects something already present and active \- fanning an existing flame, diverting a flowing current, riding a standing wind, shifting loose earth \- rather than forcing something the environment resists, treat the DC one tier easier (Very Hard becomes Hard, Hard becomes Medium, and so on), and you may achieve an effect one scale category larger (per the Mana table, minor\_magic.md) for the same Mana cost.  
+**Benefit:** Choose one of your chosen elemental schools. When you attempt a [[Minor Magic|minor_magic]] effect with that school that redirects something already present and active \- fanning an existing flame, diverting a flowing current, riding a standing wind, shifting loose earth \- rather than forcing something the environment resists, treat the DC one tier easier (Very Hard becomes Hard, Hard becomes Medium, and so on), and you may achieve an effect one scale category larger (per the [[Minor Magic|minor_magic]] Mana table) for the same Mana cost.  
 **Special:** You may select this feat multiple times. Each time it applies to a different elemental school.
 
 ---
@@ -101,7 +101,7 @@ The old lesson every elemental caster learns the hard way: fanning a flame that'
 A scribe who never lets their reserve outrun their control - the difference between a workshop and a powder keg.
 
 **Prerequisites:** \+2 ranks in Crafting or Arcane Lore, \+2 ranks in any Arcane school  
-**Benefit:** Your Stable-Scribed carry cap (Instability, magic\_overview.md) increases by your Crafting or Arcane Lore rank, whichever is higher \- a steady hand can safely hold more concentrated reserve than the cap otherwise allows.
+**Benefit:** Your Stable-Scribed carry cap ([[Instability|magic_overview]]) increases by your Crafting or Arcane Lore rank, whichever is higher \- a steady hand can safely hold more concentrated reserve than the cap otherwise allows.
 
 ---
 

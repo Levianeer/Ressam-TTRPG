@@ -41,7 +41,7 @@ Actions resolve highest to lowest each round.
 
 **1d12 \+  Weapon Skill \+ Attribute vs. Target's Evasion**
 
-**Trained:** As with all Skill-based rolls, the Attribute only applies once you have 1 or more ranks in the Weapon Skill used (core_rules.md, Skill Check Formula). An untrained attack rolls **1d12** alone.
+**Trained:** As with all Skill-based rolls, the Attribute only applies once you have 1 or more ranks in the Weapon Skill used ([[Skill Check Formula|core_rules]]). An untrained attack rolls **1d12** alone.
 
 ### **Damage Roll**
 
@@ -68,9 +68,9 @@ Critical Hits occur on a **Natural 12** on attack rolls.
 **Effects:**
 
 - **Roll damage twice, take the higher result.**  
-- Bypasses the Parry and Block Styles of Maneuver (Dodge is unaffected - see maneuvers.md)
+- Bypasses the Parry and Block Styles of Maneuver (Dodge is unaffected - see [[Maneuvers|maneuvers]])
 
-Crits don't grant Trauma on their own \- their pressure is indirect, since rolling twice raises the odds of landing in a higher Wound tier (see Wounds and Survival). `Deadly Critical` (see Feats) is the one deliberate, paid-for exception that converts a crit directly into Trauma.
+Crits don't grant Trauma \- their pressure is indirect, since rolling twice raises the odds of landing in a higher Wound tier (see [[Wounds and Survival|core_rules]]).
 
 **Expanded Crit Range:** Some weapons crit on 11-12, 10-12 or even 9-12.  
 Features and Feats can expand this further.
@@ -99,7 +99,7 @@ When hit:
 
 1. Subtract AR from damage  
 2. Armor loses 1 AR (degradation)  
-3. Remaining damage converts to Wounds (see Wounds and Survival)
+3. Remaining damage converts to Wounds (see [[Wounds and Survival|core_rules]])
 
 **Note:** A Critical Hit can still deal 0 Wound damage against fresh, heavy armor \- that's coherent with the armor fiction, not a bug.
 
@@ -112,13 +112,58 @@ Every hit (regardless of Wound damage) reduces armor by 1 AR.
 | AR 1+ | Functions normally |
 | AR 0 | **Broken** \- no protection |
 
-**Broken Armor:** Rigid armor cannot be field-repaired once broken and must be reforged by a blacksmith (1/2 of original price); Flexible armor can still be field-repaired. See armor.md for full repair rules.
+**Broken Armor:** Rigid armor cannot be field-repaired once broken and must be reforged by a blacksmith (1/2 of original price); Flexible armor can still be field-repaired. See [[Armor|armor]] for full repair rules.
 
 ### **Armor Penalty**
 
-Reduces Evasion, your Dodge Style roll (Maneuver, maneuvers.md), and your Spell Modifier.
+Reduces Evasion, your Dodge Style roll ([[Maneuver|maneuvers]]), and your Spell Modifier.
 
 **Reducing Penalty:** Each rank in Armorer reduces Penalty by 1 (minimum 0).
+
+---
+
+## Battlemap & Positioning
+
+Ressam is played on a grid of 5-foot squares, minis-and-battlemap style - every Speed, Reach, and Range value in this book is already denominated in that unit.
+
+- **Size & Squares:** A creature occupies a number of squares matching its Space ([[Size|core_rules]]) - Small/Medium: 1 square, Large: 2x2, Huge: 3x3.
+- **Measuring Distance:** Count outward square-by-square from your square to the nearest square of the target. Every square costs the same to enter, whether moved orthogonally or diagonally.
+- **Areas of Effect:** Count outward from the origin square the same way; a radius reaches every square its count extends to, no partial-coverage rulings needed.
+
+---
+
+## Reach
+
+Not every weapon threatens the same amount of ground. A dagger only menaces whoever's standing right next to you; a pike keeps anyone dangerous a good few paces back. Weapons carry a **Reach Category** - Touch, Short, Medium, Long, or Very Long - that says how many squares out they can strike (see [[Reach Categories|weapons]] for the full table).
+
+That difference matters most the moment two weapons actually meet. Charging past the point of someone's spear to get in close is dangerous - they get a free swing at you for it (Closing the Distance, under Opportunity Attacks, below). And once you're trading blows, trying to parry a weapon much longer than yours is a losing proposition - your blade simply isn't there yet when theirs already is (see Parry, in [[Maneuvers|maneuvers]]).
+
+| Category | Distance |
+| :---- | :---- |
+| Touch / Short | Adjacent only |
+| Medium | 2 squares (10 ft) |
+| Long | 3 squares (15 ft) |
+| Very Long | 4+ squares (20 ft+) |
+
+Touch and Short cover identical ground - there's no such thing as "closer than adjacent" on a grid. The split still matters below: Touch (a bare fist) ranks below Short (an actual blade) even at the same distance.
+
+**How They Interact:** Every rule Reach drives just compares your Category to theirs on the list above - nothing stacks, nothing scales with how many steps apart you are.
+
+| Compared to your opponent's Reach | What happens |
+| :---- | :---- |
+| **Lower than yours** | If your Reach is Medium or higher, them closing from outside your Reach into it provokes an Opportunity Attack from you. |
+| **Equal to yours** | No effect either way - a level exchange. |
+| **Higher than yours** | Your Parry has Disadvantage against them, and Riposte is off the table unless something (like Dodge's Reposition) closes the gap first. |
+
+---
+
+## Flanking
+
+You and an ally flank a target when your two squares are the **exact mirror of each other** across the target's space - not merely "somewhere on opposite sides." Picture the ring of squares touching the target: flanking requires you and your ally to occupy a directly-opposite pair in that ring (e.g. north and south, or northeast and southwest). There's no partial credit for a near-opposite position, and no drawing lines through corners to make a marginal angle count - if your square isn't the exact mirror of your ally's, you are not flanking.
+
+**Effect:** Your melee attack rolls against a target you're flanking have Advantage.
+
+**Larger Targets:** Against Large and Huge creatures, judge "directly opposite" the same way against the far side of their space, rather than a single mirrored square.
 
 ---
 
@@ -136,9 +181,11 @@ Reduces Evasion, your Dodge Style roll (Maneuver, maneuvers.md), and your Spell 
 
 When a creature **leaves your melee reach**, you may use your Reaction for one melee attack.
 
+**Closing the Distance:** If you're wielding a weapon with Reach Medium or higher, a creature moving from outside your Reach to within it provokes the same way - the entry-side mirror of leaving reach (see [[Reach|weapons]]).
+
 **Does NOT Provoke:**
 
-- Moving within reach (Polearms excepted)
+- Moving within reach you already occupy
 - Standing from prone  
 - Forced movement (push, pull, teleport)
 - Moving after taking the Disengage action
@@ -174,22 +221,22 @@ Cover in Ressam is a binary system \- you either have it or you don't. Your DM h
 
 Conditions can be applied by numerous different sources and in a multitude of ways, magically or mundanely.
 
-| Condition | Effects |
-| :---- | :---- |
-| **Bleeding** | At the start of each of its turns, the creature takes its Bleed value \- half the damage of the hit that applied Bleeding (rounded down). Ending it takes a Major Action and a Medical Lore check (DC \= Bleed value), made on itself or by an adjacent creature. |
-| **Blinded** | Can't see. Automatically fails any check or Ward that relies on sight. Disadvantage on attack rolls; attack rolls against it have advantage. |
-| **Charmed** | Can't attack the charmer or target it with harmful effects. The charmer has advantage on Skill checks to interact with the creature socially. |
-| **Deafened** | Can't hear. Automatically fails any check or Ward that relies on hearing. |
-| **Flying** | Gains a flying Speed equal to the granting effect's value or its walking Speed, whichever is higher. If it loses this Speed or is knocked Prone while aloft, it falls (see Falling). |
-| **Frightened** | While the source of its fear is within line of sight: disadvantage on attack rolls and Skill checks. It can't willingly move closer to the source. |
-| **Grappled** | Restrained, ends if the creature is moved beyond the reach of the grappler or grappling effect. |
-| **Incapacitated** | Can't take actions or reactions (Major, Minor, Object Interaction, or Reaction). Movement is unaffected unless another effect says otherwise. |
-| **Invisible** | Attack rolls against it have disadvantage; its own attack rolls have advantage. Counts as heavily obscured for hiding and has advantage on Stealth checks. |
-| **Paralyzed** | Incapacitated, Speed 0, and can't speak. Automatically fails STR and DEX Wards. Attack rolls against it have advantage, and any melee attack that hits it is a critical hit. |
-| **Petrified** | Incapacitated, Speed 0, and unaware of its surroundings. Becomes a nonmagical stone object: weight ×10, aging stops, resistance to all damage. All other conditions and ongoing effects are suspended until it's freed. |
-| **Poisoned** | Disadvantage on attack rolls and Skill checks. |
-| **Prone** | Disadvantage on attack rolls. Melee attack rolls against it have advantage; ranged attack rolls against it have disadvantage. Can't move except to stand up, which costs half its maximum movement. |
-| **Restrained** | Speed 0; disadvantage on attack rolls; \-3 to DEX Wards; casting requires a MIND Ward (DC 23\) or the spell fails. |
-| **Silenced** | Can't speak or cast spells. |
-| **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment. |
-| **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it automatically hit, and any melee hit is a critical hit. |
+| Condition | Effects                                                                                                                                                                                                                                                                                |
+| :---- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Bleeding** | At the start of each of its turns, the creature takes its Bleed value \- half the damage of the hit that applied Bleeding (rounded down, does not degrade AR). Ending it takes a Major Action and a Medical Lore check (DC \= Bleed value), made on itself or by an adjacent creature. |
+| **Blinded** | Can't see. Automatically fails any check or Ward that relies on sight. Disadvantage on attack rolls; attack rolls against it have advantage.                                                                                                                                           |
+| **Charmed** | Can't attack the charmer or target it with harmful effects. The charmer has advantage on Skill checks to interact with the creature socially.                                                                                                                                          |
+| **Deafened** | Can't hear. Automatically fails any check or Ward that relies on hearing.                                                                                                                                                                                                              |
+| **Flying** | Gains a flying Speed equal to the granting effect's value or its walking Speed, whichever is higher. If it loses this Speed or is knocked Prone while aloft, it falls (see [[Falling                                                                                                   |core_rules]]). |
+| **Frightened** | While the source of its fear is within line of sight: disadvantage on attack rolls and Skill checks. It can't willingly move closer to the source.                                                                                                                                     |
+| **Grappled** | Restrained, ends if the creature is moved beyond the reach of the grappler or grappling effect.                                                                                                                                                                                        |
+| **Incapacitated** | Can't take actions or reactions (Major, Minor, Object Interaction, or Reaction). Movement is unaffected unless another effect says otherwise.                                                                                                                                          |
+| **Invisible** | Attack rolls against it have disadvantage; its own attack rolls have advantage. Counts as heavily obscured for hiding and has advantage on Stealth checks.                                                                                                                             |
+| **Paralyzed** | Incapacitated, Speed 0, and can't speak. Automatically fails STR and DEX Wards. Attack rolls against it have advantage, and any melee attack that hits it is a critical hit.                                                                                                           |
+| **Petrified** | Incapacitated, Speed 0, and unaware of its surroundings. Becomes a nonmagical stone object: weight ×10, aging stops, resistance to all damage. All other conditions and ongoing effects are suspended until it's freed.                                                                |
+| **Poisoned** | Disadvantage on attack rolls and Skill checks.                                                                                                                                                                                                                                         |
+| **Prone** | Disadvantage on attack rolls. Melee attack rolls against it have advantage; ranged attack rolls against it have disadvantage. Can't move except to stand up, which costs half its maximum movement.                                                                                    |
+| **Restrained** | Speed 0; disadvantage on attack rolls; \-3 to DEX Wards; casting requires a MIND Ward (DC 23\) or the spell fails.                                                                                                                                                                     |
+| **Silenced** | Can't speak or cast spells.                                                                                                                                                                                                                                                            |
+| **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment.                                                                                                                                   |
+| **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it automatically hit, and any melee hit is a critical hit.                                                 |

@@ -57,7 +57,7 @@ You have **18 points** to distribute across 8 Attributes.
 | 1-7 | 4 |
 | 8+ | 5 |
 
-**Minimum:** No Attribute below 0. An Attribute can never be reduced below 0 by any effect either - if one would, the character dies (see Attributes in Core Rules).
+**Minimum:** No Attribute below 0. An Attribute can never be reduced below 0 by any effect either - if one would, the character dies (see [[Attributes|core_rules]]).
 
 **Racial increases/decreases** are applied after distributing points to your modifier.
 
@@ -108,7 +108,7 @@ See the **Feats** chapter for the complete list.
 
 Your career provides starting equipment and currency. Purchase additional items from the **Equipment** chapter.
 
-**Armor Reminder:** Armor Penalty affects Evasion, your Dodge Style roll for Maneuver (see Combat), and spellcasting. Each 2 ranks in Armorer reduces that penalty by 1\.
+**Armor Reminder:** Armor Penalty affects Evasion, your Dodge Style roll for Maneuver (see [[Combat|combat]]), and spellcasting. Each 2 ranks in Armorer reduces that penalty by 1\.
 
 ---
 

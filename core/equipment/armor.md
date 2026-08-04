@@ -72,7 +72,7 @@ Your AR determines how much damage your armor absorbs from each hit.
 
 1. Attacker rolls damage
 2. Subtract your current AR from the damage
-3. Remaining damage (if any) converts to Wounds via the Wound Thresholds (see core_rules.md's Wounds and Survival)
+3. Remaining damage (if any) converts to Wounds via the Wound Thresholds (see [[Wounds and Survival|core_rules]])
 4. Your armor loses 1 durability (reducing your AR by 1\)
 
 **Example:** You're wearing brigandine (AR 6). An attacker hits you for 4 damage. Your armor absorbs all 4 damage, but your AR drops to 5\. Next hit, you'll only absorb 5 damage.
@@ -143,11 +143,11 @@ When armor reaches 0 durability, it provides no protection.
 
 ### **Field Repair (Armorer Skill)**
 
-Characters with the Armorer skill can repair armor during downtime, using **Armorer's Tools** (see Supplies). Repairing restores **durability equal to your Armorer rank, per hour spent working** (an untrained character, 0 Ranks, restores nothing).
+Characters with the Armorer skill can repair armor during downtime, using **Armorer's Tools** (see [[Supplies|supplies]]). Repairing restores **durability equal to your Armorer rank, per hour spent working** (an untrained character, 0 Ranks, restores nothing).
 
 This time can be spent during any Rest (Short, Field, or Long) without losing that Rest's other benefits, or as dedicated downtime outside of a Rest.
 
-**Example:** Kira (Armorer 3) repairs her brigandine (AR 6), currently at 2 durability. At 3 durability per hour, she needs 2 hours - well within a 6-hour Field Rest, but more than a 1-hour Short Rest allows. A rank 5 master would finish the same repair in under an hour; an untrained companion with the same tools restores nothing.
+**Example:** Kira (Armorer 3) repairs her brigandine (AR 6), currently at 2 durability. At 3 durability per hour, she needs 2 hours - it just fits inside a 2-hour Short Rest, with plenty of room to spare in a Field or Long Rest. A rank 5 master would finish the same repair in under an hour; an untrained companion with the same tools restores nothing.
 
 **Limitations:**
 
@@ -218,7 +218,7 @@ Shields provide active and passive defenses.
 - A shield equipped in one hand  
 - Your Reaction for the round
 
-Block is one Style of the Maneuver Reaction (see Combat chapter) - on a Minimized result, your shield's AR Bonus reduces the incoming damage. Whether the attack is Dominant, Stopped, Minimized, or Failed, your armor and shield degrade as normal.
+Block is one Style of the Maneuver Reaction (see [[Combat|combat]]) - on a Minimized result, your shield's AR Bonus reduces the incoming damage. Whether the attack is Dominant, Stopped, Minimized, or Failed, your armor and shield degrade as normal.
 
 **Buckler Exception:** The buckler grants no AR Bonus, so it reduces nothing on a Block Style Minimized result. Its benefit is the passive \+1 to Agility, which improves your Evasion and Dodge Style roll instead.
 

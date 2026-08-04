@@ -364,9 +364,9 @@
 
   <div class="card">
     <h2>Weapons</h2>
-    <p class="note">Pick the skill used to attack with each weapon - Attack Bonus (skill Total + governing Attribute) computes automatically. Trained: the Attribute only applies if that skill has 1+ Base ranks. Check "Equipped" for weapons you're wielding - like worn armor/shields, equipped weapons don't count towards Slots.</p>
+    <p class="note">Pick the skill used to attack with each weapon - Attack Bonus (skill Total + governing Attribute) computes automatically. Trained: the Attribute only applies if that skill has 1+ Base ranks. Check "Equipped" for weapons you're wielding - like worn armor/shields, equipped weapons don't count towards Slots. Reach is melee-only (see weapons.md's Reach Categories table); leave it blank and use Range instead for ranged/thrown weapons.</p>
     <table class="dyn-table" data-table="weapons" id="tbl-weapons">
-      <thead><tr><th>Name</th><th>Skill</th><th class="num-sm">Atk Bonus</th><th>Damage</th><th>Range</th><th>Properties</th><th class="num-sm">Crit Range</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
+      <thead><tr><th>Name</th><th>Skill</th><th class="num-sm">Atk Bonus</th><th>Damage</th><th>Reach</th><th>Range</th><th>Properties</th><th class="num-sm">Crit Range</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
     <button type="button" class="row-add" data-add-target="weapons">+ Add Weapon</button>
@@ -393,7 +393,17 @@
         </td>
         <td class="computed" data-col-out="atkBonus">-</td>
         <td><input type="text" data-col="damage" placeholder="1d8 Slashing"></td>
-        <td><input type="text" data-col="range" placeholder="Melee"></td>
+        <td>
+          <select data-col="reach" title="Melee weapons only. Higher Reach: Disadvantage on your opponent's Parry against you, and Medium+ threatens Closing the Distance opportunity attacks (see Reach, in combat.md).">
+            <option value="">-</option>
+            <option>Touch</option>
+            <option>Short</option>
+            <option>Medium</option>
+            <option>Long</option>
+            <option>Very Long</option>
+          </select>
+        </td>
+        <td><input type="text" data-col="range" placeholder="Ranged only, e.g. 150/300 ft"></td>
         <td><input type="text" data-col="properties"></td>
         <td><input type="number" data-col="critRange" class="num-sm" min="9" max="12" value="12" title="Crits on this value through 12 (Natural 12 by default; some weapons expand it to 11-12, 10-12, or 9-12)"></td>
         <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>

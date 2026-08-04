@@ -1,6 +1,6 @@
 ## The Turn
 
-Exploring a dungeon, ruin, or other dangerous site runs on a slower clock than combat. A **Turn** represents **10 minutes** of careful, in-fiction time \- distinct from combat's 6-second round (see Combat) and hex travel's day-long pace (see Traveling).
+Exploring a dungeon, ruin, or other dangerous site runs on a slower clock than combat. A **Turn** represents **10 minutes** of careful, in-fiction time \- distinct from combat's 6-second round (see [[Combat|combat]]) and hex travel's day-long pace (see [[Traveling|traveling]]).
 
 The DM keeps one shared tally for the whole party, not a clock on each character's sheet. Mark off a Turn whenever the party does something that costs one.
 
@@ -22,7 +22,7 @@ Fast, decisive actions (opening an unlocked door, glancing into a room, drawing 
 
 ## Light Tracker
 
-Light sources burn down in Turns, tracked on the same shared party tally (see Core Rules, Light and Vision):
+Light sources burn down in Turns, tracked on the same shared party tally (see [[Light and Vision|core_rules]]):
 
 | Source  | Duration             |
 |:--------|:---------------------|

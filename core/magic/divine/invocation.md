@@ -72,7 +72,7 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - **Effect:** Drag your Familiar through shapes of agony until it becomes a weapon of terrible purpose. Choose one armament:
 
 - **Soullance:** A spectral spear manifests in your hands.
-  - Reach 10 ft
+  - Reach (Medium)
   - Melee spell attacks deal 2d8 \+ FAI lightning damage
   - On a critical hit, the target is impaled by a spectral copy \- they take an additional 2d8 damage and their speed is 0 until they use a Major Action to wrench free
 

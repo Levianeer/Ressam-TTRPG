@@ -11,7 +11,7 @@ You can channel raw divine power into miraculous effects.
 **Prerequisites:** \+2 ranks in any Divine school, FAI 3+
 **Benefit:** Once per Field Rest or Long Rest, you may channel raw divine energy as a Major Action. Choose one effect:
 
-1. **Divine Healing:** Grant 1d4 Temporary Wounds to all allies within 30 ft
+1. **Divine Cleansing:** Remove 1 level of Trauma from all allies within 30 ft
 2. **Divine Blessing:** All allies within 30 ft gain advantage on their next attack roll, or \+3 to their next Ward
 3. **Divine Judgment:** Make a **1d12 \+ your FAI \+ your Divine school rank** roll against the FAI Ward of all creatures within 30 ft (Contested Ward) - any creature it beats becomes Frightened of you until the end of your next turn
 
@@ -66,7 +66,7 @@ Cultivation was never about giving one person everything - it's about knowing wh
 Your Familiar doesn't need your hand on it to move - it needs only your will, and a length of the same suffering that made it.
 
 **Prerequisites:** \+2 ranks in Invocation  
-**Benefit:** As a Major Action, spend 1 Mana to send your Familiar scouting. It can move up to 60 ft from you and act independently for up to 1 minute, using your Perception and Stealth scores; you can see and hear through it as though you stood in its place. This ends early if the Familiar takes damage or you cast another Invocation spell. While scouting this way, your Familiar cannot manifest as a weapon (Soul Armament, invocation.md) or take any combat action.
+**Benefit:** As a Major Action, spend 1 Mana to send your Familiar scouting. It can move up to 60 ft from you and act independently for up to 1 minute, using your Perception and Stealth scores; you can see and hear through it as though you stood in its place. This ends early if the Familiar takes damage or you cast another Invocation spell. While scouting this way, your Familiar cannot manifest as a weapon ([[Soul Armament|invocation]]) or take any combat action.
 
 ---
 
@@ -77,7 +77,7 @@ Your Familiar doesn't need your hand on it to move - it needs only your will, an
 Death has a texture to a Necromancer the way a held breath has a sound to a hunter - you've simply stopped needing to look for it.
 
 **Prerequisites:** \+2 ranks in Necration  
-**Benefit:** You have advantage on Perception and Insight checks made to detect the undead, sense how a creature died, or notice a recent death nearby. Once you have \+3 ranks in Necration, you also know immediately when a creature within 60 ft drops to 0 Wounds, even without witnessing it \- useful for triggering Mortis Harvest's Reaction (necration.md) on time.
+**Benefit:** You have advantage on Perception and Insight checks made to detect the undead, sense how a creature died, or notice a recent death nearby. Once you have \+3 ranks in Necration, you also know immediately when a creature within 60 ft drops to 0 Wounds, even without witnessing it \- useful for triggering [[Mortis Harvest|necration]]'s Reaction on time.
 
 ---
 

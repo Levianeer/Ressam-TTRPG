@@ -105,7 +105,7 @@ When combining Nouns from multiple schools:
 | **Instant** | 0 | Effect resolves immediately |
 | **1 Round** | \-2 | 6 seconds |
 | **1 Minute** | \-4 | 10 rounds |
-| **Channel (1 min)** | \-2 | Requires concentration (see Channeling rules) |
+| **Channel (1 min)** | \-2 | Requires concentration (see [[Channeling Spells|magic_overview]]) |
 
 ### 
 
@@ -141,7 +141,7 @@ When combining Nouns from multiple schools:
 
 ## Crafting in Play
 
-Every custom spell is still bound by the Laws of Magic (laws\_of\_magic.md) - the point budget above prices what's lawful, it doesn't make the unlawful possible. If a VERB \+ NOUN \+ MODIFIERS combination would cross a Law (permanent creation, touching past/future, the soul, essential nature, or no thread of connection to the target), it can't be built at any point cost.
+Every custom spell is still bound by the [[Laws of Magic|laws_of_magic]] - the point budget above prices what's lawful, it doesn't make the unlawful possible. If a VERB \+ NOUN \+ MODIFIERS combination would cross a Law (permanent creation, touching past/future, the soul, essential nature, or no thread of connection to the target), it can't be built at any point cost.
 
 Custom spells must be **learned** before use. Both Arcane and Divine casters spend a Field Rest or Long Rest to permanently add the spell to their repertoire (using the standard Learning Spells rules: 2 hours and 50 Crown per Mana Cost).
 

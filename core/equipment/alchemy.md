@@ -29,13 +29,13 @@ Catalysts determine how the final product is used.
 
 ### **Quality Tiers**
 
-Oils and Powders come in three qualities based on their rarity.
+Oils and Powders come in three qualities based on their rarity. Rarity also sets the Crafting check's DC (see Crafting, below), reading Tricky/Grueling/Very Hard off the [[DC tier table|core_rules]] \- better ingredients make a stronger product, but a harder check to actually pull off.
 
-| Tier     | Effect Bonus | Cost      |
-|:---------|:------------:|:----------|
-| Common   |     \+0      | 50 Crown  |
-| Uncommon |     \+1      | 100 Crown |
-| Rare     |     \+2      | 200 Crown |
+| Tier     | Effect Bonus | DC             | Cost      |
+|:---------|:------------:|:--------------:|:----------|
+| Common   |     \+0      | 12 (Tricky)    | 100 Crown |
+| Uncommon |     \+1      | 17 (Grueling)  | 250 Crown |
+| Rare     |     \+2      | 20 (Very Hard) | 500 Crown |
 
 **Example:** You find a Vial of Eshzera, a Vial of Uncommon Stabilizing Powder and a Vial of Rare Vital Oil in a chest.
 
@@ -45,26 +45,28 @@ Oils and Powders come in three qualities based on their rarity.
 
 **Requirements:** Alchemist's Supplies, 1 Oil \+ 1 Powder \+ 1 Catalyst
 
-**Time:** 30 minutes (Medium), 1 hour (Hard), 2 hours (Very Hard)
+**Check:** 1d12 \+ Alchemy \+ MIND vs. DC \- set by the rarity of the ingredients used (see Quality Tiers, above). A recipe's Prep Tier below sets time only, not difficulty \- a Quick recipe brewed with Rare ingredients is exactly as hard to pull off as an Elaborate one, just faster to attempt.
 
-**Check:** 1d12 \+ Alchemy \+ MIND vs. DC \- set by Complexity, using the DC tier table (core\_rules.md).
+| Prep Tier | Time       | Examples                          |
+|:----------|:-----------|:-----------------------------------|
+| Quick     | 30 minutes | Basic healing, simple poison      |
+| Involved  | 1 hour     | Resistance potion, bombs          |
+| Elaborate | 2 hours    | Powerful effects, advanced toxins |
 
-| Complexity | Examples                          |
-|:-----------|:-----------------------------------|
-| Medium     | Basic healing, simple poison      |
-| Hard       | Resistance potion, bombs          |
-| Very Hard  | Powerful effects, advanced toxins |
+**Note:** All ingredients (excluding Catalysts) must be of the same quality \- one DC applies to the whole craft.
 
-**Note:** All ingredients (excluding Catalysts) must be of the same quality.
+**Batch Size:** 1 \+ (Alchemy Skill ÷ 2\) concoctions on a Success or Critical Success
 
-**Batch Size:** 1 \+ (Alchemy Skill ÷ 2\) concoctions per success
+**Degree of Success:** Compare your roll to the DC as a Margin, resolved the same way as the Maneuver Reaction's Margin table ([[Maneuvers|maneuvers]]) \- same breakpoints, same tie-favors-you rule.
 
-**Results:**
+**Margin \= Your Check − the DC**
 
-- **Success:** Create batch  
-- **Success by 5+:** \+1 bonus concoction (free)  
-- **Failure:** Ingredients wasted  
-- **Failure by 5+:** Explosion (1d8 damage, lose ingredients)
+| Margin | Result |
+|:---|:---|
+| \+3 or higher | **Critical Success** \- Create a full batch, plus 1 bonus concoction (free) |
+| 0 to \+2 | **Success** \- Create a full batch |
+| \-1 to \-2 | **Partial Success** \- Create 1 concoction only, the rest of the ingredients are still spent |
+| \-3 or lower | **Failure** \- Ingredients wasted, no product |
 
 **Note:** All potions made via Alchemy are Tiny items \- 3 to a Slot.  
 ---
@@ -85,31 +87,32 @@ Oils and Powders come in three qualities based on their rarity.
 
 ## Vital Oil Recipes
 
-### **Healing Potion (Medium, DC 10\)**
+### **Healing Potion (Quick)**
 
 - **Ingredients:** Vital Oil \+ Amplifying Powder \+ Abkasp  
-- **Effect:** Drink (Minor Action). Restores Wounds  
-  - **Common:** Gain **3 \+ Bonus**  Wounds  
-  - **Uncommon:** Gain **3 \+ Bonus** Wounds  
-  - **Rare:** Gain **3 \+ Bonus** Wounds  
+- **Effect:** Drink (Minor Action). Restores Temporary Wounds  
+  - **Common:** Gain **1 \+ Bonus** Temp Wounds  
+  - **Uncommon:** Gain **1 \+ Bonus** Temp Wounds  
+  - **Rare:** Gain **1 \+ Bonus** Temp Wounds  
+- **Limit:** Drinking multiple Healing Potions between rests causes Trauma \- the first is free, each additional one grants \+1 Trauma  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
-### **Revitalizing Bomb (Hard, DC 15\)**
+### **Revitalizing Bomb (Involved)**
 
 - **Ingredients:** Vital Oil \+ Prolonging Powder \+ Eshzera  
-- **Effect:** Thrown (20/40 ft), 10 ft radius. Creatures gain Temporary Wounds  
-  - **Common:** Allies gain **2 \+ Bonus** Temp Wounds  
-  - **Uncommon:** Allies gain **2 \+ Bonus** Temp Wounds  
-  - **Rare:** Allies gain **2 \+ Bonus** Temp Wounds  
+- **Effect:** Thrown (20/40 ft), 10 ft radius. Allies gain Temporary Wounds  
+  - **Common:** Allies gain **1 \+ Bonus** Temp Wounds  
+  - **Uncommon:** Allies gain **1 \+ Bonus** Temp Wounds  
+  - **Rare:** Allies gain **1 \+ Bonus** Temp Wounds  
 - **Value:** 75 Crown (Common), 95 Crown (Uncommon), 135 Crown (Rare)
 
-### **Endurance Salve (Medium, DC 10\)**
+### **Endurance Salve (Quick)**
 
 - **Ingredients:** Vital Oil \+ Stabilizing Powder \+ Nat’khor  
-- **Effect:** Apply before a Short Rest. That Short Rest also automatically removes 1 additional level of Trauma, on top of any Trauma it would otherwise remove  
+- **Effect:** Apply before a Short Rest. That Short Rest also automatically removes additional levels of Trauma, on top of any Trauma it would otherwise remove  
   - **Common:** Remove 1 additional level of Trauma  
-  - **Uncommon:** Remove 1 additional level of Trauma  
-  - **Rare:** Remove 1 additional level of Trauma  
+  - **Uncommon:** Remove 2 additional levels of Trauma  
+  - **Rare:** Remove 3 additional levels of Trauma  
 - **Note:** Endurance Salves do not count towards your Healing Potions per rest.  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
@@ -117,7 +120,7 @@ Oils and Powders come in three qualities based on their rarity.
 
 ## Reactive Oil Recipes
 
-### **Corrosive Draught (Hard, DC 15\)**
+### **Corrosive Draught (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Abkasp  
 - **Effect:** Coat weapon (Minor Action). Your next melee attack within 1 minute deals bonus acid damage and ignores 3 AR, can also be Thrown (20/40 ft), 10 ft radius, lowers AR by 3 while the target is standing in the area.  
@@ -126,7 +129,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** **1d8 \+ Bonus** acid damage  
 - **Value:** 50 Crown (Common), 70 Crown (Uncommon), 110 Crown (Rare)
 
-### **Firebomb (Hard, DC 15\)**
+### **Firebomb (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Eshzera  
 - **Effect:** Thrown (20/40 ft), 10 ft radius, DEX Ward DC 20 for half  
@@ -135,7 +138,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** **3d6 \+ Bonus** fire damage  
 - **Value:** 75 Crown (Common), 95 Crown (Uncommon), 135 Crown (Rare)
 
-### **Venomshade (Hard, DC 15\)**
+### **Venomshade (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Nat’khor  
 - **Effect:** Coat weapon (Minor Action). Next hit deals bonus poison damage, END Ward DC 15 or poisoned for 1 minute  
@@ -148,7 +151,7 @@ Oils and Powders come in three qualities based on their rarity.
 
 ## Protective Oil Recipes
 
-### **Antitoxin (Medium, DC 10\)**
+### **Antitoxin (Quick)**
 
 - **Ingredients:** Protective Oil \+ Stabilizing Powder \+ Abkasp  
 - **Effect:** Drink (Minor Action). Advantage on poison Wards  
@@ -157,7 +160,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** **3 \+ Bonus** hours duration  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
-### **Smoke Bomb (Medium, DC 10\)**
+### **Smoke Bomb (Quick)**
 
 - **Ingredients:** Protective Oil \+ Stabilizing Powder \+ Eshzera  
 - **Effect:** Thrown (20/40 ft), 15 ft radius of obscuring smoke. Blocks line of sight beyond 5 ft  
@@ -166,7 +169,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** 3 minutes duration  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
-### **Stoneskin Salve (Very Hard, DC 20\)**
+### **Stoneskin Salve (Elaborate)**
 
 - **Ingredients:** Protective Oil \+ Prolonging Powder \+ Nat’khor  
 - **Effect:** Apply (Major Action). Gain bonus AR for 10 minutes  
@@ -179,7 +182,7 @@ Oils and Powders come in three qualities based on their rarity.
 
 ## Sensory Oil Recipes
 
-### **Clarity Tonic (Medium, DC 10\)**
+### **Clarity Tonic (Quick)**
 
 - **Ingredients:** Sensory Oil \+ Amplifying Powder \+ Abkasp  
 - **Effect:** Drink (Minor Action). Advantage on Perception checks  
@@ -188,7 +191,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** **15 × Bonus** minutes duration  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
-### **Flashbang (Hard, DC 15\)**
+### **Flashbang (Involved)**
 
 - **Ingredients:** Sensory Oil \+ Stabilizing Powder \+ Eshzera  
 - **Effect:** Thrown (20/40 ft), 10 ft radius. CHA Ward or blinded and deafened for 1 round  
@@ -197,7 +200,7 @@ Oils and Powders come in three qualities based on their rarity.
   - **Rare:** **DC 15 \+ Bonus**  
 - **Value:** 50 Crown (Common), 70 Crown (Uncommon), 110 Crown (Rare)
 
-### **Alertness Salve (Medium, DC 10\)**
+### **Alertness Salve (Quick)**
 
 - **Ingredients:** Sensory Oil \+ Prolonging Powder \+ Nat’khor  
 - **Effect:** Apply (Minor Action). Cannot be surprised. \+2 to initiative rolls  

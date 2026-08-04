@@ -7,7 +7,7 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Casting Time:** Major Action
 - **Range:** Touch
 - **Duration:** Instant
-- **Effect:** Make a melee spell attack roll vs. target's Evasion. On hit, deal 1d6+FAI necrotic damage. You gain Temp Wounds equal to half the damage dealt to the target (after AR reduction).
+- **Effect:** Make a melee spell attack roll vs. target's Evasion. On hit, deal 1d6+FAI necrotic damage. If this attack reduces the target to 0 Wounds, you siphon their departing essence \- regain 1 Mana.
 
 **Creeping Rot \- Mana Cost 2**
 
@@ -52,7 +52,7 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Effect:** You rip the departing life force from a dying creature. Choose one effect:
 
 - **Consume:** Regain Mana equal to half the creature's END (rounded down, minimum 1).
-- **Transfer:** Grant an ally within 30 ft Temporary Wounds equal to the creature's maximum Wounds ÷ 2\.
+- **Transfer:** Grant an ally within 30 ft Mana equal to half the creature's END (rounded down, minimum 1) instead of yourself.
 - **Bind:** Store the essence. You may release it within the next hour to cast the spell Raise Thrall with no Mana Cost (Must know the spell Raise Thrall).
 
 **Soul Rend \- Mana Cost 5**

@@ -59,7 +59,7 @@ Use guile to open an opponent up to your strikes - the single most fundamental t
 You know where the big vessels run close to the skin - throat, wrist, inner thigh - and a target who can't properly defend themselves can't stop you reaching one.
 
 **Prerequisites:** DEX 4+, \+3 ranks in Stealth, \+3 ranks in any weapon Skill  
-**Benefit:** Once per turn, when you hit with a melee weapon attack that has Advantage, the target starts Bleeding (see Conditions, combat.md) in addition to any damage the hit deals. If the target is already Bleeding, this doesn't stack \- use whichever Bleed value is higher.  
+**Benefit:** Once per turn, when you hit with a melee weapon attack that has Advantage, the target starts Bleeding (see [[Conditions|combat]]) in addition to any damage the hit deals. If the target is already Bleeding, this doesn't stack \- use whichever Bleed value is higher.  
 **Note:** You may trigger this on an opportunity attack if you have advantage on it, same as the advantage requirement itself.
 
 ---
@@ -82,7 +82,7 @@ Your hands move with blinding speed - the fast presentation dueling schools dril
 When an opponent closes inside a polearm's reach, the answer isn't to back away - it's to choke up on the haft and fight at the new range instead, the same way you'd handle a quarterstaff.
 
 **Prerequisites:** \+2 ranks in Polearms  
-**Benefit:** As a Free Action, you may shorten your grip on a Polearm with the Reach property. While gripped this way, you may target adjacent creatures with it (ignoring the property's usual restriction, equipment/weapons.md), but you lose the weapon's Reach and its Special Trait until you return to a full grip (also a Free Action).
+**Benefit:** As a Free Action, you may shorten your grip on a Polearm with the Reach property. While gripped this way, you may target adjacent creatures with it (ignoring the property's usual restriction, see [[Weapons|weapons]]), but it's treated as Short Reach - losing Closing the Distance and its Parry interaction ([[Reach|combat]]) - until you return to a full grip (also a Free Action).
 
 ---
 
@@ -93,7 +93,7 @@ When an opponent closes inside a polearm's reach, the answer isn't to back away 
 Grip a longsword by the blade instead of the hilt and it stops being a cutting weapon - short enough to control at close quarters, and precise enough to fight the bind instead of the distance.
 
 **Prerequisites:** \+3 ranks in Two-Handed Blades  
-**Benefit:** As a Free Action, you may re-grip a Two-Handed Blades weapon into this shortened stance, gaining Advantage on Disarm and Shove attempts made with it (Basic Moves, core_rules.md). If the weapon has the Versatile property, you lose its one-handed option until you return to a normal grip (also a Free Action) - a shortened grip needs both hands regardless.
+**Benefit:** As a Free Action, you may re-grip a Two-Handed Blades weapon into this shortened stance, gaining Advantage on Disarm and Shove attempts made with it ([[Basic Moves|core_rules]]). If the weapon has the Versatile property, you lose its one-handed option until you return to a normal grip (also a Free Action) - a shortened grip needs both hands regardless.
 
 ---
 
@@ -104,7 +104,7 @@ Grip a longsword by the blade instead of the hilt and it stops being a cutting w
 A trained grappler doesn't just hold a body down - they isolate a limb, and a limb caught in a lock doesn't keep hold of anything.
 
 **Prerequisites:** \+3 ranks in Athletics or Brawling  
-**Benefit:** When you successfully Grapple a creature (Basic Moves, core_rules.md), you may also force them to drop one held item of your choice, as though you had also used Disarm \- no additional check required. Additionally, a creature attempting to escape a Grapple you're maintaining takes \-2 to that Contested Check.
+**Benefit:** When you successfully Grapple a creature ([[Basic Moves|core_rules]]), you may also force them to drop one held item of your choice, as though you had also used Disarm \- no additional check required. Additionally, a creature attempting to escape a Grapple you're maintaining takes \-2 to that Contested Check.
 
 ---
 
@@ -115,7 +115,7 @@ A trained grappler doesn't just hold a body down - they isolate a limb, and a li
 A buckler's real job was never just deflecting - a trained fighter uses it to trap and steer an opponent's blade, the same control a parry gives you, just worked from your off hand.
 
 **Prerequisites:** \+2 ranks in Shields  
-**Benefit:** While wielding a Buckler, its \+1 Agility bonus (equipment/armor.md) also applies to your Parry Style roll (Maneuvers, maneuvers.md), not just your Evasion and Dodge Style.
+**Benefit:** While wielding a Buckler, its \+1 Agility bonus ([[Armor|armor]]) also applies to your Parry Style roll ([[Maneuvers|maneuvers]]), not just your Evasion and Dodge Style.
 
 ---
 
@@ -156,7 +156,7 @@ Shooting accurately from a moving mount is a specialist skill few riders ever ma
 A second blade or a buckler in your off hand isn't just there for balance - a trained duelist puts it to work controlling an opponent's weapon while their main hand does the cutting.
 
 **Prerequisites:** \+2 ranks in Rapiers & Fencing, One-Handed Blades, or Daggers & Knives  
-**Benefit:** While wielding a one-handed melee weapon in your main hand and a Light weapon or Buckler in your off hand, you have Advantage on the Parry Style of Maneuver (maneuvers.md).
+**Benefit:** While wielding a one-handed melee weapon in your main hand and a Light weapon or Buckler in your off hand, you have Advantage on the Parry Style of Maneuver ([[Maneuvers|maneuvers]]).
 
 ---
 

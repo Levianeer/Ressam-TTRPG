@@ -1,13 +1,13 @@
 Magic is the manipulation of energy \- the two methods of manipulation fall into two schools of thought; precise formulae (Arcane) or divine petition (Divine). It is rare not just because people lack potential, but because they lack education and resources. With literacy rates below \~15%, magic remains confined to the wealthy, the religious, and the exceptionally lucky. Because talent is worthless if you have no way to learn.
 
-**The Literacy Barrier:** The vast majority of people will never read a spell formula or holy text. Even those with high ARC or FAI cannot learn what they cannot read \- see Literacy (Core Rules): only a character with **MIND 3+** is literate by default, and only a literate character can invest in an Arcane or Divine school.
+**The Literacy Barrier:** The vast majority of people will never read a spell formula or holy text. Even those with high ARC or FAI cannot learn what they cannot read \- see [[Literacy|core_rules]]: only a character with **MIND 3+** is literate by default, and only a literate character can invest in an Arcane or Divine school.
 
 - **Arcane Magic** requires reading complex magical formulae, access to spellbooks or teachers, materials for scribing, and years of study.  
 - **Divine Magic** requires reading holy texts and scriptures, understanding theological doctrine, and genuine faith.
 
 This is why hedge wizards are suspicious, wandering priests are valuable, and spellbooks are worth more than gold.
 
-**For the deeper physics behind why magic behaves this way - and how to rule on an effect no spell list covers - see Laws of Magic (laws\_of\_magic.md).**
+**For the deeper physics behind why magic behaves this way - and how to rule on an effect no spell list covers - see [[Laws of Magic|laws_of_magic]].**
 
 ---
 
@@ -44,7 +44,7 @@ All spells use a single modifier when you cast:
 
 **Spell Modifier \= Magic School Skill \+ ARC or FAI \- Armor Penalty**
 
-**Trained:** As with all Skill-based rolls, ARC or FAI only applies once you have 1 or more ranks in that Magic School Skill (core_rules.md, Skill Check Formula).
+**Trained:** As with all Skill-based rolls, ARC or FAI only applies once you have 1 or more ranks in that Magic School Skill ([[Skill Check Formula|core_rules]]).
 
 ### **Spell Attacks**
 
@@ -58,11 +58,11 @@ Some spells target a creature's mental fortitude, physical resilience, or force 
 
 **Roll:** 1d12 \+ Spell Modifier vs. target's Ward (5 \+ Attribute \+ highest Skill under that Attribute)
 
-Each attribute has its own Ward, calculated from the skills tied to it. A spell will specify which attribute it targets (e.g. "Roll vs. target's MIND Ward"). This is a Contested Check (see core_rules.md) \- the target's Ward is their static defensive score, not a roll.
+Each attribute has its own Ward, calculated from the skills tied to it. A spell will specify which attribute it targets (e.g. "Roll vs. target's MIND Ward"). This is a [[Contested Check|core_rules]] \- the target's Ward is their static defensive score, not a roll.
 
 ### **Magic Damage**
 
-Subtract the target's AR from spell damage, then convert remaining damage to Wounds via the Wound Thresholds (see core_rules.md's Wounds and Survival).
+Subtract the target's AR from spell damage, then convert remaining damage to Wounds via the Wound Thresholds (see [[Wounds and Survival|core_rules]]).
 
 ### **Critical Hits**
 
@@ -76,7 +76,7 @@ Spell Attacks can crit on a natural 12 (roll damage twice, take the higher resul
 
 | Aspect | Arcane (Scribing) | Divine (Prayer) |
 | :---- | :---- | :---- |
-| **Mana Source** | Field Rest (partial) or Long Rest (full) | Prayer, 1 Mana per hour prayed |
+| **Mana Source** | Short Rest (small), Field Rest (partial), or Long Rest (full) | Prayer, 1 Mana per hour prayed |
 | **Preparation** | Scribe scrolls, spending Mana in advance | None \- cast straight from your Mana pool |
 | **Casting** | Consume scroll (no Mana cost at cast time) | Spend Mana per cast |
 | **Flexibility** | Must predict what you'll need | Cast any known spell spontaneously |
@@ -125,7 +125,7 @@ Quick-Scribed scrolls never last long enough to build into a real hoard \- they'
 
 ## Divine Magic: Faith & Prayer
 
-Divine magic is limited by Mana alone, same as Arcane \- the difference is where that Mana comes from. Arcane casters recharge on Rest; Divine casters recharge on Prayer, and only on Prayer (Field Rest and Long Rest do not restore Mana for Divine casting).
+Divine magic is limited by Mana alone, same as Arcane \- the difference is where that Mana comes from. Arcane casters recharge on Rest; Divine casters recharge on Prayer, and only on Prayer (Short Rest, Field Rest, and Long Rest do not restore Mana for Divine casting on their own \- Prayer during any of them does, at its usual 1 Mana per hour rate).
 
 ### **Prayer (Divine Only)**
 
@@ -135,7 +135,7 @@ Pray for as long as suits the moment - a spare hour recovers a little, a night's
 
 **Interrupted Prayer:** You keep any Mana already regained; the interrupted hour itself simply grants nothing.
 
-See divine_overview.md for the thematic act each faith expects during Prayer \- purely a roleplay expectation, not a mechanical requirement.
+See the [[Divine Overview|divine_overview]] for the thematic act each faith expects during Prayer \- purely a roleplay expectation, not a mechanical requirement.
 
 ---
 
@@ -165,4 +165,4 @@ Some spells have Channel as their duration, this means it requires concentration
 
 ---
 
-**For small, instinctive Mana effects that fall outside a normal spell, see Minor Magic (minor_magic.md).**
+**For small, instinctive Mana effects that fall outside a normal spell, see [[Minor Magic|minor_magic]].**
