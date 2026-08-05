@@ -27,13 +27,14 @@ Casters have a fourth option instead of a Style - **Reactive Casting** (below) -
 
 ### **Effects**
 
-On a Dominant or Stopped result, you're not just surviving the exchange - your margin bought you the initiative in it. Effects resolve automatically off the Margin you already rolled; none of them need a further check. Every Style shares one Effect, and brings one signature Effect of its own that only makes sense for how that Style defends:
+On a Dominant or Stopped result, you're not just surviving the exchange - your margin bought you the initiative in it. Effects resolve automatically off the Margin you already rolled; none of them need a further check. Every Style shares three Effects, and brings one signature Effect of its own that only makes sense for how that Style defends:
 
-- **Riposte** *(any Style)* \- Make one weapon (or unarmed) attack against the attacker as part of this Reaction. Requires the attacker to be within your weapon's Reach - if their Reach put them farther away than yours reaches (a Long Pike against your Short dagger, say), you can't Riposte; pick a different Effect instead. Dodge's Reposition can close that gap first if you pick both at Dominant.
+- **Riposte** *(any Style)* \- Make one weapon (or unarmed) attack against the attacker as part of this Reaction. Requires the attacker to be within your weapon's Reach - if their Reach put them farther away than yours reaches (a Long Pike against your Short dagger, say), you can't Riposte; pick a different Effect instead. Dodge's Reposition, or having already picked Close the Gap against this attacker, can close that gap first.
 - **Exploit Opening** *(any Style)* \- You read their guard. Your next attack roll against the attacker before the start of your next turn has Advantage.
+- **Close the Gap** *(any Style)* \- Only choosable if the attacker's weapon Reach Category is greater than yours ([[Reach Categories|weapons]]). You've fought your way inside their guard: until you Disengage, are forced back, or the fight ends, treat your Reach as equal to theirs against this specific attacker - no more Parry Disadvantage from the mismatch, no more Riposte lockout. This is how a short weapon answers a long one: not a bigger stick, better footwork.
 - Plus your Style's signature Effect (Parry: **Guard Break** or **Bind Weapon**; Block: **Push Back** or **Stagger**; Dodge: **Reposition** or **Untouchable** - see below).
 
-At Dominant, pick any 2 of the (up to) 4 Effects available to you - repeats aren't allowed, you're choosing 2 different ones. Nothing stops you from choosing both signature Effects if your Style offers two, or mixing a signature Effect with Riposte or Exploit Opening.
+At Dominant, pick any 2 of the (up to) 5 Effects available to you - repeats aren't allowed, you're choosing 2 different ones. Nothing stops you from choosing both signature Effects if your Style offers two, or mixing a signature Effect with Riposte, Exploit Opening, or Close the Gap.
 
 ---
 
@@ -101,3 +102,29 @@ Answer an incoming attack by snapping off a spell before it lands, instead of in
 **Mana Value \= Margin \+ 1.** You may cast any spell you're able to cast (and can pay for as normal from your own Mana pool) whose Mana Cost is no greater than your Mana Value - there's no surcharge for casting reactively, this only caps how big a spell your roll affords. A Margin of 0 (a tie, favoring you the same way it favors a Style's defender, above) gives a Mana Value of 1, enough for the cheapest spell. If your Margin is **\-1 or lower**, your Mana Value is 0 or less - you can't afford to cast anything, and your Reaction is spent for nothing.
 
 **This does not avoid the attack on its own.** Reactive Casting isn't a Style - it doesn't intercept anything, and there is no Riposte tier here. The incoming attack still resolves normally (it already beat your Passive Evasion to trigger this) unless the spell you cast happens to reduce, negate, or otherwise answer it. Casting a Fireball in response to an incoming sword doesn't stop the sword.
+
+---
+
+## Ready Volley
+
+Hold a ranged shot on a chosen lane, ready to loose it the instant your trigger is met - the setup melee gets for free just by having a weapon in hand, ranged weapons pay for with a turn.
+
+**Trigger:** Any perceivable circumstance you declare, same as a normal Held Action (see [[Held Action|combat]]) - an enemy entering your line of sight or your weapon's Range, closing to melee, breaking cover, attacking an ally, and so on.  
+**Action:** Major Action to set (this is a Held Action), Reaction to release (shared pool, see [[Action Economy|combat]]).  
+**Prerequisites:** A loaded ranged weapon in hand. A firearm must already be loaded before you set the trigger - Ready Volley holds the shot, not the reload.  
+**Roll:** Your normal attack roll (Weapon Skill \+ Attribute), unless you're making a Called Shot below.
+
+If your trigger doesn't occur before your next turn, the action is lost, same as any Held Action.
+
+### **Called Shot**
+
+When your Ready Volley fires, you may aim for more than center mass instead of a normal hit. Declare your zone before you roll - this option only exists because you took the time to aim; a snapped-off attack on your own turn doesn't give you that choice.
+
+| Zone              | Penalty | On Hit                                                                                                                               |
+|:------------------|:-------:|:-------------------------------------------------------------------------------------------------------------------------------------|
+| Torso *(default)* |   \-    | Normal damage, no additional effect.                                                                                                 |
+| Legs              |   \-2   | Speed becomes half until the end of their next turn. Margin \+3 or higher: they are knocked Prone instead.                           |
+| Arms              |   \-2   | Their next attack roll before your next turn has Disadvantage. Margin \+3 or higher: they drop one held item of your choice instead. |
+| Head              |   \-4   | This attack ignores the target's AR entirely.                                                                                        |
+
+**Margin \= Your attack roll − the target's Evasion** - the same numbers you already rolled to resolve the hit, no extra roll needed.

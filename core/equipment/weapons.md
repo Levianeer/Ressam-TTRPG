@@ -10,7 +10,7 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Versatile:** Can be used one or two-handed with different damage
 
-- **Reach:** How far a weapon threatens, given as a Reach Category rather than a raw distance - see Reach Categories, below. Wielding a weapon at Medium Reach or higher means a creature moving from outside your Reach to within it provokes an Opportunity Attack from you, and you cannot target an adjacent creature with it. Reach Category also governs Parry - see [[Maneuver|maneuvers]]
+- **Reach:** How far a weapon threatens, given in its own Reach column as a Reach Category rather than a raw distance - see Reach Categories, below. Wielding a weapon at Medium Reach or higher means a creature moving from outside your Reach to within it provokes an Opportunity Attack from you, and you cannot target an adjacent creature with it. Reach Category also governs Parry - see [[Maneuver|maneuvers]]
 
 - **Throwable:** Can be thrown (normal range/max range in feet)
 
@@ -115,68 +115,70 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 **ONE-HANDED BLADES** *(One-Handed Blades Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | Slots |
-| :---- | :---- | ----- | :---: | ----- | :---: |
-| Shortsword | 1d6 \+ 1 Piercing | Light | 10-12 | 35 Crown | 1 |
-| Scimitar | 1d6 Slashing | Light, Finesse | 10-12 | 75 Crown | 1 |
-| Broadsword | 1d10 Slashing | \- | \- | 85 Crown | 1 |
+| Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
+| :---- | :---- | :---: | ----- | :---: | ----- | :---: |
+| Shortsword | 1d6 \+ 1 Piercing | Short | Light | 10-12 | 35 Crown | 1 |
+| Scimitar | 1d6 Slashing | Short | Light, Finesse | 10-12 | 75 Crown | 1 |
+| Broadsword | 1d10 Slashing | Short | \- | \- | 85 Crown | 1 |
 
 **TWO-HANDED BLADES** *(Two-Handed Blades Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | Slots |
-| :---- | :---- | ----- | :---: | ----- | :---: |
-| Longsword | 1d6 \+ 2 Slashing | Versatile (Two-Handed 1d8 \+ 2), Reach (Medium) | 11-12 | 100 Crown | 1 |
-| Greatsaber | 1d6 \+ 2 Slashing | Versatile (Two-Handed 2d6), Reach (Medium) | \- | 150 Crown | 1 |
-| Greatsword | 1d12 Slashing | Two-Handed, Reach (Medium) | 11-12 | 200 Crown | 2 |
-| Warblade | 1d10 \+ 2 Slashing | Two-Handed, Reach (Medium) | \- | 350 Crown | 2 |
+| Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
+| :---- | :---- | :---: | ----- | :---: | ----- | :---: |
+| Longsword | 1d6 \+ 2 Slashing | Medium | Versatile (Two-Handed 1d8 \+ 2) | 11-12 | 100 Crown | 1 |
+| Greatsaber | 1d6 \+ 2 Slashing | Medium | Versatile (Two-Handed 2d6) | \- | 150 Crown | 1 |
+| Greatsword | 1d12 Slashing | Medium | Two-Handed | 11-12 | 200 Crown | 2 |
+| Warblade | 1d10 \+ 2 Slashing | Medium | Two-Handed | \- | 350 Crown | 2 |
 
 **RAPIERS & FENCING** *(Rapiers & Fencing Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | Slots |
-| :---- | :---- | ----- | :---: | ----- | :---: |
-| Rapier | 1d8 Piercing | Finesse, Reach (Medium) | 10-12 | 120 Crown | 1 |
-| Estoc | 1d10 Piercing | Two-Handed, Finesse, Penetrant, Reach (Medium) | 10-12 | 150 Crown | 2 |
+| Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
+| :---- | :---- | :---: | ----- | :---: | ----- | :---: |
+| Rapier | 1d8 Piercing | Medium | Finesse | 10-12 | 120 Crown | 1 |
+| Estoc | 1d10 Piercing | Medium | Two-Handed, Finesse, Penetrant | 10-12 | 150 Crown | 2 |
 
 **AXES & HAMMERS** *(Axes & Hammers Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | Slots |
-| :---- | :---- | ----- | :---: | ----- | :---: |
-| Battle Axe | 1d8 Slashing | Versatile (Two-Handed 1d10) | 10-12 | 70 Crown | 2 |
-| Mace | 1d8 Bludgeoning | Light | \- | 60 Crown | 1 |
-| Warhammer | 1d10 Bludgeoning | Two-Handed, AR degrades by 2 instead of 1, Reach (Medium) | 11-12 | 100 Crown | 2 |
-| Club | 1d6 Bludgeoning | \- | \- | 5 Crown | 1 |
-| Greatclub | 2d4 Bludgeoning | Two-Handed, Reach (Medium) | \- | 10 Crown | 2 |
+| Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
+| :---- | :---- | :---: | ----- | :---: | ----- | :---: |
+| Battle Axe | 1d8 Slashing | Short | Versatile (Two-Handed 1d10) | 10-12 | 70 Crown | 2 |
+| Mace | 1d8 Bludgeoning | Short | Light | \- | 60 Crown | 1 |
+| Warhammer | 1d10 Bludgeoning | Medium | Two-Handed, AR degrades by 2 instead of 1 | 11-12 | 100 Crown | 2 |
+| Club | 1d6 Bludgeoning | Short | \- | \- | 5 Crown | 1 |
+| Greatclub | 2d4 Bludgeoning | Medium | Two-Handed | \- | 10 Crown | 2 |
 
 **POLEARMS** *(Polearms Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | Slots |
-| :---- | :---- | ----- | :---: | ----- | :---: |
-| Spear | 1d6 Piercing | Versatile (Two-Handed 1d8), Reach (Medium), Throwable (20/40 ft) | \- | 30 Crown | 1 |
-| Pike | 1d8 Piercing | Two-Handed, Reach (Very Long) | \- | 50 Crown | 2 |
-| Halberd | 1d10 Slashing / Piercing | Two-Handed, Reach (Long) | \- | 100 Crown | 2 |
-| Glaive | 2d4 Slashing | Two-Handed, Reach (Long) | 11-12 | 95 Crown | 2 |
-| Quarterstaff | 1d6 Bludgeoning | Versatile (Two-Handed 2d4), Reach (Medium) | \- | 5 Crown | 1 |
+| Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
+| :---- | :---- | :---: | ----- | :---: | ----- | :---: |
+| Spear | 1d6 Piercing | Medium | Versatile (Two-Handed 1d8), Throwable (20/40 ft) | \- | 30 Crown | 1 |
+| Pike | 1d8 Piercing | Very Long | Two-Handed | \- | 50 Crown | 2 |
+| Halberd | 1d10 Slashing / Piercing | Long | Two-Handed | \- | 100 Crown | 2 |
+| Glaive | 2d4 Slashing | Long | Two-Handed | 11-12 | 95 Crown | 2 |
+| Quarterstaff | 1d6 Bludgeoning | Medium | Versatile (Two-Handed 2d4) | \- | 5 Crown | 1 |
 
 **DAGGERS & KNIVES** *(Daggers & Knives Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | Slots |
-| :---- | :---- | ----- | :---: | ----- | :---: |
-| Dagger | 1d4 Piercing | Light, Finesse | 9-12 | 20 Crown | 1 |
-| Knife | 1d4 Piercing | Light, Throwable (20/40 ft) | 10-12 | 5 Crown | 1 |
+| Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
+| :---- | :---- | :---: | ----- | :---: | ----- | :---: |
+| Dagger | 1d4 Piercing | Short | Light, Finesse | 9-12 | 20 Crown | 1 |
+| Knife | 1d4 Piercing | Short | Light, Throwable (20/40 ft) | 10-12 | 5 Crown | 1 |
 
 **SLINGS & WHIPS** *(Slings & Whips Skill)*
 
-| Weapon | Damage | Properties | Critical | Cost | Slots |
-| :---- | :---- | ----- | :---: | ----- | :---: |
-| Whip | 1d4 Slashing | Finesse, Reach (Medium), Trip | \- | 10 Crown | 1 |
-| Weighted Chain | 1d6 Bludgeoning | Reach (Medium), Can grapple at Reach | \- | 20 Crown | 1 |
-| Chain Flail | 1d8 Bludgeoning | Bypasses Block | 11-12 | 80 Crown | 1 |
+| Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
+| :---- | :---- | :---: | ----- | :---: | ----- | :---: |
+| Whip | 1d4 Slashing | Medium | Finesse, Trip | \- | 10 Crown | 1 |
+| Weighted Chain | 1d6 Bludgeoning | Medium | Can grapple at Reach | \- | 20 Crown | 1 |
+| Chain Flail | 1d8 Bludgeoning | Short | Bypasses Block | 11-12 | 80 Crown | 1 |
 
 ---
 
 ## RANGED WEAPONS
 
 **Note:** Making a ranged attack while an enemy is within adjacent imposes disadvantage.
+
+**Note:** Holding a ranged attack for a chosen trigger is called **Ready Volley**, and unlocks the Called Shot option - see [[Ready Volley|maneuvers]].
 
 **BOWS** *(Bows & Crossbows Skill)*
 
@@ -259,10 +261,12 @@ After combat, roll 1d6:
 
 **BRAWLING** *(Brawling Skill)*
 
-| Attack | Damage | Properties | Critical |
-| :---- | :---- | ----- | :---: |
-| Punch | 1d6 Bludgeoning | \- | 11-12 |
-| Kick | 1d8 Bludgeoning | \- | \- |
-| Headbutt | 1d10 Bludgeoning | You take the same damage dealt. Make a **1d12 \+ your STR \+ Brawling** roll against target's END Ward (Contested Ward) - if it beats their Ward, they are Stunned. | \- |
-| Grapple | Special | Contested Brawling check to Restrain target | \- |
+| Attack | Damage | Reach | Properties | Critical |
+| :---- | :---- | :---: | ----- | :---: |
+| Punch | 1d6 Bludgeoning | Touch | \- | 11-12 |
+| Kick | 1d8 Bludgeoning | Touch | \- | \- |
+| Headbutt | 1d10 Bludgeoning | Touch | You take the same damage dealt. Make a **1d12 \+ your STR \+ Brawling** roll against target's END Ward (Contested Ward) - if it beats their Ward, they are Stunned. | \- |
+| Grapple | Special | Touch | Contested Brawling check to Restrain target | \- |
+
+**Combination:** As a Minor Action after hitting with an unarmed attack, you may immediately make one follow-up unarmed attack of a type you haven't already made this turn (e.g. hit with a Punch, follow up with a Kick, Headbutt, or Grapple - but not another Punch) at \-4 to the attack roll. This is innate to fighting unarmed, not a Feat - no prerequisite beyond having a free hand.
 

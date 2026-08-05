@@ -59,6 +59,8 @@ When the trigger occurs before your next turn, use your Reaction to execute the 
 
 **Held Action with Spells**: You begin the casting process but must hold concentration, this counts as channelling. If concentration breaks, the spell dissipates (Mana is lost). Released on your specified trigger.
 
+**Ready Volley:** Holding a ranged attack this way has its own name and a Called Shot option - see [[Ready Volley|maneuvers]].
+
 ---
 
 ## Critical Hits
@@ -153,7 +155,7 @@ Touch and Short cover identical ground - there's no such thing as "closer than a
 | :---- | :---- |
 | **Lower than yours** | If your Reach is Medium or higher, them closing from outside your Reach into it provokes an Opportunity Attack from you. |
 | **Equal to yours** | No effect either way - a level exchange. |
-| **Higher than yours** | Your Parry has Disadvantage against them, and Riposte is off the table unless something (like Dodge's Reposition) closes the gap first. |
+| **Higher than yours** | Your Parry has Disadvantage against them, and Riposte is off the table - unless something (Dodge's Reposition, or landing the **Close the Gap** Effect against this attacker) closes the gap first. See [[Maneuver|maneuvers]]. |
 
 ---
 
