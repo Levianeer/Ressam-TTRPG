@@ -393,6 +393,16 @@ Adopt a protective stance that makes you difficult to hit.
 
 ---
 
+### **Feint**
+
+Use guile to open an opponent up to your strikes.
+
+**Action:** Minor  
+**Check:** Deception vs. target's static Insight (Contested Check)  
+**Success:** You gain advantage on the next weapon attack you make this turn.
+
+---
+
 ### **Taunting**
 
 Draw an enemy's focus entirely onto you, making it harder for them to threaten anyone else.

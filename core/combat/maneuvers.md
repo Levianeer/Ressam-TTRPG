@@ -23,6 +23,8 @@ Answer an incoming attack with your own contested roll, instead of simply eating
 
 **Critical Hits:** A Natural 12 bypasses the Parry and Block Styles entirely - a blow that committed is too fast or too heavy to intercept, so reacting with either Style automatically Fails. Dodge is the exception: it works by not being where the blow lands rather than intercepting it, so it still resolves normally against a Crit.
 
+**Reach defines fights:** When fighting an opponent whose weapon has a longer Reach Category than yours, you suffer disadvantage on rolls to Maneuver and to attack that target.
+
 Casters have a fourth option instead of a Style - **Reactive Casting** (below) - which doesn't intercept the attack at all, but lets a beaten roll buy you a spell instead of a parry.
 
 ### **Effects**
@@ -31,7 +33,7 @@ On a Dominant or Stopped result, you're not just surviving the exchange - your m
 
 - **Riposte** *(any Style)* \- Make one weapon (or unarmed) attack against the attacker as part of this Reaction. Requires the attacker to be within your weapon's Reach - if their Reach put them farther away than yours reaches (a Long Pike against your Short dagger, say), you can't Riposte; pick a different Effect instead. Dodge's Reposition, or having already picked Close the Gap against this attacker, can close that gap first.
 - **Exploit Opening** *(any Style)* \- You read their guard. Your next attack roll against the attacker before the start of your next turn has Advantage.
-- **Close the Gap** *(any Style)* \- Only choosable if the attacker's weapon Reach Category is greater than yours ([[Reach Categories|weapons]]). You've fought your way inside their guard: until you Disengage, are forced back, or the fight ends, treat your Reach as equal to theirs against this specific attacker - no more Parry Disadvantage from the mismatch, no more Riposte lockout. This is how a short weapon answers a long one: not a bigger stick, better footwork.
+- **Close the Gap** *(any Style)* \- Only choosable if the attacker's weapon Reach Category is greater than yours ([[Reach Categories|weapons]]). You've fought your way inside their guard: until you Disengage, are forced back, or they leave your reach, treat your Reach as equal to theirs against this specific attacker - no more Parry Disadvantage from the mismatch, no more Riposte lockout. This is how a short weapon answers a long one: not a bigger stick, better footwork.
 - Plus your Style's signature Effect (Parry: **Guard Break** or **Bind Weapon**; Block: **Push Back** or **Stagger**; Dodge: **Reposition** or **Untouchable** - see below).
 
 At Dominant, pick any 2 of the (up to) 5 Effects available to you - repeats aren't allowed, you're choosing 2 different ones. Nothing stops you from choosing both signature Effects if your Style offers two, or mixing a signature Effect with Riposte, Exploit Opening, or Close the Gap.
@@ -58,7 +60,7 @@ Deflect an incoming melee attack with your weapon.
 
 Use your shield, or a Two-Handed weapon, to absorb incoming attacks.
 
-**Prerequisites:** A shield in your hand, or a melee weapon with the Two-Handed property, and 1+ rank in Shields. A Versatile weapon being wielded with both hands does not count as a Two-Handed Weapon for this purpose - only a melee weapon whose property list includes Two-Handed qualifies (a two-handed ranged weapon or firearm does not).  
+**Prerequisites:** A shield in your hand, or a melee weapon with the Two-Handed property, and 1+ rank in Shields. A Versatile weapon being wielded with both hands does count as a Two-Handed Weapon for this purpose (a two-handed ranged weapon or firearm does not work).  
 **Restrictions:** Works against melee and ranged physical attacks if you're using a shield; a Two-Handed weapon only blocks melee. Does **not** work against AoE or unseen attacks.  
 **Roll:** 1d12 \+ Shields Skill \+ END.  
 **Minimized:** Reduce damage by your shield's AR Bonus ([[Shield Table|armor]]), or by Shields Skill ÷ 2 (rounded down) if you're blocking with a Two-Handed weapon instead of a shield. (A Buckler has no AR Bonus and reduces nothing here - see [[Shield Descriptions|armor]] for what it offers instead.)
@@ -83,7 +85,7 @@ Use your adroit agility to escape danger.
 
 **Signature Effects:**
 
-- **Reposition** \- Move up to your speed as part of this Reaction. This movement does not provoke Opportunity Attacks.
+- **Reposition** \- Move up to half your speed as part of this Reaction. This movement CAN provoke Opportunity Attacks.
 - **Untouchable** \- The next attack against you, from any source, before the start of your next turn has Disadvantage.
 
 ---

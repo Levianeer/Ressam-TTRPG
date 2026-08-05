@@ -140,16 +140,20 @@ Not every weapon threatens the same amount of ground. A dagger only menaces whoe
 
 That difference matters most the moment two weapons actually meet. Charging past the point of someone's spear to get in close is dangerous - they get a free swing at you for it (Closing the Distance, under Opportunity Attacks, below). And once you're trading blows, trying to parry a weapon much longer than yours is a losing proposition - your blade simply isn't there yet when theirs already is (see Parry, in [[Maneuvers|maneuvers]]).
 
-| Category | Distance |
-| :---- | :---- |
-| Touch / Short | Adjacent only |
-| Medium | 2 squares (10 ft) |
-| Long | 3 squares (15 ft) |
-| Very Long | 4+ squares (20 ft+) |
+| Reach Category |      Squares      | Who has it |
+| :---- |:-----------------:| :---- |
+| Touch |   Adjacent only   | Unarmed/Brawling attacks |
+| Short |   Adjacent only   | One-handed sidearms - Dagger, Knife, Shortsword, Scimitar, Broadsword, Mace, Club, Battle Axe |
+| Medium |   Adjacent only   | Two-handed swords and long thrusting blades (Longsword, Greatsaber, Greatsword, Warblade, Rapier, Estoc), plus other staff-length arms (Spear, Quarterstaff, Whip, Weighted Chain, Warhammer, Greatclub) |
+| Long | 2 squares (10 ft) | Dedicated infantry polearms - Halberd, Glaive |
+| Very Long | 3 squares (15 ft) | The pike, alone - built to out-reach everything else on the field |
 
-Touch and Short cover identical ground - there's no such thing as "closer than adjacent" on a grid. The split still matters below: Touch (a bare fist) ranks below Short (an actual blade) even at the same distance.
+Touch, Short and Medium cover identical ground - there's no such thing as "closer than adjacent" on a grid. The split still matters below: Touch (a bare fist) ranks below Short (an actual blade) even at the same distance.
 
 **How They Interact:** Every rule Reach drives just compares your Category to theirs on the list above - nothing stacks, nothing scales with how many steps apart you are.
+
+**Consequence:** When fighting an opponent whose weapon has a longer Reach Category than yours, you suffer disadvantage on rolls to Maneuver and to attack that target.
+
 
 | Compared to your opponent's Reach | What happens |
 | :---- | :---- |

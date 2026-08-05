@@ -22,15 +22,15 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 ### Reach Categories
 
-| Reach Category | Squares | Who has it |
-| :---- | :---: | :---- |
-| Touch | Adjacent only | Unarmed/Brawling attacks |
-| Short | Adjacent only | One-handed sidearms - Dagger, Knife, Shortsword, Scimitar, Broadsword, Mace, Club, Battle Axe |
-| Medium | 2 squares (10 ft) | Two-handed swords and long thrusting blades (Longsword, Greatsaber, Greatsword, Warblade, Rapier, Estoc), plus other staff-length arms (Spear, Quarterstaff, Whip, Weighted Chain, Warhammer, Greatclub) |
-| Long | 3 squares (15 ft) | Dedicated infantry polearms - Halberd, Glaive |
-| Very Long | 4+ squares (20 ft+) | The pike, alone - built to out-reach everything else on the field |
+| Reach Category |      Squares      | Who has it |
+| :---- |:-----------------:| :---- |
+| Touch |   Adjacent only   | Unarmed/Brawling attacks |
+| Short |   Adjacent only   | One-handed sidearms - Dagger, Knife, Shortsword, Scimitar, Broadsword, Mace, Club, Battle Axe |
+| Medium |   Adjacent only   | Two-handed swords and long thrusting blades (Longsword, Greatsaber, Greatsword, Warblade, Rapier, Estoc), plus other staff-length arms (Spear, Quarterstaff, Whip, Weighted Chain, Warhammer, Greatclub) |
+| Long | 2 squares (10 ft) | Dedicated infantry polearms - Halberd, Glaive |
+| Very Long | 3 squares (15 ft) | The pike, alone - built to out-reach everything else on the field |
 
-Touch and Short both only reach Adjacent - the split is purely ordinal, not spatial: Touch still ranks below Short in a direct comparison (see [[Reach|combat]]), it just never runs into a "can't reach them" problem the way Medium+ can.
+Touch, Short and Medium both only reach Adjacent - the split is purely ordinal, not spatial: Touch still ranks below Short in a direct comparison (see [[Reach|combat]]), it just never runs into a "can't reach them" problem the way Medium+ can.
 
 **Parry vs. Reach:** Your Parry roll has Disadvantage if the attacker's weapon Reach Category is strictly greater than your Parry weapon's ([[Maneuver|maneuvers]]).
 
