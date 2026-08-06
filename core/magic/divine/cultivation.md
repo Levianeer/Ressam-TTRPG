@@ -7,7 +7,7 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 - **Casting Time:** Minor Action
 - **Range:** Touch
 - **Duration:** Instant
-- **Effect:** Make a Petition Roll (DC 7). **Success:** Channel vital energy into a wounded creature \- the target gains 1 Temporary Wound.
+- **Effect:** Make a Petition Roll (DC 7). **Success:** Channel vital energy into a wounded creature \- the target gains 1 Patched Wound.
 
 **Parasitic Tendrils \- Mana Cost 2**
 
@@ -16,7 +16,7 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 - **Duration:** 1 minute
 - **Effect:** Summon draining vines that latch onto a creature. Make a Petition Roll (DC 7).
 
-  - **Success:** The target's movement speed is reduced to 15 ft. At the start of their turn, the target takes 1d8+FAI necrotic damage, and the first time this happens, choose yourself or an ally within 30 ft of the target to regain 1 Temp Wound \- the vines feed whoever you will, not just you. The healing only triggers once per casting; the drain continues each turn regardless.
+  - **Success:** The target's movement speed is reduced to 15 ft. At the start of their turn, the target takes 1d8+FAI necrotic damage, and the first time this happens, choose yourself or an ally within 30 ft of the target to regain 1 Patched Wound \- the vines feed whoever you will, not just you. The healing only triggers once per casting; the drain continues each turn regardless.
 
 - They may use a Major Action to attempt to break free by rolling 1d12 \+ STR \+ best STR skill vs. your original Petition Roll total.
 
@@ -37,18 +37,18 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 - **Casting Time:** Major Action
 - **Range:** Self (15 ft radius)
 - **Duration:** Channel
-- **Effect:** Make a Petition Roll (DC 7) as you become a wellspring of restorative energy. **Success:** When you cast this spell and at the start of each of your turns while channeling, each ally within range gains 1 Temporary Wound. No single ally can gain more than 2 Temporary Wounds from this spell across its entire duration \- the aura keeps running, but a given target stops benefiting once they've been topped off twice.
+- **Effect:** Make a Petition Roll (DC 7) as you become a wellspring of restorative energy. **Success:** When you cast this spell and at the start of each of your turns while channeling, each ally within range gains 1 Patched Wound. No single ally can gain more than 2 Patched Wounds from this spell across its entire duration \- the aura keeps running, but a given target stops benefiting once they've been topped off twice.
 
 **Respite from Ruin \- Mana Cost 4**
 
 - **Casting Time:** Major Action
 - **Range:** Touch
 - **Duration:** Instant
-- **Effect:** Make a Petition Roll (DC 7). **Success:** You fortify a creature's body against accumulated trauma \- the target gains 2 Temporary Wounds. Additionally, if the target has any levels of Trauma, remove 1 level.
+- **Effect:** Make a Petition Roll (DC 7). **Success:** You fortify a creature's body against accumulated trauma \- the target gains 2 Patched Wounds. Additionally, if the target has any levels of Trauma, remove 1 level.
 
 **Temporal Fortification \- Mana Cost 5**
 
 - **Casting Time:** Major Action
 - **Range:** Touch
 - **Duration:** 3 rounds
-- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains 3 temporary END (since Maximum Wounds \= END, this directly grants the target 3 Temporary Wounds). At the start of each of the target's turns, this bonus decreases by 1\. When the bonus reaches 0 or the spell ends, they immediately suffer 1 level of Trauma.
+- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains 3 temporary END (since Maximum Wounds \= END, this directly grants the target 3 Patched Wounds). At the start of each of the target's turns, this bonus decreases by 1\. When the bonus reaches 0 or the spell ends, they immediately suffer 1 level of Trauma.

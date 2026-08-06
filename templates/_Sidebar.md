@@ -2,6 +2,10 @@
 
 **[Core Rules](core_rules)**
 
+**[Wounds & Survival](wounds_and_survival)**
+
+**[Carrying & Resting](carrying_and_resting)**
+
 **Character**
 - [Character Creation](character_creation)
 - [Careers](careers)
@@ -70,6 +74,7 @@
 **Exploration**
 - [Traveling](traveling)
 - [Dungeon Turns](dungeon_turns)
+- [Stealth & Light](stealth_and_light)
 - [Downtime](downtime)
 - [Leadership](leadership)
 

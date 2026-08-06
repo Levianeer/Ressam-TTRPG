@@ -37,7 +37,7 @@ The party pushes beyond normal limits. Add \+4 to their daily hex point allowanc
 
 ### **Rations on the Road**
 
-Each full travel day consumes **1 ration per character**, on top of the Field Long Rest ration cost (see [[Food and Water|core_rules]]). Traveling Clothes' "consume rations every 2 days instead of daily" benefit is an exception to this rule, not a separate one.
+Each full travel day consumes **1 ration per character**, on top of the Field Long Rest ration cost (see [[Food and Water|wounds_and_survival]]). Traveling Clothes' "consume rations every 2 days instead of daily" benefit is an exception to this rule, not a separate one.
 
 ---
 

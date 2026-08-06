@@ -90,20 +90,20 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Healing Potion (Quick)**
 
 - **Ingredients:** Vital Oil \+ Amplifying Powder \+ Abkasp  
-- **Effect:** Drink (Minor Action). Restores Temporary Wounds  
-  - **Common:** Gain **1 \+ Bonus** Temp Wounds  
-  - **Uncommon:** Gain **1 \+ Bonus** Temp Wounds  
-  - **Rare:** Gain **1 \+ Bonus** Temp Wounds  
+- **Effect:** Drink (Minor Action). Restores Patched Wounds  
+  - **Common:** Gain **1 \+ Bonus** Patched Wounds  
+  - **Uncommon:** Gain **1 \+ Bonus** Patched Wounds  
+  - **Rare:** Gain **1 \+ Bonus** Patched Wounds  
 - **Limit:** Drinking multiple Healing Potions between rests causes Trauma \- the first is free, each additional one grants \+1 Trauma  
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
 ### **Revitalizing Bomb (Involved)**
 
 - **Ingredients:** Vital Oil \+ Prolonging Powder \+ Eshzera  
-- **Effect:** Thrown (20/40 ft), 10 ft radius. Allies gain Temporary Wounds  
-  - **Common:** Allies gain **1 \+ Bonus** Temp Wounds  
-  - **Uncommon:** Allies gain **1 \+ Bonus** Temp Wounds  
-  - **Rare:** Allies gain **1 \+ Bonus** Temp Wounds  
+- **Effect:** Thrown (20/40 ft), 10 ft radius. Allies gain Patched Wounds  
+  - **Common:** Allies gain **1 \+ Bonus** Patched Wounds  
+  - **Uncommon:** Allies gain **1 \+ Bonus** Patched Wounds  
+  - **Rare:** Allies gain **1 \+ Bonus** Patched Wounds  
 - **Value:** 75 Crown (Common), 95 Crown (Uncommon), 135 Crown (Rare)
 
 ### **Endurance Salve (Quick)**

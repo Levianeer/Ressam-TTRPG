@@ -86,7 +86,7 @@ This is the split between the two stats that used to share a job: **FAI is how m
 
 ### **Magic Damage**
 
-Subtract the target's AR from spell damage, then convert remaining damage to Wounds via the Wound Thresholds (see [[Wounds and Survival|core_rules]]). This applies whether the damage came from a successful Arcane Spell Attack/Overcome or a successful Divine Petition Roll.
+Subtract the target's AR from spell damage, then convert remaining damage to Wounds via the Wound Thresholds (see [[Wounds and Survival|wounds_and_survival]]). This applies whether the damage came from a successful Arcane Spell Attack/Overcome or a successful Divine Petition Roll.
 
 ## 
 
@@ -146,7 +146,7 @@ Quick-Scribed scrolls never last long enough to build into a real hoard \- they'
 
 ## Divine Magic: Faith & Prayer
 
-Divine magic is limited by Mana alone, same as Arcane, and it recovers on the same Short Rest / Field Rest / Long Rest ladder, in the same amounts, under the same shelter and food requirements ([[Resting|core_rules]]). Resting works the same for both paths. The one thing that's different: a Divine caster doesn't get that Rest's Mana for free.
+Divine magic is limited by Mana alone, same as Arcane, and it recovers on the same Short Rest / Field Rest / Long Rest ladder, in the same amounts, under the same shelter and food requirements ([[Resting|carrying_and_resting]]). Resting works the same for both paths. The one thing that's different: a Divine caster doesn't get that Rest's Mana for free.
 
 ### **Devotion Required**
 
@@ -154,7 +154,7 @@ If you have any ranks in a Divine school, receiving a Rest's Mana requires perfo
 
 This is no longer flavor text with no mechanical weight: Ressam's gods are real and provable, and a Divine caster who's genuinely stopped believing, or can't credibly perform their god's proof under the circumstances, gains no Mana from that Rest. A pure Arcane caster with no Divine ranks never triggers this at all. DM's call on what counts as genuine; err toward the player's stated intent unless they're plainly not even trying.
 
-A Rest's other benefits (Temp Wounds, Trauma recovery) are unaffected either way, whether or not the devotion requirement is met.
+A Rest's other benefits (Patched Wounds, Trauma recovery) are unaffected either way, whether or not the devotion requirement is met.
 
 ---
 

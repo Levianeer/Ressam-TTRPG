@@ -4,7 +4,7 @@ Ressam is a crunchy, lethal alternative to other TTRPGs, set in a world balanced
 
 ## Start Here
 
-Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks, Wounds, and the other foundational mechanics nearly every other chapter assumes.
+Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks vs. Ward, and Basic Moves, the foundational mechanics nearly every other chapter assumes. Two sibling pages split off what used to live here: **[Wounds & Survival](wounds_and_survival)** (damage types, Wounds, Dying, Scars, Trauma) and **[Carrying & Resting](carrying_and_resting)** (Slots, Resting).
 
 ## Character
 
@@ -89,6 +89,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks, Woun
 
 - [Traveling](traveling) - hex travel, mounts
 - [Dungeon Turns](dungeon_turns) - the 10-minute exploration turn, light tracking, wandering encounters
+- [Stealth & Light](stealth_and_light) - hiding from observers, light levels and light sources
 - [Downtime](downtime) - revelry and celebrations
 - [Leadership](leadership) - followers and cohorts
 

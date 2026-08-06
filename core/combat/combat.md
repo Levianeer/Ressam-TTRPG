@@ -96,7 +96,7 @@ Critical Hits occur on a **Natural 12** on attack rolls.
 - **Roll damage twice, take the higher result.**  
 - Bypasses the Parry and Block Styles of Maneuver (Dodge is unaffected - see [[Maneuvers|maneuvers]])
 
-Crits don't grant Trauma \- their pressure is indirect, since rolling twice raises the odds of landing in a higher Wound tier (see [[Wounds and Survival|core_rules]]).
+Crits don't grant Trauma \- their pressure is indirect, since rolling twice raises the odds of landing in a higher Wound tier (see [[Wounds and Survival|wounds_and_survival]]).
 
 **Expanded Crit Range:** Some weapons crit on 11-12, 10-12 or even 9-12.  
 Features and Feats can expand this further.
@@ -125,7 +125,7 @@ When hit:
 
 1. Subtract AR from damage  
 2. Armor loses 1 AR (degradation)  
-3. Remaining damage converts to Wounds (see [[Wounds and Survival|core_rules]])
+3. Remaining damage converts to Wounds (see [[Wounds and Survival|wounds_and_survival]])
 
 **Note:** A Critical Hit can still deal 0 Wound damage against fresh, heavy armor \- that's coherent with the armor fiction, not a bug.
 
@@ -152,7 +152,7 @@ Reduces Evasion, your Dodge Style roll ([[Maneuver|maneuvers]]), and your Spell 
 
 Ressam is played on a grid of 5-foot squares, minis-and-battlemap style - every Speed, Reach, and Range value in this book is already denominated in that unit.
 
-- **Size & Squares:** A creature occupies a number of squares matching its Space ([[Size|core_rules]]) - Small/Medium: 1 square, Large: 2x2, Huge: 3x3.
+- **Size & Squares:** A creature occupies a number of squares matching its Space ([[Size|carrying_and_resting]]) - Small/Medium: 1 square, Large: 2x2, Huge: 3x3.
 - **Measuring Distance:** Count outward square-by-square from your square to the nearest square of the target. Every square costs the same to enter, whether moved orthogonally or diagonally.
 - **Areas of Effect:** Count outward from the origin square the same way; a radius reaches every square its count extends to, no partial-coverage rulings needed.
 
@@ -249,7 +249,7 @@ Conditions can be applied by numerous different sources and in a multitude of wa
 | **Blinded** | Can't see. Automatically fails any check or Ward that relies on sight. Disadvantage on attack rolls; attack rolls against it have advantage.                                                                                                                                           |
 | **Charmed** | Can't attack the charmer or target it with harmful effects. The charmer has advantage on Skill checks to interact with the creature socially.                                                                                                                                          |
 | **Deafened** | Can't hear. Automatically fails any check or Ward that relies on hearing.                                                                                                                                                                                                              |
-| **Flying** | Gains a flying Speed equal to the granting effect's value or its walking Speed, whichever is higher. If it loses this Speed or is knocked Prone while aloft, it falls (see [[Falling                                                                                                   |core_rules]]). |
+| **Flying** | Gains a flying Speed equal to the granting effect's value or its walking Speed, whichever is higher. If it loses this Speed or is knocked Prone while aloft, it falls (see [[Falling                                                                                                   |wounds_and_survival]]). |
 | **Frightened** | While the source of its fear is within line of sight: disadvantage on attack rolls and Skill checks. It can't willingly move closer to the source.                                                                                                                                     |
 | **Grappled** | Restrained, ends if the creature is moved beyond the reach of the grappler or grappling effect.                                                                                                                                                                                        |
 | **Incapacitated** | Can't take actions or reactions (Major, Minor, Object Interaction, or Reaction). Movement is unaffected unless another effect says otherwise.                                                                                                                                          |

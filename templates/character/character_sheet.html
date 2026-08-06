@@ -230,14 +230,96 @@
   </div>
 
   <div class="card">
-    <h2>Combat Stats</h2>
+    <h2>Wounds &amp; Survival</h2>
+    <p class="note">core/wounds_and_survival.md - log each currently-unhealed Wound below with its Severity (1/2/3, from the Wound Thresholds table) and Source (its dominant Damage Type). Current Wounds is computed from this log, not typed in directly - remove a row once that Wound heals (see Wound Recovery). Wound Penalty is a reference number only: it applies to non-combat rolls by ruling, and isn't baked into the Skills/Ward numbers elsewhere on this sheet.</p>
     <div class="grid grid-stats">
       <div class="stat-box">
         <div class="label">Wounds</div>
-        <div class="value"><span class="computed" id="out-hpMax">1</span></div>
-        <div class="sub"><input type="number" name="hpCurrent" placeholder="cur"><span>/</span><input type="number" name="hpTemp" placeholder="temp"></div>
-        <div class="note">Current / Temp Wounds (Max includes Feat Bonus, see Progression)</div>
+        <div class="value"><span class="computed" id="out-woundsCurrent">1</span> / <span class="computed" id="out-hpMax">1</span></div>
+        <div class="note">Current / Max (Max = END + Feat Bonus, see Progression)</div>
       </div>
+      <div class="stat-box">
+        <div class="label">Wound Penalty</div>
+        <div class="value computed" id="out-woundPenalty">0</div>
+        <div class="note">To all non-combat rolls, cumulative per missing Wound</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Patched Wounds</div>
+        <div class="value"><span class="computed" id="out-patchedMax">0</span></div>
+        <div class="sub"><input type="number" name="patchedCurrent" min="0" value="0" placeholder="cur"></div>
+        <div class="note">Lost before Wounds - a Rest sets these to at least its tier's amount (carrying_and_resting.md)</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Trauma</div>
+        <div class="value"><input type="number" name="traumaLevel" min="0" max="5" value="0" style="width:3.6em;text-align:center"></div>
+        <div class="note computed" id="out-traumaNote">-0 to all d12 rolls, Wards, and checks</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Dying</div>
+        <div class="value computed" id="out-dyingFlag">No</div>
+        <div class="sub">
+          <label style="font-size:0.7rem;color:var(--muted)">Clock&nbsp;</label>
+          <input type="number" name="deathClock" min="0" style="width:3.6em;text-align:center">
+          <button type="button" class="btn-mini" id="btnDeathClockReset" title="Set Death Clock to your END">Reset</button>
+        </div>
+        <div class="note">At 0 Wounds: Death Clock starts at END, -1 each of your turns, 0 = death. Stabilization ends Dying.</div>
+      </div>
+    </div>
+
+    <h3>Wound Log</h3>
+    <table class="dyn-table" data-table="wounds" id="tbl-wounds">
+      <thead><tr><th class="num-sm">Severity</th><th>Source (Damage Type)</th><th>Note</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <button type="button" class="row-add" data-add-target="wounds">+ Add Wound</button>
+    <template id="row-wounds">
+      <tr data-row>
+        <td>
+          <select data-col="severity" class="num-sm">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </td>
+        <td>
+          <select data-col="source">
+            <option value="">-</option>
+            <option>Piercing</option><option>Slashing</option><option>Bludgeoning</option><option>Poison</option>
+            <option>Fire</option><option>Cold</option><option>Lightning</option><option>Acid</option>
+            <option>Necrotic</option><option>Radiant</option><option>Psychic</option>
+          </select>
+        </td>
+        <td><input type="text" data-col="note" placeholder="optional"></td>
+        <td><button type="button" class="row-remove">&times;</button></td>
+      </tr>
+    </template>
+
+    <h3>Scars</h3>
+    <p class="note">Permanent - a Scar is untouched by Patched Wounds, Wound Recovery, Cultivation, and Alchemy alike. Add one when a hit drops you to 0 Wounds; only a deep restoration working undoes it (see Removing a Scar).</p>
+    <table class="dyn-table" data-table="scars" id="tbl-scars">
+      <thead><tr><th>Damage Type (downing blow)</th><th>Scar</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <button type="button" class="row-add" data-add-target="scars">+ Add Scar</button>
+    <template id="row-scars">
+      <tr data-row>
+        <td>
+          <select data-col="damageType">
+            <option value="">-</option>
+            <option>Piercing</option><option>Slashing</option><option>Bludgeoning</option><option>Poison</option>
+            <option>Fire</option><option>Cold</option><option>Lightning</option><option>Acid</option>
+            <option>Necrotic</option><option>Radiant</option><option>Psychic</option>
+          </select>
+        </td>
+        <td class="computed" data-col-out="scarName">-</td>
+        <td><button type="button" class="row-remove">&times;</button></td>
+      </tr>
+    </template>
+  </div>
+
+  <div class="card">
+    <h2>Combat Stats</h2>
+    <div class="grid grid-stats">
       <div class="stat-box">
         <div class="label">Mana</div>
         <div class="value"><span class="computed" id="out-manaMax">0</span></div>
@@ -614,7 +696,7 @@
     {key:'CHA', name:'Charisma'}
   ];
 
-  // Mirrors core_rules.md:109-134 Skill Categories tables
+  // Mirrors core_rules.md:113-139 Skill Categories tables
   var SKILL_CATEGORIES = [
     {attr:'STR', category:'Brawn & Melee', skills:['One-Handed Blades','Two-Handed Blades','Axes & Hammers','Polearms','Brawling','Slings & Whips']},
     {attr:'PRE', category:'Finesse & Ranged', skills:['Rapiers & Fencing','Daggers & Knives','Bows & Crossbows','Thrown Weapons','Pistols','Long Guns','Heavy Firearms']},
@@ -628,6 +710,16 @@
 
   var ARCANE_SCHOOLS = ['Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy'];
   var DIVINE_SCHOOLS = ['Benediction','Invocation','Necration','Cultivation','Subjugation'];
+
+  // Mirrors wounds_and_survival.md's Scars table (Damage Type -> Scar name)
+  var SCAR_MAP = {
+    'Piercing':'Puncture', 'Slashing':'Laceration', 'Bludgeoning':'Fracture', 'Poison':'Gangrene',
+    'Fire':'Burn', 'Cold':'Frostbite', 'Lightning':'Fractal Burn', 'Acid':'Chemical Burn',
+    'Necrotic':'Necrosis', 'Radiant':'Brand', 'Psychic':'Fray'
+  };
+
+  // Mirrors wounds_and_survival.md's Trauma table - label per level (penalty itself is just -level)
+  var TRAUMA_LABELS = {0:'None', 1:'Manageable', 2:'Dangerous', 3:'Critical', 4:'Critical', 5:'Automatic Death'};
 
   // Mirrors core/character/progression_&_rewards.md (character_creation.md + levels 1-12)
   // level N requires 30 * N^2 total XP (totalXp below)
@@ -768,6 +860,12 @@
       recompute();
       return;
     }
+    if (e.target.id === 'btnDeathClockReset'){
+      var endTotal = num(document.getElementById('attrTotal-END').textContent);
+      document.querySelector('[name="deathClock"]').value = endTotal;
+      recompute();
+      return;
+    }
   });
 
   function flash(btn){
@@ -884,6 +982,47 @@
     document.getElementById('out-dodgeBonus').textContent = dodgeBonus;
     document.getElementById('out-initiative').textContent = (initiative>=0?'+':'') + initiative;
     document.getElementById('out-reactions').textContent = reactions;
+
+    // 4b. Wounds & Survival (wounds_and_survival.md). Current Wounds is derived
+    // from the Wound Log, not typed in directly - each row's Severity (1-3, the
+    // Wound Thresholds table) sums into how much of Max Wounds is currently lost.
+    var woundsLost = 0;
+    document.querySelectorAll('#tbl-wounds [data-row]').forEach(function(tr){
+      woundsLost += num(tr.querySelector('[data-col="severity"]').value);
+    });
+    var woundsCurrent = Math.max(0, hpMax - woundsLost);
+    var missingWounds = hpMax - woundsCurrent;
+    document.getElementById('out-woundsCurrent').textContent = woundsCurrent;
+    document.getElementById('out-woundPenalty').textContent = missingWounds > 0 ? ('-' + missingWounds) : '0';
+
+    // Patched Wounds: a flat pool, capped at your current missing Wounds
+    // (Maximum Patched Wounds = Total Wounds - current Wounds). Clamp down if a
+    // Wound was just added and shrank the cap out from under an existing value.
+    var patchedInput = document.querySelector('[name="patchedCurrent"]');
+    var patchedMax = missingWounds;
+    if (num(patchedInput.value) > patchedMax) patchedInput.value = patchedMax;
+    document.getElementById('out-patchedMax').textContent = patchedMax;
+
+    // Trauma: flat -level penalty to all d12 rolls, Wards, and checks.
+    var traumaInput = document.querySelector('[name="traumaLevel"]');
+    var trauma = Math.max(0, Math.min(5, num(traumaInput.value)));
+    traumaInput.value = trauma;
+    var traumaNote = document.getElementById('out-traumaNote');
+    traumaNote.textContent = TRAUMA_LABELS[trauma] + ' - ' + (trauma > 0 ? ('-' + trauma) : '0') + ' to all d12 rolls, Wards, and checks';
+    traumaNote.parentElement.querySelector('.value').style.color = trauma >= 5 ? 'var(--danger)' : '';
+
+    // Dying: 0 Wounds, per Dying rules. The Death Clock itself is a manual
+    // counter (a static sheet can't tick it down turn-by-turn on its own).
+    var dyingOut = document.getElementById('out-dyingFlag');
+    var isDying = woundsCurrent <= 0;
+    dyingOut.textContent = isDying ? 'Yes' : 'No';
+    dyingOut.style.color = isDying ? 'var(--danger)' : '';
+
+    // Scars: read-only Scar name derived from each row's Damage Type.
+    document.querySelectorAll('#tbl-scars [data-row]').forEach(function(tr){
+      var dmgType = tr.querySelector('[data-col="damageType"]').value;
+      tr.querySelector('[data-col-out="scarName"]').textContent = SCAR_MAP[dmgType] || '-';
+    });
 
     // Current load: sum every Slots column across all inventory tables. Worn
     // armor/clothes and equipped shields/weapons don't count - you're

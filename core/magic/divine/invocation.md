@@ -20,7 +20,7 @@ When you first invest ranks in Invocation, you must perform the Severing \- a ri
 
 ### **Wound Loss Rule**
 
-You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up, minimum 1\) instead of Mana, paid when you cast. This loss cannot be reduced or prevented but can use Temp Wounds.
+You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up, minimum 1\) instead of Mana, paid when you cast. This loss cannot be reduced or prevented but can use Patched Wounds.
 
 **Note:** This rate always applies to Invocation spells, even for casters who convert Mana costs to Wounds through other means (such as the Blood-Rule Prestige Feat) \- it does not stack with or get discounted by those effects.
 

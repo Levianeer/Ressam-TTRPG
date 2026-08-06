@@ -72,7 +72,7 @@ Your AR determines how much damage your armor absorbs from each hit.
 
 1. Attacker rolls damage
 2. Subtract your current AR from the damage
-3. Remaining damage (if any) converts to Wounds via the Wound Thresholds (see [[Wounds and Survival|core_rules]])
+3. Remaining damage (if any) converts to Wounds via the Wound Thresholds (see [[Wounds and Survival|wounds_and_survival]])
 4. Your armor loses 1 durability (reducing your AR by 1\)
 
 **Example:** You're wearing brigandine (AR 6). An attacker hits you for 4 damage. Your armor absorbs all 4 damage, but your AR drops to 5\. Next hit, you'll only absorb 5 damage.

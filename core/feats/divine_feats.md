@@ -55,7 +55,7 @@ A Benediction caster doesn't need a second working to finish what the first one 
 Cultivation was never about giving one person everything - it's about knowing where the vital thread actually needs to go, and being willing to cut it more than one way.
 
 **Prerequisites:** \+2 ranks in Cultivation, FAI 3+  
-**Benefit:** When you cast a Cultivation spell that grants Temporary Wounds to a single target, you may instead split that total among a number of creatures within 15 ft of the target up to your Cultivation rank (divided as evenly as you choose, minimum 1 each). This doesn't grant additional Temporary Wounds \- only redistributes what the spell already provides.
+**Benefit:** When you cast a Cultivation spell that grants Patched Wounds to a single target, you may instead split that total among a number of creatures within 15 ft of the target up to your Cultivation rank (divided as evenly as you choose, minimum 1 each). This doesn't grant additional Patched Wounds \- only redistributes what the spell already provides.
 
 ---
 

@@ -41,7 +41,7 @@ The world uses three major currencies, each dominant in different regions.
 
 Essential equipment for travel, exploration, and survival.
 
-**How Slots Work:** Your carrying capacity is Slots (STR \+ END, see [[Slots|core_rules]]), checked when you decide what to carry \- not on every purchase. Tiny items (small tools, single-use trinkets) pack 3 to a Slot; a Belt Pouch holds 3 Tiny items for free. Standard gear costs 1 Slot, Heavy gear 2, Bulky gear 3, and coins are 100 per Slot. Torches, Candles, Rations, and Oil flasks are all sold and carried in bundles of 3 that cost 1 Slot per bundle.
+**How Slots Work:** Your carrying capacity is Slots (STR \+ END, see [[Slots|carrying_and_resting]]), checked when you decide what to carry \- not on every purchase. Tiny items (small tools, single-use trinkets) pack 3 to a Slot; a Belt Pouch holds 3 Tiny items for free. Standard gear costs 1 Slot, Heavy gear 2, Bulky gear 3, and coins are 100 per Slot. Torches, Candles, Rations, and Oil flasks are all sold and carried in bundles of 3 that cost 1 Slot per bundle.
 
 ### **Travel & Shelter**
 
@@ -120,7 +120,7 @@ Equipment for treating injuries and stabilizing the dying.
 | Item           |   Cost    | Slots |                   Notes                   |
 |:---------------|:---------:|:-----:|:-----------------------------------------:|
 | Healer's kit   |  20 Crown |   1   |    Advantage on stabilization; 10 uses    |
-| Bandages (5)   |  5 Crown  |  1/3  |          Gain 1d2 Temp Wounds             |
+| Bandages (5)   |  5 Crown  |  1/3  |          Gain 1d2 Patched Wounds             |
 | Surgical tools |  25 Crown |   1   | Required for surgery; \+2 to Medical Lore |
 | Antitoxin      |  50 Crown |  1/3  |      Removes the Poisoned Condition       |
 

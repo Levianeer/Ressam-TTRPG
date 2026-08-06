@@ -22,13 +22,7 @@ Fast, decisive actions (opening an unlocked door, glancing into a room, drawing 
 
 ## Light Tracker
 
-Light sources burn down in Turns, tracked on the same shared party tally (see [[Light and Vision|core_rules]]):
-
-| Source  | Duration             |
-|:--------|:---------------------|
-| Candle  | 6 Turns              |
-| Torch   | 6 Turns              |
-| Lantern | 36 Turns / oil flask |
+Light sources burn down in Turns, tracked on the same shared party tally - see [[Light and Vision|stealth_and_light]] for burn durations and light-level effects.
 
 Mark a light source's Turns against the party tracker as they elapse, not against whichever character happens to be holding it. When a source runs out, it goes dark immediately \- plan ahead.
 
@@ -44,6 +38,7 @@ The same tally that tracks Turns and light also drives wandering-encounter check
 
 ## Cross-References
 
-- **Core Rules:** Slots, Light and Vision  
+- **Carrying & Resting:** Slots  
+- **Stealth & Light:** Light and Vision  
 - **Traveling:** Hex travel and the overland day  
 - **Combat:** Rounds and initiative

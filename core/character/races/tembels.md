@@ -17,9 +17,9 @@ The Tembels are slow-moving, contemplative beings descended from a cursed Orkh w
 
 ### **Features**
 
-**Natural Born Healer:** When you use the Medical Lore skill to stabilize a creature, or administer Bandages or an Alchemy healing item to them, grant an additional 1 Temporary Wound to the target.  
+**Natural Born Healer:** When you use the Medical Lore skill to stabilize a creature, or administer Bandages or an Alchemy healing item to them, grant an additional 1 Patched Wound to the target.  
 **Deliberate Mind:** While below half Wounds, you may use a Reaction to reduce incoming damage by 1d6 as you endure through stillness.  
-**Oft Sleepy:** You heal Wounds at twice the normal rate (see [[Wound Recovery|core_rules]]) and restore 50% additional Mana when completing any Rest (rounded down).
+**Oft Sleepy:** You heal Wounds at twice the normal rate (see [[Wound Recovery|wounds_and_survival]]) and restore 50% additional Mana when completing any Rest (rounded down).
 
 ---
 

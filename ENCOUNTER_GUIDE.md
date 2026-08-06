@@ -2,7 +2,7 @@
 
 This is a GM-facing tool, not a rulebook chapter - it lives outside `core/` on purpose and is **not** mirrored to the wiki. Its job is two things: give you a Challenge-Rating-style number for judging how dangerous an NPC is before the dice hit the table, and let you build that NPC's actual stat line in under a minute.
 
-**The core idea: an NPC is a stripped-down PC, not a separate math system.** Every formula below - Wounds, Evasion, Attack Rolls, Damage Rolls - is the exact formula `core_rules.md`/`combat.md` already defines for players, unchanged. Nothing here forks that math into a parallel monster-only version, because that's exactly what made the old version of this guide go stale: it hardcoded HP/AR ranges that drifted the moment the Wounds and Skills/Attributes rescales landed elsewhere in `core/`. The only genuinely new content in this file is **Role** (below) and **Mythic Initiative** (`combat.md`) - everything else is a pointer back at formulas and tables that already exist and are already kept current.
+**The core idea: an NPC is a stripped-down PC, not a separate math system.** Every formula below - Wounds, Evasion, Attack Rolls, Damage Rolls - is the exact formula `core_rules.md`/`wounds_and_survival.md`/`combat.md` already defines for players, unchanged. Nothing here forks that math into a parallel monster-only version, because that's exactly what made the old version of this guide go stale: it hardcoded HP/AR ranges that drifted the moment the Wounds and Skills/Attributes rescales landed elsewhere in `core/`. The only genuinely new content in this file is **Role** (below) and **Mythic Initiative** (`combat.md`) - everything else is a pointer back at formulas and tables that already exist and are already kept current.
 
 ---
 

@@ -71,7 +71,7 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 **Mechanical Changes:**
 
 - Your Maximum Mana is reduced to 0, it can never be increased beyond 0\.
-- Temporary Wounds may be used to pay this cost, same as Invocation's Wound Loss Rule.
+- Patched Wounds may be used to pay this cost, same as Invocation's Wound Loss Rule.
 - Any effect that would use Mana, instead uses your Wounds.
 - Wounds spent as a casting cost is a cost, not damage \- it does not trigger effects that respond to taking damage.
 - If you die from Wounds spent on casting, the spell fails and you begin dying.
@@ -158,7 +158,7 @@ You have a number of **Rune Charges** equal to your Crafting skill ÷ 2 (rounded
 
 **Ritual:** Betray the God-Dragons in their house. The method matters less than the sincerity \- a defiled altar, a slain priest, a prayer spoken backward with genuine intent. Feel the familiar warmth of faith curdle into something colder, and understand: the power never left. Only its direction changed.
 
-**Effect:** All your divine spells deal necrotic damage (instead of radiant). When you cast an instant-duration Cultivation spell that would grant Temporary Wounds to a creature, you may invert it instead: make a Petition Roll (DC 7) against a target within the spell's range, dealing 1d8 × the spell's Mana Cost necrotic damage on success. If it succeeds, you gain Temporary Wounds equal to the amount the spell would have granted its intended target (not the new damage total). Any other listed effect of the spell (such as Trauma removal) does not apply when inverted this way.
+**Effect:** All your divine spells deal necrotic damage (instead of radiant). When you cast an instant-duration Cultivation spell that would grant Patched Wounds to a creature, you may invert it instead: make a Petition Roll (DC 7) against a target within the spell's range, dealing 1d8 × the spell's Mana Cost necrotic damage on success. If it succeeds, you gain Patched Wounds equal to the amount the spell would have granted its intended target (not the new damage total). Any other listed effect of the spell (such as Trauma removal) does not apply when inverted this way.
 
 Once per combat, when you successfully damage a creature with a Benediction or Cultivation spell, you may make a **1d12 \+ your FAI \+ spell school rank** roll against their FAI Ward (Contested Ward) - if it beats their Ward, they become Frightened of you until the end of your next turn.
 
