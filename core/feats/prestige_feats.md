@@ -64,18 +64,18 @@ Prestige Feats represent fundamental transformations in how a character interact
 
 **Ritual:** Drain yourself to the threshold. Not through violence or accident, but deliberately, in a place where power gathers. Stabilize yourself with nothing but will. The body must learn that emptiness is not death \- it is potential.
 
-**Effect:** You may cast any spell you know using Wounds instead of Mana. The Wound cost equals the spell's Mana Cost.
+**Effect:** You may cast any spell you know using Wounds instead of Mana. The Wound cost equals the spell's Mana Cost ÷ 2 (rounded up, minimum 1\) \- the same rate as Invocation's own Wound Loss Rule.
 
 Additionally, if you are a Stryg, you may convert any damage dealt by you into Bloodfire damage. Bloodfire manifests as a thick, writhing crimson flame laced with black \- viscous and pulsing like living blood \- that drips in heavy strands and bursts in wet explosions on impact, burning with a dark, organic heat unlike ordinary fire.
 
 **Mechanical Changes:**
 
 - Your Maximum Mana is reduced to 0, it can never be increased beyond 0\.
-- Temporary Wounds cannot be used for spell costs.
+- Temporary Wounds may be used to pay this cost, same as Invocation's Wound Loss Rule.
 - Any effect that would use Mana, instead uses your Wounds.
 - Wounds spent as a casting cost is a cost, not damage \- it does not trigger effects that respond to taking damage.
 - If you die from Wounds spent on casting, the spell fails and you begin dying.
-- Does not affect Invocation spells, which already use their own Wound conversion \- Invocation spells still cost Wounds equal to Mana Cost × 2, not × 1, and this feat doesn't change or discount that.
+- Does not stack with Invocation's own Wound Loss Rule \- Invocation spells still cost Wounds equal to Mana Cost ÷ 2 through that rule specifically, not through this feat, so the two never compound into a smaller cost.
 
 ---
 
@@ -158,7 +158,7 @@ You have a number of **Rune Charges** equal to your Crafting skill ÷ 2 (rounded
 
 **Ritual:** Betray the God-Dragons in their house. The method matters less than the sincerity \- a defiled altar, a slain priest, a prayer spoken backward with genuine intent. Feel the familiar warmth of faith curdle into something colder, and understand: the power never left. Only its direction changed.
 
-**Effect:** All your divine spells deal necrotic damage (instead of radiant). When you cast a spell that would heal a creature, you may choose to invert it: the spell deals necrotic damage to the target and you gain Temporary Wounds equal to half the damage dealt.
+**Effect:** All your divine spells deal necrotic damage (instead of radiant). When you cast an instant-duration Cultivation spell that would grant Temporary Wounds to a creature, you may invert it instead: make a spell attack roll against a target within the spell's range, dealing 1d8 × the spell's Mana Cost necrotic damage on a hit. If it hits, you gain Temporary Wounds equal to the amount the spell would have granted its intended target (not the new damage total). Any other listed effect of the spell (such as Trauma removal) does not apply when inverted this way.
 
 Once per combat, when you successfully damage a creature with a Benediction or Cultivation spell, you may make a **1d12 \+ your FAI \+ spell school rank** roll against their FAI Ward (Contested Ward) - if it beats their Ward, they become Frightened of you until the end of your next turn.
 

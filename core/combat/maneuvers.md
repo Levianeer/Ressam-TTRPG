@@ -1,4 +1,34 @@
-A Maneuver is your reactive answer to an incoming attack - the moment where every turn spent setting up the exchange (see [[Basic Moves|core_rules]]) pays off. Instead of simply eating a hit or hoping your Passive Evasion holds, you answer it with a contested roll of your own. Everyone has access to this as long as they fulfil the prerequisites.
+## How an Exchange Works
+
+This is the map of a melee or ranged exchange, start to finish, and where each piece of it lives in the rules. Read this first if Maneuvers are new to you - the Style-by-Style detail below assumes you already know the loop.
+
+| Step | Ask Yourself | Then |
+| :---- | :---- | :---- |
+| **1. Get into range** | Am I already within my weapon's Reach of the target? | No: move or Dash to close - crossing into a Medium+ Reach opponent's threat range provokes their Opportunity Attack once, even if you stop short of adjacent. Yes: skip to Step 2. |
+| **2. Make the attack** | Does my Attack Roll beat their Passive Evasion? | No: clean miss, exchange over, no Reaction spent. Yes: continue to Step 3. |
+| **3. Defender reacts** | Do I have a Reaction left, and a Style (or spell) I qualify for? | Yes: choose Maneuver (pick Parry, Block, or Dodge) or Reactive Casting. No: the attack resolves as a normal hit. |
+| **4. Resolve the Margin** | What's my roll minus their roll? | Check it against the Margin table below: Dominant, Stopped, Minimized, or Failed. |
+| **5. Aftermath** | Did I hit Dominant or Stopped? In what order do I want my Effects? | Pick Effects in the order you want them to apply - order changes what they affect (see Order Matters, below). If Riposte connects, the original attacker can answer it exactly the same way, restarting from Step 3. |
+
+**1. Get into range.** An attack needs the target within your weapon's Reach. If they already are when your turn starts, skip straight to Step 2. Otherwise you close the gap with a Move Action (a Dash, if you need more of it) - and it isn't free against a Medium+ Reach opponent.
+
+Reach isn't tracked square-by-square for this purpose - what matters is the moment you first cross into their threat range (adjacent for a Medium Reach opponent, 2 squares out for Long, 3 for Very Long). The instant you do, they get an Opportunity Attack against you (see [[Opportunity Attacks|combat]]) - the entry-side mirror of the more familiar "leaves reach" trigger; Touch and Short Reach can't do this to you. It only fires once, right as you cross that line: continuing to close afterward, from their reach's outer edge down to fully adjacent, doesn't provoke it again ("moving within reach you already occupy" doesn't provoke - [[Opportunity Attacks|combat]]) - and running out of movement right at that edge, without reaching adjacent, still counts as having triggered it.
+
+That Opportunity Attack is a normal attack roll like any other - if it beats your Passive Evasion, you answer it exactly like Step 3 below (Maneuver, Reactive Casting, or nothing), before you've even closed the distance to swing back. A Feint or similar setup move can prime the attack you're closing in to make, but doesn't move you (see [[Basic Moves|core_rules]]).
+
+**2. Make the attack.** The attacker rolls a normal Attack Roll against the defender's Passive Evasion (see [[Attack Roll|combat]]). If it doesn't beat Evasion, that's a clean miss - the exchange ends here, and no one spends a Reaction.
+
+**3. The defender reacts, or doesn't.** An attack roll that beats Evasion would otherwise hit - now the defender may spend a Reaction from their shared pool (see [[Action Economy|combat]]) to answer it:
+
+- **Maneuver** - pick a Style (Parry, Block, or Dodge, below) and roll a contested check against the attack roll.
+- **Reactive Casting** - casters only; buy a spell off that same contested roll instead of intercepting the blow (below).
+- **Nothing** - out of Reactions, no Style you qualify for, or you simply choose not to. The attack resolves as a normal hit.
+
+**4. Resolve the Margin.** Compare whichever contested roll you made to the attacker's roll on the shared Margin table (below): Dominant, Stopped, Minimized, or Failed.
+
+**5. Aftermath.** Dominant and Stopped let you pick Effects off that same roll, no further check needed. If you picked **Riposte**, you've just made a new attack roll against the original attacker - which means they can answer *your* Riposte exactly the same way, restarting this loop from Step 3, provided they still have a Reaction left in their pool. Nothing caps how many times an exchange can chain back and forth in a round beyond both sides running out of Reactions, or a Margin poor enough to end it (a Failed result spends the Reaction for nothing, but doesn't extend the exchange further).
+
+**Example:** Toma (dagger, Short Reach) is attacked by a bandit wielding a shortsword (also Short Reach - equal, no mismatch). The bandit's attack roll beats Toma's Passive Evasion, so it would otherwise hit. Toma has 1+ rank in Daggers & Knives, so she reacts with Parry: the bandit rolled 14, and Toma's Parry roll comes out to 17 - Margin +3, Dominant. She picks two Effects, in this order: Exploit Opening, then Riposte. Exploit Opening resolves first and is already active by the time she resolves Riposte, so her Riposte attack roll (15, with Advantage) beats the bandit's Evasion (12) and hits, dealing damage and degrading his armor - had she picked the two in the other order, the Riposte would have rolled without Advantage, and the Advantage would instead sit banked for her next attack against him. The bandit still has a Reaction in his pool, so he could Parry Toma's Riposte the exact same way she just answered his own attack; if he can't or doesn't, it simply lands.
 
 ---
 
@@ -23,7 +53,7 @@ Answer an incoming attack with your own contested roll, instead of simply eating
 
 **Critical Hits:** A Natural 12 bypasses the Parry and Block Styles entirely - a blow that committed is too fast or too heavy to intercept, so reacting with either Style automatically Fails. Dodge is the exception: it works by not being where the blow lands rather than intercepting it, so it still resolves normally against a Crit.
 
-**Reach defines fights:** When fighting an opponent whose weapon has a longer Reach Category than yours, you suffer disadvantage on rolls to Maneuver and to attack that target.
+**Reach defines fights:** see [[Reach|combat]] for how outreaching your opponent (or being outreached) affects your rolls to Maneuver and to attack.
 
 Casters have a fourth option instead of a Style - **Reactive Casting** (below) - which doesn't intercept the attack at all, but lets a beaten roll buy you a spell instead of a parry.
 
@@ -37,6 +67,8 @@ On a Dominant or Stopped result, you're not just surviving the exchange - your m
 - Plus your Style's signature Effect (Parry: **Guard Break** or **Bind Weapon**; Block: **Push Back** or **Stagger**; Dodge: **Reposition** or **Untouchable** - see below).
 
 At Dominant, pick any 2 of the (up to) 5 Effects available to you - repeats aren't allowed, you're choosing 2 different ones. Nothing stops you from choosing both signature Effects if your Style offers two, or mixing a signature Effect with Riposte, Exploit Opening, or Close the Gap.
+
+**Order matters.** Your 2 Effects resolve one at a time, in the order you pick them - not simultaneously. An Effect only affects things that happen after it's already active, so picking Riposte before Exploit Opening means the Riposte's attack roll doesn't get Exploit Opening's Advantage (that Advantage is still banked for whatever your next attack against them ends up being); pick Exploit Opening first instead, and it's already active by the time you resolve Riposte, so the Riposte attack roll itself gets Advantage.
 
 ---
 

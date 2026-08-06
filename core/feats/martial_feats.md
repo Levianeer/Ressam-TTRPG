@@ -45,15 +45,6 @@ You make your shots count against those clad in metal and steel - the old gunner
 
 ## Guile in Combat
 
-### **Feint**
-
-Use guile to open an opponent up to your strikes - the single most fundamental trick in any fighting tradition: sell one attack to set up another.
-
-**Prerequisites:** \+2 ranks in Deception  
-**Benefit:** As a Minor Action, make a Deception check against one target's static Insight (Contested Check). Success: you gain Advantage on all weapon attacks you make against that target this turn.
-
----
-
 ### **Open a Vein**
 
 You know where the big vessels run close to the skin - throat, wrist, inner thigh - and a target who can't properly defend themselves can't stop you reaching one.

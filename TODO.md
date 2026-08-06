@@ -10,16 +10,6 @@ The old success-rate table (previously under "Setting a Difficulty Class (DC)") 
 - Recompute a new success-rate table against the actual new progression curve (`core/character/progression_&_rewards.md`'s per-level skill cap/attribute cap columns, now capped at 5).
 - Once resolved, delete this section (and this file, if nothing else is outstanding).
 
-## ENCOUNTER_GUIDE.md is now stale against both the compressed player AR table AND the Wounds rework
-
-`data/armor/armor.yaml` adopted HEALTH_REWORK_TRIAL.md's compressed AR table (Full Plate 16->8, Brigandine 13->6, etc.) alongside the Rigid/Flexible Penalty rework (Rigid: Penalty = AR, Flexible: Penalty = AR÷2 rounded down; Armorer's reduction is now 1:1 per rank instead of ranks÷2). `ENCOUNTER_GUIDE.md`'s "Stat Ranges by Tier" AR column (`core/`-adjacent, hand-authored, not templated) still cites the *old* player armor scale in its parentheticals - e.g. Tier 1 Tank "6-10 (chain)" when player Chain Mail is now AR 5, Tier 3 Tank "12-15 (half/full plate)" when player Half-Plate/Full Plate are now AR 7-8. These parentheticals were meant to read as "roughly what a player wearing this armor tier would have," and no longer do.
-
-This got much bigger with the Wounds & Defense System rework (`wounds-system-design-doc.md`, folded into `core/` directly - `HEALTH_REWORK_TRIAL.md` and its harness scripts were deleted as superseded): Maximum Wounds is now just `END` (a 1-5 range), replacing `(END × 3) + 10` (a 13-40 range). `ENCOUNTER_GUIDE.md`'s entire "Player baselines" and "Stat Ranges by Tier" HP columns (16-95 across the tiers) are now off by roughly an order of magnitude, not just the AR column. Its crit-Trauma text is also now wrong twice over: it says crits "deal maximum damage" (already contradicted the shipped rules before this rework) and describes expanded crit range as stacking flat crit-Trauma, which no longer exists as a baseline (see core_rules.md's Trauma section and combat.md's Critical Hits - Trauma from crits is now the paid `Deadly Critical` feat only).
-
-**When picking this up:**
-- Re-derive each tier's monster Wounds AND AR range against the new player scales - this is real design/balance work (monster stat calibration against the new pool/AR sizes, likely with monsters needing a different pool concept entirely given how small `Wounds = END` is), not a mechanical find-and-replace, so budget time accordingly.
-- Fix the two crit-related wording bugs while there (both flagged above).
-
 ## Numeric fallout from the Wounds rework needs a dedicated rebalance pass
 
 Every flat-Wounds-granting feat, spell, or item was calibrated against the old `(END × 3) + 10` pool (13-40) and was badly miscalibrated against the tiny `Wounds = END` pool (1-5) - a single use could dwarf or trivialize the entire pool. Renamed (HP -> Wounds, tHP -> Temp Wounds) but not re-tuned at rename time.
@@ -28,10 +18,7 @@ Every flat-Wounds-granting feat, spell, or item was calibrated against the old `
 
 **Resolved (2026-08-03) as a side effect of the feats simplification pass below:** `Tough`, `Healer`, `Herbalist`, and `Wrath of the Faithful` were all cut outright (none survived the cut to 3-5 feats per category), which resolves their Wounds-scaling debt by deletion rather than rescale. `Divine Healing` (a Channel Divinity option, kept) was rescaled from 2d8 to 1d4 Temporary Wounds in the same pass.
 
-**Still outstanding - Prestige Feats only (exempt from the category-count trim, not touched by the pass below):**
-
-- `Fallen Wing`'s Chest-necrotic-inversion healing math.
-- `Blood-Rule` prestige feat (cast spells using Wounds instead of Mana - now extremely lethal even for a 1-Mana spell).
+**Resolved (2026-08-05):** the two Prestige Feats left outstanding above were fixed. `Blood-Rule` was discovered to be doubly broken - not just miscalibrated against the tiny Wounds pool at its flat Mana-Cost-to-1-Wound rate, but its own comparison note (line citing Invocation) had gone stale: it still said Invocation cost Wounds at Mana Cost × 2, which was the *pre-rework* rate - the real, already-fixed rate is ÷2 (see above). That stale note revealed the original intent was for Blood-Rule to undercut Invocation's valve, not lose to it; the fix brings Blood-Rule to the same Mana Cost ÷2 (rounded up, min 1) rate as Invocation's Wound Loss Rule, Temp-Wound-payable. `Fallen Wing`'s invert-heal clause referenced "half the damage dealt" with no damage number to reference, since Cultivation's actual heal spells (Thaumaturge, Respite from Ruin) grant flat Temporary Wounds with no attached damage die - unresolvable as written. Fixed by decoupling the two numbers entirely: inverted damage now uses the standard Damage guideline (1d8 × Mana Cost, since Cultivation isn't Pyromancy), and the caster's Temp Wound gain is pinned to the original spell's own already-balanced heal amount rather than derived from the new damage total - which also keeps it under the Healing guideline's 3-Temp-Wound cap by construction. Scoped to instant-duration heals only (excludes Arboreal Integument's channeled aura and Temporal Fortification's decaying buff, which don't invert cleanly into a single attack roll). Left Cultivation-gated rather than tightening the Feat's prerequisite - a Benediction-only Fallen Wing simply won't use this clause and leans on the Frightened rider instead, a legitimate build split rather than a bug, per user's explicit call.
 
 ## Feats system cut from ~90 feats to 3-5 per category (2026-08-03)
 

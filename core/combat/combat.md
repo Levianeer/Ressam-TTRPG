@@ -140,17 +140,7 @@ Not every weapon threatens the same amount of ground. A dagger only menaces whoe
 
 That difference matters most the moment two weapons actually meet. Charging past the point of someone's spear to get in close is dangerous - they get a free swing at you for it (Closing the Distance, under Opportunity Attacks, below). And once you're trading blows, trying to parry a weapon much longer than yours is a losing proposition - your blade simply isn't there yet when theirs already is (see Parry, in [[Maneuvers|maneuvers]]).
 
-| Reach Category |      Squares      | Who has it |
-| :---- |:-----------------:| :---- |
-| Touch |   Adjacent only   | Unarmed/Brawling attacks |
-| Short |   Adjacent only   | One-handed sidearms - Dagger, Knife, Shortsword, Scimitar, Broadsword, Mace, Club, Battle Axe |
-| Medium |   Adjacent only   | Two-handed swords and long thrusting blades (Longsword, Greatsaber, Greatsword, Warblade, Rapier, Estoc), plus other staff-length arms (Spear, Quarterstaff, Whip, Weighted Chain, Warhammer, Greatclub) |
-| Long | 2 squares (10 ft) | Dedicated infantry polearms - Halberd, Glaive |
-| Very Long | 3 squares (15 ft) | The pike, alone - built to out-reach everything else on the field |
-
-Touch, Short and Medium cover identical ground - there's no such thing as "closer than adjacent" on a grid. The split still matters below: Touch (a bare fist) ranks below Short (an actual blade) even at the same distance.
-
-**How They Interact:** Every rule Reach drives just compares your Category to theirs on the list above - nothing stacks, nothing scales with how many steps apart you are.
+**How They Interact:** Every rule Reach drives just compares your Category to theirs (see [[Reach Categories|weapons]]) - nothing stacks, nothing scales with how many steps apart you are.
 
 **Consequence:** When fighting an opponent whose weapon has a longer Reach Category than yours, you suffer disadvantage on rolls to Maneuver and to attack that target.
 
@@ -246,3 +236,26 @@ Conditions can be applied by numerous different sources and in a multitude of wa
 | **Silenced** | Can't speak or cast spells.                                                                                                                                                                                                                                                            |
 | **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment.                                                                                                                                   |
 | **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it automatically hit, and any melee hit is a critical hit.                                                 |
+
+---
+
+## Mythic Initiative
+
+Mythic creatures \- campaign-defining bosses and other singular threats \- do not act once per round. They are too fast, too vast, or too terrible for a single turn to contain them.
+
+**Mythic Initiative (X):** A Mythic creature rolls initiative X times. The first roll is made normally. Each roll after the first takes a cumulative \-2 penalty (second roll \-2, third roll \-4, fourth roll \-6, and so on). The creature takes a full turn on each of its initiative counts.
+
+All of a Mythic creature's initiative counts are public, rolled openly at the start of combat. The party always knows exactly when the beast will act \- surviving it is another matter.
+
+**Repetition:** A Mythic creature's unique abilities (breath weapons, signature spells, lair-shaking special attacks) can each be used only once per round, no matter how many turns the creature takes. Basic attacks, movement, and mundane actions face no such limit.
+
+### **Turns & Effects**
+
+A Mythic creature's turns are real turns. Anything that references "a turn" applies to each of them:
+
+- Saves against conditions that allow an attempt at the end of the creature's turn (Frightened, channelled spells, and similar) are attempted at the end of every Mythic turn. A Mythic (3) creature gets three chances per round to shake off an effect. Conditions land on Mythic creatures \- they just don't stay long.
+- Ongoing damage such as Bleeding triggers at the start of every Mythic turn. A bleeding Mythic (3) creature takes its Bleed value three times per round.
+- Start-of-turn and end-of-turn traits (regeneration, auras, recharging abilities) trigger on every turn unless the creature's stat block says otherwise.
+- **Reactions:** A Mythic creature's Reaction pool refreshes at the start of each of its turns. A Mythic (3) creature can Parry, Block, or make an Opportunity Attack up to three times per round.
+
+Mythic creatures do not need condition immunities or special resistances. Their many turns are their resistance \- and their many turns are also their weakness. Choose your poisons accordingly. See `ENCOUNTER_GUIDE.md` for guidance on picking X and building a Mythic creature's stat block.

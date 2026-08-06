@@ -5,10 +5,8 @@ Ressam PvP combat balance simulator.
 Monte Carlo duel sim grounded in core_rules.md / combat.md / maneuvers.md /
 equipment/armor.md / equipment/weapons.md, as those files read on 2026-08-03.
 
-Scope, deliberately: PC vs PC only. ENCOUNTER_GUIDE.md's monster tables are
-known-stale (pending its own rebalance pass per TODO.md) and are not used
-here. This tool answers "does the core math produce sane fights between
-players," not "are monsters calibrated."
+Scope, deliberately: PC vs PC only. This tool answers "does the core math
+produce sane fights between players," not "are monsters calibrated."
 
 Maneuver Effects ARE modeled (Riposte, Exploit Opening, and one signature
 Effect per Style), since they're a real chunk of the balance, not garnish.

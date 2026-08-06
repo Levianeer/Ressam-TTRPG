@@ -1,266 +1,140 @@
-# Encounter Balance
+# Encounter Guide
 
-Building encounters starts with knowing what numbers to target. This chapter gives you a practical reference for calibrating enemy stats against player characters at each level \- without reverse-engineering every value from scratch.
+This is a GM-facing tool, not a rulebook chapter - it lives outside `core/` on purpose and is **not** mirrored to the wiki. Its job is two things: give you a Challenge-Rating-style number for judging how dangerous an NPC is before the dice hit the table, and let you build that NPC's actual stat line in under a minute.
 
----
-
-## The Core Principle: One Defence Per Enemy
-
-Players layer their defences across a campaign because they need to survive hundreds of fights. An enemy exists for one encounter. Design each enemy around **one defensive identity**, with at most one reactive option on top. This keeps encounters fast, distinct, and tactically readable.
-
-When players enter a room with a knight in plate, a cloaked duelist, and a robed caster at the back, they should immediately understand they face three different problems. If all three share equally layered defences, they feel the same \- and the encounter becomes a war of attrition rather than a set of decisions.
-
-**The exception is bosses.** Named antagonists can combine a primary defence with one reactive option (Block or Parry) and one passive trait (regeneration, non-degrading armour, damage resistance, etc.). Aim for 2–2.5× the HP of a standard enemy at the same tier.
+**The core idea: an NPC is a stripped-down PC, not a separate math system.** Every formula below - Wounds, Evasion, Attack Rolls, Damage Rolls - is the exact formula `core_rules.md`/`combat.md` already defines for players, unchanged. Nothing here forks that math into a parallel monster-only version, because that's exactly what made the old version of this guide go stale: it hardcoded HP/AR ranges that drifted the moment the Wounds and Skills/Attributes rescales landed elsewhere in `core/`. The only genuinely new content in this file is **Role** (below) and **Mythic Initiative** (`combat.md`) - everything else is a pointer back at formulas and tables that already exist and are already kept current.
 
 ---
 
-## The Four Archetypes
+## Threat Level
 
-### **Brute**
+**An NPC's Threat Level is simply the PC Level it's built to challenge (1-12).** Build it like a PC of that level: its Attributes and Skills are capped exactly where `progression_&_rewards.md`'s advancement table caps a real character at that level. A Threat Level 6 bandit captain feels like a fight against a level-6 PC because, mechanically, it more or less *is* one.
 
-No defensive tricks. High HP and damage output that creates urgency. Brutes don't use reactions for defence \- they use them for opportunity attacks or don't use them at all. Fast to run, easy to communicate, and scary because they just *hit hard*. Use expanded crit ranges (10–12 or 9–12) to stack Exhaustion on players rather than inflating raw damage.
+| Threat Level | Skill Cap | Attribute Cap |
+| :---: | :---: | :---: |
+| 1-2 | 2 | 4 |
+| 3-4 | 3 | 4 |
+| 5-6 | 4 | 4 |
+| 7 | 5 | 4 |
+| 8-12 | 5 | 5 |
 
-**Primary defence:** HP pool  
-**Reaction:** Opportunity attacks (not Block or Parry)  
-**Weakness:** Sustained fire; abilities that bypass or ignore armour  
-**Signature trait:** Expanded crit range, Reckless Charge, Sweeping Blow, or Regeneration
-
----
-
-### **Tank**
-
-Heavy armour plus the Block reaction. Hard to damage early, but the armour degrades under pressure \- a Tank gets progressively easier to damage as the fight goes on. Design encounters with this arc in mind: the first few rounds are rough, the last few aren't. A Tank with Armorer 3+ that can field-repair mid-fight is a fundamentally different and more dangerous threat.
-
-**Primary defence:** Armour (high AR) \+ Block  
-**Reaction:** Block (prioritise over opportunity attacks)  
-**Weakness:** High-damage single strikes; sustained fire that degrades AR quickly  
-**Signature trait:** Field repair, Shield Bash, Bulwark (protecting allies)
+**This table is a derived copy of `progression_&_rewards.md`'s Skill Cap / Attribute Cap columns, kept small for convenience at the table.** If that table's caps ever change, this one is stale until updated to match - `progression_&_rewards.md` is the source of truth, not this file.
 
 ---
 
-### **Skirmisher**
+## Role
 
-High Evasion, light or no armour. Hard to hit; very squishy when you do. Best used in pairs or with a meatshield, because a solo Skirmisher that gets flanked or targeted with advantage evaporates quickly. Their danger is forcing players to chase, reposition, and split focus. Add Pack Tactics or positioning-based abilities (Shadow Step, Nimble Escape) to reward the playstyle.
+Role measures an NPC against a single PC of the same Threat Level, and doubles as the answer to "how many of these make a fair, single-Role fight?" These ratios are the baseline for an *even* encounter - mixing Roles, or fielding more or fewer than the count below, is how you tune a fight easier or harder from there.
 
-**Primary defence:** Evasion  
-**Reaction:** Parry (once or twice) or one Dodge  
-**Weakness:** Advantage attacks; area effects that bypass Evasion; being cornered  
-**Signature trait:** Pack Tactics, Nimble Escape, Poison, expanded crit range
+| Role | Against a lone PC | Field, for an even fight... | Fictional positioning |
+| :---- | :---- | :---: | :---- |
+| **Easy** | Badly outmatched | 4 per player | Woefully out of the party's league - petty criminals, animals, Skeggs, and the like. Only a threat in numbers. |
+| **Average** | Worse in most regards, but can still threaten a 1v1 at poor odds | 2 per player | A soldier or rival who trained for this, just not at the party's tier. Biggest letdown is equipment, then stats. |
+| **Elite** | Equal in every way that counts | 1 per player | Functionally a player made into a stat block. A single Elite with any backup is a genuine threat. |
+| **Mythic** | Never loses a 1v1 | 1 per 2-4 players | A campaign boss - won't win alone against a full party, but is absolutely a threat. Elite's stat block plus Mythic Initiative, below. |
 
----
+**Building each Role:** apply one offset to three numbers - the NPC's governing Attribute, its END, and its main Skill - all pulled down together from the Threat Level's caps above. Gear scales alongside them.
 
-### **Caster**
+| Role | Governing Attribute, END & Skill | Gear |
+| :---- | :---: | :---- |
+| **Elite** | Threat Level's cap | The best gear its concept would plausibly carry at this Threat Level |
+| **Average** | Cap − 1 | One tier down the Armor Table from Elite's pick |
+| **Easy** | Cap − 3 (minimum 0) | Clothing, or nothing |
+| **Mythic** | = Elite | = Elite, plus Mythic Initiative (below) |
 
-Low physical defences, dangerous through conditions, Ward-targeting spells, and Exhaustion stacking. Casters should almost never be alone \- they're priority targets and will die in two rounds without support. Their danger is what they do *before* they die. Give them summons, a bodyguard, or terrain advantages, and make retreating part of their behaviour.
+**Wounds is always just END** - whatever value the offset above lands you on, same formula a PC uses. Role doesn't touch Wounds directly; the whole gap between an Easy mook and an Elite rival comes from the Attribute/Skill/Gear it was built with, same as it would between two differently-built PCs. This is also why Mythic doesn't get its own Wounds bump: Mythic Initiative already means every hit lands against a creature about to take 2-4× the turns (and Reactions) a PC gets in the same round - that's where its survivability actually comes from, and it's also exactly why a Mythic never loses a fair 1v1.
 
-**Primary defence:** Ward saves \+ spell reactions (Phantom Aegis)  
-**Reaction:** Spell aegis, or a single Dodge  
-**Weakness:** Physical attacks; being engaged in melee; Silenced condition  
-**Signature trait:** AoE Ward spells, condition-inflicting spells, Mana Siphon, Summon
+**Picking X for Mythic Initiative** (`combat.md`): X is directly "how many players this Mythic is meant to threaten alone" - 2 for a boss meant to challenge a duo (or be a manageable set piece for a larger party), up to 4 for one meant to threaten a full four-person party on its own. The mechanic's own escalating \-2 penalty does the diminishing-returns work past X = 4 - a 5th roll sits at \-8, usually below any DC worth calling for.
 
----
-
-## Stat Ranges by Tier
-
-These ranges assume no racial or career bonuses and no magic items. A **typical** player at each tier sits roughly in the middle of the player baseline range \- fully optimised characters will be near the ceiling.
-
-AR values shown are **starting** values. Armour degrades in combat exactly as it does for players.  
-Natural armour on monsters (scales, thick hide, stone skin) should be noted as **non-degrading** when you want that enemy to feel consistently threatening across the whole fight.
+**Note:** these ratios are design targets, not Monte Carlo-validated the way `tools/balance_sim.py` validates PC-vs-PC math - playtest and retune the offsets above if a Role over- or under-performs its intended count at the table. **Threat Level 1 is the exception:** `tools/encounter_sim.py` (a group-combat companion to `balance_sim.py`) Monte Carlo-tested the Level 1 Example Roster below against a generic 4-PC level-1 party and found the ratios above landed badly uneven at that level (Easy 72% PCs win, Average 8%, Elite 64%) - the counts and stat lines below have been retuned to land near 50/50 instead, and no longer match "4/2/1 per player" exactly. That retuning hasn't been generalized to other Threat Levels; treat the ratios above as the starting guess elsewhere until they get the same treatment.
 
 ---
 
-### **Tier 1 \- Levels 1–3**
+## Fast Build (under a minute)
 
-**Player baselines:** Max Evasion 11–12 · Max to-hit \+6 to \+7 · HP 16–22
-
-| Archetype | HP | AR (armour type) | Evasion | To-hit | Avg damage | Primary defence |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Brute | 25–45 | 2–4 (hide/leather) | 4–5 | \+3 to \+4 | 1d8 \+ STR 2–3 | HP pool |
-| Tank | 20–30 | 6–10 (chain) | 4–5 | \+3 to \+5 | 1d6 \+ STR 2–3 | Armour \+ Block |
-| Skirmisher | 14–22 | 2–3 (leather) | 6–7 | \+3 to \+5 | 1d6 \+ PRE 2–3 | Evasion |
-| Caster | 14–22 | 0–2 (robes) | 5–6 | \+3 to \+4 ✦ | 1d8 \+ FAI/ARC 2–3 | Ward saves |
-
-✦ *Spell to-hit bonus.*
-
-**Notes for this tier:** Players are fragile. A single bad round can drop a character. Brutes should feel immediately threatening. Casters at this tier have 2–3 spells maximum \- don't overcomplicate their stat block. Armour hasn't degraded far enough to matter much in short fights.
+1. **Pick a Threat Level.** The PC level you want this fight to challenge.
+2. **Pick a Role** (above), and with it, how many you're fielding.
+3. **Pick ONE governing Attribute** for its combat math - STR for a melee brute, PRE for finesse/ranged, DEX for an agile skirmisher, MIND/ARC/FAI for a caster - and **ONE relevant Skill** - its weapon Skill, or a casting school. Set both, plus END, to the value Role's offset table gives you for this Threat Level. Everything else defaults to 0-2, a build choice the same way it would be for a PC.
+4. **Gear:** pick armor and a weapon per Role's Gear column, off the Armor Table (`armor.md`) and Weapon Tables (`weapons.md`), or write up natural armor/weapons for a beast.
+5. **Wounds \= END** (already set in step 3).
+6. **Evasion \= 5 \+ Agility Skill \+ DEX − Armor Penalty.** 0 Agility is fine for most NPCs - they're not built to Dodge like a PC skirmisher unless that's the point of this one.
+7. **Attack Roll \= 1d12 \+ Skill \+ governing Attribute vs. target's Evasion. Damage \= weapon/natural damage die \+ governing Attribute − target's AR.** Unchanged from `combat.md`.
+8. **Optional: one signature trait.** A single Feat-sized rider - a condition on hit, a resistance, a terrain trick. Elite and Mythic almost always want one; Average sometimes does; Easy essentially never does - it's fodder, not a puzzle.
+9. **Reactions**, if this NPC needs to Parry/Block/Dodge or make Opportunity Attacks, use the same `(DEX + PRE) ÷ 3, rounded down` pool as a PC. Skip building this out entirely for Easy fodder that isn't expected to survive long enough to use it.
+10. **Mythic only:** add Mythic Initiative(X) per `combat.md`, using the X guidance above.
 
 ---
 
-### **Tier 2 \- Levels 4–6**
+## Example Roster - Level 1, Party of Four
 
-**Player baselines:** Max Evasion 12–13 · Max to-hit \+7 to \+8 · HP 19–22
+All four Roles at the same Threat Level, side by side, so the gap between them is easy to see directly - a bandit gang and their wolf, sized for a 4-player, level 1 party. Threat Level 1's caps are Skill 2 / Attribute 4.
 
-| Archetype | HP | AR (armour type) | Evasion | To-hit | Avg damage | Primary defence |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Brute | 38–55 | 3–6 (hide) | 4–5 | \+5 to \+6 | 2d6 \+ STR 3–4 | HP pool |
-| Tank | 30–45 | 9–13 (brigandine) | 5–6 | \+5 to \+7 | 1d8 \+ STR 3–4 | Armour \+ Block |
-| Skirmisher | 22–35 | 2–4 (leather) | 7–8 | \+5 to \+7 | 1d6 \+ PRE 3–4 | Evasion |
-| Caster | 22–35 | 0–3 (gambeson) | 6–7 | \+5 to \+6 ✦ | 1d10 \+ FAI/ARC 3–4 | Ward saves \+ Aegis |
+**Counts and stat lines below are Monte Carlo-validated** (`tools/encounter_sim.py`), not just derived from the offset table above - Easy, Average, and Elite were each retuned until they landed close to a 50/50 fight against a generic 4-PC level-1 party (51-53% PCs win, across thousands of simulated trials each). At level 1's small Wounds pools (2-4), the naive "N per player" counts from the Role table above produced wildly uneven fights instead (Easy 72% PCs win at 16 fielded, Average only 8% at 8 fielded, Elite 64% at 4 fielded) - see `tools/encounter_sim.py`'s docstring for the full methodology. Mythic was deliberately left alone: it's expected to lean on allies and battlefield tactics rather than win a fair fight as a lone stat block, so "loses badly to a full party 1-on-4" is an acceptable outcome for it, not a bug to chase.
 
-✦ *Spell to-hit bonus.*
+### Easy - Starving Bandit (field 8 for a 4-player party)
 
-**Notes for this tier:** Players have Prestige Feat access at level 5 \- expect characters to feel more defined. Tanks can now plausibly have Armorer 2+ and repair armour during short rests. Add Pack Tactics or group dynamics to Skirmishers. Casters can begin using Phantom Aegis as their one reactive option.
+| **Starving Bandit** | Threat Level 1 - Easy |
+| :---- | :---- |
+| **Attributes** | STR 4, PRE 1, END 3, DEX 1 |
+| **Skill** | Brawling 0 (untrained) |
+| **Wounds** | 3 |
+| **Armor** | Gambeson - AR 2, Penalty 1 |
+| **Evasion** | 5 |
+| **Attack** | 1d12 alone vs. target's Evasion (untrained - no Skill or Attribute added) |
+| **Damage** | 1d6 \+ 4 Bludgeoning (Punch) − target's AR |
 
----
+Both STR and END stay within Threat Level 1's caps, but this is a heavier build than the cap − 3 offset would give you - untrained, unarmored fodder needs real STR/END to hold up once 8 of them are swinging at once, which is exactly the retuning finding above.
 
-### **Tier 3 \- Levels 7–9**
+### Average - Bandit Cutthroat (field 6 for a 4-player party)
 
-**Player baselines:** Max Evasion 14–15 · Max to-hit \+9 to \+10 · HP 19–22 · Skill cap reached at L7
+| **Bandit Cutthroat** | Threat Level 1 - Average |
+| :---- | :---- |
+| **Attributes** | STR 4, PRE 1, END 3, DEX 1 |
+| **Skill** | One-Handed Blades 1 (trained) |
+| **Wounds** | 3 |
+| **Armor** | Gambeson - AR 2, Penalty 1 |
+| **Evasion** | 5 |
+| **Weapon** | Shortsword (1d6 \+ 1 Piercing, Light) |
+| **Attack** | 1d12 \+ 1 \+ 4 \= 1d12 \+ 5 vs. target's Evasion |
+| **Damage** | 1d6 \+ 1 (Shortsword) \+ 4 (STR) − target's AR |
 
-| Archetype | HP | AR (armour type) | Evasion | To-hit | Avg damage | Primary defence |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Brute | 50–75 | 4–7 (monster hide) | 4–5 | \+6 to \+8 | 2d8 \+ STR 4 | HP pool \+ Regen |
-| Tank | 40–58 | 12–15 (half/full plate) | 5–6 | \+6 to \+8 | 1d10 \+ STR 4 | Armour \+ Block |
-| Skirmisher | 30–45 | 3–5 (leather) | 8–9 | \+6 to \+8 | 1d8 \+ PRE 4 | Evasion \+ Parry |
-| Caster | 30–48 | 0–4 (gambeson) | 6–7 | \+6 to \+8 ✦ | 2d6 \+ FAI/ARC 4 | Wards \+ Aegis \+ 1 Dodge |
+STR sits at Threat Level 1's Attribute cap. Trained vs. Easy's untrained is now the load-bearing difference between these two Roles - their Attribute/END/gear ended up nearly identical once both were retuned to their own fielded counts.
 
-✦ *Spell to-hit bonus.*
+### Elite - Bandit Captain (field 4 for a 4-player party)
 
-**Notes for this tier:** The L7 skill cap means the plateau has begun \- expect players to feel powerful between levels 8 and 12\. Skirmishers with Evasion 8–9 now force average players to roll 4+ to hit. Brutes with Regeneration create urgency (kill it before it heals). Tank field repair (Armorer 3+) is now viable \- a Tank restoring 2d6 AR in a 10-minute window is a meaningful pacing threat if the encounter is timed.
+| **Bandit Captain** | Threat Level 1 - Elite |
+| :---- | :---- |
+| **Attributes** | STR 4, PRE 1, END 4, DEX 2 |
+| **Skill** | One-Handed Blades 2 |
+| **Wounds** | 4 |
+| **Armor** | Mail Shirt - AR 4, Penalty 2 |
+| **Evasion** | 5 |
+| **Weapon** | Broadsword (1d10 Slashing) |
+| **Attack** | 1d12 \+ 2 \+ 4 \= 1d12 \+ 6 vs. target's Evasion |
+| **Damage** | 1d10 \+ 4 − target's AR |
+| **Signature trait** | Ambush Leader - Advantage on its first Attack Roll of the fight |
 
----
+Sits right at Threat Level 1's cap. Armor upgraded from Buff Coat to Mail Shirt during retuning - still Flexible, still a bandit-plausible step up rather than a leap to Rigid plate.
 
-### **Tier 4 \- Levels 10–12**
+### Mythic - The Timber Fang (1 for the whole 4-player party)
 
-**Player baselines:** Max Evasion 15 · Max to-hit \+10 · HP 19–25 · Flat from L8 through L12 (attribute cap already maxed)
+| **The Timber Fang** | Threat Level 1 - Mythic |
+| :---- | :---- |
+| **Attributes** | STR 4, PRE 1, END 4, DEX 3 |
+| **Skill** | Brawling 2 (natural weapons) |
+| **Wounds** | 4 |
+| **Natural Armor** | Thick hide - AR 2, Penalty 1 (Flexible: AR ÷ 2, rounded down) |
+| **Evasion** | 7 |
+| **Weapon** | Bite (1d8 Piercing) |
+| **Attack** | 1d12 \+ 2 \+ 4 \= 1d12 \+ 6 vs. target's Evasion |
+| **Damage** | 1d8 \+ 4 − target's AR |
+| **Mythic Initiative (3)** | Rolls initiative 3 times (normal, \-2, \-4); takes a full turn on each count |
+| **Unique ability, 1/round - Howl** | Every creature within 20 ft: MIND Ward (DC 12, Tricky) or Frightened until the end of its next turn |
 
-| Archetype | HP | AR (armour type) | Evasion | To-hit | Avg damage | Primary defence |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Brute | 65–95 | 5–8 (monster) | 4–6 | \+8 to \+9 | 2d10 \+ STR 5 | HP pool \+ Regen |
-| Tank | 50–70 | 14–16 (full plate) | 5–7 | \+8 to \+10 | 2d6 \+ STR 5 | Armour \+ Block \+ combat repair |
-| Skirmisher | 38–55 | 3–6 (leather) | 9–10 | \+8 to \+9 | 1d10 \+ PRE 5 | Evasion \+ 2–3 Dodges |
-| Caster | 38–58 | 0–5 (gambeson) | 6–8 | \+8 to \+9 ✦ | 3d6 \+ FAI/ARC 5 | Wards \+ Reflect \+ Aegis |
-
-✦ *Spell to-hit bonus.*
-
-**Notes for this tier:** Skirmisher Evasion 9–10 means players need to roll 4–6+ to hit \- these enemies feel nearly untouchable and should. Tank combat repair (Armorer 4+, Major \+ Minor action, 1/day) can restore 1d6 AR mid-fight; use it once, at a turning point. Caster Ward reflection on a missed spell punishes player casters hard \- reserve it for a boss-tier caster, not a standard enemy.
-
----
-
-## Attack and Evasion Scaling Reference
-
-The formulas that drive everything:
-
-Attack roll: 1d12 \+ Weapon Skill \+ Attribute vs. target Evasion
-
-Evasion: 5 \+ Agility Skill \+ DEX − Armour Penalty
-
-Both use **Skill \+ Attribute**, so they scale identically. The permanent gap between an optimised attacker and an optimised evader is exactly 5 \- meaning the attacker always needs a **5 or higher on the d12 to hit**, giving a flat **67% hit rate at every level**. This ratio never changes as levels increase.
-
-| Level | Skill cap | Attr max | Max attack bonus | Avg roll | Max evasion | Min to hit max evasion |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | 2 | 4 | \+6 | 12.5 | 11 | 5+ |
-| 2 | 2 | 4 | \+6 | 12.5 | 11 | 5+ |
-| 3 | 3 | 4 | \+7 | 13.5 | 12 | 5+ |
-| 4 | 3 | 4 | \+7 | 13.5 | 12 | 5+ |
-| 5 | 4 | 4 | \+8 | 14.5 | 13 | 5+ |
-| 6 | 4 | 4 | \+8 | 14.5 | 13 | 5+ |
-| 7 | 5 | 4 | \+9 | 15.5 | 14 | 5+ |
-| 8 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
-| 9 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
-| 10 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
-| 11 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
-| 12 | 5 | 5 | \+10 | 16.5 | 15 | 5+ |
-
-*Growth is now staggered by a single \+1 step at a time (skill cap leads at L3/L5/L7, attribute cap catches up at L8) rather than jumping by 2 - the compressed 1-5 scale doesn't have room left for the old double-jump breakpoints.*
-
-**Reading this table for encounter design:**
-
-- To-hit bonus equals (player Evasion − 5\) → enemy hits 67% of the time. This is a standard threat.
-- To-hit bonus equals (player Evasion − 7\) → enemy hits on 8+. About 42%. This is a nuisance enemy or minion.
-- To-hit bonus equals (player Evasion − 3\) → enemy hits on 4+. About 75%. This is a terror encounter.
-- Crits (natural 12\) bypass Evasion, Block, and Parry entirely. Expanded crit ranges (10–12, 9–12) make this happen more often.
-
-**Note:** Most players will not be fully optimised. A typical player sits 2–4 points below the max Evasion column. Calibrate enemies to a realistic party, not the ceiling.
+Builds exactly like Elite - no Wounds bump; its survivability is Mythic Initiative, not a bigger pool. X \= 3 for this 4-player party - a serious threat to most of the party at once without being guaranteed to overwhelm it.
 
 ---
 
-## Design Principles
+## Encounter Budgeting
 
-### **Armour degrades \- account for the arc**
-
-A heavily armoured enemy starts the fight hard to damage and gets progressively easier. A knight in Full Plate (AR 8\) can take roughly 8 hits before their armour breaks entirely. In a long fight, that Tank is nearly unprotected by the end. Use this arc intentionally: the fight should feel grinding at first and urgent at the end as armour fails. Natural armour that doesn't degrade (scales, stone hide) tells a completely different story \- consistent and relentless \- and should be used deliberately on monsters where that reliability matters.
-
-### **Crits are your lethality dial**
-
-Rather than inflating raw damage, widen the crit range on dangerous enemies. Crits deal maximum damage *and* stack 1 Exhaustion (if damage exceeds AR). Since Exhaustion subtracts from all d12 rolls, a character at Exhaustion 3 is attacking, dodging, and rolling wards at −3. This compounds \- a character accumulating Exhaustion mid-fight becomes exponentially more vulnerable, which creates escalating tension without requiring more HP. A Brute with a 9–12 crit range is far scarier than one with 30 extra HP.
-
-### **The Reaction economy is a design lever**
-
-Most enemies have one Reaction per round. A Tank burning Block cannot take Opportunity Attacks. A Skirmisher using Parry cannot use it again until the next round. Use positioning and multiple threats to force enemies into real Reaction dilemmas \- a Tank protecting a caster ally might Block to redirect an attack, but that leaves an adjacent opening. This creates tactical depth without you having to script anything. Always note in an enemy's stat block what their Reaction *priority* is.
-
-### **Don't inflate HP to create difficulty**
-
-A fight that drags because the enemy has too much HP is almost always less satisfying than one that ends faster but demanded real decisions. A Skirmisher dying in 2–3 well-placed hits is correct \- those hits were hard to land. Tune for drama and decision-making, not survival time. If a fight feels too short, add another enemy or a complication; don't just add HP.
-
-### **Enemies threaten differently**
-
-The best encounters mix archetypes because each applies different pressure:
-
-- **Brute** → urgency (kill it fast or die)
-- **Tank** → attrition (the fight will cost you resources)
-- **Skirmisher** → positioning (you can't stay still)
-- **Caster** → conditions (you're weakening round by round)
-
-A room with one of each archetype is one of the most tactically rich encounters you can run \- and it requires no special scripting.
-
----
-
-# Mythic Initiative
-
-Mythic creatures \- campaign-defining bosses and other singular threats \- do not act once per round. They are too fast, too vast, or too terrible for a single turn to contain them.
-
-**Mythic Initiative (X):** A Mythic creature rolls initiative X times. The first roll is made normally. Each roll after the first takes a cumulative **−2 penalty** (second roll −2, third roll −4, fourth roll −6, and so on). The creature takes a **full turn** on each of its initiative counts.
-
-All of a Mythic creature's initiative counts are public, rolled openly at the start of combat. The party always knows exactly when the beast will act \- surviving it is another matter.
-
-**Repetition:** A Mythic creature's unique abilities (breath weapons, signature spells, lair-shaking special attacks) can each be used only **once per round**, no matter how many turns the creature takes. Basic attacks, movement, and mundane actions face no such limit.
-
----
-
-## Turns & Effects
-
-A Mythic creature's turns are real turns. Anything that references "a turn" applies to **each** of them:
-
-- **Saves against conditions** that allow an attempt at the end of the creature's turn (Frightened, channelled spells, Creeping Rot, and similar) are attempted at the end of **every** Mythic turn. A Mythic (3) creature gets three chances per round to shake off an effect. Conditions land on Mythic creatures \- they just don't stay long.
-- **Ongoing damage** such as Bleeding triggers at the start of **every** Mythic turn. A bleeding Mythic (3) creature takes its Bleed value three times per round.
-- **Start-of-turn and end-of-turn traits** (regeneration, auras, recharging abilities) trigger on every turn unless the creature's statblock says otherwise.
-- **Reactions:** A Mythic creature's Reaction refreshes at the start of **each** of its turns. A Mythic (3) creature can Parry, Block, or make an opportunity attack up to three times per round.
-
-Mythic creatures do not need condition immunities or special resistances. Their many turns *are* their resistance \- and their many turns are also their weakness. Choose your poisons accordingly.
-
----
-
-## Running Mythic Creatures
-
-**Statblock math changes.** A trait that reads "regains 10 HP at the start of its turn" heals a Mythic (3) creature 30 HP per round. Write and read Mythic statblocks with the turn count in mind.
-
-**Keep the party breathing.** The −2 stagger usually spreads a Mythic creature's turns across the round. If two of its initiative counts would ever resolve back-to-back with no player character between them, the GM may delay the later turn until at least one PC has acted. Bosses should be terrifying, not tedious.
-
-**Bleed is boss-killer tech.** Parties will learn that stacking Bleeding punishes a creature for every turn it takes. This is intentional \- but watch the math on high-damage hits.
-
----
-
-## Optional Rule: Mythic Pressure
-
-Facing a creature that acts three or four times per round strains the party's defenses \- each character has only one Reaction per round to answer many attacks.
-
-If your table finds Mythic fights shut down Parry, Block, and Dodge entirely, use this rule: **whenever a Mythic creature ends one of its turns, each player character regains their Reaction.** Mythic fights become the proving ground for defensive maneuvers rather than the place they stop mattering.
-
----
-
-## Example: A Round Against a Mythic (3) Wyrm
-
-The wyrm rolls initiative three times: **14**, then **11** (roll of 13, −2), then **6** (roll of 10, −4). The party rolled 13, 9, 8, and 5.
-
-| Count | Actor | What Happens |
-| :---: | :---- | :---- |
-| 14 | **Wyrm (Turn 1)** | Bleeding ticks. It uses its once-per-round Fire Breath, then moves. At end of turn, it attempts a save against Grave Terror \- and fails. |
-| 13 | Kaela | Lands a Trip; the wyrm is prone. |
-| 11 | **Wyrm (Turn 2)** | Bleeding ticks. Its Reaction refreshes. It stands from prone, bites Kaela. End of turn: saves against Grave Terror again \- success. The fear ends. |
-| 9 | Torvald | Attacks the wyrm; it spends its refreshed Reaction to Block. |
-| 8 | Mirren | Casts Creeping Rot \- it lands. |
-| 6 | **Wyrm (Turn 3)** | Bleeding and Creeping Rot both tick. It cannot use Fire Breath again this round, so it claws Mirren and repositions. End of turn: it attempts to fight off the Rot. |
-| 5 | Osric | Acts with the wyrm's full round spent \- the safest moment to commit. |
-
-The party knew every beat of this round before it began. The wyrm was never safe from conditions, and never helpless against them.
+Once you've got a roster built, `progression_&_rewards.md`'s Rewards & Treasure section (Minor/Average/Grand Encounter XP tiers) is still the tool for pricing the fight as a whole and handing out its reward - Threat Level and Role tell you what a single NPC is worth in a fight, that section tells you what the fight is worth to the party once it's over.
