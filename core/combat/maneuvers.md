@@ -10,11 +10,7 @@ This is the map of a melee or ranged exchange, start to finish, and where each p
 | **4. Resolve the Margin** | What's my roll minus their roll? | Check it against the Margin table below: Dominant, Stopped, Minimized, or Failed. |
 | **5. Aftermath** | Did I hit Dominant or Stopped? In what order do I want my Effects? | Pick Effects in the order you want them to apply - order changes what they affect (see Order Matters, below). If Riposte connects, the original attacker can answer it exactly the same way, restarting from Step 3. |
 
-**1. Get into range.** An attack needs the target within your weapon's Reach. If they already are when your turn starts, skip straight to Step 2. Otherwise you close the gap with a Move Action (a Dash, if you need more of it) - and it isn't free against a Medium+ Reach opponent.
-
-Reach isn't tracked square-by-square for this purpose - what matters is the moment you first cross into their threat range (adjacent for a Medium Reach opponent, 2 squares out for Long, 3 for Very Long). The instant you do, they get an Opportunity Attack against you (see [[Opportunity Attacks|combat]]) - the entry-side mirror of the more familiar "leaves reach" trigger; Touch and Short Reach can't do this to you. It only fires once, right as you cross that line: continuing to close afterward, from their reach's outer edge down to fully adjacent, doesn't provoke it again ("moving within reach you already occupy" doesn't provoke - [[Opportunity Attacks|combat]]) - and running out of movement right at that edge, without reaching adjacent, still counts as having triggered it.
-
-That Opportunity Attack is a normal attack roll like any other - if it beats your Passive Evasion, you answer it exactly like Step 3 below (Maneuver, Reactive Casting, or nothing), before you've even closed the distance to swing back. A Feint or similar setup move can prime the attack you're closing in to make, but doesn't move you (see [[Basic Moves|core_rules]]).
+**1. Get into range.** An attack needs the target within your weapon's Reach. If they already are when your turn starts, skip straight to Step 2. Otherwise you close the gap with a Move Action (a Dash, if you need more of it) - closing on a Medium+ Reach opponent provokes their Opportunity Attack once, the moment you cross into their threat range (see [[Opportunity Attacks|combat]] for the full trigger and its edge cases). If it hits, you answer it exactly like Step 3, below, before you've even closed the distance to swing back. A Feint or similar setup move can prime the attack you're closing in to make, but doesn't move you (see [[Basic Moves|core_rules]]).
 
 **2. Make the attack.** The attacker rolls a normal Attack Roll against the defender's Passive Evasion (see [[Attack Roll|combat]]). If it doesn't beat Evasion, that's a clean miss - the exchange ends here, and no one spends a Reaction.
 
@@ -49,9 +45,19 @@ Answer an incoming attack with your own contested roll, instead of simply eating
 | \-1 to \-2 | **Minimized** \- Attack connects, but reduce the damage (see your Style, below). |
 | \-3 or lower | **Failed** \- Full damage. Your Reaction is spent for nothing. |
 
+**Minimized, at a glance** - each Style reduces damage a different way; the full text lives with each Style below, but this is the version you want mid-exchange:
+
+| Style | Minimized reduces damage by... |
+| :---- | :---- |
+| Parry | Your weapon's damage die (roll it) |
+| Block | Your shield's AR Bonus, or Shields Skill ÷ 2 (rounded down) if blocking with a Two-Handed weapon |
+| Dodge | Half (rounded down) |
+
 **Ties favor you, the defender** (Margin of exactly 0 falls under Stopped) - a deliberate exception to the normal [[Contested Check|core_rules]] convention, preserving how Parrying has always resolved. Reactive Casting (below) carries the same tie-favors-you principle, expressed through its Mana Value formula instead.
 
 **Critical Hits:** A Natural 12 bypasses the Parry and Block Styles entirely - a blow that committed is too fast or too heavy to intercept, so reacting with either Style automatically Fails. Dodge is the exception: it works by not being where the blow lands rather than intercepting it, so it still resolves normally against a Crit.
+
+**Armor wear:** Parrying or Blocking still puts your gear between you and the blow, so your armor (and shield, if Blocking) degrades as normal - see [[Degradation Rules|armor]] - even on a Dominant or Stopped result. Dodge is the exception: see its Note, below.
 
 **Reach defines fights:** see [[Reach|combat]] for how outreaching your opponent (or being outreached) affects your rolls to Maneuver and to attack.
 
@@ -70,6 +76,8 @@ At Dominant, pick any 2 of the (up to) 5 Effects available to you - repeats aren
 
 **Order matters.** Your 2 Effects resolve one at a time, in the order you pick them - not simultaneously. An Effect only affects things that happen after it's already active, so picking Riposte before Exploit Opening means the Riposte's attack roll doesn't get Exploit Opening's Advantage (that Advantage is still banked for whatever your next attack against them ends up being); pick Exploit Opening first instead, and it's already active by the time you resolve Riposte, so the Riposte attack roll itself gets Advantage.
 
+A banked Effect doesn't expire just because a Riposte chain loops back to you - it still applies to whichever qualifying roll comes next, per that Effect's own wording (Exploit Opening watches your next attack roll against the target, Bind Weapon watches the attacker's next attack roll), whether that roll happens two exchanges later in the same chain or on an ordinary turn, as long as it lands before that Effect's stated deadline.
+
 ---
 
 ### **Style: Parry**
@@ -77,8 +85,8 @@ At Dominant, pick any 2 of the (up to) 5 Effects available to you - repeats aren
 Deflect an incoming melee attack with your weapon.
 
 **Prerequisites:** A melee weapon in your hand, and 1+ rank in that weapon's Skill.  
-**Restrictions:** Melee attacks only. Does **not** work against AoE or unseen attacks.  
-**Roll:** Your normal attack roll (Weapon Skill \+ Attribute). Disadvantage if the attacker's weapon Reach Category is strictly greater than yours (see [[Reach Categories|weapons]]).  
+**Restrictions:** Melee attacks only. Does **not** work against AoE.  
+**Roll:** 1d12 \+ Weapon Skill \+ Attribute (your normal attack roll). Disadvantage if the attacker's weapon Reach Category is strictly greater than yours (see [[Reach Categories|weapons]]).  
 **Minimized:** Reduce damage by your weapon's damage die (roll it).
 
 **Signature Effects:**
@@ -92,8 +100,8 @@ Deflect an incoming melee attack with your weapon.
 
 Use your shield, or a Two-Handed weapon, to absorb incoming attacks.
 
-**Prerequisites:** A shield in your hand, or a melee weapon with the Two-Handed property, and 1+ rank in Shields. A Versatile weapon being wielded with both hands does count as a Two-Handed Weapon for this purpose (a two-handed ranged weapon or firearm does not work).  
-**Restrictions:** Works against melee and ranged physical attacks if you're using a shield; a Two-Handed weapon only blocks melee. Does **not** work against AoE or unseen attacks.  
+**Prerequisites:** A shield in your hand, or a melee weapon with the Two-Handed property, and 1+ rank in Shields - blocking is a shield discipline whatever you're holding, so the weapon in your hands doesn't change which Skill trains it. A Versatile weapon being wielded with both hands does count as a Two-Handed Weapon for this purpose (a two-handed ranged weapon or firearm does not work).  
+**Restrictions:** Works against melee and ranged physical attacks if you're using a shield; a Two-Handed weapon only blocks melee. Does **not** work against AoE.  
 **Roll:** 1d12 \+ Shields Skill \+ END.  
 **Minimized:** Reduce damage by your shield's AR Bonus ([[Shield Table|armor]]), or by Shields Skill ÷ 2 (rounded down) if you're blocking with a Two-Handed weapon instead of a shield. (A Buckler has no AR Bonus and reduces nothing here - see [[Shield Descriptions|armor]] for what it offers instead.)
 
@@ -110,7 +118,8 @@ Use your shield, or a Two-Handed weapon, to absorb incoming attacks.
 
 Use your adroit agility to escape danger.
 
-**Prerequisites:** 1+ rank in Agility. You must also be able to move the minimum distance necessary to clear the attack's range (this movement does not consume your Move Action) - if you can't (such as against an Area of Effect attack), Dodge simply fails and your Reaction is not spent.  
+**Prerequisites:** 1+ rank in Agility.  
+**Restrictions:** Unlike Parry and Block, Dodge isn't flatly locked out of AoE attacks - but you must be able to move the minimum distance necessary to clear the attack's area (this movement does not consume your Move Action) to answer one at all. If you can't clear it, Dodge simply fails and your Reaction is not spent.  
 **Roll:** 1d12 \+ Agility \+ DEX.  
 **Minimized:** Halve the damage (round down) instead of a flat reduction - you couldn't fully clear the blow, but you weren't square in its path either.  
 **Note:** Unlike Parry and Block, a Dominant or Stopped result here means the attack never touched you at all - your armor does not degrade.
@@ -131,34 +140,8 @@ Answer an incoming attack by snapping off a spell before it lands, instead of in
 **Prerequisites:** 1+ rank in the relevant Casting Skill, and a spell you're able to cast.  
 **Roll:** Your normal spell roll (Casting Skill \+ Attribute) vs. the attacker's attack roll.
 
-**Margin \= Your spell roll − the attacker's attack roll**
+**Margin \= Your spell roll − the attacker's attack roll.** Unlike the Style Margin above, this Margin is read as a raw number rather than checked against the tier table - it feeds directly into the Mana Value formula below.
 
 **Mana Value \= Margin \+ 1.** You may cast any spell you're able to cast (and can pay for as normal from your own Mana pool) whose Mana Cost is no greater than your Mana Value - there's no surcharge for casting reactively, this only caps how big a spell your roll affords. A Margin of 0 (a tie, favoring you the same way it favors a Style's defender, above) gives a Mana Value of 1, enough for the cheapest spell. If your Margin is **\-1 or lower**, your Mana Value is 0 or less - you can't afford to cast anything, and your Reaction is spent for nothing.
 
 **This does not avoid the attack on its own.** Reactive Casting isn't a Style - it doesn't intercept anything, and there is no Riposte tier here. The incoming attack still resolves normally (it already beat your Passive Evasion to trigger this) unless the spell you cast happens to reduce, negate, or otherwise answer it. Casting a Fireball in response to an incoming sword doesn't stop the sword.
-
----
-
-## Ready Volley
-
-Hold a ranged shot on a chosen lane, ready to loose it the instant your trigger is met - the setup melee gets for free just by having a weapon in hand, ranged weapons pay for with a turn.
-
-**Trigger:** Any perceivable circumstance you declare, same as a normal Held Action (see [[Held Action|combat]]) - an enemy entering your line of sight or your weapon's Range, closing to melee, breaking cover, attacking an ally, and so on.  
-**Action:** Major Action to set (this is a Held Action), Reaction to release (shared pool, see [[Action Economy|combat]]).  
-**Prerequisites:** A loaded ranged weapon in hand. A firearm must already be loaded before you set the trigger - Ready Volley holds the shot, not the reload.  
-**Roll:** Your normal attack roll (Weapon Skill \+ Attribute), unless you're making a Called Shot below.
-
-If your trigger doesn't occur before your next turn, the action is lost, same as any Held Action.
-
-### **Called Shot**
-
-When your Ready Volley fires, you may aim for more than center mass instead of a normal hit. Declare your zone before you roll - this option only exists because you took the time to aim; a snapped-off attack on your own turn doesn't give you that choice.
-
-| Zone              | Penalty | On Hit                                                                                                                               |
-|:------------------|:-------:|:-------------------------------------------------------------------------------------------------------------------------------------|
-| Torso *(default)* |   \-    | Normal damage, no additional effect.                                                                                                 |
-| Legs              |   \-2   | Speed becomes half until the end of their next turn. Margin \+3 or higher: they are knocked Prone instead.                           |
-| Arms              |   \-2   | Their next attack roll before your next turn has Disadvantage. Margin \+3 or higher: they drop one held item of your choice instead. |
-| Head              |   \-4   | This attack ignores the target's AR entirely.                                                                                        |
-
-**Margin \= Your attack roll − the target's Evasion** - the same numbers you already rolled to resolve the hit, no extra roll needed.

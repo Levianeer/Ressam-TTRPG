@@ -31,14 +31,14 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - **Casting Time:** Major Action
 - **Range:** Touch
 - **Duration:** Instant
-- **Effect:** Briefly wrench your Familiar into the shape of a blade and strike. Make a melee spell attack roll vs. target's Evasion. On hit, deal 2d4 \+ FAI lightning damage.
+- **Effect:** Briefly wrench your Familiar into the shape of a blade and strike. Make a Petition Roll (DC 7). **Success:** Deal 2d4 \+ FAI lightning damage.
 
 **Phantom Aegis \- Mana Cost 2**
 
 - **Casting Time:** Reaction (when you are hit by an attack)
 - **Range:** Self
 - **Duration:** Instant
-- **Effect:** Your Familiar interposes itself, absorbing the impact. Reduce the damage by 2d8 \+ FAI. If this reduces the damage to 0, the attack is considered to have missed for armor degradation purposes.
+- **Effect:** Make a Petition Roll (DC 7) as your Familiar interposes itself, absorbing the impact. **Success:** Reduce the damage by 2d8 \+ FAI. If this reduces the damage to 0, the attack is considered to have missed for armor degradation purposes.
 
 - If the original damage is less than the loss of Wounds Phantom Aegis inflicted, your speed is halved until the end of your next turn.
 
@@ -47,11 +47,9 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - **Casting Time:** Major Action
 - **Range:** 30 ft
 - **Duration:** Channel
-- **Effect:** You bind a thread of your Familiar to a creature's shadow, linking your suffering to theirs. Make a spell overcome roll vs. the target's CHA Ward.
+- **Effect:** You bind a thread of your Familiar to a creature's shadow, linking your suffering to theirs. Make a Petition Roll (DC 7).
 
-  - **Overcome:** Whenever you lose Wounds while channeling (from any source, including Invocation spell costs), the target takes lightning damage equal to half the Wounds you lost.
-  - **Resist:** The tether snaps \- the target takes 1d6 lightning damage and the spell ends.
-
+  - **Success:** Whenever you lose Wounds while channeling (from any source, including Invocation spell costs), the target takes lightning damage equal to half the Wounds you lost.
 
 - The tether is visible as a faint spectral line. It breaks if the target moves more than 60 ft from you.
 
@@ -60,7 +58,7 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - **Casting Time:** Major Action
 - **Range:** 60 ft
 - **Duration:** Instant
-- **Effect:** Hurl a shard of your Familiar at a creature you can see. Make a spell attack roll vs. target's Evasion. On hit, deal 2d8 \+ FAI lightning damage.
+- **Effect:** Hurl a shard of your Familiar at a creature you can see. Make a Petition Roll (DC 7). **Success:** Deal 2d8 \+ FAI lightning damage.
 
 - The shard lodges in the wound. Until the end of your next turn, your Touch spells can target this creature from up to 30 ft away.
 
@@ -69,11 +67,11 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - **Casting Time:** Major Action
 - **Range:** Self
 - **Duration:** 1 hour
-- **Effect:** Drag your Familiar through shapes of agony until it becomes a weapon of terrible purpose. Choose one armament:
+- **Effect:** Make a Petition Roll (DC 7) as you drag your Familiar through shapes of agony until it becomes a weapon of terrible purpose. **Success:** Choose one armament:
 
 - **Soullance:** A spectral spear manifests in your hands.
   - Reach (Medium)
-  - Melee spell attacks deal 2d8 \+ FAI lightning damage
+  - Melee attacks with it deal 2d8 \+ FAI lightning damage
   - On a critical hit, the target is impaled by a spectral copy \- they take an additional 2d8 damage and their speed is 0 until they use a Major Action to wrench free
 
 
@@ -87,7 +85,7 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
   - Gain \+5 AR (does not degrade), gain access to a spectral shield
   - Your movement speed is reduced by 5 ft
   - When a creature hits you with a melee attack, they take 1d6 lightning damage
-  - While you have a Soulward active, your spell attack rolls and overcome rolls have disadvantage
+  - While you have a Soulward active, your attack rolls and Petition Rolls have disadvantage
 
 - **Dismissal:** You can dismiss the armament as a Free Action. You cannot have multiple armaments active.
 
@@ -96,7 +94,7 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - **Casting Time:** Major Action
 - **Range:** Self
 - **Duration:** Channel
-- **Effect:** You tear your soul completely from your body and reshape yourself around it \- your flesh becomes a vessel for your own weaponized self. Spectral blades erupt from your limbs. Your voice echoes with your Familiar's distorted cries.
+- **Effect:** Make a Petition Roll (DC 7) as you tear your soul completely from your body and reshape yourself around it \- your flesh becomes a vessel for your own weaponized self. **Success:** Spectral blades erupt from your limbs. Your voice echoes with your Familiar's distorted cries.
 
 - While Transformed:
   - Your melee attacks have 10 ft reach

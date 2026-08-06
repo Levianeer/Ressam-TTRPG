@@ -23,15 +23,15 @@ Actions resolve highest to lowest each round.
 | **Major Action** | 1/round | Attack, cast spell, reload weapon, Dash, Disengage, Dodge      |
 | **Minor Action** | 1/round | Sheathe weapon, drink potion, open door                        |
 | **Object Interaction** | 1/round | Draw ammunition, pick up weapon, flip lever                    |
-| **Reaction** | (DEX \+ PRE) ÷ 3, rounded down | Held Action, Maneuver (Parry/Block/Dodge), Reactive Casting, Opportunity Attack |
+| **Reaction** | (DEX \+ PRE) ÷ 3, rounded down, minimum 1 | Held Action, Maneuver (Parry/Block/Dodge), Reactive Casting, Opportunity Attack |
 | **Free Action** | Unlimited | Drop item, speak briefly, stop channeling, etc                 |
 | **Move Action** | Unlimited | Move up to your maximum speed, can be broken up into multiples |
 
 - **Per Round:** Refreshes at the start of your *next* turn  
 - **Reactions:** Usable on anyone's turn
 - **Drawing multiple weapons:** As a single Object Interaction, you may draw any number of weapons at once, provided you have a free hand for each one.
-- **Reactions/round \= (DEX \+ PRE) ÷ 3, rounded down.** Recalculate whenever DEX or PRE changes (leveling, injury, equipment). A low enough total rounds down to 0 \- a character who dumps both DEX and PRE cannot Parry, Dodge, Hold an Action, cast reactively, or make an Opportunity Attack at all.
-- **Reactions are a single shared pool:** Maneuver (in any of its Parry, Block, or Dodge Styles), Reactive Casting, and Opportunity Attacks all draw from the same pool above \- and so does every other Reaction-based Feat or spell you have (Stress Inoculation, Ward of Faith, Dominating Stare, and the like). They compete for your Reactions, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
+- **Reactions/round \= (DEX \+ PRE) ÷ 3, rounded down, minimum 1.** Recalculate whenever DEX or PRE changes (leveling, injury, equipment). Even a character who dumps both DEX and PRE keeps 1 Reaction \- worse at Maneuvering than someone who invested, but never locked out of Parry, Dodge, Reactive Casting, or Opportunity Attacks entirely.
+- **Reactions are a single shared pool:** Maneuver (in any of its Parry, Block, or Dodge Styles), Reactive Casting, and Opportunity Attacks all draw from the same pool above \- and so does every other Reaction-based Feat or spell you have (Ward of Faith, Dominating Stare, and the like). They compete for your Reactions, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
 
 ---
 
@@ -59,7 +59,31 @@ When the trigger occurs before your next turn, use your Reaction to execute the 
 
 **Held Action with Spells**: You begin the casting process but must hold concentration, this counts as channelling. If concentration breaks, the spell dissipates (Mana is lost). Released on your specified trigger.
 
-**Ready Volley:** Holding a ranged attack this way has its own name and a Called Shot option - see [[Ready Volley|maneuvers]].
+---
+
+## Ready Volley
+
+Hold a ranged shot on a chosen lane, ready to loose it the instant your trigger is met - the setup melee gets for free just by having a weapon in hand, ranged weapons pay for with a turn.
+
+**Trigger:** Any perceivable circumstance you declare, same as a normal Held Action, above - an enemy entering your line of sight or your weapon's Range, closing to melee, breaking cover, attacking an ally, and so on.  
+**Action:** Major Action to set (this is a Held Action), Reaction to release (shared pool, see Action Economy, above - this competes with Maneuver and Opportunity Attacks for the same Reaction).  
+**Prerequisites:** A loaded ranged weapon in hand. A firearm must already be loaded before you set the trigger - Ready Volley holds the shot, not the reload.  
+**Roll:** Your normal attack roll (Weapon Skill \+ Attribute), unless you're making a Called Shot below.
+
+If your trigger doesn't occur before your next turn, the action is lost, same as any Held Action.
+
+### **Called Shot**
+
+When your Ready Volley fires, you may aim for more than center mass instead of a normal hit. Declare your zone before you roll - this option only exists because you took the time to aim; a snapped-off attack on your own turn doesn't give you that choice.
+
+| Zone              | Penalty | On Hit                                                                                                                                   |
+|:------------------|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------|
+| Torso *(default)* |   \-    | Normal damage, no additional effect.                                                                                                     |
+| Legs              |   \-2   | Speed becomes half until the end of their next turn. Hit Margin \+3 or higher: they are knocked Prone instead.                           |
+| Arms              |   \-2   | Their next attack roll before your next turn has Disadvantage. Hit Margin \+3 or higher: they drop one held item of your choice instead. |
+| Head              |   \-4   | This attack ignores the target's AR entirely.                                                                                            |
+
+**Hit Margin \= Your attack roll − the target's Evasion** - the same numbers you already rolled to resolve the hit, no extra roll needed. This is a different quantity from a Maneuver's Margin (see [[Maneuver|maneuvers]]): there's no tier table here, only the \+3 threshold above.
 
 ---
 
@@ -77,7 +101,7 @@ Crits don't grant Trauma \- their pressure is indirect, since rolling twice rais
 **Expanded Crit Range:** Some weapons crit on 11-12, 10-12 or even 9-12.  
 Features and Feats can expand this further.
 
-**Spells:** Spell attack rolls can crit. Spell overcome rolls cannot.
+**Spells:** Arcane Spell Attack rolls can crit; Arcane Spell Overcome rolls cannot. Divine's Petition Roll never crits - it's binary by design (see [[Magic Overview|magic_overview]]'s Petition Roll).
 
 ---
 
@@ -177,7 +201,7 @@ You and an ally flank a target when your two squares are the **exact mirror of e
 
 When a creature **leaves your melee reach**, you may use your Reaction for one melee attack.
 
-**Closing the Distance:** If you're wielding a weapon with Reach Medium or higher, a creature moving from outside your Reach to within it provokes the same way - the entry-side mirror of leaving reach (see [[Reach|weapons]]).
+**Closing the Distance:** If you're wielding a weapon with Reach Medium or higher, a creature moving from outside your Reach to within it provokes the same way - the entry-side mirror of leaving reach (see [[Reach|weapons]]); Touch and Short Reach can't do this to you. It fires once, right as they cross into your threat range: continuing to close afterward, from your reach's outer edge down to fully adjacent, doesn't provoke it again (see "moving within reach you already occupy," below) - and running out of movement right at that edge, without reaching adjacent, still counts as having triggered it.
 
 **Does NOT Provoke:**
 
@@ -186,6 +210,8 @@ When a creature **leaves your melee reach**, you may use your Reaction for one m
 - Forced movement (push, pull, teleport)
 - Moving after taking the Disengage action
 - Ranged attacks in melee (just disadvantage)
+
+An Opportunity Attack is a normal attack roll like any other - if it beats the target's Passive Evasion, they may answer it with a Maneuver or Reactive Casting exactly like any other attack (see [[Maneuvers|maneuvers]]).
 
 ---
 

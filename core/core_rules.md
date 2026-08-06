@@ -96,6 +96,20 @@ Ressam uses a nine-tier DC scale for Skill Checks, Ward Checks, Minor Magic, and
 
 **What to expect at the table:** A character actively trained in the relevant Skill clears Very Easy through Medium almost automatically at any level, and Tricky not long after. Hard is a real coin flip early on and becomes reliable by mid-game. Very Hard is out of reach at level 1 (even a maxed roll can't touch it) and stays a real risk even at the level cap without magical help. Incredibly Hard demands nothing short of a natural 12, even from a fully capped specialist \- and Impossible needs that same natural 12 stacked with the best magic gear money can buy. Neither is meant to be routine business.
 
+### **Success Rate by Level (Specialist)**
+
+Derived from **1d12 \+ Skill \+ Attribute** vs. each DC tier above, assuming a specialist: Skill Rank and that check's Attribute both maxed to the current level's cap ([[Per Level Advancement|progression_&_rewards]]). A generalist spreading points across multiple Skills or Attributes rolls worse than this at every level.
+
+| Level | Skill \+ Attribute | Very Easy (5) | Easy (8) | Medium (10) | Tricky (12) | Hard (15) | Grueling (17) | Very Hard (20) | Incredibly Hard (22) | Impossible (25) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1-2 | 2 \+ 4 \= 6 | 100% | 92% | 75% | 58% | 33% | 17% | 0% | 0% | 0% |
+| 3-4 | 3 \+ 4 \= 7 | 100% | 100% | 83% | 67% | 42% | 25% | 0% | 0% | 0% |
+| 5-6 | 4 \+ 4 \= 8 | 100% | 100% | 92% | 75% | 50% | 33% | 8% | 0% | 0% |
+| 7 | 5 \+ 4 \= 9 | 100% | 100% | 100% | 83% | 58% | 42% | 17% | 0% | 0% |
+| 8-12 | 5 \+ 5 \= 10 | 100% | 100% | 100% | 92% | 67% | 50% | 25% | 8%\* | 0%\* |
+
+\*Incredibly Hard only clears on a natural 12, even at the level 8+ cap; Impossible needs that same natural 12 plus the full \+3 a magic item can add, which this table doesn't include - see the Note above. Nothing here accounts for situational Advantage/Disadvantage either.
+
 ### **Skill Categories**
 
 **Combat Skills**
@@ -141,6 +155,8 @@ Ressam uses a nine-tier DC scale for Skill Checks, Ward Checks, Minor Magic, and
 | Grabbing a ledge when pushed | STR Ward |
 | Sneaking past guards | Stealth Check |
 | Surprised by an assassin | PRE Ward |
+
+**Exception:** Divine spellcasting doesn't use a Contested Check at all - every Divine spell rolls against a flat DC instead of a target's Ward or Evasion, on purpose (see [[Magic Overview|magic_overview]]'s Petition Roll).
 
 ---
 
@@ -264,7 +280,7 @@ A **Backpack** costs no Slots itself, but is required to use your full Slot coun
 ### **Short Rest (2 Hours)**
 
 - Regain 1 Temp Wound  
-- Arcane: Regain 1 Mana. Divine Mana is restored solely through Prayer, not this ladder (see [[Magic Overview|magic_overview]])  
+- Regain 1 Mana. Divine casters must also spend part of this Rest in genuine prayer to receive it (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - Arcane needs nothing beyond completing the Rest  
 - Trauma: Medical Lore DC 15 to remove 1 level  
 - Can use: Armorer, Medical Lore, Scribing, Prayer etc  
 - Interrupted by combat
@@ -272,7 +288,7 @@ A **Backpack** costs no Slots itself, but is required to use your full Slot coun
 ### **Field Rest (8 Hours)**
 
 - Regain 2 Temp Wounds  
-- Arcane: Regain Mana equal to **MIND**. Divine Mana is restored solely through Prayer, not this ladder (see [[Magic Overview|magic_overview]])  
+- Regain Mana equal to **MIND**. Divine casters must also spend part of this Rest in genuine prayer to receive it (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - Arcane needs nothing beyond completing the Rest  
 - Trauma: Medical Lore DC 15 to remove 2 levels  
 - Can use: Armorer, Medical Lore, Scribing, Prayer etc  
 - **Requires:** Shelter (a tent, lean-to, or similar \- not a permanent structure), watch rotation, defensible position, 1 ration per character (trail food)
@@ -280,7 +296,7 @@ A **Backpack** costs no Slots itself, but is required to use your full Slot coun
 ### **Long Rest (8 Hours)**
 
 - Regain Temp Wounds equal to your missing Wounds (fully topped off)  
-- Arcane: Regain Mana equal to **MIND × 3**, up to your Maximum Mana. Divine Mana is restored solely through Prayer, not this ladder (see [[Magic Overview|magic_overview]])  
+- Regain Mana equal to **MIND × 3**, up to your Maximum Mana. Divine casters must also spend part of this Rest in genuine prayer to receive it (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - Arcane needs nothing beyond completing the Rest  
 - Trauma: Medical Lore DC 15 to remove 3 levels  
 - Can use: Armorer, Medical Lore, Scribing, Prayer etc  
 - **Requires:** **Good Shelter** (a permanent, secure structure \- inn, barracks, temple, private home, etc. \- not a tent or camp), **Good Food** (a proper hot meal, Meal common or better \- see [[Supplies|supplies]], not trail rations), civilization with security
@@ -304,7 +320,7 @@ Trauma represents accumulated stress and strain beyond Wound loss \- fatigue, pr
 
 **Penalties:** Subtract Trauma level from **all** d12 rolls, wards and checks.
 
-**Sources:** Trauma is not a byproduct of ordinary combat damage \- there is no automatic Trauma from taking a hit, dropping to 0 Wounds, or being Dying (that cost is paid through the Wound Penalty instead). Trauma accrues only from specific, named sources: privation (starvation, Forced March \- see Food and Water and [[Traveling|traveling]]), a handful of paid Feat and spell costs that explicitly grant it (Stress Inoculation, Deep Devotion's fasting, Temporal Fortification's backlash, and similar), and anything else that explicitly says so. If a rule doesn't name Trauma, it doesn't grant it.
+**Sources:** Trauma is not a byproduct of ordinary combat damage \- there is no automatic Trauma from taking a hit, dropping to 0 Wounds, or being Dying (that cost is paid through the Wound Penalty instead). Trauma accrues only from specific, named sources: privation (starvation, Forced March \- see Food and Water and [[Traveling|traveling]]), a handful of paid Feat and spell costs that explicitly grant it (Deep Devotion's fasting, Temporal Fortification's backlash, and similar), and anything else that explicitly says so. If a rule doesn't name Trauma, it doesn't grant it.
 
 ---
 

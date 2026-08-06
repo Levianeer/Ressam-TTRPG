@@ -178,7 +178,7 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 **Note:** Making a ranged attack while an enemy is within adjacent imposes disadvantage.
 
-**Note:** Holding a ranged attack for a chosen trigger is called **Ready Volley**, and unlocks the Called Shot option - see [[Ready Volley|maneuvers]].
+**Note:** Holding a ranged attack for a chosen trigger is called **Ready Volley**, and unlocks the Called Shot option - see [[Ready Volley|combat]].
 
 **BOWS** *(Bows & Crossbows Skill)*
 

@@ -42,13 +42,3 @@ Your encouragement helps allies push through pain and fatigue - the same pep tal
 **Prerequisites:** CHA 3+  
 **Benefit:** You can spend 10 minutes encouraging your allies. Choose up to 6 friendly creatures (including yourself) who can see or hear you. For the next hour, each creature ignores half their penalty from their Trauma (a creature at Trauma 4 functions as Trauma 2\) (rounded down). This does not reduce actual Trauma levels. A creature can't benefit from this again until they finish a Field Rest or Long Rest.
 
----
-
-## Composure Under Fire
-
-### **Stress Inoculation**
-
-Repeated exposure to controlled danger - drills run hot, sparring past exhaustion - trains the panic out of your first response.
-
-**Prerequisites:** END 3+, \+2 ranks in Athletics or Survival  
-**Benefit:** When you fail a Ward check against an effect meant to frighten, panic, or overwhelm you (including a spell's Overcome roll targeting you), you may use your Reaction to gain \+4 to that Ward and reroll it. If it still fails, you may choose to suffer 1 Trauma to shake off the effect immediately instead of enduring its full duration. Once per round.

@@ -44,7 +44,7 @@ You can invoke a protective barrier infused with divine power.
 A Benediction caster doesn't need a second working to finish what the first one started - the brand already shows you exactly where to strike.
 
 **Prerequisites:** \+3 ranks in Benediction  
-**Benefit:** Your spell attack rolls made with Benediction spells score a critical hit on 11-12 instead of just 12 against a creature currently marked by your Divine Censure (or any effect that says it counts as marked).
+**Benefit:** Your Petition Rolls made with Benediction spells have advantage against a creature currently marked by your Divine Censure (or any effect that says it counts as marked).
 
 ---
 
@@ -88,4 +88,15 @@ Death has a texture to a Necromancer the way a held breath has a sound to a hunt
 A mind you've already cracked once doesn't close all the way back up - the second strike finds the same seam the first one opened.
 
 **Prerequisites:** \+2 ranks in Subjugation, FAI 3+  
-**Benefit:** When a creature fails to resist one of your Subjugation spells' overcome roll, the intrusion leaves a hook behind. The next Subjugation spell you cast against that same creature, before your next Prayer or Field Rest or Long Rest, is made with advantage on its overcome roll. This bonus doesn't stack, and is lost if that follow-up roll fails to overcome them.
+**Benefit:** When one of your Subjugation spells' Petition Roll succeeds against a creature, the intrusion leaves a hook behind. The next Subjugation spell you cast against that same creature, before your next Field Rest or Long Rest, is made with advantage on its Petition Roll. This bonus doesn't stack, and is lost if that follow-up roll fails.
+
+---
+
+## Unanswered Prayer
+
+### **Undeterred**
+
+A god who never says no isn't a god you're praying to, they're just an echo. Every unanswered prayer is proof the silence is real - and proof steadies your hand for the next one.
+
+**Prerequisites:** \+2 ranks in any Divine school, FAI 3+  
+**Benefit:** Whenever one of your Petition Rolls fails, gain 1 Resolve (maximum stored equal to your FAI, one shared pool across all your Divine schools - unlike Rite Mastery's per-school charges). Whenever you spend a Rite Mastery charge to reroll a Petition Roll, you may also spend 1 stored Resolve to give that reroll advantage (roll twice, take the higher result).

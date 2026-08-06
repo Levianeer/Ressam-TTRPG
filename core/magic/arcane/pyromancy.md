@@ -64,6 +64,6 @@ Pyromancy is destruction incarnate. Fire consumes, purifies, and transforms \- a
   - **Resist:** Half damage.
 
 
-- Any creature in the area that is already burning instead takes an additional 2d10 fire damage, and the fire explosively spreads to every creature adjacent to it \- those creatures must also make the DEX Ward check above (Overcome/Resist as normal, without the bonus damage).
+- Any creature in the area that is already burning instead takes an additional 1d10 fire damage (for 5d10 total \- exactly Pyromancy's Xd10 × Mana cap at Mana Cost 5, not a die over it), and the fire explosively spreads to every creature adjacent to it \- those creatures must also make the DEX Ward check above (Overcome/Resist as normal, without the bonus damage).
 
 - The area continues burning for 1 minute. Any creature that enters the area for the first time on a turn or starts its turn there takes 1d6 fire damage.

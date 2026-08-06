@@ -1,4 +1,4 @@
-Spell Crafting is an alternative to the normal spells, meant as a better expression of a mage that the normal spell list may lack. It, however, is meant to be a flavoured investment, not a cheap way to gain power or break interactions.
+Spell Crafting is an Optional Rule to add onto the normal spells, meant as a far more complex eperience of a mage that the normal spell list may lack. It, however, is meant to be a flavoured investment, not a cheap way to gain power or break interactions.
 
 **Requirements:**
 

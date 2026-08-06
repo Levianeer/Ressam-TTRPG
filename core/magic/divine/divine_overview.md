@@ -4,13 +4,15 @@ But faith alone is not enough. The gods' will is written. Every divine tradition
 
 **For core mechanics (Prayer, Mana), see The Nature of Magic.**
 
-### **Why Prayer, Not Rest?**
+### **Why Genuine Devotion?**
 
-Faith is not infinite, but unlike Arcane power it isn't something a body simply recovers by sleeping. Divine casters draw their Mana straight from their god, not from their own reserves, so Field Rest and Long Rest do nothing for it \- only genuine, active petition does, and only for as long as you actually kneel and hold that connection. This is the trade for spontaneity: no scrolls to prepare or predict, but the moment you and your god fall out of contact, so does your Mana.
+Divine casters rest and recover Mana the same way Arcane casters do - same Short/Field/Long Rest ladder, same amounts, same shelter and food requirements ([[Magic Overview|magic_overview]]). What's different is that resting alone isn't enough: your god has to actually hear from you. A Divine caster who completes a Long Rest in perfect comfort but never once genuinely prays gets nothing for it - the Mana simply isn't there, because it was never a body's reserves to recover in the first place.
+
+Whether a given prayer is answered is between you and your god, not something practice can improve - a devout stable hand and a High Priest ask with the same odds ([[Magic Overview|magic_overview]]'s Petition Roll). What years spent in a school actually buy you is knowing how to ask again when the first attempt falls flat - Rite Mastery, the same section - and which rites you're learned enough to attempt at all.
 
 ### **Prayer Requirements**
 
-Prayer is spiritual recalibration \- you reconnect with your deity and demonstrate your devotion. This is purely thematic (no mechanical bonus is tied to it), but it's worth roleplaying: different gods expect different proofs:
+Prayer is spiritual recalibration \- you reconnect with your deity and demonstrate your devotion, sometime during a Rest. This is what your Mana recovery actually depends on now (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - not a roleplay flourish with no mechanical weight, but the genuine act each god expects:
 
 - **War God:** Recount a recent battle while reading from scripture  
 - **Nature Deity:** Pray surrounded by growing things, holy texts open  

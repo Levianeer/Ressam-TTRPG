@@ -99,7 +99,7 @@ See the **Feats** chapter for the complete list.
 | **Slots** | STR \+ END |
 | **Evasion** | 5 \+ Agility \+ DEX − Armor Penalty |
 | **Initiative** | 1d12 \+ ((PRE \+ DEX) ÷ 2\) |
-| **Reactions/round** | (DEX \+ PRE) ÷ 3, rounded down |
+| **Reactions/round** | (DEX \+ PRE) ÷ 3, rounded down, minimum 1 |
 | **Armor Rating (AR)** | Equipped armor's AR value |
 
 ---

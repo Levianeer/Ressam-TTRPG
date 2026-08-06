@@ -30,13 +30,11 @@ The power gap between Martials and Casters is a known problem. Ressam aims to na
 
 Magic is difficult to balance in a system grounded in 16th-century martial combat. Every spell should be evaluated through the following lenses. Several of these (Creation, Healing, Summoning, Faith, Bypass) are the production-side rule for something `core/magic/laws_of_magic.md` states as in-fiction physics (Borrowed Substance, Conservation, the Soul, Reciprocity) - that file is where the *why* lives, and where to check when a proposed spell's legality isn't obvious from these lenses alone.
 
-## Damage
-
-A spell that deals only damage with no other effects should cap at **Xd8 × X Mana**. (e.g., a 2 Mana spell deals 2d8 if it does nothing else.) Pyromancy is the sole exception, scaling at **Xd10 × X Mana** instead.
-
 ## Overcomes
 
-Spells that use Overcomes instead of a spell attack should always do *something*, even on a failure. Save-or-suck spells are a design failure: a binary of overwhelming effect or nothing. Overcome spells should carry a guaranteed minimum effect, with their successes being less powerful than their D\&D equivalents as a trade-off for that reliability.
+Arcane Overcomes should always do *something*, even on a failure. Save-or-suck spells are a design failure: a binary of overwhelming effect or nothing. Arcane Overcome spells carry a guaranteed minimum effect (a Resist clause), with their successes being less powerful than their D\&D equivalents as a trade-off for that reliability.
+
+**Divine spells are the deliberate exception.** Every Divine spell resolves on a single Petition Roll against a flat DC (see `magic_overview.md`'s Magic in Combat section) - full effect or nothing, no Resist clause, no partial credit. This isn't an oversight of the rule above; it's Divine trading Arcane's soft partial-effect safety net for a mechanic that ignores the target's defenses entirely. Divine spellcasting *is* save-or-suck, on purpose - that's the cost of a check that never asks what the target brings to the moment, not a hole in this guideline. Don't extend this exception to Arcane by analogy; the two paths are meant to feel different here.
 
 ## Summoning
 
@@ -82,7 +80,7 @@ A Feat should never simply add flat damage to a hit, and should never grant an e
 
 ## Lean Categories
 
-Keep General, Martial, and Skill Feats to roughly 5-6 entries apiece. Prestige is exempt (capped at one-per-character by design, not a menu to prune or pad) and Arcane/Divine scale with their schools. A thin, sharply distinct list beats a long one padded with near-duplicates - if a new Feat doesn't fill a niche nothing else in its category covers, it doesn't earn a slot.
+Keep General, Martial, and Skill Feats to roughly 5-7 entries apiece. Prestige is exempt (capped at one-per-character by design, not a menu to prune or pad) and Arcane/Divine scale with their schools. A thin, sharply distinct list beats a long one padded with near-duplicates - if a new Feat doesn't fill a niche nothing else in its category covers, it doesn't earn a slot.
 
 ---
 
