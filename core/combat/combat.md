@@ -79,11 +79,11 @@ When your Ready Volley fires, you may aim for more than center mass instead of a
 | Zone              | Penalty | On Hit                                                                                                                                   |
 |:------------------|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------|
 | Torso *(default)* |   \-    | Normal damage, no additional effect.                                                                                                     |
-| Legs              |   \-2   | Speed becomes half until the end of their next turn. Hit Margin \+3 or higher: they are knocked Prone instead.                           |
-| Arms              |   \-2   | Their next attack roll before your next turn has Disadvantage. Hit Margin \+3 or higher: they drop one held item of your choice instead. |
+| Legs              |   \-2   | Speed becomes half until the end of their next turn. Aim Margin \+3 or higher: they are knocked Prone instead.                           |
+| Arms              |   \-2   | Their next attack roll before your next turn has Disadvantage. Aim Margin \+3 or higher: they drop one held item of your choice instead. |
 | Head              |   \-4   | This attack ignores the target's AR entirely.                                                                                            |
 
-**Hit Margin \= Your attack roll − the target's Evasion** - the same numbers you already rolled to resolve the hit, no extra roll needed. This is a different quantity from a Maneuver's Margin (see [[Maneuver|maneuvers]]): there's no tier table here, only the \+3 threshold above.
+**Aim Margin \= Your attack roll − the target's Evasion** - the same numbers you already rolled to resolve the hit, no extra roll needed. This is a different quantity from a Maneuver's Margin (see [[Maneuver|maneuvers]]): there's no tier table here, only the \+3 threshold above.
 
 ---
 
