@@ -184,10 +184,9 @@
       <option value="0.5">Small (x0.5)</option>
       <option value="1" selected>Medium (x1)</option>
       <option value="2">Large (x2)</option>
-      <option value="4">Huge (x4)</option>
     </select>
   </div>
-  <div class="field"><label for="level">Level</label><div class="computed" id="level" title="Derived from EXP (core/character/progression_&_rewards.md: level N = 30 x N^2 total XP)">1</div></div>
+  <div class="field"><label for="level">Level</label><div class="computed" id="level" title="Derived from EXP - level N needs (level + next level) x 30 total XP">1</div></div>
   <div class="field"><label for="exp">EXP</label><input type="number" id="exp" name="exp" min="0" value="30"></div>
   <div class="actions">
     <button type="button" id="btnSave" title="Save to this browser">Save</button>
@@ -199,7 +198,7 @@
 
 <nav class="tabs">
   <button class="tab-btn active" data-tab="overview">Overview</button>
-  <button class="tab-btn" data-tab="skills">Skills</button>
+  <button class="tab-btn" data-tab="skills">Attributes &amp; Skills</button>
   <button class="tab-btn" data-tab="equipment">Equipment</button>
   <button class="tab-btn" data-tab="magic">Magic</button>
   <button class="tab-btn" data-tab="progression">Progression</button>
@@ -212,31 +211,82 @@
 <section class="tab-panel active" id="tab-overview">
 
   <div class="card">
-    <h2>Attributes</h2>
-    <p class="note">BASE = points spent from your attribute budget. MOD = racial/other modifiers (free, applied after point allocation). TOTAL = BASE + MOD.</p>
-    <div class="grid grid-attrs" id="attrGrid"></div>
-  </div>
-
-  <div class="card">
-    <h2>Currency</h2>
-    <p class="note">core/equipment/supplies.md - three regional currencies</p>
+    <h2>Combat Stats</h2>
     <div class="grid grid-stats">
-      <div class="field"><label>Crown</label><input type="number" name="crown" min="0" value="0"></div>
-      <div class="field"><label>Scales <span class="note">(100 = 1 Crown)</span></label><input type="number" name="scales" min="0" max="99" value="0"></div>
-      <div class="field"><label>Renos</label><input type="number" name="renos" min="0" value="0"></div>
-      <div class="field"><label>Ferrins <span class="note">(100 = 1 Renos)</span></label><input type="number" name="ferrins" min="0" max="99" value="0"></div>
-      <div class="field"><label>Mar Scrips</label><input type="number" name="scrips" min="0" value="0"></div>
+      <div class="stat-box">
+        <div class="label">Mana</div>
+        <div class="value"><span class="computed" id="out-manaMax">0</span></div>
+        <div class="sub"><input type="number" name="manaCurrent" placeholder="cur"></div>
+        <div class="note">Current Mana (Max includes Feat Bonus). 0 Mana + cast = death</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Armor Rating</div>
+        <div class="value computed" id="out-ar">0</div>
+        <button type="button" class="btn-mini" id="btnArHit" title="Reduce AR (not Max AR) of every worn armor piece by 1">&minus;1 AR (Hit)</button>
+        <div class="note">From worn armor (Equipment tab)</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Armor Penalty</div>
+        <div class="value computed" id="out-armorPenalty">0</div>
+        <div class="note">Reduced 1:1 by Armorer skill rank</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Evasion</div>
+        <div class="value computed" id="out-evasion">5</div>
+        <div class="note">5 + DEX - Armor Penalty</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Oppose Bonus (DEX)</div>
+        <div class="value computed" id="out-dodgeBonus">0</div>
+        <div class="note">DEX - Armor Penalty, no Skill involved. Funds a DEX Oppose roll: 1d12 + this vs. the attack roll</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Initiative Bonus</div>
+        <div class="value computed" id="out-initiative">0</div>
+        <div class="note">+1d12 when rolled</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Reactions/round</div>
+        <div class="value computed" id="out-reactions">0</div>
+        <div class="note">DEX 0-2: 1, DEX 3-4: 2, DEX 5: 3</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Slots</div>
+        <div class="value"><span class="computed" id="out-carryCurrent">0</span> / <span class="computed" id="out-carryMax">10</span></div>
+        <div class="note">Auto-sums Equipment tab Slots (worn/equipped items excluded)</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Oppose Bonus (Shields)</div>
+        <div class="value computed" id="out-blockBonus">0</div>
+        <div class="note">Funds a Shields Oppose roll: 1d12 + this vs. the attack roll</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Shield Guard</div>
+        <div class="value computed" id="out-shieldAR">0</div>
+        <div class="note">Reduces a losing Oppose Margin. Drops by 2 at Grip (except Buckler) and to 0 under Control - apply those at the table</div>
+      </div>
     </div>
   </div>
 
   <div class="card">
     <h2>Wounds &amp; Survival</h2>
-    <p class="note">core/wounds_and_survival.md - log each currently-unhealed Wound below with its Severity (1/2/3, from the Wound Thresholds table) and Source (its dominant Damage Type). Current Wounds is computed from this log, not typed in directly - remove a row once that Wound heals (see Wound Recovery). Wound Penalty is a reference number only: it applies to non-combat rolls by ruling, and isn't baked into the Skills/Ward numbers elsewhere on this sheet.</p>
+    <p class="note">Log each unhealed Wound below with its Severity (1-3, from the Wound Thresholds table) and Source. Current Wounds is derived from this log - remove a row once that Wound heals. Wound Penalty applies to non-combat rolls by ruling, not baked into other numbers here.</p>
+
+    <table>
+      <thead><tr><th>1 Wound</th><th>2 Wounds</th><th>3 Wounds</th></tr></thead>
+      <tbody><tr>
+        <td class="computed" id="out-thresh1">1-7</td>
+        <td class="computed" id="out-thresh2">8-13</td>
+        <td class="computed" id="out-thresh3">14+</td>
+      </tr></tbody>
+    </table>
+    <p class="note">Wound Thresholds - damage remaining after AR, keyed to your END. Widens by +1 per END above 0.</p>
+
     <div class="grid grid-stats">
       <div class="stat-box">
         <div class="label">Wounds</div>
         <div class="value"><span class="computed" id="out-woundsCurrent">1</span> / <span class="computed" id="out-hpMax">1</span></div>
-        <div class="note">Current / Max (Max = END + Feat Bonus, see Progression)</div>
+        <div class="note">Current / Max (Size baseline + Feat Bonus)</div>
       </div>
       <div class="stat-box">
         <div class="label">Wound Penalty</div>
@@ -247,7 +297,7 @@
         <div class="label">Patched Wounds</div>
         <div class="value"><span class="computed" id="out-patchedMax">0</span></div>
         <div class="sub"><input type="number" name="patchedCurrent" min="0" value="0" placeholder="cur"></div>
-        <div class="note">Lost before Wounds - a Rest sets these to at least its tier's amount (carrying_and_resting.md)</div>
+        <div class="note">Lost before Wounds - a Rest sets these to at least its tier's floor</div>
       </div>
       <div class="stat-box">
         <div class="label">Trauma</div>
@@ -295,7 +345,7 @@
     </template>
 
     <h3>Scars</h3>
-    <p class="note">Permanent - a Scar is untouched by Patched Wounds, Wound Recovery, Cultivation, and Alchemy alike. Add one when a hit drops you to 0 Wounds; only a deep restoration working undoes it (see Removing a Scar).</p>
+    <p class="note">Permanent - untouched by Patched Wounds, Wound Recovery, Cultivation, or Alchemy. Add one when a hit drops you to 0 Wounds; only deep restoration undoes it.</p>
     <table class="dyn-table" data-table="scars" id="tbl-scars">
       <thead><tr><th>Damage Type (downing blow)</th><th>Scar</th><th></th></tr></thead>
       <tbody></tbody>
@@ -318,66 +368,8 @@
   </div>
 
   <div class="card">
-    <h2>Combat Stats</h2>
-    <div class="grid grid-stats">
-      <div class="stat-box">
-        <div class="label">Mana</div>
-        <div class="value"><span class="computed" id="out-manaMax">0</span></div>
-        <div class="sub"><input type="number" name="manaCurrent" placeholder="cur"></div>
-        <div class="note">Current Mana (Max includes Feat Bonus, see Progression). 0 Mana + cast = death</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Armor Rating</div>
-        <div class="value computed" id="out-ar">0</div>
-        <button type="button" class="btn-mini" id="btnArHit" title="Apply a hit: reduce AR (not Max AR) of every currently worn armor piece by 1, armor.md">&minus;1 AR (Hit)</button>
-        <div class="note">From worn armor (Equipment tab)</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Armor Penalty</div>
-        <div class="value computed" id="out-armorPenalty">0</div>
-        <div class="note">Reduced 1:1 by Armorer skill rank</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Evasion</div>
-        <div class="value computed" id="out-evasion">5</div>
-        <div class="note">Includes equipped shield's Agility Bonus (e.g. Buckler)</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Dodge Bonus (Maneuver)</div>
-        <div class="value computed" id="out-dodgeBonus">0</div>
-        <div class="note">Agility + DEX (trained) - maneuvers.md Dodge Style: 1d12 + this vs. attacker's roll</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Initiative Bonus</div>
-        <div class="value computed" id="out-initiative">0</div>
-        <div class="note">+1d12 when rolled</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Reactions/round</div>
-        <div class="value computed" id="out-reactions">0</div>
-        <div class="note">(DEX + PRE) / 3, rounded down</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Slots</div>
-        <div class="value"><span class="computed" id="out-carryCurrent">0</span> / <span class="computed" id="out-carryMax">10</span></div>
-        <div class="note">Current load auto-sums Equipment tab Slots (worn armor/clothes, equipped shields/weapons excluded)</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Block Bonus (Maneuver)</div>
-        <div class="value computed" id="out-blockBonus">0</div>
-        <div class="note">END + Shields Skill (full) - maneuvers.md Block Style: 1d12 + this vs. attacker's roll</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Shield AR (when Blocking)</div>
-        <div class="value computed" id="out-shieldAR">0</div>
-        <div class="note">From equipped shield, armor.md</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
     <h2>Ward DC by Attribute</h2>
-    <p class="note">Ward = 5 + Attribute + your highest-ranked skill governed by that attribute (magic_overview.md). This is what Spell Overcomes (and other effects) roll against.</p>
+    <p class="note">Ward = 5 + Attribute; Skill never contributes. What Spell Overcomes and similar effects roll against.</p>
     <div class="ward-grid" id="wardGrid"></div>
   </div>
 
@@ -385,9 +377,16 @@
 
 <!-- ============================= SKILLS ============================= -->
 <section class="tab-panel" id="tab-skills">
+
+  <div class="card">
+    <h2>Attributes</h2>
+    <p class="note">BASE = points spent from your Attribute Points budget (separate from Skill Points, no conversion between them). MOD = racial/other modifiers (free, applied after point allocation). TOTAL = BASE + MOD.</p>
+    <div class="grid grid-attrs" id="attrGrid"></div>
+  </div>
+
   <div class="card">
     <h2>Skills</h2>
-    <p class="note">BASE = ranks bought from your skill point budget. MOD = free modifiers (career/racial/feat). TOTAL = BASE + MOD + governing Attribute, the bonus added to 1d12 for that skill check. Trained: the Attribute only applies once BASE is 1 or higher - a skill with 0 Base is untrained and rolls without it.</p>
+    <p class="note">BASE = ranks bought with Skill Points. MOD = free modifiers (career/racial/feat). TOTAL = BASE + MOD, added to 1d12 for that check - Attribute never contributes. BASE can't exceed the governing Attribute's Total; a row that does is flagged in red.</p>
     <table id="skillsTable">
       <thead>
         <tr><th>Skill</th><th class="num-sm">Base</th><th class="num-sm">Mod</th><th class="num-sm">Total</th></tr>
@@ -401,8 +400,20 @@
 <section class="tab-panel" id="tab-equipment">
 
   <div class="card">
+    <h2>Currency</h2>
+    <p class="note">Three regional currencies</p>
+    <div class="grid grid-stats">
+      <div class="field"><label>Crown</label><input type="number" name="crown" min="0" value="0"></div>
+      <div class="field"><label>Scales <span class="note">(100 = 1 Crown)</span></label><input type="number" name="scales" min="0" max="99" value="0"></div>
+      <div class="field"><label>Renos</label><input type="number" name="renos" min="0" value="0"></div>
+      <div class="field"><label>Ferrins <span class="note">(100 = 1 Renos)</span></label><input type="number" name="ferrins" min="0" max="99" value="0"></div>
+      <div class="field"><label>Mar Scrips</label><input type="number" name="scrips" min="0" value="0"></div>
+    </div>
+  </div>
+
+  <div class="card">
     <h2>Armor</h2>
-    <p class="note">Check "Worn" for the armor piece(s) currently equipped - only worn armor contributes to AR / Armor Penalty above. AR is your armor's Durability: it starts equal to Max AR and drops by 1 each time you're hit (armor.md); Max AR is the original value used as the repair cap.</p>
+    <p class="note">Check "Worn" for equipped armor - only worn pieces contribute to AR / Armor Penalty above. AR is Durability: starts equal to Max AR, drops by 1 each hit; Max AR is the repair cap.</p>
     <table class="dyn-table" data-table="armor" id="tbl-armor">
       <thead><tr><th>Name</th><th>Type</th><th class="num-sm">AR</th><th class="num-sm">Max AR</th><th class="num-sm">Penalty</th><th class="num-sm">Stealth</th><th class="num-sm">Slots</th><th>Worn</th><th></th></tr></thead>
       <tbody></tbody>
@@ -425,18 +436,16 @@
 
   <div class="card">
     <h2>Shields</h2>
-    <p class="note">AR Bonus only applies when actively Blocking (a Reaction, maneuvers.md/armor.md) and is shown separately on Overview, not added into your standing AR. Agility Bonus is a passive skill bonus (e.g. Buckler's \+2 Agility) that always applies while the shield is Equipped, feeding into Evasion and Dodge on Overview.</p>
+    <p class="note">Guard is passive - it applies whenever a shield is Equipped, whichever Skill funds your Oppose roll. It reduces a losing Oppose Margin, not your standing AR. Drops by 2 at Grip (except Buckler) and to 0 under Control - apply those at the table.</p>
     <table class="dyn-table" data-table="shields" id="tbl-shields">
-      <thead><tr><th>Name</th><th class="num-sm">AR Bonus</th><th class="num-sm">Agility Bonus</th><th class="num-sm">Penalty</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
+      <thead><tr><th>Name</th><th class="num-sm">Guard</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
     <button type="button" class="row-add" data-add-target="shields">+ Add Shield</button>
     <template id="row-shields">
       <tr data-row>
         <td><input type="text" data-col="name"></td>
-        <td><input type="number" data-col="arbonus" class="num-sm" value="0" title="Added to AR only while actively Blocking"></td>
-        <td><input type="number" data-col="agilityBonus" class="num-sm" value="0" title="Passive bonus to Agility skill, e.g. Buckler +2 - affects Evasion and Dodge whenever equipped"></td>
-        <td><input type="number" data-col="penalty" class="num-sm" value="0"></td>
+        <td><input type="number" data-col="guard" class="num-sm" value="0" title="Base Guard (1-3) - reduces a losing Oppose Margin while this shield is Equipped"></td>
         <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
         <td style="text-align:center"><input type="checkbox" data-col="equipped"></td>
         <td><button type="button" class="row-remove">&times;</button></td>
@@ -446,7 +455,7 @@
 
   <div class="card">
     <h2>Weapons</h2>
-    <p class="note">Pick the skill used to attack with each weapon - Attack Bonus (skill Total + governing Attribute) computes automatically. Trained: the Attribute only applies if that skill has 1+ Base ranks. Check "Equipped" for weapons you're wielding - like worn armor/shields, equipped weapons don't count towards Slots. Reach is melee-only (see weapons.md's Reach Categories table); leave it blank and use Range instead for ranged/thrown weapons.</p>
+    <p class="note">Pick the skill used to attack with each weapon - Attack Bonus (Skill Total alone) computes automatically. Equipped weapons don't count towards Slots. Reach is melee-only; use Range instead for ranged/thrown weapons.</p>
     <table class="dyn-table" data-table="weapons" id="tbl-weapons">
       <thead><tr><th>Name</th><th>Skill</th><th class="num-sm">Atk Bonus</th><th>Damage</th><th>Reach</th><th>Range</th><th>Properties</th><th class="num-sm">Crit Range</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
       <tbody></tbody>
@@ -458,31 +467,23 @@
         <td>
           <select data-col="skill">
             <option value="">-</option>
-            <option>One-Handed Blades</option>
-            <option>Two-Handed Blades</option>
-            <option>Axes &amp; Hammers</option>
+            <option>Blades</option>
+            <option>Hafted Weapons</option>
             <option>Polearms</option>
             <option>Brawling</option>
-            <option>Slings &amp; Whips</option>
-            <option>Rapiers &amp; Fencing</option>
-            <option>Daggers &amp; Knives</option>
-            <option>Bows &amp; Crossbows</option>
-            <option>Thrown Weapons</option>
-            <option>Pistols</option>
-            <option>Long Guns</option>
-            <option>Heavy Firearms</option>
+            <option>Archery</option>
+            <option>Marksmanship</option>
+            <option>Thrown</option>
           </select>
         </td>
         <td class="computed" data-col-out="atkBonus">-</td>
         <td><input type="text" data-col="damage" placeholder="1d8 Slashing"></td>
         <td>
-          <select data-col="reach" title="Melee weapons only. Higher Reach: Disadvantage on your opponent's Parry against you, and Medium+ threatens Closing the Distance opportunity attacks (see Reach, in combat.md).">
+          <select data-col="reach" title="Melee only. Outreaching your opponent's Measure Band gives their Oppose roll Disadvantage; Near+ threatens an opportunity attack when they close the distance.">
             <option value="">-</option>
-            <option>Touch</option>
-            <option>Short</option>
-            <option>Medium</option>
-            <option>Long</option>
-            <option>Very Long</option>
+            <option>Grip</option>
+            <option>Near</option>
+            <option>Far</option>
           </select>
         </td>
         <td><input type="text" data-col="range" placeholder="Ranged only, e.g. 150/300 ft"></td>
@@ -541,7 +542,7 @@
 
   <div class="card">
     <h2>Magic Skills by School</h2>
-    <p class="note">Skill Total = Base + Mod + governing Attribute, same as the Skills tab (Trained: the Attribute only applies once Base is 1 or higher). Your Spell Modifier (magic_overview.md), used for Spell Attacks vs. Evasion and Spell Overcomes vs. Ward, is this Skill Total minus Armor Penalty.</p>
+    <p class="note">Skill Total = Base + Mod, same as the Skills tab - ARC/FAI never contribute to the roll itself. Your Spell Modifier, used for Spell Attacks vs. Evasion and Spell Overcomes vs. Ward, is this Skill Total minus Armor Penalty.</p>
     <table>
       <thead><tr><th>School</th><th>Attribute</th><th class="num-sm">Skill Total</th><th class="num-sm">Armor Penalty</th></tr></thead>
       <tbody id="spellModBody"></tbody>
@@ -550,7 +551,7 @@
 
   <div class="card">
     <h2>Spells Known</h2>
-    <p class="note">Each card holds one spell's header fields plus a full-width Effect box for the actual rules text. Preparation tracking is derived from the spell's School (magic_overview.md): Arcane spells are only castable from a scribed scroll, so track how many you're carrying; Divine spells are cast straight from your Mana pool with no separate prep step - just spend the Mana Cost. Divine Mana only recovers through Prayer (1/hour prayed), never through Field/Long Rest.</p>
+    <p class="note">Each card holds one spell's header fields plus an Effect box for its rules text. Arcane spells need a scribed scroll to cast - track scrolls on hand. Divine spells cast straight from Mana with no prep step; Divine Mana only recovers through Prayer.</p>
     <div class="dyn-table spell-list" data-table="spells" id="tbl-spells"></div>
     <button type="button" class="row-add" data-add-target="spells">+ Add Spell</button>
     <template id="row-spells">
@@ -596,13 +597,25 @@
 <section class="tab-panel" id="tab-progression">
 
   <div class="card">
-    <h2>Point Budgets</h2>
-    <p class="note">Attribute/Skill points spent are the sums of every BASE value on the Overview/Skills tabs (MOD columns are free modifiers and don't count). Budgets and caps below are looked up from the Level field by the per-level table (core/character/progression_&_rewards.md).</p>
+    <h2>Priorities</h2>
+    <p class="note">Assign A through E once each, no repeats. This sets your Level 1 Attribute/Skill Point pools, starting Feat count, highest Career Status tier, and how much Level Adjustment your Race choice covers for free.</p>
     <div class="grid grid-stats">
-      <div class="stat-box"><div class="label">Attribute Points</div><div class="value"><span class="computed" id="out-attrSpent">0</span> / <span class="computed" id="out-attrBudget">18</span></div></div>
-      <div class="stat-box"><div class="label">Attribute Cap</div><div class="value computed" id="out-attrCap">4</div></div>
-      <div class="stat-box"><div class="label">Skill Points</div><div class="value"><span class="computed" id="out-skillSpent">0</span> / <span class="computed" id="out-skillBudget">12</span></div></div>
-      <div class="stat-box"><div class="label">Skill Cap</div><div class="value computed" id="out-skillCap">2</div></div>
+      <div class="field"><label>Attributes</label><select name="priority:attributes"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+      <div class="field"><label>Skills</label><select name="priority:skills"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+      <div class="field"><label>Career</label><select name="priority:career"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select><div class="note computed" id="out-careerTierNote"></div></div>
+      <div class="field"><label>Feats</label><select name="priority:feats"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+      <div class="field"><label>Race</label><select name="priority:race"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select><div class="note computed" id="out-raceLaNote"></div></div>
+    </div>
+    <p class="note" id="out-priorityWarning" style="display:none"></p>
+  </div>
+
+  <div class="card">
+    <h2>Point Budgets</h2>
+    <p class="note">Two separate budgets, no conversion between them. Level 1 size comes from your Priorities above; both then grow with level. There's no separate Skill Cap - a Skill's Rank can never exceed its own governing Attribute's current score, flagged in red on the Skills tab.</p>
+    <div class="grid grid-stats">
+      <div class="stat-box"><div class="label">Attribute Points</div><div class="value"><span class="computed" id="out-attrPointsSpent">0</span> / <span class="computed" id="out-attrPointsBudget">18</span></div></div>
+      <div class="stat-box"><div class="label">Skill Points</div><div class="value"><span class="computed" id="out-skillPointsSpent">0</span> / <span class="computed" id="out-skillPointsBudget">12</span></div></div>
+      <div class="stat-box"><div class="label">Attribute Cap</div><div class="value computed" id="out-attrCap">3</div></div>
       <div class="stat-box"><div class="label">Feat Slots</div><div class="value computed" id="out-featsTotal">2</div></div>
     </div>
   </div>
@@ -614,7 +627,7 @@
       <tbody id="featSlotsBody"></tbody>
     </table>
     <h3>Feat Bonuses</h3>
-    <p class="note">Flat bonuses granted by feats that don't fit the Base/Mod pattern elsewhere (e.g. Tough's +2 Wounds/level, Magically Gifted's +5 Max Mana). Added into the Overview tab's Wounds / Max Mana.</p>
+    <p class="note">Flat bonuses from feats that don't fit Base/Mod (e.g. Tough's +1 Wounds, Magically Gifted's +5 Max Mana). Feeds into Wounds/Max Mana above.</p>
     <div class="grid grid-stats">
       <div class="field"><label>Max Wounds Bonus</label><input type="number" name="hpBonus" value="0"></div>
       <div class="field"><label>Max Mana Bonus</label><input type="number" name="manaBonus" value="0"></div>
@@ -696,12 +709,12 @@
     {key:'CHA', name:'Charisma'}
   ];
 
-  // Mirrors core_rules.md:113-139 Skill Categories tables
+  // Mirrors attributes_and_skills.md's Skill Categories
   var SKILL_CATEGORIES = [
-    {attr:'STR', category:'Brawn & Melee', skills:['One-Handed Blades','Two-Handed Blades','Axes & Hammers','Polearms','Brawling','Slings & Whips']},
-    {attr:'PRE', category:'Finesse & Ranged', skills:['Rapiers & Fencing','Daggers & Knives','Bows & Crossbows','Thrown Weapons','Pistols','Long Guns','Heavy Firearms']},
+    {attr:'STR', category:'Brawn & Melee', skills:['Blades','Hafted Weapons','Polearms','Brawling']},
+    {attr:'PRE', category:'Finesse & Ranged', skills:['Archery','Marksmanship','Thrown']},
     {attr:'END', category:'Defense & Survival', skills:['Athletics','Armorer','Survival','Shields','Riding']},
-    {attr:'DEX', category:'Adroitness & Subterfuge', skills:['Agility','Acrobatics','Stealth','Lockpicking','Sleight of Hand','Crafting','Perception']},
+    {attr:'DEX', category:'Adroitness & Subterfuge', skills:['Acrobatics','Stealth','Lockpicking','Sleight of Hand','Crafting','Perception']},
     {attr:'MIND', category:'Intellectual', skills:['Alchemy','Enchanting','Spell Crafting','Historic Lore','Medical Lore','Nature Lore','Identify']},
     {attr:'ARC', category:'Arcane Schools', skills:['Arcane Lore','Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy']},
     {attr:'FAI', category:'Divine Schools', skills:['Religious Lore','Benediction','Invocation','Necration','Cultivation','Subjugation']},
@@ -715,37 +728,33 @@
   var SCAR_MAP = {
     'Piercing':'Puncture', 'Slashing':'Laceration', 'Bludgeoning':'Fracture', 'Poison':'Gangrene',
     'Fire':'Burn', 'Cold':'Frostbite', 'Lightning':'Fractal Burn', 'Acid':'Chemical Burn',
-    'Necrotic':'Necrosis', 'Radiant':'Brand', 'Psychic':'Fray'
+    'Necrotic':'Necrosis', 'Radiant':'Brand', 'Psychic':'Mania'
   };
 
   // Mirrors wounds_and_survival.md's Trauma table - label per level (penalty itself is just -level)
   var TRAUMA_LABELS = {0:'None', 1:'Manageable', 2:'Dangerous', 3:'Critical', 4:'Critical', 5:'Automatic Death'};
 
-  // Mirrors core/character/progression_&_rewards.md (character_creation.md + levels 1-12)
-  // level N requires 30 * N^2 total XP (totalXp below)
-  var PROGRESSION = {
-    1:{skillCap:2, attrCap:4, skillPts:12, attrPts:18, feats:2, totalXp:30},
-    2:{skillCap:2, attrCap:4, skillPts:14, attrPts:18, feats:2, totalXp:120},
-    3:{skillCap:3, attrCap:4, skillPts:16, attrPts:18, feats:2, totalXp:270},
-    4:{skillCap:3, attrCap:4, skillPts:18, attrPts:19, feats:3, totalXp:480},
-    5:{skillCap:4, attrCap:4, skillPts:20, attrPts:19, feats:3, totalXp:750},
-    6:{skillCap:4, attrCap:4, skillPts:22, attrPts:19, feats:4, totalXp:1080},
-    7:{skillCap:5, attrCap:4, skillPts:24, attrPts:19, feats:4, totalXp:1470},
-    8:{skillCap:5, attrCap:5, skillPts:26, attrPts:20, feats:4, totalXp:1920},
-    9:{skillCap:5, attrCap:5, skillPts:28, attrPts:20, feats:5, totalXp:2430},
-    10:{skillCap:5, attrCap:5, skillPts:30, attrPts:20, feats:5, totalXp:3000},
-    11:{skillCap:5, attrCap:5, skillPts:32, attrPts:20, feats:5, totalXp:3630},
-    12:{skillCap:5, attrCap:5, skillPts:34, attrPts:21, feats:6, totalXp:4320}
-  };
+  // Total XP needed to reach each level: (level + next level) x 30
+  var LEVEL_TOTAL_XP = {1:30, 2:120, 3:270, 4:480, 5:750, 6:1080, 7:1470, 8:1920, 9:2430, 10:3000, 11:3630, 12:4320};
 
-  var FEAT_SLOTS = [
-    {label:'Starter Feat 1', level:1},
-    {label:'Starter Feat 2', level:1},
-    {label:'Level 4 Feat', level:4},
-    {label:'Level 6 Feat (Prestige available)', level:6},
-    {label:'Level 9 Feat', level:9},
-    {label:'Level 12 Feat', level:12}
-  ];
+  // Priority ladder (A-E, one per category, no repeats) - sets Level 1 pool
+  // sizes and starting Feat count. Attribute/Skill Points and Feats then grow
+  // further per level (see the *BonusForLevel() functions below), independent of priority.
+  var PRIORITY_LETTERS = ['A','B','C','D','E'];
+  var PRIORITY_ATTR_POINTS = {A:24, B:21, C:18, D:15, E:12};
+  var PRIORITY_SKILL_POINTS = {A:18, B:15, C:12, D:9, E:6};
+  var PRIORITY_FEATS = {A:4, B:3, C:2, D:1, E:0};
+  var PRIORITY_CAREER_TIER = {A:'Any Status tier', B:'Up to Upper-Middle', C:'Up to Middle', D:'Up to Lower-Middle', E:'Low only'};
+  var PRIORITY_RACE_LA = {A:'LA +2 free', B:'LA +1 free', C:'LA +0 free (pay full cost)', D:'LA 0 races only', E:'Artefolk only (Aelves, Dwergaz, Humans, Orkhs)'};
+
+  // Attribute Cap climbs with level regardless of priority: 3 (1-3), 4 (4-7), 5 (8+)
+  function attrCapForLevel(level){ return level >= 8 ? 5 : (level >= 4 ? 4 : 3); }
+  // +1 Attribute Point at levels 4/8/12
+  function attrPointsBonusForLevel(level){ return (level>=4?1:0) + (level>=8?1:0) + (level>=12?1:0); }
+  // +2 Skill Points every level after 1
+  function skillPointsBonusForLevel(level){ return 2 * (level - 1); }
+  // +1 Feat at levels 4/6/9/12
+  function featsBonusForLevel(level){ return (level>=4?1:0) + (level>=6?1:0) + (level>=9?1:0) + (level>=12?1:0); }
 
   // skill name -> {attr, category} lookup, built from SKILL_CATEGORIES
   var SKILL_INFO = {};
@@ -818,13 +827,33 @@
     });
   }
 
-  function buildFeatSlots(){
+  // Starting Feat count comes from the Feats priority (0-4, Step 2); the four
+  // milestone Feats (levels 4/6/9/12) are fixed regardless of priority. Rebuilt
+  // only when the starting count actually changes (see ensureFeatSlots), so a
+  // rebuild never happens mid-keystroke while filling in a feat name.
+  var lastFeatStartCount = null;
+  function ensureFeatSlots(){
+    var featsPriority = document.querySelector('[name="priority:feats"]').value;
+    var startCount = PRIORITY_FEATS.hasOwnProperty(featsPriority) ? PRIORITY_FEATS[featsPriority] : 2;
+    if (startCount === lastFeatStartCount) return;
+    lastFeatStartCount = startCount;
     var body = document.getElementById('featSlotsBody');
-    FEAT_SLOTS.forEach(function(slot, i){
+    var existing = {};
+    body.querySelectorAll('tr').forEach(function(tr){
+      var input = tr.querySelector('input');
+      if (input) existing[tr.firstChild.textContent] = input.value;
+    });
+    var labels = [];
+    for (var i = 1; i <= startCount; i++) labels.push('Starting Feat ' + i);
+    labels.push('Level 4 Feat', 'Level 6 Feat (Prestige available)', 'Level 9 Feat', 'Level 12 Feat');
+    body.innerHTML = '';
+    labels.forEach(function(label, i){
       var tr = el('tr', {});
-      tr.appendChild(el('td', {}, [text(slot.label)]));
+      tr.appendChild(el('td', {}, [text(label)]));
       var td = el('td', {});
-      td.appendChild(el('input', {type:'text', name:'feat:'+i}));
+      var input = el('input', {type:'text', name:'feat:'+i});
+      if (existing[label]) input.value = existing[label];
+      td.appendChild(input);
       tr.appendChild(td);
       body.appendChild(tr);
     });
@@ -915,12 +944,12 @@
     });
 
     // 2. Skills
-    // Trained: a skill only adds its governing Attribute to checks (Skill Total,
-    // Attack Bonus, Spell Modifier) once it has at least 1 point of Base ranks.
-    // An untrained skill (Base 0) rolls without the Attribute bonus.
+    // Skill Total = Base + Mod, full stop - Attribute never contributes to a
+    // Skill Check (core_rules.md's Skill/Ward split). A Skill's Rank (Base)
+    // can never exceed its governing Attribute's current score, so illegal
+    // rows are flagged in red rather than silently allowed.
     var skillTotals = {};
     var skillBase = {};
-    var categoryMax = {};
     document.querySelectorAll('#skillsBody tr[data-skill]').forEach(function(tr){
       var name = tr.getAttribute('data-skill');
       var attr = tr.getAttribute('data-skill-attr');
@@ -929,13 +958,16 @@
       var total = base + mod;
       skillTotals[name] = total;
       skillBase[name] = base;
-      var trainedAttr = base >= 1 ? attrTotals[attr] : 0;
-      tr.querySelector('[data-skill-total]').textContent = total + trainedAttr;
-      if (!(attr in categoryMax) || total > categoryMax[attr]) categoryMax[attr] = total;
+      var totalOut = tr.querySelector('[data-skill-total]');
+      totalOut.textContent = total;
+      if (base > (attrTotals[attr]||0)){
+        totalOut.style.color = 'var(--danger)';
+        totalOut.title = 'Base ' + base + ' exceeds governing Attribute ' + attr + ' (' + (attrTotals[attr]||0) + ') - a Skill can never outrank its Attribute.';
+      } else {
+        totalOut.style.color = '';
+        totalOut.title = '';
+      }
     });
-    function trainedAttrBonus(skillName, attrKey){
-      return (skillBase[skillName]||0) >= 1 ? (attrTotals[attrKey]||0) : 0;
-    }
 
     // 3. Armor penalty + AR from worn armor rows
     var ar = 0, armorPenaltyRaw = 0;
@@ -950,30 +982,44 @@
     document.getElementById('out-ar').textContent = ar;
     document.getElementById('out-armorPenalty').textContent = armorPenalty;
 
-    // Shield readouts (armor.md "Using Shields" / maneuvers.md "Blocking")
-    // AR Bonus is informational (only applies while actively Blocking); Agility Bonus
-    // is passive (e.g. Buckler's +2 Agility) and feeds Evasion/Dodge below whenever equipped.
-    var shieldAR = 0, shieldAgilityBonus = 0;
+    // Shield readouts (armor.md "Using Shields" / maneuvers.md "Shield Guard")
+    // Maneuver's old Parry/Block/Dodge rolls were unified into one Oppose Reaction
+    // 2026-08-09 (hema-combat-design.md); dodgeBonus/blockBonus below keep their old
+    // variable names, but now mean the DEX-funded and Shields-funded Oppose rolls
+    // respectively. Shields dropped AR Bonus, Evasion/Oppose Bonus, and Penalty
+    // entirely in favor of a single Guard stat (also 2026-08-09) - Guard reduces a
+    // losing Oppose Margin rather than adding to AR or Evasion, and its Grip/Control
+    // interactions are situational (see armor.md), so this only sums the base value;
+    // it does not feed Evasion or the DEX-funded Oppose roll below anymore.
+    var shieldGuard = 0;
     document.querySelectorAll('#tbl-shields [data-row]').forEach(function(tr){
       if (tr.querySelector('[data-col="equipped"]').checked){
-        shieldAR += num(tr.querySelector('[data-col="arbonus"]').value);
-        shieldAgilityBonus += num(tr.querySelector('[data-col="agilityBonus"]').value);
+        shieldGuard += num(tr.querySelector('[data-col="guard"]').value);
       }
     });
-    document.getElementById('out-shieldAR').textContent = shieldAR;
+    document.getElementById('out-shieldAR').textContent = shieldGuard;
     var shieldsSkill = skillTotals['Shields'] || 0;
-    document.getElementById('out-blockBonus').textContent = shieldsSkill + trainedAttrBonus('Shields', 'END');
+    document.getElementById('out-blockBonus').textContent = shieldsSkill;
 
     // 4. Single-pass derived stats
-    var hpMax = attrTotals['END'] + num(document.querySelector('[name="hpBonus"]').value);
-    var manaMax = attrTotals['MIND']*2 + num(document.querySelector('[name="manaBonus"]').value);
+    // Wounds baseline is by Size (wounds_and_survival.md), not END - Small 2 / Medium 3 / Large 4.
     var sizeMult = num(document.querySelector('[name="size"]').value) || 1;
+    var woundsBySize = {0.5:2, 1:3, 2:4};
+    var woundsBaseline = woundsBySize.hasOwnProperty(sizeMult) ? woundsBySize[sizeMult] : 3;
+    var hpMax = woundsBaseline + num(document.querySelector('[name="hpBonus"]').value);
+    var manaMax = attrTotals['MIND']*2 + num(document.querySelector('[name="manaBonus"]').value);
     var carryMax = Math.floor((attrTotals['END'] + attrTotals['STR']) * sizeMult);
-    var agility = skillTotals['Agility'] || 0;
-    var evasion = 5 + agility + shieldAgilityBonus + attrTotals['DEX'] - armorPenalty;
-    var dodgeBonus = agility + trainedAttrBonus('Agility', 'DEX');
+
+    // Wound Thresholds (wounds_and_survival.md): base 1-6/7-12/13+ at END 0, +1 to every edge per END.
+    var threshEdge1 = attrTotals['END'] + 6;
+    var threshEdge2 = attrTotals['END'] + 12;
+    document.getElementById('out-thresh1').textContent = '1-' + threshEdge1;
+    document.getElementById('out-thresh2').textContent = (threshEdge1 + 1) + '-' + threshEdge2;
+    document.getElementById('out-thresh3').textContent = (threshEdge2 + 1) + '+';
+    var evasion = 5 + attrTotals['DEX'] - armorPenalty;
+    var dodgeBonus = attrTotals['DEX'] - armorPenalty;
     var initiative = Math.floor((attrTotals['PRE'] + attrTotals['DEX'])/2);
-    var reactions = Math.floor((attrTotals['DEX'] + attrTotals['PRE'])/3);
+    var reactions = attrTotals['DEX'] >= 5 ? 3 : (attrTotals['DEX'] >= 3 ? 2 : 1);
 
     document.getElementById('out-hpMax').textContent = hpMax;
     document.getElementById('out-manaMax').textContent = manaMax;
@@ -1044,17 +1090,18 @@
     carryOut.textContent = carryCurrent;
     carryOut.style.color = carryCurrent > carryMax ? 'var(--danger)' : '';
 
-    // 5. Ward DC per attribute
+    // 5. Ward DC per attribute - Passive Ward = 5 + Attribute, full stop
+    // (core_rules.md's Skill/Ward split - Skill no longer contributes at all).
     ATTRIBUTES.forEach(function(a){
-      var best = categoryMax[a.key] || 0;
-      var ward = 5 + attrTotals[a.key] + best;
+      var ward = 5 + attrTotals[a.key];
       document.getElementById('ward-'+a.key).textContent = ward;
     });
 
-    // 6. Magic school Skill Total per school - same Base + Mod + trained Attribute
-    // logic as the Skills tab's Total column (magic_overview.md's Spell Modifier
-    // is this value minus Armor Penalty, shown separately above). Only schools
-    // with at least 1 Base skill point (i.e. trained) are listed here.
+    // 6. Magic school Skill Total per school - same Base + Mod logic as the
+    // Skills tab's Total column (magic_overview.md's Spell Modifier is this
+    // value minus Armor Penalty, shown separately above; ARC/FAI no longer
+    // contribute to the roll itself). Only schools with at least 1 Base
+    // skill point (i.e. trained) are listed here.
     var spellModBody = document.getElementById('spellModBody');
     spellModBody.innerHTML = '';
     var trainedSchools = [];
@@ -1063,7 +1110,7 @@
       trainedSchools.push({
         school: school,
         attr: attrKey,
-        skillTotal: (skillTotals[school] || 0) + trainedAttrBonus(school, attrKey)
+        skillTotal: skillTotals[school] || 0
       });
     }
     ARCANE_SCHOOLS.forEach(function(s){ collectTrainedSchool(s, 'ARC'); });
@@ -1120,8 +1167,7 @@
       var out = tr.querySelector('[data-col-out="atkBonus"]');
       var skillName = skillSel.value;
       if (!skillName || !SKILL_INFO[skillName]){ out.textContent = '-'; return; }
-      var info = SKILL_INFO[skillName];
-      var bonus = (skillTotals[skillName]||0) + trainedAttrBonus(skillName, info.attr);
+      var bonus = skillTotals[skillName]||0;
       out.textContent = (bonus>=0?'+':'') + bonus;
     });
 
@@ -1129,23 +1175,51 @@
     var xp = Math.max(0, num(document.getElementById('exp').value));
     var level = 1;
     for (var lv = 12; lv >= 1; lv--){
-      if (xp >= PROGRESSION[lv].totalXp){ level = lv; break; }
+      if (xp >= LEVEL_TOTAL_XP[lv]){ level = lv; break; }
     }
     document.getElementById('level').textContent = level;
-    var prog = PROGRESSION[level];
+
+    // 8b. Priorities (character_creation.md Step 2): five A-E letters, no
+    // repeats, feeding Level 1 pool sizes. Blank/duplicate letters fall back
+    // to the old flat C-priority baseline (18/12/2) so an unset sheet still
+    // computes something sane, but flag the sheet as incomplete either way.
+    var priorityCats = ['attributes','skills','career','feats','race'];
+    var priorityVals = {};
+    priorityCats.forEach(function(cat){ priorityVals[cat] = document.querySelector('[name="priority:'+cat+'"]').value; });
+    var usedLetters = priorityCats.map(function(cat){ return priorityVals[cat]; }).filter(function(v){ return v; });
+    var allAssigned = usedLetters.length === 5;
+    var noRepeats = (function(){ var seen = {}; for (var i=0;i<usedLetters.length;i++){ if (seen[usedLetters[i]]) return false; seen[usedLetters[i]] = true; } return true; })();
+    var warningEl = document.getElementById('out-priorityWarning');
+    if (!allAssigned || !noRepeats){
+      warningEl.style.display = '';
+      warningEl.textContent = !noRepeats ? 'Each letter A-E can only be assigned once - fix the repeat above.' : 'Assign all five priorities (A-E, no repeats) - budgets below use a flat placeholder until then.';
+      warningEl.style.color = 'var(--danger)';
+    } else {
+      warningEl.style.display = 'none';
+    }
+    var attrPriority = PRIORITY_ATTR_POINTS.hasOwnProperty(priorityVals.attributes) ? priorityVals.attributes : 'C';
+    var skillPriority = PRIORITY_SKILL_POINTS.hasOwnProperty(priorityVals.skills) ? priorityVals.skills : 'C';
+    var featsPriority = PRIORITY_FEATS.hasOwnProperty(priorityVals.feats) ? priorityVals.feats : 'C';
+    document.getElementById('out-careerTierNote').textContent = priorityVals.career ? PRIORITY_CAREER_TIER[priorityVals.career] : '';
+    document.getElementById('out-raceLaNote').textContent = priorityVals.race ? PRIORITY_RACE_LA[priorityVals.race] : '';
+
+    ensureFeatSlots();
+
+    var attrPointsBudget = PRIORITY_ATTR_POINTS[attrPriority] + attrPointsBonusForLevel(level);
+    var skillPointsBudget = PRIORITY_SKILL_POINTS[skillPriority] + skillPointsBonusForLevel(level);
+    var featsTotal = PRIORITY_FEATS[featsPriority] + featsBonusForLevel(level);
     var attrSpent = 0;
     ATTRIBUTES.forEach(function(a){ attrSpent += num(document.querySelector('[name="attr:'+a.key+':base"]').value); });
     var skillSpent = 0;
     document.querySelectorAll('#skillsBody tr[data-skill]').forEach(function(tr){
       skillSpent += num(tr.querySelector('[data-role="base"]').value);
     });
-    document.getElementById('out-attrSpent').textContent = attrSpent;
-    document.getElementById('out-attrBudget').textContent = prog.attrPts;
-    document.getElementById('out-attrCap').textContent = prog.attrCap;
-    document.getElementById('out-skillSpent').textContent = skillSpent;
-    document.getElementById('out-skillBudget').textContent = prog.skillPts;
-    document.getElementById('out-skillCap').textContent = prog.skillCap;
-    document.getElementById('out-featsTotal').textContent = prog.feats;
+    document.getElementById('out-attrPointsSpent').textContent = attrSpent;
+    document.getElementById('out-attrPointsBudget').textContent = attrPointsBudget;
+    document.getElementById('out-skillPointsSpent').textContent = skillSpent;
+    document.getElementById('out-skillPointsBudget').textContent = skillPointsBudget;
+    document.getElementById('out-attrCap').textContent = attrCapForLevel(level);
+    document.getElementById('out-featsTotal').textContent = featsTotal;
 
     saveLocal();
   }
@@ -1237,7 +1311,7 @@
   buildAttributes();
   buildSkills();
   buildWard();
-  buildFeatSlots();
+  ensureFeatSlots();
 
   var saved = null;
   try{ var raw = localStorage.getItem(STORAGE_KEY); if (raw) saved = JSON.parse(raw); }catch(e){}

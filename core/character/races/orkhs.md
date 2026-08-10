@@ -17,7 +17,7 @@ Orkhs are towering, volcanic beings of passion and wrath, forged in defiance and
 
 ### **Features**
 
-**Weapon Training:** You gain \+1 rank in Axes & Hammers.  
+**Weapon Training:** You gain \+1 rank in Hafted Weapons.  
 **Bloodlust:** Once per Field Rest or Long Rest, as a Minor Action, you may enter a bloodlust filled rage for 1 minute. While bloodlusting, your critical range increases by 1 (crit on a natural roll of 11 or 12).  
 **Orcish Fortitude:** You gain \+2 to STR Ward, \+2 to Wards against frightened.  
 **Intimidating:** You gain \-2 to Persuasion with non-Orkhs but gain \+2 to Intimidation with all non-Orkhs.

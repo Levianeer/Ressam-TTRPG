@@ -49,6 +49,8 @@ Attributes range from 0 (wholly absent) to 5 (peak mortal potential).
 
 **A 0 in an Attribute** is a complete absence of that capacity, not just poor - the same way an unranked Skill sits at 0 until trained. It's a legitimate choice at character creation (see [[Character Creation|character_creation]]), not only a racial exception. **An Attribute can never go below 0** - if an effect would push one lower, the character dies.
 
+**Note:** For what each Attribute represents in play, see [[Attributes & Skills|attributes_and_skills]].
+
 ---
 
 ## Literacy
@@ -67,14 +69,12 @@ Reading and writing are far from universal in Ressam \- most people never learn.
 
 ## Skills
 
-Skills range from 0 (untrained) to 5 (world-renowned master). Each is tied to one attribute.
+Skills range from 0 (untrained) to 5 (world-renowned master). Each is tied to one attribute. **A Skill's Rank can never exceed its governing Attribute's current score** - this is the only cap a Skill has (see [[Character Creation|character_creation]] and [[Per Level Advancement|progression_&_rewards]]), no separate level-gated limit exists.
 
 ### **Skill Check Formula**
 
-**1d12 \+ Skill Ranks \+ Attribute** vs. **DC**  
-**Note:** Only call for rolls when failure is reasonably possible.
-
-**Trained:** The Attribute only applies once you have 1 or more Skill Ranks in that skill. An untrained skill (0 Ranks) rolls **1d12** alone \- no Skill Ranks, no Attribute. This applies anywhere a Skill adds an Attribute to a roll, including Weapon Skill on Attack Rolls (see [[Combat|combat]]) and Magic School Skill on Spell Modifier (see [[Magic Overview|magic_overview]]).
+**1d12 \+ Skill Ranks** vs. **DC**  
+**Note:** Only call for rolls when failure is reasonably possible. An untrained skill (0 Ranks) rolls **1d12** alone.
 
 ### **Setting a Difficulty Class (DC)**
 
@@ -83,78 +83,59 @@ Ressam uses a nine-tier DC scale for Skill Checks, Ward Checks, Minor Magic, and
 | Tier | DC | Example |
 | :---- | :---: | :---- |
 | Very Easy | 5 | Recalling common knowledge, walking a plank |
-| Easy | 8 | Climbing a knotted rope, haggling with a friendly merchant |
-| Medium | 10 | Picking a simple lock, patching a minor wound |
-| Tricky | 12 | Balancing on a narrow ledge, talking down a nervous guard |
-| Hard | 15 | Persuading a skeptical noble, disarming a snare |
-| Grueling | 17 | Picking a masterwork lock under time pressure, holding a collapsing line |
-| Very Hard | 20 | Forging a noble's seal, scaling a sheer cliff in a storm |
-| Incredibly Hard | 22 | Snapping manacles bare-handed, resisting a curse's full grip |
-| Impossible | 25 | Outrunning a warhorse on foot, staring down a god without flinching |
+| Easy | 7 | Climbing a knotted rope, haggling with a friendly merchant |
+| Medium | 9 | Picking a simple lock, patching a minor wound |
+| Tricky | 10 | Balancing on a narrow ledge, talking down a nervous guard |
+| Hard | 12 | Persuading a skeptical noble, disarming a snare |
+| Grueling | 14 | Picking a masterwork lock under time pressure, holding a collapsing line |
+| Very Hard | 16 | Forging a noble's seal, scaling a sheer cliff in a storm |
+| Incredibly Hard | 17 | Snapping manacles bare-handed, resisting a curse's full grip |
+| Impossible | 20 | Outrunning a warhorse on foot, staring down a god without flinching |
 
-**Note:** Minor Magic and Alchemy crafting no longer keep their own copy of these numbers - both read Medium, Hard, and Very Hard directly off this table, so a spell or potion pegged "Hard" in those chapters always means DC 15 here, with nothing left to fall out of sync. The top two tiers are pinned to the actual ceiling of the d12 \+ Skill \+ Attribute system: a fully capped character (Skill 5, Attribute 5, both reached by level 8\) rolling a natural 12 hits 22 with no magical help at all \- that's Incredibly Hard. Magic items add at most \+3 on top of that, putting the true maximum possible roll anyone can ever produce at 25 \- that's Impossible, reachable only by a maxed, magically-equipped character on a natural 12\. Incredibly Hard shows up informally elsewhere (breaking Chains, Curse of the Beast, casting while Restrained) for feats meant to be exceptional even for a specialist; Impossible is there to mark tasks a DM shouldn't be calling for a roll on at all \- if the answer's really "no, unless something extraordinary happens," don't make the player roll for it.
+**Note:** Minor Magic and Alchemy crafting no longer keep their own copy of these numbers - both read Medium, Hard, and Very Hard directly off this table, so a spell or potion pegged "Hard" in those chapters always means DC 12 here, with nothing left to fall out of sync. The top two tiers are pinned to the actual ceiling of the d12 \+ Skill (or d12 \+ Attribute, for a Ward) system: a fully capped character (Skill or Attribute 5, reached by level 8\) rolling a natural 12 hits 17 with no magical help at all \- that's Incredibly Hard. Magic items add at most \+3 on top of that, putting the true maximum possible roll anyone can ever produce at 20 \- that's Impossible, reachable only by a maxed, magically-equipped character on a natural 12\. Incredibly Hard shows up informally elsewhere (breaking Chains, Curse of the Beast, casting while Restrained) for feats meant to be exceptional even for a specialist; Impossible is there to mark tasks a DM shouldn't be calling for a roll on at all \- if the answer's really "no, unless something extraordinary happens," don't make the player roll for it.
 
-**What to expect at the table:** A character actively trained in the relevant Skill clears Very Easy through Medium almost automatically at any level, and Tricky not long after. Hard is a real coin flip early on and becomes reliable by mid-game. Very Hard is out of reach at level 1 (even a maxed roll can't touch it) and stays a real risk even at the level cap without magical help. Incredibly Hard demands nothing short of a natural 12, even from a fully capped specialist \- and Impossible needs that same natural 12 stacked with the best magic gear money can buy. Neither is meant to be routine business.
+**What to expect at the table:** A character actively trained in the relevant Skill clears Very Easy through Medium almost automatically once they've put a few ranks in, and Tricky not long after. Hard stays a real risk for a character's entire career \- it tops out at a coin flip even for a fully-ranked specialist, never becomes routine. Grueling and Very Hard are exceptional even at Skill or Attribute 5. Incredibly Hard demands nothing short of a natural 12, even from a fully capped specialist \- and Impossible needs that same natural 12 stacked with the best magic gear money can buy. Neither is meant to be routine business.
 
-### **Success Rate by Level (Specialist)**
+### **Success Rate by Skill Rank / Attribute**
 
-Derived from **1d12 \+ Skill \+ Attribute** vs. each DC tier above, assuming a specialist: Skill Rank and that check's Attribute both maxed to the current level's cap ([[Per Level Advancement|progression_&_rewards]]). A generalist spreading points across multiple Skills or Attributes rolls worse than this at every level.
+Derived from **1d12 \+ Skill** (Skill Checks) or **1d12 \+ Attribute** (Ward Checks) vs. each DC tier above - the same six rows serve both, since each now adds a single 0-5 stat on its own. Level no longer determines this directly: only reaching a Skill's governing Attribute (or that Attribute's own cap) does, and that's a build choice, not an inevitability - modifier 5 requires Attribute 5, unreachable before level 8 ([[Per Level Advancement|progression_&_rewards]]).
 
-| Level | Skill \+ Attribute | Very Easy (5) | Easy (8) | Medium (10) | Tricky (12) | Hard (15) | Grueling (17) | Very Hard (20) | Incredibly Hard (22) | Impossible (25) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1-2 | 2 \+ 4 \= 6 | 100% | 92% | 75% | 58% | 33% | 17% | 0% | 0% | 0% |
-| 3-4 | 3 \+ 4 \= 7 | 100% | 100% | 83% | 67% | 42% | 25% | 0% | 0% | 0% |
-| 5-6 | 4 \+ 4 \= 8 | 100% | 100% | 92% | 75% | 50% | 33% | 8% | 0% | 0% |
-| 7 | 5 \+ 4 \= 9 | 100% | 100% | 100% | 83% | 58% | 42% | 17% | 0% | 0% |
-| 8-12 | 5 \+ 5 \= 10 | 100% | 100% | 100% | 92% | 67% | 50% | 25% | 8%\* | 0%\* |
+| Skill Rank / Attribute | Very Easy (5) | Easy (7) | Medium (9) | Tricky (10) | Hard (12) | Grueling (14) | Very Hard (16) | Incredibly Hard (17) | Impossible (20) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 0 (untrained) | 67% | 50% | 33% | 25% | 8% | 0% | 0% | 0% | 0% |
+| 1 | 75% | 58% | 42% | 33% | 17% | 0% | 0% | 0% | 0% |
+| 2 | 83% | 67% | 50% | 42% | 25% | 8% | 0% | 0% | 0% |
+| 3 | 92% | 75% | 58% | 50% | 33% | 17% | 0% | 0% | 0% |
+| 4 | 100% | 83% | 67% | 58% | 42% | 25% | 8% | 0% | 0% |
+| 5 | 100% | 92% | 75% | 67% | 50% | 33% | 17% | 8%\* | 0%\* |
 
-\*Incredibly Hard only clears on a natural 12, even at the level 8+ cap; Impossible needs that same natural 12 plus the full \+3 a magic item can add, which this table doesn't include - see the Note above. Nothing here accounts for situational Advantage/Disadvantage either.
+\*Incredibly Hard only clears on a natural 12, even at the mod-5 ceiling; Impossible needs that same natural 12 plus the full \+3 a magic item can add, which this table doesn't include - see the Note above. Nothing here accounts for situational Advantage/Disadvantage either.
 
-### **Skill Categories**
-
-**Combat Skills**
-
-| Category                | Attr. | Skills |
-|:------------------------| :---: | :---- |
-| Brawn & Melee           | STR | One-Handed Blades, Two-Handed Blades, Axes & Hammers, Polearms, Brawling, Slings & Whips |
-| Finesse & Ranged        | PRE | Rapiers & Fencing, Daggers & Knives, Bows & Crossbows, Thrown Weapons, Pistols, Long Guns, Heavy Firearms |
-| Defense & Survival      | END | Athletics, Armorer, Survival, Shields, Riding |
-| Adroitness & Subterfuge | DEX | Agility, Acrobatics, Stealth, Lockpicking, Sleight of Hand, Crafting, Perception |
-
-**Knowledge Skills**
-
-| Category | Attr. | Skills |
-| :---- | :---: | :---- |
-| Intellectual | MIND | Alchemy, Enchanting, Spell Crafting, Historic Lore, Medical Lore, Nature Lore, Identify |
-| Arcane Schools | ARC | Arcane Lore, Aeromancy, Geomancy, Hydromancy, Pyromancy, Shadowmancy |
-| Divine Schools | FAI | Religious Lore, Benediction, Invocation, Necration, Cultivation, Subjugation |
-
-**Social Skills**
-
-| Category | Attr. | Skills |
-| :---- | :---: | :---- |
-| Socialising & Interaction | CHA | Persuasion, Deception, Intimidation, Leadership, Animal Handling, Insight, Performance |
-
-**Note:** Identify covers recognizing what something actually is - appraising the value or authenticity of goods, art, and coin; spotting forgeries and fakes; and determining the nature of an unfamiliar substance, material, or object on sight.
+**Note:** For the full list of Skills grouped by category, and what each one actually covers, see [[Attributes & Skills|attributes_and_skills]].
 
 ---
 
 ## Checks vs. Ward
 
-**Skill Checks:** Represent an active attempt at using your training. Roll 1d12 \+ Attribute \+ Skill ≥ DC
+**Skill Checks:** Represent an *active attempt* at using your training. Roll 1d12 \+ Skill ≥ DC
 
-**Ward Check:** Wards represent a split-second reaction to danger. Roll 1d12 \+ Attribute \+ your highest-ranked Skill governed by that Attribute ≥ DC
+**Ward Check:** Wards represent a split-second *reaction* to danger. Roll 1d12 \+ Attribute ≥ DC
 
-**Passive Ward \= 5 \+ Attribute \+ your highest-ranked Skill governed by that Attribute** \- a quick-reference defensive score standing in for a Ward Check without requiring you to roll.
+**Passive Ward \= 5 \+ Attribute** \- a quick-reference defensive score standing in for a Ward Check without requiring you to roll.
 
-**Contested Checks:** Whenever a Feat, Feature, Maneuver, or Spell Overcome pits one creature's Skill or Ward directly against another's (rather than a flat DC from the tier table above), only the instigator rolls: **1d12 \+ the named Attribute \+ the named Skill** (their Spell Modifier, for spells) against the defender's static score \- **5 \+ the defender's associated Attribute \+ their relevant Skill** (their highest-ranked Skill governed by that Attribute, for a **Contested Ward**; a specific named Skill instead, where the rule says so, such as Acrobatics defending a Grapple). The defender never rolls. Ties go to the instigator, same as a Skill Check meeting a DC exactly.
+**Contested Checks:** Whenever a Feat, Feature, Oppose, or Spell Overcome pits one creature's Skill or Ward directly against another's (rather than a flat DC from the tier table above), only the instigator rolls. The shape follows which side of the Skill/Ward split is being tested:
 
-| Situation | Roll Type |
-| :---- | :---- |
+- **Contested Ward** (resisting Blind, a Petrifying Glare, and the like): the instigator rolls **1d12 \+ the named Attribute**; the defender's static score is their **Passive Ward, 5 \+ Attribute**.
+- **Named-Skill contest** (Grapple, Disarm, Feint, and the like): the instigator rolls **1d12 \+ the named Skill** (their Spell Modifier, for spells); the defender's static score is **5 \+ their relevant Skill** \- the same shape as Passive Ward, just built from a Skill instead of an Attribute.
+
+The defender never rolls. Ties go to the instigator, same as a Skill Check meeting a DC exactly.
+
+| Situation | Roll Type       |
+| :---- |:----------------|
 | Climbing a cliff | Athletics Check |
-| Grabbing a ledge when pushed | STR Ward |
-| Sneaking past guards | Stealth Check |
-| Surprised by an assassin | PRE Ward |
+| Grabbing a ledge when pushed | STR Ward        |
+| Sneaking past guards | Stealth Check   |
+| Surprised by an assassin | DEX Ward        |
 
 **Exception:** Divine spellcasting doesn't use a Contested Check at all - every Divine spell rolls against a flat DC instead of a target's Ward or Evasion, on purpose (see [[Magic Overview|magic_overview]]'s Petition Roll).
 
@@ -162,7 +143,7 @@ Derived from **1d12 \+ Skill \+ Attribute** vs. each DC tier above, assuming a s
 
 ## Basic Moves
 
-Basic Moves are the simple, universal actions everyone can take on their turn - proactively setting up an exchange, rather than the reactive Maneuver (see [[Combat|combat]]) that answers one.
+Basic Moves are the simple, universal actions everyone can take on their turn - proactively setting up an exchange, rather than the reactive Oppose (see [[Combat|combat]]) that answers one.
 
 ### **Dashing**
 
@@ -202,12 +183,21 @@ Force an enemy to drop their weapon or a held item.
 
 ---
 
+### **Shift Measure**
+
+Change the footing of a fight already underway - close the distance, or open it up.
+
+**Action:** Minor  
+**Effect:** Move the shared measure between you and one engaged opponent one Measure Band, in or out (see [[Measure Bands|weapons]] and [[Reach|combat]]) - this includes whatever movement the shift requires, up to your speed. No check required. Shifting into a band your opponent's weapon still matches provokes their Opportunity Attack, the same as any other close to melee (see [[Opportunity Attacks|combat]]).
+
+---
+
 ### **Blind**
 
 Throw dirt, sand, or grit into an opponent's eyes.
 
 **Action:** Minor (one hand free)  
-**Check:** **1d12 \+ your DEX \+ weapon skill** vs. target's DEX Ward (Contested Ward)  
+**Check:** **1d12 \+ your DEX** vs. target's DEX Ward (Contested Ward)  
 **Success:** Target is Blinded until the end of their next turn.
 
 ---
@@ -229,7 +219,7 @@ Seize and restrain an opponent.
 **While Grappling:**
 
 - Advantage on melee attacks against the target  
-- Casting requires a MIND Ward check (DC 20\) or spell fails  
+- Casting requires a MIND Ward check (DC 16\) or spell fails  
 - Your melee attacks ignore half the target's AR
 
 **Escape:** Major Action, repeat contested check.
@@ -241,7 +231,7 @@ Seize and restrain an opponent.
 Adopt a protective stance that makes you difficult to hit.
 
 **Action:** Minor  
-**Effect:** Until the start of your next turn, attacks against you have Disadvantage and your Maneuver attempts have Advantage. Your damage rolls suffer \-4 until the start of your next turn.
+**Effect:** Until the start of your next turn, attacks against you have Disadvantage and your Oppose attempts have Advantage. Your damage rolls suffer \-4 until the start of your next turn.
 
 ---
 
@@ -251,7 +241,7 @@ Use guile to open an opponent up to your strikes.
 
 **Action:** Minor  
 **Check:** Deception vs. target's static Insight (Contested Check)  
-**Success:** You gain advantage on the next weapon attack you make this turn.
+**Success:** You gain advantage on the next weapon attack you make this turn. The target's Oppose roll ([[Oppose|maneuvers]]) answering that same attack also suffers Disadvantage - a feint punishes the reflexive defender as much as it sets up your blow.
 
 ---
 

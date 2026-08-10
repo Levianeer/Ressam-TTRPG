@@ -42,9 +42,7 @@ Armor Penalty applies to all Arcane spell rolls. Each rank in Armorer reduces th
 
 Arcane spells use a single modifier when you cast:
 
-**Spell Modifier \= Magic School Skill \+ ARC \- Armor Penalty**
-
-**Trained:** As with all Skill-based rolls, ARC only applies once you have 1 or more ranks in that Magic School Skill ([[Skill Check Formula|core_rules]]).
+**Spell Modifier \= Magic School Skill \- Armor Penalty**
 
 Divine spells don't use a Spell Modifier at all - see Divine: The Petition Roll, below.
 
@@ -56,9 +54,9 @@ Divine spells don't use a Spell Modifier at all - see Divine: The Petition Roll,
 
 **Spell Overcomes:** Some Arcane spells target a creature's mental fortitude, physical resilience, or force of will rather than their ability to dodge. You roll to overcome the target's Ward.
 
-**Roll:** 1d12 \+ Spell Modifier vs. target's Ward (5 \+ Attribute \+ highest Skill under that Attribute)
+**Roll:** 1d12 \+ Spell Modifier vs. target's Ward (5 \+ Attribute)
 
-Each attribute has its own Ward, calculated from the skills tied to it. A spell will specify which attribute it targets (e.g. "Roll vs. target's MIND Ward"). This is a [[Contested Check|core_rules]] \- the target's Ward is their static defensive score, not a roll.
+A spell will specify which attribute it targets (e.g. "Roll vs. target's MIND Ward"). This is a [[Contested Check|core_rules]] \- the target's Ward is their static defensive score, not a roll.
 
 **Critical Hits:** Spell Attacks can crit on a natural 12 (roll damage twice, take the higher result, per the Critical Hits rules in Combat). Spell Overcomes cannot crit \- their power lies in their effects, not raw damage.
 

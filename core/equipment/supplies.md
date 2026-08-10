@@ -76,12 +76,12 @@ Essential equipment for travel, exploration, and survival.
 | Hammer              | 5 Crown  |   1   |        For construction         |
 | Shovel              | 6 Crown  |   1   |       Digging, excavation       |
 | Pickaxe             | 10 Crown |   2   |     Mining, breaking stone      |
-| Chain (10 ft)       | 15 Crown |   2   |     STR Ward DC 22 to break     |
-| Rope (50 ft)        | 6 Crown  |   2   |         DC 12 to climb          |
+| Chain (10 ft)       | 15 Crown |   2   |     STR Ward DC 17 to break     |
+| Rope (50 ft)        | 6 Crown  |   2   |         DC 10 to climb          |
 | Grappling hook      | 8 Crown  |   1   |               \-                |
-| Lock, simple        | 10 Crown |   1   |          DC 12 to pick          |
-| Lock, superior      | 50 Crown |   1   |          DC 20 to pick          |
-| Manacles            | 15 Crown |   1   | DC 20 to escape; DC 20 to break |
+| Lock, simple        | 10 Crown |   1   |          DC 10 to pick          |
+| Lock, superior      | 50 Crown |   1   |          DC 16 to pick          |
+| Manacles            | 15 Crown |   1   | DC 16 to escape; DC 16 to break |
 | Mirror, small steel | 8 Crown  |  1/3  |               \-                |
 | Whistle, signal     | 2 Crown  |  1/3  |         Audible 300 ft          |
 | Chalk (10 pieces)   | 1 Crown  |  1/3  |               \-                |
@@ -98,8 +98,8 @@ Tactical equipment for combat preparation and area control. These items give mar
 
 | Item                  |   Cost   | Slots |                           Notes                           |
 |:----------------------|:--------:|:-----:|:-----------------------------------------------------------:|
-| Caltrops (bag of 20\) | 5 Crown  |   1   | Covers 5×5 ft; Ward DEX DC 15 or 1d4 damage \+ half speed |
-| Bear trap             | 25 Crown |   2   |           DC 20 DEX or 2d6 damage \+ restrained           |
+| Caltrops (bag of 20\) | 5 Crown  |   1   | Covers 5×5 ft; Ward DEX DC 12 or 1d4 damage \+ half speed |
+| Bear trap             | 25 Crown |   2   |           DC 16 DEX or 2d6 damage \+ restrained           |
 
 ### **Thrown Items**
 
@@ -109,7 +109,7 @@ For thrown bombs (smoke, fire, acid, flash, etc.), see the **Alchemy** chapter's
 |:-----------|:--------:|:-----:|:--------:|:----------------------------:|
 | Holy water | 25 Crown |   1   | 20/40 ft | 2d6 radiant to undead/fiends |
 
-**Using Thrown Items:** Ranged attack using PRE \+ Athletics (or Thrown Weapons skill if you have it).
+**Using Thrown Items:** Ranged attack using Athletics (or Thrown skill if you have it).
 
 ---
 

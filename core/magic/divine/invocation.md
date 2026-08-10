@@ -29,7 +29,7 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 **Sever \- Mana Cost 1**
 
 - **Casting Time:** Major Action
-- **Range:** Touch
+- **Range:** Short
 - **Duration:** Instant
 - **Effect:** Briefly wrench your Familiar into the shape of a blade and strike. Make a Petition Roll (DC 7). **Success:** Deal 2d4 \+ FAI lightning damage.
 
@@ -60,7 +60,7 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - **Duration:** Instant
 - **Effect:** Hurl a shard of your Familiar at a creature you can see. Make a Petition Roll (DC 7). **Success:** Deal 2d8 \+ FAI lightning damage.
 
-- The shard lodges in the wound. Until the end of your next turn, your Touch spells can target this creature from up to 30 ft away.
+- The shard lodges in the wound. Until the end of your next turn, your Short-range spells can target this creature from up to 30 ft away.
 
 **Soul Armament \- Mana Cost 4**
 

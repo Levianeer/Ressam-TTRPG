@@ -30,7 +30,7 @@ The Varulf are cursed reflections of humanity \- neither fully man nor wholly be
 
 When the transformation ends, you lose any remaining Patched Wounds and revert to your human form. If you are unconscious when the transformation ends, you remain unconscious.
 
-**Curse of the Beast:** When you fail a MIND Ward, make an additional END Ward DC 23 or enter Feral Frenzy:
+**Curse of the Beast:** When you fail a MIND Ward, make an additional END Ward DC 18 or enter Feral Frenzy:
 
 - Transform immediately if not transformed.  
 - Must attack the nearest creature each turn.  

@@ -12,6 +12,7 @@ This chapter covers the setting itself: its history, geography, nations, religio
 - **History** - the Age of Mythos, the Sundering, and the Third Age's wars up to 402 RC.
 - **Geography** - the sun and moons, the continents, and the planes beyond the mortal world.
 - **Nations** - the great powers, their relations, and the factions that operate beneath and between them.
+- **Technology** - why the world sits at a matchlock-and-plate baseline, and what that baseline does and doesn't include.
 - **Religions** - the faiths practiced across Ressam.
 - **Heroes & Legends** - figures whose names are known across the realm.
 

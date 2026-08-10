@@ -16,26 +16,25 @@
 
 ### **Per Level Advancement**
 
-- **Every level:** Gain \+2 Skill Points every level  
-  - Skill Maximum increases by \+1 (maximum cap of 5 reached at level 7\)  
+- **Every level:** Gain \+2 Skill Points, spendable only on Skills, see [[Distribute Points|character_creation]]. A Skill's Rank can never exceed its governing Attribute's current score ([[Skills|core_rules]]) \- this is the only cap Skills have, no separate Skill Maximum table.  
 - **Levels 4, 6, 9, and 12:** Gain a Feat (plus 2 to start, at Level 1\)  
-- **Every 4 levels:** Gain \+1 Attribute Points  
-  - Attribute Maximum increases by \+1 (maximum cap of 5 reached at level 8\)
+- **Levels 4, 8, and 12:** Gain \+1 Attribute Point, spendable only on Attributes \- Attribute Points are otherwise fixed after character creation  
+  - Attribute Maximum increases by \+1 at levels 4 and 8 specifically (3 \-\> 4 \-\> 5\) \- the bonus Attribute Point at level 12 doesn't raise this cap further, it's just an extra point to spend
 
-| Level | Total XP | Skills Points | Skill Cap | ATTR Points | ATTR Cap | Feats | Notes |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | ----- |
-| 1 | 30 | Start 12 | 2 | Start 18 | 4 | Start 2 | Can hire Followers |
-| 2 | 120 | \+2 | \- | \- | 4 | \- | \- |
-| 3 | 270 | \+2 | 3 | \- | 4 | \- | Can hire Cohorts |
-| 4 | 480 | \+2 | \- | \+1 | 4 | \+1 | \- |
-| 5 | 750 | \+2 | 4 | \- | 4 | \- | Can take a Prestige Feat |
-| 6 | 1080 | \+2 | \- | \- | 4 | \+1 | \- |
-| 7 | 1470 | \+2 | 5 | \- | 4 | \- | Skill Cap reached. |
-| 8 | 1920 | \+2 | \- | \+1 | 5 | \- | Attribute Cap reached. |
-| 9 | 2430 | \+2 | \- | \- | 5 | \+1 | \- |
-| 10 | 3000 | \+2 | \- | \- | 5 | \- | \- |
-| 11 | 3630 | \+2 | \- | \- | 5 | \- | \- |
-| 12 | 4320 | \+2 | \- | \+1 | 5 | \+1 | \- |
+| Level | Total XP | ATTR Points | SKILL Points | ATTR Cap | Feats | Notes |
+| :---: | :---: | :---: | :---: | :---: | :---: | ----- |
+| 1 | 30 | Start 18 | Start 12 | 3 | Start 2 | Can hire Followers |
+| 2 | 120 | \- | \+2 | 3 | \- | \- |
+| 3 | 270 | \- | \+2 | 3 | \- | Can hire Cohorts |
+| 4 | 480 | \+1 | \+2 | 4 | \+1 | Attribute Cap increased. |
+| 5 | 750 | \- | \+2 | 4 | \- | Can take a Prestige Feat |
+| 6 | 1080 | \- | \+2 | 4 | \+1 | \- |
+| 7 | 1470 | \- | \+2 | 4 | \- | \- |
+| 8 | 1920 | \+1 | \+2 | 5 | \- | Attribute Cap reached. |
+| 9 | 2430 | \- | \+2 | 5 | \+1 | \- |
+| 10 | 3000 | \- | \+2 | 5 | \- | \- |
+| 11 | 3630 | \- | \+2 | 5 | \- | \- |
+| 12 | 4320 | \+1 | \+2 | 5 | \+1 | \- |
 
 ### **Rewards & Treasure**
 

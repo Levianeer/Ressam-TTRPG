@@ -36,7 +36,7 @@ Subjugation practitioners understand that faith is fuel, not a gift \- and fuel 
     - Act Hesitantly, they are Stunned until the end of their turn.
     - Act Painfully, they take 1d8 \+FAI psychic damage.
 
-- At the end of each of their turns, the target may attempt to reassert themselves by rolling 1d12 \+ FAI \+ best FAI skill vs. your original Petition Roll total. On success, the effect ends.
+- At the end of each of their turns, the target may attempt to reassert themselves by rolling 1d12 \+ FAI vs. your original Petition Roll total. On success, the effect ends.
 
 **Constructed Perception \- Mana Cost 4**
 

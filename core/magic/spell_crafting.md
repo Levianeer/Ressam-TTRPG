@@ -89,7 +89,7 @@ When combining Nouns from multiple schools:
 
 | Range | Adjustment | Distance |
 | :---- | :---: | :---- |
-| **Self/Touch** | \+2 | Physical contact (cannot have area modifier) |
+| **Self/Short** | \+2 | Physical contact (cannot have area modifier) |
 | **Close** | \+1 | 10 ft |
 | **Near** | 0 | 30 ft (baseline) |
 | **Medium** | \-4 | 60 ft |

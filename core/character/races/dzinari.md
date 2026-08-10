@@ -13,7 +13,8 @@ The Dzinari are pale, uncannily tall beings, Aelf-like in silhouette but far mor
 **Size:** Medium (5-6 ft)  
 **Base Speed:** 30 feet  
 **Starting Languages:** Dzinariel, and 1 of any other Language  
-**Starting Skills:** \+2 in any two: Arcane Lore, Insight, or Deception
+**Starting Skills:** \+2 in any two: Arcane Lore, Insight, or Deception  
+**Level Adjustment:** \+2
 
 ### **Features**
 

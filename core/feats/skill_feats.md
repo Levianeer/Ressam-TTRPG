@@ -2,34 +2,20 @@ These feats represent mastery of specific non-combat abilities and specialized t
 
 ---
 
-## Stealth & Subterfuge
+## Tradecraft
 
-### **Silent Movement**
+### **Tradecraft**
 
-You move like a hunter closing on game - low profile, weight on the outside of the foot, always aware of what's underfoot before you commit to it.
+Every trade has its quiet mastery - the hunter's low profile, the locksmith's feel for tension and pins, the scout's eye for a broken twig or a footprint half-filled with rain. You've drilled one of these past what raw Skill ranks alone represent.
 
-**Prerequisites:** \+3 ranks in Stealth  
-**Benefit:** You can attempt to hide even when lightly obscured. You have advantage on Stealth checks while in dim light or darkness. Moving up to half your speed doesn't impose disadvantage on Stealth checks.
+**Prerequisites:** \+2 ranks in Stealth, \+2 ranks in Lockpicking, or \+2 ranks in Survival (choose one skill when you take this feat)  
+**Benefit:** Choose the skill you qualified with:
 
----
+- **Stealth:** You can attempt to hide even when lightly obscured. You have advantage on Stealth checks while in dim light or darkness. Moving up to half your speed doesn't impose disadvantage on Stealth checks.
+- **Lockpicking:** You have advantage on Lockpicking checks against any lock you've had at least 1 minute to inspect first. When you lack proper Thieves' Tools, your Improvised Efforts penalty ([[Supplies|supplies]]) for Lockpicking is only \-2 instead of \-6 \- a hairpin or blade tip is enough for you. Once you have \+3 ranks in Lockpicking, picking a lock with a DC of 12 or lower only takes a Minor Action.
+- **Survival:** You have advantage on Survival checks to follow a trail, determine its age, or tell how many creatures made it. Once you have \+3 ranks in Survival, you can also use Survival in place of Perception to avoid being surprised while outdoors \- your read of the terrain warns you as well as watching it would.
 
-### **Locksmith**
-
-A lock is a puzzle with a time limit - one that gives up its secrets to steady hands, a feel for tension, and an ear for the pins.
-
-**Prerequisites:** \+2 ranks in Lockpicking  
-**Benefit:** You have advantage on Lockpicking checks against any lock you've had at least 1 minute to inspect first. When you lack proper Thieves' Tools, your Improvised Efforts penalty ([[Supplies|supplies]]) for Lockpicking is only \-2 instead of \-6 \- a hairpin or blade tip is enough for you. Once you have \+3 ranks in Lockpicking, picking a lock with a DC of 12 or lower only takes a Minor Action.
-
----
-
-## Wilderness & Survival
-
-### **Tracker**
-
-You read the ground the way others read a page - a broken twig, a disturbed stone, a footprint half-filled with rain all tell you which way someone went and how long ago.
-
-**Prerequisites:** \+2 ranks in Survival  
-**Benefit:** You have advantage on Survival checks to follow a trail, determine its age, or tell how many creatures made it. Once you have \+3 ranks in Survival, you can also use Survival in place of Perception to avoid being surprised while outdoors \- your read of the terrain warns you as well as watching it would.
+**Note:** You may take this feat multiple times, choosing a different skill each time.
 
 ---
 

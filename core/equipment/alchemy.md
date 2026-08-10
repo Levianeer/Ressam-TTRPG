@@ -45,7 +45,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 **Requirements:** Alchemist's Supplies, 1 Oil \+ 1 Powder \+ 1 Catalyst
 
-**Check:** 1d12 \+ Alchemy \+ MIND vs. DC \- set by the rarity of the ingredients used (see Quality Tiers, above). A recipe's Prep Tier below sets time only, not difficulty \- a Quick recipe brewed with Rare ingredients is exactly as hard to pull off as an Elaborate one, just faster to attempt.
+**Check:** 1d12 \+ Alchemy vs. DC \- set by the rarity of the ingredients used (see Quality Tiers, above). A recipe's Prep Tier below sets time only, not difficulty \- a Quick recipe brewed with Rare ingredients is exactly as hard to pull off as an Elaborate one, just faster to attempt.
 
 | Prep Tier | Time       | Examples                          |
 |:----------|:-----------|:-----------------------------------|
@@ -57,7 +57,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 **Batch Size:** 1 \+ (Alchemy Skill ÷ 2\) concoctions on a Success or Critical Success
 
-**Degree of Success:** Compare your roll to the DC as a Margin, resolved the same way as the Maneuver Reaction's Margin table ([[Maneuvers|maneuvers]]) \- same breakpoints, same tie-favors-you rule.
+**Degree of Success:** Compare your roll to the DC as a Margin, resolved the same way as the Oppose Reaction's Margin table ([[Oppose|maneuvers]]) \- same breakpoints, same tie-favors-you rule.
 
 **Margin \= Your Check − the DC**
 
@@ -75,7 +75,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 **Purchase:** Available in settlements at listed prices (see Equipment section)
 
-**Foraging** (Nature Lore or Survival DC 15, 2 hours):
+**Foraging** (Nature Lore or Survival DC 12, 2 hours):
 
 - Success: 1d4 Common ingredients  
 - Success by 5+: 1d4 Uncommon ingredients  
@@ -132,7 +132,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Firebomb (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Eshzera  
-- **Effect:** Thrown (20/40 ft), 10 ft radius, DEX Ward DC 20 for half  
+- **Effect:** Thrown (20/40 ft), 10 ft radius, DEX Ward DC 16 for half  
   - **Common:** **3d6 \+ Bonus** fire damage  
   - **Uncommon:** **3d6 \+ Bonus** fire damage  
   - **Rare:** **3d6 \+ Bonus** fire damage  
@@ -141,7 +141,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Venomshade (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Nat’khor  
-- **Effect:** Coat weapon (Minor Action). Next hit deals bonus poison damage, END Ward DC 15 or poisoned for 1 minute  
+- **Effect:** Coat weapon (Minor Action). Next hit deals bonus poison damage, END Ward DC 12 or poisoned for 1 minute  
   - **Common:** **2d6 \+ Bonus** poison damage  
   - **Uncommon: 2d6 \+ Bonus** poison damage  
   - **Rare:** **2d6 \+ Bonus** poison damage  
@@ -195,9 +195,9 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 - **Ingredients:** Sensory Oil \+ Stabilizing Powder \+ Eshzera  
 - **Effect:** Thrown (20/40 ft), 10 ft radius. CHA Ward or blinded and deafened for 1 round  
-  - **Common:** **DC 15 \+ Bonus**  
-  - **Uncommon:** **DC 15 \+ Bonus**  
-  - **Rare:** **DC 15 \+ Bonus**  
+  - **Common:** **DC 12 \+ Bonus**  
+  - **Uncommon:** **DC 12 \+ Bonus**  
+  - **Rare:** **DC 12 \+ Bonus**  
 - **Value:** 50 Crown (Common), 70 Crown (Uncommon), 110 Crown (Rare)
 
 ### **Alertness Salve (Quick)**

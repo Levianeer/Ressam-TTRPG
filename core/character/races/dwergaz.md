@@ -17,7 +17,7 @@ The Dwergaz are a race of stoic, earth-bound beings - cut, not born. Every Dwerg
 
 ### **Features**
 
-**Weapon Training:** You gain \+1 Axes & Hammers, and \+1 in either Pistols or Long Guns.  
+**Weapon Training:** You gain \+1 Hafted Weapons, and \+1 in Marksmanship.  
 **Darkvision:** You treat nonmagical darkness as dim light up to 60 ft.  
 **Dwarven Resilience:** You have \+3 to END Ward against poison and take half damage from poison.  
 **Grudge Bearer:** Once per Field Rest or Long Rest, when a creature deals damage to you or an ally, harms your property, or breaks a formal agreement with you, you may declare a grudge against them (no action required). You gain \+2 to attack and damage rolls against your grudge target. The grudge ends when the target dies, or when you declare a new grudge. You can have only one grudge at a time.

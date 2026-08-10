@@ -5,7 +5,7 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 **Thaumaturge \- Mana Cost 1**
 
 - **Casting Time:** Minor Action
-- **Range:** Touch
+- **Range:** Short
 - **Duration:** Instant
 - **Effect:** Make a Petition Roll (DC 7). **Success:** Channel vital energy into a wounded creature \- the target gains 1 Patched Wound.
 
@@ -18,12 +18,12 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 
   - **Success:** The target's movement speed is reduced to 15 ft. At the start of their turn, the target takes 1d8+FAI necrotic damage, and the first time this happens, choose yourself or an ally within 30 ft of the target to regain 1 Patched Wound \- the vines feed whoever you will, not just you. The healing only triggers once per casting; the drain continues each turn regardless.
 
-- They may use a Major Action to attempt to break free by rolling 1d12 \+ STR \+ best STR skill vs. your original Petition Roll total.
+- They may use a Major Action to attempt to break free by rolling 1d12 \+ STR vs. your original Petition Roll total.
 
 **Ironwood Flesh \- Mana Cost 2**
 
 - **Casting Time:** Major Action
-- **Range:** Touch
+- **Range:** Short
 - **Duration:** 1 hour
 - **Effect:** Make a Petition Roll (DC 7) as you channel vital energy into a creature's muscles and sinews, hardening them like living wood. **Success:** For the duration, the target gains:
 
@@ -42,13 +42,13 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 **Respite from Ruin \- Mana Cost 4**
 
 - **Casting Time:** Major Action
-- **Range:** Touch
+- **Range:** Short
 - **Duration:** Instant
 - **Effect:** Make a Petition Roll (DC 7). **Success:** You fortify a creature's body against accumulated trauma \- the target gains 2 Patched Wounds. Additionally, if the target has any levels of Trauma, remove 1 level.
 
 **Temporal Fortification \- Mana Cost 5**
 
 - **Casting Time:** Major Action
-- **Range:** Touch
+- **Range:** Short
 - **Duration:** 3 rounds
-- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains 3 temporary END (since Maximum Wounds \= END, this directly grants the target 3 Patched Wounds). At the start of each of the target's turns, this bonus decreases by 1\. When the bonus reaches 0 or the spell ends, they immediately suffer 1 level of Trauma.
+- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains 3 temporary END, widening their Wound Thresholds for the duration (see [[Wounds & Survival|wounds_and_survival]]) \- a hit needs that much more damage before it escalates into a worse Wound band. At the start of each of the target's turns, this bonus decreases by 1\.

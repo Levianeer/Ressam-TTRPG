@@ -20,7 +20,7 @@ A golem is bound purpose wearing a body \- stone, metal, earth, or flesh animate
 ### **Features**
 
 **Mystikal Heritage:** You have \+3 to Wards vs charmed and fear effects. When killed, the soul explosively returns to primordial energy. The creature can only be restored back to life by means of a god's miracle.  
-**Boundless Strength:** Your current STR Attribute CAP is increased by 2 (to a maximum of 12 at level 12).  
+**Boundless Strength:** Your current STR Attribute CAP is increased by 2 (to a maximum of 7 at level 8+).  
 **Built for Impact:** Your unarmed strikes deal an additional 2 damage.  
 **Constructed Nature:** You are immune to poison and disease. You don't need food, water, or air to survive.  
 **Cannot Heal Naturally:** Cannot heal from natural rest but CAN be healed by Cultivation magic. You must be healed magically or repaired using an Armorer check (DC 13, 1 hour, restores 2 Wounds). You can repair yourself if you have Armorer ranks and Armorer's Tools.  
@@ -29,7 +29,7 @@ A golem is bound purpose wearing a body \- stone, metal, earth, or flesh animate
 | Form | Attribute Penalty | Benefit |
 | :---- | :---- | :---- |
 | **Stone** | \-1 DEX | AR increases by 2\. Once per turn, you may detach a piece of yourself (no action required) and throw it as a ranged weapon attack (1d8+STR B, range 30/60 ft). Detached pieces crumble to dust after impact. Your body regenerates lost mass during any rest. |
-| **Metal** | \-1 CHA | You gain a natural AR of 11 (cannot wear armor) and a natural Armor Penalty of \-3, exactly as worn armor (reduced by Armorer ranks as normal). Your natural AR degrades when hit like worn armor, to a minimum of 4\. You regenerate 1d6 natural AR when you complete any Rest, and Armorer repairs (DC 13, 1 hour) restore 2d4 AR. |
+| **Metal** | \-1 CHA | You gain a natural AR of 9 (cannot wear armor) and a natural Armor Penalty of \-3, exactly as worn armor (reduced by Armorer ranks as normal). Your natural AR degrades when hit like worn armor, to a minimum of 4\. You regenerate 1d6 natural AR when you complete any Rest, and Armorer repairs (DC 13, 1 hour) restore 2d4 AR. |
 | **Dirt** | \-1 MIND | When hit by an adjacent creature's melee attack, you may attempt to grapple them as a Reaction. |
 | **Flesh** | \-1 END, \+1 MIND | Can speak normally and can be healed normally (removes the Feature 'Cannot Heal Naturally'). |
 

@@ -36,17 +36,27 @@ These three terms recur throughout Feats, spells, and racial traits, and always 
 
 ## Wounds and Survival
 
-**Maximum Wounds \= END**
+**Maximum Wounds \= Size baseline \+ Feats**
 
-Damage remaining after AR reduction converts to Wounds via thresholds, rather than subtracting 1-for-1:
+| Size | Wounds |
+|:---:|:---:|
+| Small | 2 |
+| Medium | 3 |
+| Large | 4 |
 
-| Damage (after AR) | Wounds inflicted |
-|:---|:---:|
-| 1-9 | 1 |
-| 10-15 | 2 |
-| 16+ | 3 |
+Huge and bigger aren't player-legal Sizes (see [[Size|carrying_and_resting]]), so a GM statting one is free to keep scaling this baseline up. Feats (such as Tough, see [[General Feats|general_feats]]) are the only other source of additional Wounds \- there is no Attribute that adds to this total.
 
-**Design intent:** Big weapons genuinely threaten multi-wound hits; armor's job is dragging a 2-wound hit down into 1-wound territory; Reactions that shave even a few points of damage can drop a hit below a threshold and are therefore decisive, not marginal.
+Damage remaining after AR reduction converts to Wounds via thresholds keyed to your END, rather than subtracting 1-for-1:
+
+| END | 1 Wound | 2 Wounds | 3 Wounds |
+|:---:|:-------:|:--------:|:--------:|
+|  1  |   1-7   |   8-13   |   14+    |
+|  2  |   1-8   |   9-14   |   15+    |
+|  3  |   1-9   |  10-15   |   16+    |
+|  4  |  1-10   |  11-16   |   17+    |
+|  5  |  1-11   |  12-17   |   18+    |
+
+**Design intent:** Big weapons genuinely threaten multi-wound hits; AR and END both push a hit into a lower band \- armor by cutting the damage that reaches the table, END by widening the bands themselves \- so investing in either is meaningful, and Reactions that shave even a few points of damage can drop a hit below a threshold and are therefore decisive, not marginal. Decoupling the Wound pool itself from END means a low-END character (a caster who never touches the stat) still has a guaranteed baseline of Wounds \- what END buys you is softer hits, not a bigger-or-smaller pool.
 
 ### **Wound Penalty**
 
@@ -67,20 +77,19 @@ At 0 Wounds:
 A Dying creature can be executed by attacking it.
 
 -   Attacks against a Dying creature automatically hit (it's Unconscious). Each instance of damage reduces its Death Clock by 2.
--   A creature that spends a Major Action adjacent to a Dying creature to deliberately execute it kills it outright, no roll required.
 -   Enemies can and will do this.
 
 ### **Stabilization**
 
 -   **Action:** Major Action while adjacent
--   **Check:** Medical Lore + MIND vs. DC (10 + target's Trauma)
+-   **Check:** Medical Lore vs. DC (10 + target's Trauma)
 -   **Healer's Kit:** Grants advantage
 -   **Success:** The target is no longer Dying. They remain at 0 Wounds, Unconscious, and Prone until they regain at least 1 Wound \- at which point healing works on them normally again.
 -   **Failure:** No progress; the clock keeps ticking. You may try again next round.
 
 ### **Scars**
 
-Whenever a hit deals Wound damage, its dominant Damage Type \- whichever type contributed the most to that hit's total, see Damage Types above \- flavors the injury in the fiction: nothing tracked, nothing on the sheet. Heal the Wound through any normal means (see Wound Recovery, below) and it closes clean, no lasting mark.
+Whenever a hit deals Wound damage, its dominant Damage Type \- whichever type contributed the most to that hit's total, see Damage Types above \- flavors the injury in the fiction. Heal the Wound through any normal means (see Wound Recovery, below) and it closes clean, no lasting mark.
 
 **Going Down:** The hit that reduces you to 0 Wounds is the exception. Its dominant Damage Type becomes a **Scar** \- a permanent injury that outlives the fight, and outlives ordinary healing.
 
@@ -96,7 +105,7 @@ Whenever a hit deals Wound damage, its dominant Damage Type \- whichever type co
 | Acid        | Chemical Burn |
 | Necrotic    | Necrosis      |
 | Radiant     | Brand         |
-| Psychic     | Fray          |
+| Psychic     | Mania         |
 
 **No mechanical effect:** A Scar carries no stat penalty \- it doesn't touch attack rolls, Wards, Skill Checks, or anything else on your sheet. It's mark, not math: a puckered burn, a hand that won't stop trembling, a hollow stare that wasn't there before \- proof you went down once and came back from it. What it costs you is narrative: how NPCs read you, what a noble court assumes about you, what it says about the life you've lived.
 
@@ -104,11 +113,11 @@ Whenever a hit deals Wound damage, its dominant Damage Type \- whichever type co
 
 **Removing a Scar:** Only a Cleric or Priest capable of true, deep restoration can undo one \- a working beyond what any Divine PC's Cultivation, or common village prayer, can manage. This isn't a service on offer in every town; it means seeking out a specific renowned healer, cathedral, or shrine, and paying for it. The price scales with how deep the wound that downed you went, and sits well beyond what common soldiers, laborers, or most working adventurers can raise:
 
-| Downing Blow's Wounds |    Price     |
-|:---------------------:|:------------:|
-|           1           | 2,000 Crown  |
-|           2           | 5,000 Crown  |
-|           3           | 10,000 Crown |
+| Downing Blow's Wounds |    Price    |
+|:---------------------:|:-----------:|
+|           1           | 1,000 Crown |
+|           2           | 2,000 Crown |
+|           3           | 5,000 Crown |
 
 **Note:** These figures anchor to the priciest mundane goods already in the game (Full Plate, the single most expensive common item, runs 2,000 Crown) and climb steeply past them on purpose \- a DM should feel free to retune per campaign, but the intent is that even the cheapest tier is a real, campaign-relevant sum, not pocket change.
 
@@ -138,9 +147,9 @@ Patched Wounds represent hasty field treatment \- a bandage, a burst of Cultivat
 
 Permanent Wounds don't refill on the Short/Field/Long Rest cadence (see [[Carrying & Resting|carrying_and_resting]]'s Resting section for Mana, Trauma, and Patched Wound recovery) \- they heal on their own, slower track:
 
--   **Attended:** Regain **1 Wound per 2 days** while actively attended by a medic or doctor (this may be a party member). The patient must rest and do nothing beyond light physical work; the medic is likewise occupied and cannot spend that time doing anything else productive.
--   **Unattended:** Regain **1 Wound per 2 weeks**. This is a deliberately punitive floor \- a medic-less party isn't stuck healing forever, but attended care is dramatically better.
--   A **Dying** character who has been Stabilized recovers their first Wound (ending Unconsciousness) on this same track \- Attended or Unattended, same rates as anyone else.
+- **Attended:** Regain **1 Wound per 2 days** while actively attended by a medic or doctor (this may be a party member). The patient must rest and do little beyond light physical work; the medic is likewise occupied and must spend that time doing little anything else.
+- **Unattended:** Regain **1 Wound per 2 weeks**. This is a deliberately punitive floor \- a medic-less party isn't stuck healing forever, but attended care is dramatically better.
+- A **Dying** character who has been Stabilized recovers their first Wound (ending Unconsciousness) on this same track \- Attended or Unattended, same rates as anyone else.
 
 ---
 

@@ -5,7 +5,7 @@ Necration is the manipulation of death, decay, and the threshold between life an
 **Mortis Grasp \- Mana Cost 1**
 
 - **Casting Time:** Major Action
-- **Range:** Touch
+- **Range:** Short
 - **Duration:** Instant
 - **Effect:** Make a Petition Roll (DC 7). **Success:** Deal 1d6+FAI necrotic damage. If this reduces the target to 0 Wounds, you siphon their departing essence \- regain 1 Mana.
 
@@ -18,7 +18,7 @@ Necration is the manipulation of death, decay, and the threshold between life an
 
   - **Success:** The target’s armor degrades by 1 AR and they take 1d6+FAI necrotic damage. At the start of each of your turns while channeling, the effect continues automatically.
 
-- At the end of each of their turns, the target may attempt to fight off the rot by rolling 1d12 \+ END \+ best END skill vs. your original Petition Roll total. On success, the spell ends.
+- At the end of each of their turns, the target may attempt to fight off the rot by rolling 1d12 \+ END vs. your original Petition Roll total. On success, the spell ends.
 
 - If the target dies while afflicted by Creeping Rot, the rot immediately leaps to the nearest other hostile creature within 10 ft (no action required) and the channel continues on them \- your original Petition Roll already succeeded, so no new roll is needed.
 
@@ -29,14 +29,14 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Duration:** 1 minute
 - **Effect:** You force a creature to glimpse their own death. Make a Petition Roll (DC 7).
 
-  - **Success:** The creature is Frightened of you for the duration. While frightened, they cannot willingly move closer to you. At the end of each of their turns, the target may attempt to steel themselves by rolling 1d12 \+ MIND \+ best MIND skill vs. your original Petition Roll total. On success, the effect ends.
+  - **Success:** The creature is Frightened of you for the duration. While frightened, they cannot willingly move closer to you. At the end of each of their turns, the target may attempt to steel themselves by rolling 1d12 \+ MIND vs. your original Petition Roll total. On success, the effect ends.
 
-- If a creature dies within 30 ft of a frightened target, that target must immediately roll 1d12 \+ MIND \+ best MIND skill vs. your original Petition Roll total or the duration resets.
+- If a creature dies within 30 ft of a frightened target, that target must immediately roll 1d12 \+ MIND vs. your original Petition Roll total or the duration resets.
 
 **Raise Thrall \- Mana Cost 3**
 
 - **Casting Time:** Major Action
-- **Range:** Touch
+- **Range:** Short
 - **Duration:** 24 hour
 - **Effect:** Make a Petition Roll (DC 7) as you animate a humanoid corpse as an undead thrall under your control. **Success:** The thrall acts immediately after your turn, following simple verbal commands (no action required). It has Wounds equal to your FAI × 3, AR 0, Evasion 10, and attacks with STR 4 using whatever weapon it held in life (or 1d4 bludgeoning unarmed). The thrall cannot speak, use skills, or take reactions. When the spell ends, the corpse collapses \- it cannot be animated again for 8 hours.
 

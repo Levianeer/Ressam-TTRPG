@@ -19,7 +19,7 @@ Shadowmancy is inherently silent, producing no noise when cast.
 **Veil of Shadows \- Mana Cost 2**
 
 - **Casting Time:** Major Action
-- **Range:** Touch
+- **Range:** Short
 - **Duration:** 1 hour / (Channel; if given to more than just one creature)
 - **Effect:** A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. This shroud is built for patient movement, not combat.
 
@@ -33,7 +33,7 @@ Shadowmancy is inherently silent, producing no noise when cast.
 - **Duration:** 1 minute
 - **Effect:** You cause a creature's own shadow to rise up and wrap around their eyes. Make a spell overcome roll vs. the target's CHA Ward.
 
-  - **Overcome:** The creature is Blinded for the duration. At the end of each of their turns, the target may attempt to tear free by rolling 1d12 \+ CHA \+ best CHA skill vs. the original spell roll. On success, the effect ends.
+  - **Overcome:** The creature is Blinded for the duration. At the end of each of their turns, the target may attempt to tear free by rolling 1d12 \+ CHA vs. the original spell roll. On success, the effect ends.
   - **Resist:** Their vision dims momentarily \- they have disadvantage on their next attack roll.
 
 

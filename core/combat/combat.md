@@ -20,18 +20,26 @@ Actions resolve highest to lowest each round.
 
 | Action Type | Quantity | Examples                                                       |
 | :---- | :---- |:---------------------------------------------------------------|
-| **Major Action** | 1/round | Attack, cast spell, reload weapon, Dash, Disengage, Dodge      |
-| **Minor Action** | 1/round | Sheathe weapon, drink potion, open door                        |
+| **Major Action** | 1/round | Attack, cast spell, reload weapon, Dash, Disengage              |
+| **Minor Action** | 1/round | Sheathe weapon, drink potion, open door, Shift Measure          |
 | **Object Interaction** | 1/round | Draw ammunition, pick up weapon, flip lever                    |
-| **Reaction** | (DEX \+ PRE) ÷ 3, rounded down, minimum 1 | Held Action, Maneuver (Parry/Block/Dodge), Reactive Casting, Opportunity Attack |
+| **Reaction** | 1-3, scales with DEX (see below) | Held Action, Oppose, Reactive Casting, Opportunity Attack |
 | **Free Action** | Unlimited | Drop item, speak briefly, stop channeling, etc                 |
 | **Move Action** | Unlimited | Move up to your maximum speed, can be broken up into multiples |
 
 - **Per Round:** Refreshes at the start of your *next* turn  
 - **Reactions:** Usable on anyone's turn
 - **Drawing multiple weapons:** As a single Object Interaction, you may draw any number of weapons at once, provided you have a free hand for each one.
-- **Reactions/round \= (DEX \+ PRE) ÷ 3, rounded down, minimum 1.** Recalculate whenever DEX or PRE changes (leveling, injury, equipment). Even a character who dumps both DEX and PRE keeps 1 Reaction \- worse at Maneuvering than someone who invested, but never locked out of Parry, Dodge, Reactive Casting, or Opportunity Attacks entirely.
-- **Reactions are a single shared pool:** Maneuver (in any of its Parry, Block, or Dodge Styles), Reactive Casting, and Opportunity Attacks all draw from the same pool above \- and so does every other Reaction-based Feat or spell you have (Ward of Faith, Dominating Stare, and the like). They compete for your Reactions, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
+- **Reactions/round scales with DEX:**
+
+  | DEX | Reactions |
+  | :---: | :---: |
+  | 0-2 | 1 |
+  | 3-4 | 2 |
+  | 5 | 3 |
+
+  Recalculate whenever DEX changes (leveling, injury, equipment). Even a character who dumps DEX keeps 1 Reaction \- worse at Opposing than someone who invested, but never locked out of Oppose, Reactive Casting, or Opportunity Attacks entirely. A 3rd Reaction requires DEX 5, unreachable before level 8+.
+- **Reactions are a single shared pool:** Oppose, Reactive Casting, and Opportunity Attacks all draw from the same pool above \- and so does every other Reaction-based Feat or spell you have (Ward of Faith, Dominating Stare, and the like). They compete for your Reactions, they do not stack. Only an effect that explicitly grants an additional Reaction (Combat Reflexes and the like) increases this pool.
 
 ---
 
@@ -39,9 +47,9 @@ Actions resolve highest to lowest each round.
 
 ### **Attack Roll**
 
-**1d12 \+  Weapon Skill \+ Attribute vs. Target's Evasion**
+**1d12 \+ Weapon Skill vs. Target's Evasion**
 
-**Trained:** As with all Skill-based rolls, the Attribute only applies once you have 1 or more ranks in the Weapon Skill used ([[Skill Check Formula|core_rules]]). An untrained attack rolls **1d12** alone.
+An untrained attack rolls **1d12** alone.
 
 ### **Damage Roll**
 
@@ -66,9 +74,9 @@ When the trigger occurs before your next turn, use your Reaction to execute the 
 Hold a ranged shot on a chosen lane, ready to loose it the instant your trigger is met - the setup melee gets for free just by having a weapon in hand, ranged weapons pay for with a turn.
 
 **Trigger:** Any perceivable circumstance you declare, same as a normal Held Action, above - an enemy entering your line of sight or your weapon's Range, closing to melee, breaking cover, attacking an ally, and so on.  
-**Action:** Major Action to set (this is a Held Action), Reaction to release (shared pool, see Action Economy, above - this competes with Maneuver and Opportunity Attacks for the same Reaction).  
+**Action:** Major Action to set (this is a Held Action), Reaction to release (shared pool, see Action Economy, above - this competes with Oppose and Opportunity Attacks for the same Reaction).  
 **Prerequisites:** A loaded ranged weapon in hand. A firearm must already be loaded before you set the trigger - Ready Volley holds the shot, not the reload.  
-**Roll:** Your normal attack roll (Weapon Skill \+ Attribute), unless you're making a Called Shot below.
+**Roll:** Your normal attack roll (Weapon Skill), unless you're making a Called Shot below.
 
 If your trigger doesn't occur before your next turn, the action is lost, same as any Held Action.
 
@@ -83,7 +91,7 @@ When your Ready Volley fires, you may aim for more than center mass instead of a
 | Arms              |   \-2   | Their next attack roll before your next turn has Disadvantage. Aim Margin \+3 or higher: they drop one held item of your choice instead. |
 | Head              |   \-4   | This attack ignores the target's AR entirely.                                                                                            |
 
-**Aim Margin \= Your attack roll − the target's Evasion** - the same numbers you already rolled to resolve the hit, no extra roll needed. This is a different quantity from a Maneuver's Margin (see [[Maneuver|maneuvers]]): there's no tier table here, only the \+3 threshold above.
+**Aim Margin \= Your attack roll − the target's Evasion** - the same numbers you already rolled to resolve the hit, no extra roll needed. This is a different quantity from an Oppose's Margin (see [[Oppose|maneuvers]]): there's no tier table here, only the \+3 threshold above.
 
 ---
 
@@ -94,7 +102,7 @@ Critical Hits occur on a **Natural 12** on attack rolls.
 **Effects:**
 
 - **Roll damage twice, take the higher result.**  
-- Bypasses the Parry and Block Styles of Maneuver (Dodge is unaffected - see [[Maneuvers|maneuvers]])
+- Bypasses an Oppose roll funded by Weapon Skill or Shields Skill entirely - the attack simply hits, and no Reaction is spent attempting it (an Oppose roll funded by bare DEX is unaffected - see [[Oppose|maneuvers]])
 
 Crits don't grant Trauma \- their pressure is indirect, since rolling twice raises the odds of landing in a higher Wound tier (see [[Wounds and Survival|wounds_and_survival]]).
 
@@ -105,13 +113,11 @@ Features and Feats can expand this further.
 
 ---
 
-## Agility
-
-### **Evasion**
+## Evasion
 
 Evasion, or ‘Passive Evasion’ is your innate ability to stay out of harm's way. This requires no setup or actions, it happens automatically against attack rolls.
 
-**Evasion \= 5 \+ Agility \+ DEX − Armor Penalty**
+**Evasion \= 5 \+ DEX − Armor Penalty**
 
 ---
 
@@ -142,7 +148,7 @@ Every hit (regardless of Wound damage) reduces armor by 1 AR.
 
 ### **Armor Penalty**
 
-Reduces Evasion, your Dodge Style roll ([[Maneuver|maneuvers]]), and your Spell Modifier.
+Reduces Evasion, your DEX-funded Oppose roll ([[Oppose|maneuvers]]), and your Spell Modifier.
 
 **Reducing Penalty:** Each rank in Armorer reduces Penalty by 1 (minimum 0).
 
@@ -160,30 +166,21 @@ Ressam is played on a grid of 5-foot squares, minis-and-battlemap style - every 
 
 ## Reach
 
-Not every weapon threatens the same amount of ground. A dagger only menaces whoever's standing right next to you; a pike keeps anyone dangerous a good few paces back. Weapons carry a **Reach Category** - Touch, Short, Medium, Long, or Very Long - that says how many squares out they can strike (see [[Reach Categories|weapons]] for the full table).
+Not every weapon threatens the same amount of ground. A dagger only menaces whoever's standing right next to you; a pike keeps anyone dangerous a good few paces back. Weapons carry a **Measure Band** - Grip, Near, or Far - that says how many squares out they can strike (see [[Measure Bands|weapons]] for the full table).
 
-That difference matters most the moment two weapons actually meet. Charging past the point of someone's spear to get in close is dangerous - they get a free swing at you for it (Closing the Distance, under Opportunity Attacks, below). And once you're trading blows, trying to parry a weapon much longer than yours is a losing proposition - your blade simply isn't there yet when theirs already is (see Parry, in [[Maneuvers|maneuvers]]).
+Unlike a static Reach comparison, Measure is a single shared value between two engaged combatants, and each side checks it against their *own* weapon independently - there's no "longer" and "shorter" combatant locked into fixed roles, just whoever's weapon currently matches the measure and whoever doesn't.
 
-**How They Interact:** Every rule Reach drives just compares your Category to theirs (see [[Reach Categories|weapons]]) - nothing stacks, nothing scales with how many steps apart you are.
+**How It Works:** Compare your own weapon's Measure Band to the current shared measure (see [[Measure Bands|weapons]]) - nothing stacks, nothing scales beyond the three bands.
 
-**Consequence:** When fighting an opponent whose weapon has a longer Reach Category than yours, you suffer disadvantage on rolls to Maneuver and to attack that target.
-
-
-| Compared to your opponent's Reach | What happens |
+| Your weapon vs. the current measure | What happens |
 | :---- | :---- |
-| **Lower than yours** | If your Reach is Medium or higher, them closing from outside your Reach into it provokes an Opportunity Attack from you. |
-| **Equal to yours** | No effect either way - a level exchange. |
-| **Higher than yours** | Your Parry has Disadvantage against them, and Riposte is off the table - unless something (Dodge's Reposition, or landing the **Close the Gap** Effect against this attacker) closes the gap first. See [[Maneuver|maneuvers]]. |
+| **Matches** | Strike freely - no penalty. |
+| **One band off** (Grip↔Near or Near↔Far) | Strike at Disadvantage. |
+| **Two bands off** (Grip↔Far, the maximum possible spread) | **You cannot Strike at all** - no attack roll, no Strike Effect - and an Oppose roll funded by Weapon Skill cannot be attempted this way at all (Oppose funded by Shields Skill or bare DEX is unaffected). |
 
----
+**Setting the measure:** An exchange begins at the longer weapon's Measure Band - the shorter weapon starts every fight with a problem to solve. Either side can change it: the **Shift Measure** Minor Action ([[Basic Moves|core_rules]]) moves the shared measure one band, in or out, on your own turn; the **Shift** Effect (see [[Oppose|maneuvers]]) does the same for free as part of winning an Oppose Reaction, no provoke. **Closing through a band your opponent's weapon still matches provokes** - moving from outside your target's Measure Band into it triggers their Opportunity Attack, below, the same as closing to melee always has.
 
-## Flanking
-
-You and an ally flank a target when your two squares are the **exact mirror of each other** across the target's space - not merely "somewhere on opposite sides." Picture the ring of squares touching the target: flanking requires you and your ally to occupy a directly-opposite pair in that ring (e.g. north and south, or northeast and southwest). There's no partial credit for a near-opposite position, and no drawing lines through corners to make a marginal angle count - if your square isn't the exact mirror of your ally's, you are not flanking.
-
-**Effect:** Your melee attack rolls against a target you're flanking have Advantage.
-
-**Larger Targets:** Against Large and Huge creatures, judge "directly opposite" the same way against the far side of their space, rather than a single mirrored square.
+**Closing costs the long weapon too.** A pike is firewood once someone's dragged the measure down to Grip - Far and Grip are the maximum possible spread, so the same two-bands-off rule that stops a dagger from reaching a pike at Far stops the pike from Striking at all once the measure sits at Grip. This is why anyone who fights with a Far-Band weapon carries a sidearm: the moment the measure collapses under them, their polearm becomes the wrong tool, and drawing something shorter is the actual answer, not just riding out the mismatch. Nothing needs to "break a lock" here the way the old Reach rules did - the symmetric comparison above already handles both sides at every measure, automatically.
 
 ---
 
@@ -201,7 +198,7 @@ You and an ally flank a target when your two squares are the **exact mirror of e
 
 When a creature **leaves your melee reach**, you may use your Reaction for one melee attack.
 
-**Closing the Distance:** If you're wielding a weapon with Reach Medium or higher, a creature moving from outside your Reach to within it provokes the same way - the entry-side mirror of leaving reach (see [[Reach|weapons]]); Touch and Short Reach can't do this to you. It fires once, right as they cross into your threat range: continuing to close afterward, from your reach's outer edge down to fully adjacent, doesn't provoke it again (see "moving within reach you already occupy," below) - and running out of movement right at that edge, without reaching adjacent, still counts as having triggered it.
+**Closing the Distance:** If you're wielding a weapon with Measure Band Near or higher, a creature moving from outside your reach to within it provokes the same way - the entry-side mirror of leaving reach (see [[Measure Bands|weapons]]); Grip Band can't do this to you. It fires once, right as they cross into your threat range: continuing to close afterward, from your reach's outer edge down to fully adjacent, doesn't provoke it again (see "moving within reach you already occupy," below) - and running out of movement right at that edge, without reaching adjacent, still counts as having triggered it.
 
 **Does NOT Provoke:**
 
@@ -211,7 +208,7 @@ When a creature **leaves your melee reach**, you may use your Reaction for one m
 - Moving after taking the Disengage action
 - Ranged attacks in melee (just disadvantage)
 
-An Opportunity Attack is a normal attack roll like any other - if it beats the target's Passive Evasion, they may answer it with a Maneuver or Reactive Casting exactly like any other attack (see [[Maneuvers|maneuvers]]).
+An Opportunity Attack is a normal attack roll like any other - if it beats the target's Passive Evasion, they may answer it with Oppose or Reactive Casting exactly like any other attack (see [[Maneuvers|maneuvers]]).
 
 ---
 
@@ -249,7 +246,7 @@ Conditions can be applied by numerous different sources and in a multitude of wa
 | **Blinded** | Can't see. Automatically fails any check or Ward that relies on sight. Disadvantage on attack rolls; attack rolls against it have advantage.                                                                                                                                           |
 | **Charmed** | Can't attack the charmer or target it with harmful effects. The charmer has advantage on Skill checks to interact with the creature socially.                                                                                                                                          |
 | **Deafened** | Can't hear. Automatically fails any check or Ward that relies on hearing.                                                                                                                                                                                                              |
-| **Flying** | Gains a flying Speed equal to the granting effect's value or its walking Speed, whichever is higher. If it loses this Speed or is knocked Prone while aloft, it falls (see [[Falling                                                                                                   |wounds_and_survival]]). |
+| **Flying** | Gains a flying Speed equal to the granting effect's value or its walking Speed, whichever is higher. If it loses this Speed or is knocked Prone while aloft, it falls (see [[wounds_and_survival]]'s Falling entry). |
 | **Frightened** | While the source of its fear is within line of sight: disadvantage on attack rolls and Skill checks. It can't willingly move closer to the source.                                                                                                                                     |
 | **Grappled** | Restrained, ends if the creature is moved beyond the reach of the grappler or grappling effect.                                                                                                                                                                                        |
 | **Incapacitated** | Can't take actions or reactions (Major, Minor, Object Interaction, or Reaction). Movement is unaffected unless another effect says otherwise.                                                                                                                                          |
@@ -258,7 +255,7 @@ Conditions can be applied by numerous different sources and in a multitude of wa
 | **Petrified** | Incapacitated, Speed 0, and unaware of its surroundings. Becomes a nonmagical stone object: weight ×10, aging stops, resistance to all damage. All other conditions and ongoing effects are suspended until it's freed.                                                                |
 | **Poisoned** | Disadvantage on attack rolls and Skill checks.                                                                                                                                                                                                                                         |
 | **Prone** | Disadvantage on attack rolls. Melee attack rolls against it have advantage; ranged attack rolls against it have disadvantage. Can't move except to stand up, which costs half its maximum movement.                                                                                    |
-| **Restrained** | Speed 0; disadvantage on attack rolls; \-3 to DEX Wards; casting requires a MIND Ward (DC 23\) or the spell fails.                                                                                                                                                                     |
+| **Restrained** | Speed 0; disadvantage on attack rolls; \-3 to DEX Wards; casting requires a MIND Ward (DC 18\) or the spell fails.                                                                                                                                                                     |
 | **Silenced** | Can't speak or cast spells.                                                                                                                                                                                                                                                            |
 | **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment.                                                                                                                                   |
 | **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it automatically hit, and any melee hit is a critical hit.                                                 |
@@ -282,6 +279,6 @@ A Mythic creature's turns are real turns. Anything that references "a turn" appl
 - Saves against conditions that allow an attempt at the end of the creature's turn (Frightened, channelled spells, and similar) are attempted at the end of every Mythic turn. A Mythic (3) creature gets three chances per round to shake off an effect. Conditions land on Mythic creatures \- they just don't stay long.
 - Ongoing damage such as Bleeding triggers at the start of every Mythic turn. A bleeding Mythic (3) creature takes its Bleed value three times per round.
 - Start-of-turn and end-of-turn traits (regeneration, auras, recharging abilities) trigger on every turn unless the creature's stat block says otherwise.
-- **Reactions:** A Mythic creature's Reaction pool refreshes at the start of each of its turns. A Mythic (3) creature can Parry, Block, or make an Opportunity Attack up to three times per round.
+- **Reactions:** A Mythic creature's Reaction pool refreshes at the start of each of its turns. A Mythic (3) creature can Oppose or make an Opportunity Attack up to three times per round.
 
-Mythic creatures do not need condition immunities or special resistances. Their many turns are their resistance \- and their many turns are also their weakness. Choose your poisons accordingly. See `ENCOUNTER_GUIDE.md` for guidance on picking X and building a Mythic creature's stat block.
+Mythic creatures do not need condition immunities or special resistances. Their many turns are their resistance \- and their many turns are also their weakness. Choose your poisons accordingly.

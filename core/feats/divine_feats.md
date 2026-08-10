@@ -13,7 +13,7 @@ You can channel raw divine power into miraculous effects.
 
 1. **Divine Cleansing:** Remove 1 level of Trauma from all allies within 30 ft
 2. **Divine Blessing:** All allies within 30 ft gain advantage on their next attack roll, or \+3 to their next Ward
-3. **Divine Judgment:** Make a **1d12 \+ your FAI \+ your Divine school rank** roll against the FAI Ward of all creatures within 30 ft (Contested Ward) - any creature it beats becomes Frightened of you until the end of your next turn
+3. **Divine Judgment:** Make a **1d12 \+ your FAI** roll against the FAI Ward of all creatures within 30 ft (Contested Ward) - any creature it beats becomes Frightened of you until the end of your next turn
 
 ---
 

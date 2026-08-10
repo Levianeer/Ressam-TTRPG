@@ -17,7 +17,7 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 
 ### **Features**
 
-**Flesh Communion:** Once per Field Rest or Long Rest, consume flesh from a creature that died within 24 hours (at least a mouthful). Make a FAI check DC 15\. On success, the spirit answers one yes/no question truthfully. On failure, the spirit is hostile \- it lies, or you learn nothing and cannot attempt Flesh Communion again until your next Field Rest or Long Rest.
+**Flesh Communion:** Once per Field Rest or Long Rest, consume flesh from a creature that died within 24 hours (at least a mouthful). Make a FAI check DC 12\. On success, the spirit answers one yes/no question truthfully. On failure, the spirit is hostile \- it lies, or you learn nothing and cannot attempt Flesh Communion again until your next Field Rest or Long Rest.
 
 **Choose 1 Subculture:**
 
@@ -27,13 +27,8 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 
 ### **Features**
 
-**Weapon Training:** You gain \+1 One-Handed Blades and \+1 Bows & Crossbows.  
-**Ancestors Cloak:** When you take damage from an attack or spell, you may use your Reaction to become invisible until the end of your next turn. Once used, this feature cannot be used again until you complete a Field Rest or Long Rest.  
-**Bloodwood Crafter:** At character creation, gain a bloodwood weapon that gains \+1 for every 2 Skill ranks you have with its associated Skill (maximum \+3).
-
-If your bloodwood weapon is lost or destroyed, you can craft a replacement during a Field Rest or Long Rest using (750 × its Bonus in Crown) in materials and appropriate wood.
-
-Bloodwood weapons are considered worthless, as they are only usable by their original owner.
+**Weapon Training:** You gain \+1 in either Blades or Archery.  
+**Ancestors Cloak:** When you take damage from an attack or spell, you may use your Reaction to become invisible until the end of your next turn. Once used, this feature cannot be used again until you complete a Field Rest or Long Rest.
 
 ## Ash'shene Subculture
 
@@ -41,10 +36,9 @@ Bloodwood weapons are considered worthless, as they are only usable by their ori
 
 ### **Features**
 
-**Weapon Training:** You gain \+1 Two-Handed Blades and \+1 Survival.  
+**Weapon Training:** You gain \+1 in either Blades or Survival.  
 **Tradition of Fire:** You can cast Ignis Lancet (Pyromancy) once per Field Rest or Long Rest without needing ranks in the skill.  
-**Tradition of Ash:** When you reduce a creature to 0 Wounds with fire damage, regain Wounds equal to your END (once per Short Rest).  
-**Tradition of War:** When you would have advantage on a weapon attack, you may forgo the advantage to make an additional weapon attack at a \-5 penalty. Once used, this feature cannot be used again until you complete a Short Rest.
+**Tradition of Ash:** When you reduce a creature to 0 Wounds with fire damage, regain Wounds equal to your END (once per Short Rest).
 
 ---
 

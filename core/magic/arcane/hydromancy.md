@@ -5,7 +5,7 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
 **Frigid Grip \- Mana Cost 1**
 
 - **Casting Time:** Major Action
-- **Range:** Touch
+- **Range:** Short
 - **Duration:** Instant
 - **Effect:** Frost crawls across a creature you can see. Make a melee spell attack roll vs. target's Evasion. On hit, deal 1d6 \+ ARC cold damage. The target's movement speed is reduced by 15 ft until the end of their next turn. If this reduces their speed to 0, ice locks them solid \- they cannot take Reactions until the end of their next turn.
 
@@ -65,6 +65,6 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
   - **Resist:** Half damage. Their speed is halved until the end of their next turn.
 
 
-- At the end of each of their turns, the target may attempt to shake off the effect by rolling 1d12 \+ END \+ best END skill vs. the original spell roll. On success, an Overcome downgrades to the Resist effect. On success against the Resist effect, the speed reduction ends.
+- At the end of each of their turns, the target may attempt to shake off the effect by rolling 1d12 \+ END vs. the original spell roll. On success, an Overcome downgrades to the Resist effect. On success against the Resist effect, the speed reduction ends.
 
 - Creatures without blood or with cold immunity are unaffected.

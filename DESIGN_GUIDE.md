@@ -8,6 +8,8 @@ Ressam is built around deliberate design goals, each one addressing a specific p
 
 Ressam aims to *feel* like 16th-century combat \- not simulate it. There's a meaningful difference. Armor in reality would rarely degrade at all, and only against firearms or crossbows; but having it degrade over a fight *feels* right for the setting. This is the guiding principle: mechanics should evoke the setting, not replicate it literally. Realism should be delivered through "realistic-lite" systems that hold up emotionally, not clinically.
 
+**Martial combat specifically is HEMA-lite.** The melee exchange loop (Measure, Oppose, the Press) takes its structure - a shared engagement distance both sides read and manipulate, a contested exchange that can chain rather than resolve in one roll - from historical European fencing systems (German and Italian longsword traditions chief among them). This is a *reference*, not a mandate to import real-world terminology wholesale: the same "feel, don't simulate" logic above applies, and the same plain-naming instinct the Feat Design Guidelines already ask for ("describe the technique, don't reach for foreign or archaic jargon") should guide new martial mechanics here too. Draw on HEMA for how an exchange *should feel* at the table \- not as license to reach for period jargon by default.
+
 ## Elegance
 
 Each individual mechanic must be simple on its own. Ressam's depth comes from *layering* simple rules \- not from making any single complex system. If a mechanic requires a calculator, or causes eyes to glaze over mid-explanation, it should be questioned.
@@ -72,11 +74,11 @@ Magic should not directly enable a Gish (martial/mage hybrid) playstyle. Invocat
 
 ## Real-World Grounding
 
-General, Martial, and Skill Feats must be traceable to a real historical or modern martial art, tactic, or trade skill \- not an invented fantasy trick. Name and flavor plainly (describe the technique, don't reach for foreign or archaic jargon): "Double Charge" for double-shotting a matchlock, "Locksmith" for a feel for tension and pins, not an invented style name. Arcane and Divine Feats are the explicit exception \- magic is allowed the leeway these three categories aren't.
+General, Martial, and Skill Feats must be traceable to a real historical or modern martial art, tactic, or trade skill \- not an invented fantasy trick. Name and flavor plainly (describe the technique, don't reach for foreign or archaic jargon): "Double Charge" for double-shotting a matchlock, "Tradecraft" for a feel for tension and pins or a read on broken twigs and trail-sign, not an invented style name. Arcane and Divine Feats are the explicit exception \- magic is allowed the leeway these three categories aren't.
 
 ## No Flat Damage, No Extra Attacks
 
-A Feat should never simply add flat damage to a hit, and should never grant an extra proactive attack. Bypassing AR (Seek the Seam, Double Charge), expanding crit range (Deadly Critical), or a Reaction-gated Riposte already earned through a won Maneuver exchange (maneuvers.md) are the sanctioned ways a Feat makes a fight more lethal \- not a bonus die tacked onto a hit.
+A Feat should never simply add flat damage to a hit, and should never grant an extra proactive attack. Bypassing AR (Seek the Seam, Double Charge), expanding crit range (Deadly Critical), or a Reaction-gated Strike already earned through a won Oppose exchange (maneuvers.md) are the sanctioned ways a Feat makes a fight more lethal \- not a bonus die tacked onto a hit.
 
 ## Lean Categories
 

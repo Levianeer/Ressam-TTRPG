@@ -1,11 +1,11 @@
 ## Stealth and Hiding
 
 **Action:** Major Action  
-**Check:** Stealth \+ DEX vs. observers' passive Perception
+**Check:** Stealth vs. observers' passive Perception
 
 **Requirements (need one):** Heavily obscured, behind full cover, or special ability.
 
-**Passive Perception \= 5 \+ Perception \+ DEX**
+**Passive Perception \= 5 \+ Perception**
 
 **Stealth breaks when you:** Attack, cast most spells, enter bright light without cover, make significant noise, or are found by active search.
 

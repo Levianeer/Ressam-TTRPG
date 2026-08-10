@@ -8,6 +8,7 @@
 
 **Character**
 - [Character Creation](character_creation)
+- [Attributes & Skills](attributes_and_skills)
 - [Careers](careers)
 - [Languages](languages)
 - [Progression & Rewards](progression_&_rewards)
@@ -71,6 +72,20 @@
 - [Supplies](supplies)
 - [Alchemy](alchemy)
 
+**Bestiary**
+- [Overview](bestiary_overview)
+- [Universal](universal)
+- [Aurkhan](aurkhan)
+- [Lustralis](lustralis)
+- [Inggaz](inggaz)
+- [Terrevault](terrevault)
+- [Gelidia](gelidia)
+- [The Gran Mar](gran_mar)
+- [The Southlands](southlands)
+- [Halig](halig)
+- [Trere](trere)
+- [Mythical](mythical)
+
 **Exploration**
 - [Traveling](traveling)
 - [Dungeon Turns](dungeon_turns)
@@ -84,6 +99,7 @@
 - [History](history)
 - [Geography](geography)
 - [Nations](nations)
+- [Technology](technology)
 - [Religions](religions)
 - [Heroes](heroes)
 

@@ -60,7 +60,7 @@ Geomancy bends stone, earth, and all that is grounded. Its practitioners underst
 - **Effect:** The earth opens beneath a Medium sized or smaller creature you can see standing on earth or stone, then closes around them like a fist. Make a spell overcome roll vs. the target's STR Ward.
 
   - **Overcome:** Pulled underground and encased in stone: Paralyzed, unable to breathe, and completely buried. An encased creature can hold their breath for a number of rounds equal to their END (minimum 1\) before beginning to suffocate. The stone prison can be broken out of (AR 8, 5 Wounds).
-  - **Resist:** Only partially buried \- Restrained and able to breathe. On their turn, the target can use a Major Action to attempt to break free: roll 1d12 \+ STR \+ best STR skill vs. your original overcome roll. On success, they free themselves.
+  - **Resist:** Only partially buried \- Restrained and able to breathe. On their turn, the target can use a Major Action to attempt to break free: roll 1d12 \+ STR vs. your original overcome roll. On success, they free themselves.
 
 
 - When used on Large creatures, the Overcome effect becomes the Resisted effect, as they cannot be completely buried. And if they were to Resist, instead they are unaffected.

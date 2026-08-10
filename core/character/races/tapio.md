@@ -14,7 +14,8 @@ The Tapio are sorrow-bound caretakers of forgotten wilds \- mystikal beings born
 You may change it using the Size Changing feature.  
 **Base Speed:** 30 feet  
 **Starting Languages:** Telepathy 30 feet (understand all)  
-**Starting Skills:** \+2 in two FAI Skills or \+1 rank in one FAI Skill and \+2 in Nature Lore
+**Starting Skills:** \+2 in two FAI Skills or \+1 rank in one FAI Skill and \+2 in Nature Lore  
+**Level Adjustment:** \+2
 
 ### **Features**
 
@@ -28,7 +29,8 @@ You may change it using the Size Changing feature.
 - **Large:** \+1 to STR checks and \+1 melee damage, disadvantage on Stealth.
 
 **One with Nature:** You can cast Parasitic Tendrils (Cultivation) once per Field Rest or Long Rest without needing ranks in the skill.  
-**Rooted Recovery:** During a Field Rest or Long Rest in a natural environment, that rest also removes 1 additional level of Trauma automatically.
+**Rooted Recovery:** During a Field Rest or Long Rest in a natural environment, that rest also removes 1 additional level of Trauma automatically.  
+**Rootbound Regeneration:** While in contact with natural, unworked ground (not stone floors, worked wood, or metal), you regain 1 Patched Wound at the start of each of your turns. This ends immediately if you're moved off natural ground.
 
 ---
 

@@ -32,7 +32,7 @@ Prestige Feats represent fundamental transformations in how a character interact
 
 - Your damage is completely fixed \- no variation, no damage dice.
 - You can no longer score critical hits.
-- You cannot use Finesse weapons and can no longer use the Parry Style of Maneuver,
+- You cannot use Finesse weapons and can no longer fund your Oppose roll with Weapon Skill,
 - Effects that add damage dice instead add only 1 additional damage (adding 3d4 instead adds 3 flat damage).
 - Effects that add flat damage instead add only half their additional damage (adding 10 instead adds 5 flat damage).
 
@@ -83,7 +83,7 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 
 *“The Sword Sages of the Ederani Al'Nur embody living theology, demonstrating Lehovil's protective light for those who follow his path. Their pinnacle technique, Sarab al-Nur \- the Mirage of Light \- allows practitioners to traverse not space, but perception, flickering like desert heat and reappearing with blade drawn where the eye denies possibility. Elders attribute this gift to Lehovil's favor, yet they conceal its shadows: origins traced to the Dunestrife War, where Sages studied the Hwispian Maw's wind-dancers and returned altered; ancient texts penned in Dzinariel, with forms echoing the abhorred Windform of desert monstrosities. The young are taught only of love's invincibility \- perhaps that's true enough.”*
 
-**Prerequisites:** DEX 4+, \+3 ranks in Acrobatics, \+2 ranks in Stealth or Agility
+**Prerequisites:** DEX 4+, \+3 ranks in Acrobatics, \+2 ranks in Stealth
 
 **Ritual:** Cross a path that should kill you without relying on your senses. A chasm's edge. A trapped corridor. A collapsing structure. Trust not in balance or sight, but in the certainty that where danger expects you, you are already elsewhere.
 
@@ -160,7 +160,7 @@ You have a number of **Rune Charges** equal to your Crafting skill ÷ 2 (rounded
 
 **Effect:** All your divine spells deal necrotic damage (instead of radiant). When you cast an instant-duration Cultivation spell that would grant Patched Wounds to a creature, you may invert it instead: make a Petition Roll (DC 7) against a target within the spell's range, dealing 1d8 × the spell's Mana Cost necrotic damage on success. If it succeeds, you gain Patched Wounds equal to the amount the spell would have granted its intended target (not the new damage total). Any other listed effect of the spell (such as Trauma removal) does not apply when inverted this way.
 
-Once per combat, when you successfully damage a creature with a Benediction or Cultivation spell, you may make a **1d12 \+ your FAI \+ spell school rank** roll against their FAI Ward (Contested Ward) - if it beats their Ward, they become Frightened of you until the end of your next turn.
+Once per combat, when you successfully damage a creature with a Benediction or Cultivation spell, you may make a **1d12 \+ your FAI** roll against their FAI Ward (Contested Ward) - if it beats their Ward, they become Frightened of you until the end of your next turn.
 
 **Mechanical Changes:**
 
@@ -189,7 +189,7 @@ Once per combat, when you successfully damage a creature with a Benediction or C
 
 **Ritual:** Speak to your weapon. Not as a performance \- truly speak, every night, for a turning of the moon. Tell it what you fear. What you want. What you have never told anyone living. On the final night, feed it your blood. If you were sincere, you will know. If you were not, you have wasted a month talking to metal.
 
-**Effect:** Choose one weapon you own. It is now bound to your soul. You use CHA for attack and damage rolls with this weapon, instead of STR or PRE.
+**Effect:** Choose one weapon you own. It is now bound to your soul. You use CHA for damage rolls with this weapon, instead of STR or PRE (Attack Rolls are Skill-only and unaffected by this swap - core_rules.md's Skill Check Formula).
 
 **Mechanical Changes:**
 

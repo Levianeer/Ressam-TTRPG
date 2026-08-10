@@ -9,6 +9,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks vs. W
 ## Character
 
 - [Character Creation](character_creation) - step-by-step guide to building a character
+- [Attributes & Skills](attributes_and_skills) - what each Attribute represents and what each Skill covers
 - [Careers](careers)
 - [Languages](languages)
 - [Progression & Rewards](progression_&_rewards)
@@ -43,7 +44,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks vs. W
 ## Combat
 
 - [Combat](combat) - turn structure, action economy, attacks, damage, critical hits
-- [Maneuvers](maneuvers) - the reactive Maneuver Reaction (Parry/Block/Dodge Styles) and its Effects, plus Reactive Casting
+- [Maneuvers](maneuvers) - the reactive Oppose Reaction and its Effects (Strike/Shift/Control/Recover), the Press reaction chain, and Reactive Casting
 
 ## Magic
 
@@ -85,6 +86,25 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks vs. W
 - [Supplies](supplies)
 - [Alchemy](alchemy) - crafting oils, bombs, and salves from ingredients
 
+## Bestiary
+
+- [Bestiary Overview](bestiary_overview) - fixed, non-scaling NPC stat blocks built at the same Attribute/Skill caps as a PC; the Common/Uncommon/Rare/Very Rare Frequency scale
+- [Universal](universal) - creatures with no race or continent tied to them (Peasant, Bandit, Knight)
+
+**By continent:**
+- [Aurkhan](aurkhan)
+- [Lustralis](lustralis)
+- [Inggaz](inggaz)
+- [Terrevault](terrevault)
+- [Gelidia](gelidia)
+- [The Gran Mar](gran_mar)
+- [The Southlands](southlands)
+- [Halig](halig)
+- [Trere](trere)
+
+**Mythical:**
+- [Mythical](mythical) - singular, campaign-defining threats carrying Mythic Initiative (combat.md)
+
 ## Exploration
 
 - [Traveling](traveling) - hex travel, mounts
@@ -100,6 +120,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks vs. W
 - [History](history) - the Age of Mythos, the Sundering, and the Third Age's wars
 - [Geography](geography) - the Mourning Star, the twin moons, the continents, and the planes
 - [Nations](nations) - the great powers, their relations, and the factions between them
+- [Technology](technology) - why the world sits at a matchlock-and-plate baseline
 - [Religions](religions) - the faiths practiced across Ressam
 - [Heroes & Legends](heroes) - figures whose names are known across the realm
 

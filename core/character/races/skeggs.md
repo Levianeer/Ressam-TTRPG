@@ -13,7 +13,8 @@ Skeggs are wiry, sharp-eyed subterranean kin of the Orkhs, infamous for their cu
 **Size:** Small (3-4 ft)  
 **Base Speed:** 25 feet, climbing speed 25 feet  
 **Starting Languages:** Grazn  
-**Starting Skills:** \+1 Survival, \+1 Medical Lore
+**Starting Skills:** \+1 Survival, \+1 Medical Lore  
+**Level Adjustment:** \+1
 
 ### **Features**
 

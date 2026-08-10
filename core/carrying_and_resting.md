@@ -6,15 +6,15 @@ Carrying capacity is tracked in **Slots**, not weight. Check your Slots when you
 
 Size modifies your Slot total, rounding down:
 
-|  Size  | Slots Modifier | Space (Squares) | Reach Category |
+|  Size  | Slots Modifier | Space (Squares) | Measure Band |
 |:------:|:--------------:|:--------------:|:--------------:|
-| Small  |     × 0.5      |   5 ft (1×1)   |      Short      |
-| Medium |      × 1       |   5 ft (1×1)   |      Short      |
-| Large  |      × 2       |  10 ft (2×2)   |     Medium      |
-|  Huge  |      × 4       |  15 ft (3×3)   |      Long       |
+| Small  |     × 0.5      |   5 ft (1×1)   |   Grip   |
+| Medium |      × 1       |   5 ft (1×1)   |   Grip   |
+| Large  |      × 2       |  10 ft (2×2)   |     Near      |
+|  Huge  |      × 4       |  15 ft (3×3)   |      Far       |
 
 **Space:** How much room a creature occupies, in grid squares (see [[Battlemap \& Positioning|combat]]).
-**Reach:** How far its unarmed melee reach extends, as a Reach Category (see [[Reach|weapons]] for what Reach Category means for the Maneuver and Opportunity Attack rules).
+**Reach:** How far its unarmed melee reach extends, as a Measure Band (see [[Reach|weapons]] for what Measure Band means for the Oppose and Opportunity Attack rules).
 
 **Encumbered (items exceed Slots):** Speed drops to 5 ft; disadvantage on physical checks; cannot rest.
 
@@ -44,23 +44,22 @@ Most ammunition comes in backs of a specifc number of shots, the packs themselve
 
 - Patched Wounds become at least 1, never lower than what you already have  
 - Regain 1 Mana. Divine casters must also spend part of this Rest in genuine prayer to receive it (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - Arcane needs nothing beyond completing the Rest  
-- Trauma: Medical Lore DC 15 to remove 1 level  
-- Can use: Armorer, Medical Lore, Scribing, Prayer etc  
-- Interrupted by combat
+- Trauma: Medical Lore DC 12 to remove 1 level  
+- Can use: Armorer, Medical Lore, Scribing, Prayer etc
 
 ### **Field Rest (8 Hours)**
 
 - Patched Wounds become at least 2, never lower than what you already have  
 - Regain Mana equal to **MIND**. Divine casters must also spend part of this Rest in genuine prayer to receive it (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - Arcane needs nothing beyond completing the Rest  
-- Trauma: Medical Lore DC 15 to remove 2 levels  
+- Trauma: Medical Lore DC 12 to remove 2 levels  
 - Can use: Armorer, Medical Lore, Scribing, Prayer etc  
 - **Requires:** Shelter (a tent, lean-to, or similar \- not a permanent structure), watch rotation, defensible position, 1 ration per character (trail food)
 
-### **Long Rest (8 Hours)**
+### **Long Rest (24 Hours)**
 
 - Patched Wounds become at least your missing Wounds (fully topped off)  
 - Regain Mana equal to **MIND × 3**, up to your Maximum Mana. Divine casters must also spend part of this Rest in genuine prayer to receive it (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - Arcane needs nothing beyond completing the Rest  
-- Trauma: Medical Lore DC 15 to remove 3 levels  
+- Trauma: Medical Lore DC 12 to remove 3 levels  
 - Can use: Armorer, Medical Lore, Scribing, Prayer etc  
 - **Requires:** **Good Shelter** (a permanent, secure structure \- inn, barracks, temple, private home, etc. \- not a tent or camp), **Good Food** (a proper hot meal, Meal common or better \- see [[Supplies|supplies]], not trail rations), civilization with security
 

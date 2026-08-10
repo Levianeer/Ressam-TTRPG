@@ -1,10 +1,9 @@
-Armor is your primary defense against physical attacks. In Ressam, armor absorbs damage but degrades with each hit \- protection is a finite resource that must be maintained and managed.
+_Armor is your primary defense against physical attacks. In Ressam, armor absorbs damage but degrades with each hit \- protection is a finite resource that must be maintained and managed.
 
 **Key Concepts:**
 
 - **Armor Rating/AR:** How much damage your armor absorbs per hit  
-- **Penalty:** How much the armor restricts agility and spellcasting  
-- **Stealth:** How much the armor restricts Stealth rolls and checks  
+- **Penalty:** How much the armor restricts agility, Stealth, and spellcasting  
 - **Durability:** Your armor's current condition (starts equal to AR, decreases when hit)
 - **Carrying Slots:** Worn armor and an equipped shield cost no Slots. The Slots column applies only to armor or a shield carried as a spare, not currently worn/equipped. A carried Pavise costs 2 Slots regardless of its bulk.
 
@@ -14,35 +13,35 @@ Armor is your primary defense against physical attacks. In Ressam, armor absorbs
 
 ### **Armor Table**
 
-| Armor | AR | Penalty | Stealth | Price | Slots |
-| :---- | :---: | :---: | :---: | :---: | :---: |
-| **CLOTHING** |  |  |  |  |  |
-| Common Clothes | \- | \- | \- | 10 Crown | 1 |
-| Work Clothes | \- | \- | \- | 15 Crown | 2 |
-| Travel Clothes | \- | \- | \- | 50 Crown | 2 |
-| Fine Clothes | \- | \- | \- | 200 Crown | 2 |
-| **FLEXIBLE ARMOR** |  |  |  |  |  |
-| Gambeson | 2 | \-1 | \- | 75 Crown | 2 |
-| Buff Coat | 3 | \-1 | \- | 120 Crown | 2 |
-| Mail Shirt | 4 | \-2 | \-2 | 150 Crown | 3 |
-| Chain Mail | 5 | \-2 | \-3 | 200 Crown | 3 |
-| Brigandine | 6 | \-3 | \-1 | 350 Crown | 3 |
-| **RIGID ARMOR** |  |  |  |  |  |
-| Breastplate | 6 | \-6 | \-2 | 700 Crown | 3 |
-| Half-Plate | 7 | \-7 | \-3 | 1,000 Crown | 5 |
-| Full Plate | 8 | \-8 | \-4 | 2,000 Crown | 6 |
+| Armor | AR | Penalty | Price | Slots |
+| :---- | :---: | :---: | :---: | :---: |
+| **CLOTHING** |  |  |  |  |
+| Common Clothes | \- | \- | 10 Crown | 1 |
+| Work Clothes | \- | \- | 15 Crown | 2 |
+| Travel Clothes | \- | \- | 50 Crown | 2 |
+| Fine Clothes | \- | \- | 200 Crown | 2 |
+| **FLEXIBLE ARMOR** |  |  |  |  |
+| Gambeson | 2 | \-1 | 75 Crown | 2 |
+| Buff Coat | 3 | \-1 | 120 Crown | 2 |
+| Mail Shirt | 4 | \-2 | 150 Crown | 3 |
+| Chain Mail | 5 | \-2 | 200 Crown | 3 |
+| Brigandine | 6 | \-3 | 350 Crown | 3 |
+| **RIGID ARMOR** |  |  |  |  |
+| Breastplate | 6 | \-6 | 700 Crown | 3 |
+| Half-Plate | 7 | \-7 | 1,000 Crown | 5 |
+| Full Plate | 8 | \-8 | 2,000 Crown | 6 |
 
 ###
 
-**Note:** Rigid Armor uses the normal Evasion formula (5 \+ Agility \+ DEX − Armor Penalty) like anything else \- there's no special ban on Agility, DEX, or Dodging. Its Penalty (equal to its full AR, see Armor Penalty below) is what makes it costly, not a separate restriction on top.
+**Note:** Rigid Armor uses the normal Evasion formula (5 \+ DEX − Armor Penalty) like anything else \- there's no special ban on Agility, DEX, or Dodging. Its Penalty (equal to its full AR, see Armor Penalty below) is what makes it costly, not a separate restriction on top.
 
 ### **Armor Descriptions**
 
 **Clothing** provides no protection but carries no penalty. Some do provide benefits:
 
-- **Work Clothes:** \+2 to checks with Artisan's Tools or Professional Equipment.  
+- **Work Clothes:** \+1 to checks with Artisan's Tools or Professional Equipment.  
 - **Travel Clothes:** Consume rations every 2 days instead of daily.  
-- **Fine Clothes:** \+2 to skills utilizing your Charisma.
+- **Fine Clothes:** \+1 to skills utilizing your Charisma.
 
 **Gambeson** is a padded jacket of quilted linen or wool, worn alone or under heavier armor. Affordable, lightweight, and surprisingly effective against cuts. The most common armor among common soldiers and militia.
 
@@ -50,9 +49,9 @@ Armor is your primary defense against physical attacks. In Ressam, armor absorbs
 
 **Mail Shirt** covers the torso with interlocking metal rings. Lighter than full chain mail but leaves the arms and legs exposed.
 
-**Chain Mail** is a full hauberk of interlocking rings covering torso and arms, often with a coif. Excellent against slashing weapons, less effective against thrusts and crushing blows. The distinctive jingle makes stealth difficult.
+**Chain Mail** is a full hauberk of interlocking rings covering torso and arms, often with a coif. Excellent against slashing weapons, less effective against thrusts and crushing blows.
 
-**Brigandine** consists of small steel plates riveted inside a cloth or leather covering. Popular among mercenaries and men-at-arms \- offers near-plate protection at lower cost, and the fabric exterior makes less noise than exposed metal.
+**Brigandine** consists of small steel plates riveted inside a cloth or leather covering. Popular among mercenaries and men-at-arms \- offers near-plate protection at lower cost.
 
 **Breastplate** is a fitted steel chest and back plate, typically worn over mail or gambeson. Standard equipment for professional soldiers and knights. The polished surface can deflect glancing blows.
 
@@ -81,24 +80,16 @@ Your AR determines how much damage your armor absorbs from each hit.
 
 Penalty represents how armor restricts movement. It applies to:
 
-- **Agility skill checks** (dodging, acrobatics, balance)
-- **Stealth skill checks** (if armor has a Stealth penalty)
+- **Acrobatics skill checks** (dodging, balance)
+- **Stealth skill checks** (moving unseen and unheard)
 - **Spellcasting rolls** (both attack rolls and Ward DCs)
-- **Evasion and Dodge calculations**
+- **Evasion and DEX-funded Oppose calculations**
 
 Penalty is derived directly from an armor's AR, not tracked separately: **Rigid armor's Penalty equals its AR**, while **Flexible armor's Penalty is half its AR (rounded down)**. A Rigid piece always costs you something no matter how it's built - that's the tradeoff for wearing plate.
 
 The **Armorer skill** reduces penalty: every rank in Armorer reduces your armor's penalty by 1 (minimum 0).
 
 **Example:** Kira wears Full Plate (Penalty \-8) and has Armorer 5, the maximum. Her effective penalty is still \-3 \- Rigid armor never fully cancels, even at maxed Armorer.
-
-### **Stealth Penalty**
-
-Some armor imposes an *additional* penalty specifically to Stealth checks. This stacks with the normal penalty.
-
-**Example:** Chain mail has Penalty \-2 and Stealth \-3. A character with no Armorer skill takes \-5 total to Stealth checks while wearing it.
-
-Brigandine notably has no Stealth penalty despite its protection \- the fabric exterior muffles the metal plates within.
 
 ### **Natural Armor**
 
@@ -120,13 +111,13 @@ Your armor's durability starts equal to its AR and decreases each time you're hi
 
 Kira starts a fight wearing chain mail (AR 5, Durability 5).
 
-| Event | Damage Taken | AR After |
-| :---- | :---: | :---: |
-| Start |  \-  | 5 |
-| Hit for 4 damage | 0 Wound Damage (absorbed) | 4 |
-| Hit for 7 damage | 3 Wound Damage | 3 |
-| Hit for 3 damage | 0 Wound Damage (absorbed) | 2 |
-| Hit for 6 damage | 4 Wound Damage | 1 |
+| Event            |       Damage Taken        | AR After |
+|:-----------------|:-------------------------:|:--------:|
+| Start            |            \-             |    5     |
+| Hit for 4 damage | 0 Wound Damage (absorbed) |    4     |
+| Hit for 7 damage |      3 Wound Damage       |    3     |
+| Hit for 3 damage | 0 Wound Damage (absorbed) |    2     |
+| Hit for 6 damage |      4 Wound Damage       |    1     |
 
 After four hits, her chain mail only provides AR 1\. She's taken 7 Wound Damage, but without armor she'd have taken 20\.
 
@@ -167,68 +158,49 @@ Any armor can instead be taken to a blacksmith for reforging - useful if nobody 
 
 ## Donning and Doffing Armor
 
-| Armor Type | Don | Doff | Rushed Don |
-| :---- | :---: | :---: | :---: |
-| Gambeson/Buff Coat | 1 minute | 1 Action | 5 rounds |
-| Mail Shirt/Chain Mail/Brigandine | 5 minutes | 1 Action | 1 minute |
-| Rigid Armor | 10 minutes | 1 Action | 3 minutes |
+| Armor Type     |    Don     |         Doff         | Rushed Don |
+|:---------------|:----------:|:--------------------:|:----------:|
+| Flexible Armor |  1 minute  |     Minor Action     |  5 rounds  |
+| Rigid Armor    | 10 minutes | Major + Minor Action |  1 minute  |
 
 **Doffing** is fast regardless of armor type \- shedding armor is a single Action on your turn, provokes no Reactions, and is one-way: you cannot re-don armor mid-combat, only take it off.
-
-**Help:** Another character can reduce don time by half if they have Armorer 1+.
 
 ---
 
 ## Shields
 
-Shields provide active and passive defenses.
+Shields don't add protection the way armor does - instead, they make losing an exchange survivable rather than costly. A shield's whole identity is one number: **Guard**.
 
 ### **Shield Table**
 
-| Shield | AR Bonus | Penalty | Properties | Price | Slots |
-| :---- | :---: | :---: | :---: | :---: | :---: |
-| Buckler | \- | \- | \+1 Agility | 40 Crown | 1 |
-| Targe | \+1 | \- | \- | 60 Crown | 2 |
-| Rotella | \+2 | \-1 | \- | 90 Crown | 2 |
-| Heater Shield | \+2 | \-1 | \- | 80 Crown | 2 |
-| Kite Shield | \+3 | \-2 | \- | 100 Crown | 2 |
-| Pavise | \+4 | \-3 | Deployable, \-5 ft speed | 120 Crown | 2 |
-
-### 
+| Shield | Guard | Properties | Price | Slots |
+| :---- | :---: | :---- | :---: | :---: |
+| Buckler | 1 | Keeps full Guard at Grip (see Guard and Measure, below) | 40 Crown | 1 |
+| Heater Shield | 2 | \- | 80 Crown | 2 |
+| Pavise | 3 | Deployable, \-5 ft speed | 120 Crown | 2 |
 
 ### **Shield Descriptions**
 
-**Buckler** is a small fist-held shield used for parrying rather than blocking. Popular in civilian dueling and among those who value mobility. Grants \+1 to Agility skill (affecting Evasion and your Dodge Style roll) but has no AR Bonus, so it reduces nothing on a Block Style Minimized result.
+**Buckler** is a small fist-held shield used for parrying rather than blocking. Popular in civilian dueling and among those who value mobility. Its Guard is the lowest of the three, but it's the only shield light enough to still do its full work at wrestling range - see Guard and Measure, below.
 
-**Targe** is a small round shield gripped or strapped to the forearm. Common among skirmishers and those who need a free hand. Offers modest protection without hindering movement.
+**Heater Shield** is the iconic knightly shield, shaped like a clothing iron. Solid, dependable coverage for a soldier who still needs to move and swing a weapon. Often bears heraldic devices.
 
-**Rotella** is the classic round shield, popular among infantry and duelists. Good balance of protection and mobility.
-
-**Heater Shield** is the iconic knightly shield, shaped like a clothing iron. Provides solid coverage while remaining maneuverable. Often bears heraldic devices.
-
-**Kite Shield** is a large teardrop-shaped shield offering excellent coverage, especially for mounted combat. The extended lower portion protects the legs.
-
-**Pavise** is a large rectangular shield originally designed to protect crossbowmen while reloading.  
+**Pavise** is a large rectangular shield originally designed to protect crossbowmen while reloading, offering the most Guard of any shield.  
 **Major Action:** Can be Deployed as standing cover, providing Cover to one creature directly behind it. The user cannot move while the shield is Deployed, but is also counted as in Cover.
 
 ### **Using Shields**
 
-**Blocking** requires:
+Guard requires a shield equipped in one hand - since a shield occupies a hand, it's only ever paired with a one-handed weapon (or nothing) in the other, never a Two-Handed weapon.
 
-- A shield equipped in one hand  
-- Your Reaction for the round
+Guard is passive: it applies whenever you have a shield equipped, regardless of which Skill funds your Oppose roll (see [[Oppose|maneuvers]]) - a shield strapped to your arm still catches a blow whether you're actively trained to use it or not.
 
-Block is one Style of the Maneuver Reaction (see [[Combat|combat]]) - on a Minimized result, your shield's AR Bonus reduces the incoming damage. Whether the attack is Dominant, Stopped, Minimized, or Failed, your armor and shield degrade as normal.
+**Guard and Measure:** A shield is an obstruction, not protection, once someone's inside it - Guard drops by 2 (minimum 0) whenever the current measure is Grip, except the Buckler, small enough to still do its full work that close in.
 
-**Buckler Exception:** The buckler grants no AR Bonus, so it reduces nothing on a Block Style Minimized result. Its benefit is the passive \+1 to Agility, which improves your Evasion and Dodge Style roll instead.
+**Guard and Control:** While an opponent has Control on you (see [[Oppose|maneuvers]]), your Guard is 0 against them - your shield's been hooked, pinned, or pressed out of line, until you spend a win clearing it.
 
 ### **Shield Durability**
 
-Shields share durability with your armor \- they don't track separately.
-
-**Reasoning:** The shield's AR bonus temporarily increases your total AR. When an attack hits despite your block, the impact damages whatever absorbed the blow \- armor and shield together take the wear.
-
-When repairing armor, you repair the shield simultaneously.
+Shields share durability with your armor - they don't track separately. A shield's Guard degrades by 1 each time it actually reduces a losing Oppose margin (see [[Oppose|maneuvers]]) - a won exchange never touches the shield, so Guard only wears down at the moment it does its job. Guard cannot drop below 0, and is restored by the same Armorer repair rules as armor (see Repairing Armor, above) - when you repair your armor, you repair your equipped shield's Guard simultaneously.
 
 ---
 
@@ -241,9 +213,9 @@ When repairing armor, you repair the shield simultaneously.
 | **Melee Fighter** | Brigandine or Breastplate | High AR; Breastplate's Rigid Penalty (equal to its full AR) is steep, but Evasion still scales normally |
 | **Archer/Crossbowman** | Gambeson or Buff Coat | Low penalty for aiming |
 | **Spellcaster** | None or Gambeson | Penalty hurts spellcasting |
-| **Skirmisher/Scout** | Gambeson | Stealth-compatible |
-| **Tank** | Full Plate \+ Shield | Maximum protection |
-| **Duelist** | Buff Coat \+ Buckler | Mobility \+ Agility bonus |
+| **Skirmisher/Scout** | Gambeson | Low penalty keeps Stealth usable |
+| **Tank** | Full Plate \+ Pavise | Maximum AR, and the highest Guard to soften whatever gets through anyway |
+| **Duelist** | Buff Coat \+ Buckler | Mobility, and a shield whose Guard still works at Grip range |
 
 ### 
 
@@ -252,12 +224,12 @@ When repairing armor, you repair the shield simultaneously.
 Higher AR means better damage absorption but worse:
 
 - Evasion (harder to be missed)  
-- Dodge (harder to actively evade)  
+- Oppose funded by DEX (harder to actively evade)  
 - Spellcasting (lower attack rolls and Ward DCs)  
-- Stealth (some armor only)
+- Stealth (harder to move unseen and unheard)
 
 **Martial characters** generally favor higher AR \- they rely on armor to survive, not evasion.
 
 **Spellcasters** favor low or no armor \- penalty directly reduces their effectiveness.
 
-**Hybrid characters** often choose brigandine \- high AR (6) with only \-3 penalty and no Stealth penalty.
+**Hybrid characters** often choose brigandine \- high AR (6) with only \-3 penalty.

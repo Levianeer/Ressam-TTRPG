@@ -1,5 +1,7 @@
 Careers represent what you did to survive before taking up the adventurer's life, whether that was swinging a hammer in a forge, keeping ledgers for merchants, or standing watch on city walls. Your Career is experience gained, not a role you're locked into. You were a Merchant who negotiated deals and balanced books. You are now an adventurer who happens to know those skills \- and whatever else you've chosen to pursue since leaving that life behind.
 
+**Status Tier:** which tier below you may choose from is set by your Career priority at character creation - see [[Character Creation|character_creation]]'s Step 2. Starting Crown already reflects each tier's economic reality (High Status pays more than Low); there's no separate bonus to add.
+
 # High Status
 
 ## Knight
@@ -8,7 +10,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Shields \+1, Riding \+1  
 **Starting Equipment:** Longsword, rotella shield, tabard bearing your order's colors  
-**Starting Coin:** 450 Crown
+**Starting Coin:** 600 Crown
 
 ---
 
@@ -17,9 +19,9 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You bought, sold, and transported goods \- learning to read markets and negotiate deals.*
 
 **Skill Bonuses:** Persuasion \+1, Identify \+1  
-**Grants Literacy:** Yes, regardless of MIND  
+**Grants Literacy:** Regardless of MIND  
 **Starting Equipment:** Merchant's ledger, small lockbox, fine clothes  
-**Starting Coin:** 620 Crown
+**Starting Coin:** 770 Crown
 
 ---
 
@@ -28,9 +30,9 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You studied texts, scrolls, and records \- perhaps in a library, university, or private collection.*
 
 **Skill Bonuses:** Historic Lore \+1, Arcane Lore \+1  
-**Grants Literacy:** Yes, regardless of MIND  
+**Grants Literacy:** Regardless of MIND  
 **Starting Equipment:** Writing supplies, reading glasses, common clothes  
-**Starting Coin:** 580 Crown
+**Starting Coin:** 730 Crown
 
 ---
 
@@ -39,9 +41,9 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You served a religious order \- performing rites, tending to the faithful, or studying sacred texts.*
 
 **Skill Bonuses:** Religious Lore \+1, Persuasion \+1  
-**Grants Literacy:** Yes, regardless of MIND  
+**Grants Literacy:** Regardless of MIND  
 **Starting Equipment:** Religious symbol, prayer book, ceremonial robes  
-**Starting Coin:** 560 Crown
+**Starting Coin:** 710 Crown
 
 ---
 
@@ -51,7 +53,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Alchemy \+1, Nature Lore \+1  
 **Starting Equipment:** Alchemist's supplies, 2 random minor potions (DM's choice), stained robes  
-**Starting Coin:** 550 Crown
+**Starting Coin:** 700 Crown
 
 ---
 
@@ -59,9 +61,9 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You were schooled by one of the masters \- whether for sport, honour, or sadism, you live by the debole of the thin blade.*
 
-**Skill Bonuses:** Rapiers & Fencing \+1, Historic Lore \+1  
+**Skill Bonuses:** Blades \+1, Historic Lore \+1  
 **Starting Equipment:** Rapier, Dueling cape (buckler), fine clothes  
-**Starting Coin:** 520 Crown
+**Starting Coin:** 670 Crown
 
 # Upper-Middle Status
 
@@ -71,7 +73,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Crafting \+1, Persuasion+1  
 **Starting Equipment:** Artisan's tools (choose type), leather apron and work clothes  
-**Starting Coin:** 600 Crown
+**Starting Coin:** 675 Crown
 
 ---
 
@@ -79,9 +81,9 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You sold your blade to the highest bidder, fighting in wars that weren't yours for coin that spent the same.*
 
-**Skill Bonuses:** One-Handed Blades \+1, Leadership \+1  
+**Skill Bonuses:** Blades \+1, Leadership \+1  
 **Starting Equipment:** Broadsword, mismatched armor pieces (gambeson or buff coat), mercenary contract (completed)  
-**Starting Coin:** 470 Crown
+**Starting Coin:** 545 Crown
 
 ---
 
@@ -91,7 +93,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Polearms \+1, Perception \+1  
 **Starting Equipment:** Halberd, whistle, guard's uniform  
-**Starting Coin:** 510 Crown
+**Starting Coin:** 585 Crown
 
 ---
 
@@ -101,7 +103,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Deception \+1, Insight \+1  
 **Starting Equipment:** Disguise kit (wigs, makeup, theater props), sealed letter with encoded message, nondescript traveler's clothes  
-**Starting Coin:** 600 Crown
+**Starting Coin:** 675 Crown
 
 ---
 
@@ -111,7 +113,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Medical Lore \+1, Nature Lore \+1  
 **Starting Equipment:** Healer's kit, surgical tools, bloodstained apron  
-**Starting Coin:** 570 Crown
+**Starting Coin:** 645 Crown
 
 ---
 
@@ -119,9 +121,9 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You were trained to give fire to your enemies \- loosing shot in the midst of pike and horse.*
 
-**Skill Bonuses:** Long Guns \+1, Athletics+1  
+**Skill Bonuses:** Marksmanship \+1, Athletics+1  
 **Starting Equipment:** Match-lock Musket, Shot & Powder for 20 shots, travelling clothes  
-**Starting Coin:** 300 Crown
+**Starting Coin:** 375 Crown
 
 ---
 
@@ -129,9 +131,9 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You rode horses into battle, often heavily armed and armored \- trained to engage pike-and-shot formations.*
 
-**Skill Bonuses:** Pistols \+1, Riding \+1  
+**Skill Bonuses:** Marksmanship \+1, Riding \+1  
 **Starting Equipment:** Match-lock Pistol, Shot & Powder for 10 shots, riding horse, sturdy travelling clothes  
-**Starting Coin:** 350 Crown
+**Starting Coin:** 425 Crown
 
 # Middle Status
 
@@ -139,7 +141,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You tracked and killed game for food, pelts, or bounty.*
 
-**Skill Bonuses:** Survival \+1, Bows & Crossbows \+1  
+**Skill Bonuses:** Survival \+1, Archery \+1  
 **Starting Equipment:** Longbow, 24 arrows, knife, dark cloak  
 **Starting Coin:** 500 Crown
 
@@ -213,7 +215,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Polearms \+1, Athletics \+1  
 **Starting Equipment:** Pike, military tabard  
-**Starting Coin:** 530 Crown
+**Starting Coin:** 480 Crown
 
 ---
 
@@ -223,7 +225,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Intimidation \+1, Brawling \+1  
 **Starting Equipment:** Club, brass knuckles, collection ledger, leather vest  
-**Starting Coin:** 540 Crown
+**Starting Coin:** 490 Crown
 
 ---
 
@@ -232,9 +234,9 @@ Careers represent what you did to survive before taking up the adventurer's life
 *You copied texts, kept records, or wrote letters for the illiterate.*
 
 **Skill Bonuses:** Historic Lore \+1, Insight \+1  
-**Grants Literacy:** Yes, regardless of MIND  
+**Grants Literacy:** Regardless of MIND  
 **Starting Equipment:** Calligrapher's supplies, ink-stained clothes  
-**Starting Coin:** 560 Crown
+**Starting Coin:** 510 Crown
 
 ---
 
@@ -244,7 +246,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Sleight of Hand \+1, Stealth \+1  
 **Starting Equipment:** Thieves' tools, small bag of "acquired" trinkets, dark common clothes  
-**Starting Coin:** 540 Crown
+**Starting Coin:** 490 Crown
 
 ---
 
@@ -254,7 +256,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Stealth \+1, Sleight of Hand \+1  
 **Starting Equipment:** Thieves' tools, dark common clothes  
-**Starting Coin:** 540 Crown
+**Starting Coin:** 490 Crown
 
 ---
 
@@ -264,7 +266,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Athletics \+1, Perception \+1  
 **Starting Equipment:** Pickaxe, lantern, heavy gloves  
-**Starting Coin:** 550 Crown
+**Starting Coin:** 500 Crown
 
 ---
 
@@ -274,7 +276,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Athletics \+1, Survival \+1  
 **Starting Equipment:** Rope (50 ft), lucky charm, sailor's clothes  
-**Starting Coin:** 560 Crown
+**Starting Coin:** 510 Crown
 
 ---
 
@@ -284,7 +286,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Athletics \+1, Deception \+1  
 **Starting Equipment:** Sealed message case, traveler's clothes  
-**Starting Coin:** 560 Crown
+**Starting Coin:** 510 Crown
 
 ---
 
@@ -294,7 +296,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Survival \+1, Animal Handling \+1  
 **Starting Equipment:** Fishing nets, knife, waterproof cloak  
-**Starting Coin:** 550 Crown
+**Starting Coin:** 500 Crown
 
 ---
 
@@ -306,7 +308,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Athletics \+1, Crafting \+1  
 **Starting Equipment:** Work tools (shovel, pickaxe, or hammer), heavy gloves, common clothes  
-**Starting Coin:** 550 Crown
+**Starting Coin:** 450 Crown
 
 ---
 
@@ -316,7 +318,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Insight \+1, Persuasion \+1  
 **Starting Equipment:** Cleaning supplies, silver trinket, fine servant's livery  
-**Starting Coin:** 550 Crown
+**Starting Coin:** 450 Crown
 
 ---
 
@@ -326,7 +328,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Choose \+1 in any Crafting, Alchemy, or Lore skill, \+1 Perception  
 **Starting Equipment:** Apprentice tools (appropriate to chosen skill), master's recommendation letter, work clothes  
-**Starting Coin:** 540 Crown
+**Starting Coin:** 440 Crown
 
 ---
 
@@ -336,7 +338,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Survival \+1, Insight \+1  
 **Starting Equipment:** Bedroll, walking stick, worn traveling cloak  
-**Starting Coin:** 550 Crown
+**Starting Coin:** 450 Crown
 
 ---
 
@@ -346,7 +348,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Survival \+1, Intimidation \+1  
 **Starting Equipment:** Shortbow, 24 arrows, buff coat, wanted poster  
-**Starting Coin:** 350 Crown
+**Starting Coin:** 250 Crown
 
 ---
 
@@ -356,7 +358,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Survival \+1, Religious Lore \+1  
 **Starting Equipment:** Shortsword, 10 wooden stakes, holy symbol, dark hooded cloak, flask of holy water  
-**Starting Coin:** 470 Crown
+**Starting Coin:** 370 Crown
 
 ---
 
@@ -366,7 +368,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** Animal Handling \+1, Survival+1  
 **Starting Equipment:** Knife, Travelling clothes suited to the local climate, carved charm, two person tent, bedroll  
-**Starting Coin:** 520 Crown
+**Starting Coin:** 420 Crown
 
 ---
 
@@ -376,14 +378,4 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 **Skill Bonuses:** \+1 to any Skill, \+1 to any different Skill  
 **Starting Equipment:** Tattered rags, an heirloom, trinket or ceremonial weapon worth 750 Crown  
-**Starting Coin:** Nothing
-
----
-
-## Destitute
-
-*You have come into nothing. You get nothing\! You lose\!*
-
-**Skill Bonuses:** \+1 to any Skill, \+1 to any different Skill  
-**Starting Equipment:** Tattered rags  
 **Starting Coin:** Nothing

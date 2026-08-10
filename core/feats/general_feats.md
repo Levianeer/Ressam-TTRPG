@@ -15,6 +15,15 @@ You've drilled yourself to always be scanning - exits, hands, distances - the sa
 
 ## Willpower & Grit
 
+### **Tough**
+
+Some people just take a beating better - a thicker hide, a stubborn constitution, a body that's absorbed enough punishment to know how to shrug more of it off.
+
+**Prerequisites:** END 3+  
+**Benefit:** You have \+1 maximum Wounds.
+
+---
+
 ### **Second Wind**
 
 Adrenaline doesn't care that you're hurt. Fighters half-dead from blood loss have carried allies out of worse.

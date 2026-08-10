@@ -88,7 +88,7 @@ Cohorts aren't hired like common labor. They're recruited through:
 - **Reputation:** Your name draws warriors who want to serve  
 - **Training:** Take on a squire or apprentice and invest time
 
-**Leadership Check:** When attempting to recruit a cohort, make a Leadership \+ CHA check. The DC depends on the potential cohort's quality and your reputation:
+**Leadership Check:** When attempting to recruit a cohort, make a Leadership check. The DC depends on the potential cohort's quality and your reputation:
 
 | Circumstance | DC Modifier |
 | :---- | :---: |
@@ -98,7 +98,7 @@ Cohorts aren't hired like common labor. They're recruited through:
 | Cold recruitment (no prior relationship) | \+3 |
 | They have better options | \+5 |
 
-Base DC 15\. Success means they agree to follow you.
+Base DC 12\. Success means they agree to follow you.
 
 ### **Cohort Upkeep**
 
@@ -124,7 +124,7 @@ Either way, the DM has final approval. Your cohort is an NPC \- they have their 
 
 - **Initiative:** Cohorts act on your initiative, immediately after your turn  
 - **Commands:** You can issue one command per round (no action required). Without commands, cohorts defend themselves and stay near you.  
-- **Independent action:** Complex tactics require Leadership checks (DC 10-15)  
+- **Independent action:** Complex tactics require Leadership checks (DC 9-12)  
 - **Death:** Cohorts reduced to 0 Wounds follow normal dying rules. You can stabilize them.
 
 ---
@@ -157,7 +157,7 @@ The DM calls for Morale checks when followers/cohorts face situations that test 
 - They haven't been paid in weeks  
 - They witness something terrifying
 
-**Morale Check \= 1d12 \+ Your Leadership \+ Your CHA vs. DC 15**
+**Morale Check \= 1d12 \+ Your Leadership vs. DC 12**
 
 - **Success:** They hold. Loyalty intact.  
 - **Failure:** They break. Followers flee or surrender. Cohorts retreat or refuse orders.
@@ -234,8 +234,8 @@ Cohorts are characters. Their death should matter.
 | :---- | :---- |
 | Maximum Cohorts | 1 (2 with CHA 5+, both at Level \- 3\) |
 | Cohort Level | Your Level \- 2 (min 1\) |
-| Morale Check | 1d12 \+ Leadership \+ CHA vs. DC 15 |
-| Recruitment DC | 15 ± circumstance modifiers |
+| Morale Check | 1d12 \+ Leadership vs. DC 12 |
+| Recruitment DC | 12 ± circumstance modifiers |
 | Payroll | Sum of Follower \+ Cohort weekly wages, settled at each settlement visit |
 
 ---
@@ -248,7 +248,7 @@ Cohorts are characters. Their death should matter.
 
 **Attributes:** STR 4, PRE 2, END 4, DEX 3, MIND 2, ARC 0, FAI 1, CHA 2
 
-**Skills:** One-Handed Blades \+3, Shields \+2, Athletics \+2, Armorer \+2, Riding \+2, Perception \+1
+**Skills:** Blades \+3, Shields \+2, Athletics \+2, Armorer \+2, Riding \+2, Perception \+1
 
 **Equipment:**
 
@@ -259,7 +259,7 @@ Cohorts are characters. Their death should matter.
 
 **Personality:** Eager to prove herself, follows orders without question, secretly terrified of dying before making her name.
 
-**Tactics:** Stays near her knight, blocks incoming attacks, flanks enemies when possible. Retreats if reduced below half her maximum Wounds unless ordered otherwise.
+**Tactics:** Stays near her knight, blocks incoming attacks, presses whichever enemy is already engaged with her knight. Retreats if reduced below half her maximum Wounds unless ordered otherwise.
 
 ---
 

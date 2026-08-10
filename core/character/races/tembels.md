@@ -13,7 +13,8 @@ The Tembels are slow-moving, contemplative beings descended from a cursed Orkh w
 **Size:** Medium (\~5 ft, can grow larger)  
 **Base Speed:** 25 feet  
 **Starting Languages:** Khorian, Plethic  
-**Starting Skills:** \+1 Nature Lore, \+1 in either Animal Handling or Medical Lore
+**Starting Skills:** \+1 Nature Lore, \+1 in either Animal Handling or Medical Lore  
+**Level Adjustment:** \+1
 
 ### **Features**
 

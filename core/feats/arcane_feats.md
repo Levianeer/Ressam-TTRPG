@@ -110,4 +110,4 @@ A scribe who never lets their reserve outrun their control - the difference betw
 Every scroll is a stranger's handwriting - you've learned to read the shape of a formula fast enough to trust it, or to recognize when you shouldn't.
 
 **Prerequisites:** \+2 ranks in any Arcane school, MIND 3+  
-**Benefit:** You can attempt to cast an Arcane scroll you didn't scribe and don't know the spell of, provided your relevant school rank meets or exceeds its Mana Cost, same as any scroll. Before casting it this way, make an Arcane Lore check (DC 10 \+ the scroll's Mana Cost). Success: cast it normally. Failure: the scroll is consumed with no effect.
+**Benefit:** You can attempt to cast an Arcane scroll you didn't scribe and don't know the spell of, provided your relevant school rank meets or exceeds its Mana Cost, same as any scroll. Before casting it this way, make an Arcane Lore check (DC 9 \+ the scroll's Mana Cost). Success: cast it normally. Failure: the scroll is consumed with no effect.
