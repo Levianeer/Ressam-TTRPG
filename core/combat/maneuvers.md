@@ -1,4 +1,4 @@
-> **Measure, in one sentence:** Compare your own weapon's Measure Band to the current shared measure - two bands off (Grip vs. Far) and you can't Strike at all, one band off and you Strike at Disadvantage. This is symmetric: shifting the measure to suit your own reach puts *their* weapon out of step with it in turn. Every other Measure mention in this chapter points back to this line; see [[Reach|combat]] for the full mechanic.
+> **Measure, in one sentence:** Compare your own weapon's Measure Band to the current shared measure - three or four bands off (e.g. Short vs. Far or Very Far) and you can't Strike at all, one or two bands off and you Strike at Disadvantage. This is symmetric: shifting the measure to suit your own reach puts *their* weapon out of step with it in turn. Every other Measure mention in this chapter points back to this line; see [[Reach|positioning]] for the full mechanic.
 
 ## How an Exchange Works
 
@@ -8,13 +8,13 @@ This is the map of a melee exchange, start to finish, and where each piece of it
 
 | Step                      | Ask Yourself | Then                                                                                                                                                                                                                                                                                 |
 |:--------------------------| :---- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **1. Get into range**     | Is the current measure within my weapon's Strike range, and does theirs beat mine? | Not engaged yet: move or Dash to close - crossing into a Near+ Measure Band opponent's threat range provokes their Opportunity Attack once, even if you stop short of adjacent. Wrong band for your weapon: see the Measure box, above - a Minor Action Shift Measure or a won **Shift** Effect fixes it. Neither problem: skip to Step 2. |
+| **1. Get into range**     | Is the current measure within my weapon's Strike range, and does theirs beat mine? | Not engaged yet: move or Dash to close - crossing into a Medium+ Measure Band opponent's threat range provokes their Opportunity Attack once, even if you stop short of adjacent. Wrong band for your weapon: see the Measure box, above - a Minor Action Shift Measure or a won **Shift** Effect fixes it. Neither problem: skip to Step 2. |
 | **2. Make the attack**    | Does my Attack Roll beat their Passive Evasion? | No: clean miss, exchange over, no Reaction spent. Yes: continue to Step 3.                                                                                                                                                                                                           |
 | **3. Defender reacts**    | Do I have a Reaction left, and can I answer? | Yes: **Oppose** with a contested roll, or (casters) **Reactive Casting**. No: the attack resolves as a normal hit.                                                                                                                                                                   |
 | **4. Resolve the Margin** | What's my roll minus their roll? | Check it against the Margin table, below.                                                                                                                                                                                                                                            |
 | **5. Aftermath**          | Did I hit Dominant or Stopped? | Pick 2 (Dominant) or 1 (Stopped) Effects from the shared list - they resolve in a fixed default order, Strike always last (see Default order, below). Any result can instead be answered by spending another Reaction to Oppose it again - see the Press, below.                     |
 
-**1. Get into range.** If you're already engaged at a workable band when your turn starts, skip straight to Step 2. Otherwise close with a Move Action (a Dash, if you need more of it) or a Minor Action Shift Measure - closing on a Near+ Band opponent provokes their Opportunity Attack once, the moment you cross into their threat range (see [[Opportunity Attacks|combat]] for the full trigger and its edge cases). If it hits, you answer it exactly like Step 3, below, before you've even finished closing. A Feint or similar setup move can prime the attack you're closing in to make, but doesn't move you (see [[Basic Moves|core_rules]]).
+**1. Get into range.** If you're already engaged at a workable band when your turn starts, skip straight to Step 2. Otherwise close with a Move Action (a Dash, if you need more of it) or a Minor Action Shift Measure - closing on a Medium+ Band opponent provokes their Opportunity Attack once, the moment you cross into their threat range (see [[Opportunity Attacks|positioning]] for the full trigger and its edge cases). If it hits, you answer it exactly like Step 3, below, before you've even finished closing. A Feint or similar setup move can prime the attack you're closing in to make, but doesn't move you (see [[Basic Moves|basic_moves]]).
 
 **2. Make the attack.** The attacker rolls a normal Attack Roll against the defender's Passive Evasion (see [[Attack Roll|combat]]).
 
@@ -28,7 +28,7 @@ This is the map of a melee exchange, start to finish, and where each piece of it
 
 **5. Aftermath.** Dominant and Stopped let you pick Effects off that same roll, no further check needed, resolving in the fixed default order (Effects, below). Any result can instead be answered by spending another Reaction to Oppose it again - see the Press, below.
 
-**Example:** Toma (dagger, Grip) is attacked by a bandit wielding a shortsword (also Grip - equal, no mismatch). The bandit's attack roll beats Toma's Passive Evasion, so it would otherwise hit. Toma reacts with Oppose, rolling her Brawling Skill: the bandit rolled 14, and Toma's roll comes out to 17 - Margin +3, Dominant. She picks two Effects: Control and Strike. Under the default order, Control resolves first and is already active by the time her Strike's attack roll happens, so her Strike (15, with the bandit at Disadvantage from Control) beats his Evasion and hits, dealing damage and degrading his armor. The bandit still has a Reaction in his pool, so instead of accepting the hit, he spends it to Oppose Toma's Strike - continuing the Press.
+**Example:** Toma (dagger, Short) is attacked by a bandit wielding a dagger (also Short - equal, no mismatch). The bandit's attack roll beats Toma's Passive Evasion, so it would otherwise hit. Toma reacts with Oppose, rolling her Brawling Skill: the bandit rolled 14, and Toma's roll comes out to 17 - Margin +3, Dominant. She picks two Effects: Control and Strike. Under the default order, Control resolves first and is already active by the time her Strike's attack roll happens, so her Strike (15, with the bandit at Disadvantage from Control) beats his Evasion and hits, dealing damage and degrading his armor. The bandit still has a Reaction in his pool, so instead of accepting the hit, he spends it to Oppose Toma's Strike - continuing the Press.
 
 ---
 
@@ -36,15 +36,15 @@ This is the map of a melee exchange, start to finish, and where each piece of it
 
 Answer an incoming attack with your own contested roll, instead of simply eating the hit or hoping your Passive Evasion holds.
 
-**Trigger:** An attack against you that you can see, and that beats your Passive Evasion (i.e. it would otherwise hit). **Exception:** a Critical Hit (see [[Critical Hits|combat]]) bypasses an Oppose funded by Weapon Skill or Shields Skill entirely - it simply hits, no Reaction spent attempting it - though you can still Oppose it with bare DEX.
+**Trigger:** An attack against you that you can see, and that beats your Passive Evasion (i.e. it would otherwise hit). **Exception:** a Critical Hit (see [[Critical Hits|combat]]) bypasses an Oppose funded by Weapon Skill or Shields Skill entirely - it simply hits, no Reaction spent attempting it - though you can still Oppose it with Evasion Skill.
 **Action:** Reaction (shared pool, see [[Action Economy|combat]])
 **Roll:** 1d12 + whichever Skill funds it - pick whichever fits what you're defending with when you react, then compare your result to the attack roll:
 
 | Funds the roll | Requires | Works Against | Notes |
 | :---- | :---- | :---- | :---- |
-| **Weapon Skill** | Melee weapon in hand, 1+ rank in that weapon's Skill | Melee only, not AoE | Disadvantage if the current measure is one band off your weapon's (see the Measure box, above) - can't Oppose this way at all two bands off. |
+| **Weapon Skill** | Melee weapon in hand, 1+ rank in that weapon's Skill | Melee only, not AoE | Disadvantage if the current measure is one or two bands off your weapon's (see the Measure box, above) - can't Oppose this way at all three or four bands off. |
 | **Shields Skill** | Shield in hand, or a melee weapon with the Two-Handed property (a Versatile weapon held two-handed counts) - blocking is a shield discipline whatever's in your hands, so 1+ rank in Shields is what trains it either way | Melee and ranged physical if using a shield; melee only with a Two-Handed weapon; not AoE | May Oppose for an adjacent ally instead of yourself - the attack retargets to you, and you take whatever damage gets through. |
-| **DEX** | DEX 1+ - no Skill gate, this is raw reflex rather than trained technique | Melee, ranged, and AoE - against AoE you must be able to move the minimum distance necessary to clear the area (this movement doesn't consume your Move Action); can't clear it, Oppose simply fails and the Reaction isn't spent | Armor Penalty applies to this roll (see [[combat]]'s Armor Penalty entry) - a heavily armored character often qualifies on paper but finds the roll gutted in practice. |
+| **Evasion Skill** | 1+ rank in Evasion | Melee, ranged, and AoE - against AoE you must be able to move the minimum distance necessary to clear the area (this movement doesn't consume your Move Action); can't clear it, Oppose simply fails and the Reaction isn't spent | Armor Penalty applies to this roll (see [[combat]]'s Armor Penalty entry) - the same Skill also sets your Passive Evasion, so a heavily armored character often finds both gutted in practice. |
 
 **Margin \= Your roll − the attacker's attack roll**
 
@@ -57,7 +57,7 @@ Answer an incoming attack with your own contested roll, instead of simply eating
 
 **Shield Guard:** If you have a shield equipped and your Margin comes out Minimized or Failed, add the shield's Guard to your Margin before checking the tier above - this applies no matter which Skill funded your roll, since the shield is physically there either way. A big loss can shrink to a small one; a small loss can shrink to nothing. See [[Shields|armor]] for Guard values and how Measure and Control interact with it.
 
-**Measure defines fights:** see the Measure box at the top of this chapter for the one-line version, or [[Reach|combat]] for the full mechanic.
+**Measure defines fights:** see the Measure box at the top of this chapter for the one-line version, or [[Reach|positioning]] for the full mechanic.
 
 Casters have a second option instead of Oppose - **Reactive Casting** (below) - which doesn't intercept the attack at all, but lets a beaten roll buy you a spell instead.
 
@@ -65,7 +65,7 @@ Casters have a second option instead of Oppose - **Reactive Casting** (below) - 
 
 On a Dominant or Stopped result, you're not just surviving the exchange - your margin bought you the initiative in it. Effects resolve automatically off the Margin you already rolled; none of them need a further check.
 
-- **Strike** \- Make one weapon (or unarmed) attack against the attacker as part of this Reaction. Subject to the Measure box, above: freely at your weapon's own band, at Disadvantage one band off, not selectable at all two bands off.
+- **Strike** \- Make one weapon (or unarmed) attack against the attacker as part of this Reaction. Subject to the Measure box, above: freely at your weapon's own band, at Disadvantage one or two bands off, not selectable at all three or four bands off.
 - **Shift** \- Move the shared measure one band, in or out, as part of this Reaction. This movement doesn't provoke - you already won the exchange to earn it.
 - **Control** \- The opponent has Disadvantage on their next roll against you, or cannot select Strike against you, until they spend a win clearing it. If they're carrying a shield, this also zeroes its Guard against you for as long as it holds (see [[Shields|armor]]).
 - **Recover** \- Regain one Reaction already spent this round, or exit the exchange safely - disengage from this specific opponent, ending the current measure engagement, without provoking.

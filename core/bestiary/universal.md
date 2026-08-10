@@ -298,7 +298,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Natural Weapons:** Bite (1d6 Poison, Short Reach).
 
-**In Combat:** Stealth 2 is the actual build here - a Giant Spider that opens combat from hiding gets a full Surprise Round against whoever it targets ([[Core Rules|core_rules]]: surprised creatures can't act or React in Round 1), which this stat block alone doesn't show. Caught in the open or after that first exchange, it's a fast but fragile skirmisher, not a real threat to a party that's already braced for it.
+**In Combat:** Stealth 2 is the actual build here - a Giant Spider that opens combat from hiding gets a full Surprise Round against whoever it targets ([[Surprise|positioning]]: surprised creatures can't act or React in Round 1), which this stat block alone doesn't show. Caught in the open or after that first exchange, it's a fast but fragile skirmisher, not a real threat to a party that's already braced for it.
 
 ---
 
@@ -326,7 +326,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Natural Weapons:** Bite and Slam (1d8 Bludgeoning/Piercing, Short Reach).
 
-**In Combat:** Whatever a Mimic does in a fight, it's already done the important part before initiative is even rolled - anyone who touches it before noticing what it is eats a full, unanswerable Surprise Round hit ([[Core Rules|core_rules]]: surprised creatures can't act or React). Past that opening exchange, it's an unremarkable, no-Maneuver brute leaning on AR 2 and nothing else - the ambush is the whole threat, not a sustained fight.
+**In Combat:** Whatever a Mimic does in a fight, it's already done the important part before initiative is even rolled - anyone who touches it before noticing what it is eats a full, unanswerable Surprise Round hit ([[Surprise|positioning]]: surprised creatures can't act or React). Past that opening exchange, it's an unremarkable, no-Maneuver brute leaning on AR 2 and nothing else - the ambush is the whole threat, not a sustained fight.
 
 ---
 

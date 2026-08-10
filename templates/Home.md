@@ -4,7 +4,7 @@ Ressam is a crunchy, lethal alternative to other TTRPGs, set in a world balanced
 
 ## Start Here
 
-Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks vs. Ward, and Basic Moves, the foundational mechanics nearly every other chapter assumes. Two sibling pages split off what used to live here: **[Wounds & Survival](wounds_and_survival)** (damage types, Wounds, Dying, Scars, Trauma) and **[Carrying & Resting](carrying_and_resting)** (Slots, Resting).
+Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks vs. Ward, the foundational mechanics nearly every other chapter assumes. Two sibling pages split off what used to live here: **[Wounds & Survival](wounds_and_survival)** (damage types, Wounds, Dying, Scars, Conditions, Trauma) and **[Carrying & Resting](carrying_and_resting)** (Slots, Resting). **[Basic Moves](basic_moves)**, the proactive actions everyone can take on their turn, lives under Combat, below, alongside its reactive counterpart.
 
 ## Character
 
@@ -43,7 +43,9 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks vs. W
 
 ## Combat
 
+- [Basic Moves](basic_moves) - the proactive, on-your-turn actions everyone has access to (Dashing, Shoving, Grappling, Shift Measure, and more)
 - [Combat](combat) - turn structure, action economy, attacks, damage, critical hits
+- [Positioning](positioning) - the battlemap, Measure Bands and Reach, movement, Opportunity Attacks, Surprise, and Cover
 - [Maneuvers](maneuvers) - the reactive Oppose Reaction and its Effects (Strike/Shift/Control/Recover), the Press reaction chain, and Reactive Casting
 
 ## Magic
@@ -103,7 +105,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks vs. W
 - [Trere](trere)
 
 **Mythical:**
-- [Mythical](mythical) - singular, campaign-defining threats carrying Mythic Initiative (combat.md)
+- [Mythical](mythical) - singular, campaign-defining threats carrying Mythic Initiative (see Bestiary Overview's Mythic Initiative section)
 
 ## Exploration
 
@@ -123,10 +125,6 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, checks vs. W
 - [Technology](technology) - why the world sits at a matchlock-and-plate baseline
 - [Religions](religions) - the faiths practiced across Ressam
 - [Heroes & Legends](heroes) - figures whose names are known across the realm
-
-## Credits
-
-- [Credits](credits)
 
 ---
 

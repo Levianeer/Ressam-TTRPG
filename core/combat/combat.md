@@ -102,7 +102,7 @@ Critical Hits occur on a **Natural 12** on attack rolls.
 **Effects:**
 
 - **Roll damage twice, take the higher result.**  
-- Bypasses an Oppose roll funded by Weapon Skill or Shields Skill entirely - the attack simply hits, and no Reaction is spent attempting it (an Oppose roll funded by bare DEX is unaffected - see [[Oppose|maneuvers]])
+- Bypasses an Oppose roll funded by Weapon Skill or Shields Skill entirely - the attack simply hits, and no Reaction is spent attempting it (an Oppose roll funded by Evasion Skill is unaffected - see [[Oppose|maneuvers]])
 
 Crits don't grant Trauma \- their pressure is indirect, since rolling twice raises the odds of landing in a higher Wound tier (see [[Wounds and Survival|wounds_and_survival]]).
 
@@ -115,9 +115,9 @@ Features and Feats can expand this further.
 
 ## Evasion
 
-Evasion, or ‘Passive Evasion’ is your innate ability to stay out of harm's way. This requires no setup or actions, it happens automatically against attack rolls.
+Evasion, or ‘Passive Evasion’ is your trained ability to stay out of harm's way. This requires no setup or actions, it happens automatically against attack rolls.
 
-**Evasion \= 5 \+ DEX − Armor Penalty**
+**Evasion \= 5 \+ Evasion Skill Ranks − Armor Penalty**
 
 ---
 
@@ -148,137 +148,12 @@ Every hit (regardless of Wound damage) reduces armor by 1 AR.
 
 ### **Armor Penalty**
 
-Reduces Evasion, your DEX-funded Oppose roll ([[Oppose|maneuvers]]), and your Spell Modifier.
+Reduces Evasion, your Evasion Skill-funded Oppose roll ([[Oppose|maneuvers]]), and your Spell Modifier.
 
 **Reducing Penalty:** Each rank in Armorer reduces Penalty by 1 (minimum 0).
 
 ---
 
-## Battlemap & Positioning
+## Continued In
 
-Ressam is played on a grid of 5-foot squares, minis-and-battlemap style - every Speed, Reach, and Range value in this book is already denominated in that unit.
-
-- **Size & Squares:** A creature occupies a number of squares matching its Space ([[Size|carrying_and_resting]]) - Small/Medium: 1 square, Large: 2x2, Huge: 3x3.
-- **Measuring Distance:** Count outward square-by-square from your square to the nearest square of the target. Every square costs the same to enter, whether moved orthogonally or diagonally.
-- **Areas of Effect:** Count outward from the origin square the same way; a radius reaches every square its count extends to, no partial-coverage rulings needed.
-
----
-
-## Reach
-
-Not every weapon threatens the same amount of ground. A dagger only menaces whoever's standing right next to you; a pike keeps anyone dangerous a good few paces back. Weapons carry a **Measure Band** - Grip, Near, or Far - that says how many squares out they can strike (see [[Measure Bands|weapons]] for the full table).
-
-Unlike a static Reach comparison, Measure is a single shared value between two engaged combatants, and each side checks it against their *own* weapon independently - there's no "longer" and "shorter" combatant locked into fixed roles, just whoever's weapon currently matches the measure and whoever doesn't.
-
-**How It Works:** Compare your own weapon's Measure Band to the current shared measure (see [[Measure Bands|weapons]]) - nothing stacks, nothing scales beyond the three bands.
-
-| Your weapon vs. the current measure | What happens |
-| :---- | :---- |
-| **Matches** | Strike freely - no penalty. |
-| **One band off** (Grip↔Near or Near↔Far) | Strike at Disadvantage. |
-| **Two bands off** (Grip↔Far, the maximum possible spread) | **You cannot Strike at all** - no attack roll, no Strike Effect - and an Oppose roll funded by Weapon Skill cannot be attempted this way at all (Oppose funded by Shields Skill or bare DEX is unaffected). |
-
-**Setting the measure:** An exchange begins at the longer weapon's Measure Band - the shorter weapon starts every fight with a problem to solve. Either side can change it: the **Shift Measure** Minor Action ([[Basic Moves|core_rules]]) moves the shared measure one band, in or out, on your own turn; the **Shift** Effect (see [[Oppose|maneuvers]]) does the same for free as part of winning an Oppose Reaction, no provoke. **Closing through a band your opponent's weapon still matches provokes** - moving from outside your target's Measure Band into it triggers their Opportunity Attack, below, the same as closing to melee always has.
-
-**Closing costs the long weapon too.** A pike is firewood once someone's dragged the measure down to Grip - Far and Grip are the maximum possible spread, so the same two-bands-off rule that stops a dagger from reaching a pike at Far stops the pike from Striking at all once the measure sits at Grip. This is why anyone who fights with a Far-Band weapon carries a sidearm: the moment the measure collapses under them, their polearm becomes the wrong tool, and drawing something shorter is the actual answer, not just riding out the mismatch. Nothing needs to "break a lock" here the way the old Reach rules did - the symmetric comparison above already handles both sides at every measure, automatically.
-
----
-
-## Movement in Combat
-
-- **Move:** Move up to your speed; can split before/after action  
-- **Dash:** Major Action for additional movement equal to speed  
-- **Disengage:** Major Action to avoid Opportunity Attacks this turn  
-- **Difficult Terrain:** Costs double movement  
-- **Standing from Prone:** Costs half your maximum movement
-
----
-
-## Opportunity Attacks
-
-When a creature **leaves your melee reach**, you may use your Reaction for one melee attack.
-
-**Closing the Distance:** If you're wielding a weapon with Measure Band Near or higher, a creature moving from outside your reach to within it provokes the same way - the entry-side mirror of leaving reach (see [[Measure Bands|weapons]]); Grip Band can't do this to you. It fires once, right as they cross into your threat range: continuing to close afterward, from your reach's outer edge down to fully adjacent, doesn't provoke it again (see "moving within reach you already occupy," below) - and running out of movement right at that edge, without reaching adjacent, still counts as having triggered it.
-
-**Does NOT Provoke:**
-
-- Moving within reach you already occupy
-- Standing from prone  
-- Forced movement (push, pull, teleport)
-- Moving after taking the Disengage action
-- Ranged attacks in melee (just disadvantage)
-
-An Opportunity Attack is a normal attack roll like any other - if it beats the target's Passive Evasion, they may answer it with Oppose or Reactive Casting exactly like any other attack (see [[Maneuvers|maneuvers]]).
-
----
-
-## Surprise
-
-Ambushers gain a **Surprise Round**.
-
-**Surprised creatures:**
-
-- Cannot take actions or Reactions during Round 1  
-- Roll initiative normally  
-- Act normally from Round 2
-
----
-
-## Cover
-
-Cover in Ressam is a binary system \- you either have it or you don't. Your DM has final say on if your position is in cover or not.
-
-**Cover:** Completely hidden behind solid obstruction. Cannot be targeted by attacks or most spells.
-
-**No Partial Cover:** Any exposure \= targetable.
-
-**Cover doesn't protect against:** AoE originating behind cover, spells without line of sight, attackers who reposition.
-
----
-
-## Conditions
-
-Conditions can be applied by numerous different sources and in a multitude of ways, magically or mundanely.
-
-| Condition | Effects                                                                                                                                                                                                                                                                                |
-| :---- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Bleeding** | At the start of each of its turns, the creature takes its Bleed value \- half the damage of the hit that applied Bleeding (rounded down, does not degrade AR). Ending it takes a Major Action and a Medical Lore check (DC \= Bleed value), made on itself or by an adjacent creature. |
-| **Blinded** | Can't see. Automatically fails any check or Ward that relies on sight. Disadvantage on attack rolls; attack rolls against it have advantage.                                                                                                                                           |
-| **Charmed** | Can't attack the charmer or target it with harmful effects. The charmer has advantage on Skill checks to interact with the creature socially.                                                                                                                                          |
-| **Deafened** | Can't hear. Automatically fails any check or Ward that relies on hearing.                                                                                                                                                                                                              |
-| **Flying** | Gains a flying Speed equal to the granting effect's value or its walking Speed, whichever is higher. If it loses this Speed or is knocked Prone while aloft, it falls (see [[wounds_and_survival]]'s Falling entry). |
-| **Frightened** | While the source of its fear is within line of sight: disadvantage on attack rolls and Skill checks. It can't willingly move closer to the source.                                                                                                                                     |
-| **Grappled** | Restrained, ends if the creature is moved beyond the reach of the grappler or grappling effect.                                                                                                                                                                                        |
-| **Incapacitated** | Can't take actions or reactions (Major, Minor, Object Interaction, or Reaction). Movement is unaffected unless another effect says otherwise.                                                                                                                                          |
-| **Invisible** | Attack rolls against it have disadvantage; its own attack rolls have advantage. Counts as heavily obscured for hiding and has advantage on Stealth checks.                                                                                                                             |
-| **Paralyzed** | Incapacitated, Speed 0, and can't speak. Automatically fails STR and DEX Wards. Attack rolls against it have advantage, and any melee attack that hits it is a critical hit.                                                                                                           |
-| **Petrified** | Incapacitated, Speed 0, and unaware of its surroundings. Becomes a nonmagical stone object: weight ×10, aging stops, resistance to all damage. All other conditions and ongoing effects are suspended until it's freed.                                                                |
-| **Poisoned** | Disadvantage on attack rolls and Skill checks.                                                                                                                                                                                                                                         |
-| **Prone** | Disadvantage on attack rolls. Melee attack rolls against it have advantage; ranged attack rolls against it have disadvantage. Can't move except to stand up, which costs half its maximum movement.                                                                                    |
-| **Restrained** | Speed 0; disadvantage on attack rolls; \-3 to DEX Wards; casting requires a MIND Ward (DC 18\) or the spell fails.                                                                                                                                                                     |
-| **Silenced** | Can't speak or cast spells.                                                                                                                                                                                                                                                            |
-| **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment.                                                                                                                                   |
-| **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it automatically hit, and any melee hit is a critical hit.                                                 |
-
----
-
-## Mythic Initiative
-
-Mythic creatures \- campaign-defining bosses and other singular threats \- do not act once per round. They are too fast, too vast, or too terrible for a single turn to contain them.
-
-**Mythic Initiative (X):** A Mythic creature rolls initiative X times. The first roll is made normally. Each roll after the first takes a cumulative \-2 penalty (second roll \-2, third roll \-4, fourth roll \-6, and so on). The creature takes a full turn on each of its initiative counts.
-
-All of a Mythic creature's initiative counts are public, rolled openly at the start of combat. The party always knows exactly when the beast will act \- surviving it is another matter.
-
-**Repetition:** A Mythic creature's unique abilities (breath weapons, signature spells, lair-shaking special attacks) can each be used only once per round, no matter how many turns the creature takes. Basic attacks, movement, and mundane actions face no such limit.
-
-### **Turns & Effects**
-
-A Mythic creature's turns are real turns. Anything that references "a turn" applies to each of them:
-
-- Saves against conditions that allow an attempt at the end of the creature's turn (Frightened, channelled spells, and similar) are attempted at the end of every Mythic turn. A Mythic (3) creature gets three chances per round to shake off an effect. Conditions land on Mythic creatures \- they just don't stay long.
-- Ongoing damage such as Bleeding triggers at the start of every Mythic turn. A bleeding Mythic (3) creature takes its Bleed value three times per round.
-- Start-of-turn and end-of-turn traits (regeneration, auras, recharging abilities) trigger on every turn unless the creature's stat block says otherwise.
-- **Reactions:** A Mythic creature's Reaction pool refreshes at the start of each of its turns. A Mythic (3) creature can Oppose or make an Opportunity Attack up to three times per round.
-
-Mythic creatures do not need condition immunities or special resistances. Their many turns are their resistance \- and their many turns are also their weakness. Choose your poisons accordingly.
+[[Positioning|positioning]] covers Battlemap & Positioning, Reach, Movement in Combat, Opportunity Attacks, Surprise, and Cover. [[Wounds & Survival|wounds_and_survival]]'s Conditions section covers Bleeding, Blinded, Prone, and the rest of the status-effect list. [[Bestiary Overview|bestiary_overview]]'s Mythic Initiative section covers campaign-boss creatures that take multiple turns per round.

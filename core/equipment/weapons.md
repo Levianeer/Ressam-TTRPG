@@ -10,9 +10,9 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Versatile:** Can be used one or two-handed with different damage
 
-- **Reach:** How far a weapon threatens, given in its own Reach column as a Measure Band rather than a raw distance - see Measure Bands, below. Wielding a weapon at Near Band or higher means a creature moving from outside your reach to within it provokes an Opportunity Attack from you. Measure Band also governs whether you can Strike (or Oppose with Weapon Skill) an opponent whose band is out of step with the current measure at all - see [[Reach|combat]]
+- **Reach:** How far a weapon threatens, given in its own Reach column as a Measure Band rather than a raw distance - see Measure Bands, below. Wielding a weapon at Medium Band or higher means a creature moving from outside your reach to within it provokes an Opportunity Attack from you. Measure Band also governs whether you can Strike (or Oppose with Weapon Skill) an opponent whose band is out of step with the current measure at all - see [[Reach|positioning]]
 
-- **Lashing Reach:** For Measure Band purposes only (see [[Reach|combat]]), this weapon's Measure Band counts as Far - a Near or Grip opponent can't attack you until the measure shifts closer, same as against a true Far weapon. Its actual attack range stays Adjacent only, unlike a true Far weapon, and it cannot fund an Oppose roll - too much give in the line to hold a bind.
+- **Lashing Reach:** For Measure Band purposes only (see [[Reach|positioning]]), this weapon's Measure Band counts as Far - a Long, Medium, or Short opponent can't attack you until the measure shifts closer, same as against a true Far weapon. Its actual attack range stays Adjacent only, unlike a true Far weapon, and it cannot fund an Oppose roll - too much give in the line to hold a bind.
 
 - **Throwable:** Can be thrown (normal range/max range in feet)
 
@@ -24,19 +24,21 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 ### Measure Bands
 
-| Measure Band |      Squares      | Who has it |
-| :---- |:-----------------:| :---- |
-| Grip |   Adjacent only   | Unarmed/Brawling attacks and one-handed sidearms - Dagger, Knife, Shortsword, Scimitar, Broadsword, Mace, Club, Battle Axe, Chain Flail |
-| Near |   Adjacent only   | Two-handed swords and long thrusting blades (Longsword, Greatsaber, Greatsword, Warblade, Rapier, Estoc), plus other staff-length arms (Spear, Quarterstaff, War Maul, Greatclub), plus the Whip and Weighted Chain for attack-range purposes only - see the Lashing Reach note below |
-| Far | 2-3 squares (10-15 ft) | Dedicated polearms - Halberd, Glaive, and the Pike alike, plus the Whip and Weighted Chain for Measure-mismatch purposes only - see Lashing Reach, below |
+| Measure Band |      Squares       | Who has it                                                                                                                                                                                    |
+|:-------------|:------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Short        |   Adjacent only    | Unarmed/Brawling attacks and the smallest blades - Dagger, Knife                                                                                                                              |
+| Medium       |   Adjacent only    | One-handed sidearms - Shortsword, Scimitar, Broadsword, Battle Axe, Mace, Club, Chain Flail - plus the precise thrusting blades, Rapier and Estoc                                            |
+| Long         |   Adjacent only    | Two-handed swords (Longsword, Greatsaber, Greatsword, Warblade), other two-handed arms (War Maul, Greatclub, Quarterstaff), plus the Whip and Weighted Chain for attack-range purposes only - see the Lashing Reach note below |
+| Far          | 2 squares (10 ft)  | Dedicated polearms - Spear, Halberd, and Glaive, plus the Whip and Weighted Chain for Measure-mismatch purposes only - see Lashing Reach, below                                              |
+| Very Far     | 3 squares (15 ft)  | The Pike, alone - built to out-reach everything else on the field                                                                                                                             |
 
-Grip and Near both only reach Adjacent - the split is purely ordinal, not spatial: it just never runs into a "can't reach them" problem the way Far can.
+Short, Medium, and Long all only reach Adjacent - the split is purely ordinal, not spatial: it just never runs into a "can't reach them" problem the way Far and Very Far can.
 
-**The Whip and Weighted Chain split identity:** both weapons carry the Lashing Reach property (see Weapon Properties, above), which gives them two different Measure Bands depending on what you're asking. Their attack range and their listed Reach column both stay Near (Adjacent only, same as any other Near weapon) - they can't actually strike out to 2-3 squares. But for the *symmetric mismatch comparison* that decides who can Strike or Oppose against whom (see [[Reach|combat]]), they count as Far - an opponent at Near or Grip can't touch them until the measure closes, the same protection a true Far weapon gets, without the reach to match it on offense.
+**The Whip and Weighted Chain split identity:** both weapons carry the Lashing Reach property (see Weapon Properties, above), which gives them two different Measure Bands depending on what you're asking. Their attack range and their listed Reach column both stay Long (Adjacent only, same as any other Long weapon) - they can't actually strike out to 2-3 squares. But for the *symmetric mismatch comparison* that decides who can Strike or Oppose against whom (see [[Reach|positioning]]), they count as Far - an opponent at Long, Medium, or Short can't touch them until the measure closes, the same protection a true Far weapon gets, without the reach to match it on offense.
 
-**On losing the Pike's own tier:** Under the old four-tier Reach system, the Pike held a tier above Halberd and Glaive all to itself - the single largest reach gap in the list. Collapsing to three Measure Bands (see [[Reach|combat]] for why) folds the Pike into Far alongside them, so it no longer out-ranges a Halberd. Its lower damage and Cost (see the Polearms table, below) were tuned against that exclusive reach and haven't been revisited since - if the Pike ever feels underwhelming at the table, that's why, and it's the first place to look.
+**The Pike keeps its own tier.** Very Far exists for the Pike alone - the single largest reach gap in the list, restored after a brief spell (2026-08-09 to 2026-08-10) folded it into Far alongside Halberd and Glaive. Its lower damage and Cost (see the Polearms table, below) were tuned against that exclusive reach, so tuning them back down now that the tier's back is the first place to look if the Pike ever feels *too* dominant instead.
 
-**Measure mismatches:** see [[Reach|combat]] for the full rule - it's symmetric, comparing your own weapon's band to the current shared measure, rather than a fixed "longer/shorter" comparison between the two combatants the way the old Reach Categories worked.
+**Measure mismatches:** see [[Reach|positioning]] for the full rule - it's symmetric, comparing your own weapon's band to the current shared measure, rather than a fixed "longer/shorter" comparison between the two combatants the way the old Reach Categories worked.
 
 **Carrying Slots:** A weapon in hand or in a sheath/holster you're actively wearing costs no Slots. The Slots column applies to a weapon carried as a spare. Weapons with the Two-Handed property cost a minimum of 2 Slots this way regardless of bulk.
 
@@ -121,48 +123,48 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
-| Shortsword | 1d6 \+ 1 Piercing | Grip | Light | 10-12 | 35 Crown | 1 |
-| Scimitar | 1d6 Slashing | Grip | Light, Finesse | 10-12 | 75 Crown | 1 |
-| Broadsword | 1d10 Slashing | Grip | \- | \- | 85 Crown | 1 |
+| Shortsword | 1d6 \+ 1 Piercing | Medium | Light | 10-12 | 35 Crown | 1 |
+| Scimitar | 1d6 Slashing | Medium | Light, Finesse | 10-12 | 75 Crown | 1 |
+| Broadsword | 1d10 Slashing | Medium | \- | \- | 85 Crown | 1 |
 
 **TWO-HANDED BLADES** *(Blades Skill)*
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
-| Longsword | 1d6 \+ 2 Slashing | Near | Versatile (Two-Handed 1d8 \+ 2) | 11-12 | 100 Crown | 1 |
-| Greatsaber | 1d6 \+ 2 Slashing | Near | Versatile (Two-Handed 2d6) | \- | 150 Crown | 1 |
-| Greatsword | 1d12 Slashing | Near | Two-Handed | 11-12 | 200 Crown | 2 |
-| Warblade | 1d10 \+ 2 Slashing | Near | Two-Handed | \- | 350 Crown | 2 |
+| Longsword | 1d6 \+ 2 Slashing | Long | Versatile (Two-Handed 1d8 \+ 2) | 11-12 | 100 Crown | 1 |
+| Greatsaber | 1d6 \+ 2 Slashing | Long | Versatile (Two-Handed 2d6) | \- | 150 Crown | 1 |
+| Greatsword | 1d12 Slashing | Long | Two-Handed | 11-12 | 200 Crown | 2 |
+| Warblade | 1d10 \+ 2 Slashing | Long | Two-Handed | \- | 350 Crown | 2 |
 
 **RAPIERS & FENCING** *(Blades Skill)*
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
-| Rapier | 1d8 Piercing | Near | Finesse | 10-12 | 120 Crown | 1 |
-| Estoc | 1d10 Piercing | Near | Two-Handed, Finesse, Penetrant | 10-12 | 150 Crown | 2 |
+| Rapier | 1d8 Piercing | Medium | Finesse | 10-12 | 120 Crown | 1 |
+| Estoc | 1d10 Piercing | Medium | Two-Handed, Finesse, Penetrant | 10-12 | 150 Crown | 2 |
 
 **HAFTED WEAPONS** *(Hafted Weapons Skill)*
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
-| Battle Axe | 1d8 Slashing | Grip | Versatile (Two-Handed 1d10) | 10-12 | 70 Crown | 2 |
-| Mace | 1d8 Bludgeoning | Grip | Light | \- | 60 Crown | 1 |
-| War Maul | 1d10 Bludgeoning | Near | Two-Handed, AR degrades by 2 instead of 1 | 11-12 | 100 Crown | 2 |
-| Club | 1d6 Bludgeoning | Grip | \- | \- | 5 Crown | 1 |
-| Greatclub | 2d4 Bludgeoning | Near | Two-Handed | \- | 10 Crown | 2 |
-| Whip | 1d4 Slashing | Near | Finesse, Trip, Lashing Reach | \- | 10 Crown | 1 |
-| Weighted Chain | 1d6 Bludgeoning | Near | Can grapple at Reach, Lashing Reach | \- | 20 Crown | 1 |
-| Chain Flail | 1d8 Bludgeoning | Grip | Bypasses Shields | 11-12 | 80 Crown | 1 |
+| Battle Axe | 1d8 Slashing | Medium | Versatile (Two-Handed 1d10) | 10-12 | 70 Crown | 2 |
+| Mace | 1d8 Bludgeoning | Medium | Light | \- | 60 Crown | 1 |
+| War Maul | 1d10 Bludgeoning | Long | Two-Handed, AR degrades by 2 instead of 1 | 11-12 | 100 Crown | 2 |
+| Club | 1d6 Bludgeoning | Medium | \- | \- | 5 Crown | 1 |
+| Greatclub | 2d4 Bludgeoning | Long | Two-Handed | \- | 10 Crown | 2 |
+| Whip | 1d4 Slashing | Long | Finesse, Trip, Lashing Reach | \- | 10 Crown | 1 |
+| Weighted Chain | 1d6 Bludgeoning | Long | Can grapple at Reach, Lashing Reach | \- | 20 Crown | 1 |
+| Chain Flail | 1d8 Bludgeoning | Medium | Bypasses Shields | 11-12 | 80 Crown | 1 |
 
 **POLEARMS** *(Polearms Skill)*
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
-| Spear | 1d6 Piercing | Near | Versatile (Two-Handed 1d8), Throwable (20/40 ft) | \- | 30 Crown | 1 |
-| Pike | 1d8 Piercing | Far | Two-Handed | \- | 50 Crown | 2 |
+| Spear | 1d6 Piercing | Far | Versatile (Two-Handed 1d8), Throwable (20/40 ft) | \- | 30 Crown | 1 |
+| Pike | 1d8 Piercing | Very Far | Two-Handed | \- | 50 Crown | 2 |
 | Halberd | 1d10 Slashing / Piercing | Far | Two-Handed | \- | 100 Crown | 2 |
 | Glaive | 2d4 Slashing | Far | Two-Handed | 11-12 | 95 Crown | 2 |
-| Quarterstaff | 1d6 Bludgeoning | Near | Versatile (Two-Handed 2d4) | \- | 5 Crown | 1 |
+| Quarterstaff | 1d6 Bludgeoning | Long | Versatile (Two-Handed 2d4) | \- | 5 Crown | 1 |
 
 **DAGGERS & KNIVES** *(Brawling Skill)*
 
@@ -170,8 +172,8 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
-| Dagger | 1d4 Piercing | Grip | Light, Finesse | 9-12 | 20 Crown | 1 |
-| Knife | 1d4 Piercing | Grip | Light, Throwable (20/40 ft) | 10-12 | 5 Crown | 1 |
+| Dagger | 1d4 Piercing | Short | Light, Finesse | 9-12 | 20 Crown | 1 |
+| Knife | 1d4 Piercing | Short | Light, Throwable (20/40 ft) | 10-12 | 5 Crown | 1 |
 
 ---
 
@@ -261,10 +263,10 @@ After combat, roll 1d6:
 
 | Attack | Damage | Reach | Properties | Critical |
 | :---- | :---- | :---: | ----- | :---: |
-| Punch | 1d6 Bludgeoning | Grip | \- | 11-12 |
-| Kick | 1d8 Bludgeoning | Grip | \- | \- |
-| Headbutt | 1d10 Bludgeoning | Grip | You take the same damage dealt. Make a **1d12 \+ your Brawling** roll against target's END Ward (Contested Ward) - if it beats their Ward, they are Stunned. | \- |
-| Grapple | Special | Grip | Contested Brawling check to Restrain target | \- |
+| Punch | 1d6 Bludgeoning | Short | \- | 11-12 |
+| Kick | 1d8 Bludgeoning | Short | \- | \- |
+| Headbutt | 1d10 Bludgeoning | Short | You take the same damage dealt. Make a **1d12 \+ your Brawling** roll against target's END Ward (Contested Ward) - if it beats their Ward, they are Stunned. | \- |
+| Grapple | Special | Short | Contested Brawling check to Restrain target | \- |
 
 **Combination:** As a Minor Action after hitting with an unarmed attack, you may immediately make one follow-up unarmed attack of a type you haven't already made this turn (e.g. hit with a Punch, follow up with a Kick, Headbutt, or Grapple - but not another Punch) at \-4 to the attack roll. This is innate to fighting unarmed, not a Feat - no prerequisite beyond having a free hand.
 

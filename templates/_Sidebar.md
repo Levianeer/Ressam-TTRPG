@@ -32,7 +32,9 @@
 - [Strygs](strygs)
 
 **Combat**
+- [Basic Moves](basic_moves)
 - [Combat](combat)
+- [Positioning](positioning)
 - [Maneuvers](maneuvers)
 
 **Magic**
@@ -102,5 +104,3 @@
 - [Technology](technology)
 - [Religions](religions)
 - [Heroes](heroes)
-
-**[Credits](credits)**

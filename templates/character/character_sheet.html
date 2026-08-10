@@ -233,12 +233,12 @@
       <div class="stat-box">
         <div class="label">Evasion</div>
         <div class="value computed" id="out-evasion">5</div>
-        <div class="note">5 + DEX - Armor Penalty</div>
+        <div class="note">5 + Evasion Skill - Armor Penalty</div>
       </div>
       <div class="stat-box">
-        <div class="label">Oppose Bonus (DEX)</div>
+        <div class="label">Oppose Bonus (Evasion)</div>
         <div class="value computed" id="out-dodgeBonus">0</div>
-        <div class="note">DEX - Armor Penalty, no Skill involved. Funds a DEX Oppose roll: 1d12 + this vs. the attack roll</div>
+        <div class="note">Evasion Skill - Armor Penalty. Funds an Evasion Oppose roll: 1d12 + this vs. the attack roll</div>
       </div>
       <div class="stat-box">
         <div class="label">Initiative Bonus</div>
@@ -263,7 +263,7 @@
       <div class="stat-box">
         <div class="label">Shield Guard</div>
         <div class="value computed" id="out-shieldAR">0</div>
-        <div class="note">Reduces a losing Oppose Margin. Drops by 2 at Grip (except Buckler) and to 0 under Control - apply those at the table</div>
+        <div class="note">Reduces a losing Oppose Margin. Drops by 2 at Short (except Buckler) and to 0 under Control - apply those at the table</div>
       </div>
     </div>
   </div>
@@ -436,7 +436,7 @@
 
   <div class="card">
     <h2>Shields</h2>
-    <p class="note">Guard is passive - it applies whenever a shield is Equipped, whichever Skill funds your Oppose roll. It reduces a losing Oppose Margin, not your standing AR. Drops by 2 at Grip (except Buckler) and to 0 under Control - apply those at the table.</p>
+    <p class="note">Guard is passive - it applies whenever a shield is Equipped, whichever Skill funds your Oppose roll. It reduces a losing Oppose Margin, not your standing AR. Drops by 2 at Short (except Buckler) and to 0 under Control - apply those at the table.</p>
     <table class="dyn-table" data-table="shields" id="tbl-shields">
       <thead><tr><th>Name</th><th class="num-sm">Guard</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
       <tbody></tbody>
@@ -479,11 +479,13 @@
         <td class="computed" data-col-out="atkBonus">-</td>
         <td><input type="text" data-col="damage" placeholder="1d8 Slashing"></td>
         <td>
-          <select data-col="reach" title="Melee only. Outreaching your opponent's Measure Band gives their Oppose roll Disadvantage; Near+ threatens an opportunity attack when they close the distance.">
+          <select data-col="reach" title="Melee only. Outreaching your opponent's Measure Band gives their Oppose roll Disadvantage (or locks out Weapon-Skill-funded Oppose entirely, 3-4 bands off); Medium+ threatens an opportunity attack when they close the distance.">
             <option value="">-</option>
-            <option>Grip</option>
-            <option>Near</option>
+            <option>Short</option>
+            <option>Medium</option>
+            <option>Long</option>
             <option>Far</option>
+            <option>Very Far</option>
           </select>
         </td>
         <td><input type="text" data-col="range" placeholder="Ranged only, e.g. 150/300 ft"></td>
@@ -714,7 +716,7 @@
     {attr:'STR', category:'Brawn & Melee', skills:['Blades','Hafted Weapons','Polearms','Brawling']},
     {attr:'PRE', category:'Finesse & Ranged', skills:['Archery','Marksmanship','Thrown']},
     {attr:'END', category:'Defense & Survival', skills:['Athletics','Armorer','Survival','Shields','Riding']},
-    {attr:'DEX', category:'Adroitness & Subterfuge', skills:['Acrobatics','Stealth','Lockpicking','Sleight of Hand','Crafting','Perception']},
+    {attr:'DEX', category:'Adroitness & Subterfuge', skills:['Evasion','Acrobatics','Stealth','Lockpicking','Sleight of Hand','Crafting','Perception']},
     {attr:'MIND', category:'Intellectual', skills:['Alchemy','Enchanting','Spell Crafting','Historic Lore','Medical Lore','Nature Lore','Identify']},
     {attr:'ARC', category:'Arcane Schools', skills:['Arcane Lore','Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy']},
     {attr:'FAI', category:'Divine Schools', skills:['Religious Lore','Benediction','Invocation','Necration','Cultivation','Subjugation']},
@@ -985,12 +987,13 @@
     // Shield readouts (armor.md "Using Shields" / maneuvers.md "Shield Guard")
     // Maneuver's old Parry/Block/Dodge rolls were unified into one Oppose Reaction
     // 2026-08-09 (hema-combat-design.md); dodgeBonus/blockBonus below keep their old
-    // variable names, but now mean the DEX-funded and Shields-funded Oppose rolls
-    // respectively. Shields dropped AR Bonus, Evasion/Oppose Bonus, and Penalty
-    // entirely in favor of a single Guard stat (also 2026-08-09) - Guard reduces a
-    // losing Oppose Margin rather than adding to AR or Evasion, and its Grip/Control
-    // interactions are situational (see armor.md), so this only sums the base value;
-    // it does not feed Evasion or the DEX-funded Oppose roll below anymore.
+    // variable names, but now mean the Evasion-Skill-funded and Shields-funded Oppose
+    // rolls respectively (Evasion re-added as a trained Skill 2026-08-10, replacing
+    // the bare-DEX Oppose leg). Shields dropped AR Bonus, Evasion/Oppose Bonus, and
+    // Penalty entirely in favor of a single Guard stat (also 2026-08-09) - Guard
+    // reduces a losing Oppose Margin rather than adding to AR or Evasion, and its
+    // Short/Control interactions are situational (see armor.md), so this only sums
+    // the base value; it does not feed Evasion or the Evasion-funded Oppose roll below.
     var shieldGuard = 0;
     document.querySelectorAll('#tbl-shields [data-row]').forEach(function(tr){
       if (tr.querySelector('[data-col="equipped"]').checked){
@@ -1016,8 +1019,9 @@
     document.getElementById('out-thresh1').textContent = '1-' + threshEdge1;
     document.getElementById('out-thresh2').textContent = (threshEdge1 + 1) + '-' + threshEdge2;
     document.getElementById('out-thresh3').textContent = (threshEdge2 + 1) + '+';
-    var evasion = 5 + attrTotals['DEX'] - armorPenalty;
-    var dodgeBonus = attrTotals['DEX'] - armorPenalty;
+    var evasionSkill = skillTotals['Evasion'] || 0;
+    var evasion = 5 + evasionSkill - armorPenalty;
+    var dodgeBonus = evasionSkill - armorPenalty;
     var initiative = Math.floor((attrTotals['PRE'] + attrTotals['DEX'])/2);
     var reactions = attrTotals['DEX'] >= 5 ? 3 : (attrTotals['DEX'] >= 3 ? 2 : 1);
 

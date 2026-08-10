@@ -1,4 +1,4 @@
-Singular, campaign-defining threats - not fielded in numbers, not tied to one continent by default, and mechanically distinct from every other section in this bestiary: a Mythic creature carries Mythic Initiative ([[Combat|combat]]), rolling initiative multiple times and taking a full turn on each count, rather than one turn per round like everything else here.
+Singular, campaign-defining threats - not fielded in numbers, not tied to one continent by default, and mechanically distinct from every other section in this bestiary: a Mythic creature carries Mythic Initiative ([[Mythic Initiative|bestiary_overview]]), rolling initiative multiple times and taking a full turn on each count, rather than one turn per round like everything else here.
 
 **This section exists separately from a Very Rare tag elsewhere on purpose.** Frequency (see [[Bestiary Overview|bestiary_overview]]) describes how often a GM reaches for a creature - a Mythic entry is almost always Very Rare, but "rare" isn't what actually sets it apart from, say, a Bear. What sets it apart is Mythic Initiative itself, and that's a mechanical category, not a point on the Frequency scale.
 
@@ -34,9 +34,9 @@ Singular, campaign-defining threats - not fielded in numbers, not tied to one co
 
 **Size:** Huge (6 Wounds \= baseline 5 \+ Tough; see [[Wounds and Survival|wounds_and_survival]] on scaling the baseline past Large for GM-statted creatures).
 
-**Mythic Initiative (4):** Rolls initiative 4 times (normal, \-2, \-4, \-6); takes a full turn on each count. See [[Combat|combat]] - Reactions and end-of-turn effects (Bleed, Frightened saves, and the like) trigger on every one of its turns, not once per round.
+**Mythic Initiative (4):** Rolls initiative 4 times (normal, \-2, \-4, \-6); takes a full turn on each count. See [[Mythic Initiative|bestiary_overview]] - Reactions and end-of-turn effects (Bleed, Frightened saves, and the like) trigger on every one of its turns, not once per round.
 
-**Dragonfire Breath (1/round, any one of its turns):** A 60 x 5 ft line of fire. Every creature in the line: DEX Ward (DC 16, Very Hard) or take 2d10 \+ STR Fire damage - a success halves the damage instead of negating it, matching Arcane's Resist convention ([[Magic Overview|magic_overview]]) rather than an all-or-nothing save. Once per round total, per Mythic Initiative's Repetition rule ([[Combat|combat]]) - not once per turn.
+**Dragonfire Breath (1/round, any one of its turns):** A 60 x 5 ft line of fire. Every creature in the line: DEX Ward (DC 16, Very Hard) or take 2d10 \+ STR Fire damage - a success halves the damage instead of negating it, matching Arcane's Resist convention ([[Magic Overview|magic_overview]]) rather than an all-or-nothing save. Once per round total, per Mythic Initiative's Repetition rule ([[Mythic Initiative|bestiary_overview]]) - not once per turn.
 
 **Variant - Elemental Reskin:** Fire is the default here, but nothing about a Wyrm ties it to Infierno specifically - Cold, Lightning, or Acid breath (swap the damage type, nothing else) fits equally well, since a Wyrm is explicitly not one of the four God-Dragons and carries no allegiance to any single element.
 

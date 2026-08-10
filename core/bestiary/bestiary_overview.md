@@ -83,3 +83,26 @@ A north-to-south gradient from desert to rainforest. Home to Mafsoleios and the 
 ### Mythical
 
 Singular, campaign-defining threats carrying Mythic Initiative - not tied to a continent by default, and mechanically distinct from a merely Very Rare entry elsewhere in this bestiary. See that page's own note on why Power Score can't price what lives here.
+
+---
+
+## Mythic Initiative
+
+Mythic creatures \- campaign-defining bosses and other singular threats \- do not act once per round. They are too fast, too vast, or too terrible for a single turn to contain them.
+
+**Mythic Initiative (X):** A Mythic creature rolls initiative X times. The first roll is made normally. Each roll after the first takes a cumulative \-2 penalty (second roll \-2, third roll \-4, fourth roll \-6, and so on). The creature takes a full turn on each of its initiative counts.
+
+All of a Mythic creature's initiative counts are public, rolled openly at the start of combat. The party always knows exactly when the beast will act \- surviving it is another matter.
+
+**Repetition:** A Mythic creature's unique abilities (breath weapons, signature spells, lair-shaking special attacks) can each be used only once per round, no matter how many turns the creature takes. Basic attacks, movement, and mundane actions face no such limit.
+
+### **Turns & Effects**
+
+A Mythic creature's turns are real turns. Anything that references "a turn" applies to each of them:
+
+- Saves against conditions that allow an attempt at the end of the creature's turn (Frightened, channelled spells, and similar) are attempted at the end of every Mythic turn. A Mythic (3) creature gets three chances per round to shake off an effect. Conditions land on Mythic creatures \- they just don't stay long.
+- Ongoing damage such as Bleeding triggers at the start of every Mythic turn. A bleeding Mythic (3) creature takes its Bleed value three times per round.
+- Start-of-turn and end-of-turn traits (regeneration, auras, recharging abilities) trigger on every turn unless the creature's stat block says otherwise.
+- **Reactions:** A Mythic creature's Reaction pool refreshes at the start of each of its turns. A Mythic (3) creature can Oppose or make an Opportunity Attack up to three times per round.
+
+Mythic creatures do not need condition immunities or special resistances. Their many turns are their resistance \- and their many turns are also their weakness. Choose your poisons accordingly.

@@ -8,12 +8,12 @@ Size modifies your Slot total, rounding down:
 
 |  Size  | Slots Modifier | Space (Squares) | Measure Band |
 |:------:|:--------------:|:--------------:|:--------------:|
-| Small  |     × 0.5      |   5 ft (1×1)   |   Grip   |
-| Medium |      × 1       |   5 ft (1×1)   |   Grip   |
-| Large  |      × 2       |  10 ft (2×2)   |     Near      |
+| Small  |     × 0.5      |   5 ft (1×1)   |   Medium   |
+| Medium |      × 1       |   5 ft (1×1)   |   Medium   |
+| Large  |      × 2       |  10 ft (2×2)   |     Long      |
 |  Huge  |      × 4       |  15 ft (3×3)   |      Far       |
 
-**Space:** How much room a creature occupies, in grid squares (see [[Battlemap \& Positioning|combat]]).
+**Space:** How much room a creature occupies, in grid squares (see [[Battlemap \& Positioning|positioning]]).
 **Reach:** How far its unarmed melee reach extends, as a Measure Band (see [[Reach|weapons]] for what Measure Band means for the Oppose and Opportunity Attack rules).
 
 **Encumbered (items exceed Slots):** Speed drops to 5 ft; disadvantage on physical checks; cannot rest.

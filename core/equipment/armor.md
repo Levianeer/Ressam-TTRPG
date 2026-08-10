@@ -83,7 +83,7 @@ Penalty represents how armor restricts movement. It applies to:
 - **Acrobatics skill checks** (dodging, balance)
 - **Stealth skill checks** (moving unseen and unheard)
 - **Spellcasting rolls** (both attack rolls and Ward DCs)
-- **Evasion and DEX-funded Oppose calculations**
+- **Evasion and Evasion Skill-funded Oppose calculations**
 
 Penalty is derived directly from an armor's AR, not tracked separately: **Rigid armor's Penalty equals its AR**, while **Flexible armor's Penalty is half its AR (rounded down)**. A Rigid piece always costs you something no matter how it's built - that's the tradeoff for wearing plate.
 
@@ -175,7 +175,7 @@ Shields don't add protection the way armor does - instead, they make losing an e
 
 | Shield | Guard | Properties | Price | Slots |
 | :---- | :---: | :---- | :---: | :---: |
-| Buckler | 1 | Keeps full Guard at Grip (see Guard and Measure, below) | 40 Crown | 1 |
+| Buckler | 1 | Keeps full Guard at Short (see Guard and Measure, below) | 40 Crown | 1 |
 | Heater Shield | 2 | \- | 80 Crown | 2 |
 | Pavise | 3 | Deployable, \-5 ft speed | 120 Crown | 2 |
 
@@ -194,7 +194,7 @@ Guard requires a shield equipped in one hand - since a shield occupies a hand, i
 
 Guard is passive: it applies whenever you have a shield equipped, regardless of which Skill funds your Oppose roll (see [[Oppose|maneuvers]]) - a shield strapped to your arm still catches a blow whether you're actively trained to use it or not.
 
-**Guard and Measure:** A shield is an obstruction, not protection, once someone's inside it - Guard drops by 2 (minimum 0) whenever the current measure is Grip, except the Buckler, small enough to still do its full work that close in.
+**Guard and Measure:** A shield is an obstruction, not protection, once someone's inside it - Guard drops by 2 (minimum 0) whenever the current measure is Short, except the Buckler, small enough to still do its full work that close in.
 
 **Guard and Control:** While an opponent has Control on you (see [[Oppose|maneuvers]]), your Guard is 0 against them - your shield's been hooked, pinned, or pressed out of line, until you spend a win clearing it.
 
@@ -215,7 +215,7 @@ Shields share durability with your armor - they don't track separately. A shield
 | **Spellcaster** | None or Gambeson | Penalty hurts spellcasting |
 | **Skirmisher/Scout** | Gambeson | Low penalty keeps Stealth usable |
 | **Tank** | Full Plate \+ Pavise | Maximum AR, and the highest Guard to soften whatever gets through anyway |
-| **Duelist** | Buff Coat \+ Buckler | Mobility, and a shield whose Guard still works at Grip range |
+| **Duelist** | Buff Coat \+ Buckler | Mobility, and a shield whose Guard still works at Short range |
 
 ### 
 

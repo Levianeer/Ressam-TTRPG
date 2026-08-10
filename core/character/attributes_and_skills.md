@@ -23,7 +23,7 @@ Attributes range from 0 (wholly absent) to 5 (near peak mortal potential). Every
 
 **Endurance (END):** Physical resilience. END underlies your Wound Threshold, your resistance to fatigue, disease, poison, and suffocation, and the Defense & Survival Skills (Athletics, Armorer, Survival, Shields, Riding).
 
-**Dexterity (DEX):** Agility and fine motor control. DEX sets your Evasion and your DEX-funded Oppose roll, and governs the Adroitness & Subterfuge Skills - balance, stealth, lockpicking, sleight of hand, crafting, and perception.
+**Dexterity (DEX):** Agility and fine motor control. DEX governs the Adroitness & Subterfuge Skills, including Evasion - the skill behind your Passive Evasion and your Evasion-funded Oppose roll - plus balance, stealth, lockpicking, sleight of hand, crafting, and perception.
 
 **Mind (MIND):** Intelligence and reasoning. MIND sets your mana pool for both Arcane and Divine casting, determines automatic literacy at MIND 3+ (see Literacy, below), and governs the Intellectual Skills (Alchemy, Enchanting, Spell Crafting, and the Lore skills).
 
@@ -72,6 +72,7 @@ Skills range from 0 (untrained) to 5 (renowned master). Each is tied to one gove
 
 **Adroitness & Subterfuge (DEX)**
 
+- **Evasion:** Getting out of the way - sets your Passive Evasion and funds the Evasion-Skill leg of an Oppose roll (see [[Oppose|maneuvers]]), the same role Shields plays for a shield-funded Oppose roll.
 - **Acrobatics:** Balance, tumbling, and controlled falls - a defensive option against Shoving and Grappling, and the check for staying upright somewhere you shouldn't be.
 - **Stealth:** Moving unseen and unheard - the check behind Hiding (see [[Stealth & Light|stealth_and_light]]).
 - **Lockpicking:** Bypassing locks and mechanical security without the key.

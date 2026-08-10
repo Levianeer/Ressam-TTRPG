@@ -105,7 +105,7 @@ See the **Feats** chapter for the complete list.
 
 Your career provides starting equipment and currency. Purchase additional items from the **Equipment** chapter.
 
-**Armor Reminder:** Armor Penalty affects Evasion, your DEX-funded Oppose roll (see [[Combat|combat]]), and spellcasting. Each 2 ranks in Armorer reduces that penalty by 1\.
+**Armor Reminder:** Armor Penalty affects Evasion, your Evasion Skill-funded Oppose roll (see [[Combat|combat]]), and spellcasting. Each 2 ranks in Armorer reduces that penalty by 1\.
 
 ---
 
