@@ -6,11 +6,9 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Two-Handed:** Requires both hands to use
 
-- **Finesse:** You may use your PRE instead of your STR on attack and damage roll
-
 - **Versatile:** Can be used one or two-handed with different damage
 
-- **Reach:** How far a weapon threatens, given in its own Reach column as a Measure Band rather than a raw distance - see Measure Bands, below. Wielding a weapon at Medium Band or higher means a creature moving from outside your reach to within it provokes an Opportunity Attack from you. Measure Band also governs whether you can Strike (or Oppose with Weapon Skill) an opponent whose band is out of step with the current measure at all - see [[Reach|positioning]]
+- **Reach:** How far a weapon threatens, given in its own Reach column as a Measure Band rather than a raw distance - see Measure Bands, below. Wielding a weapon at Medium Band or higher means a creature moving from outside your reach to within it provokes an Opportunity Attack from you. Measure Band also governs whether you can Strike (or Oppose funded by a Weapon Skill) an opponent whose band is out of step with the current measure at all - see [[Reach|positioning]]
 
 - **Lashing Reach:** For Measure Band purposes only (see [[Reach|positioning]]), this weapon's Measure Band counts as Far - a Long, Medium, or Short opponent can't attack you until the measure shifts closer, same as against a true Far weapon. Its actual attack range stays Adjacent only, unlike a true Far weapon, and it cannot fund an Oppose roll - too much give in the line to hold a bind.
 
@@ -20,13 +18,17 @@ Weapons are usually broken up into three types of damage; Physical Damage: **Pie
 
 - **Penetrant:** Ignores AR equal to half your ranks in that weapon's associated Skill (rounded down)
 
-- **Bypasses Shields:** This attack cannot be stopped by an Oppose roll funded by Shields Skill, as though it were a Critical Hit for that purpose
+- **Bypasses STR Ward:** This attack cannot be stopped by an Oppose roll funded by a STR Ward, as though it were a Critical Hit for that purpose
+
+- **Charge:** If you hit with this weapon in the same turn your mount moved at least 20 ft toward the target, the attack's damage becomes the value listed in parentheses and gains Penetrant.
+
+- **Saddled:** Unlike other Two-Handed ranged weapons, this weapon can be fired while mounted, including on a moving mount, without penalty.
 
 ### Measure Bands
 
 | Measure Band |      Squares       | Who has it                                                                                                                                                                                    |
 |:-------------|:------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Short        |   Adjacent only    | Unarmed/Brawling attacks and the smallest blades - Dagger, Knife                                                                                                                              |
+| Short        |   Adjacent only    | Unarmed/Brawling attacks and the smallest blades - Dagger, Knife, Stiletto                                                                                                                    |
 | Medium       |   Adjacent only    | One-handed sidearms - Shortsword, Scimitar, Broadsword, Battle Axe, Mace, Club, Chain Flail - plus the precise thrusting blades, Rapier and Estoc                                            |
 | Long         |   Adjacent only    | Two-handed swords (Longsword, Greatsaber, Greatsword, Warblade), other two-handed arms (War Maul, Greatclub, Quarterstaff), plus the Whip and Weighted Chain for attack-range purposes only - see the Lashing Reach note below |
 | Far          | 2 squares (10 ft)  | Dedicated polearms - Spear, Halberd, and Glaive, plus the Whip and Weighted Chain for Measure-mismatch purposes only - see Lashing Reach, below                                              |
@@ -64,8 +66,8 @@ All weapons in the Firearms category (Pistols, Long Guns, and Heavy Firearms) in
 
 ### **Lock Types**
 
-Pistols and Long Guns each come in three lock types. A weapon's Damage, Range, and Critical are
-set entirely by its category (Pistol or Musket) - lock type only changes Cost, Misfire, and the
+Pistols and Long Guns each come in two lock types. A weapon's Damage, Range, and Critical are
+set entirely by its category (Pistol or Long Gun) - lock type only changes Cost, Misfire, and the
 quirks below.
 
 - **Match-lock:** Cheapest, and the most reliable ignition (lowest Misfire score). Its slow match
@@ -74,20 +76,13 @@ quirks below.
   (Minor Action) before the weapon can fire again, and each weapon's match must be lit
   individually, even if you're already carrying another lit one. A lit match glows and smolders
   visibly: you gain no benefit from Stealth in darkness while carrying one lit.
-- **Snap-lock:** Expensive, and the least reliable ignition (highest Misfire score). Its flash pan
-  must be manually uncovered immediately before it can fire \- an Object Interaction, every time
-  you fire, not just on the reload turn. It trades money and reliability for having no lit match
-  to manage or give away your position.
-- **Wheel-lock:** Prohibitively expensive, with average reliability (its Misfire score sits between
-  the other two). It's self-contained and always ready to fire the instant it's loaded \- no match
-  to light, no pan to uncover, no extra step of any kind. All three lock types can be pre-loaded in
+- **Wheel-lock:** Prohibitively expensive, with a higher Misfire score than Match-lock. It's
+  self-contained and always ready to fire the instant it's loaded \- no match to light, no pan to
+  uncover, no extra step of any kind. Both lock types can be pre-loaded in
   numbers and chain-fired the classic cavalry way \- drop the spent weapon as a Free Action, draw a
   fresh loaded one as a single Object Interaction (see [[Action Economy|combat]] \- you may draw any
   number of weapons this way at once, hands permitting), and fire it with your Major Action, all in
-  the same turn \- but Wheel-lock is the only one that can do it with no strings attached. Match-lock
-  only keeps pace if every spare was lit before the fight and its 10-round timer hasn't run out, and
-  Snap-lock can't draw and uncover the pan in the same turn (both want the same Object Interaction)
-  unless Quickdraw makes the draw a Free Action instead.
+  the same turn \- but Wheel-lock is the only one that can do it with no strings attached.
 
 ### **Environmental Limitations**
 
@@ -105,29 +100,29 @@ When a weapon with the firearm property is created, it may be made with more tha
 ### **Firearm Special Properties**
 
 - **Reload (action):**  
-  Requires specified action(s) to reload between shots  
-- **Misfire X:**  
+  Requires specified action(s) to reload between shots
+- **Misfire X:**
   If you roll under your misfire score on the d12 roll when you attack with your firearm, it misfires. You must use a Major Action and Minor Action on your turn to clear the misfire. You cannot make attacks or reload until the misfire is cleared  
-- **Mounted:**  
+- **Mounted:**
   Requires Major Action to deploy, cannot fire at enemies within 5 ft, must be redeployed if moved  
-- **Spread (X/Y ft cone):**  
+- **Spread (X/Y ft cone):**
 - Targets all creatures in specified cone, the length of the cone precedes the width of the cone  
-- **Explosive** **(X ft radius):**  
+- **Explosive** **(X ft radius):**
 - Deals its damage to all targets in its radius
 
 # Weapons
 
 ## MELEE WEAPONS
 
-**ONE-HANDED BLADES** *(Blades Skill)*
+**ONE-HANDED BLADES** *(Cleaving Blades Skill)*
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
 | Shortsword | 1d6 \+ 1 Piercing | Medium | Light | 10-12 | 35 Crown | 1 |
-| Scimitar | 1d6 Slashing | Medium | Light, Finesse | 10-12 | 75 Crown | 1 |
+| Scimitar | 1d6 Slashing | Medium | Light | 10-12 | 75 Crown | 1 |
 | Broadsword | 1d10 Slashing | Medium | \- | \- | 85 Crown | 1 |
 
-**TWO-HANDED BLADES** *(Blades Skill)*
+**TWO-HANDED BLADES** *(Two-Handed Blades Skill)*
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
@@ -136,14 +131,15 @@ When a weapon with the firearm property is created, it may be made with more tha
 | Greatsword | 1d12 Slashing | Long | Two-Handed | 11-12 | 200 Crown | 2 |
 | Warblade | 1d10 \+ 2 Slashing | Long | Two-Handed | \- | 350 Crown | 2 |
 
-**RAPIERS & FENCING** *(Blades Skill)*
+**RAPIERS & FENCING** *(Fencing Blades Skill - DEX-governed, see [[Attributes & Skills|attributes_and_skills]])*
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
-| Rapier | 1d8 Piercing | Medium | Finesse | 10-12 | 120 Crown | 1 |
-| Estoc | 1d10 Piercing | Medium | Two-Handed, Finesse, Penetrant | 10-12 | 150 Crown | 2 |
+| Rapier | 1d8 Piercing | Medium | \- | 10-12 | 120 Crown | 1 |
+| Estoc | 1d10 Piercing | Medium | Two-Handed, Penetrant | 10-12 | 150 Crown | 2 |
+| Stiletto | 1d4 Piercing | Short | Light | 9-12 | 20 Crown | 1 |
 
-**HAFTED WEAPONS** *(Hafted Weapons Skill)*
+**HAFTED WEAPONS** *(Hafted & Polearms Skill)*
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
@@ -152,27 +148,28 @@ When a weapon with the firearm property is created, it may be made with more tha
 | War Maul | 1d10 Bludgeoning | Long | Two-Handed, AR degrades by 2 instead of 1 | 11-12 | 100 Crown | 2 |
 | Club | 1d6 Bludgeoning | Medium | \- | \- | 5 Crown | 1 |
 | Greatclub | 2d4 Bludgeoning | Long | Two-Handed | \- | 10 Crown | 2 |
-| Whip | 1d4 Slashing | Long | Finesse, Trip, Lashing Reach | \- | 10 Crown | 1 |
+| Whip | 1d4 Slashing | Long | Trip, Lashing Reach | \- | 10 Crown | 1 |
 | Weighted Chain | 1d6 Bludgeoning | Long | Can grapple at Reach, Lashing Reach | \- | 20 Crown | 1 |
-| Chain Flail | 1d8 Bludgeoning | Medium | Bypasses Shields | 11-12 | 80 Crown | 1 |
+| Chain Flail | 1d8 Bludgeoning | Medium | Bypasses STR Ward | 11-12 | 80 Crown | 1 |
 
-**POLEARMS** *(Polearms Skill)*
+**POLEARMS** *(Hafted & Polearms Skill)*
+
+| Weapon       | Damage |  Reach   | Properties | Critical | Cost      | Slots |
+|:-------------| :---- |:--------:| ----- | :---: |-----------|:-----:|
+| Spear        | 1d6 Piercing |   Far    | Versatile (Two-Handed 1d8), Throwable (20/40 ft) | \- | 30 Crown  |   1   |
+| Pike         | 1d8 Piercing | Very Far | Two-Handed | \- | 50 Crown  |   2   |
+| Halberd      | 1d10 Slashing / Piercing |   Far    | Two-Handed | \- | 100 Crown |   2   |
+| Glaive       | 2d4 Slashing |   Far    | Two-Handed | 11-12 | 95 Crown  |   2   |
+| Quarterstaff | 1d6 Bludgeoning |   Long   | Versatile (Two-Handed 2d4) | \- | 5 Crown   |   1   |
+| Lance        | 1d8 Piercing |   Far    | Charge (2d8), One-handed while mounted; Two-Handed and loses Charge on foot | \- | 100 Crown |   2   |
+
+**DAGGERS & KNIVES** *(Daggers & Wrestling Skill)*
+
+**Note:** A Knife thrown rather than swung uses the Thrown Skill instead - see the THROWN table, below. A lighter, precision-thrusting alternative to the Dagger below - the Stiletto - is governed by Fencing Blades instead; see RAPIERS & FENCING, above.
 
 | Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---: | ----- | :---: | ----- | :---: |
-| Spear | 1d6 Piercing | Far | Versatile (Two-Handed 1d8), Throwable (20/40 ft) | \- | 30 Crown | 1 |
-| Pike | 1d8 Piercing | Very Far | Two-Handed | \- | 50 Crown | 2 |
-| Halberd | 1d10 Slashing / Piercing | Far | Two-Handed | \- | 100 Crown | 2 |
-| Glaive | 2d4 Slashing | Far | Two-Handed | 11-12 | 95 Crown | 2 |
-| Quarterstaff | 1d6 Bludgeoning | Long | Versatile (Two-Handed 2d4) | \- | 5 Crown | 1 |
-
-**DAGGERS & KNIVES** *(Brawling Skill)*
-
-**Note:** A Knife thrown rather than swung uses the Thrown Skill instead - see the THROWN table, below.
-
-| Weapon | Damage | Reach | Properties | Critical | Cost | Slots |
-| :---- | :---- | :---: | ----- | :---: | ----- | :---: |
-| Dagger | 1d4 Piercing | Short | Light, Finesse | 9-12 | 20 Crown | 1 |
+| Dagger | 1d4 Piercing | Short | Light | 9-12 | 20 Crown | 1 |
 | Knife | 1d4 Piercing | Short | Light, Throwable (20/40 ft) | 10-12 | 5 Crown | 1 |
 
 ---
@@ -183,14 +180,15 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 **Note:** Holding a ranged attack for a chosen trigger is called **Ready Volley**, and unlocks the Called Shot option - see [[Ready Volley|combat]].
 
-**BOWS** *(Archery Skill)*
+**BOWS** *(Ranged Skill)*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
-| :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Shortbow | 1d6 Piercing | 80/160 ft | Two-Handed | 10-12 | 50 Crown | 2 |
-| Longbow | 1d8 Piercing | 150/300 ft | Two-Handed | 11-12 | 100 Crown | 2 |
+| Weapon        | Damage | Range      | Properties          | Critical | Cost      | Slots |
+|:--------------| :---- |:-----------|---------------------| :---: |-----------| :---: |
+| Shortbow      | 1d6 Piercing | 80/160 ft  | Two-Handed          | 10-12 | 50 Crown  | 2 |
+| Longbow       | 1d8 Piercing | 150/300 ft | Two-Handed          | 11-12 | 100 Crown | 2 |
+| Composite Bow | 1d8 Piercing | 120/240 ft | Two-Handed, Saddled | 11-12 | 150 Crown | 2 |
 
-**CROSSBOWS** *(Marksmanship Skill)*
+**CROSSBOWS** *(Ranged Skill)*
 
 | Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
@@ -212,29 +210,27 @@ When a weapon with the firearm property is created, it may be made with more tha
 
 **FIREARMS**
 
-**PISTOLS** *(Marksmanship Skill)*
+**PISTOLS** *(Ranged Skill)*
 
 | Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
 | Match-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 1 | \- | 200 Crown | 1 |
-| Snap-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 3 | \- | 500 Crown | 1 |
 | Wheel-lock Pistol | 3d4 Piercing | 30/60 ft | Misfire 2 | \- | 800 Crown | 1 |
 
-**LONG GUNS** *(Marksmanship Skill)*
+**LONG GUNS** *(Ranged Skill)*
 
 | Weapon | Damage | Range | Properties | Critical | Cost | Slots |
 | :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Match-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 1 | \- | 300 Crown | 2 |
-| Snap-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 3 | \- | 750 Crown | 2 |
-| Wheel-lock Musket | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 2 | \- | 1200 Crown | 2 |
+| Match-lock Arquebus | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 1 | \- | 300 Crown | 2 |
+| Wheel-lock Arquebus | 4d4 Piercing | 120/240 ft | Two-Handed, Misfire 2 | \- | 1200 Crown | 2 |
 
-**HEAVY FIREARMS** *(Marksmanship Skill)*
+**HEAVY FIREARMS** *(Ranged Skill)*
 
-| Weapon | Damage | Range | Properties | Critical | Cost | Slots |
-| :---- | :---- | :---- | ----- | :---: | ----- | :---: |
-| Blunderbuss | 4d4 Piercing | 30/60 ft | Two-Handed, Spread (30ft/15ft cone), Misfire 2 | \- | 700 Crown | 2 |
-| Hand Mortar | 2d10 Piercing | 40/80 ft | Two-Handed, Explosive (20ft radius), Misfire 3 | \- | 1200 Crown | 2 |
-| Hackbut | 6d6 Piercing | 200/400 ft | Two-Handed, Mounted, Reload (2 Major Actions), Misfire 1 | \- | 1500 Crown | 4 |
+| Weapon         | Damage | Range | Properties | Critical | Cost | Slots |
+|:---------------| :---- | :---- | ----- | :---: | ----- | :---: |
+| Hailshot Piece | 4d4 Piercing | 30/60 ft | Two-Handed, Spread (30ft/15ft cone), Misfire 2 | \- | 700 Crown | 2 |
+| Hand Mortar    | 2d10 Piercing | 40/80 ft | Two-Handed, Explosive (20ft radius), Misfire 3 | \- | 1200 Crown | 2 |
+| Hackbut        | 6d6 Piercing | 200/400 ft | Two-Handed, Mounted, Reload (2 Major Actions), Misfire 1 | \- | 1500 Crown | 4 |
 
 **AMMUNITION**
 
@@ -259,14 +255,64 @@ After combat, roll 1d6:
 
 **UNARMED**
 
-**BRAWLING** *(Brawling Skill)*
+**BRAWLING** *(Daggers & Wrestling Skill)*
 
 | Attack | Damage | Reach | Properties | Critical |
 | :---- | :---- | :---: | ----- | :---: |
 | Punch | 1d6 Bludgeoning | Short | \- | 11-12 |
 | Kick | 1d8 Bludgeoning | Short | \- | \- |
-| Headbutt | 1d10 Bludgeoning | Short | You take the same damage dealt. Make a **1d12 \+ your Brawling** roll against target's END Ward (Contested Ward) - if it beats their Ward, they are Stunned. | \- |
-| Grapple | Special | Short | Contested Brawling check to Restrain target | \- |
+| Headbutt | 1d10 Bludgeoning | Short | You take the same damage dealt. Make a **1d12 \+ your Daggers & Wrestling** roll against target's STR Ward (Contested Ward) - if it beats their Ward, they are Stunned. | \- |
+| Grapple | Special | Short | Contested Daggers & Wrestling check to Restrain target | \- |
 
 **Combination:** As a Minor Action after hitting with an unarmed attack, you may immediately make one follow-up unarmed attack of a type you haven't already made this turn (e.g. hit with a Punch, follow up with a Kick, Headbutt, or Grapple - but not another Punch) at \-4 to the attack roll. This is innate to fighting unarmed, not a Feat - no prerequisite beyond having a free hand.
 
+---
+
+## SHIELDS
+
+Shields don't add protection the way armor does - instead, they make losing an exchange survivable rather than costly. A shield's whole identity is one number: **Guard**. Unlike armor, a shield is also something you can swing on your own turn - see Shield Bash, below.
+
+### **Shield Table**
+
+| Shield        | Guard | Properties                                        |   Price   | Slots |
+|:--------------|:-----:|:--------------------------------------------------|:---------:|:-----:|
+| Buckler       |   1   | Keeps full Guard at Short (see Guard and Measure) | 40 Crown  |   1   |
+| Heater Shield |   2   | \-                                                | 80 Crown  |   2   |
+| Pavise        |   3   | Deployable, \-5 ft speed                          | 120 Crown |   2   |
+
+**Carrying Slots:** An equipped shield costs no Slots. The Slots column applies only to a shield carried as a spare. A carried Pavise costs 2 Slots regardless of its bulk.
+
+### **Shield Descriptions**
+
+**Buckler** is a small fist-held shield used for parrying rather than blocking. Popular in civilian dueling and among those who value mobility. Its Guard is the lowest of the three, but it's the only shield light enough to still do its full work at wrestling range - see Guard and Measure, below.
+
+**Heater Shield** is the iconic knightly shield, shaped like a clothing iron. Solid, dependable coverage for a soldier who still needs to move and swing a weapon. Often bears heraldic devices.
+
+**Pavise** is a large rectangular shield originally designed to protect crossbowmen while reloading, offering the most Guard of any shield.  
+**Major Action:** Can be Deployed as standing cover, providing Cover to one creature directly behind it. The user cannot move while the shield is Deployed, but is also counted as in Cover.
+
+### **Using Shields**
+
+Guard requires a shield equipped in one hand - since a shield occupies a hand, it's only ever paired with a one-handed weapon (or nothing) in the other, never a Two-Handed weapon.
+
+Guard is passive: it applies whenever you have a shield equipped, no roll or Skill required - a shield strapped to your arm still catches a blow whether you're actively trained to use it or not.
+
+**Guard and Measure:** A shield is an obstruction, not protection, once someone's inside it - Guard drops by 2 (minimum 0) whenever the current measure is Short, except the Buckler, small enough to still do its full work that close in.
+
+**Guard and Control:** While an opponent has Control on you (see [[Oppose|maneuvers]]), your Guard is 0 against them - your shield's been hooked, pinned, or pressed out of line, until you spend a win clearing it.
+
+**Shield Cap:** A normal two-handed creature only ever has one hand free to equip a shield in anyway, but a creature with more hands available (an Alsahli's Four Arms, say) can equip more than one at once. Guard still doesn't stack past two shields: if you have three or more equipped, only the two with the highest Guard count toward your total (added together) - every shield beyond those two contributes nothing, no matter how many hands you have free to hold it.
+
+### **Shield Bash**
+
+A shield carries no Skill of its own to fund Guard, but nothing stops you from swinging it - the rim and boss make a serviceable blunt weapon, thrown the same way an off-hand punch is.
+
+**SHIELD BASH** *(Daggers & Wrestling Skill)*
+
+| Attack | Damage | Reach | Properties | Critical |
+| :---- | :---- | :---: | ----- | :---: |
+| Shield Bash | 1d4 Bludgeoning | Short | Requires shield equipped | \- |
+
+### **Shield Durability**
+
+Shields share durability with your armor - they don't track separately. A shield's Guard degrades by 1 each time it actually reduces a losing Oppose margin (see [[Oppose|maneuvers]]) - a won exchange never touches the shield, so Guard only wears down at the moment it does its job. If two shields are counting toward your Shield Cap, both degrade by 1 together; a shield sitting past the cap doesn't degrade, since it wasn't contributing anything to begin with. Guard cannot drop below 0, and is restored by the same Crafting repair rules as armor (see Repairing Armor in [[Armor|armor]]) - when you repair your armor, you repair your equipped shields' Guard simultaneously.

@@ -24,7 +24,7 @@ Ressam doesn't need to be perfectly balanced, but everything in it must have a p
 
 ## Distinction
 
-The power gap between Martials and Casters is a known problem. Ressam aims to narrow it \- not by making them equal, but by making them *different*. Casters should dominate at control, area damage, and utility. Martials should out-sustain them in extended fights and lead in close-range and long-range single-target damage, with reliable but clunkier utility options. A Martial should never feel strictly *worse* than a Caster \- only different.
+The power gap between Martials and Casters is a known problem. Ressam aims to narrow it \- not by making them equal, but by making them *different*. Casters should dominate at control, area damage, and utility. Martials shoul out-sustain them in extended fights and lead in close-range and long-range single-target damage, with reliable but clunkier utility options. A Martial should never feel strictly *worse* than a Caster \- only different.
 
 ---
 

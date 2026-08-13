@@ -54,7 +54,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | **AR** | 1 (thick hide) |
 | **Speed** | 40 ft |
 | **Daily Hex Pts** | 10 |
-| **Attributes** | STR 3, END 3, DEX 2, PRE 2 |
+| **Attributes** | STR 3, DEX 2 |
 
 **Attacks:**
 
@@ -64,9 +64,9 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 - **Beast of Burden:** Can carry 12 Slots without penalty  
 - **Sure-Footed:** Advantage on Wards against being knocked prone  
-- **Stubborn:** Disadvantage on Animal Handling checks to make it do something dangerous
+- **Stubborn:** Disadvantage on Wayfaring checks to make it do something dangerous
 
-**Behavior:** Won't willingly enter combat. Requires DC 12 Animal Handling to prevent fleeing from violence.
+**Behavior:** Won't willingly enter combat. Requires DC 12 Wayfaring to prevent fleeing from violence.
 
 ---
 
@@ -81,7 +81,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | **AR** | 2 |
 | **Speed** | 70 ft |
 | **Daily Hex Pts** | 12 |
-| **Attributes** | STR 3, END 3, DEX 3, PRE 3 |
+| **Attributes** | STR 3, DEX 3 |
 
 **Attacks:**
 
@@ -91,9 +91,9 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 - **Beast of Burden:** Can carry 12 Slots without penalty  
 - **Fleet-Footed:** Can Dash as a Minor Action  
-- **Skittish:** When taking 10+ damage, must make DC 13 Animal Handling check or panic (moves randomly, rider must make DEX Ward DC 16 or fall)
+- **Skittish:** When taking 10+ damage, must make DC 13 Wayfaring check or panic (moves randomly, rider must make DEX Ward DC 16 or fall)
 
-**Behavior:** Flees from combat unless controlled (DC 10 Animal Handling each round). Not trained to fight.
+**Behavior:** Flees from combat unless controlled (DC 10 Wayfaring each round). Not trained to fight.
 
 ---
 
@@ -108,7 +108,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | **AR** | 3 (can wear barding for \+3 AR) |
 | **Speed** | 60 ft |
 | **Daily Hex Pts** | 12 |
-| **Attributes** | STR 4, END 4, DEX 3, PRE 2 |
+| **Attributes** | STR 4, DEX 2 |
 
 **Attacks:**
 
@@ -117,8 +117,8 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 **Special Traits:**
 
 - **Beast of Burden:** Can carry 15 Slots without penalty  
-- **Warhorse Training:** Automatically acts on rider's initiative. Can attack without Animal Handling checks  
+- **Warhorse Training:** Automatically acts on rider's initiative. Can attack without Wayfaring checks  
 - **Fearless Charge:** If the horse moves at least 30 ft in a straight line before attacking, deals an additional 2d6 damage and target must make STR Ward (DC 14\) or be knocked prone  
 - **Battle Hardened:** Advantage on Wards against fear and being startled. Only panics when reduced below half Wounds
 
-**Behavior:** Trained for combat. Will attack enemies on command and defend its rider. Requires DC 9 Animal Handling if reduced below half Wounds to prevent fleeing.
+**Behavior:** Trained for combat. Will attack enemies on command and defend its rider. Requires DC 9 Wayfaring if reduced below half Wounds to prevent fleeing.

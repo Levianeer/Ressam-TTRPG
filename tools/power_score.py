@@ -89,31 +89,31 @@ MAX_LEVEL = 12
 
 TOTAL_XP, ATTR_POINTS, SKILL_POINTS, ATTR_CAP, FEATS = range(5)
 
-# Skill -> governing Attribute (core_rules.md's Skill Categories table).
-# A Skill's Rank can never exceed this Attribute's current score - the sole
-# Skill cap in the game, checked per-skill in score() below.
+# Skill -> governing Attribute (core/character/attributes_and_skills.md's
+# Skill Categories table). A Skill's Rank can never exceed this Attribute's
+# current score - the sole Skill cap in the game, checked per-skill in
+# score() below. Block and Evasion no longer exist as Skills (they became
+# flat, untrained STR Ward / DEX Ward - see that same file) so they don't
+# appear here at all.
 SKILL_ATTRIBUTE = {
-    # STR - Brawn & Melee
-    "Blades": "STR", "Hafted Weapons": "STR", "Polearms": "STR", "Brawling": "STR",
-    # PRE - Finesse & Ranged
-    "Archery": "PRE", "Marksmanship": "PRE", "Thrown": "PRE",
-    # END - Defense & Survival
-    "Athletics": "END", "Armorer": "END", "Survival": "END", "Shields": "END", "Riding": "END",
-    # DEX - Adroitness & Subterfuge
-    "Acrobatics": "DEX", "Stealth": "DEX", "Lockpicking": "DEX",
-    "Sleight of Hand": "DEX", "Crafting": "DEX", "Perception": "DEX",
-    # MIND - Intellectual
-    "Alchemy": "MIND", "Enchanting": "MIND", "Spell Crafting": "MIND", "Historic Lore": "MIND",
-    "Medical Lore": "MIND", "Nature Lore": "MIND", "Identify": "MIND",
+    # STR - Brawn, Endurance & Melee
+    "Two-Handed Blades": "STR", "Cleaving Blades": "STR",
+    "Hafted & Polearms": "STR", "Daggers & Wrestling": "STR",
+    "Athletics": "STR", "Survival": "STR", "Wayfaring": "STR",
+    # DEX - Finesse, Reflex & Subterfuge
+    "Fencing Blades": "DEX", "Ranged": "DEX", "Thrown": "DEX", "Acrobatics": "DEX", "Subterfuge": "DEX",
+    "Crafting": "DEX", "Perception": "DEX",
+    # MIND - Intellect, Education & Reasoning
+    "Thaumaturgy": "MIND", "Historic Lore": "MIND", "Medical Lore": "MIND", "Nature Lore": "MIND",
     # ARC - Arcane Schools
     "Arcane Lore": "ARC", "Aeromancy": "ARC", "Geomancy": "ARC", "Hydromancy": "ARC",
     "Pyromancy": "ARC", "Shadowmancy": "ARC",
     # FAI - Divine Schools
     "Religious Lore": "FAI", "Benediction": "FAI", "Invocation": "FAI", "Necration": "FAI",
     "Cultivation": "FAI", "Subjugation": "FAI",
-    # CHA - Socialising & Interaction
-    "Persuasion": "CHA", "Deception": "CHA", "Intimidation": "CHA", "Leadership": "CHA",
-    "Animal Handling": "CHA", "Insight": "CHA", "Performance": "CHA",
+    # CHA - Socialising, Manipulation & Interaction
+    "Influence": "CHA", "Manipulate": "CHA", "Intimidate": "CHA", "Leadership": "CHA",
+    "Insight": "CHA",
 }
 
 
@@ -138,7 +138,7 @@ def _min_level_for(value, column):
 @dataclass
 class Creature:
     name: str
-    attributes: dict            # STR/PRE/END/DEX/MIND/CHA/ARC/FAI -> value
+    attributes: dict            # STR/DEX/MIND/CHA/ARC/FAI -> value
     skills: dict = field(default_factory=dict)  # skill name -> rank
     feats: int = 0
     has_prestige_feat: bool = False
@@ -207,19 +207,20 @@ def score(creature: Creature) -> PowerScore:
 
 PEASANT = Creature(
     name="Peasant",
-    attributes=dict(STR=1, PRE=1, END=1, DEX=1, MIND=1, CHA=1, ARC=0, FAI=0),
+    attributes=dict(STR=1, DEX=1, MIND=1, CHA=1, ARC=0, FAI=0),
 )
 
 BANDIT = Creature(
     name="Bandit",
-    attributes=dict(STR=3, PRE=2, END=2, DEX=2, MIND=1, CHA=1, ARC=0, FAI=0),
-    skills={"Blades": 2, "Intimidation": 1, "Perception": 1},
+    attributes=dict(STR=2, DEX=2, MIND=1, CHA=1, ARC=0, FAI=0),
+    skills={"Cleaving Blades": 2, "Intimidate": 1, "Perception": 1},
 )
 
 KNIGHT = Creature(
     name="Knight",
-    attributes=dict(STR=4, PRE=3, END=4, DEX=3, MIND=1, CHA=1, ARC=0, FAI=1),
-    skills={"Blades": 4, "Shields": 3, "Athletics": 2, "Riding": 2, "Perception": 1},
+    attributes=dict(STR=4, DEX=3, MIND=1, CHA=1, ARC=0, FAI=1),
+    # Block Skill no longer exists - that defense is covered by STR alone now.
+    skills={"Cleaving Blades": 4, "Athletics": 2, "Wayfaring": 2, "Perception": 1},
     feats=2,  # Tough, Second Wind - both General Feats, no Prestige gate
 )
 
@@ -227,13 +228,13 @@ KNIGHT = Creature(
 # three martial NPCs above, since all three sit at or under a Level 1
 # Attribute budget) and the Prestige Feat gate (also never exercised
 # above). A battle-mage who burns her own Wounds instead of Mana - Blood-
-# Rule (core/feats/prestige_feats.md) requires END 4+, +2 ranks in any
-# magic school, +2 ranks in Medical Lore, and per progression_&_rewards.md
-# is only legal to take at Level 5+.
+# Rule (core/feats/prestige_feats.md) requires STR 4+, +2 ranks in any
+# Arcane or Divine school Skill, +2 ranks in a Lore Skill, and per
+# progression_&_rewards.md is only legal to take at Level 5+.
 PYROMANCER = Creature(
     name="Hypothetical - Blood-Rule Pyromancer",
-    attributes=dict(STR=2, PRE=2, END=4, DEX=2, MIND=3, CHA=1, ARC=5, FAI=0),
-    skills={"Pyromancy": 4, "Medical Lore": 2, "Perception": 1},
+    attributes=dict(STR=3, DEX=2, MIND=3, CHA=1, ARC=5, FAI=0),
+    skills={"Pyromancy": 4, "Historic Lore": 2, "Perception": 1},
     feats=2,  # Blood-Rule (Prestige) + 1 General Feat
     has_prestige_feat=True,
 )
@@ -242,50 +243,52 @@ PYROMANCER = Creature(
 
 SKELETON = Creature(
     name="Skeleton",
-    attributes=dict(STR=2, PRE=1, END=2, DEX=1, MIND=0, CHA=0, ARC=0, FAI=0),
-    skills={"Blades": 1},
+    attributes=dict(STR=2, DEX=1, MIND=0, CHA=0, ARC=0, FAI=0),
+    skills={"Cleaving Blades": 1},
 )
 
 WOLF = Creature(
     name="Wolf",
-    attributes=dict(STR=2, PRE=1, END=2, DEX=3, MIND=1, CHA=1, ARC=0, FAI=0),
-    skills={"Brawling": 2, "Perception": 2},
+    attributes=dict(STR=2, DEX=2, MIND=1, CHA=1, ARC=0, FAI=0),
+    skills={"Daggers & Wrestling": 2, "Perception": 2},
 )
 
 GUARD = Creature(
     name="Guard",
-    attributes=dict(STR=3, PRE=1, END=3, DEX=1, MIND=1, CHA=1, ARC=0, FAI=0),
-    skills={"Polearms": 2, "Shields": 2, "Perception": 1},
+    attributes=dict(STR=3, DEX=1, MIND=1, CHA=1, ARC=0, FAI=0),
+    skills={"Cleaving Blades": 2, "Perception": 1},
 )
 
 GIANT_RAT = Creature(
     name="Giant Rat",
-    attributes=dict(STR=1, PRE=1, END=1, DEX=2, MIND=0, CHA=0, ARC=0, FAI=0),
-    skills={"Brawling": 1, "Stealth": 1},
+    attributes=dict(STR=1, DEX=1, MIND=0, CHA=0, ARC=0, FAI=0),
+    skills={"Daggers & Wrestling": 1, "Subterfuge": 1},
 )
 
 ARCHER = Creature(
     name="Archer",
-    attributes=dict(STR=1, PRE=3, END=2, DEX=2, MIND=1, CHA=1, ARC=0, FAI=0),
-    skills={"Archery": 2, "Perception": 2},
+    attributes=dict(STR=1, DEX=2, MIND=1, CHA=1, ARC=0, FAI=0),
+    skills={"Ranged": 2, "Perception": 2},
 )
 
 ZOMBIE = Creature(
     name="Zombie",
-    attributes=dict(STR=3, PRE=1, END=2, DEX=0, MIND=0, CHA=0, ARC=0, FAI=0),
-    skills={"Brawling": 1},
+    attributes=dict(STR=2, DEX=0, MIND=0, CHA=0, ARC=0, FAI=0),
+    skills={"Daggers & Wrestling": 1},
 )
 
 GIANT_SPIDER = Creature(
     name="Giant Spider",
-    attributes=dict(STR=2, PRE=1, END=1, DEX=3, MIND=0, CHA=0, ARC=0, FAI=0),
-    skills={"Brawling": 2, "Stealth": 2},
+    attributes=dict(STR=1, DEX=2, MIND=0, CHA=0, ARC=0, FAI=0),
+    # Daggers & Wrestling capped at 1 (was 2) - can't exceed the new,
+    # floor-averaged STR of 1 (core_rules.md's Skill/Attribute cap).
+    skills={"Daggers & Wrestling": 1, "Subterfuge": 2},
 )
 
 BEAR = Creature(
     name="Bear",
-    attributes=dict(STR=4, PRE=1, END=4, DEX=1, MIND=0, CHA=0, ARC=0, FAI=0),
-    skills={"Brawling": 3},
+    attributes=dict(STR=4, DEX=1, MIND=0, CHA=0, ARC=0, FAI=0),
+    skills={"Daggers & Wrestling": 3},
 )
 
 # The "extreme test" (2026-08-07): a Mythic-tier Wyrm, Attribute 5 / Skill 5
@@ -294,24 +297,26 @@ BEAR = Creature(
 # tools/encounter_rating.py for why that gap is the actual finding here.
 WYRM = Creature(
     name="Wyrm",
-    attributes=dict(STR=5, PRE=2, END=5, DEX=3, MIND=3, CHA=2, ARC=0, FAI=0),
-    # Perception capped at 3, not 4 - DEX-governed, and DEX is 3 (a Skill
-    # can never exceed its own governing Attribute, core_rules.md).
-    skills={"Brawling": 5, "Perception": 3},
+    attributes=dict(STR=5, DEX=2, MIND=3, CHA=2, ARC=0, FAI=0),
+    # Perception capped at 2, not higher - DEX-governed, and DEX is 2 (a
+    # Skill can never exceed its own governing Attribute, core_rules.md).
+    skills={"Daggers & Wrestling": 5, "Perception": 2},
     feats=2,  # Tough, Second Wind - both General Feats, no Prestige gate
 )
 
 
 GIANT_VULTURE = Creature(
     name="Giant Vulture",
-    attributes=dict(STR=2, PRE=1, END=1, DEX=3, MIND=1, CHA=0, ARC=0, FAI=0),
-    skills={"Brawling": 2, "Perception": 2},
+    attributes=dict(STR=1, DEX=2, MIND=1, CHA=0, ARC=0, FAI=0),
+    # Daggers & Wrestling capped at 1 (was 2) - can't exceed the new,
+    # floor-averaged STR of 1 (core_rules.md's Skill/Attribute cap).
+    skills={"Daggers & Wrestling": 1, "Perception": 2},
 )
 
 MIMIC = Creature(
     name="Mimic",
-    attributes=dict(STR=3, PRE=1, END=3, DEX=1, MIND=1, CHA=0, ARC=0, FAI=0),
-    skills={"Brawling": 2},
+    attributes=dict(STR=3, DEX=1, MIND=1, CHA=0, ARC=0, FAI=0),
+    skills={"Daggers & Wrestling": 2},
 )
 
 

@@ -2,7 +2,7 @@
 
 Carrying capacity is tracked in **Slots**, not weight. Check your Slots when you decide what to carry \- not on every purchase or pickup.
 
-**Slots \= STR \+ END**
+**Slots \= 2 × STR**
 
 Size modifies your Slot total, rounding down:
 
@@ -44,23 +44,23 @@ Most ammunition comes in backs of a specifc number of shots, the packs themselve
 
 - Patched Wounds become at least 1, never lower than what you already have  
 - Regain 1 Mana. Divine casters must also spend part of this Rest in genuine prayer to receive it (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - Arcane needs nothing beyond completing the Rest  
-- Trauma: Medical Lore DC 12 to remove 1 level  
-- Can use: Armorer, Medical Lore, Scribing, Prayer etc
+- Trauma: Lore DC 12 to remove 1 level  
+- Can use: Crafting, Lore, Scribing, Prayer etc
 
 ### **Field Rest (8 Hours)**
 
 - Patched Wounds become at least 2, never lower than what you already have  
 - Regain Mana equal to **MIND**. Divine casters must also spend part of this Rest in genuine prayer to receive it (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - Arcane needs nothing beyond completing the Rest  
-- Trauma: Medical Lore DC 12 to remove 2 levels  
-- Can use: Armorer, Medical Lore, Scribing, Prayer etc  
+- Trauma: Lore DC 12 to remove 2 levels  
+- Can use: Crafting, Lore, Scribing, Prayer etc  
 - **Requires:** Shelter (a tent, lean-to, or similar \- not a permanent structure), watch rotation, defensible position, 1 ration per character (trail food)
 
 ### **Long Rest (24 Hours)**
 
 - Patched Wounds become at least your missing Wounds (fully topped off)  
 - Regain Mana equal to **MIND × 3**, up to your Maximum Mana. Divine casters must also spend part of this Rest in genuine prayer to receive it (see [[Magic Overview|magic_overview]]'s Devotion Required rule) - Arcane needs nothing beyond completing the Rest  
-- Trauma: Medical Lore DC 12 to remove 3 levels  
-- Can use: Armorer, Medical Lore, Scribing, Prayer etc  
+- Trauma: Lore DC 12 to remove 3 levels  
+- Can use: Crafting, Lore, Scribing, Prayer etc  
 - **Requires:** **Good Shelter** (a permanent, secure structure \- inn, barracks, temple, private home, etc. \- not a tent or camp), **Good Food** (a proper hot meal, Meal common or better \- see [[Supplies|supplies]], not trail rations), civilization with security
 
 **Note:** Field Rests and Long Rests provide no benefits if their shelter and food requirements aren't met. Field Rest and Long Rest take the same 8 hours \- what separates them is the quality of shelter and food required, not the time spent.

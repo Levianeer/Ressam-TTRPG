@@ -7,7 +7,7 @@
 The Varulf are cursed reflections of humanity \- neither fully man nor wholly beast, born from a nightmare shared by mankind: the fear of losing control, of the savage lurking beneath civility. Transformed through bite and blood, a Varulf walks a tormented line between monstrous hunger and human conscience. Some exile themselves to the wilds in shame; others make a legend of their power instead. Either way, the howl follows them.
 
 **Homeland:** Lustralis  
-**Starting Attributes:** \+1 STR, \+1 END, \-1 FAI  
+**Starting Attributes:** \+2 STR, \-1 FAI  
 **Age:** Lives 100s of years  
 **Alignment:** Chaotic  
 **Size:** Medium (5-6 ft)  
@@ -15,7 +15,7 @@ The Varulf are cursed reflections of humanity \- neither fully man nor wholly be
 **Starting Languages:** Plethic  
 **Starting Skills:** \+2 Athletics, \+1 Survival
 
-**Level Adjustment:** \+1
+**Race Tier:** A (Extraordinary)
 
 ### **Features**
 
@@ -23,14 +23,14 @@ The Varulf are cursed reflections of humanity \- neither fully man nor wholly be
 **Low-light Vision:** You treat dim light as bright light within 60 ft.  
 **Bestial Form:** Once per Field Rest or Long Rest, you can use a Minor Action to transform for 10 minutes. While transformed:
 
-- \+10 ft speed, \+1 STR, \+1 END.  
+- \+10 ft speed, \+2 STR.  
 - \+2 Natural AR.  
 - Gain 2 Patched Wounds.  
 - Gain natural weapons: Claws (1d8+STR slashing), Bite (1d10+STR piercing). These count as magical.
 
 When the transformation ends, you lose any remaining Patched Wounds and revert to your human form. If you are unconscious when the transformation ends, you remain unconscious.
 
-**Curse of the Beast:** When you fail a MIND Ward, make an additional END Ward DC 18 or enter Feral Frenzy:
+**Curse of the Beast:** When you fail a MIND Ward, make an additional STR Ward DC 18 or enter Feral Frenzy:
 
 - Transform immediately if not transformed.  
 - Must attack the nearest creature each turn.  

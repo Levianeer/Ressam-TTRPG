@@ -13,15 +13,15 @@ Born not of the flesh but of fracture, Daemons are parasitic horrors \- manifest
 **Size:** Dependent on host race  
 **Base Speed:** Dependent on host race  
 **Starting Languages:** Demonic, host race's primary language  
-**Starting Skills:** \+2 Arcane Lore, \+1 Deception
+**Starting Skills:** \+2 Arcane Lore, \+1 Manipulate
 
-**Level Adjustment:** \+2
+**Race Tier:** B (Uncanny)
 
 ### **Features**
 
-**Natural Liar:** You gain \+1 to Deception.  
-**Parasitic Existence:** You have no physical form and cannot interact with the material world without a host. When you possess a host, their consciousness is suppressed \- they are unaware of events during possession and remember nothing afterward. You use the host's physical Attributes (STR, DEX, END), size, speed, and natural abilities (such as darkvision or natural weapons), but not their learned Skills or Feats. The host body ages normally.  
-**Starting Host:** At character creation, choose a host (DM approval required). You use the host's physical Attributes (STR, DEX, END) and your own mental Attributes.  
+**Natural Liar:** You gain \+1 to Manipulate.  
+**Parasitic Existence:** You have no physical form and cannot interact with the material world without a host. When you possess a host, their consciousness is suppressed \- they are unaware of events during possession and remember nothing afterward. You use the host's physical Attributes (STR, DEX), size, speed, and natural abilities (such as darkvision or natural weapons), but not their learned Skills or Feats. The host body ages normally.  
+**Starting Host:** At character creation, choose a host (DM approval required). You use the host's physical Attributes (STR, DEX) and your own mental Attributes.  
 **Host Death:** When your host dies, you are expelled and become a disembodied haunt bound to the location of death. While haunting: you are invisible and incorporeal, you can perceive your surroundings but cannot interact with physical objects, you cannot move more than 100 feet from where the host died, and you can only be detected by magical means. You may attempt possession as described. If 7 days pass without obtaining a new host, you dissipate permanently, returning to Nocturne.  
 **Possession:** While haunting a location, you may attempt to possess any sleeping creature with MIND 2+. Make a **1d12 \+ your highest-ranked Skill governed by CHA** roll against their FAI Ward (Contested Ward). If it beats their Ward, you possess them at dawn. Willing targets may forgo the Ward. Creatures immune to charm are immune to possession.  
 **Host Switch Ritual:** You can perform an 8-hour Possession ritual (requires 1,000 Crown in materials and a sleeping target) to transfer to a host with superior physical Attributes.  

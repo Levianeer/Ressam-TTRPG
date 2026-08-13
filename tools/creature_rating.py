@@ -81,56 +81,58 @@ def rate_creature(build_factory, trials=2000, name=None):
 # ---------------------------------------------------------------------------
 
 def make_peasant():
-    return Build(name="Peasant", STR=1, PRE=1, END=1, DEX=1, MIND=1, CHA=1,
+    return Build(name="Peasant", STR=1, DEX=1, MIND=1, CHA=1,
                  weapon=WEAPONS["Club"], weapon_skill=0, max_wounds=3)
 
 
 def make_skeleton():
-    return Build(name="Skeleton", STR=2, PRE=1, END=2, DEX=1,
+    return Build(name="Skeleton", STR=2, DEX=1,
                  weapon=WEAPONS["Broadsword"], weapon_skill=1, max_wounds=3)
 
 
 def make_zombie():
-    return Build(name="Zombie", STR=3, PRE=1, END=2, DEX=0,
+    return Build(name="Zombie", STR=2, DEX=0,
                  weapon=WEAPONS["Punch"], weapon_skill=1, max_wounds=3)
 
 
 def make_bandit():
-    return Build(name="Bandit", STR=3, PRE=2, END=2, DEX=2, MIND=1, CHA=1,
+    return Build(name="Bandit", STR=2, DEX=2, MIND=1, CHA=1,
                  weapon=WEAPONS["Shortsword"], weapon_skill=2,
                  armor_ar=ARMORS["Buff Coat"][0], armor_penalty=ARMORS["Buff Coat"][1],
                  max_wounds=3)
 
 
 def make_wolf():
-    return Build(name="Wolf", STR=2, PRE=1, END=2, DEX=3, MIND=1, CHA=1,
+    return Build(name="Wolf", STR=2, DEX=2, MIND=1, CHA=1,
                  weapon=WEAPONS["Bite"], weapon_skill=2, max_wounds=3)
 
 
 def make_archer():
-    return Build(name="Archer", STR=1, PRE=3, END=2, DEX=2, MIND=1, CHA=1,
+    return Build(name="Archer", STR=1, DEX=2, MIND=1, CHA=1,
                  weapon=WEAPONS["Longbow"], weapon_skill=2,
                  armor_ar=ARMORS["Gambeson"][0], armor_penalty=ARMORS["Gambeson"][1],
                  max_wounds=3)
 
 
 def make_guard():
-    return Build(name="Guard", STR=3, PRE=1, END=3, DEX=1, MIND=1, CHA=1,
+    # No block_skill field anymore - the STR Ward Oppose leg is flat and
+    # untrained, funded automatically by STR=3 below.
+    return Build(name="Guard", STR=3, DEX=1, MIND=1, CHA=1,
                  weapon=WEAPONS["Spear"], weapon_skill=2,
-                 shields_skill=2, shield=SHIELDS["Heater Shield"],
+                 shield=SHIELDS["Heater Shield"],
                  armor_ar=ARMORS["Mail Shirt"][0], armor_penalty=ARMORS["Mail Shirt"][1],
                  max_wounds=3)
 
 
 def make_bear():
-    return Build(name="Bear", STR=4, PRE=1, END=4, DEX=1,
+    return Build(name="Bear", STR=4, DEX=1,
                  weapon=WEAPONS["Mace"], weapon_skill=3, max_wounds=4)  # Large (4)
 
 
 def make_knight():
-    return Build(name="Knight", STR=4, PRE=3, END=4, DEX=3, MIND=1, CHA=1, FAI=1,
+    return Build(name="Knight", STR=4, DEX=3, MIND=1, CHA=1, FAI=1,
                  weapon=WEAPONS["Longsword"], weapon_skill=4,
-                 shields_skill=3, shield=SHIELDS["Heater Shield"],
+                 shield=SHIELDS["Heater Shield"],
                  armor_ar=ARMORS["Breastplate"][0], armor_penalty=ARMORS["Breastplate"][1],
                  max_wounds=4)  # Tough feat, +1
 

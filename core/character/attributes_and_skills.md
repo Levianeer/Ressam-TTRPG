@@ -6,32 +6,26 @@ This page is a reference glossary: what each Attribute represents and what each 
 
 Attributes range from 0 (wholly absent) to 5 (near peak mortal potential). Every Skill is tied to one governing Attribute, and a Skill's Rank can never exceed its governing Attribute's current score.
 
-| Attribute | Abbr. | Governs                                      |
-| :---- | :---: |:---------------------------------------------|
-| **Strength** | STR | Physical power, melee damage, carrying slots |
-| **Precision** | PRE | Reaction speed, ranged damage, initiative    |
-| **Endurance** | END | Toughness, Wounds, resisting fatigue         |
-| **Dexterity** | DEX | Agility, fine motor control, dodging         |
-| **Mind** | MIND | Intelligence, reasoning, mana pool           |
-| **Arcane** | ARC | Arcane magical aptitude                      |
-| **Faith** | FAI | Divine connection and conviction             |
-| **Charisma** | CHA | Social influence, force of personality       |
+| Attribute | Abbr. | Governs                                                                          |
+| :---- | :---: |:----------------------------------------------------------------------------------|
+| **Strength** | STR | Physical power, melee damage, carrying slots, resisting fatigue, disease, poison, and suffocation |
+| **Dexterity** | DEX | Agility, fine motor control, ranged damage, dodging, initiative                 |
+| **Mind** | MIND | Intelligence, reasoning, mana pool                                              |
+| **Arcane** | ARC | Arcane magical aptitude                                                         |
+| **Faith** | FAI | Divine connection and conviction                                                |
+| **Charisma** | CHA | Social influence, force of personality                                          |
 
-**Strength (STR):** Raw physical power. STR drives your melee damage, the Athletics/Brawling side of Shoving and Grappling, and how much you can carry before your Slots run out (see [[Carrying & Resting|carrying_and_resting]]).
+**Strength (STR):** Raw physical power and physical resilience in one Attribute - what used to be split between Strength and a separate Endurance is now a single stat. STR drives most melee damage, your Wound Threshold, your resistance to fatigue, disease, poison, and suffocation, how much you can carry before your Slots run out (see [[Carrying & Resting|carrying_and_resting]]), your STR Ward (including the flat, untrained Block-leg of an Oppose roll, see [[Oppose|maneuvers]]), and the Brawn, Endurance & Melee Skills.
 
-**Precision (PRE):** Hand-eye coordination and reaction speed. PRE governs ranged weapon damage (bows, firearms, thrown weapons) and sets your place in the initiative order.
+**Dexterity (DEX):** Agility, fine motor control, and hand-eye coordination in one Attribute - what used to be split between Dexterity and a separate Precision is now a single stat. DEX governs ranged weapon damage and Fencing Blades' melee damage, sets your place in the initiative order, funds your DEX Ward (including your Passive Evasion and the flat, untrained Evasion-leg of an Oppose roll, see [[Oppose|maneuvers]]), and governs the Finesse, Reflex & Subterfuge Skills.
 
-**Endurance (END):** Physical resilience. END underlies your Wound Threshold, your resistance to fatigue, disease, poison, and suffocation, and the Defense & Survival Skills (Athletics, Armorer, Survival, Shields, Riding).
+**Mind (MIND):** Intelligence and reasoning. MIND sets your mana pool for both Arcane and Divine casting, determines automatic literacy at MIND 3+ (see Literacy, below), and governs the Intellect, Education & Reasoning Skills.
 
-**Dexterity (DEX):** Agility and fine motor control. DEX governs the Adroitness & Subterfuge Skills, including Evasion - the skill behind your Passive Evasion and your Evasion-funded Oppose roll - plus balance, stealth, lockpicking, sleight of hand, crafting, and perception.
+**Arcane (ARC):** Raw aptitude for bending the Arcane. ARC caps how far you can invest in any Arcane school Skill (Aeromancy, Geomancy, Hydromancy, Pyromancy, Shadowmancy) and is the governing Attribute behind each of them.
 
-**Mind (MIND):** Intelligence and reasoning. MIND sets your mana pool for both Arcane and Divine casting, determines automatic literacy at MIND 3+ (see Literacy, below), and governs the Intellectual Skills (Alchemy, Enchanting, Spell Crafting, and the Lore skills).
+**Faith (FAI):** Depth of conviction and connection to the divine. FAI caps how far you can invest in any Divine school Skill (Benediction, Cultivation, Invocation, Necration, Subjugation) and is the governing Attribute behind each of them - Divine magic is petitioned, not commanded, and FAI is what a god (or, for Subjugation, a stolen sliver of someone else's conviction) actually answers to.
 
-**Arcane (ARC):** Raw aptitude for bending the Arcane. ARC is the Spell Modifier's Skill-governing Attribute for every Arcane school (Aeromancy, Geomancy, Hydromancy, Pyromancy, Shadowmancy), and caps how far you can invest in any one of them.
-
-**Faith (FAI):** Depth of conviction and connection to the divine. FAI plays the same role ARC does for the Divine schools (Benediction, Cultivation, Invocation, Necration, Subjugation) - Divine magic is petitioned, not commanded, and FAI is what a god (or, for Subjugation, a stolen sliver of someone else's conviction) actually answers to.
-
-**Charisma (CHA):** Force of personality. CHA governs the Social Skills - persuading, deceiving, intimidating, leading, reading people, and holding a room.
+**Charisma (CHA):** Force of personality. CHA governs the Socialising, Manipulation & Interaction Skills - influencing, manipulating, intimidating, leading, and reading people.
 
 **A 0 in an Attribute** is a complete absence of that capacity, not just poor - the same way an unranked Skill sits at 0 until trained. It's a legitimate choice at character creation, not only a racial exception. **An Attribute can never go below 0** - if an effect would push one lower, the character dies.
 
@@ -49,78 +43,68 @@ Skills range from 0 (untrained) to 5 (renowned master). Each is tied to one gove
 
 ### Combat Skills
 
-**Brawn & Melee (STR)**
+**Brawn, Endurance & Melee (STR)**
 
-- **Blades:** Swords of every weight - one-handed shortswords, scimitars, and broadswords; two-handed longswords, greatswords, and warblades; and the fast, precise thrusting blades (rapiers, estocs) that favor accuracy over raw force.
-- **Hafted Weapons:** Axes, maces, warhammers, and clubs, alongside flexible or improvised weapons swung from a haft or chain - whips, weighted chains, chain flails.
-- **Polearms:** Spears, pikes, halberds, glaives, and quarterstaves - long-hafted weapons that trade close-in flexibility for Reach.
-- **Brawling:** Unarmed strikes, improvised close-quarters violence, and daggers or knives swung by hand rather than thrown - punches, kicks, headbutts, and the check behind an unarmed Grapple.
-
-**Finesse & Ranged (PRE)**
-
-- **Archery:** Shortbows and longbows.
-- **Marksmanship:** Light and heavy crossbows, plus every black-powder firearm - one-handed pistols, two-handed long guns, and the largest heavy firearms (blunderbusses, hand mortars, mounted hackbuts).
-- **Thrown:** Throwing axes, javelins, darts, and knives hurled by hand, plus the sling that shares the same skill despite being a ranged weapon.
-
-**Defense & Survival (END)**
-
+- **Two-Handed Blades:** Longswords, greatswords, and warblades - the heaviest two-handed edged weapons.
+- **Cleaving Blades:** Every other one-handed melee weapon - shortswords, scimitars, and broadswords, axes, maces, warhammers, clubs, whips, weighted chains, and chain flails.
+- **Hafted & Polearms:** Spears, pikes, halberds, glaives, and quarterstaves.
+- **Daggers & Wrestling:** The stout fighting dagger, knives swung by hand rather than thrown, unarmed strikes, a Shield Bash (see [[Shields|weapons]]), improvised close-quarters violence, and the check behind an unarmed Grapple. Its lighter, precision-thrusting cousin - the Stiletto - trains under Fencing Blades instead, below.
 - **Athletics:** Climbing, jumping, swimming, and forcing your way through - the check behind Shoving and the offensive side of Grappling.
-- **Armorer:** Maintaining and repairing armor - reduces your worn armor's Armor Penalty and restores lost AR during downtime (see [[Armor|armor]]).
 - **Survival:** Living off the land - foraging, tracking, weathering the elements, and finding safe camp on the road (see [[Traveling|traveling]]).
-- **Shields:** Fighting with a shield - the skill behind a shield-funded Oppose roll (see [[Oppose|maneuvers]]) and a shield's flat AR/Evasion bonus.
-- **Riding:** Controlling a mount, in and out of combat.
+- **Wayfaring:** Controlling a mount, in and out of combat, keeping it steady under fire or in a panic; and finding your way - reading terrain, weather, and stars to keep a party on course and out of trouble while traveling (see [[Traveling|traveling]]).
 
-**Adroitness & Subterfuge (DEX)**
+**Finesse, Reflex & Subterfuge (DEX)**
 
-- **Evasion:** Getting out of the way - sets your Passive Evasion and funds the Evasion-Skill leg of an Oppose roll (see [[Oppose|maneuvers]]), the same role Shields plays for a shield-funded Oppose roll.
-- **Acrobatics:** Balance, tumbling, and controlled falls - a defensive option against Shoving and Grappling, and the check for staying upright somewhere you shouldn't be.
-- **Stealth:** Moving unseen and unheard - the check behind Hiding (see [[Stealth & Light|stealth_and_light]]).
-- **Lockpicking:** Bypassing locks and mechanical security without the key.
-- **Sleight of Hand:** Manual dexterity used to deceive - palming, pickpocketing, and concealing small objects.
-- **Crafting:** Making, modifying, and repairing mundane gear and tools - everything Armorer doesn't cover.
+- **Fencing Blades:** Rapiers, estocs, stilettos, and other fast, precise thrusting blades - agility and timing over raw power, so this Skill trains under DEX rather than joining the rest of melee under STR.
+- **Ranged:** Shortbows and longbows, light and heavy crossbows, and every black-powder firearm (one-handed pistols, two-handed long guns, and the largest heavy firearms).
+- **Thrown:** Throwing axes, javelins, darts, knives, and slings.
+- **Acrobatics:** Balance, tumbling, and controlled falls - a deliberate feat of body control, not a reflex. The static defense against Shoving and Grappling (Athletics governs the offensive side of both, see above), and the check for staying upright somewhere you shouldn't be.
+- **Subterfuge:** Manual trickery and moving unseen in a single Skill - bypassing locks and mechanical security without the key, the sleight of hand behind palming, pickpocketing, and concealing small objects, and moving unseen and unheard - the check behind Hiding (see [[Stealth & Light|stealth_and_light]]). Specializing in one mode (lockpicking, sleight of hand, or stealth) instead of all of them at once is a Feat choice, not a Skill investment (see [[Skill Feats|skill_feats]]).
+- **Crafting:** Making, modifying, and repairing gear, tools, and armor alike - restores lost AR/Guard during downtime (see [[Armor|armor]]), on top of everything else worth building or fixing by hand. Doesn't touch Armor Penalty - see [[Broken In|general_feats]] for that.
 - **Perception:** Noticing what's easy to miss - hidden creatures, traps, and details in your surroundings; also the check that resists being Surprised.
 
 ### Knowledge Skills
 
-**Intellectual (MIND)**
+**Intellect, Education & Reasoning (MIND)**
 
-- **Alchemy:** Brewing oils, bombs, and salves from harvested ingredients (see [[Alchemy|alchemy]]).
-- **Enchanting:** Binding a magical effect from an Enchantment Scroll onto nonmagical gear - the ritual behind Enchanted Weapons (see Itemization in [[Per Level Advancement|progression_&_rewards]]).
-- **Spell Crafting:** Designing custom spells from the Three-Part Formula (see [[Spell Crafting|spell_crafting]]) - a flavor-driven, advanced alternative to the fixed spell lists, not a shortcut to extra power.
-- **Historic Lore:** Knowledge of past events, lineages, and old conflicts.
+- **Thaumaturgy:** The practical, technical side of magic in a single Skill - brewing oils, bombs, and salves from harvested ingredients (see [[Alchemy|alchemy]]), binding a magical effect from an Enchantment Scroll onto nonmagical gear (see Itemization in [[Per Level Advancement|progression_&_rewards]]), and designing custom spells from the Three-Part Formula (see [[Spell Crafting|spell_crafting]]) - distinct from actually casting a school, which lives under ARC or FAI.
+- **Historic Lore:** Past events, lineages, and old conflicts.
 - **Medical Lore:** Treating wounds and illness - the check behind Patched Wounds and other field medicine (see [[Wounds & Survival|wounds_and_survival]]).
-- **Nature Lore:** Knowledge of flora, fauna, weather, and the natural world.
-- **Identify:** Recognizing what something actually is - appraising the value or authenticity of goods, art, and coin; spotting forgeries and fakes; and determining the nature of an unfamiliar substance, material, or object on sight.
+- **Nature Lore:** Flora, fauna, weather, and the natural world.
 
 **Arcane Schools (ARC)**
 
 - **Arcane Lore:** General knowledge of Arcane theory, history, and practice - recognizing a school's work without necessarily being able to cast it.
-- **Aeromancy:** Wind, atmospheric pressure, and the manipulation of air (see [[Aeromancy|aeromancy]]).
-- **Geomancy:** Stone, earth, and everything grounded (see [[Geomancy|geomancy]]).
-- **Hydromancy:** Water, ice, and everything that flows (see [[Hydromancy|hydromancy]]).
-- **Pyromancy:** Fire, in all its consuming, unforgiving forms (see [[Pyromancy|pyromancy]]).
+- **Aeromancy:** Wind and atmospheric pressure (see [[Aeromancy|aeromancy]]).
+- **Geomancy:** Stone and earth (see [[Geomancy|geomancy]]).
+- **Hydromancy:** Water and ice (see [[Hydromancy|hydromancy]]).
+- **Pyromancy:** Consuming, unforgiving fire (see [[Pyromancy|pyromancy]]).
 - **Shadowmancy:** The absence of the other Arcane elements - muffled sound, cloaked movement, and striking from nothing (see [[Shadowmancy|shadowmancy]]).
+
+Each Arcane school is now its own Skill: your rank in a given school funds that school's Spell Modifier and gates Spell Access for it alone (see [[Magic Overview|magic_overview]]) - a Pyromancer and a Shadowmancer are training two genuinely separate Skills, not splitting ranks in one.
 
 **Divine Schools (FAI)**
 
 - **Religious Lore:** Knowledge of faiths, deities, and doctrine across Ressam.
-- **Benediction:** Divine judgment - smiting, rebuking, and enforcing a god's will through righteous fury (see [[Benediction|benediction]]).
-- **Invocation:** Severing a sliver of your own soul into an independent Familiar - power bought with self-mutilation (see [[Invocation|invocation]]).
+- **Benediction:** Judgment - smiting, rebuking, and enforcing a god's will through righteous fury (see [[Benediction|benediction]]).
+- **Invocation:** A Familiar bound from a severed sliver of your own soul (see [[Invocation|invocation]]).
 - **Necration:** Death, decay, and the threshold between life and oblivion (see [[Necration|necration]]).
-- **Cultivation:** Vitality itself - its flow, transfer, and transformation (see [[Cultivation|cultivation]]).
-- **Subjugation:** Petitioning with borrowed or stolen conviction instead of your own (see [[Subjugation|subjugation]]).
+- **Cultivation:** Vitality - its flow, transfer, and transformation (see [[Cultivation|cultivation]]).
+- **Subjugation:** Borrowed or stolen conviction (see [[Subjugation|subjugation]]).
+
+Each Divine school is now its own Skill: your rank in a given school governs Rite Mastery rerolls and gates Spell Access for it alone (see [[Magic Overview|magic_overview]]) - petitioning Benediction and petitioning Necration draw on two separate Skills, not one shared pool.
 
 ### Social Skills
 
-**Socialising & Interaction (CHA)**
+**Socialising, Manipulation & Interaction (CHA)**
 
-- **Persuasion:** Convincing someone honestly - appeals to reason, self-interest, or goodwill.
-- **Deception:** Convincing someone through misdirection or outright lies - the check behind Feint.
-- **Intimidation:** Convincing someone through fear.
+- **Influence:** Convincing someone honestly - appeals to reason, self-interest, or goodwill.
+- **Manipulate:** Convincing someone through misdirection or outright lies - the check behind Feint.
+- **Intimidate:** Convincing someone through fear.
 - **Leadership:** Attracting, commanding, and retaining those who serve under you - Followers and Cohorts (see [[Leadership|leadership]]).
-- **Animal Handling:** Calming, commanding, and training animals.
-- **Insight:** Reading people - the static defense against Deception and Feint, and the check for spotting a lie or a hidden motive.
-- **Performance:** Holding an audience - music, oratory, acting, or any other performing art.
+- **Insight:** Reading people - the static defense against Manipulate and Feint, and the check for spotting a lie or a hidden motive.
+
+Animal Handling and Performance are no longer Skills - a mount's behavior under stress is now a Wayfaring check (see above), and holding an audience is handled as a ruling against the nearest fitting Skill rather than a dedicated one. Identify (appraising goods, spotting forgeries, recognizing an unfamiliar substance on sight) is likewise no longer a trained Skill.
 
 ---
 

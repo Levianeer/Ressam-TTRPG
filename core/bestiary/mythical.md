@@ -12,11 +12,11 @@ Singular, campaign-defining threats - not fielded in numbers, not tied to one co
 
 **Frequency:** Very Rare
 
-**Attributes:** STR 5, PRE 2, END 5, DEX 3, MIND 3, CHA 2, ARC 0, FAI 0
+**Attributes:** STR 5, DEX 2, MIND 3, ARC 0, FAI 0, CHA 2
 
-**Skills:** Brawling 5, Perception 3
+**Skills:** Daggers & Wrestling 5, Perception 3
 
-**Feats:** Tough (\+1 Wounds), Second Wind (reroll a failed Ward once; \+3 to STR/END Wards below half Wounds)
+**Feats:** Tough (\+1 Wounds), Second Wind (reroll a failed Ward once; \+3 to STR Ward below half Wounds)
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -24,7 +24,7 @@ Singular, campaign-defining threats - not fielded in numbers, not tied to one co
 
 **Wound Threshold:** 1 Wound (1-11), 2 Wounds (12-17), 3 Wounds (18+).
 
-**Wards:** STR 10, DEX 8, END 10, MIND 8
+**Wards:** STR 10, DEX 7, MIND 8
 
 **Reactions:** 2/round (refreshed at the start of *each* of its turns, not once per round - see Mythic Initiative, below). No Maneuver - a Wyrm doesn't Parry, Block, or Dodge; scale and bulk are its only defense.
 

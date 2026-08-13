@@ -71,7 +71,7 @@ def rate_encounter(monster_factories, trials=1000, label=None):
 # ---------------------------------------------------------------------------
 
 def make_mythic_wyrm():
-    return Build(name="Mythic Wyrm", STR=5, PRE=2, END=5, DEX=3, MIND=3, CHA=2,
+    return Build(name="Mythic Wyrm", STR=5, DEX=2, MIND=3, CHA=2,
                  weapon=WEAPONS["Bite"], weapon_skill=5, max_wounds=6, mythic_turns=3)
 
 

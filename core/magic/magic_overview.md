@@ -32,7 +32,7 @@ Mana is your magical fuel, shared between Arcane and Divine magic if you practic
 
 ### **Armor and Spellcasting**
 
-Armor Penalty applies to all Arcane spell rolls. Each rank in Armorer reduces the penalty by 1 (minimum 0). Divine's Petition Roll has no modifier for Armor Penalty to touch - see below.
+Armor Penalty applies to all Arcane spell rolls. The [[Broken In|general_feats]] Feat is the only way to reduce it - see [[Armor|armor]]. Divine's Petition Roll has no modifier for Armor Penalty to touch - see below.
 
 ---
 
@@ -40,9 +40,9 @@ Armor Penalty applies to all Arcane spell rolls. Each rank in Armorer reduces th
 
 ### **Spell Modifier (Arcane)**
 
-Arcane spells use a single modifier when you cast:
+Arcane spells use a single modifier when you cast, funded by that spell's own school Skill \- Aeromancy, Geomancy, Hydromancy, Pyromancy, or Shadowmancy, whichever the spell belongs to. Each school funds its own Spell Modifier independently; ranks in one say nothing about another.
 
-**Spell Modifier \= Magic School Skill \- Armor Penalty**
+**Spell Modifier \= \[the spell's school Skill\] \- Armor Penalty**
 
 Divine spells don't use a Spell Modifier at all - see Divine: The Petition Roll, below.
 
@@ -50,13 +50,13 @@ Divine spells don't use a Spell Modifier at all - see Divine: The Petition Roll,
 
 **Spell Attacks:** Some Arcane spells require you to hit a target's physical defenses \- dodging, reflexes, and positioning.
 
-**Roll:** 1d12 \+ Spell Modifier vs. target's **Evasion**
+**Roll:** 1d12 \+ Spell Modifier vs. target's **Evasion** \- a [[Contested Ward|core_rules]], same as any other Attribute-funded Passive Ward.
 
 **Spell Overcomes:** Some Arcane spells target a creature's mental fortitude, physical resilience, or force of will rather than their ability to dodge. You roll to overcome the target's Ward.
 
 **Roll:** 1d12 \+ Spell Modifier vs. target's Ward (5 \+ Attribute)
 
-A spell will specify which attribute it targets (e.g. "Roll vs. target's MIND Ward"). This is a [[Contested Check|core_rules]] \- the target's Ward is their static defensive score, not a roll.
+A spell will specify which attribute it targets (e.g. "Roll vs. target's MIND Ward"). This is a [[Contested Ward|core_rules]] too \- the target's Ward is their static defensive score, not a roll.
 
 **Critical Hits:** Spell Attacks can crit on a natural 12 (roll damage twice, take the higher result, per the Critical Hits rules in Combat). Spell Overcomes cannot crit \- their power lies in their effects, not raw damage.
 
@@ -73,14 +73,14 @@ No exceptions, no partial effect on a near-miss, and no crit on a natural 12 \- 
 
 ### **Rite Mastery (Divine Only)**
 
-If the roll itself never improves, what does investing in a Divine School actually buy you? Spell Access (below) is one answer - Skill Rank still gates which spells you can even learn. **Rite Mastery** is the other: your Divine School Skill Rank in a given school is how many times per Long Rest you may reroll a failed Petition Roll for a spell of that school.
+If the roll itself never improves, what does investing in a Divine school actually buy you? Spell Access (below) is one answer - Skill Rank still gates which spells you can even learn. **Rite Mastery** is the other: your rank in the relevant Divine school Skill (Benediction, Cultivation, Invocation, Necration, or Subjugation - whichever school the spell belongs to) is how many times per Long Rest you may reroll a failed Petition Roll cast from that school.
 
 - Spend 1 charge to reroll a failed Petition Roll. You must take the new result, even if it's worse.
 - Only one reroll per casting \- charges don't stack on the same roll.
-- Charges are tracked per school (a Rank 3 Benediction caster who's also Rank 1 in Cultivation has 3 Benediction charges and 1 Cultivation charge, not 4 of either).
+- Charges are tracked separately per school, not pooled - a character with Benediction 3 and Cultivation 1 has 3 Benediction charges and 1 Cultivation charge, and can't spend one school's charges rerolling another's Petitions.
 - Charges refresh only on a **Long Rest** \- not a Field Rest. This is deliberately scarcer than a Field Rest's partial Mana: Skill's technique only resets after real, sustained downtime.
 
-This is the split between the two stats that used to share a job: **FAI is how much your god gives you** when a Petition lands (the flat damage/effect bonus baked into most Divine spells) - **Skill is how many times you get to try again** when the first attempt doesn't. A dabbler and a specialist succeed at the same rate on any single roll; over the course of a Long Rest, the specialist's prayers fail far less often in practice, because they can afford to ask twice.
+This is the split between the two stats that used to share a job: **FAI is how much your god gives you** when a Petition lands (the flat damage/effect bonus baked into most Divine spells) - **your school Skill is how many times you get to try again** when the first attempt doesn't. A dabbler and a specialist succeed at the same rate on any single roll; over the course of a Long Rest, the specialist's prayers fail far less often in practice, because they can afford to ask twice.
 
 ### **Magic Damage**
 
@@ -148,7 +148,7 @@ Divine magic is limited by Mana alone, same as Arcane, and it recovers on the sa
 
 ### **Devotion Required**
 
-If you have any ranks in a Divine school, receiving a Rest's Mana requires performing your deity's specific devotional act (see [[Divine Overview|divine_overview]]'s Prayer Requirements) at some point during that Rest. Skip it, and you regain no Mana from that Rest at all \- even if you also practice Arcane, since there's a single shared Mana pool, not a separate Arcane portion sincerity can't touch.
+If you have any ranks in a Divine school Skill, receiving a Rest's Mana requires performing your deity's specific devotional act (see [[Divine Overview|divine_overview]]'s Prayer Requirements) at some point during that Rest. Skip it, and you regain no Mana from that Rest at all \- even if you also practice Arcane, since there's a single shared Mana pool, not a separate Arcane portion sincerity can't touch.
 
 This is no longer flavor text with no mechanical weight: Ressam's gods are real and provable, and a Divine caster who's genuinely stopped believing, or can't credibly perform their god's proof under the circumstances, gains no Mana from that Rest. A pure Arcane caster with no Divine ranks never triggers this at all. DM's call on what counts as genuine; err toward the player's stated intent unless they're plainly not even trying.
 

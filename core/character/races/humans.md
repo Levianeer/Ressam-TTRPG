@@ -17,8 +17,8 @@ Humanity is the most widespread and adaptable of the Artefolk, defined less by a
 
 ### **Features**
 
-**Adaptable:** Gain \+1 rank in any two different Skills of your choice, excluding weapon Skills (the Brawn & Melee and Finesse & Ranged categories).  
-**Indomitable Spirit:** You have 3 Indomitable points, which you regain after a Field Rest or Long Rest. Immediately after you make an Attribute or Skill roll but before the DM declares the outcome, you can spend any number of remaining Indomitable points to increase the die result by 1 per point spent (to the maximum roll of the die). This only affects the die result, not any modifiers, and does not count as a natural roll for the purpose of critical hits or other effects that require a specific natural die result.
+**Adaptable:** Gain \+1 rank in any two different Skills of your choice, excluding weapon Skills (Two-Handed Blades, Fencing Blades, Cleaving Blades, Hafted & Polearms, Daggers & Wrestling, Ranged, and Thrown).  
+**Steadfast:** You gain \+2 to Wards against being Frightened or Charmed.
 
 ---
 

@@ -7,19 +7,19 @@
 The Dwergaz are a race of stoic, earth-bound beings - cut, not born. Every Dwergaz was hewn by his clan's own rites from a living vein of stone, a son of the Great Mother and of no one else. The veins yield slowly, and fewer with each passing century, and everything the Dwergaz are follows from that arithmetic: a people who cannot replace their dead build machines to fall in their place, walls that outlast sieges, and wealth enough to make war against them unprofitable. Masters of craft and keepers of grudges, they value endurance over ephemeral glory, building not just fortresses but legacies. Though their gruff exteriors and xenophobic tendencies alienate outsiders, their subterranean cities thrive where trade, artistry, and vengeance intertwine - all beneath the rule of the Tor'Az Triumvirate, a guild-throne of unmatched industrial and military might.
 
 **Homeland:** Terrevault  
-**Starting Attributes:** \+1 END, \-1 CHA  
+**Starting Attributes:** \+1 STR, \-1 CHA  
 **Age:** Adult \~40, Lives to \~400  
 **Alignment:** Law  
 **Size:** Medium (4-5 ft)  
 **Base Speed:** 25 feet  
 **Starting Languages:** Khazduul, Plethic  
-**Starting Skills:** \+2 Crafting, \+1 in either Historic Lore or Perception
+**Starting Skills:** \+2 Crafting, \+1 in either any Lore Skill or Perception
 
 ### **Features**
 
-**Weapon Training:** You gain \+1 Hafted Weapons, and \+1 in Marksmanship.  
+**Weapon Training:** You gain \+1 Cleaving Blades, and \+1 Ranged.  
 **Darkvision:** You treat nonmagical darkness as dim light up to 60 ft.  
-**Dwarven Resilience:** You have \+3 to END Ward against poison and take half damage from poison.  
+**Dwarven Resilience:** You have \+3 to STR Ward against poison and take half damage from poison.  
 **Grudge Bearer:** Once per Field Rest or Long Rest, when a creature deals damage to you or an ally, harms your property, or breaks a formal agreement with you, you may declare a grudge against them (no action required). You gain \+2 to attack and damage rolls against your grudge target. The grudge ends when the target dies, or when you declare a new grudge. You can have only one grudge at a time.
 
 ---

@@ -7,19 +7,19 @@
 The Alsahli are a cursed reptilian race, their sleek, multi-eyed forms a testament to divine retribution for an ancient plunder that went too far. Once human, they now stalk the deserts as four-armed predators, their short frilled necks and spines marking them as both feared mercenaries and cultural pragmatists. Though their curse binds them to the scorching sands, they have turned survival into an art \- scavenging, trading, and selling their blades to the highest bidder, so long as the gold flows. Betray them, however, and the dunes will whisper your name to the vultures.
 
 **Homeland:** Lustralis  
-**Starting Attributes:** \+1 DEX, \+1 END, \-1 CHA  
+**Starting Attributes:** \+1 DEX, \+1 STR, \-1 CHA  
 **Age:** Adult \~15, Lives to \~100  
 **Alignment:** Neutral  
 **Size:** Medium (\~6 ft)  
 **Base Speed:** 30 feet, climbing speed 30 feet  
 **Starting Languages:** Zakhrafan, Plethic  
 **Starting Skills:** \+1 Survival, \+1 in either Athletics or Acrobatics  
-**Level Adjustment:** \+1
+**Race Tier:** D (Marked)
 
 ### **Features**
 
-**Cold-Blooded:** You have resistance to fire damage. When you take cold damage, make an END Ward (DC 16\) or your speed is halved until the end of your next turn.  
-**Four Arms:** You have a secondary pair of arms below your primary pair. These extra limbs can hold objects, perform simple tasks, draw or stow weapons, reload weapons, or be used for spells. You do not gain additional attacks beyond what your Feats or Features allow.  
+**Cold-Blooded:** You have resistance to fire damage. When you take cold damage, make a STR Ward (DC 16\) or your speed is halved until the end of your next turn.  
+**Four Arms:** You have a secondary pair of arms below your primary pair. These extra limbs can hold objects, perform simple tasks, draw or stow weapons, reload weapons, or be used for spells. You do not gain additional attacks beyond what your Feats or Features allow, and equipping more than two shields at once still runs into the Shield Cap (see [[Shields|weapons]]) - the extra hands let you hold them, not stack their Guard indefinitely.  
 **Desert Born:** You do not gain extra Trauma while in the desert. You only need 1 Ration per 2 days.
 
 ---

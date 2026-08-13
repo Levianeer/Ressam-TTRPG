@@ -7,14 +7,14 @@
 Born not of womb but of war, the Khoridae are flesh-forged monstrosities, the brutal legacy of God-King Khor and his blood-drenched ambition. More blasphemy than biology, they are neither wholly Orkh nor wholly beast, but something far more terrifying \- rage given shape, pain given voice, and despair given teeth. They are the apex predators of the Orkhaden war forges, unleashed only when slaughter is not enough.
 
 **Homeland:** Inggaz  
-**Starting Attributes:** \+1 STR, \+1 END, \-1 ARC, \-1 FAI  
+**Starting Attributes:** \+2 STR, \-1 ARC, \-1 FAI  
 **Age:** Adult \~14, Lives to \~60  
 **Alignment:** Law  
 **Size:** Large (8-9 ft tall, can squeeze through holes as Medium size)  
 **Base Speed:** 30 feet, climbing speed 30 feet  
 **Starting Languages:** Khorian  
-**Starting Skills:** \+2 Athletics, \+1 Intimidation  
-**Level Adjustment:** \+2
+**Starting Skills:** \+2 Athletics, \+1 Intimidate  
+**Race Tier:** C (Exotic)
 
 ### **Features**
 

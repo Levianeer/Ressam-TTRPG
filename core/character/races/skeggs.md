@@ -7,21 +7,21 @@
 Skeggs are wiry, sharp-eyed subterranean kin of the Orkhs, infamous for their cunning, adaptability, and brutal efficiency in the dark. While Orkhs rage and roar beneath war banners, Skeggs thrive in silence and shadow \- skirmishers, saboteurs, and poisoners who live and die by a different code of strength. They are frequently underestimated by surface folk for their small size and feline gait, but to their enemies, the name Skegg means ambush, venom, and vanishing before vengeance can be dealt.
 
 **Homeland:** Inggaz (underground)  
-**Starting Attributes:** \+1 DEX, \-1 END  
+**Starting Attributes:** \+1 DEX, \-1 STR  
 **Age:** Adult \~16, Lives to \~60  
 **Alignment:** Chaotic  
 **Size:** Small (3-4 ft)  
 **Base Speed:** 25 feet, climbing speed 25 feet  
 **Starting Languages:** Grazn  
-**Starting Skills:** \+1 Survival, \+1 Medical Lore  
-**Level Adjustment:** \+1
+**Starting Skills:** \+1 Survival, \+1 Nature Lore  
+**Race Tier:** C (Exotic)
 
 ### **Features**
 
 **Darkvision:** You treat nonmagical darkness as dim light up to 60 ft.  
 **Bristling Spines:** When you are hit by melee attack, you may use a Reaction to deal 1d4+DEX piercing damage to the attacker.  
-**Tunnel Fighter:** You have advantage on Stealth checks while underground. You can move through the space of any Medium or larger creature as if it were difficult terrain.  
-**Poisoned Quills:** Three times per Field Rest or Long Rest, you may coat one weapon with venom as a Minor Action. The next creature damaged by that weapon within 1 minute takes an additional 1d4 poison damage (no Ward) and must succeed on an END Ward DC 18 or be poisoned until the end of their next turn.
+**Tunnel Fighter:** You have advantage on Subterfuge checks while underground. You can move through the space of any Medium or larger creature as if it were difficult terrain.  
+**Poisoned Quills:** Three times per Field Rest or Long Rest, you may coat one weapon with venom as a Minor Action. The next creature damaged by that weapon within 1 minute takes an additional 1d4 poison damage (no Ward) and must succeed on a STR Ward DC 18 or be poisoned until the end of their next turn.
 
 ---
 

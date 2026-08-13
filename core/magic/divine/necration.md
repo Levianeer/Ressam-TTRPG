@@ -18,7 +18,7 @@ Necration is the manipulation of death, decay, and the threshold between life an
 
   - **Success:** The target’s armor degrades by 1 AR and they take 1d6+FAI necrotic damage. At the start of each of your turns while channeling, the effect continues automatically.
 
-- At the end of each of their turns, the target may attempt to fight off the rot by rolling 1d12 \+ END vs. your original Petition Roll total. On success, the spell ends.
+- At the end of each of their turns, the target may attempt to fight off the rot by rolling 1d12 \+ STR vs. your original Petition Roll total. On success, the spell ends.
 
 - If the target dies while afflicted by Creeping Rot, the rot immediately leaps to the nearest other hostile creature within 10 ft (no action required) and the channel continues on them \- your original Petition Roll already succeeded, so no new roll is needed.
 
@@ -48,8 +48,8 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Effect:** You rip the departing life force from a dying creature. Make a Petition Roll (DC 7) as you choose one effect:
 
 - **Success:**
-  - **Consume:** Regain Mana equal to half the creature's END (rounded down, minimum 1).
-  - **Transfer:** Grant an ally within 30 ft Mana equal to half the creature's END (rounded down, minimum 1) instead of yourself.
+  - **Consume:** Regain Mana equal to half the creature's STR (rounded down, minimum 1).
+  - **Transfer:** Grant an ally within 30 ft Mana equal to half the creature's STR (rounded down, minimum 1) instead of yourself.
   - **Bind:** Store the essence. You may release it within the next hour to cast the spell Raise Thrall with no Mana Cost (Must know the spell Raise Thrall).
 
 **Soul Rend \- Mana Cost 5**

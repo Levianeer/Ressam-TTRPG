@@ -119,7 +119,7 @@
   .card h3{ font-size:0.95rem; color:var(--muted); margin-top:0.8em; }
 
   .grid{ display:grid; gap:0.6em; }
-  .grid-attrs{ grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); }
+  .grid-attrs{ grid-template-columns:repeat(3,1fr); }
   .grid-stats{ grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); }
   .attr-box{ border:1px solid var(--line); border-radius:6px; padding:0.5em 0.7em; }
   .attr-box .name{ font-weight:700; display:flex; justify-content:space-between; }
@@ -167,7 +167,7 @@
   .note{ font-size:0.78rem; color:var(--muted); margin:0.3em 0; }
   textarea{ width:100%; min-height:4em; resize:vertical; }
   .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:1em; }
-  @media (max-width:700px){ .two-col{ grid-template-columns:1fr; } }
+  @media (max-width:700px){ .two-col{ grid-template-columns:1fr; } .grid-attrs{ grid-template-columns:1fr; } }
 
   #importFile{ display:none; }
 </style>
@@ -212,12 +212,19 @@
 
   <div class="card">
     <h2>Combat Stats</h2>
+
+    <h3>Resources</h3>
     <div class="grid grid-stats">
       <div class="stat-box">
         <div class="label">Mana</div>
         <div class="value"><span class="computed" id="out-manaMax">0</span></div>
         <div class="sub"><input type="number" name="manaCurrent" placeholder="cur"></div>
         <div class="note">Current Mana (Max includes Feat Bonus). 0 Mana + cast = death</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Slots</div>
+        <div class="value"><span class="computed" id="out-carryCurrent">0</span> / <span class="computed" id="out-carryMax">10</span></div>
+        <div class="note">Auto-sums Equipment tab Slots (worn/equipped items excluded)</div>
       </div>
       <div class="stat-box">
         <div class="label">Armor Rating</div>
@@ -228,42 +235,42 @@
       <div class="stat-box">
         <div class="label">Armor Penalty</div>
         <div class="value computed" id="out-armorPenalty">0</div>
-        <div class="note">Reduced 1:1 by Armorer skill rank</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Evasion</div>
-        <div class="value computed" id="out-evasion">5</div>
-        <div class="note">5 + Evasion Skill - Armor Penalty</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Oppose Bonus (Evasion)</div>
-        <div class="value computed" id="out-dodgeBonus">0</div>
-        <div class="note">Evasion Skill - Armor Penalty. Funds an Evasion Oppose roll: 1d12 + this vs. the attack roll</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Initiative Bonus</div>
-        <div class="value computed" id="out-initiative">0</div>
-        <div class="note">+1d12 when rolled</div>
+        <div class="note">Reduced by Broken In (Feats tab), -2 per time taken, max 3</div>
       </div>
       <div class="stat-box">
         <div class="label">Reactions/round</div>
         <div class="value computed" id="out-reactions">0</div>
         <div class="note">DEX 0-2: 1, DEX 3-4: 2, DEX 5: 3</div>
       </div>
+    </div>
+
+    <h3>Defenses</h3>
+    <p class="note">Evasion is passive - what an attack roll must beat to hit you at all. If it does, and you have a Reaction left, you can Oppose it instead of just eating the hit: roll 1d12 + whichever Oppose Bonus matches your declared Stance Funding (a flat STR Ward or DEX Ward below - no Skill, no ranks - or a Weapon Skill, using your weapon's specific Skill Total from the Skills tab). Shield Guard then softens a losing Oppose Margin, not AR or Evasion directly. See <em>maneuvers.md</em> for the full Stance/Oppose rules.</p>
+    <div class="grid grid-stats">
       <div class="stat-box">
-        <div class="label">Slots</div>
-        <div class="value"><span class="computed" id="out-carryCurrent">0</span> / <span class="computed" id="out-carryMax">10</span></div>
-        <div class="note">Auto-sums Equipment tab Slots (worn/equipped items excluded)</div>
+        <div class="label">Initiative Bonus</div>
+        <div class="value computed" id="out-initiative">0</div>
+        <div class="note">+1d12 when rolled</div>
       </div>
       <div class="stat-box">
-        <div class="label">Oppose Bonus (Shields)</div>
+        <div class="label">Evasion (Passive)</div>
+        <div class="value computed" id="out-evasion">5</div>
+        <div class="note">5 + DEX - Armor Penalty. What attacks must beat to hit you</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Oppose Bonus (DEX Ward)</div>
+        <div class="value computed" id="out-dodgeBonus">0</div>
+        <div class="note">DEX - Armor Penalty. Roll 1d12 + this to Oppose, if DEX Ward is your Funding</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Oppose Bonus (STR Ward)</div>
         <div class="value computed" id="out-blockBonus">0</div>
-        <div class="note">Funds a Shields Oppose roll: 1d12 + this vs. the attack roll</div>
+        <div class="note">STR score. Roll 1d12 + this to Oppose, if STR Ward is your Funding</div>
       </div>
       <div class="stat-box">
         <div class="label">Shield Guard</div>
         <div class="value computed" id="out-shieldAR">0</div>
-        <div class="note">Reduces a losing Oppose Margin. Drops by 2 at Short (except Buckler) and to 0 under Control - apply those at the table</div>
+        <div class="note">Reduces a losing Oppose Margin, any Funding. Drops by 2 at Short (except Buckler), 0 under Control</div>
       </div>
     </div>
   </div>
@@ -280,7 +287,7 @@
         <td class="computed" id="out-thresh3">14+</td>
       </tr></tbody>
     </table>
-    <p class="note">Wound Thresholds - damage remaining after AR, keyed to your END. Widens by +1 per END above 0.</p>
+    <p class="note">Wound Thresholds - damage remaining after AR, keyed to your STR. Widens by +1 per STR above 0.</p>
 
     <div class="grid grid-stats">
       <div class="stat-box">
@@ -310,9 +317,9 @@
         <div class="sub">
           <label style="font-size:0.7rem;color:var(--muted)">Clock&nbsp;</label>
           <input type="number" name="deathClock" min="0" style="width:3.6em;text-align:center">
-          <button type="button" class="btn-mini" id="btnDeathClockReset" title="Set Death Clock to your END">Reset</button>
+          <button type="button" class="btn-mini" id="btnDeathClockReset" title="Set Death Clock to your STR">Reset</button>
         </div>
-        <div class="note">At 0 Wounds: Death Clock starts at END, -1 each of your turns, 0 = death. Stabilization ends Dying.</div>
+        <div class="note">At 0 Wounds: Death Clock starts at STR, -1 each of your turns, 0 = death. Stabilization ends Dying.</div>
       </div>
     </div>
 
@@ -467,12 +474,12 @@
         <td>
           <select data-col="skill">
             <option value="">-</option>
-            <option>Blades</option>
-            <option>Hafted Weapons</option>
-            <option>Polearms</option>
-            <option>Brawling</option>
-            <option>Archery</option>
-            <option>Marksmanship</option>
+            <option>Two-Handed Blades</option>
+            <option>Cleaving Blades</option>
+            <option>Hafted & Polearms</option>
+            <option>Daggers & Wrestling</option>
+            <option>Fencing Blades</option>
+            <option>Ranged</option>
             <option>Thrown</option>
           </select>
         </td>
@@ -543,11 +550,17 @@
 <section class="tab-panel" id="tab-magic">
 
   <div class="card">
-    <h2>Magic Skills by School</h2>
-    <p class="note">Skill Total = Base + Mod, same as the Skills tab - ARC/FAI never contribute to the roll itself. Your Spell Modifier, used for Spell Attacks vs. Evasion and Spell Overcomes vs. Ward, is this Skill Total minus Armor Penalty.</p>
+    <h2>Magic Skills</h2>
+    <p class="note">Skill Total = Base + Mod, same as the Skills tab - ARC/FAI never contribute to the roll itself. Arcane and Divine resolve very differently: Arcane funds a per-school Spell Modifier used for Spell Attacks/Overcomes; Divine's Petition Roll is always flat 1d12 vs. DC 7 with no modifier at all - a Divine school's Skill Total instead sets Rite Mastery, reroll charges per Long Rest.</p>
+    <h3>Arcane - Spell Modifier</h3>
     <table>
-      <thead><tr><th>School</th><th>Attribute</th><th class="num-sm">Skill Total</th><th class="num-sm">Armor Penalty</th></tr></thead>
-      <tbody id="spellModBody"></tbody>
+      <thead><tr><th>School</th><th class="num-sm">Skill Total</th><th class="num-sm">Armor Penalty</th><th class="num-sm">Spell Modifier</th></tr></thead>
+      <tbody id="arcaneModBody"></tbody>
+    </table>
+    <h3>Divine - Petition Roll &amp; Rite Mastery</h3>
+    <table>
+      <thead><tr><th>School</th><th class="num-sm">Skill Total</th><th class="num-sm">Petition Roll</th><th class="num-sm">Rite Mastery Charges</th></tr></thead>
+      <tbody id="divineModBody"></tbody>
     </table>
   </div>
 
@@ -600,13 +613,13 @@
 
   <div class="card">
     <h2>Priorities</h2>
-    <p class="note">Assign A through E once each, no repeats. This sets your Level 1 Attribute/Skill Point pools, starting Feat count, highest Career Status tier, and how much Level Adjustment your Race choice covers for free.</p>
+    <p class="note">Assign A through E once each, no repeats. This sets your Level 1 Attribute/Skill Point pools, starting Feat count, highest Career Status tier, and which Race Tier(s) you may pick from.</p>
     <div class="grid grid-stats">
       <div class="field"><label>Attributes</label><select name="priority:attributes"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
       <div class="field"><label>Skills</label><select name="priority:skills"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
       <div class="field"><label>Career</label><select name="priority:career"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select><div class="note computed" id="out-careerTierNote"></div></div>
       <div class="field"><label>Feats</label><select name="priority:feats"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
-      <div class="field"><label>Race</label><select name="priority:race"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select><div class="note computed" id="out-raceLaNote"></div></div>
+      <div class="field"><label>Race</label><select name="priority:race"><option value="">-</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select><div class="note computed" id="out-raceTierNote"></div></div>
     </div>
     <p class="note" id="out-priorityWarning" style="display:none"></p>
   </div>
@@ -633,6 +646,7 @@
     <div class="grid grid-stats">
       <div class="field"><label>Max Wounds Bonus</label><input type="number" name="hpBonus" value="0"></div>
       <div class="field"><label>Max Mana Bonus</label><input type="number" name="manaBonus" value="0"></div>
+      <div class="field"><label>Broken In (times taken, max 3)</label><input type="number" name="brokenIn" value="0" min="0" max="3"></div>
     </div>
     <h3>Feat Notes / Prerequisites</h3>
     <textarea name="featNotes"></textarea>
@@ -702,25 +716,21 @@
 
   var ATTRIBUTES = [
     {key:'STR', name:'Strength'},
-    {key:'PRE', name:'Precision'},
-    {key:'END', name:'Endurance'},
     {key:'DEX', name:'Dexterity'},
+    {key:'CHA', name:'Charisma'},
     {key:'MIND', name:'Mind'},
     {key:'ARC', name:'Arcane'},
-    {key:'FAI', name:'Faith'},
-    {key:'CHA', name:'Charisma'}
+    {key:'FAI', name:'Faith'}
   ];
 
   // Mirrors attributes_and_skills.md's Skill Categories
   var SKILL_CATEGORIES = [
-    {attr:'STR', category:'Brawn & Melee', skills:['Blades','Hafted Weapons','Polearms','Brawling']},
-    {attr:'PRE', category:'Finesse & Ranged', skills:['Archery','Marksmanship','Thrown']},
-    {attr:'END', category:'Defense & Survival', skills:['Athletics','Armorer','Survival','Shields','Riding']},
-    {attr:'DEX', category:'Adroitness & Subterfuge', skills:['Evasion','Acrobatics','Stealth','Lockpicking','Sleight of Hand','Crafting','Perception']},
-    {attr:'MIND', category:'Intellectual', skills:['Alchemy','Enchanting','Spell Crafting','Historic Lore','Medical Lore','Nature Lore','Identify']},
+    {attr:'STR', category:'Brawn, Endurance & Melee', skills:['Two-Handed Blades','Cleaving Blades','Hafted & Polearms','Daggers & Wrestling','Athletics','Survival','Wayfaring']},
+    {attr:'DEX', category:'Finesse, Reflex & Subterfuge', skills:['Fencing Blades','Ranged','Thrown','Acrobatics','Subterfuge','Crafting','Perception']},
+    {attr:'MIND', category:'Intellect, Education & Reasoning', skills:['Thaumaturgy','Historic Lore','Medical Lore','Nature Lore']},
     {attr:'ARC', category:'Arcane Schools', skills:['Arcane Lore','Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy']},
     {attr:'FAI', category:'Divine Schools', skills:['Religious Lore','Benediction','Invocation','Necration','Cultivation','Subjugation']},
-    {attr:'CHA', category:'Socialising & Interaction', skills:['Persuasion','Deception','Intimidation','Leadership','Animal Handling','Insight','Performance']}
+    {attr:'CHA', category:'Socialising, Manipulation & Interaction', skills:['Influence','Manipulate','Intimidate','Leadership','Insight']}
   ];
 
   var ARCANE_SCHOOLS = ['Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy'];
@@ -747,7 +757,7 @@
   var PRIORITY_SKILL_POINTS = {A:18, B:15, C:12, D:9, E:6};
   var PRIORITY_FEATS = {A:4, B:3, C:2, D:1, E:0};
   var PRIORITY_CAREER_TIER = {A:'Any Status tier', B:'Up to Upper-Middle', C:'Up to Middle', D:'Up to Lower-Middle', E:'Low only'};
-  var PRIORITY_RACE_LA = {A:'LA +2 free', B:'LA +1 free', C:'LA +0 free (pay full cost)', D:'LA 0 races only', E:'Artefolk only (Aelves, Dwergaz, Humans, Orkhs)'};
+  var PRIORITY_RACE_TIER = {A:'Any Race Tier', B:'Up to Tier B (Uncanny)', C:'Up to Tier C (Exotic)', D:'Up to Tier D (Marked)', E:'Tier E only (Aelves, Dwergaz, Humans, Orkhs)'};
 
   // Attribute Cap climbs with level regardless of priority: 3 (1-3), 4 (4-7), 5 (8+)
   function attrCapForLevel(level){ return level >= 8 ? 5 : (level >= 4 ? 4 : 3); }
@@ -892,8 +902,8 @@
       return;
     }
     if (e.target.id === 'btnDeathClockReset'){
-      var endTotal = num(document.getElementById('attrTotal-END').textContent);
-      document.querySelector('[name="deathClock"]').value = endTotal;
+      var strTotal = num(document.getElementById('attrTotal-STR').textContent);
+      document.querySelector('[name="deathClock"]').value = strTotal;
       recompute();
       return;
     }
@@ -979,21 +989,21 @@
       ar += num(tr.querySelector('[data-col="ar"]').value);
       armorPenaltyRaw += num(tr.querySelector('[data-col="penalty"]').value);
     });
-    var armorerRanks = skillTotals['Armorer'] || 0;
-    var armorPenalty = Math.max(0, armorPenaltyRaw - armorerRanks);
+    var brokenInTimes = Math.min(3, Math.max(0, num(document.querySelector('[name="brokenIn"]').value)));
+    var armorPenalty = Math.max(0, armorPenaltyRaw - brokenInTimes * 2);
     document.getElementById('out-ar').textContent = ar;
     document.getElementById('out-armorPenalty').textContent = armorPenalty;
 
     // Shield readouts (armor.md "Using Shields" / maneuvers.md "Shield Guard")
-    // Maneuver's old Parry/Block/Dodge rolls were unified into one Oppose Reaction
-    // 2026-08-09 (hema-combat-design.md); dodgeBonus/blockBonus below keep their old
-    // variable names, but now mean the Evasion-Skill-funded and Shields-funded Oppose
-    // rolls respectively (Evasion re-added as a trained Skill 2026-08-10, replacing
-    // the bare-DEX Oppose leg). Shields dropped AR Bonus, Evasion/Oppose Bonus, and
-    // Penalty entirely in favor of a single Guard stat (also 2026-08-09) - Guard
-    // reduces a losing Oppose Margin rather than adding to AR or Evasion, and its
-    // Short/Control interactions are situational (see armor.md), so this only sums
-    // the base value; it does not feed Evasion or the Evasion-funded Oppose roll below.
+    // Block and Evasion stopped being trained Skills in the 6-Attribute rework
+    // (attributes_and_skills.md) - dodgeBonus/blockBonus below keep their old
+    // variable names, but now mean the flat, untrained DEX Ward- and STR Ward-
+    // funded Oppose legs respectively, not a Skill Total lookup.
+    // Shields dropped AR Bonus, Evasion/Oppose Bonus, and Penalty entirely in favor
+    // of a single Guard stat (2026-08-09) - Guard reduces a losing Oppose
+    // Margin rather than adding to AR or Evasion, and its Short/Control interactions
+    // are situational (see armor.md), so this only sums the base value; it does not
+    // feed Evasion or the DEX Ward-funded Oppose roll below.
     var shieldGuard = 0;
     document.querySelectorAll('#tbl-shields [data-row]').forEach(function(tr){
       if (tr.querySelector('[data-col="equipped"]').checked){
@@ -1001,28 +1011,28 @@
       }
     });
     document.getElementById('out-shieldAR').textContent = shieldGuard;
-    var shieldsSkill = skillTotals['Shields'] || 0;
-    document.getElementById('out-blockBonus').textContent = shieldsSkill;
+    var blockSkill = attrTotals['STR'] || 0;
+    document.getElementById('out-blockBonus').textContent = blockSkill;
 
     // 4. Single-pass derived stats
-    // Wounds baseline is by Size (wounds_and_survival.md), not END - Small 2 / Medium 3 / Large 4.
+    // Wounds baseline is by Size (wounds_and_survival.md), not STR - Small 2 / Medium 3 / Large 4.
     var sizeMult = num(document.querySelector('[name="size"]').value) || 1;
     var woundsBySize = {0.5:2, 1:3, 2:4};
     var woundsBaseline = woundsBySize.hasOwnProperty(sizeMult) ? woundsBySize[sizeMult] : 3;
     var hpMax = woundsBaseline + num(document.querySelector('[name="hpBonus"]').value);
     var manaMax = attrTotals['MIND']*2 + num(document.querySelector('[name="manaBonus"]').value);
-    var carryMax = Math.floor((attrTotals['END'] + attrTotals['STR']) * sizeMult);
+    var carryMax = Math.floor((2 * attrTotals['STR']) * sizeMult);
 
-    // Wound Thresholds (wounds_and_survival.md): base 1-6/7-12/13+ at END 0, +1 to every edge per END.
-    var threshEdge1 = attrTotals['END'] + 6;
-    var threshEdge2 = attrTotals['END'] + 12;
+    // Wound Thresholds (wounds_and_survival.md): base 1-6/7-12/13+ at STR 0, +1 to every edge per STR.
+    var threshEdge1 = attrTotals['STR'] + 6;
+    var threshEdge2 = attrTotals['STR'] + 12;
     document.getElementById('out-thresh1').textContent = '1-' + threshEdge1;
     document.getElementById('out-thresh2').textContent = (threshEdge1 + 1) + '-' + threshEdge2;
     document.getElementById('out-thresh3').textContent = (threshEdge2 + 1) + '+';
-    var evasionSkill = skillTotals['Evasion'] || 0;
+    var evasionSkill = attrTotals['DEX'] || 0;
     var evasion = 5 + evasionSkill - armorPenalty;
     var dodgeBonus = evasionSkill - armorPenalty;
-    var initiative = Math.floor((attrTotals['PRE'] + attrTotals['DEX'])/2);
+    var initiative = attrTotals['DEX'];
     var reactions = attrTotals['DEX'] >= 5 ? 3 : (attrTotals['DEX'] >= 3 ? 2 : 1);
 
     document.getElementById('out-hpMax').textContent = hpMax;
@@ -1102,37 +1112,51 @@
     });
 
     // 6. Magic school Skill Total per school - same Base + Mod logic as the
-    // Skills tab's Total column (magic_overview.md's Spell Modifier is this
-    // value minus Armor Penalty, shown separately above; ARC/FAI no longer
-    // contribute to the roll itself). Only schools with at least 1 Base
-    // skill point (i.e. trained) are listed here.
-    var spellModBody = document.getElementById('spellModBody');
-    spellModBody.innerHTML = '';
-    var trainedSchools = [];
-    function collectTrainedSchool(school, attrKey){
-      if ((skillBase[school] || 0) < 1) return;
-      trainedSchools.push({
-        school: school,
-        attr: attrKey,
-        skillTotal: skillTotals[school] || 0
+    // Skills tab's Total column. Arcane and Divine diverge from here per
+    // magic_overview.md: Arcane's Spell Modifier is Skill Total minus Armor
+    // Penalty; Divine's Petition Roll is a flat 1d12 vs. DC 7 with no
+    // modifier at all, and Skill Total instead sets Rite Mastery reroll
+    // charges per Long Rest. Only schools with at least 1 Base skill point
+    // (i.e. trained) are listed.
+    var arcaneModBody = document.getElementById('arcaneModBody');
+    var divineModBody = document.getElementById('divineModBody');
+    arcaneModBody.innerHTML = '';
+    divineModBody.innerHTML = '';
+    var trainedArcane = ARCANE_SCHOOLS.filter(function(s){ return (skillBase[s]||0) >= 1; });
+    var trainedDivine = DIVINE_SCHOOLS.filter(function(s){ return (skillBase[s]||0) >= 1; });
+    if (trainedArcane.length === 0){
+      var emptyArcTr = el('tr', {});
+      var emptyArcTd = el('td', {colspan:'4', class:'note'});
+      emptyArcTd.appendChild(text('No Arcane training - invest at least 1 skill point in an Arcane school (Skills tab) to see it here.'));
+      emptyArcTr.appendChild(emptyArcTd);
+      arcaneModBody.appendChild(emptyArcTr);
+    } else {
+      trainedArcane.forEach(function(school){
+        var skillTotal = skillTotals[school] || 0;
+        var spellMod = skillTotal - armorPenalty;
+        var tr = el('tr', {'data-school-row':school});
+        tr.appendChild(el('td', {}, [text(school)]));
+        tr.appendChild(el('td', {class:'computed'}, [text(String(skillTotal))]));
+        tr.appendChild(el('td', {class:'computed'}, [text(String(armorPenalty))]));
+        tr.appendChild(el('td', {class:'computed'}, [text((spellMod>=0?'+':'') + spellMod)]));
+        arcaneModBody.appendChild(tr);
       });
     }
-    ARCANE_SCHOOLS.forEach(function(s){ collectTrainedSchool(s, 'ARC'); });
-    DIVINE_SCHOOLS.forEach(function(s){ collectTrainedSchool(s, 'FAI'); });
-    if (trainedSchools.length === 0){
-      var emptyTr = el('tr', {});
-      var emptyTd = el('td', {colspan:'4', class:'note'});
-      emptyTd.appendChild(text('No magic training - invest at least 1 skill point in a magic school skill (Skills tab) to see it here.'));
-      emptyTr.appendChild(emptyTd);
-      spellModBody.appendChild(emptyTr);
+    if (trainedDivine.length === 0){
+      var emptyDivTr = el('tr', {});
+      var emptyDivTd = el('td', {colspan:'4', class:'note'});
+      emptyDivTd.appendChild(text('No Divine training - invest at least 1 skill point in a Divine school (Skills tab) to see it here.'));
+      emptyDivTr.appendChild(emptyDivTd);
+      divineModBody.appendChild(emptyDivTr);
     } else {
-      trainedSchools.forEach(function(r){
-        var tr = el('tr', {'data-school-row':r.school});
-        tr.appendChild(el('td', {}, [text(r.school)]));
-        tr.appendChild(el('td', {}, [text(r.attr)]));
-        tr.appendChild(el('td', {class:'computed'}, [text(String(r.skillTotal))]));
-        tr.appendChild(el('td', {class:'computed'}, [text(String(armorPenalty))]));
-        spellModBody.appendChild(tr);
+      trainedDivine.forEach(function(school){
+        var skillTotal = skillTotals[school] || 0;
+        var tr = el('tr', {'data-school-row':school});
+        tr.appendChild(el('td', {}, [text(school)]));
+        tr.appendChild(el('td', {class:'computed'}, [text(String(skillTotal))]));
+        tr.appendChild(el('td', {class:'computed'}, [text('1d12 vs. DC 7')]));
+        tr.appendChild(el('td', {class:'computed'}, [text(String(skillTotal) + ' / Long Rest')]));
+        divineModBody.appendChild(tr);
       });
     }
 
@@ -1205,7 +1229,7 @@
     var skillPriority = PRIORITY_SKILL_POINTS.hasOwnProperty(priorityVals.skills) ? priorityVals.skills : 'C';
     var featsPriority = PRIORITY_FEATS.hasOwnProperty(priorityVals.feats) ? priorityVals.feats : 'C';
     document.getElementById('out-careerTierNote').textContent = priorityVals.career ? PRIORITY_CAREER_TIER[priorityVals.career] : '';
-    document.getElementById('out-raceLaNote').textContent = priorityVals.race ? PRIORITY_RACE_LA[priorityVals.race] : '';
+    document.getElementById('out-raceTierNote').textContent = priorityVals.race ? PRIORITY_RACE_TIER[priorityVals.race] : '';
 
     ensureFeatSlots();
 

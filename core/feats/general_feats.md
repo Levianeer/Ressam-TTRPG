@@ -19,7 +19,7 @@ You've drilled yourself to always be scanning - exits, hands, distances - the sa
 
 Some people just take a beating better - a thicker hide, a stubborn constitution, a body that's absorbed enough punishment to know how to shrug more of it off.
 
-**Prerequisites:** END 3+  
+**Prerequisites:** STR 3+  
 **Benefit:** You have \+1 maximum Wounds.
 
 ---
@@ -28,8 +28,8 @@ Some people just take a beating better - a thicker hide, a stubborn constitution
 
 Adrenaline doesn't care that you're hurt. Fighters half-dead from blood loss have carried allies out of worse.
 
-**Prerequisites:** END 4+, \+2 ranks in Athletics  
-**Benefit:** When you fail a Ward check, you may choose to reroll it and must use the new result. Additionally, while you are below half your maximum Wounds, you gain \+3 to all STR and END Wards.
+**Prerequisites:** STR 4+, \+2 ranks in Athletics  
+**Benefit:** When you fail a Ward check, you may choose to reroll it and must use the new result. Additionally, while you are below half your maximum Wounds, you gain \+3 to your STR Ward.
 
 ---
 
@@ -39,6 +39,18 @@ You've been in enough fights that your gut works out the answer before your head
 
 **Prerequisites:** \+2 ranks in Perception or Insight  
 **Benefit:** You have 3 Instinct points. When you make an attack roll, Skill check, or Ward check, you may spend 1 Instinct point to reroll a die and choose which result to use. You regain all Instinct points after a Field Rest or Long Rest.
+
+---
+
+## Bearing Armor
+
+### **Broken In**
+
+Armor that's been drilled in stops fighting you back - the stiff give of new leather and the bite of a strap in the wrong place fade the more hours you spend wearing it into shape.
+
+**Prerequisites:** None  
+**Benefit:** Reduce your Armor Penalty by 2 (minimum 0).  
+**Special:** You may select this feat up to 3 times (maximum \-6 total) - even fully invested, a Rigid piece's Penalty never fully cancels on the heaviest armors (Full Plate, Half-Plate), which is the point: some cost always survives the training.
 
 ---
 

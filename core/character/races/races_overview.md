@@ -6,19 +6,15 @@
 
 ---
 
-### **Power Tiers**
+### **Race Tiers**
 
-Every race falls into one of three tiers, which sets its Level Adjustment (LA) and the rough size of its racial kit. A race's kit should read as roughly interchangeable in power with the other races sharing its tier - if it doesn't, that's a bug to fix, not a feature to keep.
+Every race falls into one of five tiers, **A** through **E**, matching the five Priorities from character creation (Step 2) - your Race priority is the lowest tier you may pick from; anything at or below that letter is open to you (an **A** can play any race, an **E** is restricted to the four common Artefolk - see [[Character Creation|character_creation]]'s Step 2). There's no separate cost beyond that gate - once your priority opens a tier, every race in it is free to take. A race's kit should read as roughly interchangeable in power with the other races sharing its tier - if it doesn't, that's a bug to fix, not a feature to keep.
 
-- **Mundane (LA 0):** the four common Artefolk (Aelves, Dwergaz, Humans, Orkhs). A handful of modest, unconditional bonuses - no single feature should read as a real combat or resource swing on its own.
-- **Exotic (LA \+1):** mortals marked by a curse or affliction, still living an otherwise mortal life underneath it (Alsahli, Feliids, Skeggs, Tembels, Varulf). One genuine resource-gated power spike, balanced by a real mechanical drawback, not just flavor text.
-- **Extraordinary (LA \+2):** beings that were never mortal to begin with - forged, willed, dreamed, or spawned directly into existence (Khoridae, Dzinari, Golems, Tapio, Daemons, Strygs). A heavier kit built around one major ability plus strong passives, balanced by a drawback that's genuinely costly.
-
-### **Level Adjustment**
-
-Your LA counts toward your total level but does not grant skill points, attributes, or other progression benefits.
-
-**Example:** A LA \+2 character at total level 5 has the progression of a level 3 character, plus their racial features.
+- **E - Mundane:** the four common Artefolk (Aelves, Dwergaz, Humans, Orkhs). A handful of modest, unconditional bonuses - no single feature should read as a real combat or resource swing on its own.
+- **D - Marked:** a light supernatural touch (Alsahli, Feliids, Tembels). Small always-on or conditional bonuses - no death-cheat, no transformation, no major resource-gated feature.
+- **C - Exotic:** one real resource-gated feature, efficient rather than flashy, offset by a real cost somewhere in the kit or Attributes (Dzinari, Khoridae, Skeggs).
+- **B - Uncanny:** a heavier kit built around one standout feature - a death-cheat, a lifesteal engine, a near-unkillable escape or host mechanic (Daemons, Strygs) - balanced by a genuine mechanical drawback.
+- **A - Extraordinary:** the heaviest kits in the game, built around a major ability plus strong passives (Golems, Tapio, Varulf), balanced by a drawback that's genuinely costly.
 
 ---
 

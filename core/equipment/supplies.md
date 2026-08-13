@@ -41,7 +41,7 @@ The world uses three major currencies, each dominant in different regions.
 
 Essential equipment for travel, exploration, and survival.
 
-**How Slots Work:** Your carrying capacity is Slots (STR \+ END, see [[Slots|carrying_and_resting]]), checked when you decide what to carry \- not on every purchase. Tiny items (small tools, single-use trinkets) pack 3 to a Slot; a Belt Pouch holds 3 Tiny items for free. Standard gear costs 1 Slot, Heavy gear 2, Bulky gear 3, and coins are 100 per Slot. Torches, Candles, Rations, and Oil flasks are all sold and carried in bundles of 3 that cost 1 Slot per bundle.
+**How Slots Work:** Your carrying capacity is Slots (2 Ã— STR, see [[Slots|carrying_and_resting]]), checked when you decide what to carry \- not on every purchase. Tiny items (small tools, single-use trinkets) pack 3 to a Slot; a Belt Pouch holds 3 Tiny items for free. Standard gear costs 1 Slot, Heavy gear 2, Bulky gear 3, and coins are 100 per Slot. Torches, Candles, Rations, and Oil flasks are all sold and carried in bundles of 3 that cost 1 Slot per bundle.
 
 ### **Travel & Shelter**
 
@@ -182,13 +182,13 @@ Specialized equipment for crafting and professional work. When a career grants â
 
 | Tool Set                |   Cost   | Slots |       Primary Skill      |
 |:------------------------|:--------:|:-----:|:------------------------:|
-| Alchemist's supplies    | 30 Crown |   2   |          Alchemy         |
-| Armorer's tools         | 18 Crown |   2   |          Armorer         |
-| Calligrapher's supplies | 15 Crown |   1   | Historic Lore, Deception |
+| Alchemist's supplies    | 30 Crown |   2   |          Thaumaturgy     |
+| Armorer's tools         | 18 Crown |   2   |          Crafting        |
+| Calligrapher's supplies | 15 Crown |   1   | Historic Lore, Manipulate |
 | Blacksmith's tools      | 20 Crown |   2   |     Crafting (metal)     |
 | Carpenter's tools       | 15 Crown |   2   |      Crafting (wood)     |
-| Jeweler's tools         | 25 Crown |   1   | Crafting (fine), Identify |
-| Thieves' tools          | 30 Crown |   1   | Required for Lockpicking |
+| Jeweler's tools         | 25 Crown |   1   | Crafting (fine), Historic Lore |
+| Thieves' tools          | 30 Crown |   1   | Subterfuge (Lockpicking) |
 
 ### **Tool Proficiency**
 
@@ -264,7 +264,7 @@ Attempting skilled work **without proper tools:**
 **Factors affecting price:**
 
 - Local demand (weapons sell better near conflict)  
-- Merchant relationship (Persuasion checks)  
+- Merchant relationship (Influence checks)  
 - Item rarity (unusual items may find no buyers)  
 - Time available (rushed sales get worse prices)
 

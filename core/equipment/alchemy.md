@@ -45,7 +45,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 **Requirements:** Alchemist's Supplies, 1 Oil \+ 1 Powder \+ 1 Catalyst
 
-**Check:** 1d12 \+ Alchemy vs. DC \- set by the rarity of the ingredients used (see Quality Tiers, above). A recipe's Prep Tier below sets time only, not difficulty \- a Quick recipe brewed with Rare ingredients is exactly as hard to pull off as an Elaborate one, just faster to attempt.
+**Check:** 1d12 \+ Thaumaturgy vs. DC \- set by the rarity of the ingredients used (see Quality Tiers, above). A recipe's Prep Tier below sets time only, not difficulty \- a Quick recipe brewed with Rare ingredients is exactly as hard to pull off as an Elaborate one, just faster to attempt.
 
 | Prep Tier | Time       | Examples                          |
 |:----------|:-----------|:-----------------------------------|
@@ -55,7 +55,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 **Note:** All ingredients (excluding Catalysts) must be of the same quality \- one DC applies to the whole craft.
 
-**Batch Size:** 1 \+ (Alchemy Skill ÷ 2\) concoctions on a Success or Critical Success
+**Batch Size:** 1 \+ (Thaumaturgy Skill ÷ 2\) concoctions on a Success or Critical Success
 
 **Degree of Success:** Compare your roll to the DC as a Margin, resolved the same way as the Oppose Reaction's Margin table ([[Oppose|maneuvers]]) \- same breakpoints, same tie-favors-you rule.
 
@@ -81,7 +81,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 - Success by 5+: 1d4 Uncommon ingredients  
 - Critical: 1 Rare ingredient
 
-**Harvesting:** Monsters may drop ingredients (Medical/Nature Lore DC 12-18)
+**Harvesting:** Monsters may drop ingredients (Nature Lore DC 12-18)
 
 ---
 
@@ -141,7 +141,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Venomshade (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Nat’khor  
-- **Effect:** Coat weapon (Minor Action). Next hit deals bonus poison damage, END Ward DC 12 or poisoned for 1 minute  
+- **Effect:** Coat weapon (Minor Action). Next hit deals bonus poison damage, STR Ward DC 12 or poisoned for 1 minute  
   - **Common:** **2d6 \+ Bonus** poison damage  
   - **Uncommon: 2d6 \+ Bonus** poison damage  
   - **Rare:** **2d6 \+ Bonus** poison damage  

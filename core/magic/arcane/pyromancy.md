@@ -14,7 +14,7 @@ Pyromancy is destruction incarnate. Fire consumes, purifies, and transforms \- a
 - **Casting Time:** Reaction (when you or an ally within 15 ft is about to be hit by a melee attack)
 - **Range:** 15 ft
 - **Duration:** Instant
-- **Effect:** The attacker's weapon or limb flares with sudden heat. Make a spell overcome roll vs. the attacker's END Ward.
+- **Effect:** The attacker's weapon or limb flares with sudden heat. Make a spell overcome roll vs. the attacker's STR Ward.
 
   - **Overcome:** They take 1d8 \+ ARC fire damage and must roll their attack roll again, taking the lowest result.
   - **Resist:** They take 1d4 fire damage.

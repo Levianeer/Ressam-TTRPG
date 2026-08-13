@@ -3,9 +3,9 @@ _Armor is your primary defense against physical attacks. In Ressam, armor absorb
 **Key Concepts:**
 
 - **Armor Rating/AR:** How much damage your armor absorbs per hit  
-- **Penalty:** How much the armor restricts agility, Stealth, and spellcasting  
+- **Penalty:** How much the armor restricts agility, Subterfuge, and spellcasting  
 - **Durability:** Your armor's current condition (starts equal to AR, decreases when hit)
-- **Carrying Slots:** Worn armor and an equipped shield cost no Slots. The Slots column applies only to armor or a shield carried as a spare, not currently worn/equipped. A carried Pavise costs 2 Slots regardless of its bulk.
+- **Carrying Slots:** Worn armor costs no Slots. The Slots column applies only to armor carried as a spare, not currently worn. See [[Weapons|weapons]] for shield Slots.
 
 ---
 
@@ -81,15 +81,15 @@ Your AR determines how much damage your armor absorbs from each hit.
 Penalty represents how armor restricts movement. It applies to:
 
 - **Acrobatics skill checks** (dodging, balance)
-- **Stealth skill checks** (moving unseen and unheard)
+- **Subterfuge skill checks** (moving unseen and unheard)
 - **Spellcasting rolls** (both attack rolls and Ward DCs)
-- **Evasion and Evasion Skill-funded Oppose calculations**
+- **Evasion and your DEX Ward-funded Oppose roll**
 
 Penalty is derived directly from an armor's AR, not tracked separately: **Rigid armor's Penalty equals its AR**, while **Flexible armor's Penalty is half its AR (rounded down)**. A Rigid piece always costs you something no matter how it's built - that's the tradeoff for wearing plate.
 
-The **Armorer skill** reduces penalty: every rank in Armorer reduces your armor's penalty by 1 (minimum 0).
+Skill investment doesn't reduce Penalty - the **[[Broken In|general_feats]]** Feat is the only way to, and it's capped: \-2 per time taken, up to 3 times (\-6 total).
 
-**Example:** Kira wears Full Plate (Penalty \-8) and has Armorer 5, the maximum. Her effective penalty is still \-3 \- Rigid armor never fully cancels, even at maxed Armorer.
+**Example:** Kira wears Full Plate (Penalty \-8) and has taken Broken In 3 times, the maximum. Her effective penalty is still \-2 \- Rigid armor never fully cancels, even fully invested.
 
 ### **Natural Armor**
 
@@ -125,20 +125,20 @@ After four hits, her chain mail only provides AR 1\. She's taken 7 Wound Damage,
 
 When armor reaches 0 durability, it provides no protection.
 
-- **Flexible armor** can still be field-repaired using the Armorer skill (see Repairing Armor, below) - cloth, leather, and rings can be patched and re-riveted no matter how battered.
+- **Flexible armor** can still be field-repaired using the Crafting skill (see Repairing Armor, below) - cloth, leather, and rings can be patched and re-riveted no matter how battered.
 - **Rigid armor** cannot be field-repaired once broken. It must be taken to a blacksmith for reforging (see Professional Repair, below).
 
 ---
 
 ## Repairing Armor
 
-### **Field Repair (Armorer Skill)**
+### **Field Repair (Crafting Skill)**
 
-Characters with the Armorer skill can repair armor during downtime, using **Armorer's Tools** (see [[Supplies|supplies]]). Repairing restores **durability equal to your Armorer rank, per hour spent working** (an untrained character, 0 Ranks, restores nothing).
+Characters with the Crafting skill can repair armor during downtime, using **Armorer's Tools** (see [[Supplies|supplies]]). Repairing restores **durability equal to your Crafting rank, per hour spent working** (an untrained character, 0 Ranks, restores nothing).
 
 This time can be spent during any Rest (Short, Field, or Long) without losing that Rest's other benefits, or as dedicated downtime outside of a Rest.
 
-**Example:** Kira (Armorer 3) repairs her brigandine (AR 6), currently at 2 durability. At 3 durability per hour, she needs 2 hours - it just fits inside a 2-hour Short Rest, with plenty of room to spare in a Field or Long Rest. A rank 5 master would finish the same repair in under an hour; an untrained companion with the same tools restores nothing.
+**Example:** Kira (Crafting 3) repairs her brigandine (AR 6), currently at 2 durability. At 3 durability per hour, she needs 2 hours - it just fits inside a 2-hour Short Rest, with plenty of room to spare in a Field or Long Rest. A rank 5 master would finish the same repair in under an hour; an untrained companion with the same tools restores nothing.
 
 **Limitations:**
 
@@ -148,7 +148,7 @@ This time can be spent during any Rest (Short, Field, or Long) without losing th
 
 ### **Professional Repair**
 
-Any armor can instead be taken to a blacksmith for reforging - useful if nobody in the party has Armorer ranks, and mandatory for Rigid armor that's reached 0 durability, which cannot be field-repaired at all:
+Any armor can instead be taken to a blacksmith for reforging - useful if nobody in the party has Crafting ranks, and mandatory for Rigid armor that's reached 0 durability, which cannot be field-repaired at all:
 
 - **Cost:** Half the armor's original price  
 - **Time:** Typically 1-3 days depending on armor complexity  
@@ -167,43 +167,6 @@ Any armor can instead be taken to a blacksmith for reforging - useful if nobody 
 
 ---
 
-## Shields
-
-Shields don't add protection the way armor does - instead, they make losing an exchange survivable rather than costly. A shield's whole identity is one number: **Guard**.
-
-### **Shield Table**
-
-| Shield | Guard | Properties | Price | Slots |
-| :---- | :---: | :---- | :---: | :---: |
-| Buckler | 1 | Keeps full Guard at Short (see Guard and Measure, below) | 40 Crown | 1 |
-| Heater Shield | 2 | \- | 80 Crown | 2 |
-| Pavise | 3 | Deployable, \-5 ft speed | 120 Crown | 2 |
-
-### **Shield Descriptions**
-
-**Buckler** is a small fist-held shield used for parrying rather than blocking. Popular in civilian dueling and among those who value mobility. Its Guard is the lowest of the three, but it's the only shield light enough to still do its full work at wrestling range - see Guard and Measure, below.
-
-**Heater Shield** is the iconic knightly shield, shaped like a clothing iron. Solid, dependable coverage for a soldier who still needs to move and swing a weapon. Often bears heraldic devices.
-
-**Pavise** is a large rectangular shield originally designed to protect crossbowmen while reloading, offering the most Guard of any shield.  
-**Major Action:** Can be Deployed as standing cover, providing Cover to one creature directly behind it. The user cannot move while the shield is Deployed, but is also counted as in Cover.
-
-### **Using Shields**
-
-Guard requires a shield equipped in one hand - since a shield occupies a hand, it's only ever paired with a one-handed weapon (or nothing) in the other, never a Two-Handed weapon.
-
-Guard is passive: it applies whenever you have a shield equipped, regardless of which Skill funds your Oppose roll (see [[Oppose|maneuvers]]) - a shield strapped to your arm still catches a blow whether you're actively trained to use it or not.
-
-**Guard and Measure:** A shield is an obstruction, not protection, once someone's inside it - Guard drops by 2 (minimum 0) whenever the current measure is Short, except the Buckler, small enough to still do its full work that close in.
-
-**Guard and Control:** While an opponent has Control on you (see [[Oppose|maneuvers]]), your Guard is 0 against them - your shield's been hooked, pinned, or pressed out of line, until you spend a win clearing it.
-
-### **Shield Durability**
-
-Shields share durability with your armor - they don't track separately. A shield's Guard degrades by 1 each time it actually reduces a losing Oppose margin (see [[Oppose|maneuvers]]) - a won exchange never touches the shield, so Guard only wears down at the moment it does its job. Guard cannot drop below 0, and is restored by the same Armorer repair rules as armor (see Repairing Armor, above) - when you repair your armor, you repair your equipped shield's Guard simultaneously.
-
----
-
 ## Armor Selection Guide
 
 ### **By Character Role**
@@ -213,7 +176,7 @@ Shields share durability with your armor - they don't track separately. A shield
 | **Melee Fighter** | Brigandine or Breastplate | High AR; Breastplate's Rigid Penalty (equal to its full AR) is steep, but Evasion still scales normally |
 | **Archer/Crossbowman** | Gambeson or Buff Coat | Low penalty for aiming |
 | **Spellcaster** | None or Gambeson | Penalty hurts spellcasting |
-| **Skirmisher/Scout** | Gambeson | Low penalty keeps Stealth usable |
+| **Skirmisher/Scout** | Gambeson | Low penalty keeps Subterfuge usable |
 | **Tank** | Full Plate \+ Pavise | Maximum AR, and the highest Guard to soften whatever gets through anyway |
 | **Duelist** | Buff Coat \+ Buckler | Mobility, and a shield whose Guard still works at Short range |
 
@@ -224,9 +187,9 @@ Shields share durability with your armor - they don't track separately. A shield
 Higher AR means better damage absorption but worse:
 
 - Evasion (harder to be missed)  
-- Oppose funded by DEX (harder to actively evade)  
+- Oppose funded by a DEX Ward (harder to actively evade)  
 - Spellcasting (lower attack rolls and Ward DCs)  
-- Stealth (harder to move unseen and unheard)
+- Subterfuge (harder to move unseen and unheard)
 
 **Martial characters** generally favor higher AR \- they rely on armor to survive, not evasion.
 

@@ -16,11 +16,14 @@ Modeling choices, made explicit up front rather than buried:
 
   - **Dynamic Oppose funding, not a fixed per-Build "Style."** maneuvers.md's
     Oppose table says a defender picks "whichever fits what you're defending
-    with when you react" - so `best_oppose()` re-evaluates Weapon
-    Skill/Shields Skill/DEX fresh on every single defended attack (legality,
-    Measure mismatch, crit-bypass) and always picks the best legal option.
-    This is a more faithful read of the actual rule than the old fixed-Style
-    modeling was.
+    with when you react" - so `best_oppose()` re-evaluates the Weapon
+    Skill/STR Ward/DEX Ward options fresh on every single defended attack
+    (legality, Measure mismatch, crit-bypass) and always picks the best
+    legal option. This is a more faithful read of the actual rule than a
+    fixed-Style model would be. Block and Evasion are no longer trained
+    Skills (see core/character/attributes_and_skills.md's 2026 rework) - the
+    STR/DEX Ward options are flat Attribute rolls now, no rank field on
+    `Build` gates them beyond having the right equipment.
   - **Measure is stateless across a fight.** The real rule tracks one shared
     measure per *pair* of engaged combatants, moved by the Shift Effect or
     the Shift Measure Minor Action. A random-retarget group fight (no
@@ -105,13 +108,13 @@ def roll_dice_string(spec):
     return sum(random.randint(1, int(d)) for _ in range(int(n))) + bonus
 
 
-def wounds_from_damage(after_ar, END):
-    """END-keyed Wound Threshold bands (wounds_and_survival.md)."""
+def wounds_from_damage(after_ar, STR):
+    """STR-keyed Wound Threshold bands (wounds_and_survival.md)."""
     if after_ar <= 0:
         return 0
-    if after_ar <= 6 + END:
+    if after_ar <= 6 + STR:
         return 1
-    if after_ar <= 12 + END:
+    if after_ar <= 12 + STR:
         return 2
     return 3
 
@@ -126,7 +129,7 @@ def reactions_of(build):
 
 
 def initiative(build):
-    return roll_d12() + (build.PRE + build.DEX) // 2
+    return roll_d12() + build.DEX
 
 
 # ---------------------------------------------------------------------------
@@ -137,7 +140,7 @@ def initiative(build):
 class Weapon:
     name: str
     dice: str          # weapon's own damage only - Attribute is added at resolution time
-    attribute: str      # 'STR' or 'PRE' - which Attribute funds this weapon's Attack/damage
+    attribute: str      # 'STR' or 'DEX' - which Attribute funds this weapon's Attack/damage
     crit_floor: int = 12   # natural roll that starts a crit threat; 12 = no expansion
     band: str = "grip"      # 'grip' / 'near' / 'far' - Measure Bands table (weapons.md)
     ranged: bool = False
@@ -161,17 +164,14 @@ class Shield:
 @dataclass
 class Build:
     name: str
-    STR: int = 0
-    PRE: int = 0
-    END: int = 0
-    DEX: int = 0
+    STR: int = 0  # absorbs the old Endurance
+    DEX: int = 0  # absorbs the old Precision
     MIND: int = 0
     CHA: int = 0
     ARC: int = 0
     FAI: int = 0
     weapon: Weapon = None
-    weapon_skill: int = 0
-    shields_skill: int = 0
+    weapon_skill: int = 0  # rank in whichever of the 5 STR/2 DEX weapon Skills matches `weapon`
     shield: Shield = None
     armor_ar: int = 0
     armor_penalty: int = 0
@@ -179,7 +179,7 @@ class Build:
     mythic_turns: int = 1  # 1 = normal creature; >1 = Mythic Initiative(X)
 
     def attribute_value(self):
-        return self.STR if self.weapon.attribute == "STR" else self.PRE
+        return self.STR if self.weapon.attribute == "STR" else self.DEX
 
     @property
     def evasion(self):
@@ -239,7 +239,9 @@ def _init_state(builds):
 def _legal_oppose_options(defender, attacker, crit):
     """Returns a list of (funding_name, bonus, disadvantage) tuples - every
     Oppose option `defender` could legally fund against this attack right
-    now, per the Oppose table (maneuvers.md)."""
+    now, per the Oppose table (maneuvers.md): a trained Weapon Skill, or a
+    flat, untrained STR Ward / DEX Ward (Block and Evasion no longer exist
+    as Skills - see maneuvers.md's Funding table)."""
     options = []
 
     if not crit and not attacker.weapon.ranged and defender.weapon_skill >= 1:
@@ -249,12 +251,11 @@ def _legal_oppose_options(defender, attacker, crit):
 
     has_shield = defender.shield is not None
     has_two_handed_block = defender.weapon.two_handed
-    if not crit and defender.shields_skill >= 1 and (has_shield or has_two_handed_block):
+    if not crit and (has_shield or has_two_handed_block):
         if not attacker.weapon.ranged or has_shield:
-            options.append(("shields", defender.shields_skill, False))
+            options.append(("str_ward", defender.STR, False))
 
-    if defender.DEX >= 1:
-        options.append(("dex", defender.DEX - defender.armor_penalty, False))
+    options.append(("dex_ward", defender.DEX - defender.armor_penalty, False))
 
     return options
 
@@ -318,7 +319,7 @@ def _apply_raw_hit(attacker, defender, atk_total, natural, crit, st, halved=Fals
         raw //= 2
     current_ar = st.armor[id(defender)]
     after_ar = max(0, raw - current_ar)
-    st.wounds[id(defender)] -= wounds_from_damage(after_ar, defender.END)
+    st.wounds[id(defender)] -= wounds_from_damage(after_ar, defender.STR)
     st.armor[id(defender)] = max(0, current_ar - 1)  # every connecting hit degrades armor 1
 
 
@@ -479,23 +480,23 @@ def run_fight(side_a, side_b, max_rounds=30):
 # ---------------------------------------------------------------------------
 
 WEAPONS = {
-    "Dagger": Weapon("Dagger", "1d4", "PRE", crit_floor=9, band="grip"),
-    "Knife": Weapon("Knife", "1d4", "PRE", crit_floor=10, band="grip"),
+    "Dagger": Weapon("Dagger", "1d4", "DEX", crit_floor=9, band="grip"),
+    "Knife": Weapon("Knife", "1d4", "DEX", crit_floor=10, band="grip"),
     "Shortsword": Weapon("Shortsword", "1d6+1", "STR", crit_floor=10, band="grip"),
-    "Scimitar": Weapon("Scimitar", "1d6", "PRE", crit_floor=10, band="grip"),
+    "Scimitar": Weapon("Scimitar", "1d6", "DEX", crit_floor=10, band="grip"),
     "Broadsword": Weapon("Broadsword", "1d10", "STR", crit_floor=12, band="grip"),
     "Mace": Weapon("Mace", "1d8", "STR", crit_floor=12, band="grip"),
     "Club": Weapon("Club", "1d6", "STR", crit_floor=12, band="grip"),
     "Longsword": Weapon("Longsword", "1d6+2", "STR", crit_floor=11, band="near"),
     "Greatsword": Weapon("Greatsword", "1d12", "STR", crit_floor=11, band="near", two_handed=True),
-    "Rapier": Weapon("Rapier", "1d8", "PRE", crit_floor=10, band="near"),
+    "Rapier": Weapon("Rapier", "1d8", "DEX", crit_floor=10, band="near"),
     "Spear": Weapon("Spear", "1d6", "STR", crit_floor=12, band="near"),
     "Quarterstaff": Weapon("Quarterstaff", "1d6", "STR", crit_floor=12, band="near"),
     "Pike": Weapon("Pike", "1d8", "STR", crit_floor=12, band="far", two_handed=True),
     "Halberd": Weapon("Halberd", "1d10", "STR", crit_floor=12, band="far", two_handed=True),
     "Glaive": Weapon("Glaive", "2d4", "STR", crit_floor=11, band="far", two_handed=True),
-    "Shortbow": Weapon("Shortbow", "1d6", "PRE", crit_floor=10, ranged=True, two_handed=True),
-    "Longbow": Weapon("Longbow", "1d8", "PRE", crit_floor=11, ranged=True, two_handed=True),
+    "Shortbow": Weapon("Shortbow", "1d6", "DEX", crit_floor=10, ranged=True, two_handed=True),
+    "Longbow": Weapon("Longbow", "1d8", "DEX", crit_floor=11, ranged=True, two_handed=True),
     "Punch": Weapon("Punch", "1d4", "STR", crit_floor=12, band="grip"),
     "Bite": Weapon("Bite", "1d8", "STR", crit_floor=12, band="grip"),
 }
@@ -521,17 +522,20 @@ ARMORS = {
 
 # ---------------------------------------------------------------------------
 # BASELINE_PC - the one fixed reference build every rating is made against.
-# Level 1, roughly legal against power_score.LEVEL_TABLE[1]'s 18 Attribute /
-# 12 Skill budget (not fit to the exact cap - a plain measuring stick, not a
-# built-out character): STR 3, PRE 2, END 3, DEX 2, MIND 1, CHA 1 (sum 12).
-# Broadsword + Blades 3, Mail Shirt + Heater Shield/Shields 2. No Feats.
+# Level 1, roughly legal against power_score.LEVEL_TABLE[1]'s point budget
+# (not fit to the exact cap - a plain measuring stick, not a built-out
+# character): STR 3, DEX 2, MIND 1, CHA 1 - STR/DEX already fold in the old
+# END 3/PRE 2 (floor-averaged per the 6-Attribute rework, see
+# core/character/attributes_and_skills.md). Broadsword + Cleaving Blades 3,
+# Mail Shirt + Heater Shield (STR Ward now covers what Block Skill 2 used to
+# fund - no separate rank needed). No Feats.
 # ---------------------------------------------------------------------------
 
 def make_baseline_pc():
     return Build(
-        name="Baseline PC", STR=3, PRE=2, END=3, DEX=2, MIND=1, CHA=1,
+        name="Baseline PC", STR=3, DEX=2, MIND=1, CHA=1,
         weapon=WEAPONS["Broadsword"], weapon_skill=3,
-        shields_skill=2, shield=SHIELDS["Heater Shield"],
+        shield=SHIELDS["Heater Shield"],
         armor_ar=ARMORS["Mail Shirt"][0], armor_penalty=ARMORS["Mail Shirt"][1],
         max_wounds=3,
     )

@@ -11,14 +11,14 @@ Every entry lists exactly what a GM needs at the table and nothing else - Slots,
 - **Frequency:** How likely a GM is to actually field this creature in its home region - see Frequency, below.
 - **Attributes / Skills:** Only Skills relevant to this NPC's kit are listed; anything unlisted is 0 (untrained).
 - **Wounds:** Size baseline (Medium \= 3 for every entry here) plus any Feat that adds to it.
-- **Wound Threshold:** How much damage-after-AR it takes to inflict 1/2/3 Wounds in one hit, keyed to this NPC's own END - see [[Wounds and Survival|wounds_and_survival]]. Given as three bands (e.g. `1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+)`) so a GM doesn't have to cross-reference that table's END row mid-fight.
+- **Wound Threshold:** How much damage-after-AR it takes to inflict 1/2/3 Wounds in one hit, keyed to this NPC's own STR - see [[Wounds and Survival|wounds_and_survival]]. Given as three bands (e.g. `1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+)`) so a GM doesn't have to cross-reference that table's STR row mid-fight.
 - **Evasion \= 5 \+ DEX − Armor Penalty**, same formula as [[Core Rules|core_rules]].
 - **AR:** Current Armor Rating from worn armor (\+ shield bonus, while Blocking - see [[Armor|armor]]).
 - **Attack:** The bonus to add to 1d12 on an attack roll ([[Making an Attack|combat]]) - `-` means the attack rolls 1d12 alone (untrained: 0 Skill Ranks add nothing).
 - **Damage:** Weapon Damage \+ Attribute, before the target's AR is subtracted.
-- **Wards:** Passive Ward scores (`5 + Attribute`) for the Attributes Basic Moves actually call on - STR, DEX, END, MIND.
+- **Wards:** Passive Ward scores (`5 + Attribute`) for the Attributes Basic Moves actually call on - STR, DEX, MIND.
 - **Reactions:** How many per round ([[Action Economy|combat]]), and which Maneuver rolls (or Counterattack) this NPC actually qualifies for ([[Maneuver|maneuvers]]).
-- **Movement:** Walking Speed in feet, plus any secondary Speed (flying, climbing) it has. Armor Penalty never reduces this - it restricts Acrobatics, Stealth, spellcasting, and Evasion, but not raw Speed (see [[Armor|armor]]).
+- **Movement:** Walking Speed in feet, plus any secondary Speed (flying, climbing) it has. Armor Penalty never reduces this - it restricts Acrobatics, Subterfuge, spellcasting, and Evasion, but not raw Speed (see [[Armor|armor]]).
 - **Initiative:** The bonus to add to 1d12 ([[Initiative|combat]]).
 - **Mythic Initiative / signature abilities:** [[Mythical|mythical]] entries only - see that page's own note before pricing one.
 - **Fielding Guide:** Where present, a rough per-Level headcount ceiling for a 4-PC party - simulated with `tools/bestiary_sim.py`/`tools/rest_pressure_sim.py`, not eyeballed. Read these as a floor, not literal odds: the simulation can't see retreat, positioning, mid-fight healing, or spellcasting, and all of those favor the party in real play. "Past this count, treat it as a genuine threat" is the intended read, not "this many equals this percent chance of winning." Only a handful of entries have one so far - its absence elsewhere isn't a claim that headcount doesn't matter, just that the count hasn't been run yet.

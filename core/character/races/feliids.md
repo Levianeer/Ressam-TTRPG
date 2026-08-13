@@ -14,7 +14,7 @@ The Feliids are a cursed offshoot of the Aelfen, once a solemn and tradition-bou
 **Base Speed:** 35 feet  
 **Starting Languages:** Tagaraal, Plethic  
 **Starting Skills:** \+2 Acrobatics, \+1 Perception  
-**Level Adjustment:** \+1
+**Race Tier:** D (Marked)
 
 ### **Features**
 
@@ -22,8 +22,7 @@ The Feliids are a cursed offshoot of the Aelfen, once a solemn and tradition-bou
 **Natural Weapons:** You gain a Claw attack that deals 1d4+DEX slashing damage (finesse).  
 **Catfall:** You take half damage from falls, you do not go prone when taking falling damage.  
 **Feline Agility:** Once per turn, when you take the Move action, you may double your movement speed for that turn. You cannot use this feature again until you move 0 feet on one of your turns.  
-**Nine Lives:** Once per Long Rest, when you would be reduced to 0 Wounds, or fail a Ward that would kill or incapacitate you, you may instead survive at 1 Wound. You gain 1 Trauma.  
-**Reckless Instinct:** You have Disadvantage on Wards against the Taunting Basic Move.
+**Magnetic Charm:** You gain \+1 to Influence and Manipulate.
 
 ---
 

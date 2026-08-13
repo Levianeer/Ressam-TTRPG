@@ -8,9 +8,9 @@ These feats focus on combat prowess, weapon mastery, and tactical battlefield ab
 
 Point control. Years of drilling the same cut or thrust until your blade finds the same gap in a guard every time.
 
-**Prerequisites:** \+3 ranks in Weapon Skill  
-**Benefit:** Your critical hit range with a chosen weapon skill increases by 1 (12 becomes 11-12 on 1d12).  
-**Special:** This feat applies to only one weapon skill category. You may select this feat multiple times; each time it applies to a different weapon skill.
+**Prerequisites:** \+3 ranks in the Skill governing the chosen weapon group (Two-Handed Blades, Fencing Blades, Cleaving Blades, Hafted & Polearms, Daggers & Wrestling, Ranged, or Thrown)  
+**Benefit:** Your critical hit range with a chosen weapon group increases by 1 (12 becomes 11-12 on 1d12).  
+**Special:** This feat applies to only one weapon group. You may select this feat multiple times; each time it applies to a different weapon group.
 
 ---
 
@@ -18,7 +18,7 @@ Point control. Years of drilling the same cut or thrust until your blade finds t
 
 You've learned exactly where a breastplate gives way to mail, and where mail gives way to skin - the same close, deliberate bladework armored duelists have always relied on to finish a grapple.
 
-**Prerequisites:** \+3 ranks in Brawling Skill  
+**Prerequisites:** \+3 ranks in Daggers & Wrestling  
 **Benefit:** As part of a melee attack with a Dagger or Knife, you may target the gaps in a foe's armor instead of the plate itself. This attack's damage bypasses half the target's AR (rounded down) \- but the attack does not degrade their armor at all, since a blade that slips through the seams doesn't dent anything.
 
 ---
@@ -29,7 +29,7 @@ You've learned exactly where a breastplate gives way to mail, and where mail giv
 
 You keep your hands steady, your powder dry, and your reloading drill free of wasted motion - bracing the barrel and holding still is what actually makes a matchlock accurate.
 
-**Prerequisites:** \+2 ranks in Marksmanship  
+**Prerequisites:** \+2 ranks in Ranged  
 **Benefit:** As a Minor Action, provided you have not moved this turn, gain Advantage on your next firearm attack this turn. Your Speed is reduced to 0 until the end of the current turn.
 
 ---
@@ -38,7 +38,7 @@ You keep your hands steady, your powder dry, and your reloading drill free of wa
 
 You make your shots count against those clad in metal and steel - the old gunner's trick of double-shotting a barrel to punch through plate that a single charge won't.
 
-**Prerequisites:** \+3 ranks in Marksmanship  
+**Prerequisites:** \+3 ranks in Ranged  
 **Benefit:** You fill your firearm with double the normal powder. The next attack with that firearm uses two pieces of ammunition instead of one but damage bypasses half the target's AR, and this attack does not degrade the target's armor at all (overriding Armor-Piercing's usual 2 AR degradation). Additionally the misfire chance is doubled for that attack.
 
 ---
@@ -49,7 +49,7 @@ You make your shots count against those clad in metal and steel - the old gunner
 
 You know where the big vessels run close to the skin - throat, wrist, inner thigh - and a target who can't properly defend themselves can't stop you reaching one.
 
-**Prerequisites:** DEX 4+, \+3 ranks in Stealth, \+3 ranks in any weapon Skill  
+**Prerequisites:** DEX 4+, \+3 ranks in Subterfuge, \+3 ranks in any STR or DEX weapon Skill  
 **Benefit:** Once per turn, when you hit with a melee weapon attack that has Advantage, the target starts Bleeding (see [[Conditions|wounds_and_survival]]) in addition to any damage the hit deals. If the target is already Bleeding, this doesn't stack \- use whichever Bleed value is higher.  
 **Note:** You may trigger this on an opportunity attack if you have advantage on it, same as the advantage requirement itself.
 
@@ -61,8 +61,19 @@ You know where the big vessels run close to the skin - throat, wrist, inner thig
 
 Your hands move with blinding speed - the fast presentation dueling schools drilled into students so a blade was never a beat behind the decision to use it.
 
-**Prerequisites:** DEX 3+, PRE 3+  
+**Prerequisites:** DEX 4+  
 **Benefit:** You can draw or sheathe any number of weapons as part of making an attack (free action). When combat begins, you act first in any initiative tie.
+
+---
+
+## Guard & Stance
+
+### **Adaptive Guard**
+
+A trained fighter can read a changing bind and adjust their grip and footing mid-exchange, not just at the top of a round - a shift in stance most fighters only manage between engagements.
+
+**Prerequisites:** \+3 ranks in any weapon Skill (STR or DEX)  
+**Benefit:** Once per round, you may Oppose using a different Funding option than the one your current Stance declared ([[Stance|maneuvers]]) - a Weapon Skill, a STR Ward, or a DEX Ward - provided you're still otherwise eligible for it (equipment, Measure). That Oppose roll has Disadvantage.
 
 ---
 
@@ -72,7 +83,7 @@ Your hands move with blinding speed - the fast presentation dueling schools dril
 
 When an opponent closes inside a polearm's reach, the answer isn't to back away - it's to choke up on the haft and fight at the new range instead, the same way you'd handle a quarterstaff.
 
-**Prerequisites:** \+2 ranks in Polearms  
+**Prerequisites:** \+2 ranks in Hafted & Polearms  
 **Benefit:** As a Free Action, you may shorten your grip on a Polearm with the Reach property. While gripped this way, you may target adjacent creatures with it (ignoring the property's usual restriction, see [[Weapons|weapons]]), but it's treated as Short Band - losing Closing the Distance and its Weapon-Skill-funded Oppose interaction ([[Reach|positioning]]) - until you return to a full grip (also a Free Action).
 
 ---
@@ -83,7 +94,7 @@ When an opponent closes inside a polearm's reach, the answer isn't to back away 
 
 Grip a longsword by the blade instead of the hilt and it stops being a cutting weapon - short enough to control at close quarters, and precise enough to fight the bind instead of the distance.
 
-**Prerequisites:** \+3 ranks in Blades  
+**Prerequisites:** \+3 ranks in Two-Handed Blades  
 **Benefit:** As a Free Action, you may re-grip a two-handed Blades weapon into this shortened stance, gaining Advantage on Disarm and Shove attempts made with it ([[Basic Moves|basic_moves]]). If the weapon has the Versatile property, you lose its one-handed option until you return to a normal grip (also a Free Action) - a shortened grip needs both hands regardless.
 
 ---
@@ -94,7 +105,7 @@ Grip a longsword by the blade instead of the hilt and it stops being a cutting w
 
 A trained grappler doesn't just hold a body down - they isolate a limb, and a limb caught in a lock doesn't keep hold of anything.
 
-**Prerequisites:** \+3 ranks in Athletics or Brawling  
+**Prerequisites:** \+3 ranks in Athletics or Daggers & Wrestling  
 **Benefit:** When you successfully Grapple a creature ([[Basic Moves|basic_moves]]), you may also force them to drop one held item of your choice, as though you had also used Disarm \- no additional check required. Additionally, a creature attempting to escape a Grapple you're maintaining takes \-2 to that Contested Check.
 
 ---
@@ -105,8 +116,8 @@ A trained grappler doesn't just hold a body down - they isolate a limb, and a li
 
 The oldest trick in organized warfare: a shield line holds because no one in it fights alone.
 
-**Prerequisites:** \+2 ranks in Shields  
-**Benefit:** While you are adjacent to at least one ally who is also wielding a Shield, you gain \+1 AR. Once you have \+3 ranks in Shields, this becomes \+2 AR while adjacent to two or more such allies (this does not stack further beyond that tier).
+**Prerequisites:** STR 3+  
+**Benefit:** While you are adjacent to at least one ally who is also wielding a Shield, you gain \+1 AR. Once your STR is 4+, this becomes \+2 AR while adjacent to two or more such allies (this does not stack further beyond that tier).
 
 ---
 
@@ -116,7 +127,7 @@ The oldest trick in organized warfare: a shield line holds because no one in it 
 
 Bracing a leveled lance against the cantle of your saddle turns your entire galloping weight into the point - a devastating technique, and a spectacularly bad idea to get wrong.
 
-**Prerequisites:** \+2 ranks in Riding, \+2 ranks in Polearms  
+**Prerequisites:** \+2 ranks in Wayfaring, \+2 ranks in Hafted & Polearms  
 **Benefit:** While mounted, if you or your mount move at least 20 ft in a straight line before you attack with a Reach melee weapon, the target must succeed on a STR Ward or be knocked Prone, in addition to any damage the hit deals.  
 **Restriction:** If the attack misses, you must succeed on a DEX Ward (DC 12) or be unseated \- you fall from your mount and land Prone.
 
@@ -126,7 +137,7 @@ Bracing a leveled lance against the cantle of your saddle turns your entire gall
 
 Shooting accurately from a moving mount is a specialist skill few riders ever master - bracing a shot on a galloping animal is far harder than it looks.
 
-**Prerequisites:** \+2 ranks in Riding, \+2 ranks in Archery or Marksmanship  
+**Prerequisites:** \+2 ranks in Wayfaring, \+2 ranks in Ranged  
 **Benefit:** Making a ranged weapon attack after your mount has moved this turn normally imposes Disadvantage \- you ignore this Disadvantage entirely.
 
 ---
@@ -137,7 +148,7 @@ Shooting accurately from a moving mount is a specialist skill few riders ever ma
 
 A second blade or a buckler in your off hand isn't just there for balance - a trained duelist puts it to work controlling an opponent's weapon while their main hand does the cutting.
 
-**Prerequisites:** \+2 ranks in Blades or Brawling  
+**Prerequisites:** \+2 ranks in any STR weapon Skill  
 **Benefit:** While wielding a one-handed melee weapon in your main hand and a Light weapon or Buckler in your off hand, you have Advantage on your Weapon-Skill-funded Oppose roll ([[Oppose|maneuvers]]).
 
 ---
@@ -148,7 +159,7 @@ A second blade or a buckler in your off hand isn't just there for balance - a tr
 
 Narrow, unbarbed arrowheads built to punch through mail links and glance through the gaps in plate, rather than to wound cleanly.
 
-**Prerequisites:** \+3 ranks in Archery or Marksmanship  
+**Prerequisites:** \+3 ranks in Ranged  
 **Benefit:** You may fire bodkin-tipped ammunition: the hit degrades the target's armor by 2 AR instead of the normal 1, but deals \-2 damage against a target with 0 AR \- a narrow armor-piercing head doesn't wound as well as a broadhead once there's nothing left to punch through.
 
 ---
@@ -159,5 +170,5 @@ Narrow, unbarbed arrowheads built to punch through mail links and glance through
 
 A warhammer's spike doesn't need to punch through a helm to do damage - the shock alone rattles the skull inside it.
 
-**Prerequisites:** \+3 ranks in Hafted Weapons  
+**Prerequisites:** \+3 ranks in Cleaving Blades  
 **Benefit:** When you hit a creature with a Bludgeoning weapon and the damage is reduced to 0 by their AR, the blow still rattles them through their armor \- they have Disadvantage on their next attack roll or Ward check (their choice which) before the start of your next turn.

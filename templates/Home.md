@@ -16,7 +16,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks v
 
 ## Races
 
-- [Races Overview](races_overview) - General Rules Notes, Level Adjustment
+- [Races Overview](races_overview) - General Rules Notes, Race Tiers
 
 **Artefolk:**
 - [Aelves](aelves)
@@ -80,6 +80,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks v
 - [Divine](divine_feats)
 - [Skill](skill_feats)
 - [Prestige](prestige_feats)
+- [Racial](racial_feats)
 
 ## Equipment
 

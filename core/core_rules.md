@@ -26,9 +26,9 @@ Ressam uses d4, d6, d8, d10, and d12 dice. The d12 is your primary resolution di
 **Disadvantage:** Roll twice, use lower result.  
 **Stacking:** Compare total sources of each; the side with more wins. If equal, roll normally.
 
-**Note:** Advantage is typically worth the equivalent of a \+3 bonus, while disadvantage is worth \-3.
+**Note:** Advantage is typically worth the equivalent of a \+2 bonus, while disadvantage is worth \-2.
 
-**Time Scale:** A round represents roughly 6 seconds of in-fiction time.
+**Time Scale:** A round represents roughly 3 seconds of in-fiction time.
 
 ---
 
@@ -38,10 +38,8 @@ Attributes range from 0 (wholly absent) to 5 (peak mortal potential).
 
 | Attribute | Abbr. | Governs |
 | :---- | :---: | :---- |
-| **Strength** | STR | Physical power, melee damage, carrying slots |
-| **Precision** | PRE | Reaction speed, ranged accuracy, initiative |
-| **Endurance** | END | Toughness, Wounds, resisting fatigue |
-| **Dexterity** | DEX | Agility, fine motor control, dodging |
+| **Strength** | STR | Physical power, melee damage, carrying slots, resisting fatigue |
+| **Dexterity** | DEX | Agility, fine motor control, ranged accuracy, dodging, initiative |
 | **Mind** | MIND | Intelligence, reasoning, mana pool |
 | **Arcane** | ARC | Arcane magical aptitude |
 | **Faith** | FAI | Divine connection and conviction |
@@ -92,13 +90,13 @@ Ressam uses a nine-tier DC scale for Skill Checks, Ward Checks, Minor Magic, and
 | Incredibly Hard | 17 | Snapping manacles bare-handed, resisting a curse's full grip |
 | Impossible | 20 | Outrunning a warhorse on foot, staring down a god without flinching |
 
-**Note:** Minor Magic and Alchemy crafting no longer keep their own copy of these numbers - both read Medium, Hard, and Very Hard directly off this table, so a spell or potion pegged "Hard" in those chapters always means DC 12 here, with nothing left to fall out of sync. The top two tiers are pinned to the actual ceiling of the d12 \+ Skill (or d12 \+ Attribute, for a Ward) system: a fully capped character (Skill or Attribute 5, reached by level 8\) rolling a natural 12 hits 17 with no magical help at all \- that's Incredibly Hard. Magic items add at most \+3 on top of that, putting the true maximum possible roll anyone can ever produce at 20 \- that's Impossible, reachable only by a maxed, magically-equipped character on a natural 12\. Incredibly Hard shows up informally elsewhere (breaking Chains, Curse of the Beast, casting while Restrained) for feats meant to be exceptional even for a specialist; Impossible is there to mark tasks a DM shouldn't be calling for a roll on at all \- if the answer's really "no, unless something extraordinary happens," don't make the player roll for it.
+**Note:** The top two tiers are pinned to the actual ceiling of the d12 \+ Skill (or d12 \+ Attribute, for a Ward) system: a fully capped character (Skill or Attribute 5, reached by level 8\) rolling a natural 12 hits 17 with no magical help at all \- that's Incredibly Hard. Magic items add at most \+3 on top of that, putting the true maximum possible roll anyone can ever produce at ~20 \- that's Impossible, reachable only by a maxed, magically-equipped character on a natural 12\. Incredibly Hard shows up informally elsewhere (breaking Chains, Curse of the Beast, casting while Restrained) for feats meant to be exceptional even for a specialist; Impossible is there to mark tasks a DM shouldn't be calling for a roll on at all \- if the answer's really "no, unless something extraordinary happens," don't make the player roll for it.
 
 **What to expect at the table:** A character actively trained in the relevant Skill clears Very Easy through Medium almost automatically once they've put a few ranks in, and Tricky not long after. Hard stays a real risk for a character's entire career \- it tops out at a coin flip even for a fully-ranked specialist, never becomes routine. Grueling and Very Hard are exceptional even at Skill or Attribute 5. Incredibly Hard demands nothing short of a natural 12, even from a fully capped specialist \- and Impossible needs that same natural 12 stacked with the best magic gear money can buy. Neither is meant to be routine business.
 
 ### **Success Rate by Skill Rank / Attribute**
 
-Derived from **1d12 \+ Skill** (Skill Checks) or **1d12 \+ Attribute** (Ward Checks) vs. each DC tier above - the same six rows serve both, since each now adds a single 0-5 stat on its own. Level no longer determines this directly: only reaching a Skill's governing Attribute (or that Attribute's own cap) does, and that's a build choice, not an inevitability - modifier 5 requires Attribute 5, unreachable before level 8 ([[Per Level Advancement|progression_&_rewards]]).
+Derived from **1d12 \+ Skill** (Skill Checks) or **1d12 \+ Attribute** (Wards, all of which are Attribute-funded) vs. each DC tier above - the same six rows serve every case, since each roll only ever adds a single 0-5 stat. Level no longer determines this directly: only reaching a Skill's governing Attribute (or that Attribute's own cap) does, and that's a build choice, not an inevitability - modifier 5 requires Attribute 5, unreachable before level 8 ([[Per Level Advancement|progression_&_rewards]]).
 
 | Skill Rank / Attribute | Very Easy (5) | Easy (7) | Medium (9) | Tricky (10) | Hard (12) | Grueling (14) | Very Hard (16) | Incredibly Hard (17) | Impossible (20) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -117,28 +115,28 @@ Derived from **1d12 \+ Skill** (Skill Checks) or **1d12 \+ Attribute** (Ward Che
 
 ## Checks vs. Ward
 
-**Skill Checks:** Represent an *active attempt* at using your training. Roll 1d12 \+ Skill ≥ DC
+**Skill Checks** are an *active attempt* at applying your training against the world - climbing a cliff, picking a lock, forging a seal. Roll **1d12 \+ Skill Ranks** ≥ DC. An untrained skill (0 Ranks) rolls **1d12** alone.
 
-**Ward Check:** Wards represent a split-second *reaction* to danger. Roll 1d12 \+ Attribute ≥ DC
+**Ward Checks** are the opposite: a *reactive attempt* to avoid or mitigate something happening to you - not a conscious choice so much as your body's trained or instinctive response to danger. Every Ward is funded by the relevant **Attribute** - STR Ward, DEX Ward, and so on - a raw defensive capacity every creature has whether or not they've trained for it. STR Ward and DEX Ward do double duty for exactly this reason: they're what answers a Blind or a plain surprise, and they're also the untrained reflex behind an Oppose roll's Block-leg and Evasion-leg respectively (see [[Oppose|maneuvers]]) - there's no separate trained Skill standing between raw Attribute and the danger anymore. Roll **1d12 \+ the relevant Attribute** ≥ DC.
 
-**Passive Ward \= 5 \+ Attribute** \- a quick-reference defensive score standing in for a Ward Check without requiring you to roll.
-
-**Contested Checks:** Whenever a Feat, Feature, Oppose, or Spell Overcome pits one creature's Skill or Ward directly against another's (rather than a flat DC from the tier table above), only the instigator rolls. The shape follows which side of the Skill/Ward split is being tested:
-
-- **Contested Ward** (resisting Blind, a Petrifying Glare, and the like): the instigator rolls **1d12 \+ the named Attribute**; the defender's static score is their **Passive Ward, 5 \+ Attribute**.
-- **Named-Skill contest** (Grapple, Disarm, Feint, and the like): the instigator rolls **1d12 \+ the named Skill** (their Spell Modifier, for spells); the defender's static score is **5 \+ their relevant Skill** \- the same shape as Passive Ward, just built from a Skill instead of an Attribute.
-
-The defender never rolls. Ties go to the instigator, same as a Skill Check meeting a DC exactly.
+**Passive Ward \= 5 \+ the relevant Attribute** \- a quick-reference defensive score standing in for a Ward Check without requiring you to roll. Passive Evasion follows the same formula with one addition, **5 \+ DEX − Armor Penalty**, since armor gets in the way of dodging in a way it doesn't get in the way of, say, resisting poison.
 
 | Situation | Roll Type       |
 | :---- |:----------------|
-| Climbing a cliff | Athletics Check |
-| Grabbing a ledge when pushed | STR Ward        |
-| Sneaking past guards | Stealth Check   |
-| Surprised by an assassin | DEX Ward        |
+| Climbing a cliff | Athletics Check (Skill) |
+| Grabbing a ledge when pushed | STR Ward (Attribute)        |
+| Sneaking past guards | Stealth Check (Skill)   |
+| Surprised by an assassin | DEX Ward (Attribute)        |
+
+**Contested Checks:** Whenever a Feat, Feature, Attack Roll, Oppose, or Spell pits one creature's active roll directly against another's static defense (rather than a flat DC from the tier table above), only the instigator rolls - the defender's score simply stands, whatever it is. This always plays out as one of two shapes, the same two tags you'll see inline throughout the rest of this book:
+
+- **Contested Check** (Grapple, Disarm, Feint, Taunting, and the like): a battle of training against training. The instigator rolls **1d12 \+ their Skill** (their Spell Modifier, for spells); the defender's static score is **5 \+ their relevant Skill** - a Passive Skill, the same shape as a Passive Ward but built from a Skill instead of an Attribute.
+- **Contested Ward** (an Attack Roll against Evasion, a Spell Overcome against a Ward, resisting a Blind or a Petrifying Glare, and the like): a battle of skill - or raw instinct - against reactive ability. The instigator rolls **1d12 \+ whatever Skill, Spell Modifier, or Attribute the ability calls for**; the defender's static score is their **Passive Ward** - Passive Evasion, specifically, wherever that's the defense being tested.
+
+The defender never rolls. Ties go to the instigator, same as a Skill Check meeting a DC exactly.
 
 **Exception:** Divine spellcasting doesn't use a Contested Check at all - every Divine spell rolls against a flat DC instead of a target's Ward or Evasion, on purpose (see [[Magic Overview|magic_overview]]'s Petition Roll).
 
 ---
 
-**Continued in:** [[Basic Moves|basic_moves]] (the proactive, on-your-turn actions everyone has access to - Dashing, Disengaging, Shoving, Disarming, Shift Measure, Blind, Grappling, Defensive Stance, Feint, Taunting), [[Wounds & Survival|wounds_and_survival]] (Damage Types, Wounds and Survival, Conditions, Trauma), [[Carrying & Resting|carrying_and_resting]] (Slots, Resting), and [[Stealth & Light|stealth_and_light]] (Stealth and Hiding, Light and Vision).
+**Continued in:** [[Basic Moves|basic_moves]] (the proactive, on-your-turn actions everyone has access to - Dashing, Disengaging, Shoving, Disarming, Shift Measure, Blind, Grappling, Feint, Taunting), [[Wounds & Survival|wounds_and_survival]] (Damage Types, Wounds and Survival, Conditions, Trauma), [[Carrying & Resting|carrying_and_resting]] (Slots, Resting), and [[Stealth & Light|stealth_and_light]] (Stealth and Hiding, Light and Vision).

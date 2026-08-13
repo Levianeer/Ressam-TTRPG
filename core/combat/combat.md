@@ -6,7 +6,7 @@ Ressam is not a game where heroes fight to the last Wound. You won't fight worse
 
 ## Initiative
 
-**Initiative \= 1d12 \+ ((PRE \+ DEX) ÷ 2\)**
+**Initiative \= 1d12 \+ DEX**
 
 Actions resolve highest to lowest each round.
 
@@ -24,7 +24,7 @@ Actions resolve highest to lowest each round.
 | **Minor Action** | 1/round | Sheathe weapon, drink potion, open door, Shift Measure          |
 | **Object Interaction** | 1/round | Draw ammunition, pick up weapon, flip lever                    |
 | **Reaction** | 1-3, scales with DEX (see below) | Held Action, Oppose, Reactive Casting, Opportunity Attack |
-| **Free Action** | Unlimited | Drop item, speak briefly, stop channeling, etc                 |
+| **Free Action** | Unlimited | Drop item, speak briefly, stop channeling, declare your Stance ([[Stance|maneuvers]]), etc |
 | **Move Action** | Unlimited | Move up to your maximum speed, can be broken up into multiples |
 
 - **Per Round:** Refreshes at the start of your *next* turn  
@@ -102,7 +102,7 @@ Critical Hits occur on a **Natural 12** on attack rolls.
 **Effects:**
 
 - **Roll damage twice, take the higher result.**  
-- Bypasses an Oppose roll funded by Weapon Skill or Shields Skill entirely - the attack simply hits, and no Reaction is spent attempting it (an Oppose roll funded by Evasion Skill is unaffected - see [[Oppose|maneuvers]])
+- Bypasses an Oppose roll funded by a Weapon Skill or a STR Ward entirely - the attack simply hits, and no Reaction is spent attempting it (an Oppose roll funded by a DEX Ward is unaffected - see [[Oppose|maneuvers]])
 
 Crits don't grant Trauma \- their pressure is indirect, since rolling twice raises the odds of landing in a higher Wound tier (see [[Wounds and Survival|wounds_and_survival]]).
 
@@ -115,9 +115,9 @@ Features and Feats can expand this further.
 
 ## Evasion
 
-Evasion, or ‘Passive Evasion’ is your trained ability to stay out of harm's way. This requires no setup or actions, it happens automatically against attack rolls.
+Evasion, or ‘Passive Evasion’ is your instinctive ability to stay out of harm's way. This requires no setup or actions, it happens automatically against attack rolls. It's a [[Passive Ward|core_rules]] funded by DEX, the same as your DEX-funded Oppose roll - Armor Penalty still applies to it, the way it wouldn't to, say, a STR Ward, since armor gets in the way of dodging in a way it doesn't get in the way of resisting a shove or a poison.
 
-**Evasion \= 5 \+ Evasion Skill Ranks − Armor Penalty**
+**Evasion \= 5 \+ DEX − Armor Penalty**
 
 ---
 
@@ -148,9 +148,9 @@ Every hit (regardless of Wound damage) reduces armor by 1 AR.
 
 ### **Armor Penalty**
 
-Reduces Evasion, your Evasion Skill-funded Oppose roll ([[Oppose|maneuvers]]), and your Spell Modifier.
+Reduces Evasion, your DEX Ward-funded Oppose roll ([[Oppose|maneuvers]]), and your Spell Modifier.
 
-**Reducing Penalty:** Each rank in Armorer reduces Penalty by 1 (minimum 0).
+**Reducing Penalty:** Skill investment doesn't reduce Penalty - the [[Broken In|general_feats]] Feat is the only way to (\-2 per time taken, up to 3 times, minimum 0).
 
 ---
 

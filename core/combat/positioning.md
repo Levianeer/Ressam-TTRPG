@@ -20,11 +20,11 @@ Unlike a static Reach comparison, Measure is a single shared value between two e
 
 **How It Works:** Compare your own weapon's Measure Band to the current shared measure (see [[Measure Bands|weapons]]) - nothing stacks, nothing scales beyond the five bands.
 
-| Your weapon vs. the current measure | What happens |
-| :---- | :---- |
-| **Matches** | Strike freely - no penalty. |
-| **One or two bands off** (e.g. Short↔Long, Medium↔Far) | Strike at Disadvantage. |
-| **Three or four bands off** (e.g. Short↔Far, Short↔Very Far, the maximum possible spread) | **You cannot Strike at all** - no attack roll, no Strike Effect - and an Oppose roll funded by Weapon Skill cannot be attempted this way at all (Oppose funded by Shields Skill or Evasion Skill is unaffected). |
+| Your weapon vs. the current measure                                                       | What happens                                                                                                                                                                                                     |
+|:------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Matches**                                                                               | Strike freely - no penalty.                                                                                                                                                                                      |
+| **One or two bands off** (e.g. Short↔Long, Medium↔Far)                                    | Strike at Disadvantage.                                                                                                                                                                                          |
+| **Three or four bands off** (e.g. Short↔Far, Short↔Very Far, the maximum possible spread) | **You cannot Strike at all** - no attack roll, no Strike Effect - and an Oppose roll funded by a Weapon Skill cannot be attempted this way at all (Oppose funded by a STR Ward or DEX Ward is unaffected). |
 
 **Setting the measure:** An exchange begins at the longer weapon's Measure Band - the shorter weapon starts every fight with a problem to solve. Either side can change it: the **Shift Measure** Minor Action ([[Basic Moves|basic_moves]]) moves the shared measure one band, in or out, on your own turn; the **Shift** Effect (see [[Oppose|maneuvers]]) does the same for free as part of winning an Oppose Reaction, no provoke. **Closing through a band your opponent's weapon still matches provokes** - moving from outside your target's Measure Band into it triggers their Opportunity Attack, below, the same as closing to melee always has.
 

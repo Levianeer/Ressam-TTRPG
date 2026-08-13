@@ -40,7 +40,7 @@ When your party reaches safety after a deadly mission, you can celebrate togethe
 | **5** | 5 XP | **Lucky Streak.** Won a few hands at cards, bought a round for the house, basked in fleeting glory. The crowd's cheers reminded you why you fight: moments like these, however brief. |
 | **6** | 10 XP | **Tales of Glory.** Recounted your recent exploits to a captive audience. In the retelling, you understood the choices you made \- what worked, what nearly killed you. Storytelling as debriefing. |
 | **7** | 10 XP | **Valuable Contact.** Met someone useful: a merchant, a veteran, a fellow traveler. Exchanged information, made a connection. Gain one local contact (DM determines details). |
-| **8** | 15 XP | **Crucible Moment.** A brawl broke out \- maybe you started it, maybe you ended it. Either way, you learned something about yourself under pressure. Gain advantage on your next Intimidation or Athletics check. |
+| **8** | 15 XP | **Crucible Moment.** A brawl broke out \- maybe you started it, maybe you ended it. Either way, you learned something about yourself under pressure. Gain advantage on your next Intimidate or Athletics check. |
 | **9** | 15 XP | **Wisdom in Wine.** Deep conversation with a stranger \- philosophy, faith, mortality. They challenged your assumptions. You left the table changed, even if you can't articulate how. |
 | **10** | 20 XP | **Legendary Night.** Everything aligned. Perfect company, perfect timing, perfect insight. You'll remember this night for years. These are the moments that make survival worthwhile. |
 | **11** | 25 XP | **Epiphany.** Somewhere between the third drink and dawn, clarity struck. A pattern you'd missed, a connection you hadn't seen. You understand your craft \- or yourself \- in a new way. |

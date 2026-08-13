@@ -7,14 +7,14 @@
 The Dzinari are pale, uncannily tall beings, Aelf-like in silhouette but far more alien in demeanour, for whom secrets function as both currency and craft. They treat a held secret as property and a traded one as a weapon, and rarely say anything plainly that could be implied instead. Most Dzinari answer to the **Council of Murmurs**, the shifting governing body of the Chorus of Murmurs; a rogue faction, the Gilded Hwispian Maw, answers instead to the Devaraja and no longer recognises the Council's authority.
 
 **Homeland:** Gelidia  
-**Starting Attributes:** \+1 CHA, \+1 ARC, \-1 STR, \-1 END  
+**Starting Attributes:** \+1 CHA, \+1 ARC, \-2 STR  
 **Age:** Adult \~100, Immortal  
 **Alignment:** Chaotic  
 **Size:** Medium (5-6 ft)  
 **Base Speed:** 30 feet  
 **Starting Languages:** Dzinariel, and 1 of any other Language  
-**Starting Skills:** \+2 in any two: Arcane Lore, Insight, or Deception  
-**Level Adjustment:** \+2
+**Starting Skills:** \+2 in any two: Arcane Lore, Insight, or Manipulate  
+**Race Tier:** C (Exotic)
 
 ### **Features**
 

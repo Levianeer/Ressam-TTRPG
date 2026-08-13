@@ -8,7 +8,7 @@ These feats represent deeper divine connection and are available only to Divine 
 
 You can channel raw divine power into miraculous effects.
 
-**Prerequisites:** \+2 ranks in any Divine school, FAI 3+
+**Prerequisites:** \+2 ranks in any Divine school Skill, FAI 3+
 **Benefit:** Once per Field Rest or Long Rest, you may channel raw divine energy as a Major Action. Choose one effect:
 
 1. **Divine Cleansing:** Remove 1 level of Trauma from all allies within 30 ft
@@ -23,7 +23,7 @@ You can channel raw divine power into miraculous effects.
 
 Your presence inspires and protects your allies.
 
-**Prerequisites:** \+3 ranks in any Divine school  
+**Prerequisites:** \+3 ranks in any Divine school Skill  
 **Benefit:** Whenever you cast a Divine spell that affects allies, they gain a bonus to all Wards for 1 minute equal to the spell's Mana Cost (this does not stack).
 
 ---
@@ -32,7 +32,7 @@ Your presence inspires and protects your allies.
 
 You can invoke a protective barrier infused with divine power.
 
-**Prerequisites:** \+2 ranks in any Divine school, FAI 3+  
+**Prerequisites:** \+2 ranks in any Divine school Skill, FAI 3+  
 **Benefit:** As a Reaction when you or an ally within 30 ft takes damage from an attack or spell, you may expend 2 Mana to grant the target resistance to that damage type for the attack (halving the damage). You can use this feature a number of times per Field Rest or Long Rest equal to your FAI ÷ 2 (minimum 1).
 
 ---
@@ -66,7 +66,7 @@ Cultivation was never about giving one person everything - it's about knowing wh
 Your Familiar doesn't need your hand on it to move - it needs only your will, and a length of the same suffering that made it.
 
 **Prerequisites:** \+2 ranks in Invocation  
-**Benefit:** As a Major Action, spend 1 Mana to send your Familiar scouting. It can move up to 60 ft from you and act independently for up to 1 minute, using your Perception and Stealth scores; you can see and hear through it as though you stood in its place. This ends early if the Familiar takes damage or you cast another Invocation spell. While scouting this way, your Familiar cannot manifest as a weapon ([[Soul Armament|invocation]]) or take any combat action.
+**Benefit:** As a Major Action, spend 1 Mana to send your Familiar scouting. It can move up to 60 ft from you and act independently for up to 1 minute, using your Perception and Subterfuge scores; you can see and hear through it as though you stood in its place. This ends early if the Familiar takes damage or you cast another Invocation spell. While scouting this way, your Familiar cannot manifest as a weapon ([[Soul Armament|invocation]]) or take any combat action.
 
 ---
 
@@ -98,5 +98,5 @@ A mind you've already cracked once doesn't close all the way back up - the secon
 
 A god who never says no isn't a god you're praying to, they're just an echo. Every unanswered prayer is proof the silence is real - and proof steadies your hand for the next one.
 
-**Prerequisites:** \+2 ranks in any Divine school, FAI 3+  
-**Benefit:** Whenever one of your Petition Rolls fails, gain 1 Resolve (maximum stored equal to your FAI, one shared pool across all your Divine schools - unlike Rite Mastery's per-school charges). Whenever you spend a Rite Mastery charge to reroll a Petition Roll, you may also spend 1 stored Resolve to give that reroll advantage (roll twice, take the higher result).
+**Prerequisites:** \+2 ranks in any Divine school Skill, FAI 3+  
+**Benefit:** Whenever one of your Petition Rolls fails, gain 1 Resolve (maximum stored equal to your FAI - a separate pool from Rite Mastery's per-school charges, not interchangeable with them). Whenever you spend a Rite Mastery charge to reroll a Petition Roll, you may also spend 1 stored Resolve to give that reroll advantage (roll twice, take the higher result).

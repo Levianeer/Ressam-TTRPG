@@ -8,7 +8,7 @@ Creatures with no race or continent tied to them - built once, reused anywhere i
 
 **Frequency:** Common
 
-**Attributes:** STR 1, PRE 1, END 1, DEX 1, MIND 1, CHA 1, ARC 0, FAI 0
+**Attributes:** STR 1, DEX 1, MIND 1, ARC 0, FAI 0, CHA 1
 
 **Skills:** None (0 ranks in everything)
 
@@ -18,7 +18,7 @@ Creatures with no race or continent tied to them - built once, reused anywhere i
 
 **Wound Threshold:** 1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+).
 
-**Wards:** STR 6, DEX 6, END 6, MIND 6
+**Wards:** STR 6, DEX 6, MIND 6
 
 **Reactions:** 1/round. No Maneuver - Dodge is technically legal on DEX 1 alone (see [[Maneuver|maneuvers]]), but a Peasant doesn't fight back with any real skill, and modeling a Reaction here (with its chance of a free Riposte) reads as far too competent for what's meant to be a harmless mob unit. May still spend its Reaction on a plain Opportunity Attack if armed and a creature leaves its reach.
 
@@ -44,9 +44,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 3, PRE 2, END 2, DEX 2, MIND 1, CHA 1, ARC 0, FAI 0
+**Attributes:** STR 2, DEX 2, MIND 1, ARC 0, FAI 0, CHA 1
 
-**Skills:** Blades 2, Intimidation 1, Perception 1
+**Skills:** Cleaving Blades 2, Intimidate 1, Perception 1
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -54,7 +54,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
 
-**Wards:** STR 8, DEX 7, END 7, MIND 6
+**Wards:** STR 7, DEX 7, MIND 6
 
 **Reactions:** 1/round. Can **Parry** (1d12 \+ 2, weapon in hand) or **Dodge** (1d12 \+ 1) - no shield, so Block isn't available.
 
@@ -62,7 +62,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Equipment:** Shortsword (1d6 \+ 1 Piercing, Short, Light), a thrown Knife x2 as backup (1d4 Piercing, 20/40 ft), Buff Coat (AR 3, Penalty \-1).
 
-**In Combat:** Bandits don't fight fair if they can help it - Taunting or Intimidation to freeze up whoever looks softest, a thrown knife on the approach, then closing to melee. A Bandit that's lost more than half its Wounds runs; it isn't being paid enough to die here.
+**In Combat:** Bandits don't fight fair if they can help it - Taunting or Intimidate to freeze up whoever looks softest, a thrown knife on the approach, then closing to melee. A Bandit that's lost more than half its Wounds runs; it isn't being paid enough to die here.
 
 **Fielding Guide** (4-PC party; see [[Bestiary Overview|bestiary_overview]]'s note on reading this as a floor, not literal odds):
 
@@ -78,9 +78,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 3, PRE 1, END 3, DEX 1, MIND 1, CHA 1, ARC 0, FAI 0
+**Attributes:** STR 3, DEX 1, MIND 1, ARC 0, FAI 0, CHA 1
 
-**Skills:** Polearms 2, Shields 2, Perception 1
+**Skills:** Hafted & Polearms 2, Perception 1
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -88,7 +88,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-9), 2 Wounds (10-15), 3 Wounds (16+).
 
-**Wards:** STR 8, DEX 6, END 8, MIND 6
+**Wards:** STR 8, DEX 6, MIND 6
 
 **Reactions:** 1/round. Can **Block** (1d12 \+ 2, Heater Shield equipped) - Parry's melee-weapon-in-hand route is technically legal but never the better option, and Armor Penalty (\-3) guts any Dodge attempt before it starts; Block is what this build is actually equipped for.
 
@@ -106,9 +106,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 2, PRE 1, END 2, DEX 3, MIND 1, CHA 1, ARC 0, FAI 0
+**Attributes:** STR 2, DEX 2, MIND 1, ARC 0, FAI 0, CHA 1
 
-**Skills:** Brawling 2, Perception 2
+**Skills:** Daggers & Wrestling 2, Perception 2
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -116,7 +116,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
 
-**Wards:** STR 7, DEX 8, END 7, MIND 6
+**Wards:** STR 7, DEX 7, MIND 6
 
 **Reactions:** 2/round. Can **Dodge** (1d12 \+ 3) - no weapon, shield, or armor to Parry or Block with.
 
@@ -134,9 +134,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 1, PRE 1, END 1, DEX 2, MIND 0, CHA 0, ARC 0, FAI 0
+**Attributes:** STR 1, DEX 1, MIND 0, ARC 0, FAI 0, CHA 0
 
-**Skills:** Brawling 1, Stealth 1
+**Skills:** Daggers & Wrestling 1, Subterfuge 1
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -144,7 +144,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+).
 
-**Wards:** STR 6, DEX 7, END 6, MIND 5
+**Wards:** STR 6, DEX 6, MIND 5
 
 **Reactions:** 1/round. No Maneuver - too small and too simple to Parry, Block, or Dodge meaningfully.
 
@@ -164,9 +164,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 1, PRE 3, END 2, DEX 2, MIND 1, CHA 1, ARC 0, FAI 0
+**Attributes:** STR 1, DEX 2, MIND 1, ARC 0, FAI 0, CHA 1
 
-**Skills:** Archery 2, Perception 2
+**Skills:** Ranged 2, Perception 2
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -174,7 +174,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
 
-**Wards:** STR 6, DEX 7, END 7, MIND 6
+**Wards:** STR 6, DEX 7, MIND 6
 
 **Reactions:** 1/round. Can **Dodge** (1d12 \+ 1) - Parry and Block don't apply at range regardless.
 
@@ -192,9 +192,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 2, PRE 1, END 1, DEX 3, MIND 1, CHA 0, ARC 0, FAI 0
+**Attributes:** STR 1, DEX 2, MIND 1, ARC 0, FAI 0, CHA 0
 
-**Skills:** Brawling 2, Perception 2
+**Skills:** Daggers & Wrestling 2, Perception 2
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -202,7 +202,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+).
 
-**Wards:** STR 7, DEX 8, END 6, MIND 6
+**Wards:** STR 6, DEX 7, MIND 6
 
 **Reactions:** 2/round. Can **Dodge** (1d12 \+ 3) - raw DEX alone, no training needed (Dodge has no Skill prerequisite, see [[Maneuver|maneuvers]]).
 
@@ -220,9 +220,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Uncommon
 
-**Attributes:** STR 2, PRE 1, END 2, DEX 1, MIND 0, CHA 0, ARC 0, FAI 0
+**Attributes:** STR 2, DEX 1, MIND 0, ARC 0, FAI 0, CHA 0
 
-**Skills:** Blades 1
+**Skills:** Cleaving Blades 1
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -230,7 +230,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
 
-**Wards:** STR 7, DEX 6, END 7, MIND 5
+**Wards:** STR 7, DEX 6, MIND 5
 
 **Reactions:** 1/round. Can **Parry** (1d12 \+ 1, weapon in hand) - crude and weak next to a living Bandit's \+2, no armor to Block with.
 
@@ -250,9 +250,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Uncommon
 
-**Attributes:** STR 3, PRE 1, END 2, DEX 0, MIND 0, CHA 0, ARC 0, FAI 0
+**Attributes:** STR 2, DEX 0, MIND 0, ARC 0, FAI 0, CHA 0
 
-**Skills:** Brawling 1
+**Skills:** Daggers & Wrestling 1
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -260,7 +260,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
 
-**Wards:** STR 8, DEX 5, END 7, MIND 5
+**Wards:** STR 7, DEX 5, MIND 5
 
 **Reactions:** 1/round. No Maneuver - too slow to Dodge, no weapon or shield to Parry or Block with.
 
@@ -280,9 +280,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Uncommon
 
-**Attributes:** STR 2, PRE 1, END 1, DEX 3, MIND 0, CHA 0, ARC 0, FAI 0
+**Attributes:** STR 1, DEX 2, MIND 0, ARC 0, FAI 0, CHA 0
 
-**Skills:** Brawling 2, Stealth 2
+**Skills:** Daggers & Wrestling 2, Subterfuge 2
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -290,7 +290,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+).
 
-**Wards:** STR 7, DEX 8, END 6, MIND 5
+**Wards:** STR 6, DEX 7, MIND 5
 
 **Reactions:** 2/round. Can **Dodge** (1d12 \+ 3) - raw DEX alone, no training needed (Dodge has no Skill prerequisite, see [[Maneuver|maneuvers]]).
 
@@ -298,7 +298,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Natural Weapons:** Bite (1d6 Poison, Short Reach).
 
-**In Combat:** Stealth 2 is the actual build here - a Giant Spider that opens combat from hiding gets a full Surprise Round against whoever it targets ([[Surprise|positioning]]: surprised creatures can't act or React in Round 1), which this stat block alone doesn't show. Caught in the open or after that first exchange, it's a fast but fragile skirmisher, not a real threat to a party that's already braced for it.
+**In Combat:** Subterfuge 2 is the actual build here - a Giant Spider that opens combat from hiding gets a full Surprise Round against whoever it targets ([[Surprise|positioning]]: surprised creatures can't act or React in Round 1), which this stat block alone doesn't show. Caught in the open or after that first exchange, it's a fast but fragile skirmisher, not a real threat to a party that's already braced for it.
 
 ---
 
@@ -308,9 +308,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Uncommon
 
-**Attributes:** STR 3, PRE 1, END 3, DEX 1, MIND 1, CHA 0, ARC 0, FAI 0
+**Attributes:** STR 3, DEX 1, MIND 1, ARC 0, FAI 0, CHA 0
 
-**Skills:** Brawling 2
+**Skills:** Daggers & Wrestling 2
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -318,7 +318,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-9), 2 Wounds (10-15), 3 Wounds (16+).
 
-**Wards:** STR 8, DEX 6, END 8, MIND 6
+**Wards:** STR 8, DEX 6, MIND 6
 
 **Reactions:** 1/round. No Maneuver - too slow and simple to Parry, Block, or Dodge once discovered.
 
@@ -336,9 +336,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Rare
 
-**Attributes:** STR 4, PRE 1, END 4, DEX 1, MIND 0, CHA 0, ARC 0, FAI 0
+**Attributes:** STR 4, DEX 1, MIND 0, ARC 0, FAI 0, CHA 0
 
-**Skills:** Brawling 3
+**Skills:** Daggers & Wrestling 3
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -346,7 +346,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-10), 2 Wounds (11-16), 3 Wounds (17+).
 
-**Wards:** STR 9, DEX 6, END 9, MIND 5
+**Wards:** STR 9, DEX 6, MIND 5
 
 **Reactions:** 1/round. No Maneuver - a Bear doesn't Parry, Block, or Dodge; it soaks a hit on thick hide and answers with its own.
 
@@ -356,7 +356,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Size:** Large (4 Wounds baseline - see [[Wounds and Survival|wounds_and_survival]]).
 
-**In Combat:** A Bear doesn't fence - it closes the distance and swings as hard as it can, trusting AR 2 and a genuinely large Wounds pool to outlast whatever's hitting it back. Brawling 3 needs STR 3+ behind it (a Skill's Rank can never exceed its governing Attribute, see [[Skills|core_rules]]) - not a Peasant-tier mob stat, this is the first Universal entry actually priced above Level 1, and it should feel like it: a lone Bear is a legitimate threat, not filler.
+**In Combat:** A Bear doesn't fence - it closes the distance and swings as hard as it can, trusting AR 2 and a genuinely large Wounds pool to outlast whatever's hitting it back. Daggers & Wrestling 3 needs STR 3+ behind it (a Skill's Rank can never exceed its governing Attribute, see [[Skills|core_rules]]) - not a Peasant-tier mob stat, this is the first Universal entry actually priced above Level 1, and it should feel like it: a lone Bear is a legitimate threat, not filler.
 
 ---
 
@@ -366,11 +366,11 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Rare
 
-**Attributes:** STR 4, PRE 3, END 4, DEX 3, MIND 1, CHA 1, ARC 0, FAI 1
+**Attributes:** STR 4, DEX 3, MIND 1, ARC 0, FAI 1, CHA 1
 
-**Skills:** Blades 4, Shields 3, Athletics 2, Riding 2, Perception 1
+**Skills:** Two-Handed Blades 4, Athletics 2, Wayfaring 2, Perception 1
 
-**Feats:** Tough (\+1 Wounds), Second Wind (reroll a failed Ward once; \+3 to STR/END Wards below half Wounds)
+**Feats:** Tough (\+1 Wounds), Second Wind (reroll a failed Ward once; \+3 to STR Ward below half Wounds)
 
 | Wounds | Evasion | AR | Attack | Damage | Initiative |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -378,17 +378,17 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Wound Threshold:** 1 Wound (1-10), 2 Wounds (11-16), 3 Wounds (17+).
 
-**Wards:** STR 9, DEX 8, END 9, MIND 6
+**Wards:** STR 9, DEX 8, MIND 6
 
 **Reactions:** 2/round. Can **Parry** (1d12 \+ 4, weapon in hand) or **Block** (1d12 \+ 3, Heater Shield equipped) - Dodge is technically legal (DEX 3), but Armor Penalty (\-7) guts the roll before it starts, so it's never a real option; this is a Tank build (see Armor Selection Guide, [[Armor|armor]]) that leans entirely on AR and its Maneuver Skills rather than staying unhit.
 
-**Movement:** 30 ft - Armor Penalty restricts Acrobatics, Stealth, and Evasion (see [[Armor|armor]]), but not walking Speed.
+**Movement:** 30 ft - Armor Penalty restricts Acrobatics, Subterfuge, and Evasion (see [[Armor|armor]]), but not walking Speed.
 
 **Equipment:** Longsword, wielded one-handed (1d6 \+ 2 Slashing, Medium Reach, Versatile), Heater Shield (\+2 AR while Blocking, Penalty \-1), Breastplate (AR 6, Penalty \-6).
 
 **Design note:** That Evasion of 1 is deliberate, not an oversight - a Rigid Penalty this steep means nearly everything "hits" in the passive sense, but that's exactly what triggers the Knight's Reaction: two attempts a round at a Parry or Block roll that's already competitive with a level 12 PC's own attack roll, backed by AR 6 eating whatever actually connects. A GM running this Knight should lean on that loop (let the hit trigger, then roll the Parry/Block openly) rather than resolving it as a flat passive miss chance - the threat lives in the exchange, not the Evasion score.
 
-**In Combat:** A Knight doesn't chase - it holds ground, Parries or Blocks whatever comes at it, and answers a won exchange with Riposte or Guard Break to keep an attacker from ever getting a clean second swing. Riding 2 means a mounted Knight (lance, charge) is a real variant worth improvising if the encounter calls for it. This is not a fight to be walked into on a bad day.
+**In Combat:** A Knight doesn't chase - it holds ground, Parries or Blocks whatever comes at it, and answers a won exchange with Riposte or Guard Break to keep an attacker from ever getting a clean second swing. Wayfaring 2 means a mounted Knight (lance, charge) is a real variant worth improvising if the encounter calls for it. This is not a fight to be walked into on a bad day.
 
 **Fielding Guide** (4-PC party; see [[Bestiary Overview|bestiary_overview]]'s note on reading this as a floor, not literal odds): Knights don't scale smoothly like a mob does - there's no safe middle count, only "manageable" and "the fight of the session."
 

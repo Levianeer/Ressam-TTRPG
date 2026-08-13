@@ -23,7 +23,7 @@ Move carefully and swiftly to avoid attacks.
 Push an enemy back or knock them down.
 
 **Action:** Major (replaces attack as a Martial Weapon Attack)  
-**Check:** Athletics or Brawling vs. target's static Athletics or Acrobatics (Contested Check)  
+**Check:** Athletics or Daggers & Wrestling vs. target's static Athletics or Acrobatics (Contested Check)  
 **Success:** Push 5 ft OR knock prone
 
 ---
@@ -62,7 +62,7 @@ Throw dirt, sand, or grit into an opponent's eyes.
 Seize and restrain an opponent.
 
 **Action:** Major (replaces attack as a Martial Weapon Attack)  
-**Check:** Athletics or Brawling vs. target's static Athletics or Acrobatics (Contested Check)  
+**Check:** Athletics or Daggers & Wrestling vs. target's static Athletics or Acrobatics (Contested Check)  
 **Restriction:** Target at most one size larger  
 **Prerequisites:** Must have one hand free
 
@@ -81,21 +81,12 @@ Seize and restrain an opponent.
 
 ---
 
-## **Defensive Stance**
-
-Adopt a protective stance that makes you difficult to hit.
-
-**Action:** Minor  
-**Effect:** Until the start of your next turn, attacks against you have Disadvantage and your Oppose attempts have Advantage. Your damage rolls suffer \-4 until the start of your next turn.
-
----
-
 ## **Feint**
 
 Use guile to open an opponent up to your strikes.
 
 **Action:** Minor  
-**Check:** Deception vs. target's static Insight (Contested Check)  
+**Check:** Manipulate vs. target's static Insight (Contested Check)  
 **Success:** You gain advantage on the next weapon attack you make this turn. The target's Oppose roll ([[Oppose|maneuvers]]) answering that same attack also suffers Disadvantage - a feint punishes the reflexive defender as much as it sets up your blow.
 
 ---
@@ -105,7 +96,7 @@ Use guile to open an opponent up to your strikes.
 Draw an enemy's focus entirely onto you, making it harder for them to threaten anyone else.
 
 **Action:** Minor Action  
-**Check:** Deception or Intimidation vs. target's MIND Ward  
+**Check:** Manipulate or Intimidate vs. target's MIND Ward  
 **Restriction:** Target must be able to see and hear you. Target must be within 30 ft.
 
 **Success:** Until the start of your next turn, the target has disadvantage on all attack rolls made against creatures other than you.

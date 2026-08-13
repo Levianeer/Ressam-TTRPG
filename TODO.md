@@ -2,6 +2,29 @@
 
 Cross-session open items - what's actively in flight, why it matters, and what picking it up should look like. Only exists while something is outstanding; its absence means nothing's open, not that it was forgotten.
 
+## Skill consolidation (45 -> 24 skills): per-school magic Feats deferred (since 2026-08-11)
+
+The Skill list was cut from 45 to 24 (see `CLAUDE.md`'s `core/character/` bullet for the full merge list - Blades/Hafted Weapons/Polearms/Brawling -> Melee, Archery/Marksmanship/Thrown -> Marksmanship, Shields -> Block, Armorer folded into Crafting, Lockpicking/Sleight of Hand -> Subterfuge, Historic/Medical/Nature Lore/Identify -> Lore, the 5 Arcane schools -> Arcanism, the 5 Divine schools -> Devotion). Landed in the same pass: every cross-reference across `core/` and `templates/character/character_sheet.html`, new **Weapon Focus** and **Scholar's Focus** Feats (flat `+1` to rolls/checks with one chosen weapon group or Lore subject, repeatable - `martial_feats.md` and `skill_feats.md`), and `tools/power_score.py`/`combat_engine.py`/`creature_rating.py`/`encounter_rating.py` updated and re-run clean against the new skill names.
+
+**Still open:**
+
+- **Per-school specialization Feats for Arcanism and Devotion, deferred on purpose.** The weapon/Lore groups got a simple repeatable `+1`-to-rolls Feat; magic didn't, because Devotion's Petition Roll is flat (`1d12 vs. DC 7`, no modifier at all per `magic_overview.md`) - a naive `+1` Feat does nothing there, and Arcanism's equivalent needs its own think rather than a copy-paste of the martial pattern. Until this lands, existing Feats that used to gate on a specific school's Skill rank (e.g. `arcane_feats.md`'s Shadowcraft entries, `divine_feats.md`'s Zealotry/Life's Balance/etc.) instead gate on the merged Skill rank *and* knowing at least one spell from that school - a workable interim, not the intended final shape.
+- **All the new numbers are first-draft.** The Weapon Focus/Scholar's Focus `+1` value, and the decision to collapse Devotion's old per-school Rite Mastery charge pools into one shared Devotion-sized pool, weren't checked against `tools/creature_rating.py` or `tools/encounter_rating.py` for whether they shift any tier.
+- **`core/bestiary/universal.md` and `mythical.md`** got their `**Skills:**` lines renamed (Blades/Brawling/etc. -> Melee, Shields -> Block) but their `**Reactions:**` lines still use the pre-08-09 Parry/Block/Dodge Maneuver wording - that's the pre-existing, separately-tracked issue below, untouched by this pass on purpose.
+
+---
+
+## Stance's Posture numbers are first-draft, unplaytested (since 2026-08-10)
+
+`maneuvers.md`'s Stance section (a Funding + Posture pair declared for free at the end of your turn, replacing the old live "which Skill funds this Oppose" choice) landed as part of a cognitive-load pass on the reactive combat loop. The mechanic's shape is settled - Funding hard-locks which Skill answers an Oppose for the round, Posture (Ready/Aggressive/Guarded) gives even a single-Funding-option build a real independent choice - but its numbers weren't derived from anything beyond "feels roughly right next to the old Defensive Stance Basic Move it replaced":
+
+- **Aggressive's trade** (Advantage on a chosen Strike's attack roll, Disadvantage on the Oppose roll that would unlock it) hasn't been checked against `tools/combat_engine.py` for whether the risk/reward actually nets out even, or whether it's a trap option / a dominant one at certain Skill-rank levels.
+- **Guarded's -2 Strike damage penalty** was picked by halving the old Defensive Stance's -4, on the reasoning that Stance no longer costs a Minor Action to maintain - not derived from any damage-output model.
+
+**Still open:** run `tools/creature_rating.py` (or a baseline-PC-vs-baseline-PC pass with `combat_engine.py`) with each Posture forced on, to see whether any of the three actually shifts win rate against `BASELINE_PC` before trusting the numbers. Low urgency - opt-in, PC-facing only, doesn't touch the bestiary.
+
+---
+
 ## Character Creation: Priority Allocation rework (in progress, since 2026-08-08)
 
 Character creation runs on a five-category priority ladder now (priorities **A** through **E**, one each to Attributes/Skills/Career/Feats/Race, no repeats) instead of flat point-buy - closes the old "master of nearly all" gap where Attributes and Skills were separate, uncoupled budgets with no trade-off for broad competence. Landed: the full `character_creation.md` restructure (new Step 2, reordered steps 3-6), Standard Array/Rolled removed, Career Status-tier Crown deltas baked directly into `careers.md`'s printed values, and a full Race power-tier rework (Mundane/Exotic/Extraordinary, 8 races got mechanical changes). Full detail in memory (`project_priority_allocation_chargen.md`), not repeated here.
@@ -24,7 +47,7 @@ Character creation runs on a five-category priority ladder now (priorities **A**
 
 ## Full spell-list rebalance pass needed for Arcane and Divine (post-Petition-Roll)
 
-The Divine Petition Roll rework changed how every Divine spell resolves (flat `1d12 vs. DC 7`, Divine School Skill's payoff moved to Rite Mastery reroll charges instead of the roll itself), but the spells' actual numbers (damage dice, effect magnitudes, Mana Costs) weren't rebalanced against the new resolution - carried over unchanged from the old Spell Attack/Overcome system. Arcane's spell list has its own longstanding staleness independent of this rework and was never in scope for it.
+The Divine Petition Roll rework changed how every Divine spell resolves (flat `1d12 vs. DC 7`, Devotion's payoff moved to Rite Mastery reroll charges instead of the roll itself), but the spells' actual numbers (damage dice, effect magnitudes, Mana Costs) weren't rebalanced against the new resolution - carried over unchanged from the old Spell Attack/Overcome system. Arcane's spell list has its own longstanding staleness independent of this rework and was never in scope for it.
 
 **Deferred:** this needs real playtest data, not a desk pass - a flat 50% base rate plus a Skill-gated reroll pool is a different risk shape than the old contested-roll curve. Treat both paths' spell lists as a single rebalance pass, not two separate ones, since Distinction between them is the entire point.
 

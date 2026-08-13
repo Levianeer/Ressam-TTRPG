@@ -7,7 +7,7 @@
 The Strygs are nightmares given flesh, spawned from the primal fear of death and the unknown and drawn into the waking world from the Fields of Nocturne. Unlike the Varulf, who still carry the echo of a mortal life before their curse, a Stryg has no mortal life to remember \- it is dread that grew a spine and teeth. A Stryg doesn't kill to feed; it drains a victim to erase them, and treats the act as a sacrament rather than a meal.
 
 **Homeland:** Fields of Nocturne  
-**Starting Attributes:** \+1 DEX, \+1 STR, \+1 CHA, \-1 END  
+**Starting Attributes:** \+1 DEX, \+1 CHA  
 **Age:** Do not age  
 **Alignment:** Chaotic  
 **Size:** You retain the Size of the mortal you were before transformation.  
@@ -15,12 +15,12 @@ The Strygs are nightmares given flesh, spawned from the primal fear of death and
 **Starting Languages:** You retain the Languages of the mortal you were before transformation.  
 **Starting Skills:** \+2 in any two Skills
 
-**Level Adjustment:** \+2
+**Race Tier:** B (Uncanny)
 
 ### **Features**
 
 **Darkvision:** You treat nonmagical darkness as dim light up to 60 ft.  
-**Shroud of Lies:** You gain \+2 to Deception and Intimidation, advantage on Stealth outside sunlight.  
+**Shroud of Lies:** You gain \+2 to Manipulate and Intimidate, advantage on Subterfuge outside sunlight.  
 **Blood Drinker:** You gain a Bite attack (1d6+STR piercing). If it deals damage, regain Patched Wounds equal to the Wounds inflicted, this only occurs once per turn.  
 **Undead Nature:** You don't need food, water, or air but must feed on blood weekly or gain 1 Trauma.  
 **Sunlight Weakness:** While in direct sunlight: you receive \-2 to all rolls, cannot heal, magical or otherwise.  

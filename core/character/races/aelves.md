@@ -7,13 +7,13 @@
 Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture tends to be rooted in philosophy and art, and many see the Wind as a source of wisdom, guiding them toward enlightenment. Aelves live for centuries, but their long lives have made them somewhat detached from the everyday struggles of other races, resulting in a cool, often distant demeanour, however, not to be mistaken for disdain, they just struggle to build attachment to those with such short lives. They are highly valued as scouts and archers, moving unseen like the Wind itself.
 
 **Homeland:** Aurkhan  
-**Starting Attributes:** \+1 PRE, \-1 END  
+**Starting Attributes:** \+1 DEX, \-1 STR  
 **Age:** Adult \~100, Lives to \~500  
 **Alignment:** See Subcultures  
 **Size:** Medium (\~6 ft)  
 **Base Speed:** 35 feet  
 **Starting Languages:** Aurkhani, Plethic  
-**Starting Skills:** \+1 Acrobatics, \+1 in either Stealth or Perception
+**Starting Skills:** \+1 Acrobatics, \+1 in either Subterfuge or Perception
 
 ### **Features**
 
@@ -27,7 +27,7 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 
 ### **Features**
 
-**Weapon Training:** You gain \+1 in either Blades or Archery.  
+**Weapon Training:** You gain \+1 in any STR weapon Skill, or in Ranged or Thrown.  
 **Ancestors Cloak:** When you take damage from an attack or spell, you may use your Reaction to become invisible until the end of your next turn. Once used, this feature cannot be used again until you complete a Field Rest or Long Rest.
 
 ## Ash'shene Subculture
@@ -36,9 +36,9 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 
 ### **Features**
 
-**Weapon Training:** You gain \+1 in either Blades or Survival.  
+**Weapon Training:** You gain \+1 in either any STR weapon Skill or Survival.  
 **Tradition of Fire:** You can cast Ignis Lancet (Pyromancy) once per Field Rest or Long Rest without needing ranks in the skill.  
-**Tradition of Ash:** When you reduce a creature to 0 Wounds with fire damage, regain Wounds equal to your END (once per Short Rest).
+**Tradition of Ash:** When you reduce a creature to 0 Wounds with fire damage, regain Wounds equal to your STR (once per Short Rest).
 
 ---
 

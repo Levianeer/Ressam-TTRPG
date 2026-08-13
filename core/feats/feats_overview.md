@@ -26,3 +26,11 @@ Divine feats deepen the connection between faithful casters and their divine pat
 ### **Skill Feats**
 
 Skill feats represent mastery of specific non-combat abilities and specialized training.
+
+### **Prestige Feats**
+
+Prestige feats represent fundamental transformations in how a character interacts with the world, gated behind Level 5 and a narrative ritual rather than raw prerequisites - see `prestige_feats.md` for the full requirements.
+
+### **Racial Feats**
+
+Racial feats are gated behind a specific race instead of a Skill or Attribute score - a trait strong enough to cost a Feat slot rather than come free with that race at character creation.

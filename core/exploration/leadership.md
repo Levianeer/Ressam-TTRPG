@@ -202,7 +202,7 @@ Followers die easily. If caught in combat, targeted by area effects, or facing a
 
 Cohorts are characters. Their death should matter.
 
-- **Dying:** Cohorts reduced to 0 Wounds follow standard dying rules (END rounds to stabilize)  
+- **Dying:** Cohorts reduced to 0 Wounds follow standard dying rules (STR rounds to stabilize)  
 - **Resurrection:** Same as player characters \- not something you can arrange or purchase. If a dead cohort returns, it's entirely the DM's narrative call (see [[Resurrection|divine_overview]])  
 - **Replacement:** You can recruit a new cohort, but this takes time and roleplay. You can't just grab another one immediately.
 
@@ -246,9 +246,9 @@ Cohorts are characters. Their death should matter.
 
 **Wounds:** 4 | **Evasion:** 11 | **AR:** 6 (Gambeson) **Initiative:** \+2
 
-**Attributes:** STR 4, PRE 2, END 4, DEX 3, MIND 2, ARC 0, FAI 1, CHA 2
+**Attributes:** STR 4, DEX 2, MIND 2, ARC 0, FAI 1, CHA 2
 
-**Skills:** Blades \+3, Shields \+2, Athletics \+2, Armorer \+2, Riding \+2, Perception \+1
+**Skills:** Cleaving Blades \+3, Athletics \+2, Crafting \+2, Wayfaring \+2, Perception \+1
 
 **Equipment:**
 

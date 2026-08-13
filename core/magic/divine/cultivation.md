@@ -51,4 +51,4 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 - **Casting Time:** Major Action
 - **Range:** Short
 - **Duration:** 3 rounds
-- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains 3 temporary END, widening their Wound Thresholds for the duration (see [[Wounds & Survival|wounds_and_survival]]) \- a hit needs that much more damage before it escalates into a worse Wound band. At the start of each of the target's turns, this bonus decreases by 1\.
+- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains 3 temporary STR, widening their Wound Thresholds for the duration (see [[Wounds & Survival|wounds_and_survival]]) \- a hit needs that much more damage before it escalates into a worse Wound band. At the start of each of the target's turns, this bonus decreases by 1\.

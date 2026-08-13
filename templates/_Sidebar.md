@@ -67,6 +67,7 @@
 - [Divine](divine_feats)
 - [Skill](skill_feats)
 - [Prestige](prestige_feats)
+- [Racial](racial_feats)
 
 **Equipment**
 - [Armor](armor)

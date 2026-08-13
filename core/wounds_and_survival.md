@@ -46,9 +46,9 @@ These three terms recur throughout Feats, spells, and racial traits, and always 
 
 Huge and bigger aren't player-legal Sizes (see [[Size|carrying_and_resting]]), so a GM statting one is free to keep scaling this baseline up. Feats (such as Tough, see [[General Feats|general_feats]]) are the only other source of additional Wounds \- there is no Attribute that adds to this total.
 
-Damage remaining after AR reduction converts to Wounds via thresholds keyed to your END, rather than subtracting 1-for-1:
+Damage remaining after AR reduction converts to Wounds via thresholds keyed to your STR, rather than subtracting 1-for-1:
 
-| END | 1 Wound | 2 Wounds | 3 Wounds |
+| STR | 1 Wound | 2 Wounds | 3 Wounds |
 |:---:|:-------:|:--------:|:--------:|
 |  1  |   1-7   |   8-13   |   14+    |
 |  2  |   1-8   |   9-14   |   15+    |
@@ -56,20 +56,20 @@ Damage remaining after AR reduction converts to Wounds via thresholds keyed to y
 |  4  |  1-10   |  11-16   |   17+    |
 |  5  |  1-11   |  12-17   |   18+    |
 
-**Design intent:** Big weapons genuinely threaten multi-wound hits; AR and END both push a hit into a lower band \- armor by cutting the damage that reaches the table, END by widening the bands themselves \- so investing in either is meaningful, and Reactions that shave even a few points of damage can drop a hit below a threshold and are therefore decisive, not marginal. Decoupling the Wound pool itself from END means a low-END character (a caster who never touches the stat) still has a guaranteed baseline of Wounds \- what END buys you is softer hits, not a bigger-or-smaller pool.
+**Design intent:** Big weapons genuinely threaten multi-wound hits; AR and STR both push a hit into a lower band \- armor by cutting the damage that reaches the table, STR by widening the bands themselves \- so investing in either is meaningful, and Reactions that shave even a few points of damage can drop a hit below a threshold and are therefore decisive, not marginal. Decoupling the Wound pool itself from STR means a low-STR character (a caster who never touches the stat) still has a guaranteed baseline of Wounds \- what STR buys you is softer hits, not a bigger-or-smaller pool.
 
 ### **Wound Penalty**
 
 Each Wound you're currently missing from your maximum imposes **\-1 to all non-combat rolls**, cumulative. There is deliberately **no combat death spiral** \- a character on their last Wound fights at full capability. The cost of injury is paid on the strategic layer afterward, not in the fight itself.
 
-**Design philosophy:** Wound penalties are not punishment; they are the privilege of being alive. A tough character walking around at a steep penalty is doing so *because* anyone less tough would already be dead. END is not the stat that makes you good at surviving \- it's the stat that lets you afford to be hurt.
+**Design philosophy:** Wound penalties are not punishment; they are the privilege of being alive. A tough character walking around at a steep penalty is doing so *because* anyone less tough would already be dead. STR is not the stat that makes you good at surviving \- it's the stat that lets you afford to be hurt.
 
 ### **Dying**
 
 At 0 Wounds:
 
 1.  You immediately fall Prone and become Unconscious, dropping any equipment you were holding. Excess damage is ignored.
-2.  Your **Death Clock** starts at your **END**. At the start of each of your turns, reduce it by 1. When it reaches 0, you die.
+2.  Your **Death Clock** starts at your **STR**. At the start of each of your turns, reduce it by 1. When it reaches 0, you die.
 3.  **While Dying, you cannot regain Wounds.** Healing magic, potions, and similar effects instead *pause* your Death Clock until the start of your next turn \- they buy time, they don't save you. Only Stabilization ends Dying.
 
 ### **Coup de Grace**
@@ -131,7 +131,7 @@ On average, a character can go three days without rations, each day after they g
 
 ### **Suffocation**
 
-You can hold your breath for END minutes. After that, you drop to 0 Wounds and begin to die.
+You can hold your breath for STR minutes. After that, you drop to 0 Wounds and begin to die.
 
 ### **Patched Wounds**
 

@@ -16,18 +16,18 @@ Set **EXP to 30** (Level 1). XP required for your next level is **(Current Level
 
 Take the five priorities, **A** through **E**, and assign one to each of the five categories below - no repeats, all five used. This single choice shapes your character before you've spent a single point: where your **A** goes is what you're actually good at, and your **E** is what you're openly trading away for it.
 
-| Priority | Attributes (Pool) | Skills (Pool) | Career             | Feats | Race                                           |
-|:--------:|:-----------------:|:-------------:|:-------------------|:-----:|:-----------------------------------------------|
-|  **A**   |        24         |      18       | Any Status tier    |   4   | LA \+2 free                                    |
-|  **B**   |        21         |      15       | Up to Upper-Middle |   3   | LA \+1 free                                    |
-|  **C**   |        18         |      12       | Up to Middle       |   2   | LA \+0 free (pay full cost)                    |
-|  **D**   |        15         |       9       | Up to Lower-Middle |   1   | LA 0 races only                                |
-|  **E**   |        12         |       6       | Low only           |   0   | Artefolk only (Aelves, Dwergaz, Humans, Orkhs) |
+| Priority | Attributes (Pool) | Skills (Pool) | Career             | Feats | Race                            |
+|:--------:|:-----------------:|:-------------:|:-------------------|:-----:|:---------------------------------|
+|  **A**   |        24         |      18       | Any Status tier    |   4   | Any Race Tier                   |
+|  **B**   |        21         |      15       | Up to Upper-Middle |   3   | Up to Tier B (Uncanny)           |
+|  **C**   |        18         |      12       | Up to Middle       |   2   | Up to Tier C (Exotic)            |
+|  **D**   |        15         |       9       | Up to Lower-Middle |   1   | Up to Tier D (Marked)            |
+|  **E**   |        12         |       6       | Low only           |   0   | Tier E only (the four Artefolk) |
 
 - **Attributes / Skills** set the size of your point pools for Step 5 - the points are still spent freely within the normal caps, this only changes how many you have.
 - **Career** sets the highest Status tier you may choose from in Step 4 - "up to" a tier means that tier and everything below it is open (a **B** can still take a Low Status career if the concept calls for it, it just isn't locked out of anything above Low the way a **D** or **E** is).
 - **Feats** sets how many Feats you start with in Step 6.
-- **Race** sets how much Level Adjustment (LA) you can access for free in Step 3 - "LA \+2 free" means a race costing up to LA \+2 costs you nothing extra; above that, you pay the difference as normal (see [[Races|races_overview]]). **D** and **E** cannot take an LA race at any cost - **E** specifically is restricted to the four common Artefolk races.
+- **Race** sets which Race Tier(s) you may choose from in Step 3 - "up to" a tier means that tier and everything below it is open, same as Career (see [[Races|races_overview]]). There's no cost beyond the gate itself - once your priority opens a tier, every race in it is free to take.
 
 ---
 
@@ -40,7 +40,7 @@ See the **Races** chapter, limited to what your Race priority allows (Step 2). R
 - Racial abilities
 - Movement speed
 - Special senses (darkvision, low-light vision)
-- Level Adjustment, if any - your Race priority may cover some or all of its cost (Step 2)
+- Race Tier - must be at or below what your Race priority allows (Step 2)
 
 ---
 
@@ -56,9 +56,9 @@ See the **Careers** chapter, limited to the Status tier your Career priority all
 
 ## Step 5: Distribute Points
 
-You have two separate budgets, sized by your Attributes and Skills priorities from Step 2: an **Attribute Point** budget spent only on your 8 Attributes, and a **Skill Point** budget spent only on your Skills. Neither converts into the other - an unspent Attribute Point can't buy Skill Ranks, and vice versa. Career skill bonuses are free and applied first, and don't count against your Skill Points. Two caps still shape how far any single stat can go, so points can't just be dumped into one thing without limit:
+You have two separate budgets, sized by your Attributes and Skills priorities from Step 2: an **Attribute Point** budget spent only on your 6 Attributes, and a **Skill Point** budget spent only on your Skills. Neither converts into the other - an unspent Attribute Point can't buy Skill Ranks, and vice versa. Career skill bonuses are free and applied first, and don't count against your Skill Points. Two caps still shape how far any single stat can go, so points can't just be dumped into one thing without limit:
 
-- **A Skill's Rank can never exceed its governing Attribute's current score** (see [[Skills|core_rules]]) - want Blades 4? STR needs to be 4 first.
+- **A Skill's Rank can never exceed its governing Attribute's current score** (see [[Skills|core_rules]]) - want Two-Handed Blades 4? STR needs to be 4 first.
 - **No Attribute can start below 0, or above 3 from points alone** (see Attribute Limits, below) - this is also, by extension, the practical ceiling on any single Skill until level 4. Racial modifiers are applied afterward (Step 3) and ignore this cap entirely - a race with a strong bonus in an Attribute can push it above the cap right away.
 
 ### **Attribute Limits**
@@ -93,9 +93,9 @@ See the **Feats** chapter for the complete list.
 | :---- | :---- |
 | **Wounds** | Size baseline \+ Feats |
 | **Mana Points (MP)** | MIND × 2 |
-| **Slots** | STR \+ END |
+| **Slots** | 2 × STR |
 | **Evasion** | 5 \+ DEX − Armor Penalty |
-| **Initiative** | 1d12 \+ ((PRE \+ DEX) ÷ 2\) |
+| **Initiative** | 1d12 \+ DEX |
 | **Reactions/round** | DEX 0-2: 1, DEX 3-4: 2, DEX 5: 3 |
 | **Armor Rating (AR)** | Equipped armor's AR value |
 
@@ -105,7 +105,7 @@ See the **Feats** chapter for the complete list.
 
 Your career provides starting equipment and currency. Purchase additional items from the **Equipment** chapter.
 
-**Armor Reminder:** Armor Penalty affects Evasion, your Evasion Skill-funded Oppose roll (see [[Combat|combat]]), and spellcasting. Each 2 ranks in Armorer reduces that penalty by 1\.
+**Armor Reminder:** Armor Penalty affects Evasion, your DEX Ward-funded Oppose roll (see [[Combat|combat]]), and spellcasting. Crafting doesn't reduce it - only the [[Broken In|general_feats]] Feat does.
 
 ---
 

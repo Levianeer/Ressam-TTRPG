@@ -36,7 +36,7 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
 - **Casting Time:** Reaction (when a creature you can see begins casting a spell)
 - **Range:** 60 ft
 - **Duration:** Instant
-- **Effect:** You force water into a creature's throat as they speak their incantation. Make a spell overcome roll vs. the target's END Ward.
+- **Effect:** You force water into a creature's throat as they speak their incantation. Make a spell overcome roll vs. the target's STR Ward.
 
   - **Overcome:** Their spell fails immediately \- any Mana spent or scroll consumed is still lost. They are Silenced until the end of their next turn.
   - **Resist:** Their spell still takes effect, but they take 1d8 cold damage as water floods their lungs.
@@ -59,12 +59,12 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
 - **Casting Time:** Major Action
 - **Range:** 30 ft
 - **Duration:** Instant
-- **Effect:** You reach toward a creature and freeze the water in their blood. Make a spell overcome roll vs. the target's END Ward.
+- **Effect:** You reach toward a creature and freeze the water in their blood. Make a spell overcome roll vs. the target's STR Ward.
 
   - **Overcome:** 4d8+ARC cold damage and their speed becomes 0 until the end of their next turn. While their speed is 0 from this effect, they have disadvantage on all attack rolls and their Evasion is reduced by 3 as their limbs refuse to cooperate.
   - **Resist:** Half damage. Their speed is halved until the end of their next turn.
 
 
-- At the end of each of their turns, the target may attempt to shake off the effect by rolling 1d12 \+ END vs. the original spell roll. On success, an Overcome downgrades to the Resist effect. On success against the Resist effect, the speed reduction ends.
+- At the end of each of their turns, the target may attempt to shake off the effect by rolling 1d12 \+ STR vs. the original spell roll. On success, an Overcome downgrades to the Resist effect. On success against the Resist effect, the speed reduction ends.
 
 - Creatures without blood or with cold immunity are unaffected.

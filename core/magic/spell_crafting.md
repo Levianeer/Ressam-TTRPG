@@ -24,7 +24,7 @@ Every spell follows the same fundamental structure:
 
 ## Point Budget
 
-**Base Points \= Spell Crafting Skill \+ Noun's associated Magic School Skill**
+**Base Points \= Thaumaturgy \+ the Noun's own school Skill**
 
 **Building a Spell:**
 

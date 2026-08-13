@@ -2,7 +2,7 @@ Invocation is the act of torturing your soul, forcing it from your body and givi
 
 ### **The Severing (Becoming an Invoker)**
 
-When you first invest ranks in Invocation, you must perform the Severing \- a ritual that tears a fragment from your soul to create your Familiar.
+When you first learn an Invocation spell, you must perform the Severing \- a ritual that tears a fragment from your soul to create your Familiar.
 
 #### **The Ritual:**
 
