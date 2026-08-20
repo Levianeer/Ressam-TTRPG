@@ -1,6 +1,6 @@
 Magic is the manipulation of energy \- the two methods of manipulation fall into two schools of thought; precise formulae (Arcane) or divine petition (Divine). It is rare not just because people lack potential, but because they lack education and resources. With literacy rates below \~15%, magic remains confined to the wealthy, the religious, and the exceptionally lucky. Because talent is worthless if you have no way to learn.
 
-**The Literacy Barrier:** The vast majority of people will never read a spell formula or holy text. Even those with high ARC or FAI cannot learn what they cannot read \- see [[Literacy|core_rules]]: only a character with **MIND 3+** is literate by default, and only a literate character can invest in an Arcane or Divine school.
+**The Literacy Barrier:** The vast majority of people will never read a spell formula or holy text. Even those with high ARC or FAI cannot learn what they cannot read \- see [[Literacy|core_rules]]: only a character with **MIND 2+** is literate by default, and only a literate character can invest in an Arcane or Divine school.
 
 - **Arcane Magic** requires reading complex magical formulae, access to spellbooks or teachers, materials for scribing, and years of study.  
 - **Divine Magic** requires reading holy texts and scriptures, understanding theological doctrine, and genuine faith.
@@ -17,7 +17,7 @@ These rules apply to **all** spellcasting, whether Arcane or Divine.
 
 ### **Mana Pool**
 
-**Maximum Mana \= MIND × 2**
+**Maximum Mana \= MIND × 2**, minimum 0 \- a negative MIND floors here rather than giving you negative Mana.
 
 Mana is your magical fuel, shared between Arcane and Divine magic if you practice both - one pool, spent on either path's spells.
 
@@ -32,7 +32,7 @@ Mana is your magical fuel, shared between Arcane and Divine magic if you practic
 
 ### **Armor and Spellcasting**
 
-Armor Penalty applies to all Arcane spell rolls. The [[Broken In|general_feats]] Feat is the only way to reduce it - see [[Armor|armor]]. Divine's Petition Roll has no modifier for Armor Penalty to touch - see below.
+Armor Penalty applies to all Arcane spell rolls, and **nothing reduces it** - see [[Armor|armor]]. Divine's Petition Roll has no modifier for Armor Penalty to touch - see below.
 
 ---
 
@@ -48,17 +48,19 @@ Divine spells don't use a Spell Modifier at all - see Divine: The Petition Roll,
 
 ### **Arcane: Spell Attacks & Spell Overcomes**
 
-**Spell Attacks:** Some Arcane spells require you to hit a target's physical defenses \- dodging, reflexes, and positioning.
+**Spell Attacks:** Some Arcane spells are hurled at a target and have to arrive - a bolt, a stone, a lance of frost.
 
-**Roll:** 1d12 \+ Spell Modifier vs. target's **Evasion** \- a [[Contested Ward|core_rules]], same as any other Attribute-funded Passive Ward.
+**Roll:** 1d12 \+ Spell Modifier vs. the **Shot DC** \- the same number a bowshot answers to, set by range, movement and position rather than by the target (see [[There is no defense against a ranged attack|exchange]] for the table).
 
-**Spell Overcomes:** Some Arcane spells target a creature's mental fortitude, physical resilience, or force of will rather than their ability to dodge. You roll to overcome the target's Ward.
+**Nothing answers a Spell Attack.** No Tempo Die, no Parry, no Ward: a hurled spell is answered by breaking line of sight and by distance, exactly as an arrow is, and for the same reason. A caster's target does not get quicker or slower at being hit; the situation does.
+
+**Spell Overcomes:** Some Arcane spells target a creature's mental fortitude, physical resilience, or force of will rather than the situation they are standing in. You roll to overcome the target's Ward.
 
 **Roll:** 1d12 \+ Spell Modifier vs. target's Ward (5 \+ Attribute)
 
 A spell will specify which attribute it targets (e.g. "Roll vs. target's MIND Ward"). This is a [[Contested Ward|core_rules]] too \- the target's Ward is their static defensive score, not a roll.
 
-**Critical Hits:** Spell Attacks can crit on a natural 12 (roll damage twice, take the higher result, per the Critical Hits rules in Combat). Spell Overcomes cannot crit \- their power lies in their effects, not raw damage.
+**No criticals, on either path.** A Spell Attack that clears its Shot DC by a mile deals exactly what one that scraped it deals \- there are no critical hits anywhere in Ressam (see [[There are no critical hits|exchange]]), and a spell is no exception.
 
 ### **Divine: The Petition Roll**
 
@@ -69,7 +71,7 @@ Every Divine spell \- whatever it does, whoever or whatever it targets \- lives 
 - **Success:** The spell's full effect applies, exactly as written.
 - **Failure:** Nothing happens. The Mana is spent regardless \- your god simply didn't answer this time.
 
-No exceptions, no partial effect on a near-miss, and no crit on a natural 12 \- a Petition either lands whole or doesn't land at all. This is a deliberate departure from Arcane's contested rolls, above: Divine magic never checks a target's Evasion or Ward, and Divine spells never carry a Resist clause. See DESIGN\_GUIDE.md's Overcomes guideline for why this is intentional rather than an oversight.
+No exceptions and no partial effect on a near-miss \- a Petition either lands whole or doesn't land at all. This is a deliberate departure from Arcane's rolls, above: Divine magic never checks a Shot DC or a target's Ward, and Divine spells never carry a Resist clause. See DESIGN\_GUIDE.md's Overcomes guideline for why this is intentional rather than an oversight.
 
 ### **Rite Mastery (Divine Only)**
 
@@ -95,7 +97,7 @@ Subtract the target's AR from spell damage, then convert remaining damage to Wou
 | Aspect | Arcane (Scribing) | Divine (Prayer) |
 | :---- | :---- | :---- |
 | **Mana Source** | Short Rest (small), Field Rest (partial), or Long Rest (full) \- full recovery needs civilization | Same Rest ladder as Arcane, same amounts \- but also requires genuine devotion performed during that Rest, or it grants no Mana at all |
-| **Resolution** | Spell Attack vs. Evasion or Spell Overcome vs. Ward \- contested, scales with Skill/ARC, partial effect on a Resist, crits on a natural 12 | Petition Roll vs. a flat DC 7 \- no modifier, same odds for every caster, binary: full effect or nothing. Rite Mastery (Skill-gated rerolls) is where investment shows up instead |
+| **Resolution** | Spell Attack vs. the Shot DC or Spell Overcome vs. Ward \- scales with Skill/ARC, partial effect on a Resist | Petition Roll vs. a flat DC 7 \- no modifier, same odds for every caster, binary: full effect or nothing. Rite Mastery (Skill-gated rerolls) is where investment shows up instead |
 | **Preparation** | Scribe scrolls, spending Mana in advance | None \- cast straight from your Mana pool |
 | **Casting** | Consume scroll (no Mana cost at cast time) | Spend Mana per cast |
 | **Flexibility** | Must predict what you'll need | Cast any known spell spontaneously |

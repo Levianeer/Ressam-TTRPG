@@ -17,7 +17,7 @@ Followers are common folk who work for you \- servants, porters, scribes, grooms
 
 ### **Follower Limitations**
 
-- **No combat stats:** Followers don't have Wounds, Evasion, or AR in any meaningful sense. If targeted, they die or they flee.  
+- **No combat stats:** Followers don't have Wounds, a Tempo Pool, or AR in any meaningful sense. If targeted, they die or they flee.  
 - **No player-created sheets:** The DM creates followers as needed. You describe what role you're hiring; the DM provides the person.  
 - **Require upkeep:** Followers expect payment and reasonable treatment (see Upkeep below).
 
@@ -63,7 +63,7 @@ Cohorts are trained combatants who follow you into battle \- squires, mercenary 
 
 ### **Maximum Cohorts**
 
-**Maximum Cohorts: 1\.** With CHA 5+, you may instead maintain up to 2, but while you have two cohorts, both are one additional level lower (your level −3).
+**Maximum Cohorts: 1\.** With CHA 4+, you may instead maintain up to 2, but while you have two cohorts, both are one additional level lower (your level −3).
 
 ### **Cohort Level**
 
@@ -124,7 +124,7 @@ Either way, the DM has final approval. Your cohort is an NPC \- they have their 
 
 - **Initiative:** Cohorts act on your initiative, immediately after your turn  
 - **Commands:** You can issue one command per round (no action required). Without commands, cohorts defend themselves and stay near you.  
-- **Independent action:** Complex tactics require Leadership checks (DC 9-12)  
+- **Independent action:** Complex tactics require Leadership checks (DC 8-12)  
 - **Death:** Cohorts reduced to 0 Wounds follow normal dying rules. You can stabilize them.
 
 ---
@@ -222,7 +222,7 @@ Cohorts are characters. Their death should matter.
 
 ### **Cohorts**
 
-- **Cap:** 1 (2 with CHA 5+, at a level penalty)  
+- **Cap:** 1 (2 with CHA 4+, at a level penalty)  
 - **Level:** Your Level \- 2 (min 1\)  
 - **Combat:** Full participation  
 - **Sheet:** Player may create (DM approval)  
@@ -232,7 +232,7 @@ Cohorts are characters. Their death should matter.
 
 | Calculation | Formula |
 | :---- | :---- |
-| Maximum Cohorts | 1 (2 with CHA 5+, both at Level \- 3\) |
+| Maximum Cohorts | 1 (2 with CHA 4+, both at Level \- 3\) |
 | Cohort Level | Your Level \- 2 (min 1\) |
 | Morale Check | 1d12 \+ Leadership vs. DC 12 |
 | Recruitment DC | 12 ± circumstance modifiers |
@@ -244,7 +244,7 @@ Cohorts are characters. Their death should matter.
 
 **Mira Valdros, Squire** *Level 2 Human*
 
-**Wounds:** 4 | **Evasion:** 11 | **AR:** 6 (Gambeson) **Initiative:** \+2
+**Wounds:** 4 | **AR:** 6 (Gambeson) | **Initiative:** 7 | **Tempo Pool:** 3 dice at `1d10` | **Parry:** `1d10 \+ 3 \+ Guard`
 
 **Attributes:** STR 4, DEX 2, MIND 2, ARC 0, FAI 1, CHA 2
 
@@ -252,8 +252,8 @@ Cohorts are characters. Their death should matter.
 
 **Equipment:**
 
-- Shortsword (1d6 piercing, Light, 11-12 crit)  
-- Targe Shield (+1 AR when blocking)  
+- Shortsword (1d6 \+ 1 piercing, Length 2, Light, takes an Opening on a margin of 4)  
+- Targe Shield (Guard \+1, statted as a Buckler)  
 - Gambeson (6 AR)  
 - Armorer's Tools
 

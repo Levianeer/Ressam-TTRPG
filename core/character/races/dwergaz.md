@@ -13,7 +13,8 @@ The Dwergaz are a race of stoic, earth-bound beings - cut, not born. Every Dwerg
 **Size:** Medium (4-5 ft)  
 **Base Speed:** 25 feet  
 **Starting Languages:** Khazduul, Plethic  
-**Starting Skills:** \+2 Crafting, \+1 in either any Lore Skill or Perception
+**Starting Skills:** \+2 Crafting, \+1 Perception  
+**Knowledge Grants:** 1 point among Crafts & Trades or History
 
 ### **Features**
 

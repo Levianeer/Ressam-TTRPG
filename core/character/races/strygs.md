@@ -13,7 +13,8 @@ The Strygs are nightmares given flesh, spawned from the primal fear of death and
 **Size:** You retain the Size of the mortal you were before transformation.  
 **Base Speed:** 35 feet  
 **Starting Languages:** You retain the Languages of the mortal you were before transformation.  
-**Starting Skills:** \+2 in any two Skills
+**Starting Skills:** \+2 in any two Skills  
+**Knowledge Grants:** 1 point among Forbidden Lore or Signature Lore
 
 **Race Tier:** B (Uncanny)
 

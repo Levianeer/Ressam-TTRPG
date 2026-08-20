@@ -1,5 +1,7 @@
 Geomancy bends stone, earth, and all that is grounded. Its practitioners understand how the God-Dragons anchored the world, and they exploit those principles to reshape terrain, raise walls, or crush enemies beneath slabs of rock. Geomancy is methodical, patient, and brutal \- like the earth itself. Lords and merchants value Geomancers for fortifications and mining, but the common folk remember the stories: buried villages, triggered landslides, and tunnels that collapsed "mysteriously" during labor disputes. Useful? Absolutely. Trustworthy? Only when you're paying them more than your enemies are. People nod respectfully to Geomancers in public and bar their doors at night.
 
+**Mana Scarring:** Overworked Geomancers develop swollen, arthritic\-looking knuckles decades before they should, from the sheer repeated shock of forcing earth to move through their own hands, along with patches of fingers that periodically go numb and bloodless\-white with no cold involved. Gloves hide the swelling and the numbness from sight; they do nothing for a grip that's stiffer and weaker than someone that age should have.
+
 ### **SPELLS**
 
 **Terra Lancet \- Mana Cost 1**
@@ -7,11 +9,11 @@ Geomancy bends stone, earth, and all that is grounded. Its practitioners underst
 - **Casting Time:** Major Action
 - **Range:** 30 ft
 - **Duration:** Instant
-- **Effect:** You tear a dense chunk of stone or hardened earth from a nearby surface and hurl it at a target you can see. Make a spell attack roll vs. target's Evasion. On hit, deal 1d6 \+ ARC bludgeoning damage. If the target is Large or smaller they are knocked back 5 ft.
+- **Effect:** You tear a dense chunk of stone or hardened earth from a nearby surface and hurl it at a target you can see. Make a spell attack roll vs. the Shot DC. On hit, deal 1d6 \+ ARC blunt damage. If the target is Large or smaller they are knocked back 5 ft.
 
 **Earthen Barricade \- Mana Cost 2**
 
-- **Casting Time:** Reaction
+- **Casting Time:** Off-turn, 1 Tempo Die
 - **Range:** Self or adjacent ally
 - **Duration:** Until start of your next turn
 - **Effect:** A slab of stone erupts to intercept the attack. The protected creature gains \+5 AR against the triggering attack only. This bonus does not cause the creature's own armor to degrade.
@@ -25,11 +27,11 @@ Geomancy bends stone, earth, and all that is grounded. Its practitioners underst
 - **Duration:** Instant
 - **Effect:** You strike the ground and send a shockwave rippling through the earth. Make a spell overcome roll vs. the DEX Ward of all creatures within 20 ft who are standing on earth or stone.
 
-  - **Overcome:** 2d8 \+ ARC bludgeoning damage and knocked Prone.
+  - **Overcome:** 2d8 \+ ARC blunt damage and knocked Prone.
   - **Resist:** Half damage and remain standing.
 
 
-- The tremor doesn't discriminate between friend and foe \- any wall, barricade, or structure within range, including your own Earthen Barricade or Lithic Ruina, takes 4d8 bludgeoning damage. Unsecured objects are knocked over, and the affected area becomes difficult terrain until cleared.
+- The tremor doesn't discriminate between friend and foe \- any wall, barricade, or structure within range, including your own Earthen Barricade or Lithic Ruina, takes 4d8 blunt damage. Unsecured objects are knocked over, and the affected area becomes difficult terrain until cleared.
 
 **Stoneflesh \- Mana Cost 3**
 

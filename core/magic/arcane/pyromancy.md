@@ -1,5 +1,7 @@
 Pyromancy is destruction incarnate. Fire consumes, purifies, and transforms \- and Pyromancers wield it with terrifying efficiency. The formulae for flame are among the simplest to learn and the hardest to control. One mistake, and you're ash. Mastery means turning enemies into cinders without igniting yourself. Every village wants a Pyromancer to light forges and cauterize wounds, but no one wants to live next to one. The jokes write themselves: "the mage sneezed and burned down the tavern," "lost his temper and took the whole barn with him," "one bad dream and half the street went up." Armies pay fortunes for Pyromancers, but even soldiers give them a wide berth in camp. You're a walking disaster waiting to happen, and everyone knows it.
 
+**Mana Scarring:** Overworked Pyromancers develop the hands and forearms of someone who's survived real fire \- blackened, cracked, burn\-scarred skin that never heals soft again, and unnervingly hot to the touch even hours after casting. Gloves and long sleeves hide it completely, which is why most Pyromancers wear both, indoors or out.
+
 ### **SPELLS**
 
 **Ignis Lancet \- Mana Cost 1**
@@ -11,7 +13,7 @@ Pyromancy is destruction incarnate. Fire consumes, purifies, and transforms \- a
 
 **Flare Ward \- Mana Cost 2**
 
-- **Casting Time:** Reaction (when you or an ally within 15 ft is about to be hit by a melee attack)
+- **Casting Time:** Off-turn, 1 Tempo Die (when you or an ally within 15 ft is about to be hit by a melee attack)
 - **Range:** 15 ft
 - **Duration:** Instant
 - **Effect:** The attacker's weapon or limb flares with sudden heat. Make a spell overcome roll vs. the attacker's STR Ward.

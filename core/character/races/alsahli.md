@@ -14,11 +14,12 @@ The Alsahli are a cursed reptilian race, their sleek, multi-eyed forms a testame
 **Base Speed:** 30 feet, climbing speed 30 feet  
 **Starting Languages:** Zakhrafan, Plethic  
 **Starting Skills:** \+1 Survival, \+1 in either Athletics or Acrobatics  
+**Knowledge Grants:** 1 point among Commerce or Streetwise  
 **Race Tier:** D (Marked)
 
 ### **Features**
 
-**Cold-Blooded:** You have resistance to fire damage. When you take cold damage, make a STR Ward (DC 16\) or your speed is halved until the end of your next turn.  
+**Cold-Blooded:** You have resistance to fire damage. When you take cold damage, make a STR Ward (DC 12\) or your speed is halved until the end of your next turn.  
 **Four Arms:** You have a secondary pair of arms below your primary pair. These extra limbs can hold objects, perform simple tasks, draw or stow weapons, reload weapons, or be used for spells. You do not gain additional attacks beyond what your Feats or Features allow, and equipping more than two shields at once still runs into the Shield Cap (see [[Shields|weapons]]) - the extra hands let you hold them, not stack their Guard indefinitely.  
 **Desert Born:** You do not gain extra Trauma while in the desert. You only need 1 Ration per 2 days.
 

@@ -4,7 +4,7 @@ Every instance of damage \- a weapon's die, a spell's Overcome, a Feat's rider, 
 
 ### Physical
 
-**Piercing, Slashing, Bludgeoning** (a weapon's listed damage type, see [[Weapons|weapons]]) and **Poison** (envenomed weapons and toxins, see [[Alchemy|alchemy]]). Mundane damage, delivered by a blade, a blow, or a coating \- even when a spell or Feat is what put the weapon or the poison there.
+**Piercing, Slashing, Blunt** (a weapon's listed damage type, see [[Weapons|weapons]]) and **Poison** (envenomed weapons and toxins, see [[Alchemy|alchemy]]). Mundane damage, delivered by a blade, a blow, or a coating \- even when a spell or Feat is what put the weapon or the poison there.
 
 **Magical vs. Non-magical:** Physical damage carries a second, independent tag \- whether its source is magical. An ordinary weapon, an unarmed strike, or a natural weapon with no stated exception deals **non-magical** Physical damage; an enchanted weapon or a natural weapon a race explicitly calls magical (a Varulf's Claws and Bite) deals **magical** Physical damage. Elemental and Occult damage is always treated as magical \- nothing mundane produces Fire from nothing or drains a soul \- so this tag only matters for Physical. It exists because a handful of traits scope their protection to only one half of Physical: Windform's immunity to non-magical Physical damage while incorporeal, or Invocation's Apotheosis granting resistance to non-magical Physical damage.
 
@@ -28,7 +28,7 @@ These three terms recur throughout Feats, spells, and racial traits, and always 
 - **Vulnerability** to a damage type: double incoming damage of that type, before AR is subtracted.
 - **Immunity** to a damage type: take no damage of that type at all \- it never reaches AR or the Wound Thresholds.
 
-**Order of operations:** Resistance, Vulnerability, and Immunity apply to the raw damage roll first; AR is then subtracted as normal; the remainder converts to Wounds via the Wound Thresholds below. A hit still degrades armor by 1 AR regardless of how much Wound damage it ends up dealing (see Armor Durability, [[Armor|armor]]) \- these three change how much you're hurt, not whether you were hit.
+**Order of operations:** Resistance, Vulnerability, and Immunity apply to the raw damage roll first; AR is then subtracted as normal; the remainder converts to Wounds via the Wound Thresholds below. A hit still degrades armor regardless of how much Wound damage it ends up dealing (see Degradation, [[Combat|combat]], for the two exceptions - a War Maul or firearm costs 2, and Rigid armor loses nothing to a blow it absorbs entirely) \- these three change how much you're hurt, not whether you were hit.
 
 **Stacking:** Multiple sources of Resistance to the same type don't stack \- still just half. Resistance and Vulnerability to the same type cancel out entirely (normal damage), rather than compounding into some other multiplier.
 
@@ -40,23 +40,26 @@ These three terms recur throughout Feats, spells, and racial traits, and always 
 
 | Size | Wounds |
 |:---:|:---:|
-| Small | 2 |
-| Medium | 3 |
-| Large | 4 |
+| Small | 3 |
+| Medium | 4 |
+| Large | 5 |
 
-Huge and bigger aren't player-legal Sizes (see [[Size|carrying_and_resting]]), so a GM statting one is free to keep scaling this baseline up. Feats (such as Tough, see [[General Feats|general_feats]]) are the only other source of additional Wounds \- there is no Attribute that adds to this total.
+**5 is the ceiling a player reaches without Feats**, on a Large race. Huge and bigger aren't player-legal Sizes (see [[Size|carrying_and_resting]]), so a GM statting one is free to keep scaling this baseline up. Feats (such as Tough, see [[General Feats|general_feats]]) are the only other source of additional Wounds \- there is no Attribute that adds to this total.
 
-Damage remaining after AR reduction converts to Wounds via thresholds keyed to your STR, rather than subtracting 1-for-1:
+*Raised by 1 across the board on 2026-08-21.* Wounds are the game's primary control on how long a fight runs, and the baseline was set against an older combat system in which a character made at most one attack per turn. Under [[The Exchange|exchange]] a character attacks as many times as they are willing to spend Tempo Dice on, so the same Wound pool empties considerably faster.
 
-| STR | 1 Wound | 2 Wounds | 3 Wounds |
-|:---:|:-------:|:--------:|:--------:|
-|  1  |   1-7   |   8-13   |   14+    |
-|  2  |   1-8   |   9-14   |   15+    |
-|  3  |   1-9   |  10-15   |   16+    |
-|  4  |  1-10   |  11-16   |   17+    |
-|  5  |  1-11   |  12-17   |   18+    |
+Damage remaining after AR reduction converts to Wounds via thresholds, rather than subtracting 1-for-1:
 
-**Design intent:** Big weapons genuinely threaten multi-wound hits; AR and STR both push a hit into a lower band \- armor by cutting the damage that reaches the table, STR by widening the bands themselves \- so investing in either is meaningful, and Reactions that shave even a few points of damage can drop a hit below a threshold and are therefore decisive, not marginal. Decoupling the Wound pool itself from STR means a low-STR character (a caster who never touches the stat) still has a guaranteed baseline of Wounds \- what STR buys you is softer hits, not a bigger-or-smaller pool.
+| Damage after AR | Wounds |
+|:---------------:|:------:|
+| 0 or less | 0 |
+| 1-9 | 1 |
+| 10-18 | 2 |
+| 19+ | 3 |
+
+**The table is the same for every creature in the game.** No Attribute widens or narrows it.
+
+**Design intent:** Big weapons genuinely threaten multi-wound hits, and **AR is the only thing that pushes a hit into a lower band** \- which is what makes a point of armor worth having and what makes a blow cut from 8 damage to 2 cost you so much less. The bands used to be keyed to STR; that keying was removed when STR became the size of your Tempo Die and the whole of your melee damage, because a single Attribute paying for offense, defense *and* durability is the one thing the Tempo Pool's STR/DEX split exists to avoid. **A blow reduced to 0 or less inflicts no Wound but still landed** \- it degrades armor, and in melee it still costs the target a Tempo Die to Shock (see [[The Exchange|exchange]]).
 
 ### **Wound Penalty**
 
@@ -82,7 +85,7 @@ A Dying creature can be executed by attacking it.
 ### **Stabilization**
 
 -   **Action:** Major Action while adjacent
--   **Check:** Medical Lore vs. DC (10 + target's Trauma)
+-   **Check:** Chirurgery vs. DC (10 + target's Trauma)
 -   **Healer's Kit:** Grants advantage
 -   **Success:** The target is no longer Dying. They remain at 0 Wounds, Unconscious, and Prone until they regain at least 1 Wound \- at which point healing works on them normally again.
 -   **Failure:** No progress; the clock keeps ticking. You may try again next round.
@@ -97,7 +100,7 @@ Whenever a hit deals Wound damage, its dominant Damage Type \- whichever type co
 |:------------|:--------------|
 | Piercing    | Puncture      |
 | Slashing    | Laceration    |
-| Bludgeoning | Fracture      |
+| Blunt       | Fracture      |
 | Poison      | Gangrene      |
 | Fire        | Burn          |
 | Cold        | Frostbite     |
@@ -123,7 +126,7 @@ Whenever a hit deals Wound damage, its dominant Damage Type \- whichever type co
 
 ### **Falling**
 
-Take 1d6 bludgeoning damage per 5 ft fallen, creature is forced prone unless damage is avoided. Deliberately jumping, reduces the number of dice rolled by 4d6 (minimum 0), Landing on soft surfaces may reduce damage by half (DM discretion).
+Take 1d6 blunt damage per 5 ft fallen, creature is forced prone unless damage is avoided. Deliberately jumping, reduces the number of dice rolled by 4d6 (minimum 0), Landing on soft surfaces may reduce damage by half (DM discretion).
 
 ### **Food and Water**
 
@@ -176,22 +179,22 @@ Conditions can be applied by numerous different sources and in a multitude of wa
 
 | Condition | Effects                                                                                                                                                                                                                                                                                |
 | :---- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Bleeding** | At the start of each of its turns, the creature takes its Bleed value \- half the damage of the hit that applied Bleeding (rounded down, does not degrade AR). Ending it takes a Major Action and a Medical Lore check (DC \= Bleed value), made on itself or by an adjacent creature. |
-| **Blinded** | Can't see. Automatically fails any check or Ward that relies on sight. Disadvantage on attack rolls; attack rolls against it have advantage.                                                                                                                                           |
+| **Bleeding** | At the start of each of its turns, the creature takes its Bleed value \- half the damage of the hit that applied Bleeding (rounded down, does not degrade AR). Ending it takes a Major Action and a Chirurgery check (DC \= Bleed value), made on itself or by an adjacent creature. |
+| **Blinded** | Can't see. Automatically fails any check or Ward that relies on sight. Disadvantage on attack rolls **and on Parries** \- you can still answer a blow you never saw, just badly. The auto-fail clause does not reach a Parry, which is neither a check nor a Ward. |
 | **Charmed** | Can't attack the charmer or target it with harmful effects. The charmer has advantage on Skill checks to interact with the creature socially.                                                                                                                                          |
 | **Deafened** | Can't hear. Automatically fails any check or Ward that relies on hearing.                                                                                                                                                                                                              |
 | **Flying** | Gains a flying Speed equal to the granting effect's value or its walking Speed, whichever is higher. If it loses this Speed or is knocked Prone while aloft, it falls (see Falling, above). |
 | **Frightened** | While the source of its fear is within line of sight: disadvantage on attack rolls and Skill checks. It can't willingly move closer to the source.                                                                                                                                     |
-| **Grappled** | Restrained, ends if the creature is moved beyond the reach of the grappler or grappling effect.                                                                                                                                                                                        |
-| **Incapacitated** | Can't take actions or reactions (Major, Minor, Object Interaction, or Reaction). Movement is unaffected unless another effect says otherwise.                                                                                                                                          |
+| **Grappled** | Restrained. Ends the moment the grappler lets go, moves away, or is knocked Prone \- see [[Grappling|exchange]] for how a hold is taken and broken.                                                                                                       |
+| **Incapacitated** | Can't take actions of any kind (Major, Minor, or Object Interaction) and has no Tempo Pool \- attacks against it land automatically and the attacker takes an Opening. Movement is unaffected unless another effect says otherwise.                        |
 | **Invisible** | Attack rolls against it have disadvantage; its own attack rolls have advantage. Counts as heavily obscured for hiding and has advantage on Stealth checks.                                                                                                                             |
-| **Paralyzed** | Incapacitated, Speed 0, and can't speak. Automatically fails STR and DEX Wards. Attack rolls against it have advantage, and any melee attack that hits it is a critical hit.                                                                                                           |
+| **Paralyzed** | Incapacitated, Speed 0, and can't speak. Automatically fails STR and DEX Wards. Attacks against it land automatically and the attacker takes an Opening \- see [[The helpless are not a special case any more|exchange]]. |
 | **Petrified** | Incapacitated, Speed 0, and unaware of its surroundings. Becomes a nonmagical stone object: weight ×10, aging stops, resistance to all damage. All other conditions and ongoing effects are suspended until it's freed.                                                                |
 | **Poisoned** | Disadvantage on attack rolls and Skill checks.                                                                                                                                                                                                                                         |
-| **Prone** | Disadvantage on attack rolls. Melee attack rolls against it have advantage; ranged attack rolls against it have disadvantage. Can't move except to stand up, which costs half its maximum movement.                                                                                    |
-| **Restrained** | Speed 0; disadvantage on attack rolls; \-3 to DEX Wards; casting requires a MIND Ward (DC 18\) or the spell fails.                                                                                                                                                                     |
+| **Prone** | Disadvantage on attack rolls; attacks against it have Advantage. **Parries at no penalty.** Can't move except to stand up, which costs its whole Move Action. A shot at a Prone target reads the [[Shot DC|exchange]] table instead of this line.        |
+| **Restrained** | Speed 0; attack rolls against it have advantage; disadvantage on its own attack rolls; disadvantage on DEX Wards; casting requires a MIND Ward (DC 14\) or the spell fails. **Parries at no penalty** \- what has gone wrong for you rides on the attacker's die, not on yours. |
 | **Silenced** | Can't speak or cast spells.                                                                                                                                                                                                                                                            |
-| **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment.                                                                                                                                   |
-| **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it automatically hit, and any melee hit is a critical hit.                                                 |
+| **Stunned** | On its turn it can take only one action of any type \- a single Major, Minor, Object Interaction, or Move Action \- instead of its normal allotment, and its Tempo Pool refills to **half as many dice, rounded down** (never below 1). The dice are the size they always were; Stunned takes their number, not their size. |
+| **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all checks and Wards. Attacks against it land automatically and the attacker takes an Opening. Coup de Grace, above, is what the rules have for finishing it. |
 
 **Sources:** Trauma is not a byproduct of ordinary combat damage \- there is no automatic Trauma from taking a hit, dropping to 0 Wounds, or being Dying (that cost is paid through the Wound Penalty instead). Trauma accrues only from specific, named sources: privation (starvation, Forced March \- see Food and Water and [[Traveling|traveling]]), a handful of paid Feat and spell costs that explicitly grant it (Deep Devotion's fasting, Temporal Fortification's backlash, and similar), and anything else that explicitly says so. If a rule doesn't name Trauma, it doesn't grant it.

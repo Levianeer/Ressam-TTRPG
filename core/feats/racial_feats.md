@@ -9,7 +9,7 @@ Racial Feats are gated behind a specific race, not a Skill or Attribute score - 
 Sheer, stubborn refusal to accept a bad roll as the final word - the same will that lets humans dig in and hold ground everyone else has already fled.
 
 **Prerequisites:** Race: Human  
-**Benefit:** You have 3 Indomitable points, which you regain after a Field Rest or Long Rest. Immediately after you make an Attribute or Skill roll but before the DM declares the outcome, you can spend any number of remaining Indomitable points to increase the die result by 1 per point spent (to the maximum roll of the die). This only affects the die result, not any modifiers, and does not count as a natural roll for the purpose of critical hits or other effects that require a specific natural die result.
+**Benefit:** You have 3 Indomitable points, which you regain after a Field Rest or Long Rest. Immediately after you make an Attribute or Skill roll but before the DM declares the outcome, you can spend any number of remaining Indomitable points to increase the die result by 1 per point spent (to the maximum roll of the die). This only affects the die result, not any modifiers, and does not count as a natural roll for any effect that requires a specific natural die result (a firearm's Misfire, for one).
 
 ---
 

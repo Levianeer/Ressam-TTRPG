@@ -16,25 +16,27 @@
 
 ### **Per Level Advancement**
 
-- **Every level:** Gain \+2 Skill Points, spendable only on Skills, see [[Distribute Points|character_creation]]. A Skill's Rank can never exceed its governing Attribute's current score ([[Skills|core_rules]]) \- this is the only cap Skills have, no separate Skill Maximum table.  
+- **Every level:** Gain \+2 Skill Points, spendable only on Skills, see [[Distribute Skill Points|character_creation]]. A Skill's Rank can never exceed its governing Attribute's current score ([[Skills|core_rules]]) \- this is the only cap Skills have, no separate Skill Maximum table.  
 - **Levels 4, 6, 9, and 12:** Gain a Feat (plus 2 to start, at Level 1\)  
-- **Levels 4, 8, and 12:** Gain \+1 Attribute Point, spendable only on Attributes \- Attribute Points are otherwise fixed after character creation  
-  - Attribute Maximum increases by \+1 at levels 4 and 8 specifically (3 \-\> 4 \-\> 5\) \- the bonus Attribute Point at level 12 doesn't raise this cap further, it's just an extra point to spend
+- **Levels 4, 8, and 12:** **\+1 to one Attribute of your choice** \- three increases over the whole ladder, \+3 by Level 12. This is the only way an Attribute ever rises after character creation: there is no Attribute point pool and nothing to bank or convert, just a single point landing on a single Attribute at each of those three levels
+  - **The cap is 5**, flat, at every level \- from a starting array that tops out at 3 ([[Assign Attributes|character_creation]]), the three increases can carry one Attribute to 5 at the earliest by Level 12, or spread across three different Attributes. Racial modifiers sit outside the cap and can push a score past it
 
-| Level | Total XP | ATTR Points | SKILL Points | ATTR Cap | Feats | Notes |
+| Level | Total XP | ATTR | SKILL Points | ATTR Cap | Feats | Notes |
 | :---: | :---: | :---: | :---: | :---: | :---: | ----- |
-| 1 | 30 | Start 18 | Start 12 | 3 | Start 2 | Can hire Followers |
-| 2 | 120 | \- | \+2 | 3 | \- | \- |
-| 3 | 270 | \- | \+2 | 3 | \- | Can hire Cohorts |
-| 4 | 480 | \+1 | \+2 | 4 | \+1 | Attribute Cap increased. |
-| 5 | 750 | \- | \+2 | 4 | \- | Can take a Prestige Feat |
-| 6 | 1080 | \- | \+2 | 4 | \+1 | \- |
-| 7 | 1470 | \- | \+2 | 4 | \- | \- |
-| 8 | 1920 | \+1 | \+2 | 5 | \- | Attribute Cap reached. |
+| 1 | 30 | Array | Start 12 | 3 at creation | Start 2 | Can hire Followers |
+| 2 | 120 | \- | \+2 | 5 | \- | \- |
+| 3 | 270 | \- | \+2 | 5 | \- | Can hire Cohorts |
+| 4 | 480 | \+1 | \+2 | 5 | \+1 | \- |
+| 5 | 750 | \- | \+2 | 5 | \- | Can take a Prestige Feat |
+| 6 | 1080 | \- | \+2 | 5 | \+1 | \- |
+| 7 | 1470 | \- | \+2 | 5 | \- | \- |
+| 8 | 1920 | \+1 | \+2 | 5 | \- | \- |
 | 9 | 2430 | \- | \+2 | 5 | \+1 | \- |
 | 10 | 3000 | \- | \+2 | 5 | \- | \- |
 | 11 | 3630 | \- | \+2 | 5 | \- | \- |
 | 12 | 4320 | \+1 | \+2 | 5 | \+1 | \- |
+
+**The Level 1 ATTR row is an array, not a number.** Your Attributes priority hands you six fixed values (A: `3, 2, 2, 1, 1, 0` down to E: `1, 1, 1, 1, 0, 0`) which you assign one per Attribute \- see [[Assign Attributes|character_creation]]. The SKILL Points start is likewise set by your Skills priority (18 / 15 / 12 / 9 / 6, shown here at **C**); the \+2 per level is the same for everyone.
 
 ### **Rewards & Treasure**
 

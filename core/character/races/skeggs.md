@@ -13,15 +13,16 @@ Skeggs are wiry, sharp-eyed subterranean kin of the Orkhs, infamous for their cu
 **Size:** Small (3-4 ft)  
 **Base Speed:** 25 feet, climbing speed 25 feet  
 **Starting Languages:** Grazn  
-**Starting Skills:** \+1 Survival, \+1 Nature Lore  
+**Starting Skills:** \+1 Survival  
+**Knowledge Grants:** 1 point among Streetwise or Bestiary Lore  
 **Race Tier:** C (Exotic)
 
 ### **Features**
 
 **Darkvision:** You treat nonmagical darkness as dim light up to 60 ft.  
-**Bristling Spines:** When you are hit by melee attack, you may use a Reaction to deal 1d4+DEX piercing damage to the attacker.  
+**Bristling Spines:** When a melee attack lands on you, you may spend **1 Tempo Die** to deal 1d4+DEX piercing damage to the attacker.  
 **Tunnel Fighter:** You have advantage on Subterfuge checks while underground. You can move through the space of any Medium or larger creature as if it were difficult terrain.  
-**Poisoned Quills:** Three times per Field Rest or Long Rest, you may coat one weapon with venom as a Minor Action. The next creature damaged by that weapon within 1 minute takes an additional 1d4 poison damage (no Ward) and must succeed on a STR Ward DC 18 or be poisoned until the end of their next turn.
+**Poisoned Quills:** Three times per Field Rest or Long Rest, you may coat one weapon with venom as a Minor Action. The next creature damaged by that weapon within 1 minute takes an additional 1d4 poison damage (no Ward) and must succeed on a STR Ward DC 12 or be poisoned until the end of their next turn.
 
 ---
 

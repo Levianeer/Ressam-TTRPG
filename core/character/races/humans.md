@@ -13,7 +13,8 @@ Humanity is the most widespread and adaptable of the Artefolk, defined less by a
 **Size:** Medium (5-6 ft)  
 **Base Speed:** 30 feet  
 **Starting Languages:** Two of the following: Plethic, Batakluhk, Mafari or Zakhrafan  
-**Starting Skills:** Gain \+1 rank in any one weapon Skill
+**Starting Skills:** Gain \+1 rank in any one weapon Skill  
+**Knowledge Grants:** 1 point in any Knowledge subject
 
 ### **Features**
 

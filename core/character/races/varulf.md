@@ -13,7 +13,8 @@ The Varulf are cursed reflections of humanity \- neither fully man nor wholly be
 **Size:** Medium (5-6 ft)  
 **Base Speed:** 30 feet  
 **Starting Languages:** Plethic  
-**Starting Skills:** \+2 Athletics, \+1 Survival
+**Starting Skills:** \+2 Athletics, \+1 Survival  
+**Knowledge Grants:** 1 point among Folklore & Superstition or Bestiary Lore
 
 **Race Tier:** A (Extraordinary)
 
@@ -30,7 +31,7 @@ The Varulf are cursed reflections of humanity \- neither fully man nor wholly be
 
 When the transformation ends, you lose any remaining Patched Wounds and revert to your human form. If you are unconscious when the transformation ends, you remain unconscious.
 
-**Curse of the Beast:** When you fail a MIND Ward, make an additional STR Ward DC 18 or enter Feral Frenzy:
+**Curse of the Beast:** When you fail a MIND Ward, make an additional STR Ward DC 14 or enter Feral Frenzy:
 
 - Transform immediately if not transformed.  
 - Must attack the nearest creature each turn.  

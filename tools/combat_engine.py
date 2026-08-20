@@ -94,9 +94,13 @@ DOMINANT, STOPPED, MINIMIZED, FAILED = "dominant", "stopped", "minimized", "fail
 BAND_RANK = {"grip": 0, "near": 1, "far": 2}
 
 
-def roll_d12(disadvantage=False):
+def roll_d12(disadvantage=False, advantage=False):
     a, b = random.randint(1, D12), random.randint(1, D12)
-    return min(a, b) if disadvantage else a
+    if disadvantage and advantage:      # they cancel; roll straight
+        return a
+    if disadvantage:
+        return min(a, b)
+    return max(a, b) if advantage else a
 
 
 def roll_dice_string(spec):

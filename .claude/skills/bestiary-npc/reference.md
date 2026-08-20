@@ -13,7 +13,7 @@ which Skill can drive that Attribute's Ward
 | PRE | Finesse & Ranged | Archery, Marksmanship, Thrown |
 | END | Defense & Survival | Athletics, Armorer, Survival, Shields, Riding |
 | DEX | Adroitness & Subterfuge | Acrobatics, Stealth, Lockpicking, Sleight of Hand, Crafting, Perception |
-| MIND | Intellectual | Alchemy, Enchanting, Spell Crafting, Historic Lore, Medical Lore, Nature Lore, Identify |
+| MIND | Intellectual | Alchemy, Enchanting, Historic Lore, Medical Lore, Nature Lore, Identify |
 | ARC | Arcane Schools | Arcane Lore, Aeromancy, Geomancy, Hydromancy, Pyromancy, Shadowmancy |
 | FAI | Divine Schools | Religious Lore, Benediction, Invocation, Necration, Cultivation, Subjugation |
 | CHA | Socialising & Interaction | Persuasion, Deception, Intimidation, Leadership, Animal Handling, Insight, Performance |
@@ -34,25 +34,36 @@ Dodge, its bonus is derived purely from DEX (and Armor Penalty), nothing else.
 
 ## Points / Feats by Level (progression_&_rewards.md)
 
-Attribute Points and Skill Points are two separate budgets, no conversion between them
-(`character_creation.md`'s "Distribute Points") - check an NPC's Attribute sum against
-the ATTR Points column, its Skill-rank sum against the SKILL Points column
-independently, and the Attribute Cap ceiling on any single Attribute.
+**Attributes are a standard array, not a point pool (2026-08-23).** A PC's six
+Attributes come from a fixed set of numbers picked by their Attributes priority letter
+(A: `3, 2, 2, 1, 1, 0` / B: `2, 2, 2, 1, 1, 0` / C: `2, 2, 1, 1, 0, 0` / D: `2, 1, 1, 1,
+0, 0` / E: `1, 1, 1, 1, 0, 0`), plus **\+1 to one Attribute at levels 4, 8 and 12** -
+that is the whole of Attribute growth. Skills remain a real point budget. Check an NPC's
+Attribute sum against the ATTR Total column (the largest total any PC of that Level
+could hold, i.e. A's array plus banked increases), its Skill-rank sum against the SKILL
+Points column independently, and the Attribute Cap ceiling on any single Attribute.
 
-| Level | Total XP | ATTR Points | SKILL Points | ATTR Cap | Feats |
+| Level | Total XP | ATTR Total | SKILL Points | ATTR Cap | Feats |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | 30 | 18 | 12 | 4 | 2 |
-| 2 | 120 | 18 | 14 | 4 | 2 |
-| 3 | 270 | 18 | 16 | 4 | 2 |
-| 4 | 480 | 19 | 18 | 4 | 3 |
-| 5 | 750 | 19 | 20 | 4 | 3 |
-| 6 | 1080 | 19 | 22 | 4 | 4 |
-| 7 | 1470 | 19 | 24 | 4 | 4 |
-| 8 | 1920 | 20 | 26 | 5 | 4 |
-| 9 | 2430 | 20 | 28 | 5 | 5 |
-| 10 | 3000 | 20 | 30 | 5 | 5 |
-| 11 | 3630 | 20 | 32 | 5 | 5 |
-| 12 | 4320 | 21 | 34 | 5 | 6 |
+| 1 | 30 | 9 | 12 | 3 | 2 |
+| 2 | 120 | 9 | 14 | 3 | 2 |
+| 3 | 270 | 9 | 16 | 3 | 2 |
+| 4 | 480 | 10 | 18 | 4 | 3 |
+| 5 | 750 | 10 | 20 | 4 | 3 |
+| 6 | 1080 | 10 | 22 | 4 | 4 |
+| 7 | 1470 | 10 | 24 | 4 | 4 |
+| 8 | 1920 | 11 | 26 | 5 | 4 |
+| 9 | 2430 | 11 | 28 | 5 | 5 |
+| 10 | 3000 | 11 | 30 | 5 | 5 |
+| 11 | 3630 | 11 | 32 | 5 | 5 |
+| 12 | 4320 | 12 | 34 | 5 | 6 |
+
+**Attribute totals are much tighter than they were.** The old ladder gave 18 points at
+Level 1; the array gives at most 9. Existing bestiary entries were statted against the
+old pool and most will price higher against this table - that is a real repricing, not
+a bug, and it lands on top of the Exchange staleness already flagged in `TODO.md`.
+**An Attribute can now sit below 0** (a racial modifier landing on a 0), which is legal;
+Tempo Pool floors at 1 die and Mana/Slots at 0.
 
 A Prestige Feat (prestige_feats.md) forces Effective Level >= 5 regardless of Feat
 count ("Can take a Prestige Feat" first appears at Level 5).

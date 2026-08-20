@@ -23,17 +23,17 @@ _Armor is your primary defense against physical attacks. In Ressam, armor absorb
 | **FLEXIBLE ARMOR** |  |  |  |  |
 | Gambeson | 2 | \-1 | 75 Crown | 2 |
 | Buff Coat | 3 | \-1 | 120 Crown | 2 |
-| Mail Shirt | 4 | \-2 | 150 Crown | 3 |
+| Mail Shirt | 4 | \-1 | 150 Crown | 3 |
 | Chain Mail | 5 | \-2 | 200 Crown | 3 |
-| Brigandine | 6 | \-3 | 350 Crown | 3 |
+| Brigandine | 6 | \-2 | 350 Crown | 3 |
 | **RIGID ARMOR** |  |  |  |  |
-| Breastplate | 6 | \-6 | 700 Crown | 3 |
-| Half-Plate | 7 | \-7 | 1,000 Crown | 5 |
-| Full Plate | 8 | \-8 | 2,000 Crown | 6 |
+| Breastplate | 6 | \-2 | 700 Crown | 3 |
+| Half-Plate | 7 | \-2 | 1,000 Crown | 5 |
+| Full Plate | 8 | \-3 | 2,000 Crown | 6 |
 
-###
+**Note:** Nothing in a fight reads Armor Penalty \- see [[The Exchange|exchange]]. **Once swords are out, AR is the whole of what armor does**, and heavier is simply better. What holds plate in check is 2,000 Crown, six Slots, Stealth, spellcasting, and the reasons people did not sleep in harness \- none of which is a combat rule, and all of which are real.
 
-**Note:** Rigid Armor uses the normal Evasion formula (5 \+ DEX − Armor Penalty) like anything else \- there's no special ban on Agility, DEX, or Dodging. Its Penalty (equal to its full AR, see Armor Penalty below) is what makes it costly, not a separate restriction on top.
+**Breastplate against Brigandine** is the clearest read of the table: identical AR 6 and identical Penalty, at twice the price and the same Slots. What the extra 350 Crown buys is the Rigid label \- a cuirass shrugs off a blow it stops, and a coat of plates gets cut apart doing the same job (see Rigid Armor and Absorbed Blows, below).
 
 ### **Armor Descriptions**
 
@@ -80,16 +80,23 @@ Your AR determines how much damage your armor absorbs from each hit.
 
 Penalty represents how armor restricts movement. It applies to:
 
-- **Acrobatics skill checks** (dodging, balance)
+- **Acrobatics skill checks** (balance, tumbling, controlled falls)
 - **Subterfuge skill checks** (moving unseen and unheard)
 - **Spellcasting rolls** (both attack rolls and Ward DCs)
-- **Evasion and your DEX Ward-funded Oppose roll**
 
-Penalty is derived directly from an armor's AR, not tracked separately: **Rigid armor's Penalty equals its AR**, while **Flexible armor's Penalty is half its AR (rounded down)**. A Rigid piece always costs you something no matter how it's built - that's the tradeoff for wearing plate.
+**It applies to nothing in a fight.** No attack roll, no Parry, no Tempo Die reads it (see [[The Exchange|exchange]]) \- Penalty is a cost you pay everywhere except the one place armor is doing its job.
 
-Skill investment doesn't reduce Penalty - the **[[Broken In|general_feats]]** Feat is the only way to, and it's capped: \-2 per time taken, up to 3 times (\-6 total).
+Penalty is derived directly from an armor's AR, not tracked separately, in bands of three:
 
-**Example:** Kira wears Full Plate (Penalty \-8) and has taken Broken In 3 times, the maximum. Her effective penalty is still \-2 \- Rigid armor never fully cancels, even fully invested.
+| AR | Penalty |
+| :----: | :----: |
+| 1-4 | \-1 |
+| 5-7 | \-2 |
+| 8-10 | \-3 |
+
+**All armor carries some Penalty**, and the Rigid/Flexible split does not change it \- a cuirass and a coat of plates at the same AR restrict you the same amount, whatever else separates them.
+
+**Nothing reduces Penalty.** No Skill and no Feat buys it back: a three-point axis has no room for a repeatable purchase, and Penalty no longer prices anything worth a Feat slot now that no combat rule consults it. If you want a smaller Penalty, wear lighter armor.
 
 ### **Natural Armor**
 
@@ -103,9 +110,18 @@ Your armor's durability starts equal to its AR and decreases each time you're hi
 
 ### **Degradation Rules**
 
-- Every successful hit against you reduces your armor's durability by 1  
-- Your *current* AR equals your *current* durability  
+- Every hit that lands on you reduces your armor's durability by **1**, whether or not it dealt any Wound damage
+- A hit from a **War Maul** or **any firearm** costs **2** instead (see [[Weapons|weapons]])
+- Your *current* AR equals your *current* durability
 - Durability cannot drop below 0
+
+### **Rigid Armor and Absorbed Blows**
+
+> **A blow that deals no damage at all after AR costs Flexible armor 1 durability and costs Rigid armor nothing.**
+
+This is the whole of what the Rigid/Flexible label does while the fighting is on, and it is the other half of the bargain Destroyed Armor strikes below. **Rigid wears slowly and fails hard** \- a cuirass shrugs off what it stops, but once it is driven to 0 it wants a blacksmith and a forge. **Flexible wears fast and always comes back** \- it loses a point to every hit, and it can be patched up in the field even from Broken. One is for a man with a baggage train and one is for a man without.
+
+A blow that gets *through* the AR degrades both kinds by the normal amount. The exemption is only for the blow armor turns entirely.
 
 ### **Degradation Example**
 
@@ -120,6 +136,8 @@ Kira starts a fight wearing chain mail (AR 5, Durability 5).
 | Hit for 6 damage |      4 Wound Damage       |    1     |
 
 After four hits, her chain mail only provides AR 1\. She's taken 7 Wound Damage, but without armor she'd have taken 20\.
+
+**Had she been wearing a Breastplate instead**, the two absorbed hits would have cost her nothing at all \- Rigid armor doesn't wear when it wins \- and she'd have finished the same four hits at AR 4.
 
 ### **Destroyed Armor (0 AR)**
 
@@ -163,7 +181,7 @@ Any armor can instead be taken to a blacksmith for reforging - useful if nobody 
 | Flexible Armor |  1 minute  |     Minor Action     |  5 rounds  |
 | Rigid Armor    | 10 minutes | Major + Minor Action |  1 minute  |
 
-**Doffing** is fast regardless of armor type \- shedding armor is a single Action on your turn, provokes no Reactions, and is one-way: you cannot re-don armor mid-combat, only take it off.
+**Doffing** is fast either way \- the table above is the whole of it (a Minor Action for Flexible, a Major \+ Minor for Rigid). It provokes no Opportunity Attack, costs no Tempo Die, and is one-way: you cannot re-don armor mid-combat, only take it off.
 
 ---
 
@@ -173,12 +191,12 @@ Any armor can instead be taken to a blacksmith for reforging - useful if nobody 
 
 | Role | Recommended Armor | Why |
 | :---- | :---- | :---- |
-| **Melee Fighter** | Brigandine or Breastplate | High AR; Breastplate's Rigid Penalty (equal to its full AR) is steep, but Evasion still scales normally |
-| **Archer/Crossbowman** | Gambeson or Buff Coat | Low penalty for aiming |
-| **Spellcaster** | None or Gambeson | Penalty hurts spellcasting |
+| **Melee Fighter** | Brigandine or Breastplate | High AR at the same \-2 Penalty; the Breastplate costs twice as much and buys the Rigid absorb rule with it |
+| **Archer/Crossbowman** | Gambeson or Buff Coat | Cheap, light, and \-1 Penalty; nothing you do with a bow reads AR much either way |
+| **Spellcaster** | None or Gambeson | Penalty hurts spellcasting, and it is the only place a caster feels armor at all |
 | **Skirmisher/Scout** | Gambeson | Low penalty keeps Subterfuge usable |
-| **Tank** | Full Plate \+ Pavise | Maximum AR, and the highest Guard to soften whatever gets through anyway |
-| **Duelist** | Buff Coat \+ Buckler | Mobility, and a shield whose Guard still works at Short range |
+| **Tank** | Full Plate \+ Heater Shield | Maximum AR, and \+2 Guard on every Parry you make |
+| **Duelist** | Buff Coat \+ Buckler | Mobility, and a fist-held shield you can keep on the hand while you reload or work a lock |
 
 ### 
 
@@ -186,13 +204,12 @@ Any armor can instead be taken to a blacksmith for reforging - useful if nobody 
 
 Higher AR means better damage absorption but worse:
 
-- Evasion (harder to be missed)  
-- Oppose funded by a DEX Ward (harder to actively evade)  
-- Spellcasting (lower attack rolls and Ward DCs)  
+- Acrobatics (balance, tumbling, controlled falls)
+- Spellcasting (lower attack rolls and Ward DCs)
 - Subterfuge (harder to move unseen and unheard)
 
-**Martial characters** generally favor higher AR \- they rely on armor to survive, not evasion.
+**And that is the entire list.** Nothing inside a fight is on it. **Martial characters** should wear the heaviest thing they can afford and carry, because in combat there is no counterweight at all \- armor is the only protection you don't have to spend a Tempo Die on.
 
-**Spellcasters** favor low or no armor \- penalty directly reduces their effectiveness.
+**Spellcasters** favor low or no armor \- penalty directly reduces their effectiveness, and their AR is rarely what keeps them alive.
 
-**Hybrid characters** often choose brigandine \- high AR (6) with only \-3 penalty.
+**Hybrid characters** often choose brigandine \- AR 6 at only \-2 penalty, the best ratio on the table.

@@ -1,5 +1,7 @@
 Invocation is the act of torturing your soul, forcing it from your body and giving it an independent form as a ‘Familiar’. The process is agonizing, unnatural, and leaves the caster fundamentally less than they were. Invocation is self-mutilation masquerading as power. The common folk consider it one of the greatest heresies in Ressam \- the soul is sacred and indivisible, and to split it is to defile yourself and reject the gods' design. Invokers are hunted with the same fervor as Necromancers. That said, the average person cannot even tell what Invocation magic even is, it’s not nearly as flashy and obvious as the practitioners of Necration. The Fe Alada's position is unambiguous: "The soul is inviolate. To divide it is to reject the Dragon’s gift of wholeness. Invokers are walking blasphemies and must be purged."
 
+**Mana Scarring:** Invocation doesn't leave an injury, it leaves a deficit, and it shows on the casting arm alone rather than the whole body. The hand and forearm of an overworked Invoker look like they've been starving for years while the rest of the body hasn't \- wasted muscle, skin gone loose over the bone, color that never fully returns \- because a piece of what used to keep that limb whole simply isn't inside it anymore. None of it is subtle, though most who see it assume an old injury rather than magic, which is exactly why Invocation stays the quiet heresy instead of the obvious one. Sleeves and gloves cover the arm entirely; nothing covers how much weaker that hand's grip has gotten compared to the other one.
+
 ### **The Severing (Becoming an Invoker)**
 
 When you first learn an Invocation spell, you must perform the Severing \- a ritual that tears a fragment from your soul to create your Familiar.
@@ -35,7 +37,7 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 
 **Phantom Aegis \- Mana Cost 2**
 
-- **Casting Time:** Reaction (when you are hit by an attack)
+- **Casting Time:** Off-turn, 1 Tempo Die (when you are hit by an attack)
 - **Range:** Self
 - **Duration:** Instant
 - **Effect:** Make a Petition Roll (DC 7) as your Familiar interposes itself, absorbing the impact. **Success:** Reduce the damage by 2d8 \+ FAI. If this reduces the damage to 0, the attack is considered to have missed for armor degradation purposes.
@@ -70,19 +72,21 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - **Effect:** Make a Petition Roll (DC 7) as you drag your Familiar through shapes of agony until it becomes a weapon of terrible purpose. **Success:** Choose one armament:
 
 - **Soullance:** A spectral spear manifests in your hands.
-  - Reach (Medium)
+  - **Length 3** (see [[Weapon Length|weapons]]) \- fights Adjacent, the same as a real Spear
   - Melee attacks with it deal 2d8 \+ FAI lightning damage
-  - On a critical hit, the target is impaled by a spectral copy \- they take an additional 2d8 damage and their speed is 0 until they use a Major Action to wrench free
+  - **Impale**, a new entry on the [[Openings|exchange]] menu while it is manifested: the target is pinned by a spectral copy of the spear \- they take an additional 2d8 damage and their speed is 0 until they use a Major Action to wrench free
 
 
 - **Soulblade:** A massive curved blade shimmers into existence.
-  - When you attack, target all creatures in a 10 ft cone (single attack roll against each)
-  - Each target hit takes 2d6 \+ FAI lightning damage
+  - **Length 2**
+  - One attack, one Tempo Die and one roll, swept through a 10 ft cone: **every creature in it answers that same roll separately**, each with its own Parry or with nothing at all
+  - Each target it lands on takes 2d6 \+ FAI lightning damage and takes [[Shock|exchange]] as normal
+  - You may take an **Opening** against **one** of them, however many you beat by 5 \- a sweep opens a line, not four separate men
   - Disadvantage on attacks against single targets
 
 
 - **Soulward:** A suit of armor and a shield of compressed spirit encase you.
-  - Gain \+5 AR (does not degrade), gain access to a spectral shield
+  - Gain \+5 AR (does not degrade), and a spectral shield at **Guard \+2** that likewise never degrades \- it adds to every Parry you make, and only the highest Guard counts if you are also carrying a real one (see [[Using Shields|weapons]])
   - Your movement speed is reduced by 5 ft
   - When a creature hits you with a melee attack, they take 1d6 lightning damage
   - While you have a Soulward active, your attack rolls and Petition Rolls have disadvantage
@@ -97,9 +101,9 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - **Effect:** Make a Petition Roll (DC 7) as you tear your soul completely from your body and reshape yourself around it \- your flesh becomes a vessel for your own weaponized self. **Success:** Spectral blades erupt from your limbs. Your voice echoes with your Familiar's distorted cries.
 
 - While Transformed:
-  - Your melee attacks have 10 ft reach
+  - Your unarmed strikes act at **both Adjacent and Reach at no Distance penalty**, and threaten every square within both
   - Your unarmed strikes deal 2d8 \+ FAI lightning damage
-  - You may attack twice when you take the Attack action
+  - **The first attack in each sequence you declare costs no Tempo Die** \- there is no cap on how many attacks you may declare, so what this buys you is one of them free, every turn
   - You have resistance to non-magical physical damage
   - At the end of each of your turns, gain 1 Strain
 

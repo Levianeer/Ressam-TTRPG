@@ -23,8 +23,8 @@ If a party wants to enter a hex but lacks some of the points/hours needed, the p
 
 The party slows their pace to better spot and avoid alerting potential enemies. Reduce the party’s daily hex point allowance to 6 (6 hours max). However:
 
-- The party cannot be surprised.  
-- If ambushed, attackers have disadvantage on initiative rolls.  
+- The party cannot be **Ambushed** \- the worst that befalls them is **Caught Out** (see [[Surprise|exchange]]), so they keep their Move and their whole Tempo Pool.  
+- A party moving this carefully is walking with hands near their weapons, which is the fiction the lighter rung describes.  
 - Time spent: Still 1 hour per point, but capped lower daily.
 
 ### **Forced March**
@@ -43,6 +43,8 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 ## Mount Stats
 
+**A mount does not fight an Exchange.** It has a Tempo Pool because it can be made to bolt, kick, and be shot at, but a mount left to itself never Parries - an attack on it simply lands. A rider who wants it defended answers for it with their own dice, or keeps it out of reach.
+
 ### **MULE**
 
 *Hardy pack animal, stubborn and reliable*
@@ -50,7 +52,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | Stat | Value |
 | :---- | :---- |
 | **Wounds** | 4 |
-| **Evasion** | 7 |
+| **Tempo Pool** | 3 dice at `1d8` |
 | **AR** | 1 (thick hide) |
 | **Speed** | 40 ft |
 | **Daily Hex Pts** | 10 |
@@ -58,7 +60,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 **Attacks:**
 
-- **Kick:** \+1 to hit, 1d6+2 bludgeoning damage (only when spooked or cornered)
+- **Kick:** \+1 to hit, 1d6+2 blunt damage (only when spooked or cornered)
 
 **Special Traits:**
 
@@ -77,7 +79,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | Stat | Value |
 | :---- | :---- |
 | **Wounds** | 5 |
-| **Evasion** | 8 |
+| **Tempo Pool** | 4 dice at `1d8` |
 | **AR** | 2 |
 | **Speed** | 70 ft |
 | **Daily Hex Pts** | 12 |
@@ -85,13 +87,13 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 **Attacks:**
 
-- **Hooves:** \+1 to hit, 1d8+3 bludgeoning damage (only when panicked, or if you travelled at least 30ft before attacking a target medium or smaller)
+- **Hooves:** \+1 to hit, 1d8+3 blunt damage (only when panicked, or if you travelled at least 30ft before attacking a target medium or smaller)
 
 **Special Traits:**
 
 - **Beast of Burden:** Can carry 12 Slots without penalty  
 - **Fleet-Footed:** Can Dash as a Minor Action  
-- **Skittish:** When taking 10+ damage, must make DC 13 Wayfaring check or panic (moves randomly, rider must make DEX Ward DC 16 or fall)
+- **Skittish:** When taking 10+ damage, must make DC 12 Wayfaring check or panic (moves randomly, rider must make DEX Ward DC 12 or fall)
 
 **Behavior:** Flees from combat unless controlled (DC 10 Wayfaring each round). Not trained to fight.
 
@@ -104,7 +106,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | Stat | Value |
 | :---- | :---- |
 | **Wounds** | 8 |
-| **Evasion** | 8 |
+| **Tempo Pool** | 3 dice at `1d10` |
 | **AR** | 3 (can wear barding for \+3 AR) |
 | **Speed** | 60 ft |
 | **Daily Hex Pts** | 12 |
@@ -112,7 +114,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 **Attacks:**
 
-- **Hooves:** \+2 to hit, 2d6+4 bludgeoning damage
+- **Hooves:** \+2 to hit, 2d6+4 blunt damage
 
 **Special Traits:**
 
@@ -121,4 +123,4 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 - **Fearless Charge:** If the horse moves at least 30 ft in a straight line before attacking, deals an additional 2d6 damage and target must make STR Ward (DC 14\) or be knocked prone  
 - **Battle Hardened:** Advantage on Wards against fear and being startled. Only panics when reduced below half Wounds
 
-**Behavior:** Trained for combat. Will attack enemies on command and defend its rider. Requires DC 9 Wayfaring if reduced below half Wounds to prevent fleeing.
+**Behavior:** Trained for combat. Will attack enemies on command and defend its rider. Requires DC 8 Wayfaring if reduced below half Wounds to prevent fleeing.

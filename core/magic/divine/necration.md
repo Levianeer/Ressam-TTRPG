@@ -1,5 +1,7 @@
 Necration is the manipulation of death, decay, and the threshold between life and oblivion. Necromancers don't just raise the dead \- they drain vitality, accelerate rot, and bind souls. The God-Dragons never intended death to be reversible, and Necration spits on that design. It is unnatural, blasphemous, and almost universally reviled. Necromancers are hunted by the Fe Alada, executed by secular authorities, and burned by mobs. There is no such thing as a "good" Necromancer in public opinion \- only those who haven't been caught yet. Even other mages avoid them. Practicing Necration is a death sentence in most nations. The only places it's tolerated are Mafsoleios City and lawless badlands, and even there, you sleep with a weapon. The Fe Alada's position is clear: "The dead are sacred. To defile them is to defile the Dragon’s final mercy. Burn the heretics."
 
+**Mana Scarring:** Necration shows worst at the ends of the hands. An overworked Necromancer's nails blacken, thicken, and split at the fingertips, with the skin immediately around them gone taut, grey, and faintly desiccated \- the look of a corpse's hand grafted onto a living one. Everywhere else it's subtler: a touch colder than it should be, a paleness that doesn't match their diet or the sun, a faint smell of rot easy to mistake for a bad day at the docks until you're close enough to be sure. Gloves hide the hands completely. They do nothing for the cold, the color, or the smell, and one of those three is usually what gives a Necromancer away first.
+
 ### **SPELLS**
 
 **Mortis Grasp \- Mana Cost 1**
@@ -38,11 +40,11 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Casting Time:** Major Action
 - **Range:** Short
 - **Duration:** 24 hour
-- **Effect:** Make a Petition Roll (DC 7) as you animate a humanoid corpse as an undead thrall under your control. **Success:** The thrall acts immediately after your turn, following simple verbal commands (no action required). It has Wounds equal to your FAI × 3, AR 0, Evasion 10, and attacks with STR 4 using whatever weapon it held in life (or 1d4 bludgeoning unarmed). The thrall cannot speak, use skills, or take reactions. When the spell ends, the corpse collapses \- it cannot be animated again for 8 hours.
+- **Effect:** Make a Petition Roll (DC 7) as you animate a humanoid corpse as an undead thrall under your control. **Success:** The thrall acts immediately after your turn, following simple verbal commands (no action required). It has Wounds equal to your FAI × 3, AR 0, STR 4 and DEX 1 - a **Tempo Pool of 2 dice at `1d10`** - and attacks with whatever weapon it held in life (or 1d4 blunt unarmed), untrained. It Parries with that same pool and no Skill. The thrall cannot speak or use skills. When the spell ends, the corpse collapses \- it cannot be animated again for 8 hours.
 
 **Mortis Harvest \- Mana Cost 4**
 
-- **Casting Time:** Reaction (when a creature within range drops to 0 Wounds)
+- **Casting Time:** Off-turn, 1 Tempo Die (when a creature within range drops to 0 Wounds)
 - **Range:** 30 ft
 - **Duration:** Instant
 - **Effect:** You rip the departing life force from a dying creature. Make a Petition Roll (DC 7) as you choose one effect:

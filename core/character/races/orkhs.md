@@ -13,12 +13,13 @@ Orkhs are towering, volcanic beings of passion and wrath, forged in defiance and
 **Size:** Medium (6-7 ft)  
 **Base Speed:** 30 feet  
 **Starting Languages:** Khorian (rarely can read/write)  
-**Starting Skills:** \+1 Athletics, \+1 Survival
+**Starting Skills:** \+1 Athletics, \+1 Survival  
+**Knowledge Grants:** 1 point among Folklore & Superstition or Warfare
 
 ### **Features**
 
 **Weapon Training:** You gain \+1 rank in any STR weapon Skill.  
-**Bloodlust:** Once per Field Rest or Long Rest, as a Minor Action, you may enter a bloodlust filled rage for 1 minute. While bloodlusting, your critical range increases by 1 (crit on a natural roll of 11 or 12).  
+**Bloodlust:** Once per Field Rest or Long Rest, as a Minor Action, you may enter a bloodlust filled rage for 1 minute. While bloodlusting, your [[Opening|exchange]] threshold with melee weapons drops by 1 (a standard weapon opens on a margin of 4), and you may not take **Break Away** as an Opening - a bloodlusting Orkh does not disengage.  
 **Orcish Fortitude:** You gain \+2 to STR Ward, \+2 to Wards against frightened.  
 **Intimidating:** You gain \-2 to Influence with non-Orkhs but gain \+2 to Intimidate with all non-Orkhs.
 

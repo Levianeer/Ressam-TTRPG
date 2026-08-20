@@ -29,13 +29,15 @@ Catalysts determine how the final product is used.
 
 ### **Quality Tiers**
 
-Oils and Powders come in three qualities based on their rarity. Rarity also sets the Crafting check's DC (see Crafting, below), reading Tricky/Grueling/Very Hard off the [[DC tier table|core_rules]] \- better ingredients make a stronger product, but a harder check to actually pull off.
+Oils and Powders come in three qualities based on their rarity. Rarity also sets the Crafting check's DC (see Crafting, below), reading Medium/Very Hard/Grueling off the [[DC tier table|core_rules]] \- better ingredients make a stronger product, but a harder check to actually pull off.
 
-| Tier     | Effect Bonus | DC             | Cost      |
-|:---------|:------------:|:--------------:|:----------|
-| Common   |     \+0      | 12 (Tricky)    | 100 Crown |
-| Uncommon |     \+1      | 17 (Grueling)  | 250 Crown |
-| Rare     |     \+2      | 20 (Very Hard) | 500 Crown |
+| Tier     | Effect Bonus | DC              | Cost      |
+|:---------|:------------:|:---------------:|:----------|
+| Common   |     \+0      | 8 (Medium)      | 100 Crown |
+| Uncommon |     \+1      | 12 (Very Hard)  | 250 Crown |
+| Rare     |     \+2      | 14 (Grueling)   | 500 Crown |
+
+**Rare sits only one tier above Uncommon on purpose.** The ingredients are already the gate \- 500 Crown a set, and a bad Margin below spends them for nothing. Charging a second time in DC would just mean nobody ever brews the good stuff.
 
 **Example:** You find a Vial of Eshzera, a Vial of Uncommon Stabilizing Powder and a Vial of Rare Vital Oil in a chest.
 
@@ -57,7 +59,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 **Batch Size:** 1 \+ (Thaumaturgy Skill ÷ 2\) concoctions on a Success or Critical Success
 
-**Degree of Success:** Compare your roll to the DC as a Margin, resolved the same way as the Oppose Reaction's Margin table ([[Oppose|maneuvers]]) \- same breakpoints, same tie-favors-you rule.
+**Degree of Success:** Compare your roll to the DC as a Margin \- how far over or under you landed, rather than a flat pass or fail.
 
 **Margin \= Your Check − the DC**
 
@@ -75,13 +77,13 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 **Purchase:** Available in settlements at listed prices (see Equipment section)
 
-**Foraging** (Nature Lore or Survival DC 12, 2 hours):
+**Foraging** (Survival DC 12, 2 hours):
 
 - Success: 1d4 Common ingredients  
 - Success by 5+: 1d4 Uncommon ingredients  
 - Critical: 1 Rare ingredient
 
-**Harvesting:** Monsters may drop ingredients (Nature Lore DC 12-18)
+**Harvesting:** Monsters may drop ingredients (Survival DC 12-18)
 
 ---
 
@@ -132,7 +134,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Firebomb (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Eshzera  
-- **Effect:** Thrown (20/40 ft), 10 ft radius, DEX Ward DC 16 for half  
+- **Effect:** Thrown (20/40 ft), 10 ft radius, DEX Ward DC 12 for half  
   - **Common:** **3d6 \+ Bonus** fire damage  
   - **Uncommon:** **3d6 \+ Bonus** fire damage  
   - **Rare:** **3d6 \+ Bonus** fire damage  
@@ -203,7 +205,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Alertness Salve (Quick)**
 
 - **Ingredients:** Sensory Oil \+ Prolonging Powder \+ Nat’khor  
-- **Effect:** Apply (Minor Action). Cannot be surprised. \+2 to initiative rolls  
+- **Effect:** Apply (Minor Action). You cannot be **Ambushed** (see [[Surprise|exchange]]), and your **Initiative** score is \+2 for the duration \- it is a static number, not a roll  
   - **Common:** **1 \+ Bonus** hour duration  
   - **Uncommon: 2 \+ Bonus** hours duration  
   - **Rare:** **3 \+ Bonus** hours duration  

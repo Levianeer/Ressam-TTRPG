@@ -14,13 +14,14 @@ Born not of womb but of war, the Khoridae are flesh-forged monstrosities, the br
 **Base Speed:** 30 feet, climbing speed 30 feet  
 **Starting Languages:** Khorian  
 **Starting Skills:** \+2 Athletics, \+1 Intimidate  
+**Knowledge Grants:** 1 point among Warfare or Bestiary Lore  
 **Race Tier:** C (Exotic)
 
 ### **Features**
 
 **Fiery Blood:** You have a resistance to fire damage. When you are hit by a melee attack, the attacker takes 1 point of fire damage.  
 **Petrifying Glare:** Once per Field Rest or Long Rest, make a **1d12 \+ your CHA** roll against one creature's CHA Ward within 30 ft (Contested Ward). If it beats their Ward, they are frightened for 1 minute.  
-**Barbed Tail:** You gain Natural Tail attack with Reach (Medium), 1d6+STR piercing damage \+ 1d4 poison damage.
+**Barbed Tail:** You gain a natural Tail attack at **Length 3** (see [[Weapon Length|weapons]]) \- fought Adjacent, same as a real Spear \- dealing 1d6+STR piercing damage \+ 1d4 poison damage. It uses **Daggers \& Wrestling**, and it can Parry.
 
 ---
 

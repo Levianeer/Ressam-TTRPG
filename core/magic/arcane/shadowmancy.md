@@ -1,5 +1,7 @@
 Shadowmancy, at its core, is about the absence of the Arcane elements. Unlike the others, shadow is defined by what it isn't \- and Shadowmancers exploit that void. They muffle sound, cloak movement, and strike from nothing. The magic is subtle, insidious, and deeply unsettling. Honest folk don't need to hide in shadows, which means Shadowmancers are assumed to be spies, assassins, or thieves until proven otherwise \- and "proof" is rarely accepted. The Fe Alada considers Shadowmancy "borderline heretical" but stops short of banning it, mostly because their Inquisitors use it. The common wisdom is blunt: "If a Shadowmancer offers help, count your fingers afterward." You might be hired for your skills, but you'll never be welcomed among "honest folk".
 
+**Mana Scarring:** Overworked Shadowmancers develop a patch of skin across the hand and forearm that's gone faintly duller and darker than the rest of them \- not a bruise, not an injury, just a few shades off, easy to miss in poor light and impossible to miss in good light once you know to look for it. Gloves and long sleeves cover it without any trouble at all.
+
 ### **Inaudible**
 
 Shadowmancy is inherently silent, producing no noise when cast.
@@ -46,13 +48,13 @@ Shadowmancy is inherently silent, producing no noise when cast.
 - **Duration:** Instant
 - **Effect:** You can manifest a shadow of yourself in an unoccupied space you can see. This shadow is a translucent, gray image of you that lasts until it is destroyed, until you dismiss it as a Minor Action, until you manifest another shadow, or until you're unconscious.
 
-- Your shadow has Evasion 14 \+ ARC, 1 Wound, and immunity to all conditions. Its Ward values equal yours. It is the same size as you, and it occupies its own space. On your turn, you can mentally command the shadow to move up to 30 feet in any direction (no action required). If your shadow is ever more than 30 feet from you at the end of your turn, it is destroyed.
+- Your shadow has 1 Wound, AR 0, and immunity to all conditions. **It has no Tempo Pool and does not Parry** - anything that reaches it lands. Its Ward values equal yours. It is the same size as you, and it occupies its own space. On your turn, you can mentally command the shadow to move up to 30 feet in any direction (no action required). If your shadow is ever more than 30 feet from you at the end of your turn, it is destroyed.
 
 - As a Minor Action, you can magically swap places with your shadow at a cost of 3 Mana and 15 feet of your movement, regardless of the distance between the two of you.
 
-- When you take the Attack action on your turn, any attack you make with that action can originate from your space or the shadow's space at the cost of 2 Mana. You make this choice for each attack.
+- Any attack in your declared sequence can originate from your space or the shadow's space at the cost of 2 Mana. You make this choice for each attack, and it changes only where the blow comes from \- the Tempo Die, the roll and the [[Distance|exchange]] are all measured from wherever it originates.
 
-- When a creature that you can see within 5 feet of your shadow moves at least 5 feet away from it, you can spend 2 Mana to use your reaction to make an opportunity attack against that creature as if you were in the shadow's space.
+- When a creature that you can see leaves the squares your shadow would threaten, you can spend **2 Mana and 1 Tempo Die** to make an **Opportunity Attack** against it as though you stood in the shadow's space. It is a [[plain attack|exchange]] like any other, and the shadow's own inability to Parry is no obstacle \- the swing is yours, not its.
 
 **Tenebrous Relocation \- Mana Cost 3**
 

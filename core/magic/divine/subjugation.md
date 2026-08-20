@@ -1,5 +1,7 @@
 Subjugation practitioners understand that faith is fuel, not a gift \- and fuel can be stolen. Based upon ancient Dzinari technique that is still not fully understood, Subjugation petitions no god; it siphons the raw conviction that prayer generates, wherever that conviction can be found \- scraps of another's devotion, a martyr's dying oath, or, most efficiently and most illegally, torn directly from a living mind mid-thought. Where other Divine schools channel their own faith outward, students of Subjugation reach into a victim's and turn it back against them \- petitioning with borrowed conviction instead of their own. The Fe Alada officially denounces Subjugation as "manipulation of the divine gift of free will," yet a small number of their own Inquisitors secretly study it. None embody this parasitism more completely than its greatest practitioner, the Highest Devaraja of the Golden Throne \- whose own claim to godhood remains bitterly disputed.
 
+**Mana Scarring:** Subjugation's mark only shows up under direct attention. In a crowd, an overworked Subjugator reads as nothing unusual. Lock eyes with one and it becomes obvious fast: they blink far less than a person should, their pupils barely react to changing light, and their gaze holds on a target with an unnerving, mechanical steadiness. There's a second, minor tell in the casting hand, easy to miss next to the eyes: it runs unnervingly cold against skin, as if it's drawing a little warmth out of whoever it touches. Most people who shake an overworked Subjugator's hand just assume poor circulation. Avoiding direct eye contact and unnecessary touch hides both. Direct engagement \- an interrogation, a negotiation, a duel \- does not.
+
 ### **SPELLS**
 
 **Mental Lancet \- Mana Cost 1**
@@ -60,4 +62,4 @@ Subjugation practitioners understand that faith is fuel, not a gift \- and fuel 
   - **Relentless Presence (Defensive):** Target has disadvantage on attack rolls against you. Target cannot benefit from cover or concealment against your attacks
 
 
-  - **Dominating Stare (Control):** Once per round as a Reaction: Make a Petition Roll (DC 7). On success, their action fails (Mana lost, action wasted). Each time you use the Reaction, you take 1d6 psychic damage as the mental contest strains you.
+  - **Dominating Stare (Control):** Once per round, off-turn, for 1 Tempo Die: Make a Petition Roll (DC 7). On success, their action fails (Mana lost, action wasted). Each time you use it, you take 1d6 psychic damage as the mental contest strains you.

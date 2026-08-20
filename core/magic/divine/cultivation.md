@@ -1,5 +1,7 @@
 Cultivation governs vitality itself \- its flow, transfer, and transformation. Cultivators understand that life and death are not opposites but a cycle: death feeds life, healing requires sacrifice, and the body can be coaxed to endure beyond its limits. It's the magic of those who understand nature's brutal honesty. Cultivators are simultaneously essential and unsettling. Villages welcome them for healing the sick and ensuring harvests, but watch nervously when they drain a dying animal to save a child. You're expected to heal freely and endlessly \- and resented when you can't. The Fe Alada tolerates Cultivation because it follows "natural law," but that tolerance is thin.
 
+**Mana Scarring:** Overworked Cultivators develop the hand and forearm of someone who's opened the same skin over and over \- a dense lattice of thin, healed cut\-lines, worst right at the fingers and palm and thinning out toward the elbow, each one a shade lighter than the skin around it once it closes. A fresh, shallow cut in the same spot can visibly knit shut in seconds, in full view of whoever's watching. Sleeves and gloves cover the lattice completely. Nothing covers a wound closing itself while someone's still looking at it.
+
 ### **SPELLS**
 
 **Thaumaturge \- Mana Cost 1**
@@ -51,4 +53,6 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 - **Casting Time:** Major Action
 - **Range:** Short
 - **Duration:** 3 rounds
-- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains 3 temporary STR, widening their Wound Thresholds for the duration (see [[Wounds & Survival|wounds_and_survival]]) \- a hit needs that much more damage before it escalates into a worse Wound band. At the start of each of the target's turns, this bonus decreases by 1\.
+- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains **3 temporary AR**. At the start of each of the target's turns, this bonus decreases by 1\.
+- **Backlash:** When the effect ends, the target gains **1 Trauma** \- borrowed resilience is still borrowed, and the body settles the account afterwards (see [[Reciprocity|laws_of_magic]]).
+- **Note:** Temporary AR is layered flesh, not harness. It is subtracted from damage exactly as armor is, but nothing degrades it \- it decays on its own schedule and no hit takes it faster. It is not repaired, it is not worn, and the Rigid/Flexible rules do not touch it.

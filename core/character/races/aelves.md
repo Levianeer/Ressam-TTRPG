@@ -13,7 +13,8 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 **Size:** Medium (\~6 ft)  
 **Base Speed:** 35 feet  
 **Starting Languages:** Aurkhani, Plethic  
-**Starting Skills:** \+1 Acrobatics, \+1 in either Subterfuge or Perception
+**Starting Skills:** \+1 Acrobatics, \+1 in either Subterfuge or Perception  
+**Knowledge Grants:** 1 point among Astrology & Cosmology or History
 
 ### **Features**
 
@@ -28,7 +29,7 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 ### **Features**
 
 **Weapon Training:** You gain \+1 in any STR weapon Skill, or in Ranged or Thrown.  
-**Ancestors Cloak:** When you take damage from an attack or spell, you may use your Reaction to become invisible until the end of your next turn. Once used, this feature cannot be used again until you complete a Field Rest or Long Rest.
+**Ancestors Cloak:** When you take damage from an attack or spell, you may spend **1 Tempo Die** to become invisible until the end of your next turn. Once used, this feature cannot be used again until you complete a Field Rest or Long Rest.
 
 ## Ash'shene Subculture
 

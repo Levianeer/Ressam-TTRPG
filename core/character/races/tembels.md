@@ -13,13 +13,14 @@ The Tembels are slow-moving, contemplative beings descended from a cursed Orkh w
 **Size:** Medium (\~5 ft, can grow larger)  
 **Base Speed:** 25 feet  
 **Starting Languages:** Khorian, Plethic  
-**Starting Skills:** \+1 Medical Lore, \+1 in either Wayfaring or Medical Lore (this can stack to \+2 Medical Lore if chosen)  
+**Starting Skills:** \+1 Chirurgery, \+1 in either Wayfaring or Chirurgery (this can stack to \+2 Chirurgery if chosen)  
+**Knowledge Grants:** 1 point among Physic or Theology  
 **Race Tier:** D (Marked)
 
 ### **Features**
 
-**Natural Born Healer:** When you use the Medical Lore skill to stabilize a creature, or administer Bandages or an Alchemy healing item to them, grant an additional 1 Patched Wound to the target.  
-**Deliberate Mind:** While below half Wounds, you may use a Reaction to reduce incoming damage by 1d6 as you endure through stillness.  
+**Natural Born Healer:** When you use the Chirurgery skill to stabilize a creature, or administer Bandages or an Alchemy healing item to them, grant an additional 1 Patched Wound to the target.  
+**Deliberate Mind:** While below half Wounds, you may spend **1 Tempo Die** to reduce incoming damage by 1d6 as you endure through stillness.  
 **Oft Sleepy:** You heal Wounds at twice the normal rate (see [[Wound Recovery|wounds_and_survival]]) and restore 50% additional Mana when completing any Rest (rounded down).
 
 ---

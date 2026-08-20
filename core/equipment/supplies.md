@@ -49,7 +49,7 @@ Essential equipment for travel, exploration, and survival.
 |:----------------------|:--------:|:-----:|:---------------------------------------------:|
 | Backpack              | 25 Crown |   0   | Required to use your full Slot count \(without one, carry only STR Slots\) |
 | Belt Pouch            | 5 Crown  |   1   |           Holds 3 Tiny items free            |
-| Bedroll               | 8 Crown  |   1   | Sleeping without one: disadvantage on Medical Lore checks to remove Trauma that rest |
+| Bedroll               | 8 Crown  |   1   | Sleeping without one: disadvantage on Chirurgery checks to remove Trauma that rest |
 | Tent, 1-person        | 10 Crown |   3   |             Shelter from weather              |
 | Tent, 4-person        | 50 Crown |   5   |                       “                       |
 | Waterskin             | 2 Crown  |   1   |                      \-                       |
@@ -76,12 +76,12 @@ Essential equipment for travel, exploration, and survival.
 | Hammer              | 5 Crown  |   1   |        For construction         |
 | Shovel              | 6 Crown  |   1   |       Digging, excavation       |
 | Pickaxe             | 10 Crown |   2   |     Mining, breaking stone      |
-| Chain (10 ft)       | 15 Crown |   2   |     STR Ward DC 17 to break     |
+| Chain (10 ft)       | 15 Crown |   2   |     STR Ward DC 16 to break     |
 | Rope (50 ft)        | 6 Crown  |   2   |         DC 10 to climb          |
 | Grappling hook      | 8 Crown  |   1   |               \-                |
 | Lock, simple        | 10 Crown |   1   |          DC 10 to pick          |
-| Lock, superior      | 50 Crown |   1   |          DC 16 to pick          |
-| Manacles            | 15 Crown |   1   | DC 16 to escape; DC 16 to break |
+| Lock, superior      | 50 Crown |   1   |          DC 14 to pick          |
+| Manacles            | 15 Crown |   1   | DC 14 to escape; DC 14 to break |
 | Mirror, small steel | 8 Crown  |  1/3  |               \-                |
 | Whistle, signal     | 2 Crown  |  1/3  |         Audible 300 ft          |
 | Chalk (10 pieces)   | 1 Crown  |  1/3  |               \-                |
@@ -99,7 +99,7 @@ Tactical equipment for combat preparation and area control. These items give mar
 | Item                  |   Cost   | Slots |                           Notes                           |
 |:----------------------|:--------:|:-----:|:-----------------------------------------------------------:|
 | Caltrops (bag of 20\) | 5 Crown  |   1   | Covers 5×5 ft; Ward DEX DC 12 or 1d4 damage \+ half speed |
-| Bear trap             | 25 Crown |   2   |           DC 16 DEX or 2d6 damage \+ restrained           |
+| Bear trap             | 25 Crown |   2   |           DC 12 DEX or 2d6 damage \+ restrained           |
 
 ### **Thrown Items**
 
@@ -121,7 +121,7 @@ Equipment for treating injuries and stabilizing the dying.
 |:---------------|:---------:|:-----:|:-----------------------------------------:|
 | Healer's kit   |  20 Crown |   1   |    Advantage on stabilization; 10 uses    |
 | Bandages (5)   |  5 Crown  |  1/3  |          Gain 1d2 Patched Wounds             |
-| Surgical tools |  25 Crown |   1   | Required for surgery; \+2 to Medical Lore |
+| Surgical tools |  25 Crown |   1   |    Required for surgery; \+2 to Chirurgery |
 | Antitoxin      |  50 Crown |  1/3  |      Removes the Poisoned Condition       |
 
 **Note:** For premade Healing Potions, see the Alchemy chapter's Vital Oil Recipes - Alchemy is the one system that produces them, so its Common/Uncommon/Rare tiers are the only stats you need.
@@ -143,7 +143,7 @@ Material components required for Arcane casting.
 |:--------------------|:---------:|:-----:|:--------------------------------------------------------------------------------------:|
 | Religious codex     | 100 Crown |   1   |                               Required for Divine casters                              |
 | Holy symbol         |  5 Crown  |  1/3  |                     Required for Divine casters; focus for prayers                     |
-| Incense (10 sticks) |  5 Crown  |  1/3  | Ritual offering; can satisfy Deep Devotion's sacrifice requirement ([[Magic Overview|magic_overview]]) |
+| Incense (10 sticks) |  5 Crown  |  1/3  | Ritual offering; can satisfy Deep Devotion's sacrifice requirement ([Magic Overview](magic_overview)) |
 
 **Spell Supply Notes:**
 
@@ -184,10 +184,10 @@ Specialized equipment for crafting and professional work. When a career grants �
 |:------------------------|:--------:|:-----:|:------------------------:|
 | Alchemist's supplies    | 30 Crown |   2   |          Thaumaturgy     |
 | Armorer's tools         | 18 Crown |   2   |          Crafting        |
-| Calligrapher's supplies | 15 Crown |   1   | Historic Lore, Manipulate |
+| Calligrapher's supplies | 15 Crown |   1   |         Manipulate |
 | Blacksmith's tools      | 20 Crown |   2   |     Crafting (metal)     |
 | Carpenter's tools       | 15 Crown |   2   |      Crafting (wood)     |
-| Jeweler's tools         | 25 Crown |   1   | Crafting (fine), Historic Lore |
+| Jeweler's tools         | 25 Crown |   1   |     Crafting (fine) |
 | Thieves' tools          | 30 Crown |   1   | Subterfuge (Lockpicking) |
 
 ### **Tool Proficiency**
@@ -197,7 +197,7 @@ Having appropriate tools grants **advantage** on related skill checks (DM discre
 Attempting skilled work **without proper tools:**
 
 - Simple tasks: Disadvantage  
-- Complex tasks: Impossible
+- Complex tasks: not possible at all - don't call for a roll
 
 **Improvised tools** (using a rock as a hammer, a knife as a screwdriver) impose disadvantage and may produce inferior results.
 
@@ -207,9 +207,9 @@ Attempting skilled work **without proper tools:**
 
 | Mount        |   Cost    |                                   Notes                                    |
 |:-------------|:---------:|:--------------------------------------------------------------------------:|
-| Mule         | 90 Crown  |  Hardy pack animal, stubborn and reliable (see [[Mount Stats|traveling]])  |
-| Riding Horse | 140 Crown | Swift travel mount, not trained for battle (see [[Mount Stats|traveling]]) |
-| War Horse    | 800 Crown |          Battle-trained destrier (see [[Mount Stats|traveling]])           |
+| Mule         | 90 Crown  |  Hardy pack animal, stubborn and reliable (see [Mount Stats](traveling))  |
+| Riding Horse | 140 Crown | Swift travel mount, not trained for battle (see [Mount Stats](traveling)) |
+| War Horse    | 800 Crown |          Battle-trained destrier (see [Mount Stats](traveling))           |
 
 | Tack & Harness |   Cost   | Slots |            Notes           |
 |:---------------|:--------:|:-----:|:--------------------------:|

@@ -14,6 +14,7 @@ The Feliids are a cursed offshoot of the Aelfen, once a solemn and tradition-bou
 **Base Speed:** 35 feet  
 **Starting Languages:** Tagaraal, Plethic  
 **Starting Skills:** \+2 Acrobatics, \+1 Perception  
+**Knowledge Grants:** 1 point among Seafaring & Navigation or Commerce  
 **Race Tier:** D (Marked)
 
 ### **Features**

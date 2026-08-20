@@ -24,7 +24,7 @@ Creatures with no race or continent tied to them - built once, reused anywhere i
 
 **Movement:** 30 ft.
 
-**Equipment:** A farm tool or cudgel (statted as a Club - 1d6 Bludgeoning, Short Reach), common clothes (no AR).
+**Equipment:** A farm tool or cudgel (statted as a Club - 1d6 Blunt, Short Reach), common clothes (no AR).
 
 **In Combat:** A Peasant fights because it has to, not because it can. It has no Skill in anything, so even swinging a weapon it trained with its whole life adds nothing beyond the flat 1d12. One or two connect and it's down for good; the real danger of a mob of Peasants is weight of numbers and the moral cost of the fight, not any one of them individually.
 
@@ -238,7 +238,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Equipment:** A rusted, pitted blade (1d6 Slashing, Short Reach), no armor.
 
-**Damage Types:** **Vulnerability** to Bludgeoning (brittle bone shatters under blunt force); **Immunity** to Poison (no blood or organs left to poison). See Resistance, Vulnerability, and Immunity, [[Wounds and Survival|wounds_and_survival]].
+**Damage Types:** **Vulnerability** to Blunt (brittle bone shatters under a heavy blow); **Immunity** to Poison (no blood or organs left to poison). See Resistance, Vulnerability, and Immunity, [[Wounds and Survival|wounds_and_survival]].
 
 **In Combat:** A Skeleton is deliberately weaker than a Bandit or Guard despite similar Attribute/Skill investment - no armor, a mediocre Parry, and MIND 0 - because it isn't a trained soldier anymore, just bone that still remembers how to swing. It doesn't flee, doesn't fear, and doesn't stop until destroyed; where a Bandit runs below half Wounds, a Skeleton fights on to zero. A mace or warhammer-wielding party will cut through a Skeleton mob fast once Vulnerability is in play - a GM can use that as a deliberate weakness for players to discover, not just a number on a page.
 
@@ -266,7 +266,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Movement:** 15 ft - a shamble, not a walk; a healthy adult at normal Speed simply outpaces one.
 
-**Natural Weapons:** Grasping Claws (1d6 Bludgeoning, Short Reach) - may attempt a Grapple (Brawling table, [[Weapons|weapons]]) instead of a normal attack.
+**Natural Weapons:** Grasping Claws (1d6 Blunt, Short Reach) - may attempt a Grapple (Brawling table, [[Weapons|weapons]]) instead of a normal attack.
 
 **Damage Types:** **Resistance** to Piercing (stabbing does little to dead flesh with nothing vital left to hit); **Immunity** to Poison. See Resistance, Vulnerability, and Immunity, [[Wounds and Survival|wounds_and_survival]].
 
@@ -324,7 +324,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Movement:** 20 ft - ponderous once it drops the disguise and has to actually move under its own weight.
 
-**Natural Weapons:** Bite and Slam (1d8 Bludgeoning/Piercing, Short Reach).
+**Natural Weapons:** Bite and Slam (1d8 Blunt/Piercing, Short Reach).
 
 **In Combat:** Whatever a Mimic does in a fight, it's already done the important part before initiative is even rolled - anyone who touches it before noticing what it is eats a full, unanswerable Surprise Round hit ([[Surprise|positioning]]: surprised creatures can't act or React). Past that opening exchange, it's an unremarkable, no-Maneuver brute leaning on AR 2 and nothing else - the ambush is the whole threat, not a sustained fight.
 

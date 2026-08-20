@@ -9,6 +9,7 @@
 **Character**
 - [Character Creation](character_creation)
 - [Attributes & Skills](attributes_and_skills)
+- [Knowledge](knowledge)
 - [Careers](careers)
 - [Languages](languages)
 - [Progression & Rewards](progression_&_rewards)
@@ -32,16 +33,14 @@
 - [Strygs](strygs)
 
 **Combat**
-- [Basic Moves](basic_moves)
+- [The Exchange](exchange)
 - [Combat](combat)
 - [Positioning](positioning)
-- [Maneuvers](maneuvers)
 
 **Magic**
 - [Overview](magic_overview)
 - [Laws of Magic](laws_of_magic)
 - [Minor Magic](minor_magic)
-- [Spell Crafting](spell_crafting)
 
 **Arcane Magic**
 - [Overview](arcane_overview)

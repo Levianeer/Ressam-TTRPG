@@ -26,7 +26,7 @@ Every trade has its quiet mastery - the hunter's low profile, the locksmith's fe
 
 Your bearing alone can break the will of hardened warriors - the same assertive stance drilled into officers and watch-captains to head off a fight before it starts.
 
-**Prerequisites:** \+3 ranks in Intimidate, CHA 3+ or STR 3+  
+**Prerequisites:** \+3 ranks in Intimidate, CHA 2+ or STR 2+  
 **Benefit:** As a Major Action, make an Intimidate check against the CHA Ward of one target within 30 ft who can see or hear you (Contested Ward). If it beats their Ward, they become frightened of you for 1 minute. Frightened creatures can repeat the Ward at the end of each of their turns (with advantage if they are more than 30 ft away from you). You may use this ability a number of times per Field Rest or Long Rest equal to your CHA or STR (whichever you use for Intimidate).
 
 ---

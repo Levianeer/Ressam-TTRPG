@@ -140,7 +140,7 @@ Give the creature Mythic Initiative(X) per `combat.md` (X = roughly how many PCs
 meant to threaten alone, 2-4) via the `Build.mythic_turns` field, and if it has a
 signature AoE ability, price its damage by running it through
 `tools/encounter_rating.py`'s actual fight sim solo against the 4x `BASELINE_PC` party,
-not by reading a spell-crafting magnitude table at face value - see the Gotchas below
+not by eyeballing a comparable spell's damage dice at face value - see the Gotchas below
 for why that overshoots badly.
 
 ## Gotchas (found the hard way this session - don't repeat them)
@@ -163,8 +163,8 @@ for why that overshoots badly.
   harmless.
 - **An AoE ability that hits the whole party with no attack roll and no cast risk needs
   to deal MUCH less damage than a single-target spell of the same dice size.**
-  `spell_crafting.md`'s Magnitude/Area table prices wide coverage via a DC-to-cast
-  penalty; a monster's innate ability that just always works skips that cost entirely,
+  A normal spell prices wide coverage into its own cast risk and Mana Cost;
+  a monster's innate ability that just always works skips that cost entirely,
   so the dice size has to absorb it instead. The Wyrm's breath went from Cataclysmic
   (6d8, a 98.7% solo party-wipe) down to Strong (2d10, a 66.1% "real fight") only after
   actually running it through the sim three times.
@@ -174,6 +174,6 @@ for why that overshoots badly.
   nearly wiping a full party. This is expected, not a bug - report both numbers, don't
   average them into one.
 - **`creature_rating.py`/`encounter_rating.py` don't model damage-type Resistance/
-  Vulnerability/Immunity.** If a creature has one (Skeleton's Bludgeoning Vulnerability,
+  Vulnerability/Immunity.** If a creature has one (Skeleton's Blunt Vulnerability,
   Zombie's Piercing Resistance), say so explicitly in the write-up - the tools' numbers
   don't reflect it.

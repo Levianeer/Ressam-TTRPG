@@ -1,5 +1,7 @@
 Aeromancy is the manipulation of air currents, atmospheric pressure, and the wind. Practitioners study how the God-Dragons shaped the breath of the world, learning to compress air into cutting blades, create vacuums, or ride updrafts. The formulae are elegant but unforgiving \- a miscalculation can implode your lungs or send you plummeting from the sky. Common folk see Aeromancers as dangerous curiosities \- useful for predicting weather or propelling ships, but fundamentally unsettling. Anyone who can steal the air from your lungs is someone you don't turn your back on. Sailors pay well for favorable winds, but they might not share a drink with you afterward. The unspoken rule: Aeromancers are hired help, not neighbors.
 
+**Mana Scarring:** Overexerted Aeromancers develop deep fissures across the whole hand and forearm \- cracking deep enough to split open after a hard casting \- from repeated decompression that no ordinary wind or dry climate would cause on its own. Gloves and long sleeves hide it completely, which is why most Aeromancers wear both regardless of season.
+
 ### **SPELLS**
 
 **Ventus Lancet \- Mana Cost 1**
@@ -7,17 +9,17 @@ Aeromancy is the manipulation of air currents, atmospheric pressure, and the win
 - **Casting Time:** Major Action
 - **Range:** 60 ft
 - **Duration:** Instant
-- **Effect:** A precise burst of wind strikes a creature you can see. Make a spell attack roll vs. target's Evasion. On hit, deal 1d6 \+ ARC bludgeoning damage and choose one:
+- **Effect:** A precise burst of wind strikes a creature you can see. Make a spell attack roll vs. the Shot DC. On hit, deal 1d6 \+ ARC blunt damage and choose one:
 
   - **Push:** Force the target 15 ft directly away from you
   - **Pull:** Drag the target 15 ft directly toward you
 
 
-- If the target collides with a solid surface or another creature, both take an additional 1d6 bludgeoning damage.
+- If the target collides with a solid surface or another creature, both take an additional 1d6 blunt damage.
 
 **Zephyr Slip \- Mana Cost 2**
 
-- **Casting Time:** Reaction (when you or a willing creature within 30 ft is targeted by an attack or a spell overcome roll against their DEX Ward)
+- **Casting Time:** Off-turn, 1 Tempo Die (when you or a willing creature within 30 ft is targeted by an attack or a spell overcome roll against their DEX Ward)
 - **Range:** 30 ft
 - **Duration:** Instant
 - **Effect:** Wind carries the target out of harm's way. Move the target up to 15 ft to an unoccupied space. This movement does not provoke opportunity attacks.
@@ -49,7 +51,7 @@ Aeromancy is the manipulation of air currents, atmospheric pressure, and the win
   - **Overcome:** Pulled to the nearest unoccupied space adjacent to the center point and knocked prone.
   - **Resist:** Pulled 10 ft toward the center (stopping if they hit an obstacle or creature) but remain standing.
 
-- Creatures that collide with each other during this movement each take 1d8 bludgeoning damage.
+- Creatures that collide with each other during this movement each take 1d8 blunt damage.
 
 **Gale Step \- Mana Cost 4**
 

@@ -17,14 +17,17 @@ math invented.
 Effective Level = the MAX of four independent per-axis checks (a creature is
 exactly as expensive as its single most demanding trait, not the average of
 all of them - "no free lunches"):
-  - Attribute Points: sum of all 8 Attributes vs. the level's cumulative
-                 ATTR Points column. Skill ranks never count against this -
-                 Attribute Points and Skill Points are two separate budgets
-                 with no conversion between them (character_creation.md's
-                 "Distribute Points").
+  - Attribute total: sum of all 6 Attributes vs. the level's ATTR total
+                 column. Attributes are a standard array plus three +1s at
+                 levels 4/8/12, not a pool, so this column is the largest
+                 total a PC of that Level could legally hold (A's array, 9,
+                 rising to 12 by Level 12). Skill ranks never count against
+                 it - Skills are a separate budget entirely.
   - Skill Points:  sum of all Skill ranks vs. the level's cumulative SKILL
                  Points column, checked independently of Attribute Points.
-  - Attribute Cap: highest single Attribute vs. the level's ATTR Cap column.
+  - Attribute Cap: highest single Attribute vs. the level's ATTR Cap column
+                 (3 from the array at Levels 1-3, then +1 per banked increase
+                 to a hard ceiling of 5).
   - Feats:         Feat count vs. the level's cumulative Feats column, or
                     Level 5 flat if any Feat is a Prestige Feat
                     (progression_&_rewards.md: "Can take a Prestige Feat"
@@ -44,8 +47,8 @@ contributes to that roll at all, only Skill does, exactly as core/bestiary.md's
 own Peasant entry calls out ("even swinging a weapon it trained with its
 whole life adds nothing beyond the flat 1d12"). Running the raw four-axis
 rule against Peasant without this override scored it Effective Level 1 off
-its Attribute Points/Attribute Cap alone (Attribute sum 6, within Level 1's
-18-point Attribute budget) - technically true but combat-irrelevant, since
+its Attribute total/Attribute Cap alone (Attribute sum 6, within Level 1's
+9) - technically true but combat-irrelevant, since
 those Attributes never touch the dice. This override was found BY running
 the calculator, not designed in up front; it only fires when Skill and Feat
 investment are both truly zero, so it never touches Bandit/Knight/the
@@ -67,23 +70,35 @@ Usage:
 from dataclasses import dataclass, field
 
 
-# level: (total_xp, attr_points, skill_points, attr_cap, feats) - attr_points
-# and skill_points are two separate budgets, no conversion between them
-# (character_creation.md's "Distribute Points").
+# level: (total_xp, attr_total, skill_points, attr_cap, feats)
 # Source: core/character/progression_&_rewards.md's advancement table.
+#
+# attr_total is NOT a point pool - Attributes are a standard array now
+# (character_creation.md Step 5), six fixed numbers set by the Attributes
+# priority letter. The most generous array is A's 3,2,2,1,1,0, summing to 9,
+# and the only growth after that is +1 to one Attribute at levels 4, 8 and 12.
+# So the column below is "the largest Attribute total a PC of this Level could
+# legally have," which is what an NPC's sum is being priced against - a
+# creature above it is spending Attributes no PC of that Level could.
+#
+# attr_cap is the highest single Attribute reachable at that Level from points
+# alone: the array tops out at 3, and each banked increase lifts that by one to
+# a hard ceiling of 5. Racial modifiers sit outside both columns for a PC; a
+# statted creature has no such split, so a creature built to read like a race
+# with a big Attribute bonus will price higher here than its PC counterpart.
 LEVEL_TABLE = {
-    1:  (30,   18, 12, 4, 2),
-    2:  (120,  18, 14, 4, 2),
-    3:  (270,  18, 16, 4, 2),
-    4:  (480,  19, 18, 4, 3),
-    5:  (750,  19, 20, 4, 3),
-    6:  (1080, 19, 22, 4, 4),
-    7:  (1470, 19, 24, 4, 4),
-    8:  (1920, 20, 26, 5, 4),
-    9:  (2430, 20, 28, 5, 5),
-    10: (3000, 20, 30, 5, 5),
-    11: (3630, 20, 32, 5, 5),
-    12: (4320, 21, 34, 5, 6),
+    1:  (30,    9, 12, 3, 2),
+    2:  (120,   9, 14, 3, 2),
+    3:  (270,   9, 16, 3, 2),
+    4:  (480,  10, 18, 4, 3),
+    5:  (750,  10, 20, 4, 3),
+    6:  (1080, 10, 22, 4, 4),
+    7:  (1470, 10, 24, 4, 4),
+    8:  (1920, 11, 26, 5, 4),
+    9:  (2430, 11, 28, 5, 5),
+    10: (3000, 11, 30, 5, 5),
+    11: (3630, 11, 32, 5, 5),
+    12: (4320, 12, 34, 5, 6),
 }
 MAX_LEVEL = 12
 
@@ -102,14 +117,14 @@ SKILL_ATTRIBUTE = {
     "Athletics": "STR", "Survival": "STR", "Wayfaring": "STR",
     # DEX - Finesse, Reflex & Subterfuge
     "Fencing Blades": "DEX", "Ranged": "DEX", "Thrown": "DEX", "Acrobatics": "DEX", "Subterfuge": "DEX",
-    "Crafting": "DEX", "Perception": "DEX",
+    "Crafting": "DEX", "Perception": "DEX", "Chirurgery": "DEX",
     # MIND - Intellect, Education & Reasoning
-    "Thaumaturgy": "MIND", "Historic Lore": "MIND", "Medical Lore": "MIND", "Nature Lore": "MIND",
+    "Thaumaturgy": "MIND",
     # ARC - Arcane Schools
-    "Arcane Lore": "ARC", "Aeromancy": "ARC", "Geomancy": "ARC", "Hydromancy": "ARC",
+    "Aeromancy": "ARC", "Geomancy": "ARC", "Hydromancy": "ARC",
     "Pyromancy": "ARC", "Shadowmancy": "ARC",
     # FAI - Divine Schools
-    "Religious Lore": "FAI", "Benediction": "FAI", "Invocation": "FAI", "Necration": "FAI",
+    "Benediction": "FAI", "Invocation": "FAI", "Necration": "FAI",
     "Cultivation": "FAI", "Subjugation": "FAI",
     # CHA - Socialising, Manipulation & Interaction
     "Influence": "CHA", "Manipulate": "CHA", "Intimidate": "CHA", "Leadership": "CHA",
@@ -120,7 +135,13 @@ SKILL_ATTRIBUTE = {
 def total_xp(level):
     if level <= 0:
         return 0
-    return LEVEL_TABLE[level][TOTAL_XP]
+    # _min_level_for returns MAX_LEVEL + 1 for anything no PC Level covers.
+    # Clamp rather than KeyError - the creature is off the top of the ladder,
+    # and score() flags that separately via `exceeds_ladder`. This used to be
+    # unreachable and became reachable when Attributes went from an 18-point
+    # pool to a 9-point standard array (2026-08-23): a build that was legal
+    # under the old pool can now be past what any PC Level can afford.
+    return LEVEL_TABLE[min(level, MAX_LEVEL)][TOTAL_XP]
 
 
 def _min_level_for(value, column):
@@ -152,6 +173,7 @@ class PowerScore:
     attr_cap_level: int
     feat_level: int
     untrained_override: bool
+    exceeds_ladder: bool
     illegal_skills: list
     effective_level: int
     power_score_xp: int
@@ -192,12 +214,13 @@ def score(creature: Creature) -> PowerScore:
     if untrained_override:
         effective_level = 0
 
+    exceeds_ladder = effective_level > MAX_LEVEL
     power_xp = total_xp(effective_level)
     xp_reward = (total_xp(effective_level + 1) - power_xp
                  if effective_level <= MAX_LEVEL else 0)
 
     return PowerScore(creature.name, attr_points_level, skill_points_level,
-                       attr_cap_level, feat_level, untrained_override,
+                       attr_cap_level, feat_level, untrained_override, exceeds_ladder,
                        illegal_skills, effective_level, power_xp, xp_reward)
 
 
@@ -229,12 +252,12 @@ KNIGHT = Creature(
 # Attribute budget) and the Prestige Feat gate (also never exercised
 # above). A battle-mage who burns her own Wounds instead of Mana - Blood-
 # Rule (core/feats/prestige_feats.md) requires STR 4+, +2 ranks in any
-# Arcane or Divine school Skill, +2 ranks in a Lore Skill, and per
+# Arcane or Divine school Skill, MIND 3+, and per
 # progression_&_rewards.md is only legal to take at Level 5+.
 PYROMANCER = Creature(
     name="Hypothetical - Blood-Rule Pyromancer",
     attributes=dict(STR=3, DEX=2, MIND=3, CHA=1, ARC=5, FAI=0),
-    skills={"Pyromancy": 4, "Historic Lore": 2, "Perception": 1},
+    skills={"Pyromancy": 4, "Perception": 1},
     feats=2,  # Blood-Rule (Prestige) + 1 General Feat
     has_prestige_feat=True,
 )
@@ -337,6 +360,9 @@ def main():
             s.power_score_xp, s.xp_reward,
         ]
         print("  ".join(f"{val:{fmt}}" for val, (_, fmt) in zip(row, cols)))
+        if s.exceeds_ladder:
+            print(f"{'':<32}  OFF THE LADDER: no PC Level 1-12 could afford this build - "
+                  f"XP shown is Level {MAX_LEVEL}'s")
         if s.untrained_override:
             print(f"{'':<32}  (untrained override: zero Skills/Feats -> Effective Level forced to 0)")
         if s.illegal_skills:

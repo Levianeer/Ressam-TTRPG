@@ -4,12 +4,13 @@ Ressam is a crunchy, lethal alternative to other TTRPGs, set in a world balanced
 
 ## Start Here
 
-Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks vs. Ward, the foundational mechanics nearly every other chapter assumes. Two sibling pages split off what used to live here: **[Wounds & Survival](wounds_and_survival)** (damage types, Wounds, Dying, Scars, Conditions, Trauma) and **[Carrying & Resting](carrying_and_resting)** (Slots, Resting). **[Basic Moves](basic_moves)**, the proactive actions everyone can take on their turn, lives under Combat, below, alongside its reactive counterpart.
+Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks vs. Ward, the foundational mechanics nearly every other chapter assumes. Two sibling pages split off what used to live here: **[Wounds & Survival](wounds_and_survival)** (damage types, Wounds, Dying, Scars, Conditions, Trauma) and **[Carrying & Resting](carrying_and_resting)** (Slots, Resting). **[The Exchange](exchange)**, which is melee combat entire, lives under Combat, below.
 
 ## Character
 
 - [Character Creation](character_creation) - step-by-step guide to building a character
 - [Attributes & Skills](attributes_and_skills) - what each Attribute represents and what each Skill covers
+- [Knowledge](knowledge) - what your character knows, distinct from what they can do; no roll, ever
 - [Careers](careers)
 - [Languages](languages)
 - [Progression & Rewards](progression_&_rewards)
@@ -43,17 +44,15 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks v
 
 ## Combat
 
-- [Basic Moves](basic_moves) - the proactive, on-your-turn actions everyone has access to (Dashing, Shoving, Grappling, Shift Measure, and more)
-- [Combat](combat) - turn structure, action economy, attacks, damage, critical hits
-- [Positioning](positioning) - the battlemap, Measure Bands and Reach, movement, Opportunity Attacks, Surprise, and Cover
-- [Maneuvers](maneuvers) - the reactive Oppose Reaction and its Effects (Strike/Shift/Control/Recover), the Press reaction chain, and Reactive Casting
+- [The Exchange](exchange) - **melee combat entire, and the page to read first.** The Tempo Pool that pays for every attack and every defense, the four Measure Bands, the three attack types, the Parry, Openings, Shock, Initiative, Surprise, and ranged combat vs. the Shot DC
+- [Combat](combat) - the frame around a fight: action economy, the damage roll, and armor
+- [Positioning](positioning) - the battlemap, movement, and Cover
 
 ## Magic
 
 - [Magic Overview](magic_overview) - universal rules shared by both casting paths
 - [Laws of Magic](laws_of_magic) - the Five Laws, Three Costs, and adjudication framework behind every spell, ritual, and miracle
 - [Minor Magic](minor_magic) - small, instinctive Mana effects (minimum 1 Mana) that fall outside a normal spell
-- [Spell Crafting](spell_crafting)
 
 **Arcane path:**
 - [Arcane Overview](arcane_overview)

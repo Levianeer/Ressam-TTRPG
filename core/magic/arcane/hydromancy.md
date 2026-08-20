@@ -1,5 +1,7 @@
 Hydromancy governs water, ice, and all that flows. From freezing blood in veins to parting rivers, Hydromancers study the God-Dragon of Water's eternal lesson: adapt or drown. Their magic is fluid, versatile, and coldly precise. Ice doesn't negotiate. Cities tolerate Hydromancers because they purify water and break droughts, but people call them "the cold ones" and mean it in every sense. There's something wrong about someone who can stop your heart by freezing the blood within. Sailors both fear and worship them \- a Hydromancer who calms storms is a miracle, but the same mage could drown your entire crew with a gesture. You pay them, you thank them, and you don't ask questions about what they did before they found honest work.
 
+**Mana Scarring:** Overdrawn Hydromancers develop frostbite\-pattern damage in the fingertips and lips \- permanently discolored, numb to light touch, slow to warm by a fire \- regardless of the climate they actually live in. A Hydromancer who's never left the tropics can end up with hands as frost\-scarred as a lifelong north\-sea sailor's. Gloves hide it from sight. Nothing hides a handshake that stays cold no matter the room.
+
 ### **SPELLS**
 
 **Frigid Grip \- Mana Cost 1**
@@ -7,7 +9,7 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
 - **Casting Time:** Major Action
 - **Range:** Short
 - **Duration:** Instant
-- **Effect:** Frost crawls across a creature you can see. Make a melee spell attack roll vs. target's Evasion. On hit, deal 1d6 \+ ARC cold damage. The target's movement speed is reduced by 15 ft until the end of their next turn. If this reduces their speed to 0, ice locks them solid \- they cannot take Reactions until the end of their next turn.
+- **Effect:** Frost crawls across a creature you can see. Make a spell attack roll vs. the Shot DC. On hit, deal 1d6 \+ ARC cold damage. The target's movement speed is reduced by 15 ft until the end of their next turn.
 
 **Rime Slick \- Mana Cost 2**
 
@@ -33,7 +35,7 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
 
 **Waterlock \- Mana Cost 3**
 
-- **Casting Time:** Reaction (when a creature you can see begins casting a spell)
+- **Casting Time:** Off-turn, 1 Tempo Die (when a creature you can see begins casting a spell)
 - **Range:** 60 ft
 - **Duration:** Instant
 - **Effect:** You force water into a creature's throat as they speak their incantation. Make a spell overcome roll vs. the target's STR Ward.
@@ -61,7 +63,7 @@ Hydromancy governs water, ice, and all that flows. From freezing blood in veins 
 - **Duration:** Instant
 - **Effect:** You reach toward a creature and freeze the water in their blood. Make a spell overcome roll vs. the target's STR Ward.
 
-  - **Overcome:** 4d8+ARC cold damage and their speed becomes 0 until the end of their next turn. While their speed is 0 from this effect, they have disadvantage on all attack rolls and their Evasion is reduced by 3 as their limbs refuse to cooperate.
+  - **Overcome:** 4d8+ARC cold damage and their speed becomes 0 until the end of their next turn. While their speed is 0 from this effect, they have disadvantage on all attack rolls as their limbs refuse to cooperate.
   - **Resist:** Half damage. Their speed is halved until the end of their next turn.
 
 

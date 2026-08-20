@@ -14,7 +14,8 @@ The Tapio are sorrow-bound caretakers of forgotten wilds \- mystikal beings born
 You may change it using the Size Changing feature.  
 **Base Speed:** 30 feet  
 **Starting Languages:** Telepathy 30 feet (understand all)  
-**Starting Skills:** \+2 in two FAI Skills or \+1 rank in one FAI Skill and \+2 in Nature Lore  
+**Starting Skills:** \+2 in two FAI Skills  
+**Knowledge Grants:** 3 points in Natural Philosophy  
 **Race Tier:** A (Extraordinary)
 
 ### **Features**

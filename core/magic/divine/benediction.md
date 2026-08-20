@@ -1,5 +1,7 @@
 Benediction channels divine judgment \- smiting enemies, rebuking heretics, and enforcing your god's will through righteous fury. It's not subtle. Benediction casters are warriors of faith who believe suffering can be holy if it punishes the wicked. The magic burns with radiant authority, and those who wield it rarely question their righteousness. Villagers bow to Benediction priests out of reverence and self-preservation. A Benediction priest declaring you "marked by the gods" is effectively a death warrant, and everyone knows the Fe Alada's Inquisitors are almost exclusively Benediction casters. People respect you the way they respect an executioner \- it's your job, and someone has to do it, but some may cross the street to avoid you. You're the gods' fist, not their embrace.
 
+**Mana Scarring:** Overworked Benediction casters develop a hand and forearm that looks sculpted rather than grown \- unnaturally smooth, unblemished skin that stops taking a scar, a wrinkle, or so much as a callus, faintly and permanently warm to the touch, like the blessing hand carved on a temple icon come to life. At a glance it reads as touched by the gods, even enviable. Held or examined closely, it stops reading as human \- no living hand stays that flawless through years of use. Gloves are the only thing that hides it, which is itself an odd thing for a priest to wear indoors.
+
 ### **SPELLS**
 
 **Smite \- Mana Cost 1**
