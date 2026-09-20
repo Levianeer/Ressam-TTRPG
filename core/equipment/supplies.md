@@ -47,9 +47,9 @@ Essential equipment for travel, exploration, and survival.
 
 | Item                  |   Cost   | Slots |                     Notes                     |
 |:----------------------|:--------:|:-----:|:---------------------------------------------:|
-| Backpack              | 25 Crown |   0   | Required to use your full Slot count \(without one, carry only STR Slots\) |
+| Backpack              | 25 Crown |   0   | Required to use your full Slot count \(without one, carry only 1 Slot\) |
 | Belt Pouch            | 5 Crown  |   1   |                       \-                        |
-| Bedroll               | 8 Crown  |   1   | Sleeping without one: disadvantage on Chirurgery checks to remove Trauma that rest |
+| Bedroll               | 8 Crown  |   1   | What a Rest actually happens on, outside a town bed |
 | Tent, 1-person        | 10 Crown |   1   |             Shelter from weather              |
 | Tent, 4-person        | 50 Crown |   1   |                       “                       |
 | Waterskin             | 2 Crown  |   1   |                      \-                       |
@@ -76,12 +76,12 @@ Essential equipment for travel, exploration, and survival.
 | Hammer              | 5 Crown  |   1   |        For construction         |
 | Shovel              | 6 Crown  |   1   |       Digging, excavation       |
 | Pickaxe             | 10 Crown |   1   |     Mining, breaking stone      |
-| Chain (10 ft)       | 15 Crown |   1   |     STR Ward DC 16 to break     |
-| Rope (50 ft)        | 6 Crown  |   1   |         DC 10 to climb          |
+| Chain (10 ft)       | 15 Crown |   1   |     STR Ward DC 11 (Extreme) to break     |
+| Rope (50 ft)        | 6 Crown  |   1   |         DC 9 (Hard) to climb          |
 | Grappling hook      | 8 Crown  |   1   |               \-                |
-| Lock, simple        | 10 Crown |   1   |          DC 10 to pick          |
-| Lock, superior      | 50 Crown |   1   |          DC 14 to pick          |
-| Manacles            | 15 Crown |   1   | DC 14 to escape; DC 14 to break |
+| Lock, simple        | 10 Crown |   1   |          DC 9 (Hard) to pick          |
+| Lock, superior      | 50 Crown |   1   |          DC 11 (Extreme) to pick          |
+| Manacles            | 15 Crown |   1   | DC 11 (Extreme) to escape; DC 11 (Extreme) to break |
 | Mirror, small steel | 8 Crown  |   1   |               \-                |
 | Whistle, signal     | 2 Crown  |   1   |         Audible 300 ft          |
 | Chalk (10 pieces)   | 1 Crown  |   1   |               \-                |
@@ -98,8 +98,8 @@ Tactical equipment for combat preparation and area control. These items give mar
 
 | Item                  |   Cost   | Slots |                           Notes                           |
 |:----------------------|:--------:|:-----:|:-----------------------------------------------------------:|
-| Caltrops (bag of 20\) | 5 Crown  |   1   | Covers 5×5 ft; Ward DEX DC 12 or 1d4 damage \+ half speed |
-| Bear trap             | 25 Crown |   1   |           DC 12 DEX or 2d6 damage \+ restrained           |
+| Caltrops (bag of 20\) | 5 Crown  |   1   | Covers 5×5 ft; Ward DEX DC 9 (Hard) or 1d4 damage \+ half speed |
+| Bear trap             | 25 Crown |   1   |           DC 9 (Hard) DEX or 2d6 damage \+ restrained           |
 
 ### **Thrown Items**
 
@@ -115,7 +115,7 @@ For thrown bombs (smoke, fire, acid, flash, etc.), see the **Alchemy** chapter's
 
 ## Medical Supplies
 
-Equipment for treating injuries and stabilizing the dying.
+Equipment for treating injuries and reviving the Downed.
 
 | Item           |   Cost    | Slots |                   Notes                   |
 |:---------------|:---------:|:-----:|:-----------------------------------------:|

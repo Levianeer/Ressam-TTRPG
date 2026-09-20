@@ -30,16 +30,16 @@ The comparison worth keeping in mind: Ressam's Attributes now map almost exactly
 
 Every roll in Ressam is `1d12` plus a single number from 0 to 5 - Skill Ranks on a Check, an Attribute on a Ward. Two facts follow, and both are load-bearing whenever a DC, a prerequisite or a threshold gets written:
 
-- **The highest total anyone can produce is 17.** Not "very unlikely" - impossible. The nine-tier DC scale used to run to 20 and had two rungs nothing could reach; Alchemy asked DC 20 for Rare concoctions and spent the ingredients on the guaranteed failure. Neither was a balance decision anybody made, they were arithmetic nobody checked.
-- **The d12 is flat, so 2 points of DC is exactly one step of one in six**, at every modifier, with no curve to soften the edges. A number set one tier too high does not become "harder," it becomes 16.7 points of probability removed, and four tiers too high removes all of it.
+- **The highest total anyone can produce is 17.** Not "very unlikely" - impossible. The nine-tier DC scale used to run to 20 and had two rungs nothing could reach; Alchemy asked DC 20 for Rare concoctions and spent the ingredients on the guaranteed failure. Neither was a balance decision anybody made, they were arithmetic nobody checked. **2026-09-20: the scale was recut a second time**, seven tiers down to four (`5/7/9/11`, Easy/Standard/Hard/Extreme - see `core_rules.md`), the same ladder `magic_overview.md`'s working tiers already used - the ceiling itself (17) never moved, only how many named rungs sit under it.
+- **The d12 is flat, so 2 points of DC is exactly one step of one in six**, at every modifier, with no curve to soften the edges. A number set one tier too high does not become "harder," it becomes 16.7 points of probability removed, and two tiers too high (the whole four-tier scale, top to bottom) removes all of it.
 
 **A roll that cannot succeed is worse than a ruling**, because it tells the player they had a chance. If the fiction demands a number past the ceiling, say no and move on - that is the "rulings not rules" the foreword asks for, applied honestly.
 
 ### **A Ward is not a Skill Check, and must not be priced like one**
 
-A Skill Check is an attempt the character **opted into**, using training they chose to buy - so its DC may fairly assume the roller invested. A Ward Check is the reverse: **the danger names the Attribute**, and a standard array leaves most characters with two Attributes at 0. The same number is a different rule depending on which side of that line it sits on.
+A Skill Check is an attempt the character **opted into**, using training they chose to buy - so its DC may fairly assume the roller invested. A Ward Check is the reverse: **the danger names the Attribute**, and a standard array leaves most characters with at least one Attribute at 0. The same number is a different rule depending on which side of that line it sits on.
 
-Set a Ward **one tier below** what the same fiction would take as a Skill Check, and keep an unannounced hazard at Very Hard or lower. At the top of the scale a Ward stops being a roll for anyone who did not build that Attribute - it is damage with a die attached, and the die is decoration.
+Set a Ward **one tier below** what the same fiction would take as a Skill Check, and keep an unannounced hazard at Hard (9) or lower. At the top of the scale (Extreme, 11) a Ward is close to a lock for anyone who did not build that Attribute - reserve it for named, telegraphed threats.
 
 ## Niches
 
@@ -71,6 +71,8 @@ This is a piloted style, not yet applied repo-wide - see `TODO.md`.
 ---
 
 # Spell Design Guidelines
+
+**2026-09-20: stale pending a dedicated pass.** The casting engine this section was written against (a flat `1d12 + Feat bonus vs. DC` roll, Mana, Patched-Wounds-based healing) was replaced wholesale by the Reach/Tempo rework's Will/Push/Channel engine (see `core/magic/`'s section of `CLAUDE.md`) - Overcomes, Faith, and Healing below all describe the old shape. Deliberately deferred alongside the individual school spell files and the Magic Feat Guidelines section below - not rewritten in this pass.
 
 Magic is difficult to balance in a system grounded in 16th-century martial combat. Every spell should be evaluated through the following lenses. Several of these (Creation, Healing, Summoning, Faith, Bypass) are the production-side rule for something `core/magic/laws_of_magic.md` states as in-fiction physics (Borrowed Substance, Conservation, the Soul, Reciprocity) - that file is where the *why* lives, and where to check when a proposed spell's legality isn't obvious from these lenses alone.
 
@@ -123,6 +125,8 @@ A Feat should never simply add flat damage to a hit, and should never grant an e
 ---
 
 # Magic Feat Guidelines
+
+**2026-09-20: stale pending the same dedicated pass as Spell Design Guidelines, above** - Focus Feats no longer grant a flat `+1/+2/+3` (see `magic_feats.md`'s Signature Working redesign), so "Scale With Investment" and "Damage Riders and Buffs Should Be Rare" below describe a mechanic that's gone. Not rewritten in this pass.
 
 **2026-09-14: this section covers every school uniformly now** - the old split into separate Arcane Feat and Divine Feat Guidelines is gone along with the Arcane/Divine split itself (see `magic_overview.md`). Feats that touch spellcasting sit closer to the Spell Design Guidelines above than to General/Martial/Skill Feats - lore and power creep are both easier to get wrong here than with an extra attack. Evaluate every magic Feat against these, on top of the shared Feat Design Guidelines above (Real-World Grounding is the one exception - Magic Feats remain exempt from that one, per its own text).
 

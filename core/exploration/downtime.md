@@ -1,6 +1,6 @@
 ## Revelry & Celebrations
 
-When your party reaches safety after a deadly mission, you can celebrate together \- drinking, feasting, gambling, or reveling in ways that reaffirm you're still alive. Pool your coin, share stories of your exploits, and convert your coin into experience through hard-won lessons learned in cups and conversation.
+When your party reaches safety after a deadly mission, you can celebrate together \- drinking, feasting, gambling, or reveling in ways that reaffirm you're still alive. Pool your coin, share stories of your exploits, and convert your coin into experience through hard-won lessons learned in cups and conversation. **Distinct from [[Unwinding|rest_and_survival]]** - that section's per-night `1d12` rolls are what actually clears Trauma; this chapter's celebration tiers are about XP and story hooks, not the mind's toll. A stay in town can do both.
 
 **Requirements:**
 

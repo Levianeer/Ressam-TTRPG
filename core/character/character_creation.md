@@ -118,21 +118,21 @@ See the **Feats** chapter for the complete list.
 
 ## Step 8: Calculate Derived Stats
 
+**2026-09-20:** recut for the Reach/Tempo rework - see [[Your Tempo Pool|exchange]] and [[Magic Overview|magic_overview]] for what changed and why.
+
 | Stat | Formula |
 | :---- | :---- |
-| **Wounds** | Size baseline \+ Feats |
-| **Mana Points (MP)** | MIND × 2, minimum 0 |
-| **Backpack Slots** | 2 × STR, minimum 0 |
-| **Bulky Capacity** | 5 \+ Size modifier (Small \+0, Medium \+1, Large \+2, Huge \+4) |
-| **Tempo Pool** | DEX \+ 1 dice, minimum 1, refilling at the start of your turn |
-| **Tempo Die** | STR 1 or lower: `1d4`, STR 2: `1d6`, STR 3: `1d8`, STR 4: `1d10`, STR 5\+: `1d12` |
-| **Parry** | `1d(Tempo Die) \+ Weapon Skill \+ Guard \+ Distance` |
-| **Initiative** | 5 \+ MIND (static, never rolled) |
+| **Wounds** | Size baseline \+ Feats (see [[Carrying Capacity|rest_and_survival]]) |
+| **Will** | MIND × 3, minimum 0 |
+| **Slots** | 6 \+ STR, minimum 1 |
+| **Tempo Pool** | 4, plus your equipped weapon's (and shield's) Attacks modifier - every die a flat `1d12`, refilling in full at the start of the round |
+| **Parry** | `1d12` per invested die \+ Weapon Skill \+ Guard |
+| **Initiative** | 5 \+ DEX (static, never rolled) |
 | **Dent Line / Rend Line** | Equipped armor's printed values |
 
-**Your Tempo Pool is the only resource in a fight** - every attack, every Parry, every Opportunity Attack comes out of it, and there is no free defense of any kind. At STR 0 or lower that `1d4` is rolled at Disadvantage; above 5, STR stays at `1d12` while every point of DEX keeps adding a die. See [[Your Tempo Pool|exchange]].
+**Your Tempo Pool is the only resource in a fight** - every attack, every Parry, every Opportunity Attack comes out of it, and there is no free defense of any kind. **No Attribute sizes it any more**: STR is melee damage and nothing else in a fight, and pool size instead comes straight off your gear (see [[Your Tempo Pool|exchange]]).
 
-**Three of these floor rather than go negative** (see Attribute Limits in Step 5): a **Tempo Pool** is never fewer than **1** die however low DEX goes, and **Mana** and **Backpack Slots** never drop below **0**. Everything else takes a negative score straight - a \-1 Ward is a \-1 Ward, a \-1 to melee damage is a real subtraction (a blow reduced to 0 or less inflicts no Wound, see [[Damage|combat]]), and a MIND below 0 gives an Initiative under 5 and a Knowledge Freebie Pool of nothing. **Bulky Capacity doesn't derive from an Attribute at all** - it's fixed by Size, so nothing about your array changes it.
+**Two of these floor rather than go negative** (see Attribute Limits in Step 5): **Will** never drops below **0**, and **Slots** are never fewer than **1** however low STR goes. Everything else takes a negative score straight - a \-1 Ward is a \-1 Ward, a \-1 to melee damage is a real subtraction (a blow reduced to 0 or less inflicts no Wound, see [[Damage Roll|combat]]), and a DEX below 0 gives an Initiative under 5.
 
 ---
 

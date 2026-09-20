@@ -32,7 +32,7 @@ Bodies and gear recover on the same schedule.
 
 **Repair never exceeds an armor or shield's printed starting values** (see [[Armor|armor]] and [[Weapons|weapons]]) \- Dent, Rend, and Guard each cap where they began. Chirurgery checks need a Healer's Kit; Smithing checks need Armorer's Tools (see [[Supplies|supplies]]).
 
-**Trauma never comes down on this ladder.** Rest heals bodies and gear, not minds \- see [Revelry \& Leisure](#revelry--leisure), below, for the only thing that clears it.
+**Trauma never comes down on this ladder.** Rest heals bodies and gear, not minds \- see [Unwinding](#unwinding), below, for the only thing that clears it.
 
 ---
 
@@ -153,13 +153,13 @@ You gain Trauma from:
 - **Failing a Nerve check, Named characters only** (see [[Morale|exchange]]): 1 per failed check.
 - Channelling, Pushing a roll, and certain workings - see [[Magic Overview|magic_overview]].
 
-**Trauma never comes down in the field.** Rest heals Wounds, not minds - the only way Trauma comes off is [Revelry \& Leisure](#revelry--leisure), below, in a town.
+**Trauma never comes down in the field.** Rest heals Wounds, not minds - the only way Trauma comes off is [Unwinding](#unwinding), below, in a town.
 
 ---
 
-## Revelry & Leisure
+## Unwinding
 
-Downtime spent relaxing in a town is the only thing that clears Trauma.
+Downtime spent relaxing in a town is the only thing that clears Trauma. **Distinct from [[Revelry \& Celebrations|downtime]]** - that chapter's coin-into-XP celebration tiers are a separate downtime activity with a separate roll; nothing stops a stay in town from doing both.
 
 **Each character chooses how many nights to spend, 1 to 7, and rolls `1d12` per night.** Cost is set per night by the town and party's means - a placeholder of **10 Crown per character, per night** is a reasonable starting point until [[Supplies|supplies]]'s price list is checked against it.
 
@@ -173,7 +173,7 @@ Then count the dice:
 
 An odd number of nights can never tie, so a 1-, 3-, 5-, or 7-night stay always ends in a boon or a Mishap. The GM describes both. Nights of revelry are still days in town for [Rest \& Repair](#rest--repair).
 
-Chirurgery handles bodies and Scars. Revelry & Leisure handles minds.
+Chirurgery handles bodies and Scars. Unwinding handles minds.
 
 ---
 
@@ -185,7 +185,7 @@ The number comes down. The marks do not.
 
 **When a fight ends, compare your band to your Scar Line.** If your band is higher, make one **Resolve check** for each band you climbed, then set your Scar Line to your current band. If your band is equal or lower, nothing happens.
 
-**Your Scar Line drops whenever your Trauma drops into a lower band**, however that happens - Revelry & Leisure, or a working that moves Trauma. Climb back later and that band checks again.
+**Your Scar Line drops whenever your Trauma drops into a lower band**, however that happens - Unwinding, or a working that moves Trauma. Climb back later and that band checks again.
 
 **Resolve check:** `1d12 \+ CHA` against the band's rung, minus your Wound Penalty - the same ladder as every other DC in the game.
 
@@ -209,7 +209,7 @@ The number comes down. The marks do not.
 | 6 | **Palsied** | `\-1` to damage totals, minimum 1. |
 | \- | **Steeled** | The first Trauma you would take in any fight is ignored. |
 
-Scars are untouched by Revelry & Leisure. They come off only with treatment in a town: one week of downtime and a **Chirurgery check (DC 11)**, one Scar at a time. **Steeled is permanent and is never treated away.** A character can hold more than one Scar, and they stack.
+Scars are untouched by Unwinding. They come off only with treatment in a town: one week of downtime and a **Chirurgery check (DC 11)**, one Scar at a time. **Steeled is permanent and is never treated away.** A character can hold more than one Scar, and they stack.
 
 ---
 

@@ -36,7 +36,7 @@
 | 11 | 3630 | \- | \+2 | 5 | \- | \- |
 | 12 | 4320 | \+1 | \+2 | 5 | \+1 | \- |
 
-**The Level 1 ATTR row is an array, not a number.** Your Attributes priority hands you six fixed values (A: `3, 2, 2, 1, 1, 0` down to E: `1, 1, 1, 1, 0, 0`) which you assign one per Attribute \- see [[Assign Attributes|character_creation]]. The SKILL Points start is likewise set by your Skills priority (18 / 15 / 12 / 9 / 6, shown here at **C**); the \+2 per level is the same for everyone.
+**The Level 1 ATTR row is an array, not a number.** Your Attributes priority hands you four fixed values (A: `3, 2, 1, 0` down to E: `1, 1, 0, 0`) which you assign one per Attribute \- see [[Assign Attributes|character_creation]]. The SKILL Points start is likewise set by your Skills priority (18 / 15 / 12 / 9 / 6, shown here at **C**); the \+2 per level is the same for everyone.
 
 ### **Rewards & Treasure**
 

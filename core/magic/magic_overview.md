@@ -97,7 +97,7 @@ Free dice are the defensive tech of this system, and the main thing to hand out 
 
 ## Recovery and casting outside combat
 
-**Will recovers on the same [[Rest \& Repair|rest_and_survival]] ladder as Wounds and gear.** **Trauma does not sit on this ladder** - only [[Revelry \& Leisure|rest_and_survival]] removes it.
+**Will recovers on the same [[Rest \& Repair|rest_and_survival]] ladder as Wounds and gear.** **Trauma does not sit on this ladder** - only [[Unwinding|rest_and_survival]] removes it.
 
 **Outside pressure, taking ten uninterrupted minutes counts as having rolled a 7.** No Will spent, no roll made. **Workings that move Trauma never get this shortcut** - they always cost a real Will point and a real roll. A working attempted under any pressure at all - a watch approaching, a rope fraying, anything with a clock - is a normal cast.
 
@@ -200,7 +200,7 @@ The whole loop, for reading mid-session.
 
 **Out of combat:** ten uninterrupted minutes counts as a rolled 7. No Will, no roll. Under any clock at all, cast normally. "Until your next turn" lasts about a minute.
 
-**Recovery:** Short returns 1 Will. Field returns Will equal to MIND, minimum 2. Long Rest returns all your Will. Trauma comes off only through Revelry \& Leisure in town.
+**Recovery:** Short returns 1 Will. Field returns Will equal to MIND, minimum 2. Long Rest returns all your Will. Trauma comes off only through Unwinding in town.
 
 **Will pool:** `MIND x 3`.
 

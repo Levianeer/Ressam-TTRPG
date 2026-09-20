@@ -29,13 +29,13 @@ Catalysts determine how the final product is used.
 
 ### **Quality Tiers**
 
-Oils and Powders come in three qualities based on their rarity. Rarity also sets the Crafting check's DC (see Crafting, below), reading Medium/Very Hard/Grueling off the [[DC tier table|core_rules]] \- better ingredients make a stronger product, but a harder check to actually pull off.
+Oils and Powders come in three qualities based on their rarity. Rarity also sets the Crafting check's DC (see Crafting, below), reading Standard/Hard/Extreme off [[Setting a Difficulty Class (DC)|core_rules]]'s ladder \- better ingredients make a stronger product, but a harder check to actually pull off.
 
 | Tier     | Effect Bonus | DC              | Cost      |
 |:---------|:------------:|:---------------:|:----------|
-| Common   |     \+0      | 8 (Medium)      | 100 Crown |
-| Uncommon |     \+1      | 12 (Very Hard)  | 250 Crown |
-| Rare     |     \+2      | 14 (Grueling)   | 500 Crown |
+| Common   |     \+0      | 7 (Standard)    | 100 Crown |
+| Uncommon |     \+1      | 9 (Hard)        | 250 Crown |
+| Rare     |     \+2      | 11 (Extreme)    | 500 Crown |
 
 **Rare sits only one tier above Uncommon on purpose.** The ingredients are already the gate \- 500 Crown a set, and a bad Margin below spends them for nothing. Charging a second time in DC would just mean nobody ever brews the good stuff.
 
@@ -77,13 +77,13 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 **Purchase:** Available in settlements at listed prices (see Equipment section)
 
-**Foraging** (Survival DC 12, 2 hours):
+**Foraging** (Survival DC 9 (Hard), 2 hours):
 
 - Success: 1d4 Common ingredients  
 - Success by 5+: 1d4 Uncommon ingredients  
 - Critical: 1 Rare ingredient
 
-**Harvesting:** Monsters may drop ingredients (Survival DC 12-18)
+**Harvesting:** Monsters may drop ingredients (Survival DC 9-11 (Hard to Extreme), higher still against especially dangerous monsters)
 
 ---
 
@@ -104,7 +104,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Endurance Salve (Quick)**
 
 - **Ingredients:** Vital Oil \+ Stabilizing Powder \+ Nat’khor
-- **Effect:** Apply before any Rest (see [[Rest \& Repair|rest_and_survival]]). That Rest heals additional Wounds on top of its normal amount \- still costs Trauma per Wound healed, same as any other source. **Trauma itself is untouched**: only [[Revelry \& Leisure|rest_and_survival]] removes it, and nothing in Alchemy bypasses that.
+- **Effect:** Apply before any Rest (see [[Rest \& Repair|rest_and_survival]]). That Rest heals additional Wounds on top of its normal amount \- still costs Trauma per Wound healed, same as any other source. **Trauma itself is untouched**: only [[Unwinding|rest_and_survival]] removes it, and nothing in Alchemy bypasses that.
   - **Common:** Heal **1** additional Wound
   - **Uncommon:** Heal **1 \+ Bonus** additional Wounds
   - **Rare:** Heal **1 \+ Bonus** additional Wounds
@@ -126,7 +126,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Firebomb (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Eshzera  
-- **Effect:** Thrown (20/40 ft), 10 ft radius, DEX Ward DC 12 for half  
+- **Effect:** Thrown (20/40 ft), 10 ft radius, DEX Ward DC 9 (Hard) for half  
   - **Common:** **3d6 \+ Bonus** fire damage  
   - **Uncommon:** **3d6 \+ Bonus** fire damage  
   - **Rare:** **3d6 \+ Bonus** fire damage  
@@ -135,7 +135,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Venomshade (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Nat’khor  
-- **Effect:** Coat weapon (Minor Action). Next hit deals bonus poison damage, STR Ward DC 12 or poisoned for 1 minute  
+- **Effect:** Coat weapon (Minor Action). Next hit deals bonus poison damage, STR Ward DC 9 (Hard) or poisoned for 1 minute  
   - **Common:** **2d6 \+ Bonus** poison damage  
   - **Uncommon: 2d6 \+ Bonus** poison damage  
   - **Rare:** **2d6 \+ Bonus** poison damage  
@@ -189,9 +189,9 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 - **Ingredients:** Sensory Oil \+ Stabilizing Powder \+ Eshzera  
 - **Effect:** Thrown (20/40 ft), 10 ft radius. CHA Ward or blinded and deafened for 1 round  
-  - **Common:** **DC 12 \+ Bonus**  
-  - **Uncommon:** **DC 12 \+ Bonus**  
-  - **Rare:** **DC 12 \+ Bonus**  
+  - **Common:** **DC 9 (Hard) \+ Bonus**  
+  - **Uncommon:** **DC 9 (Hard) \+ Bonus**  
+  - **Rare:** **DC 9 (Hard) \+ Bonus**  
 - **Value:** 50 Crown (Common), 70 Crown (Uncommon), 110 Crown (Rare)
 
 ### **Alertness Salve (Quick)**

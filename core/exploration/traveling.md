@@ -23,17 +23,17 @@ If a party wants to enter a hex but lacks some of the points/hours needed, the p
 
 The party slows their pace to better spot and avoid alerting potential enemies. Reduce the party’s daily hex point allowance to 6 (6 hours max). However:
 
-- The party cannot be **Ambushed** \- the worst that befalls them is **Caught Out** (see [[Surprise|exchange]]), so they keep their Move and their whole Tempo Pool.  
+- The party is never treated as unaware even if a fight catches them off guard (see [[Awareness|exchange]]) \- they keep their Move and their whole Tempo Pool, and may still Parry the first attack against them.  
 - A party moving this carefully is walking with hands near their weapons, which is the fiction the lighter rung describes.  
 - Time spent: Still 1 hour per point, but capped lower daily.
 
 ### **Forced March**
 
-The party pushes beyond normal limits. Add \+4 to their daily hex point allowance, but all characters gain 1 level of Trauma at day’s end.
+The party pushes beyond normal limits. Add \+4 to their daily hex point allowance, but all characters gain **4 Trauma** at day's end (see [[Trauma|rest_and_survival]]).
 
-- Such a pace can be kept up until a marcher reaches 3 levels of Trauma.  
-- Most Followers or Cohorts so fatigued will press for at least one full rest day; refusal may provoke Morale checks.  
-- If ambushed, the party is surprised.
+- Such a pace can be kept up until a marcher's Trauma reaches the **Dangerous** band (10+).  
+- Most Followers or Cohorts so fatigued will press for at least one full rest day; refusal may provoke Nerve checks (see [[Morale|exchange]]).  
+- If a fight catches the party by surprise, treat them as unaware (see [[Awareness|exchange]]).
 
 ### **Rations on the Road**
 
@@ -52,7 +52,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | Stat | Value |
 | :---- | :---- |
 | **Wounds** | 4 |
-| **Tempo Pool** | 3 dice at `1d8` |
+| **Tempo Pool** | 5 dice at `1d12` |
 | **Dent / Rend** | 2 / 6 (thick hide) |
 | **Speed** | 40 ft |
 | **Daily Hex Pts** | 10 |
@@ -60,7 +60,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 **Attacks:**
 
-- **Kick:** \+1 to hit, 1d6+2 blunt damage (only when spooked or cornered)
+- **Kick:** `1d12 \+ 1` (Skill), 1d6 \+ 3 Blunt damage (only when spooked or cornered)
 
 **Special Traits:**
 
@@ -68,7 +68,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 - **Sure-Footed:** Advantage on Wards against being knocked prone  
 - **Stubborn:** Disadvantage on Wayfaring checks to make it do something dangerous
 
-**Behavior:** Won't willingly enter combat. Requires DC 12 Wayfaring to prevent fleeing from violence.
+**Behavior:** Won't willingly enter combat. Requires DC 9 (Hard) Wayfaring to prevent fleeing from violence.
 
 ---
 
@@ -79,7 +79,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | Stat | Value |
 | :---- | :---- |
 | **Wounds** | 5 |
-| **Tempo Pool** | 4 dice at `1d8` |
+| **Tempo Pool** | 5 dice at `1d12` |
 | **Dent / Rend** | 3 / 7 |
 | **Speed** | 70 ft |
 | **Daily Hex Pts** | 12 |
@@ -87,15 +87,15 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 **Attacks:**
 
-- **Hooves:** \+1 to hit, 1d8+3 blunt damage (only when panicked, or if you travelled at least 30ft before attacking a target medium or smaller)
+- **Hooves:** `1d12 \+ 1` (Skill), 1d8 \+ 3 Blunt damage (only when panicked, or if you travelled at least 30ft before attacking a target medium or smaller)
 
 **Special Traits:**
 
 - **Beast of Burden:** Can carry 12 Slots without penalty  
 - **Fleet-Footed:** Can Dash as a Minor Action  
-- **Skittish:** When taking 10+ damage, must make DC 12 Wayfaring check or panic (moves randomly, rider must make DEX Ward DC 12 or fall)
+- **Skittish:** When taking 10+ damage, must make DC 9 (Hard) Wayfaring check or panic (moves randomly, rider must make DEX Ward DC 9 or fall)
 
-**Behavior:** Flees from combat unless controlled (DC 10 Wayfaring each round). Not trained to fight.
+**Behavior:** Flees from combat unless controlled (DC 9 (Hard) Wayfaring each round). Not trained to fight.
 
 ---
 
@@ -106,7 +106,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | Stat | Value |
 | :---- | :---- |
 | **Wounds** | 8 |
-| **Tempo Pool** | 3 dice at `1d10` |
+| **Tempo Pool** | 5 dice at `1d12` |
 | **Dent / Rend** | 4 / 8 (can wear barding for \+3 to both) |
 | **Speed** | 60 ft |
 | **Daily Hex Pts** | 12 |
@@ -114,13 +114,13 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 
 **Attacks:**
 
-- **Hooves:** \+2 to hit, 2d6+4 blunt damage
+- **Hooves:** `1d12 \+ 2` (Skill), 2d6 \+ 4 Blunt damage
 
 **Special Traits:**
 
 - **Beast of Burden:** Can carry 15 Slots without penalty  
 - **Warhorse Training:** Automatically acts on rider's initiative. Can attack without Wayfaring checks  
-- **Fearless Charge:** If the horse moves at least 30 ft in a straight line before attacking, deals an additional 2d6 damage and target must make STR Ward (DC 14\) or be knocked prone  
+- **Fearless Charge:** If the horse moves at least 30 ft in a straight line before attacking, deals an additional 2d6 damage and target must make STR Ward (DC 11, Extreme) or be knocked prone  
 - **Battle Hardened:** Advantage on Wards against fear and being startled. Only panics when reduced below half Wounds
 
-**Behavior:** Trained for combat. Will attack enemies on command and defend its rider. Requires DC 8 Wayfaring if reduced below half Wounds to prevent fleeing.
+**Behavior:** Trained for combat. Will attack enemies on command and defend its rider. Requires DC 7 (Standard) Wayfaring if reduced below half Wounds to prevent fleeing.

@@ -4,7 +4,7 @@ Ressam is a crunchy, lethal alternative to other TTRPGs, set in a world balanced
 
 ## Start Here
 
-Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks vs. Ward, the foundational mechanics nearly every other chapter assumes. A sibling page split off what used to live here: **[Rest & Survival](rest_and_survival)** (Carrying Capacity, Resting, damage types, Wounds, Dying, Scars, Conditions, Trauma). **[The Exchange](exchange)**, which is melee combat entire, lives under Combat, below.
+Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks vs. Ward, the foundational mechanics nearly every other chapter assumes. A sibling page split off what used to live here: **[Rest & Survival](rest_and_survival)** (Carrying Capacity, Rest & Repair, damage types, Wounds & Death's Door, Trauma, Unwinding, Scars, Conditions). **[The Exchange](exchange)**, which is melee combat entire, lives under Combat, below.
 
 ## Character
 
@@ -44,7 +44,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks v
 
 ## Combat
 
-- [The Exchange](exchange) - **melee combat entire, and the page to read first.** The Tempo Pool that pays for every attack and every defense, the four Measure Bands, the three attack types, the Parry, Openings, Shock, Initiative, Surprise, and ranged combat vs. the Shot DC
+- [The Exchange](exchange) - **melee combat entire, and the page to read first.** The Tempo Pool that pays for every attack and every defense, Distance & Reach, the Parry, Openings, Shock, Initiative, Awareness, Fear & Morale, and ranged combat vs. the Shot DC
 - [Combat](combat) - the frame around a fight: action economy, the damage roll, and armor
 - [Positioning](positioning) - the battlemap, movement, and Cover
 
@@ -52,8 +52,8 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks v
 
 - [Magic Overview](magic_overview) - universal rules shared by every school; no more Arcane/Divine split (2026-09-14)
 - [Laws of Magic](laws_of_magic) - the Five Laws, Three Costs, and adjudication framework behind every spell, ritual, and miracle
-- [Minor Magic](minor_magic) - small, instinctive Mana effects (minimum 1 Mana) that fall outside a normal spell
-- [Magic Feats](magic_feats) - how a caster actually buys into a school: Novice/Adept/Expert tier Unlocks, matching Focus bonuses, and cross-school Combination spells
+- [Minor Magic](minor_magic) - small, instinctive Will effects (minimum 1 Will) that fall outside a normal working
+- [Magic Feats](magic_feats) - how a caster actually buys into a school: Novice/Adept/Expert/Master tier Unlocks, matching Focus Feats built around Signature Workings, and cross-school Combination workings
 
 **Schools** (flat list - the Arcane/Divine grouping below is flavor-only leftover pending a follow-up consolidation pass, see repo `TODO.md`):
 - [Arcane Overview](arcane_overview), [Aeromancy](aeromancy), [Geomancy](geomancy), [Hydromancy](hydromancy), [Pyromancy](pyromancy), [Shadowmancy](shadowmancy)

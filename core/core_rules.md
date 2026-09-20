@@ -150,4 +150,4 @@ The defender never rolls. Ties go to the instigator, same as a Skill Check meeti
 
 ---
 
-**Continued in:** [[The Exchange|exchange]] (melee combat entire - the Tempo Pool, Distance & Reach, Attacking, Defending, Openings, Shock, Initiative, Awareness, Fear and Morale), [[Combat|combat]] (action economy, the damage roll, armor), [[Rest \& Survival|rest_and_survival]] (Slots, Rest \& Repair, Damage Types, Wounds \& Death's Door, Trauma, Revelry \& Leisure, Scars, Conditions), and [[Stealth & Light|stealth_and_light]] (Stealth and Hiding, Light and Vision).
+**Continued in:** [[The Exchange|exchange]] (melee combat entire - the Tempo Pool, Distance & Reach, Attacking, Defending, Openings, Shock, Initiative, Awareness, Fear and Morale), [[Combat|combat]] (action economy, the damage roll, armor), [[Rest \& Survival|rest_and_survival]] (Slots, Rest \& Repair, Damage Types, Wounds \& Death's Door, Trauma, Unwinding, Scars, Conditions), and [[Stealth & Light|stealth_and_light]] (Stealth and Hiding, Light and Vision).

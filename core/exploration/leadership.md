@@ -98,7 +98,7 @@ Cohorts aren't hired like common labor. They're recruited through:
 | Cold recruitment (no prior relationship) | \+3 |
 | They have better options | \+5 |
 
-Base DC 12\. Success means they agree to follow you.
+Base DC 9 (Hard). Success means they agree to follow you.
 
 ### **Cohort Upkeep**
 
@@ -124,8 +124,8 @@ Either way, the DM has final approval. Your cohort is an NPC \- they have their 
 
 - **Initiative:** Cohorts act on your initiative, immediately after your turn  
 - **Commands:** You can issue one command per round (no action required). Without commands, cohorts defend themselves and stay near you.  
-- **Independent action:** Complex tactics require Leadership checks (DC 8-12)  
-- **Death:** Cohorts reduced to 0 Wounds follow normal dying rules. You can stabilize them.
+- **Independent action:** Complex tactics require Leadership checks (DC 7-9, Standard to Hard)  
+- **Death:** A Cohort is a Named NPC (see [[Named Characters|rest_and_survival]]) - it goes Downed rather than dying outright when its Wounds fill, and a Chirurgery check can get it back up.
 
 ---
 
@@ -157,7 +157,7 @@ The DM calls for Morale checks when followers/cohorts face situations that test 
 - They haven't been paid in weeks  
 - They witness something terrifying
 
-**Morale Check \= 1d12 \+ Your Leadership vs. DC 12**
+**Morale Check \= 1d12 \+ Your Leadership vs. DC 9 (Hard)**
 
 - **Success:** They hold. Loyalty intact.  
 - **Failure:** They break. Followers flee or surrender. Cohorts retreat or refuse orders.
@@ -202,7 +202,7 @@ Followers die easily. If caught in combat, targeted by area effects, or facing a
 
 Cohorts are characters. Their death should matter.
 
-- **Dying:** Cohorts reduced to 0 Wounds follow standard dying rules (STR rounds to stabilize)  
+- **Downed:** Cohorts are Named NPCs (see [[Named Characters|rest_and_survival]]) - reduced to their last Wound box they go Downed rather than dying outright, and any further Wound kills them  
 - **Resurrection:** Same as player characters \- not something you can arrange or purchase. If a dead cohort returns, it's entirely the DM's narrative call (see [[Resurrection|divine_overview]])  
 - **Replacement:** You can recruit a new cohort, but this takes time and roleplay. You can't just grab another one immediately.
 
@@ -234,8 +234,8 @@ Cohorts are characters. Their death should matter.
 | :---- | :---- |
 | Maximum Cohorts | 1 (2 with CHA 4+, both at Level \- 3\) |
 | Cohort Level | Your Level \- 2 (min 1\) |
-| Morale Check | 1d12 \+ Leadership vs. DC 12 |
-| Recruitment DC | 12 ± circumstance modifiers |
+| Morale Check | 1d12 \+ Leadership vs. DC 9 (Hard) |
+| Recruitment DC | 9 (Hard) ± circumstance modifiers |
 | Payroll | Sum of Follower \+ Cohort weekly wages, settled at each settlement visit |
 
 ---
@@ -244,7 +244,7 @@ Cohorts are characters. Their death should matter.
 
 **Mira Valdros, Squire** *Level 2 Human*
 
-**Wounds:** 4 | **Dent/Rend:** 3 / 7 (Gambeson) | **Initiative:** 7 | **Tempo Pool:** 3 dice at `1d10` | **Parry:** `1d10 \+ 3 \+ Guard`
+**Wounds:** 5 | **Dent/Rend:** 3 / 7 (Gambeson) | **Initiative:** 7 | **Tempo Pool:** 5 dice at `1d12` | **Parry:** `1d12 \+ 3 \+ Guard`
 
 **Attributes:** STR 4, DEX 2, MIND 3, CHA 2
 
@@ -252,8 +252,8 @@ Cohorts are characters. Their death should matter.
 
 **Equipment:**
 
-- Shortsword (1d6 \+ 1 piercing, Length 2, Light, takes an Opening on a margin of 4)  
-- Targe Shield (Guard \+1, statted as a Buckler)  
+- Shortsword (1d6 \+ 1 Piercing, Normal Reach, `\+1` Attacks, Light, Signature: Riposte)  
+- Targe Shield (Guard \+1, `\+0` Attacks, statted as a Buckler)  
 - Gambeson (Dent 3 / Rend 7)  
 - Armorer's Tools
 

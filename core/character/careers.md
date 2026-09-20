@@ -99,7 +99,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You protected people, places, or cargo \- whether as city watch, caravan escort, or estate security.*
 
-**Skill Bonuses:** Hafted & Polearms \+1, Perception \+1  
+**Skill Bonuses:** Hafted Weapons \+1, Perception \+1  
 **Knowledge Grants:** 1 point among Streetwise or Thaumatic Law  
 **Starting Equipment:** Halberd, whistle, guard's uniform  
 **Starting Coin:** 585 Crown
@@ -132,7 +132,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You were trained to give fire to your enemies \- loosing shot in the midst of pike and horse.*
 
-**Skill Bonuses:** Ranged \+1, Athletics \+1  
+**Skill Bonuses:** Firearms \+1, Athletics \+1  
 **Knowledge Grants:** 1 point among Warfare or Engineering & Mechanisms  
 **Starting Equipment:** Match-lock Arquebus, Shot & Powder for 20 shots, travelling clothes  
 **Starting Coin:** 375 Crown
@@ -143,7 +143,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You rode horses into battle, often heavily armed and armored \- trained to engage pike-and-shot formations.*
 
-**Skill Bonuses:** Ranged \+1, Wayfaring \+1  
+**Skill Bonuses:** Firearms \+1, Wayfaring \+1  
 **Knowledge Grants:** 1 point among Warfare or Genealogy & Heraldry  
 **Starting Equipment:** Match-lock Pistol, Shot & Powder for 10 shots, riding horse, sturdy travelling clothes  
 **Starting Coin:** 425 Crown
@@ -154,7 +154,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You tracked and killed game for food, pelts, or bounty.*
 
-**Skill Bonuses:** Survival \+1, Ranged \+1  
+**Skill Bonuses:** Survival \+1, Archery \+1  
 **Knowledge Grants:** 1 point among Bestiary Lore or Natural Philosophy  
 **Starting Equipment:** Longbow, 24 arrows, knife, dark cloak  
 **Starting Coin:** 500 Crown
@@ -233,7 +233,7 @@ Careers represent what you did to survive before taking up the adventurer's life
 
 *You served in an organized military force, trained in formation combat and discipline.*
 
-**Skill Bonuses:** Hafted & Polearms \+1, Athletics \+1  
+**Skill Bonuses:** Polearms \+1, Athletics \+1  
 **Knowledge Grants:** 1 point in Warfare  
 **Starting Equipment:** Pike, military tabard  
 **Starting Coin:** 480 Crown
