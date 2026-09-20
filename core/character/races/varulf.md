@@ -26,10 +26,10 @@ The Varulf are cursed reflections of humanity \- neither fully man nor wholly be
 
 - \+10 ft speed, \+2 STR.  
 - \+2 to your natural Dent Line and Rend Line.  
-- Gain 2 Patched Wounds.  
+- Gain 2 Wound boxes on top of your maximum for the duration.  
 - Gain natural weapons: Claws (1d8+STR slashing), Bite (1d10+STR piercing). These count as magical.
 
-When the transformation ends, you lose any remaining Patched Wounds and revert to your human form. If you are unconscious when the transformation ends, you remain unconscious.
+When the transformation ends, remove the 2 extra Wound boxes (and any Wounds filling them) and revert to your human form. If you are Downed or unconscious when the transformation ends, you remain so.
 
 **Curse of the Beast:** When you fail a MIND Ward, make an additional STR Ward DC 14 or enter Feral Frenzy:
 

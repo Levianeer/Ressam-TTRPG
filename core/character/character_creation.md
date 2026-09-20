@@ -24,7 +24,7 @@ Take the five priorities, **A** through **E**, and assign one to each of the fiv
 |  **D**   |     1, 1, 1, 0     |       9       | Up to Lower-Middle |   1   | Up to Tier D (Marked)           |
 |  **E**   |     1, 1, 0, 0     |       6       | Low only           |   0   | Tier E only (the four Artefolk) |
 
-**2026-09-14: the array shrank from six numbers to four** when ARC and FAI were deleted (see [[Attributes|core_rules]]) - one number per remaining Attribute (STR/DEX/MIND/CHA). Freshly resized rather than just trimmed, to keep the same shape the six-number arrays had: only an **A** ever reaches a 3, and every tier but **E** carries exactly one guaranteed 0 (**E** carries two - the tier that's openly trading Attributes away for everything else).
+One number per Attribute (STR/DEX/MIND/CHA): only an **A** ever reaches a 3, and every tier but **E** carries exactly one guaranteed 0 (**E** carries two - the tier that's openly trading Attributes away for everything else).
 
 - **Attributes** hands you a **standard array** for Step 5 - six fixed numbers, one per Attribute, assigned in whatever order you like. There is no Attribute point pool and nothing to buy: a higher priority is a better set of numbers, not more currency. Only an **A** starts with a 3 in anything.
 - **Skills** sets the size of your Skill point budget for Step 5 - those points are still spent freely within the normal caps, this only changes how many you have.
@@ -118,7 +118,7 @@ See the **Feats** chapter for the complete list.
 
 ## Step 8: Calculate Derived Stats
 
-**2026-09-20:** recut for the Reach/Tempo rework - see [[Your Tempo Pool|exchange]] and [[Magic Overview|magic_overview]] for what changed and why.
+See [[Your Tempo Pool|exchange]] and [[Magic Overview|magic_overview]] for the Tempo Pool and Will formulas in full.
 
 | Stat | Formula |
 | :---- | :---- |
@@ -140,7 +140,7 @@ See the **Feats** chapter for the complete list.
 
 Your career provides starting equipment and currency. Purchase additional items from the **Equipment** chapter.
 
-**Armor Reminder:** Armor Penalty affects Acrobatics and Subterfuge, and **nothing at all inside a fight** (see [[Armor|armor]]). Nothing reduces it - no Skill and no Feat. **2026-09-14: Armor Penalty no longer touches spellcasting** - the new unified casting roll (see [[Magic Overview|magic_overview]]) carries no modifier for it to touch.
+**Armor Reminder:** Armor Penalty affects Acrobatics and Subterfuge, and **nothing at all inside a fight or in spellcasting** (see [[Armor|armor]]). Nothing reduces it - no Skill and no Feat.
 
 ---
 

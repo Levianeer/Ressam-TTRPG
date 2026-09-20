@@ -1,5 +1,7 @@
 Creatures with no race or continent tied to them - built once, reused anywhere in Ressam without reskinning. See [[Bestiary Overview|bestiary_overview]] for the Frequency scale and how to read a stat block.
 
+**Note:** Fielding Guide counts are carried over from a prior simulation and are unvalidated against the current rules - treat them as a starting guess, not a re-run number, until `tools/` is rebuilt.
+
 ---
 
 ## Peasant
@@ -12,21 +14,21 @@ Creatures with no race or continent tied to them - built once, reused anywhere i
 
 **Skills:** None (0 ranks in everything)
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 6 | 0 | 1d12 (untrained) | 1d6 \+ 1 | \+1 |
-
-**Wound Threshold:** 1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Unarmored (0 / 5) | 4 dice at `1d12` | 6 |
 
 **Wards:** STR 6, DEX 6, MIND 6
 
-**Reactions:** 1/round. No Maneuver - Dodge is technically legal on DEX 1 alone (see [[Maneuver|maneuvers]]), but a Peasant doesn't fight back with any real skill. May still spend its Reaction on a plain Opportunity Attack if armed and a creature leaves its reach.
+**Parry:** `1d12 (per die) + 0`, weapon in hand - untrained, no Skill to add.
 
 **Movement:** 30 ft.
 
-**Equipment:** A farm tool or cudgel (statted as a Club - 1d6 Blunt, Short Reach), common clothes (no AR).
+**Equipment:** A farm tool or cudgel (statted as a Club - 1d6 Blunt, Normal Reach, `+0` Attacks), common clothes (Unarmored).
 
-**In Combat:** A Peasant fights because it has to, not because it can. It has no Skill in anything, so even swinging a weapon it trained with its whole life adds nothing beyond the flat 1d12. One or two connect and it's down for good; the real danger of a mob of Peasants is weight of numbers and the moral cost of the fight, not any one of them individually.
+**Damage:** 1d6 \+ 1 Blunt.
+
+**In Combat:** A Peasant fights because it has to, not because it can. It has no Skill in anything, so even swinging a weapon it trained with its whole life adds nothing beyond the flat `1d12`. One or two landed hits and it's down for good; the real danger of a mob of Peasants is weight of numbers and the moral cost of the fight, not any one of them individually.
 
 **Fielding Guide** (4-PC party; see [[Bestiary Overview|bestiary_overview]]'s note on reading this as a floor, not literal odds):
 
@@ -46,23 +48,23 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Attributes:** STR 2, DEX 2, MIND 1, CHA 1
 
-**Skills:** Cleaving Blades 2, Intimidate 1, Perception 1
+**Skills:** Fencing Blades 2, Intimidate 1, Perception 1
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 6 | 3 | \+2 | 1d6 \+ 4 | \+2 |
-
-**Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Buff Coat (6 / 11) | 5 dice at `1d12` (Shortsword, Light) | 7 |
 
 **Wards:** STR 7, DEX 7, MIND 6
 
-**Reactions:** 1/round. Can **Parry** (1d12 \+ 2, weapon in hand) or **Dodge** (1d12 \+ 1) - no shield, so Block isn't available.
+**Parry:** `1d12 (per die) + 2`, Shortsword in hand.
 
 **Movement:** 30 ft.
 
-**Equipment:** Shortsword (1d6 \+ 1 Piercing, Short, Light), a thrown Knife x2 as backup (1d4 Piercing, 20/40 ft), Buff Coat (AR 3, Penalty \-1).
+**Equipment:** Shortsword (1d6 Piercing, Normal Reach, `+1` Attacks, Signature: Riposte), a thrown Knife x2 as backup (1d4 Piercing, 20/40 ft), Buff Coat (Penalty \-2).
 
-**In Combat:** Bandits don't fight fair if they can help it - Taunting or Intimidate to freeze up whoever looks softest, a thrown knife on the approach, then closing to melee. A Bandit that's lost more than half its Wounds runs; it isn't being paid enough to die here.
+**Damage:** 1d6 (weapon) \+ 2 (STR) \= 1d6 \+ 2 Piercing.
+
+**In Combat:** Bandits don't fight fair if they can help it - Intimidate to freeze up whoever looks softest, a thrown knife on the approach, then closing to melee. A Bandit that's lost more than half its Wounds runs; it isn't being paid enough to die here.
 
 **Fielding Guide** (4-PC party; see [[Bestiary Overview|bestiary_overview]]'s note on reading this as a floor, not literal odds):
 
@@ -80,23 +82,23 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Attributes:** STR 3, DEX 1, MIND 1, CHA 1
 
-**Skills:** Hafted & Polearms 2, Perception 1
+**Skills:** Polearms 2, Perception 1
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 3 | 4 | \+2 | 1d6 \+ 3 | \+1 |
-
-**Wound Threshold:** 1 Wound (1-9), 2 Wounds (10-15), 3 Wounds (16+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Mail Shirt (6 / 11) | 4 dice at `1d12` | 6 |
 
 **Wards:** STR 8, DEX 6, MIND 6
 
-**Reactions:** 1/round. Can **Block** (1d12 \+ 2, Heater Shield equipped) - Parry's melee-weapon-in-hand route is technically legal but never the better option, and Armor Penalty (\-3) guts any Dodge attempt before it starts; Block is what this build is actually equipped for.
+**Parry:** `1d12 (per die) + 2 + Guard`, Spear in hand - Guard is ignored against a Reach 1 or Reach 2 attacker (see [[Ignores Guard|weapons]]), same as for anyone.
 
 **Movement:** 30 ft.
 
-**Equipment:** Spear (1d6 Piercing, Medium Reach, Versatile, Throwable), Heater Shield (\+2 AR while Blocking, Penalty \-1), Mail Shirt (AR 4, Penalty \-2).
+**Equipment:** Spear (1d8 Piercing, Reach 1, Versatile, Throwable, Signature: Shove), Heater Shield (`+2` Guard, Light cover against shots), Mail Shirt (Penalty \-2).
 
-**In Combat:** A Guard holds a line rather than chasing - the spear's Medium Reach and Versatile property mean it can brace two-handed against a charge or free a hand for the shield the rest of the time. Low Evasion (heavy armor plus a shield) means most hits "connect" in the passive sense, and Block is where the real defense happens. A Guard fights to hold a post or protect a charge, not to the death - it calls for backup or breaks off once a fight turns clearly unwinnable.
+**Damage:** 1d8 \+ 3 (STR) Piercing.
+
+**In Combat:** A Guard holds a line rather than chasing - the Spear's Reach 1 and Versatile property mean it can brace two-handed against a charge or free a hand for the shield the rest of the time. Heavy armor plus a shield means most Parries land in the Guard's favor; it fights to hold a post or protect a charge, not to the death, and breaks off once a fight turns clearly unwinnable.
 
 ---
 
@@ -110,21 +112,21 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Daggers & Wrestling 2, Perception 2
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 8 | 0 | \+2 | 1d6 \+ 2 | \+2 |
-
-**Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Unarmored (0 / 5) | 5 dice at `1d12` | 7 |
 
 **Wards:** STR 7, DEX 7, MIND 6
 
-**Reactions:** 2/round. Can **Dodge** (1d12 \+ 3) - no weapon, shield, or armor to Parry or Block with.
+**Parry:** `1d12 (per die) + 2`, bare bite and body - no weapon, shield, or armor.
 
 **Movement:** 40 ft.
 
-**Natural Weapons:** Bite (1d6 Piercing, Short Reach).
+**Natural Weapons:** Bite (1d6 Piercing, Normal Reach, `+1` Attacks, Signature: Grapple).
 
-**In Combat:** A Wolf leans entirely on not getting hit in the first place - Evasion 9 and a real Dodge bonus, backed by nothing else, since it carries no AR at all. It won't stand and trade: expect it to circle, wait for an opening or a straggler, and disengage the moment a fight stops going its way. A pack of Wolves is worse than the sum of its parts once positioning is on the table.
+**Damage:** 1d6 \+ 2 (STR) Piercing.
+
+**In Combat:** A Wolf leans entirely on not getting hit in the first place - a real Parry backed by a full Tempo Pool, and nothing to lose to Shock beyond the dice it invests. It won't stand and trade: expect it to circle, wait for an opening or a straggler, and disengage the moment a fight stops going its way. A pack of Wolves is worse than the sum of its parts once positioning is on the table.
 
 ---
 
@@ -138,23 +140,23 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Daggers & Wrestling 1, Subterfuge 1
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 2 | 7 | 0 | \+1 | 1d4 \+ 1 | \+1 |
-
-**Wound Threshold:** 1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 4 | Unarmored (0 / 5) | 5 dice at `1d12` | 6 |
 
 **Wards:** STR 6, DEX 6, MIND 5
 
-**Reactions:** 1/round. No Maneuver - too small and too simple to Parry, Block, or Dodge meaningfully.
+**Parry:** `1d12 (per die) + 1`, bare bite.
 
 **Movement:** 30 ft.
 
-**Natural Weapons:** Bite (1d4 Piercing, Short Reach).
+**Natural Weapons:** Bite (1d4 Piercing, Normal Reach, `+1` Attacks, Signature: Grapple).
 
-**Size:** Small (2 Wounds baseline, not Medium's 3 - see [[Wounds and Survival|rest_and_survival]]).
+**Size:** Small (4 Wounds baseline, not Medium's 5 - see [[Carrying Capacity|rest_and_survival]]).
 
-**In Combat:** A Giant Rat cannot meaningfully hurt an armored target - its bite doesn't get through most AR at all. It exists to swarm the unarmored, infest a dungeon or sewer level with a body count, and die in one hit apiece. Never field one alone as a real threat; a nest of them is a nuisance encounter, not a combat one.
+**Damage:** 1d4 \+ 1 (STR) Piercing.
+
+**In Combat:** A Giant Rat cannot meaningfully hurt an armored target - its bite rarely reaches even a Gambeson's Dent Line. It exists to swarm the unarmored, infest a dungeon or sewer level with a body count, and die in one hit apiece. Never field one alone as a real threat; a nest of them is a nuisance encounter, not a combat one.
 
 ---
 
@@ -166,23 +168,21 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Attributes:** STR 1, DEX 2, MIND 1, CHA 1
 
-**Skills:** Ranged 2, Perception 2
+**Skills:** Archery 2, Perception 2
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 6 | 2 | \+2 | 1d8 \+ 3 | \+2 |
-
-**Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Gambeson (5 / 10) | 3 dice at `1d12` (Longbow, Two-Handed) | 7 |
 
 **Wards:** STR 6, DEX 7, MIND 6
 
-**Reactions:** 1/round. Can **Dodge** (1d12 \+ 1) - Parry and Block don't apply at range regardless.
+**Shot:** `1d12 (per die) + 2` vs. Shot DC. In melee the Longbow fights as Unarmed (Normal Reach, Daggers & Wrestling), still sized by its own `-1` Attacks - see [[Weapons in Hand|exchange]].
 
 **Movement:** 30 ft.
 
-**Equipment:** Longbow (1d8 Piercing, ranged), a hunting knife as backup, Gambeson (AR 2, Penalty \-1).
+**Equipment:** Longbow (1d10 Piercing, 150/300 ft, Two-Handed), a hunting knife as backup, Gambeson (Penalty \-1).
 
-**In Combat:** An Archer opens at range, using Perception 2 to spot the party before being spotted, and keeps its distance for as long as terrain allows - closing to melee is a last resort, not a plan. It has nothing to answer a melee attacker with beyond Dodge once someone actually reaches it.
+**In Combat:** An Archer opens at range, using Perception 2 to spot the party before being spotted, and keeps its distance for as long as terrain allows - closing to melee is a last resort, not a plan. Its 3-die Tempo Pool (the Longbow's `-1` Attacks) is thin once a melee attacker actually reaches it.
 
 ---
 
@@ -196,21 +196,21 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Daggers & Wrestling 2, Perception 2
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 8 | 0 | \+2 | 1d6 \+ 2 | \+2 |
-
-**Wound Threshold:** 1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Unarmored (0 / 5) | 5 dice at `1d12` | 7 |
 
 **Wards:** STR 6, DEX 7, MIND 6
 
-**Reactions:** 2/round. Can **Dodge** (1d12 \+ 3) - raw DEX alone, no training needed (Dodge has no Skill prerequisite, see [[Maneuver|maneuvers]]).
+**Parry:** `1d12 (per die) + 2`, talons and beak.
 
 **Movement:** 10 ft, flying speed 40 ft.
 
-**Natural Weapons:** Talons and Beak (1d6 Piercing, Short Reach).
+**Natural Weapons:** Talons and Beak (1d6 Piercing, Normal Reach, `+1` Attacks, Signature: Grapple).
 
-**In Combat:** A Giant Vulture doesn't pick fair fights - it circles at a distance, watches for a straggler or a body already on the ground, and strikes only when the odds favor it. Solo or in a small group it's not a real threat to a party paying attention (a full 4-PC party wins outright even at three fielded, per `tools/bestiary_sim.py`); its danger is entirely about catching someone already isolated or downed, not about winning a straight fight.
+**Damage:** 1d6 \+ 1 (STR) Piercing.
+
+**In Combat:** A Giant Vulture doesn't pick fair fights - it circles at a distance, watches for a straggler or a body already on the ground, and strikes only when the odds favor it. Solo or in a small group it's not a real threat to a party paying attention; its danger is entirely about catching someone already isolated or Downed, not about winning a straight fight.
 
 ---
 
@@ -224,23 +224,23 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Cleaving Blades 1
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 6 | 0 | \+1 | 1d6 \+ 2 | \+1 |
-
-**Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Unarmored (0 / 5) | 4 dice at `1d12` | 6 |
 
 **Wards:** STR 7, DEX 6, MIND 5
 
-**Reactions:** 1/round. Can **Parry** (1d12 \+ 1, weapon in hand) - crude and weak next to a living Bandit's \+2, no armor to Block with.
+**Parry:** `1d12 (per die) + 1`, weapon in hand - crude and weak next to a living Bandit's `+2`, no armor to help.
 
 **Movement:** 30 ft.
 
-**Equipment:** A rusted, pitted blade (1d6 Slashing, Short Reach), no armor.
+**Equipment:** A rusted, pitted blade (1d6 Slashing, Normal Reach, `+0` Attacks), no armor.
 
-**Damage Types:** **Vulnerability** to Blunt (brittle bone shatters under a heavy blow); **Immunity** to Poison (no blood or organs left to poison). See Resistance, Vulnerability, and Immunity, [[Wounds and Survival|rest_and_survival]].
+**Damage:** 1d6 \+ 2 (STR) Slashing.
 
-**In Combat:** A Skeleton is weaker than a Bandit or Guard despite similar Attribute/Skill investment - no armor, a mediocre Parry, and MIND 0. It doesn't flee, doesn't fear, and doesn't stop until destroyed; where a Bandit runs below half Wounds, a Skeleton fights on to zero. A mace or warhammer-wielding party will cut through a Skeleton mob fast once Vulnerability is in play.
+**Damage Types:** **Vulnerability** to Blunt (brittle bone shatters under a heavy blow); **Immunity** to Poison (no blood or organs left to poison). See [[Resistance, Vulnerability, and Immunity|rest_and_survival]].
+
+**In Combat:** A Skeleton is weaker than a Bandit or Guard despite similar Attribute/Skill investment - no armor and a mediocre Parry. It doesn't flee, doesn't fear, and doesn't stop until destroyed; where a Bandit runs below half Wounds, a Skeleton fights on to zero. A mace or warhammer-wielding party will cut through a Skeleton mob fast once Vulnerability is in play.
 
 ---
 
@@ -254,23 +254,23 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Daggers & Wrestling 1
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 5 | 1 | \+1 | 1d6 \+ 3 | \+0 |
-
-**Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Unarmored (0 / 5) | 5 dice at `1d12` | 5 |
 
 **Wards:** STR 7, DEX 5, MIND 5
 
-**Reactions:** 1/round. No Maneuver - too slow to Dodge, no weapon or shield to Parry or Block with.
+**Parry:** `1d12 (per die) + 1`, grasping claws - DEX 0 doesn't cost it dice, only the Skill it never trained.
 
 **Movement:** 15 ft - a shamble, not a walk; a healthy adult at normal Speed simply outpaces one.
 
-**Natural Weapons:** Grasping Claws (1d6 Blunt, Short Reach) - may attempt a Grapple (Brawling table, [[Weapons|weapons]]) instead of a normal attack.
+**Natural Weapons:** Grasping Claws (1d6 Blunt, Normal Reach, `+1` Attacks, Signature: Grapple) - may attempt a Grapple on a margin-3 win instead of a normal Opening.
 
-**Damage Types:** **Resistance** to Piercing (stabbing does little to dead flesh with nothing vital left to hit); **Immunity** to Poison. See Resistance, Vulnerability, and Immunity, [[Wounds and Survival|rest_and_survival]].
+**Damage:** 1d6 \+ 2 (STR) Blunt.
 
-**In Combat:** A Zombie doesn't feint, doesn't retreat, and doesn't stop - it walks straight at the nearest living thing and grapples or claws until one of them stops moving. DEX 0 means Initiative \+0 and no Reaction worth spending, so it's rarely dangerous to a party that keeps its distance; the real threat is being cornered or swarmed by several at once in a confined space. Piercing Resistance quietly punishes a party that leans on rapiers and arrows without noticing - a good one to pair with a dungeon that also stocks a blunt weapon somewhere for players who go in unprepared.
+**Damage Types:** **Resistance** to Piercing (stabbing does little to dead flesh with nothing vital left to hit); **Immunity** to Poison. See [[Resistance, Vulnerability, and Immunity|rest_and_survival]].
+
+**In Combat:** A Zombie doesn't feint, doesn't retreat, and doesn't stop - it walks straight at the nearest living thing and grapples or claws until one of them stops moving. Initiative 5 (DEX 0) means it almost always acts last, so it's rarely dangerous to a party that keeps its distance; the real threat is being cornered or swarmed by several at once in a confined space. Piercing Resistance quietly punishes a party that leans on rapiers and arrows without noticing - a good one to pair with a dungeon that also stocks a blunt weapon somewhere for players who go in unprepared.
 
 ---
 
@@ -284,21 +284,21 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Daggers & Wrestling 2, Subterfuge 2
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 8 | 0 | \+2 | 1d6 \+ 2 | \+2 |
-
-**Wound Threshold:** 1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Unarmored (0 / 5) | 5 dice at `1d12` | 7 |
 
 **Wards:** STR 6, DEX 7, MIND 5
 
-**Reactions:** 2/round. Can **Dodge** (1d12 \+ 3) - raw DEX alone, no training needed (Dodge has no Skill prerequisite, see [[Maneuver|maneuvers]]).
+**Parry:** `1d12 (per die) + 2`, bite and legs.
 
 **Movement:** 30 ft, climbing speed 30 ft.
 
-**Natural Weapons:** Bite (1d6 Poison, Short Reach).
+**Natural Weapons:** Bite (1d6 Poison, Normal Reach, `+1` Attacks, Signature: Grapple).
 
-**In Combat:** Subterfuge 2 is the actual build here - a Giant Spider that opens combat from hiding gets a full Surprise Round against whoever it targets ([[Surprise|positioning]]: surprised creatures can't act or React in Round 1). Caught in the open or after that first exchange, it's a fast but fragile skirmisher, not a real threat to a party that's already braced for it.
+**Damage:** 1d6 \+ 1 (STR) Poison.
+
+**In Combat:** Subterfuge 2 is the actual build here - a Giant Spider that opens combat from hiding attacks an unaware target, who can't Parry that first blow (see [[Awareness|exchange]]). Caught in the open or after that first Exchange, it's a fast but fragile skirmisher, not a real threat to a party that's already braced for it.
 
 ---
 
@@ -312,21 +312,21 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Daggers & Wrestling 2
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 3 | 5 | 2 | \+2 | 1d8 \+ 3 | \+1 |
-
-**Wound Threshold:** 1 Wound (1-9), 2 Wounds (10-15), 3 Wounds (16+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 5 | Natural shell (5 / 10) | 5 dice at `1d12` | 6 |
 
 **Wards:** STR 8, DEX 6, MIND 6
 
-**Reactions:** 1/round. No Maneuver - too slow and simple to Parry, Block, or Dodge once discovered.
+**Parry:** `1d12 (per die) + 2`, bite and slam.
 
 **Movement:** 20 ft - ponderous once it drops the disguise and has to actually move under its own weight.
 
-**Natural Weapons:** Bite and Slam (1d8 Blunt/Piercing, Short Reach).
+**Natural Weapons:** Bite and Slam (1d8 Blunt, Normal Reach, `+1` Attacks, Signature: Grapple).
 
-**In Combat:** Whatever a Mimic does in a fight, it's already done the important part before initiative is even rolled - anyone who touches it before noticing what it is eats a full, unanswerable Surprise Round hit ([[Surprise|positioning]]: surprised creatures can't act or React). Past that opening exchange, it's an unremarkable, no-Maneuver brute leaning on AR 2 and nothing else - the ambush is the whole threat, not a sustained fight.
+**Damage:** 1d8 \+ 3 (STR) Blunt.
+
+**In Combat:** Whatever a Mimic does in a fight, it's already done the important part before Initiative is even rolled - anyone who touches it before noticing what it is is unaware and can't Parry that first hit (see [[Awareness|exchange]]). Past that opening exchange, it's an unremarkable brute leaning on its shell and nothing else - the ambush is the whole threat, not a sustained fight.
 
 ---
 
@@ -340,23 +340,23 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Daggers & Wrestling 3
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 4 | 5 | 2 | \+3 | 1d8 \+ 4 | \+1 |
-
-**Wound Threshold:** 1 Wound (1-10), 2 Wounds (11-16), 3 Wounds (17+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 6 | Thick hide (5 / 10) | 5 dice at `1d12` | 6 |
 
 **Wards:** STR 9, DEX 6, MIND 5
 
-**Reactions:** 1/round. No Maneuver - a Bear doesn't Parry, Block, or Dodge; it soaks a hit on thick hide and answers with its own.
+**Parry:** `1d12 (per die) + 3`, claws and bulk.
 
 **Movement:** 40 ft - a Bear can outrun a human over a short distance despite its bulk.
 
-**Natural Weapons:** Claws (1d8 Slashing, Short Reach).
+**Natural Weapons:** Claws (1d8 Slashing, Normal Reach, `+1` Attacks, Signature: Grapple).
 
-**Size:** Large (4 Wounds baseline - see [[Wounds and Survival|rest_and_survival]]).
+**Size:** Large (6 Wounds baseline - see [[Carrying Capacity|rest_and_survival]]).
 
-**In Combat:** A Bear doesn't fence - it closes the distance and swings as hard as it can, trusting AR 2 and a genuinely large Wounds pool to outlast whatever's hitting it back. Daggers & Wrestling 3 needs STR 3+ behind it (a Skill's Rank can never exceed its governing Attribute, see [[Skills|core_rules]]) - a lone Bear is a legitimate threat, not filler.
+**Damage:** 1d8 \+ 4 (STR) Slashing.
+
+**In Combat:** A Bear doesn't fence - it closes the distance and swings as hard as it can, trusting its hide and a genuinely large Wounds pool to outlast whatever's hitting it back. Daggers & Wrestling 3 needs STR 3+ behind it (a Skill's Rank can never exceed its governing Attribute, see [[Skills|core_rules]]) - a lone Bear is a legitimate threat, not filler.
 
 ---
 
@@ -370,25 +370,23 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Two-Handed Blades 4, Athletics 2, Wayfaring 2, Perception 1
 
-**Feats:** Tough (\+1 Wounds), Second Wind (reroll a failed Ward once; \+3 to STR Ward below half Wounds)
+**Feats:** Tough (`+1` Wounds), Second Wind (reroll a failed Ward once; `+3` to STR Ward while below half Wounds)
 
-| Wounds | Evasion | AR | Attack | Damage | Initiative |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 4 | 1 | 6 | \+4 | 1d6 \+ 6 | \+3 |
-
-**Wound Threshold:** 1 Wound (1-10), 2 Wounds (11-16), 3 Wounds (17+).
+| Wounds | Dent / Rend | Tempo Pool | Initiative |
+| :---: | :---: | :---: | :---: |
+| 6 | Breastplate (7 / 12) | 4 dice at `1d12` | 8 |
 
 **Wards:** STR 9, DEX 8, MIND 6
 
-**Reactions:** 2/round. Can **Parry** (1d12 \+ 4, weapon in hand) or **Block** (1d12 \+ 3, Heater Shield equipped) - Dodge is technically legal (DEX 3), but Armor Penalty (\-7) guts the roll before it starts, so it's never a real option; this is a Tank build (see Armor Selection Guide, [[Armor|armor]]) that leans entirely on AR and its Maneuver Skills rather than staying unhit.
+**Parry:** `1d12 (per die) + 4 + 2 (Guard)`, Longsword and Heater Shield.
 
-**Movement:** 30 ft - Armor Penalty restricts Acrobatics, Subterfuge, and Evasion (see [[Armor|armor]]), but not walking Speed.
+**Movement:** 30 ft - Armor Penalty restricts Acrobatics and Subterfuge (see [[Armor|armor]]), but not walking Speed or anything in a fight.
 
-**Equipment:** Longsword, wielded one-handed (1d6 \+ 2 Slashing, Medium Reach, Versatile), Heater Shield (\+2 AR while Blocking, Penalty \-1), Breastplate (AR 6, Penalty \-6).
+**Equipment:** Longsword, wielded one-handed (1d8 Slashing, Normal Reach, `+0` Attacks, Signature: Disarm), Heater Shield (`+2` Guard, Light cover against shots), Breastplate (Penalty \-2).
 
-**Running this Knight:** Evasion 1 means nearly every attack "hits" in the passive sense - lean into that: let the hit trigger, then roll the Parry/Block openly (competitive with a level 12 PC's own attack roll, backed by AR 6) rather than resolving it as a flat passive miss chance. The threat lives in the exchange, not the Evasion score.
+**Damage:** 1d8 \+ 4 (STR) \= 1d8 \+ 4 Slashing.
 
-**In Combat:** A Knight doesn't chase - it holds ground, Parries or Blocks whatever comes at it, and answers a won exchange with Riposte or Guard Break to keep an attacker from ever getting a clean second swing. Wayfaring 2 means a mounted Knight (lance, charge) is a real variant worth improvising if the encounter calls for it. This is not a fight to be walked into on a bad day.
+**In Combat:** A Knight doesn't chase - it holds ground, Parries whatever comes at it, and answers a won Exchange with a Riposte or a Disarm to keep an attacker from ever getting a clean second swing. Wayfaring 2 means a mounted Knight (lance, charge) is a real variant worth improvising if the encounter calls for it. This is not a fight to be walked into on a bad day.
 
 **Fielding Guide** (4-PC party; see [[Bestiary Overview|bestiary_overview]]'s note on reading this as a floor, not literal odds): Knights don't scale smoothly like a mob does - there's no safe middle count, only "manageable" and "the fight of the session."
 
@@ -396,6 +394,6 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 | :---- | :---: | :---: | :---: |
 | Knights | 3+ | 4+ | 5+ |
 
-A single Knight is a real fight at any of these Levels on its own merits (see Running this Knight, above) - these counts mark where a *second* or *third* Knight stops being an even bigger win and starts being a real risk of losing someone.
+A single Knight is a real fight at any of these Levels on its own merits - these counts mark where a *second* or *third* Knight stops being an even bigger win and starts being a real risk of losing someone.
 
-**Variant - Highborn Knight/Paladin:** Swap Breastplate for Full Plate (AR 8, Penalty \-8) for a wealthier or more senior Knight - AR climbs to 8 but Evasion drops further still (to \-1), pushing the build even harder into "everything hits, AR and Maneuver absorb it" territory. Reserve this for a named or boss-tier Knight rather than a rank-and-file one; see [[Armor|armor]]'s own note that Full Plate is worn by "Knights and wealthy nobles," not common soldiers.
+**Variant - Highborn Knight/Paladin:** Swap Breastplate for Full Plate (Dent 11 / Rend 16, Penalty \-3) for a wealthier or more senior Knight. Reserve this for a named or boss-tier Knight rather than a rank-and-file one; see [[Armor|armor]]'s own note that Full Plate is worn by "Knights and wealthy nobles," not common soldiers.

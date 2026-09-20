@@ -4,116 +4,154 @@ Copied from `core/` so `bestiary-npc` doesn't have to re-grep the rulebook on ev
 invocation. If a number here ever looks wrong, trust the cited source file over this
 copy and update this file to match.
 
-## Skill Categories (core_rules.md) - which Attribute governs which Skill, and therefore
-which Skill can drive that Attribute's Ward
+**2026-09-20: rewritten wholesale.** The previous version of this file predated the
+2026-08-11/12 Attribute merge (it still listed PRE, END, ARC and FAI as live
+Attributes), the 2026-08-23 Exchange merge (Evasion, Dodge Style, Reactions/round,
+`maneuvers.md`), and the Reach/Tempo rework (Dent/Rend Lines, the four-tier DC ladder,
+the current Tempo Pool and Initiative formulas) all at once. Every section below is
+current as of the Reach/Tempo rework; see `CLAUDE.md` and `TODO.md` for the full
+rework history if a number here ever needs re-deriving from scratch.
+
+## Attributes and Skill Categories (core_rules.md, attributes_and_skills.md)
+
+Four Attributes only: **STR, DEX, MIND, CHA** - ARC, FAI, PRE, and END are all deleted
+(END merged into STR, PRE into DEX, ARC/FAI removed outright when magic schools became
+Feats instead of Skills).
 
 | Attribute | Category | Skills |
 |---|---|---|
-| STR | Brawn & Melee | Blades, Hafted Weapons, Polearms, Brawling |
-| PRE | Finesse & Ranged | Archery, Marksmanship, Thrown |
-| END | Defense & Survival | Athletics, Armorer, Survival, Shields, Riding |
-| DEX | Adroitness & Subterfuge | Acrobatics, Stealth, Lockpicking, Sleight of Hand, Crafting, Perception |
-| MIND | Intellectual | Alchemy, Enchanting, Historic Lore, Medical Lore, Nature Lore, Identify |
-| ARC | Arcane Schools | Arcane Lore, Aeromancy, Geomancy, Hydromancy, Pyromancy, Shadowmancy |
-| FAI | Divine Schools | Religious Lore, Benediction, Invocation, Necration, Cultivation, Subjugation |
-| CHA | Socialising & Interaction | Persuasion, Deception, Intimidation, Leadership, Animal Handling, Insight, Performance |
+| STR | Brawn, Endurance & Melee | Two-Handed Blades, Cleaving Blades, Hafted Weapons, Polearms, Daggers & Wrestling, Athletics, Survival, Wayfaring |
+| DEX | Finesse, Reflex & Subterfuge | Fencing Blades, Archery, Firearms, Thrown, Acrobatics, Subterfuge, Crafting, Perception, Chirurgery |
+| MIND | Intellect, Education & Reasoning | Thaumaturgy |
+| CHA | Socialising, Manipulation & Interaction | Influence, Manipulate, Intimidate, Leadership, Insight |
 
-**Ward formula:** `Ward[Attr] = 5 + Attribute` - Skill no longer contributes to Ward at
-all. Evasion is the same shape: `5 + DEX - Armor Penalty`.
+**Magic schools are Feats, not Skills** (Aeromancy, Geomancy, Hydromancy, Pyromancy,
+Shadowmancy, Benediction, Cultivation, Invocation, Necration, Subjugation) - see
+`magic_feats.md`. No Skill or Attribute is added to a casting roll at all; MIND only
+sets the Will pool and the dice ceiling (see Casting, below).
+
+**Ward formula:** `Ward[Attr] = 5 + Attribute`. There is no Evasion, Dodge Style, or
+any other passive defense score - a melee attack is answered by a Parry (funded by
+Tempo Dice) or it simply lands; a shot or a working is answered by a Shot DC or a
+resist roll, never a flat defender-side number.
 
 **Skill cap:** a Skill's Rank can never exceed its own governing Attribute's current
-score (core_rules.md) - there is no separate level-gated Skill cap table anymore. When
+score (core_rules.md) - there is no separate level-gated Skill cap table. When
 building an NPC, a Skill Rank higher than that Skill's governing Attribute is an
 illegal build, not a strong one - check every trained Skill against its Attribute in
 the table above.
 
-**Agility was removed as a Skill (2026-08-08).** Dodge Style now rolls `1d12 + DEX -
-Armor Penalty` directly - no Skill of any kind, just a `DEX >= 1` prerequisite (see
-maneuvers.md). Don't add "Agility" to any NPC's Skills list; when giving a creature
-Dodge, its bonus is derived purely from DEX (and Armor Penalty), nothing else.
-
 ## Points / Feats by Level (progression_&_rewards.md)
 
-**Attributes are a standard array, not a point pool (2026-08-23).** A PC's six
-Attributes come from a fixed set of numbers picked by their Attributes priority letter
-(A: `3, 2, 2, 1, 1, 0` / B: `2, 2, 2, 1, 1, 0` / C: `2, 2, 1, 1, 0, 0` / D: `2, 1, 1, 1,
-0, 0` / E: `1, 1, 1, 1, 0, 0`), plus **\+1 to one Attribute at levels 4, 8 and 12** -
-that is the whole of Attribute growth. Skills remain a real point budget. Check an NPC's
-Attribute sum against the ATTR Total column (the largest total any PC of that Level
-could hold, i.e. A's array plus banked increases), its Skill-rank sum against the SKILL
-Points column independently, and the Attribute Cap ceiling on any single Attribute.
+**Attributes are a standard array, not a point pool.** A PC's four Attributes come
+from a fixed set of numbers picked by their Attributes priority letter (A: `3, 2, 1,
+0` / B: `2, 2, 1, 0` / C: `2, 1, 1, 0` / D: `1, 1, 1, 0` / E: `1, 1, 0, 0`), plus
+**\+1 to one Attribute at levels 4, 8 and 12** - that is the whole of Attribute
+growth. Skills remain a real point budget (18/15/12/9/6 by priority, \+2/level
+thereafter). Check an NPC's Attribute sum against the ATTR Total column below (the
+largest total any PC of that Level could hold, i.e. A's array plus banked increases),
+its Skill-rank sum against the SKILL Points column independently (shown here at **C**
+priority), and the Attribute Cap ceiling on any single Attribute.
 
 | Level | Total XP | ATTR Total | SKILL Points | ATTR Cap | Feats |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | 30 | 9 | 12 | 3 | 2 |
-| 2 | 120 | 9 | 14 | 3 | 2 |
-| 3 | 270 | 9 | 16 | 3 | 2 |
-| 4 | 480 | 10 | 18 | 4 | 3 |
-| 5 | 750 | 10 | 20 | 4 | 3 |
-| 6 | 1080 | 10 | 22 | 4 | 4 |
-| 7 | 1470 | 10 | 24 | 4 | 4 |
-| 8 | 1920 | 11 | 26 | 5 | 4 |
-| 9 | 2430 | 11 | 28 | 5 | 5 |
-| 10 | 3000 | 11 | 30 | 5 | 5 |
-| 11 | 3630 | 11 | 32 | 5 | 5 |
-| 12 | 4320 | 12 | 34 | 5 | 6 |
+| 1 | 30 | 6 | 12 | 3 | 2 |
+| 2 | 120 | 6 | 14 | 5 | 2 |
+| 3 | 270 | 6 | 16 | 5 | 2 |
+| 4 | 480 | 7 | 18 | 5 | 3 |
+| 5 | 750 | 7 | 20 | 5 | 3 |
+| 6 | 1080 | 7 | 22 | 5 | 4 |
+| 7 | 1470 | 7 | 24 | 5 | 4 |
+| 8 | 1920 | 8 | 26 | 5 | 4 |
+| 9 | 2430 | 8 | 28 | 5 | 5 |
+| 10 | 3000 | 8 | 30 | 5 | 5 |
+| 11 | 3630 | 8 | 32 | 5 | 5 |
+| 12 | 4320 | 9 | 34 | 5 | 6 |
 
-**Attribute totals are much tighter than they were.** The old ladder gave 18 points at
-Level 1; the array gives at most 9. Existing bestiary entries were statted against the
-old pool and most will price higher against this table - that is a real repricing, not
-a bug, and it lands on top of the Exchange staleness already flagged in `TODO.md`.
-**An Attribute can now sit below 0** (a racial modifier landing on a 0), which is legal;
-Tempo Pool floors at 1 die and Mana/Slots at 0.
+**ATTR Cap is a flat ceiling (5) from Level 2 on, not a stepped one** - `progression_&_rewards.md` states the cap this way because a racial modifier can push a score to 5 well before a character's own Level-4/8/12 increases would; it is not a claim that an ungifted Level 2 NPC can naturally reach 5 in an Attribute (its own array plus increases-so-far still governs that - see ATTR Total).
 
-A Prestige Feat (prestige_feats.md) forces Effective Level >= 5 regardless of Feat
+**An Attribute can sit below 0** (a racial modifier landing on an array 0), which is
+legal. **Will floors at 0, Slots floor at 1** (`6 + STR`, minimum 1). **The Tempo Pool
+no longer reads an Attribute at all** - see Tempo Pool, below.
+
+A Prestige Feat (`prestige_feats.md`) forces Effective Level >= 5 regardless of Feat
 count ("Can take a Prestige Feat" first appears at Level 5).
 
-## Wound Thresholds (rest_and_survival.md) - keyed to the DEFENDER's own END
+## Wounds (rest_and_survival.md)
 
-At END `e`: 1 Wound on damage-after-AR of 1 to `6+e`; 2 Wounds on `7+e` to `12+e`;
-3 Wounds on `13+e` or more.
+**Max Wounds = Size baseline + Feats** (Tough, etc.):
 
-**Stat block phrasing:** every entry in `core/bestiary/` carries a `**Wound Threshold:**`
-line, right after the Wounds/Evasion/AR/Attack/Damage/Initiative table, spelled out as
-three bands so a GM never has to re-derive it from raw END mid-fight - e.g. END 2 reads
-`**Wound Threshold:** 1 Wound (1-8), 2 Wounds (9-14), 3 Wounds (15+).` Compute it from
-the defender's own END using the formula above, don't copy another entry's band by eye.
+| Size | Wounds baseline | Space |
+|:---:|:---:|:---:|
+| Small | 4 | 5 ft (1x1) |
+| Medium | 5 | 5 ft (1x1) |
+| Large | 6 | 10 ft (2x2) |
+| Huge | 7* | 15 ft (3x3) |
 
-**Max Wounds = Size baseline + Feats** (Tough, etc.) - NOT tied to END.
+\*Huge extrapolates the \+1-per-step pattern - `rest_and_survival.md` only tables
+Small/Medium/Large explicitly and says a GM is free to keep scaling past Large.
+Bigger-than-Huge: keep extrapolating \+1/step unless a reason says otherwise.
 
-| Size | Wounds baseline | Space | Reach |
-|:---:|:---:|:---:|:---:|
-| Small | 2 | 5 ft (1x1) | Short |
-| Medium | 3 | 5 ft (1x1) | Short |
-| Large | 4 | 10 ft (2x2) | Medium |
-| Huge | 5* | 15 ft (3x3) | Long |
+**There is no separate Wound Threshold table any more.** A landing hit rolls weapon
+dice \+ STR (missiles: no Attribute) and compares straight to the target's **Dent
+Line and Rend Line** (see Armor, below, and `combat.md`'s Damage Roll) - below Dent is
+Turned Aside, at or above Dent is 1 Wound, at or above Rend is 2. An Unarmored target
+reads Dent 0 / Rend 5 instead of a bottomed-out pair of lines. **Stat block phrasing:**
+give every entry a `Dent / Rend` column in its main stat table (or "Unarmored" /
+"Natural hide (X / Y)" for a creature with no worn armor) instead of a separate
+Wound Threshold line - there's nothing left to precompute per-defender.
 
-\*Huge's Wounds baseline (5) extrapolates the +1-per-step pattern - `rest_and_survival.md`
-only tables Small/Medium/Large explicitly and says a GM is free to keep scaling past
-Large. Bigger-than-Huge: keep extrapolating +1/step unless a reason says otherwise.
+## Tempo Pool, Parry, and Initiative (exchange.md)
+
+**Tempo Pool = 4, plus the equipped weapon's (and shield's) Attacks modifier** -
+`+1` for a Light weapon, `-1` for a Two-Handed one, `+0` for everything else. Every
+die is a flat `1d12`; no Attribute sizes the pool or counts the dice. A natural
+weapon (bite, claws, slam) defaults to `+1` Attacks, the same as Unarmed, unless the
+creature's concept calls for something heavier or lighter.
+
+**Parry:** `1d12 (per invested die) + Weapon Skill + Guard`, at 1 die invested for a
+baseline stat block - note in the entry that more dice can be invested exactly like
+a PC would. No Attribute, no Edge, no Evasion.
+
+**Attack roll:** `1d12 (per invested die) + Weapon Skill`, same shape as a Parry. A
+Skill Rank of 0 (untrained) rolls the bare die.
+
+**Damage:** Weapon Damage \+ STR (missiles: no Attribute added).
+
+**Initiative:** `5 + DEX`, static, never rolled.
+
+**Shot DC (for a ranged NPC to present as a target):** `7 + DEX`, plus whatever
+situational modifiers apply (see `exchange.md`'s Shot DC table). A ranged NPC's own
+shot invests Tempo Dice exactly like a melee attack - see The Shot in `exchange.md`.
 
 ## Armor (armor.md)
 
-| Armor | AR | Penalty | Notes |
-|---|:---:|:---:|---|
-| Gambeson | 2 | -1 | Flexible |
-| Buff Coat | 3 | -1 | Flexible |
-| Mail Shirt | 4 | -2 | Flexible |
-| Chain Mail | 5 | -2 | Flexible |
-| Brigandine | 6 | -3 | Flexible |
-| Breastplate | 6 | -6 | Rigid |
-| Half-Plate | 7 | -7 | Rigid |
-| Full Plate | 8 | -8 | Rigid |
+| Armor | Dent | Rend | Penalty | Flexible/Rigid |
+|---|:---:|:---:|:---:|---|
+| Unarmored | 0 | 5 | - | - |
+| Gambeson | 5 | 10 | -1 | Flexible |
+| Buff Coat | 6 | 11 | -2 | Flexible |
+| Mail Shirt | 6 | 11 | -2 | Flexible |
+| Chain Mail | 6 | 11 | -2 | Flexible |
+| Brigandine | 7 | 12 | -2 | Flexible |
+| Breastplate | 7 | 12 | -2 | Rigid |
+| Half-Plate | 9 | 14 | -3 | Rigid |
+| Full Plate | 11 | 16 | -3 | Rigid |
 
-Flexible Penalty = floor(AR / 2). Rigid Penalty = AR. A Heater Shield adds +2 AR while
-Blocking specifically (not to passive AR) and -1 Penalty always.
+A natural Dent/Rend pair (thick hide, scales, a shell) doesn't have to match a named
+armor exactly - pick whichever row reads closest to the creature's fictional
+toughness, or interpolate, and say so in one clause (see Movement's own note on
+leaving a trail for judgment calls). **A Heater Shield-equivalent natural feature**
+adds Guard to Parries and counts as Light cover against a shot; it does not touch
+Dent/Rend. Nothing in a fight reads Armor Penalty - it restricts Acrobatics and
+Subterfuge checks only.
 
 ## Movement (races_overview.md / individual race files)
 
-Every entry in `core/bestiary/` carries a `**Movement:**` line - walking Speed in feet,
-plus a secondary Speed (flying, climbing) if it has one. Armor Penalty does NOT reduce
-this - it only hits Acrobatics/Stealth/spellcasting/Evasion (see Armor table above), so
-don't discount a heavily-armored humanoid's Movement for its gear.
+Every entry in `core/bestiary/` carries a `**Movement:**` line - walking Speed in
+feet, plus a secondary Speed (flying, climbing) if it has one. Armor Penalty does NOT
+reduce this - it only hits Acrobatics/Subterfuge checks, never Speed and nothing in a
+fight - so don't discount a heavily-armored humanoid's Movement for its gear.
 
 For a human-equivalent NPC (Peasant, Bandit, Guard, Archer, Knight, and similar), match
 Human's own Base Speed unless the flavor calls for a deliberate outlier:
@@ -136,13 +174,22 @@ where it did.
 
 ## DC Tiers (core_rules.md)
 
-Very Easy 5, Easy 7, Medium 9, Tricky 10, Hard 12, Grueling 14, Very Hard 16,
-Incredibly Hard 17, Impossible 20.
+Easy 5, Standard 7, Hard 9, Extreme 11 - the same ladder magic's Lesser/Common/
+Greater/Legendary tiers use. Situational modifiers stack on top of the base tier;
+don't invent a number outside this list for the base itself. Set a Ward (see Ward
+formula, above) one tier below the same fiction as a Skill Check, and keep an
+unannounced hazard at Hard (9) or below.
 
-## Initiative and Reactions
+## Fear and Morale (exchange.md, rest_and_survival.md)
 
-`Initiative bonus = (PRE + DEX) // 2` (integer division). `Reactions/round` is a pure
-DEX threshold: DEX 0-2 -> 1, DEX 3-4 -> 2, DEX 5 -> 3.
+A creature may carry a **Fear rating** (Terror 7 or Dread 9) - enemies test a
+Will-funded resist the first time they try to close with it. Separately, **Nerve**
+(`1d12 + CHA` vs. Standard DC 7) governs Unnamed creatures Breaking under set triggers
+(reduced to their last Wound box, their side crossing half strength, and so on - see
+`exchange.md`'s Morale section for the full trigger list). Neither is required on
+every entry; add a Fear rating only where the fiction calls for something genuinely
+dreadful, and let ordinary Nerve triggers apply by default without restating them
+per entry.
 
 ## Frequency scale (bestiary_overview.md)
 

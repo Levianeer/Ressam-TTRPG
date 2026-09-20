@@ -20,4 +20,4 @@ Sheer, stubborn refusal to accept a bad roll as the final word - the same will t
 Even a Feliid who's made peace with the curse of Luxuria keeps one old habit from before: refusing to let the last blow land clean.
 
 **Prerequisites:** Race: Feliid  
-**Benefit:** Once per Long Rest, when you would be reduced to 0 Wounds, or fail a Ward that would kill or incapacitate you, you may instead survive at 1 Wound. You gain 2 Trauma.
+**Benefit:** Once per Long Rest, when your last Wound box would fill, or fail a Ward that would kill or incapacitate you, you may instead leave your last Wound box empty. You gain 2 Trauma.

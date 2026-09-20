@@ -22,10 +22,10 @@ The Strygs are nightmares given flesh, spawned from the primal fear of death and
 
 **Darkvision:** You treat nonmagical darkness as dim light up to 60 ft.  
 **Shroud of Lies:** You gain \+2 to Manipulate and Intimidate, advantage on Subterfuge outside sunlight.  
-**Blood Drinker:** You gain a Bite attack (1d6+STR piercing). If it deals damage, regain Patched Wounds equal to the Wounds inflicted, this only occurs once per turn.  
+**Blood Drinker:** You gain a Bite attack (1d6+STR piercing). If it deals damage, heal Wounds equal to the Wounds inflicted - Trauma same as any healing (see [[Trauma|rest_and_survival]]) - this only occurs once per turn.  
 **Undead Nature:** You don't need food, water, or air but must feed on blood weekly or gain 1 Trauma.  
 **Sunlight Weakness:** While in direct sunlight: you receive \-2 to all rolls, cannot heal, magical or otherwise.  
-**Stake Through Heart:** If you're reduced to 0 Wounds, or hit while Dying by a Stake, you are instantly destroyed.
+**Stake Through Heart:** If your last Wound box fills, or you're hit by a Stake while Downed, you are instantly destroyed.
 
 ---
 

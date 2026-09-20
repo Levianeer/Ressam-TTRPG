@@ -28,7 +28,7 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 
 ### **Features**
 
-**Weapon Training:** You gain \+1 in any STR weapon Skill, or in Ranged or Thrown.  
+**Weapon Training:** You gain \+1 in any STR weapon Skill, or in Archery, Firearms, or Thrown.  
 **Ancestors Cloak:** When you take damage from an attack or spell, you may spend **1 Tempo Die** to become invisible until the end of your next turn. Once used, this feature cannot be used again until you complete a Field Rest or Long Rest.
 
 ## Ash'shene Subculture
@@ -39,7 +39,7 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 
 **Weapon Training:** You gain \+1 in either any STR weapon Skill or Survival.  
 **Tradition of Fire:** You can cast Ignis Lancet (Pyromancy) once per Field Rest or Long Rest without needing that school's Unlock Feat.  
-**Tradition of Ash:** When you reduce a creature to 0 Wounds with fire damage, regain Wounds equal to your STR (once per Short Rest).
+**Tradition of Ash:** When you fill a creature's last Wound box with fire damage, heal Wounds equal to your STR (once per Short Rest) - Trauma same as any healing (see [[Trauma|rest_and_survival]]).
 
 ---
 

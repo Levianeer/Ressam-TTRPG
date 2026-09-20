@@ -2879,3 +2879,89 @@ User-directed, not `tempo_sim`-measured - a full mechanical overhaul, not a tuni
 **Deliberately deferred, per an explicit user call rather than folded into this item:** the individual school spell files (`magic/arcane/*.md`, `magic/divine/*.md` - every spell still describes the old casting shape), `core/feats/` beyond `magic_feats.md`, `core/character/races/`, `core/bestiary/`, and `templates/character/character_sheet.html`/`sheet_test.js`. Each needs its own dedicated pass rather than a mechanical find-and-replace - see `TODO.md` for the current state of each. A systemic old-DC-scale rescaling problem was also found but not swept globally - see `TODO.md`'s note on the mapping used so far (Very Easy/Easy -> Easy, Medium -> Standard, Hard/Very Hard -> Hard, Grueling/Legendary -> Extreme).
 
 **`core/bestiary/` and `tools/` were not touched**, same precedent as items 63 and 66 - both were already stale against the Exchange merge and are now stale against this rework too, on top.
+
+---
+
+## 68. Corrections: the draft supersedes prior mechanics without exception - naming, ranged combat, and armor numbers all included *(2026-09-20)*
+
+User-directed correction pass on item 67. The instruction was explicit and absolute: `combat_draft.md`/`equipment_draft.md`/`magic_draft.md` are authoritative over *any* prior mechanic they touch, not just the ones that read as obviously substantive. A self-audit against the source drafts turned up three places item 67 had quietly kept old-mainline behavior instead:
+
+**Object Interaction renamed Lesser Action.** The source draft renamed this action category outright; item 67 kept the old name on the theory that a pure rename wasn't worth the propagation churn. Overruled - renamed everywhere it appeared (`combat.md`, `exchange.md`, `weapons.md`).
+
+**Ranged attacks wrongly lost their Tempo Dice.** `combat_draft.md`'s Ranged Attacks section is explicit: "you invest Tempo Dice to make it," rolling however many you commit and taking the highest, exactly like a melee attack, just unanswerable. Item 67's `exchange.md` instead wrote shots as a flat `1d12 + Skill` with no dice invested at all - the *old*, pre-rework mainline ranged ruling (see item 65), not the draft's actual rule. The core "Shot:" formula in `exchange.md` had in fact been written correctly; the pool-intro summary line ("nothing ranged ever touches the pool") and `weapons.md`'s Ranged Attacks intro both contradicted it and are now fixed to match.
+
+**Misfire and the movement gate/reload table were also still the old system.** Following from the Tempo-Dice fix: the draft's Misfire is "a natural 1 on any die invested in the shot," not a separate `1d12` rolled against a threshold - reworked to **misfires on any invested Tempo Die at or below the weapon's Misfire score**, which folds the draft's "no separate roll" shape onto the full weapon list's per-lock-type reliability variance (Misfire 1 only jams on a bare 1; Misfire 2 jams on a 1 or 2; multi-barrel additions raise it further) rather than discarding that variance to match the draft's narrow 2-weapon test list exactly. Separately, and more consequentially: the draft's movement-gate table has **bows and the Sling gated (half Speed or less to fire) but reloading for free**, while **crossbows and firearms move freely but pay a real reload action** - item 67's `weapons.md` had this backwards, gating nothing and charging every bow a Minor Action reload it shouldn't have, matching old mainline's undifferentiated reload table instead of the draft's actual split. Rewritten to match: bows and the Sling carry a new **Movement Gate** property and no Reload tag at all; Crossbows keep a plain `Reload (Minor Action)` with no gate.
+
+**Armor Dent/Rend numbers re-anchored to the draft.** Item 67 explicitly kept `armor.md`'s existing Dent/Rend values, reasoning that the draft's own 4-armor list (Gambeson 5/10, Brigandine 7/12, Mail 9/14, Plate 11/16) was too narrow to responsibly extend across the full 8-armor list on its own. Overruled on the same "supersedes without exception" instruction. Re-anchored: **Gambeson 5/10**, **Brigandine and Breastplate tied at 7/12** (preserving the existing "identical stats, pay for the Rigid label" teaching example rather than breaking it), **Half-Plate 9/14** and **Full Plate 11/16** taking the draft's "Mail" and "Plate" slots respectively, and **Buff Coat/Mail Shirt/Chain Mail tied at 6/11** to fill the stretch of the list the draft never tested at all. **The Dent-to-Rend gap widened from 4 to 5** across the board to match the draft's own spacing. Every echo of the old numbers was converted in the same pass: `armor.md`'s own worked examples (the Dent Line and Rend Line walkthrough, the Degradation Example - which also had a pre-existing, unrelated logic bug in its last row, fixed in passing), `traveling.md`'s three mount "hide" values (rescaled proportionally, since they were never tied to a named armor item), `leadership.md`'s sample Cohort's Gambeson, and a stray Full-Plate-equivalent Dent/Rend pair inside a Geomancy spell description in `geomancy.md` (a numbers-only fix; the spell itself is still inside the deferred magic-content scope).
+
+**Not re-opened:** the standing decision to reintegrate full weapon/armor/school breadth the source drafts cut purely for their own playtest slice. This item corrects places the *numbers or mechanism* still matched old mainline against the draft's explicit text, not the separate, already-settled call to keep more content than the drafts' narrow lists included.
+
+---
+
+## 69. A fourth supersession failure: magic_feats.md's Focus redesign used an invented mechanic instead of the draft's own suggestion *(2026-09-20)*
+
+User-directed: "audit the magic system's Push/Channel numbers against `magic_draft.md`." A line-by-line cross-check of `magic_overview.md`'s Casting/Resisting/Channelling sections against the source found every Push and Channel number correct (1 Trauma per `+1` Push, max `+2`; Channel Trauma 1/1/2/3 by tier; 1 Will to Channel; the 11-cap; every value in both Reference tables) - those had been transcribed accurately in item 67. The audit did turn up one real miss, in the **Progression** section and its downstream implementation in `magic_feats.md`.
+
+**What was wrong.** `magic_draft.md`'s Progression menu lists "A signature working" as **lowering the difficulty by one tier on exactly one named working**. Item 67's `magic_overview.md` instead wrote this bullet as "discount its Will cost, or let it Channel for free" - an invented mechanic that never appears in the source - and built the whole of `magic_feats.md`'s Focus Feat redesign around that invention: Novice Focus gave a flat Will discount, Adept Focus added a free Channel once per Rest, Expert added a second Signature Working, Master removed the Will cost on Channelling too. None of that is in the draft. The draft's actual menu item is a straightforward difficulty-tier discount, plus a separate, already-correctly-identified "Trauma discount on Channelling" item and "Attunement" (one free Will point per scene, explicitly called "the Unlimited Mage tier... a genuine milestone") as its own capstone entry.
+
+**The fix.** `magic_overview.md`'s Progression bullet restored to the draft's own wording. `magic_feats.md`'s Focus Feats rebuilt around the draft's actual menu, spent one item per tier and stacking cumulatively (unlike Unlock Feats' "straight line, hold every tier," Focus Feats were already meant to add up - the fix kept that shape but changed what stacks):
+
+- **Novice Focus:** choose a Signature Working; its difficulty reads one tier lower for you.
+- **Adept Focus:** Channelling that Signature Working costs 1 less Trauma.
+- **Expert Focus:** a second Signature Working, carrying both benefits.
+- **Master Focus:** Attunement - once per scene, refund the first Will point spent.
+
+This maps four of the draft's six suggested growth axes onto the four Focus tiers in ascending order, ending on Attunement as the capstone the draft itself frames as a milestone - closer to the source's intent than the invented Will-discount/free-Channel version it replaces.
+
+**Read as a pattern with items 67-68:** every supersession failure found across all three passes has the same shape - substituting an invented or old-mainline mechanic for a spot where the draft, in fact, already states one. The lesson restated in `TODO.md` after item 68 holds: when a section of `core/` reads like it could have come from anywhere, check the actual draft sentence it's supposed to be sourced from, not just whether the general shape feels consistent with the rest of the rework.
+
+---
+
+## 70. equipment_draft.md audit: weapon damage dice, Skills, and Attacks tags still matched old mainline for shared weapons *(2026-09-20)*
+
+Continuation of the item 67-69 pattern, this time found by a dedicated audit pass
+requested against `equipment_draft.md` specifically rather than found incidentally.
+Re-reading the draft's own weapon table line by line against `weapons.md` turned up
+eleven weapons where the *numbers*, not just names or mechanisms, still matched
+old mainline instead of the draft:
+
+- **Shortsword:** wrong Skill (Cleaving Blades, should be **Fencing Blades** - the
+  draft explicitly groups it with Rapier, not Scimitar/Broadsword) and wrong damage
+  (`1d6 + 1`, should be flat `1d6`).
+- **Dagger:** `1d4` should be `1d6`.
+- **Scimitar, Mace:** both carried a Light tag (`+1` Attacks) the draft doesn't give
+  them - both are `+0`.
+- **Broadsword:** `1d10` should be `1d8`.
+- **War Maul:** `1d10` should be `1d12`.
+- **Longsword, Spear:** both are flat, undifferentiated values in the draft (`1d8`
+  each) with no Versatile split at all - old mainline's Versatile one-handed/
+  two-handed pair for each (`1d6+2/1d8+2` and `1d6/1d8` respectively) was kept
+  instead. Fixed by treating the draft's number as the one-handed base (matching how
+  Battle Axe and Quarterstaff already correctly did this) and bumping the two-handed
+  Versatile figure one die step up from there (`1d10` for both), rather than dropping
+  Versatile from either weapon.
+- **Glaive:** `2d4` should be `1d10`.
+- **Longbow:** `1d8` should be `1d10`.
+- **Arquebus** (both lock types): `4d4` should be `3d4`.
+
+**Ripple effects, once Shortsword changed Skill:** `attributes_and_skills.md`'s
+Cleaving Blades/Fencing Blades descriptions swapped Shortsword between them.
+`universal.md`'s Bandit (Cleaving Blades 2 -> Fencing Blades 2, DEX 2 covers the
+Rank either way) and its Archer (stale Longbow damage) and Guard (stale Spear
+damage) and Knight (stale Longsword damage) stat blocks all had the old numbers
+baked into their Equipment/Damage lines. `leadership.md`'s sample Cohort, Mira
+Valdros, held **Cleaving Blades +3 with a Shortsword** - moving Shortsword to the
+DEX-governed Fencing Blades would have put a rank-3 Skill above her DEX 2, an
+illegal build. Rather than touch her Attributes, she was rearmed with a Scimitar
+(same Cleaving Blades Skill, same Riposte signature, 1d8 Slashing instead of
+1d6+1 Piercing) - her Tempo Pool dropped from 5 to 4 accordingly, since Scimitar
+carries no Light tag post-fix.
+
+**Found in passing, outside this item's own scope but fixed anyway:** two more
+stale `Hafted & Polearms`/bare `Ranged` Skill-name references turned up in
+`humans.md`'s Adaptable and `aelves.md`/`dwergaz.md`'s Weapon Training features -
+missed by the earlier combat_draft.md pass since those Feature lists don't read
+as combat mechanics on a first grep. Also fixed: three lingering "reduced to 0
+Wounds" / "while Dying" phrasings (`aelves.md`, `strygs.md`, `racial_feats.md`)
+left over from the pre-Downed Wound framing, where Wounds counted down from a
+pool instead of Wound boxes filling up to a maximum.

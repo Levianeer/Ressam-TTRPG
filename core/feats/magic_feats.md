@@ -1,4 +1,4 @@
-**2026-09-14: this file replaces `arcane_feats.md` and `divine_feats.md` outright.** Magic schools are no longer Skills funded by ARC or FAI (both deleted) - they're Feats. **2026-09-20:** retuned to the Lesser/Common/Greater/Legendary difficulty ladder and the Will/Push/Channel casting engine (see [[Magic Overview|magic_overview]]) - a fourth tier, Master, was added to cover Legendary workings, and Focus Feats were redesigned around Signature Workings rather than a flat roll bonus, since the new casting math has no slot for one. See [[Magic Overview|magic_overview]]'s Casting section for the roll itself; this chapter is only how a caster buys into a school in the first place.
+Magic schools are Feats, not Skills. See [[Magic Overview|magic_overview]]'s Casting section for the roll itself; this chapter is only how a caster buys into a school in the first place.
 
 ---
 
@@ -15,7 +15,7 @@ Every one of the ten schools - Aeromancy, Geomancy, Hydromancy, Pyromancy, Shado
 | **Expert** | 5th | Greater | 9+ |
 | **Master** | 8th | Legendary | 11+ |
 
-**Master is the ceiling.** Nothing sits above it - a character's magic stops deepening at Level 8, and Feats from there on go to General, Martial, Skill, or Prestige picks, or to a different school's tiers, or to Combination Feats (below). *(Placeholder: Master's Level 8 gate hasn't seen table time - see `TODO.md`.)*
+**Master is the ceiling.** Nothing sits above it - a character's magic stops deepening at Level 8, and Feats from there on go to General, Martial, Skill, or Prestige picks, or to a different school's tiers, or to Combination Feats (below).
 
 ### **Unlock Feats**
 
@@ -36,18 +36,16 @@ There is no cap on how many different schools' Unlocks you hold at once beyond t
 
 **"\<School\>: Novice Focus" / "\<School\>: Adept Focus" / "\<School\>: Expert Focus" / "\<School\>: Master Focus"**
 
-The new casting math (`1d12` per die of Will, take the highest, against a flat DC) has no room for a flat roll bonus the old rank system used - Focus is rebuilt around a **Signature Working** instead:
+Focus is built around [[Magic Overview|magic_overview]]'s Progression menu, spent one item at a time as you take each tier. **Unlike Unlock Feats, Focus Feats stack cumulatively** - each tier is its own Feat, held alongside the ones before it, not a replacement:
 
-| Tier | Signature Workings | Benefit on each |
-| :---- | :---: | :---- |
-| **Novice** | 1 | Costs 1 less Will to cast (minimum 1) |
-| **Adept** | 1 | As Novice, and may be Channelled once per Rest at no Trauma cost |
-| **Expert** | 2 | As Adept |
-| **Master** | 2 | As Adept, and Channelling it costs no Will either |
+| Tier | Benefit |
+| :---- | :---- |
+| **Novice** | Choose one working you know as a **Signature Working**. Its difficulty is treated as one tier lower for you when you cast it (Common 7+ effectively 5+, and so on) - a Lesser-tier working has no lower tier to drop to, so this only pays off on a Common working or higher. |
+| **Adept** | Channelling a Signature Working costs 1 less Trauma (minimum 0), by tier. |
+| **Expert** | Choose a second Signature Working; both carry every benefit above. |
+| **Master** | **Attunement.** Once per scene, the first Will point you spend is refunded immediately, before you finish committing the rest of the pool. |
 
-**Bonuses don't stack across tiers** - taking a higher Focus replaces the lower one's benefit outright; you never hold two Focus tiers in the same school at once. Choosing which known working(s) are your Signature happens when you take the Feat, and can be changed on a Long Rest.
-
-**Prerequisites:** the matching tier's Unlock Feat in that school (`<School>: Novice Focus` needs `<School>: Novice`, and so on). A Focus Feat is always optional on top of its Unlock, never required - you can hold `Pyromancy: Adept` with no Focus at all and simply cast at the ordinary cost.
+**Prerequisites:** the matching tier's Unlock Feat in that school, plus the previous Focus tier (`<School>: Adept Focus` needs `<School>: Adept` and `<School>: Novice Focus`, and so on) - the same straight-line shape as Unlock Feats. A Focus Feat is always optional on top of its Unlock, never required - you can hold `Pyromancy: Adept` with no Focus at all and simply cast at the ordinary cost. Choosing which known working(s) are your Signature happens when you take the Feat, and can be changed on a Long Rest.
 
 ### **Combination Feats**
 
@@ -94,22 +92,22 @@ The flame answers before you finish the thought.
 ### **Pyromancy: Novice Focus**
 
 **Prerequisites:** Pyromancy: Novice
-**Benefit:** Choose one Lesser-tier Pyromancy working you know as your Signature Working. It costs 1 less Will to cast (minimum 1).
+**Benefit:** Choose one Pyromancy working you know as your Signature Working. Its difficulty is treated as one tier lower for you (Common 7+ effectively 5+, Greater 9+ effectively 7+, Legendary 11+ effectively 9+).
 
 ### **Pyromancy: Adept Focus**
 
-**Prerequisites:** Pyromancy: Adept
-**Benefit:** As Novice Focus, and your Signature Working may be Channelled once per Rest at no Trauma cost. Replaces Pyromancy: Novice Focus; it does not stack with it.
+**Prerequisites:** Pyromancy: Adept, Pyromancy: Novice Focus
+**Benefit:** Channelling your Signature Working costs 1 less Trauma (minimum 0).
 
 ### **Pyromancy: Expert Focus**
 
-**Prerequisites:** Pyromancy: Expert
-**Benefit:** As Adept Focus, and you gain a second Signature Working. Replaces Pyromancy: Adept Focus; it does not stack with it.
+**Prerequisites:** Pyromancy: Expert, Pyromancy: Adept Focus
+**Benefit:** Choose a second Signature Working. It carries the difficulty discount and the Channelling Trauma discount too.
 
 ### **Pyromancy: Master Focus**
 
-**Prerequisites:** Pyromancy: Master
-**Benefit:** As Expert Focus, and Channelling either Signature Working costs no Will either, on top of no Trauma. Replaces Pyromancy: Expert Focus; it does not stack with it.
+**Prerequisites:** Pyromancy: Master, Pyromancy: Expert Focus
+**Benefit:** **Attunement.** Once per scene, the first Will point you spend on a Pyromancy working is refunded immediately.
 
 ### **Pyromancy + Geomancy: Molten Lance**
 

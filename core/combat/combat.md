@@ -12,12 +12,12 @@ Ressam is not a game where heroes fight to the last Wound. You won't fight worse
 | :---- | :---- |:---------------------------------------------------------------|
 | **Major Action** | 1/round | Make an attack, cast a working, Dash, Disengage |
 | **Minor Action** | 1/round | Sheathe weapon, drink a draught, open door, reload a missile weapon |
-| **Object Interaction** | 1/round | Draw ammunition, take up a thrown weapon, pick up a dropped blade, flip a lever |
+| **Lesser Action** | 1/round | Draw ammunition, take up a thrown weapon, pick up a dropped blade, flip a lever |
 | **Free Action** | Unlimited | Drop item, speak briefly, stop sustaining a working, etc |
 | **Move Action** | Unlimited | Move up to your maximum Speed, can be broken up into multiples |
 
 - **Per Round:** Refreshes at the start of your *next* turn.
-- **Drawing multiple weapons:** As a single Object Interaction, you may draw any number of weapons at once, provided you have a free hand for each one.
+- **Drawing multiple weapons:** As a single Lesser Action, you may draw any number of weapons at once, provided you have a free hand for each one.
 
 **There are no Reactions.** Every off-turn act \- a Parry, an Opportunity Attack, whatever a Feat calls for \- is bought with a **Tempo Die** out of the same pool you attack with (see [[Your Tempo Pool|exchange]]). Your pool is the whole of your off-turn action economy.
 

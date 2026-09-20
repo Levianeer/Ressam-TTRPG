@@ -78,7 +78,7 @@ Every school also leaves its own separate mark elsewhere on the body, on top of 
 
 ### Reciprocity
 
-**2026-09-14:** this Cost is now a spectrum of in-fiction flavor across schools, not a mechanical split - see [[Magic Overview|magic_overview]]'s note on the Ten Schools. Every school costs the same Will and rolls the same way; what differs is what a caster owes for the privilege, narratively.
+This Cost is a spectrum of in-fiction flavor across schools, not a mechanical split - see [[Magic Overview|magic_overview]]'s note on the Ten Schools. Every school costs the same Will and rolls the same way; what differs is what a caster owes for the privilege, narratively.
 
 Some schools are paid for in advance: study, materials, precise formulae, effort spent long before the working ever begins. Others are paid for continuously - power drawn from a genuine, ongoing devotion (a god's attention, a stolen sliver of someone else's conviction) carries that source's judgment and awareness attached for as long as the caster draws on it. A miracle is a favor, not a tool, and a favor is tracked: a caster who drifts from their source's expectations may find it slower to answer, then reluctant, then silent - not a mechanical penalty, but a story beat a DM is free to use. A school built on devotion cannot exist, in-fiction, without an active relationship; nothing on the sheet enforces that, but nothing stops a table from playing it as true.
 

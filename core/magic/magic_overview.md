@@ -16,8 +16,6 @@ There is no Arcane/Divine split. Every school below works identically - same MIN
 
 ## MIND and the Will Pool
 
-**2026-09-20 (the Reach/Tempo rework):** magic's whole resolution engine is replaced, adapted from Middle-earth Strategy Battle Game's Magical Powers. This section and Casting/Resisting/Channelling below supersede the old flat `1d12 + Feat bonus vs. DC` roll entirely.
-
 MIND does two separate jobs, and the split between them is the core of this system.
 
 **MIND is a hard ceiling on dice.** You may never commit more dice to a single cast or resist than your MIND rating. Dice granted free by traits sit outside this ceiling (see [Free Dice](#free-dice), below).
@@ -256,8 +254,8 @@ Grow casters sideways instead - see [[Magic Feats|magic_feats]] for how Focus Fe
 - **More workings known.** Still one cast per round, so the choice gets harder rather than the caster getting stronger.
 - **Free resist dice.** A trait or Feat benefit, not more Will.
 - **Better refunds.** A natural 11-12 that returns the *entire* casting pool, not one point.
-- **A signature working.** Discount its Will cost, or let it Channel for free - not a difficulty change across the board.
-- **Access to Channelling, and later a Trauma discount on it.** Not "more uses per day": Channelling was never day-gated, only Trauma-gated.
+- **A signature working.** Lower the difficulty by one tier on exactly one named working, not across the board.
+- **A Trauma discount on Channelling it.** Not "more uses per day": Channelling was never day-gated, only Trauma-gated, so there's nothing to raise.
 - **Attunement.** One free Will point per scene, refunded before any spending - a late-game milestone.
 
 Reliability, flexibility, and staying power grow; raw ceiling barely moves.

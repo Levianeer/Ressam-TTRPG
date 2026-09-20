@@ -1,10 +1,10 @@
 # Your Tempo Pool
 
-**2026-09-20 (the Reach/Tempo rework):** the Tempo Pool is no longer sized by an Attribute at all. **Pool size \= baseline 4, plus the Attacks modifier of your weapon and your shield** (see [[Weapons|weapons]]) \- `\+1` for a Light weapon, `\-1` for a Two-Handed one, `\+0` for everything else, a shield's own modifier stacking on top. **Every die is a flat `1d12`.** STR no longer sizes the die; STR's whole role in a fight is melee damage (see [[Damage Roll|combat]]). DEX funds Initiative and the Shot DC a target presents instead \- see Initiative and The Shot, below.
+**Pool size \= baseline 4, plus the Attacks modifier of your weapon and your shield** (see [[Weapons|weapons]]) \- `\+1` for a Light weapon, `\-1` for a Two-Handed one, `\+0` for everything else, a shield's own modifier stacking on top. **Every die is a flat `1d12`.** STR's whole role in a fight is melee damage (see [[Damage Roll|combat]]); DEX funds Initiative and the Shot DC a target presents instead \- see Initiative and The Shot, below.
 
 Your pool refills in full **at the start of the round**, not the start of your own turn \- one pool per character per round, shared by your own attack and every defense you make no matter whose turn it is. It starts full before anyone's first turn. **Pool size is recalculated only when it refills**: disarmed or swapping weapons mid-round costs you nothing until the next refill, and it also means going early in Initiative commits dice blind, while going late means defending on what the round throws at you before you know what you'll have left to swing with.
 
-Dice buy attacks, Parries, Opportunity Attacks, Disengages, breaking a Grapple, Exerting, and whatever a Feat charges \- see [What everything costs](#what-everything-costs). **Nothing ranged ever touches the pool, on either side of the shot** \- see [The shot](#the-shot).
+Dice buy attacks, Parries, Opportunity Attacks, Disengages, breaking a Grapple, Exerting, and a shot - see [What everything costs](#what-everything-costs). **A shot invests Tempo Dice too**, the same as a melee attack, though nothing is ever rolled back against it - see [The shot](#the-shot).
 
 **An empty pool means you have stopped acting *and* stopped defending**, unless you Exert (below). What is left is your armor, and nothing else.
 
@@ -66,7 +66,7 @@ Out of dice but still need to Parry? **Invest a `1d6` and take 1 Trauma instead 
 | Opening | Effect |
 | :---- | :---- |
 | **Riposte** | A plain attack right now, first die free \- invest more if you have dice left. |
-| **Disarm** (target wields a Normal-Reach weapon) | Their weapon drops in their square, picked up with an Object Interaction. |
+| **Disarm** (target wields a Normal-Reach weapon) | Their weapon drops in their square, picked up with a Lesser Action. |
 | **Sunder** (target wields a Reach 1 or 2 weapon) | Their weapon breaks until repaired outside the fight, unless they spend 1 Tempo Die to drop it instead. |
 | **Shove** | Push them 1 square, or knock them Prone. |
 | **Grapple** | They're Restrained while you stay Adjacent and keep hold \- see [[Conditions|rest_and_survival]]. |
@@ -122,7 +122,7 @@ Ressam is played on a **square grid of five-foot squares** ([[Battlemap \& Posit
 
 **A ranged weapon in hand fights as Unarmed in every melee respect** \- Reach (Normal), Skill (Daggers \& Wrestling), Signature (Grapple) \- for Parrying, Opportunity Attacks, and any other melee attack it's pressed into. It's still an item you're holding: **you can be Disarmed while holding one**, though Sunder still doesn't apply, since it needs a Reach 1 or 2 weapon a bow or gun in melee never is. **Unarmed is Blunt**, so a ranged weapon pressed into melee never finds the gaps in armor (see [[Dent Line and Rend Line|armor]]). **Attacks is the exception** \- a ranged weapon in hand still sets your Tempo Pool from its own Attacks modifier, never from Unarmed's `\+1`.
 
-**Swapping:** drawing or stowing a weapon costs your Object Interaction. Dropping one is free.
+**Swapping:** drawing or stowing a weapon costs your Lesser Action. Dropping one is free.
 
 **No dual-wielding.** A second weapon is a spare you can draw later; it adds nothing while carried, and a shield or a second implement in the off hand adds no second Parry of its own \- Guard from an equipped shield is the only off-hand bonus in the base rules (see [[Shields \& Guard|weapons]]). A Feat may grant an off-hand option; nothing does by default.
 
@@ -246,7 +246,7 @@ Nothing is rolled against you. The Shot DC comes off the table below, not off a 
 
 **Diving** (off-turn, 1 Tempo Die): when a shot is declared against you and before the shooter invests, spend a die to add `\+3` to its Shot DC and end up Prone in your square (at most 1 die per Parry until you stand). No roll, no contest. The shooter then invests knowing the higher number. A later shot against you while still Prone (this turn or next) uses the normal Prone row instead.
 
-**The movement gate:** spend up to half your Speed (round down) in Move and you may still fire. Spend more than that, or climb, leap, or swim, and you cannot fire this turn. It counts Move *spent*, so difficult terrain eats into it. A Crossbow or one-handed missile weapon overrides it \- see [[Weapons|weapons]].
+**The movement gate:** a Bow or Sling needs you to have spent no more than half your Speed (round down) in Move this turn to fire at all. Spend more than that, or climb, leap, or swim, and you cannot fire this turn. It counts Move *spent*, so difficult terrain eats into it. **Crossbows and firearms override it and are exempt** - see [[Weapons|weapons]] for which weapons carry which.
 
 ---
 
@@ -254,7 +254,7 @@ Nothing is rolled against you. The Shot DC comes off the table below, not off a 
 
 **Every ranged weapon is loaded or empty, and firing empties it.** Reloading costs the action(s) set by the weapon, never a Tempo Die \- see [[Reloading|weapons]] for the full ladder (bows, crossbows, thrown weapons, and every firearm, including lock type and multi-barrel effects). **A Loaded weapon carries between scenes.**
 
-**Misfire.** A Firearms weapon jams on a roll under its Misfire score on a separate `1d12` rolled alongside the shot \- see [[Firearm Rules|weapons]]. A misfire still spends the Major Action fired with; clearing it costs a Major Action \+ a Minor Action, no earlier than your next turn, and it can't be fired or reloaded until cleared.
+**Misfire.** A Firearms weapon jams when any Tempo Die invested in the shot comes up at or below its Misfire score \- see [[Firearm Rules|weapons]]. No separate roll: it rides the same dice the shot itself invested, so a gun punishes committing dice while a bow rewards it. A misfire still spends the Major Action fired with; clearing it costs a Major Action \+ a Minor Action, no earlier than your next turn, and it can't be fired or reloaded until cleared.
 
 ---
 

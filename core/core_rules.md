@@ -43,13 +43,11 @@ Attributes range from 0 (wholly absent) to 5 (peak mortal potential).
 | **Mind** | MIND | Intelligence, reasoning, the Will pool, resisting fear and hostile magic |
 | **Charisma** | CHA | Social influence, force of personality, Nerve |
 
-**2026-09-20 (the Reach/Tempo rework):** the Tempo Pool is no longer sized by any Attribute - it comes from the weapon (and shield) in your hands, flat `1d12` per die (see [[Your Tempo Pool|exchange]]). STR is melee damage and nothing else in a fight; DEX moved Initiative off MIND and set the Shot DC a target presents, in exchange for no longer sizing the pool.
-
-**2026-09-14: ARC and FAI are deleted.** The Arcane/Divine split is gone (see [[Magic Overview|magic_overview]]) - magic is no longer keyed to a dedicated Attribute at all, and the standard array shrank from six numbers to four (see [[Assign Attributes|character_creation]]).
+**The Tempo Pool** is sized by the weapon (and shield) in your hands, not by an Attribute - see [[Your Tempo Pool|exchange]].
 
 **A 0 in an Attribute** is a complete absence of that capacity, not just poor - the same way an unranked Skill sits at 0 until trained. It's a legitimate choice at character creation (see [[Character Creation|character_creation]]), not only a racial exception.
 
-**An Attribute can go below 0.** A racial modifier landing on an Attribute you assigned a 0 leaves you at \-1 or lower, and that is a legal character - a negative score simply subtracts wherever the Attribute is added. **Nothing in Ressam damages an Attribute**, so a negative score is always something you built, never something inflicted on you mid-campaign. Two derived stats floor rather than follow it down: **Will** never falls below 0, and **Slots** (`6 \+ STR`) are never fewer than 1 (see [[Calculate Derived Stats|character_creation]]). The **Tempo Pool** no longer reads an Attribute at all, so it has nothing to floor - see [[Your Tempo Pool|exchange]].
+**An Attribute can go below 0.** A racial modifier landing on an Attribute you assigned a 0 leaves you at \-1 or lower, and that is a legal character - a negative score simply subtracts wherever the Attribute is added. **Nothing in Ressam damages an Attribute**, so a negative score is always something you built, never something inflicted on you mid-campaign. Two derived stats floor rather than follow it down: **Will** never falls below 0, and **Slots** (`6 \+ STR`) are never fewer than 1 (see [[Calculate Derived Stats|character_creation]]). The **Tempo Pool** never reads an Attribute, so it has nothing to floor - see [[Your Tempo Pool|exchange]].
 
 **Note:** For what each Attribute represents in play, see [[Attributes & Skills|attributes_and_skills]].
 
@@ -80,7 +78,7 @@ Skills range from 0 (untrained) to 5 (world-renowned master). Each is tied to on
 
 ### **Setting a Difficulty Class (DC)**
 
-**2026-09-20:** Ressam uses a four-tier DC scale for Skill Checks, Ward Checks, Minor Magic, casting and resisting, and Alchemy crafting alike - recut from the old seven-tier scale down to the same ladder a working's difficulty already used. Pick a tier by how difficult the task is narratively; situational modifiers stack on top of the tier, so a real DC in play regularly climbs past 11 - you should not need a *base* number outside this list.
+Ressam uses one four-tier DC scale for Skill Checks, Ward Checks, Minor Magic, casting and resisting, and Alchemy crafting alike. Pick a tier by how difficult the task is narratively; situational modifiers stack on top of the tier, so a real DC in play regularly climbs past 11 - you should not need a *base* number outside this list.
 
 | Tier | DC | Example |
 | :---- | :---: | :---- |
@@ -141,7 +139,7 @@ Nothing here accounts for situational Advantage or Disadvantage.
 
 **Contested Checks:** Whenever a Feat, Feature, or Spell pits one creature's active roll directly against another's static defense (rather than a flat DC from the tier table above), only the instigator rolls - the defender's score simply stands, whatever it is. This always plays out as one of two shapes, the same two tags you'll see inline throughout the rest of this book:
 
-- **Contested Check** (one character's training set directly against another's - out-forging a rival smith's work, shouting down a herald, matching a scholar's recall): a battle of training against training. The instigator rolls **1d12 \+ their Skill**; the defender's static score is **5 \+ their relevant Skill** - a Passive Skill, the same shape as a Passive Ward but built from a Skill instead of an Attribute. **No published rule currently calls for one** - the combat maneuvers that used to (Grapple, Disarm, Taunting) are all Openings under [[The Exchange|exchange]] now. It is kept as a shape for a DM to adjudicate against, not a mechanic anything reaches for.
+- **Contested Check** (one character's training set directly against another's - out-forging a rival smith's work, shouting down a herald, matching a scholar's recall): a battle of training against training. The instigator rolls **1d12 \+ their Skill**; the defender's static score is **5 \+ their relevant Skill** - a Passive Skill, the same shape as a Passive Ward but built from a Skill instead of an Attribute. **No published rule currently calls for one** - Grapple, Disarm, and similar maneuvers are Openings under [[The Exchange|exchange]] instead. It is kept as a shape for a DM to adjudicate against, not a mechanic anything reaches for.
 - **Contested Ward** (resisting a Petrifying Glare, and the like): a battle of skill - or raw instinct - against reactive ability. The instigator rolls **1d12 \+ whatever Skill or Attribute the ability calls for**; the defender's static score is their **Passive Ward**.
 
 The defender never rolls. Ties go to the instigator, same as a Skill Check meeting a DC exactly.

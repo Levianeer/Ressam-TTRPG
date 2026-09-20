@@ -53,7 +53,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | :---- | :---- |
 | **Wounds** | 4 |
 | **Tempo Pool** | 5 dice at `1d12` |
-| **Dent / Rend** | 2 / 6 (thick hide) |
+| **Dent / Rend** | 4 / 9 (thick hide) |
 | **Speed** | 40 ft |
 | **Daily Hex Pts** | 10 |
 | **Attributes** | STR 3, DEX 2 |
@@ -80,7 +80,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | :---- | :---- |
 | **Wounds** | 5 |
 | **Tempo Pool** | 5 dice at `1d12` |
-| **Dent / Rend** | 3 / 7 |
+| **Dent / Rend** | 5 / 10 |
 | **Speed** | 70 ft |
 | **Daily Hex Pts** | 12 |
 | **Attributes** | STR 3, DEX 3 |
@@ -107,7 +107,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | :---- | :---- |
 | **Wounds** | 8 |
 | **Tempo Pool** | 5 dice at `1d12` |
-| **Dent / Rend** | 4 / 8 (can wear barding for \+3 to both) |
+| **Dent / Rend** | 6 / 11 (can wear barding for \+3 to both) |
 | **Speed** | 60 ft |
 | **Daily Hex Pts** | 12 |
 | **Attributes** | STR 4, DEX 2 |

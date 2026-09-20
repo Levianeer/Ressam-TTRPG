@@ -2,7 +2,7 @@
 
 - **Natural Weapons:** Count as unarmed weapons for all purposes (feats, magical enhancement, etc.)  
 - **Weapon Training:** Racial Skill and Attribute bonuses count toward feat prerequisites  
-- **Size Modifiers:** See Rest & Survival for Backpack Slots and Bulky Capacity, and Core Rules for space requirements, by size
+- **Size Modifiers:** See Rest & Survival for Slots, and Core Rules for space requirements, by size
 
 ---
 

@@ -1,6 +1,6 @@
 ## Carrying Capacity
 
-**2026-09-20:** carrying capacity is one pool, not two. **Slots \= 6 \+ STR, minimum 1.** Whatever you're actively wearing or wielding \- one weapon, one suit of armor, one shield \- is free; every other item you carry, including each bundle of ammunition, costs **1 Slot**, spares included. There's no tier to look up beyond that: count what's in the pack.
+Carrying capacity is a single pool. **Slots \= 6 \+ STR, minimum 1.** Whatever you're actively wearing or wielding \- one weapon, one suit of armor, one shield \- is free; every other item you carry, including each bundle of ammunition, costs **1 Slot**, spares included. There's no tier to look up beyond that: count what's in the pack.
 
 **Encumbered** (items exceed your Slots): Speed drops to 5 ft; disadvantage on physical checks; cannot rest. **Push/Drag/Lift:** up to 2x your Slots in equivalent bulk, but Speed drops to 5 ft.
 
@@ -78,7 +78,7 @@ A Feat or trait that reskins damage into its own named identity (Blood-Rule's **
 
 ## Wounds & Death's Door
 
-**2026-09-20 (the Reach/Tempo rework):** this whole section replaces the old Wound Threshold/Death Clock/Patched Wounds/damage-flavored Scars system outright - see [[Damage Roll|combat]] for the roll itself.
+*See [[Damage Roll|combat]] for how a Wound is rolled.*
 
 ### Named Characters
 
@@ -131,7 +131,7 @@ Falling aside, an environmental hazard (fire, drowning, poison, and the like) de
 
 ## Trauma
 
-**2026-09-20:** shared with [[Magic Overview|magic_overview]] - one **0-20** track, not just a combat one. Wounds are what kill your body; Trauma is what breaks you. When Trauma reaches 20, the character dies.
+Trauma is shared with [[Magic Overview|magic_overview]] - one **0-20** track, not just a combat one. Wounds are what kill your body; Trauma is what breaks you. When Trauma reaches 20, the character dies.
 
 | Trauma | Band | Reached by |
 |:------:|:--------------------|:--|

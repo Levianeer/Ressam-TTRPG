@@ -29,7 +29,7 @@ Martial feats represent combat prowess and battlefield tactics. These feats focu
 
 ### **Magic Feats**
 
-**2026-09-14:** Magic Feats replaced the old Arcane Feats/Divine Feats split (and the school Skills that used to fund it) with a single, unified system - see `magic_feats.md`. Each of the ten schools offers a Novice/Adept/Expert **Unlock** (spell access for that tier's rank range), a matching **Focus** (a flat +1/+2/+3 roll bonus), and **Combination** Feats that grant spells spanning two or more schools.
+Magic Feats are one unified system across all ten schools - see [[Magic Feats|magic_feats]]. Each school offers a Novice/Adept/Expert/Master **Unlock** (access to that tier's difficulty of working), a matching **Focus** (built around Signature Workings), and **Combination** Feats that grant workings spanning two or more schools.
 
 ### **Skill Feats**
 

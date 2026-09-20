@@ -47,12 +47,12 @@ Prestige Feats represent fundamental transformations in how a character interact
 
 **Ritual:** Allow an enemy to land a blow you could have prevented. Do this with full knowledge, not from hesitation. Then, in the moment of their overextension, end them. Repeat until the urge to act first feels like a stranger's instinct.
 
-**Effect:** You have no Initiative score at all - not `5 \+ MIND`, not anything. You act last in every round, after all other creatures have completed their turns, and you can no longer trade places with another PC.
+**Effect:** You have no Initiative score at all - not `5 \+ DEX`, not anything. You act last in every round, after all other creatures have completed their turns, and you can no longer trade places with another PC.
 
 **Mechanical Changes:**
 
 - Once per round, when a creature takes any action, you may spend **1 Tempo Die** to interrupt \- taking your turn immediately (instead of at the end of the round). The triggering action is delayed until after your turn completes. Your pool refills at the start of that turn, as it always does.
-- You are never **Ambushed** or **Caught Out** (see [[Surprise|exchange]]), and you gain nothing from either happening to somebody else - you observe the opening of a fight, you do not exploit it.
+- You are never treated as unaware, even if a fight catches you off guard (see [[Awareness|exchange]]) - but you gain nothing from an enemy being caught unaware either. You observe the opening of a fight, you do not exploit it.
 - Effects referencing "higher initiative" or "lower initiative" treat you as having the lowest possible value.
 
 ---
@@ -72,7 +72,6 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 **Mechanical Changes:**
 
 - Your Maximum Mana is reduced to 0, it can never be increased beyond 0\.
-- Patched Wounds may be used to pay this cost, same as Invocation's Wound Loss Rule.
 - Any effect that would use Mana, instead uses your Wounds.
 - Wounds spent as a casting cost is a cost, not damage \- it does not trigger effects that respond to taking damage.
 - If you die from Wounds spent on casting, the spell fails and you begin dying.
@@ -122,8 +121,6 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 
 - If damage is reduced to 0, the attack counts as having missed (your armor does not degrade, effects that trigger "on hit" do not occur).
 
-**2026-09-14:** this Feat previously let you split the reduction between Mana and consumed spell scrolls. Scrolls are gone (see `magic_overview.md` - every school now casts straight from Mana, no scribing) - the scroll option is deleted outright rather than replaced, since nothing else in the current rules produces a scroll to spend.
-
 ---
 
 ## Fallen Wing
@@ -134,7 +131,7 @@ Additionally, if you are a Stryg, you may convert any damage dealt by you into B
 
 **Ritual:** Betray the God-Dragons in their house. The method matters less than the sincerity \- a defiled altar, a slain priest, a prayer spoken backward with genuine intent. Feel the familiar warmth of faith curdle into something colder, and understand: the power never left. Only its direction changed.
 
-**Effect:** All spells you cast from a devotional school (Benediction, Cultivation, Invocation, Necration, Subjugation) deal necrotic damage (instead of radiant). When you cast an instant-duration Cultivation spell that would grant Patched Wounds to a creature, you may invert it instead: make that spell's normal casting roll (see [[Magic Overview|magic_overview]]'s Rolling Magic - a targeted, dodgeable roll, same as any other spell aimed at a creature) against a target within the spell's range, dealing 1d8 × the spell's rank necrotic damage on success. If it succeeds, you gain Patched Wounds equal to the amount the spell would have granted its intended target (not the new damage total). Any other listed effect of the spell (such as Trauma removal) does not apply when inverted this way.
+**Effect:** All spells you cast from a devotional school (Benediction, Cultivation, Invocation, Necration, Subjugation) deal necrotic damage (instead of radiant). When you cast an instant-duration Cultivation spell that would heal a creature, you may invert it instead: make that spell's normal casting roll (see [[Magic Overview|magic_overview]]'s Rolling Magic - a targeted, dodgeable roll, same as any other spell aimed at a creature) against a target within the spell's range, dealing 1d8 × the spell's rank necrotic damage on success. If it succeeds, you heal Wounds equal to the amount the spell would have healed its intended target (not the new damage total) - Trauma same as any healing. Any other listed effect of the spell (such as Trauma removal) does not apply when inverted this way.
 
 Once per combat, when you successfully damage a creature with a Benediction or Cultivation spell, you may make a **1d12 \+ your MIND** roll against their MIND Ward (Contested Ward) - if it beats their Ward, they become Frightened of you until the end of your next turn.
 
@@ -148,10 +145,10 @@ Once per combat, when you successfully damage a creature with a Benediction or C
 **Fallen Thrall Statistics:**
 
 - Wounds: Your MIND × 4
-- Dent: 3 / Rend: 7 (decayed flesh)
+- Dent: 5 / Rend: 10 (decayed flesh)
 - Speed: 30 ft
 - Attributes: STR 2, DEX 2, MIND 1, CHA 1
-- Tempo Pool: **3 dice at `1d6`** (DEX 2, STR 2), untrained - it Parries with that and no Skill
+- Tempo Pool: **5 dice at `1d12`** (baseline 4, `\+1` for its Slam's Light-equivalent Attacks), untrained - it Parries with that and no Skill
 - Attack: Slam, `1d6 \+ your MIND` necrotic damage
 - Special: Shares your initiative, acts immediately after your turn
 

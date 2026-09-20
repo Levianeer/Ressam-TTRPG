@@ -21,15 +21,17 @@ _Armor is your primary defense against physical attacks. In Ressam, armor absorb
 | Travel Clothes | \- | \- | \- | 50 Crown | 1 |
 | Fine Clothes | \- | \- | \- | 200 Crown | 1 |
 | **FLEXIBLE ARMOR** |  |  |  |  |  |
-| Gambeson | 3 | 7 | \-1 | 75 Crown | 1 |
-| Buff Coat | 4 | 8 | \-1 | 120 Crown | 1 |
-| Mail Shirt | 5 | 9 | \-1 | 150 Crown | 1 |
-| Chain Mail | 6 | 10 | \-2 | 200 Crown | 1 |
-| Brigandine | 7 | 11 | \-2 | 350 Crown | 1 |
+| Gambeson | 5 | 10 | \-1 | 75 Crown | 1 |
+| Buff Coat | 6 | 11 | \-2 | 120 Crown | 1 |
+| Mail Shirt | 6 | 11 | \-2 | 150 Crown | 1 |
+| Chain Mail | 6 | 11 | \-2 | 200 Crown | 1 |
+| Brigandine | 7 | 12 | \-2 | 350 Crown | 1 |
 | **RIGID ARMOR** |  |  |  |  |  |
-| Breastplate | 7 | 11 | \-2 | 700 Crown | 1 |
-| Half-Plate | 8 | 12 | \-2 | 1,000 Crown | 1 |
-| Full Plate | 9 | 13 | \-3 | 2,000 Crown | 1 |
+| Breastplate | 7 | 12 | \-2 | 700 Crown | 1 |
+| Half-Plate | 9 | 14 | \-3 | 1,000 Crown | 1 |
+| Full Plate | 11 | 16 | \-3 | 2,000 Crown | 1 |
+
+**The gap between Dent and Rend is 5.** Buff Coat, Mail Shirt, and Chain Mail tie at 6/11.
 
 **Note:** Nothing in a fight reads Armor Penalty \- see [[The Exchange|exchange]]. **Once swords are out, your Dent and Rend Lines are the whole of what armor does**, and heavier is simply better. What holds plate in check is 2,000 Crown, Stealth, and the reasons people did not sleep in harness \- none of which is a combat rule, and all of which are real. A spare suit of Full Plate costs the same 1 Slot as a Gambeson - one more thing you can't afford, not one that physically won't fit.
 
@@ -76,7 +78,7 @@ Your armor prints two numbers - **Dent Line** and **Rend Line** - and a landing 
 
 **Found a gap:** rolling maximum on every die is a fixed die-face outcome, not a reward for winning the Exchange by more (there are still no critical hits, see [[There are no critical hits|exchange]]). If the roll would have been Turned Aside, it lands for 1 Wound instead. If it already scored a Wound on its own, it instead applies **Bleeding** (see [[Conditions|rest_and_survival]]) on top of whatever it already dealt.
 
-**Example:** You're wearing brigandine (Dent 7, Rend 11). An attacker's Longsword rolls `1d6 \+ 2 \+ STR 3` and comes up 9 \- at or above your Dent Line but below your Rend Line, so you take 1 Wound. Your armor loses 1 durability, dropping both lines to 6/10 for the next hit.
+**Example:** You're wearing brigandine (Dent 7, Rend 12). An attacker's Longsword rolls `1d6 \+ 2 \+ STR 3` and comes up 9 \- at or above your Dent Line but below your Rend Line, so you take 1 Wound. Your armor loses 1 durability, dropping both lines to 6/11 for the next hit.
 
 ### **Armor Penalty**
 
@@ -85,7 +87,7 @@ Penalty represents how armor restricts movement. It applies to:
 - **Acrobatics skill checks** (balance, tumbling, controlled falls)
 - **Subterfuge skill checks** (moving unseen and unheard)
 
-**2026-09-14: Penalty no longer touches spellcasting.** The new unified casting roll (see [[Magic Overview|magic_overview]]) carries no modifier - Skill, Attribute, or Armor Penalty - for it to reduce; a caster's only cost from armor is Slots and price, same as anyone else.
+**Penalty doesn't touch spellcasting.** The casting roll (see [[Magic Overview|magic_overview]]) carries no modifier - Skill, Attribute, or Armor Penalty - for it to reduce; a caster's only cost from armor is Slots and price, same as anyone else.
 
 **It applies to nothing in a fight.** No attack roll, no Parry, no Tempo Die reads it (see [[The Exchange|exchange]]) \- Penalty is a cost you pay everywhere except the one place armor is doing its job.
 
@@ -109,7 +111,7 @@ A natural Dent/Rend Line pair degrades like worn armor unless a creature's entry
 
 ## Armor Durability
 
-Your armor's durability starts equal to its Dent Line and decreases each time you're hit. **Both printed lines fall together, 1 for 1, keeping the same 4-point gap between them** \- a Gambeson worn down 2 durability from 3/7 reads 1/5 for its next hit.
+Your armor's durability starts equal to its Dent Line and decreases each time you're hit. **Both printed lines fall together, 1 for 1, keeping the same 5-point gap between them** \- a Gambeson worn down 2 durability from 5/10 reads 3/8 for its next hit.
 
 ### **Degradation Rules**
 
@@ -128,19 +130,19 @@ A blow that scores a Wound degrades both kinds by the normal amount. The exempti
 
 ### **Degradation Example**
 
-Kira starts a fight wearing chain mail (Dent 6, Rend 10, Durability 6).
+Kira starts a fight wearing chain mail (Dent 6, Rend 11, Durability 6). Each row reads against the **previous row's** lines, since that's what's current when the hit lands.
 
 | Event                 |     Result      | Lines After |
 |:----------------------|:----------------:|:-----------:|
-| Start                 |         \-        |    6 / 10   |
-| Hit totals 4          | Turned Aside     |    5 / 9    |
-| Hit totals 11         | 2 Wounds         |    4 / 8    |
-| Hit totals 3          | Turned Aside     |    3 / 7    |
-| Hit totals 9          | 1 Wound          |    2 / 6    |
+| Start                 |         \-        |    6 / 11   |
+| Hit totals 4          | Turned Aside     |    5 / 10   |
+| Hit totals 11         | 2 Wounds         |    4 / 9    |
+| Hit totals 3          | Turned Aside     |    3 / 8    |
+| Hit totals 9          | 2 Wounds         |    2 / 7    |
 
-After four hits, her chain mail has fallen to 2/6\. She's taken 3 Wounds, but unarmored (Dent 0 / Rend 5) she'd have taken 6 against those same four totals \- every one of them is at least 1 Wound, and the 11 and 9 both clear Rend for 2.
+After four hits, her chain mail has fallen to 2/7\. She's taken 4 Wounds, but unarmored (Dent 0 / Rend 5) she'd have taken 6 against those same four totals \- every one of them is at least 1 Wound, and the 11 and 9 both clear Rend for 2.
 
-**Had she been wearing a Breastplate instead**, the two Turned Aside hits would have cost her nothing at all \- Rigid armor doesn't wear when it wins \- and she'd have finished the same four hits at 5/9.
+**Had she been wearing a Breastplate instead** (Dent 7, Rend 12, Rigid), the two Turned Aside hits (4 and 3, both below Dent 7) would have cost her nothing at all \- Rigid armor doesn't wear when it wins. The 11 and the 9 both clear Dent 7 but fall short of Rend 12, so each is only 1 Wound instead of 2: she'd finish the same four hits having taken 2 Wounds, not 4, at 5/10.
 
 ### **Destroyed Armor (0 Durability)**
 
@@ -153,7 +155,7 @@ When armor reaches 0 durability, it provides no protection \- the wearer resolve
 
 ## Repairing Armor
 
-**2026-09-20:** field repair is now purely a function of [[Rest \& Repair|rest_and_survival]] \- a Field Rest restores 1 point to each printed line (Dent, Rend, and an equipped shield's Guard), a Long Rest restores 1, or 2 if a smith passes a Smithing check (DC 7) that day. **Repair never exceeds the armor's original printed values.** The old hourly Crafting-rank repair system is gone; Crafting no longer funds armor repair on its own.
+Field repair is a function of [[Rest \& Repair|rest_and_survival]] \- a Field Rest restores 1 point to each printed line (Dent, Rend, and an equipped shield's Guard), a Long Rest restores 1, or 2 if a smith passes a Smithing check (DC 7) that day. **Repair never exceeds the armor's original printed values.**
 
 ### **Professional Repair**
 
@@ -184,7 +186,7 @@ Any armor can instead be taken to a blacksmith for reforging \- faster than wait
 | :---- | :---- | :---- |
 | **Melee Fighter** | Brigandine or Breastplate | High Dent/Rend Lines at the same \-2 Penalty; the Breastplate costs twice as much and buys the Rigid absorb rule with it |
 | **Archer/Crossbowman** | Gambeson or Buff Coat | Cheap, light, and \-1 Penalty; nothing you do with a bow reads armor's lines either way |
-| **Spellcaster** | Whatever suits the rest of the build | Penalty no longer touches spellcasting - a caster picks armor the same way anyone else does, off Slots and price alone |
+| **Spellcaster** | Whatever suits the rest of the build | Penalty doesn't touch spellcasting - a caster picks armor the same way anyone else does, off Slots and price alone |
 | **Skirmisher/Scout** | Gambeson | Low penalty keeps Subterfuge usable |
 | **Tank** | Full Plate \+ Heater Shield | Highest Dent/Rend Lines in the book, and \+2 Guard on every Parry you make |
 | **Duelist** | Buff Coat \+ Buckler | Mobility, and a fist-held shield you can keep on the hand while you reload or work a lock |
@@ -198,8 +200,8 @@ Higher Dent and Rend Lines mean a tougher blow to land at all but worse:
 - Acrobatics (balance, tumbling, controlled falls)
 - Subterfuge (harder to move unseen and unheard)
 
-**And that is the entire list.** Nothing inside a fight is on it, and spellcasting is no longer on it either. **Martial characters** should wear the heaviest thing they can afford and carry, because in combat there is no counterweight at all \- armor is the only protection you don't have to spend a Tempo Die on.
+**And that is the entire list.** Nothing inside a fight is on it, and spellcasting isn't on it either. **Martial characters** should wear the heaviest thing they can afford and carry, because in combat there is no counterweight at all \- armor is the only protection you don't have to spend a Tempo Die on.
 
-**Spellcasters** have no mechanical reason to avoid armor anymore \- pick it the same way a Martial does, off Slots, price, and Acrobatics/Subterfuge if those matter to the build.
+**Spellcasters** have no mechanical reason to avoid armor \- pick it the same way a Martial does, off Slots, price, and Acrobatics/Subterfuge if those matter to the build.
 
-**Hybrid characters** often choose brigandine \- Dent 7 / Rend 11 at only \-2 penalty, the best ratio on the table.
+**Hybrid characters** often choose brigandine \- Dent 7 / Rend 12 at only \-2 penalty, the best ratio on the table.

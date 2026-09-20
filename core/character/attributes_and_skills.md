@@ -13,17 +13,15 @@ Attributes range from 0 (wholly absent) to 5 (near peak mortal potential). Every
 | **Mind** | MIND | Intelligence, reasoning, the Will pool, resisting fear and hostile magic                                  |
 | **Charisma** | CHA | Social influence, force of personality, Nerve                                          |
 
-**2026-09-14: ARC and FAI are deleted**, along with the Arcane/Divine split itself - see [[Magic Overview|magic_overview]]. Magic is no longer keyed to a dedicated Attribute; MIND still funds the Will pool and literacy, but nothing is added to a casting roll except how many dice you commit.
+Magic is not keyed to a dedicated Attribute - MIND funds the Will pool and literacy, but nothing is added to a casting roll except how many dice you commit (see [[Magic Overview|magic_overview]]).
 
-**2026-09-20 (the Reach/Tempo rework):** the Tempo Pool is no longer sized by any Attribute at all - see [[Your Tempo Pool|exchange]]. STR's whole combat role narrowed to melee damage; DEX picked up Initiative (moved off MIND) and how hard you are to hit at range, in exchange for no longer counting your dice.
+**Strength (STR):** Raw physical power and physical resilience in one Attribute. STR drives **all** melee damage, the finesse blades included (see [[Damage Roll|combat]]). It also governs your resistance to fatigue, disease, poison, and suffocation, how much you can carry (see [[Carrying Capacity|rest_and_survival]]), your STR Ward, and the Brawn, Endurance & Melee Skills.
 
-**Strength (STR):** Raw physical power and physical resilience in one Attribute - what used to be split between Strength and a separate Endurance is now a single stat. STR drives **all** melee damage, the finesse blades included (see [[Damage Roll|combat]]). It also governs your resistance to fatigue, disease, poison, and suffocation, how much you can carry (see [[Carrying Capacity|rest_and_survival]]), your STR Ward, and the Brawn, Endurance & Melee Skills.
+**STR is how hard each landed blow hits.** It does not decide how many dice you have to fight with - that comes from your weapon, not your Attributes (see [[Your Tempo Pool|exchange]]) - and it does not touch how armor turns a hit aside; your Dent Line and Rend Line come from the suit you're wearing, the same for everybody in it.
 
-**STR is how hard each landed blow hits.** It does not decide how many dice you have to fight with - that comes from your weapon now, not your Attributes (see [[Your Tempo Pool|exchange]]) - and it does not touch how armor turns a hit aside; your Dent Line and Rend Line come from the suit you're wearing, the same for everybody in it.
+**Dexterity (DEX):** Agility, fine motor control, and hand-eye coordination in one Attribute. DEX sets your **Initiative** (`5 \+ DEX`, static and never rolled - see [[Initiative and turn order|exchange]]) and the base **Shot DC** a target presents to anyone shooting at them (see [[Shot DC|exchange]]). It also funds your DEX Ward, and governs the Finesse, Reflex & Subterfuge Skills.
 
-**Dexterity (DEX):** Agility, fine motor control, and hand-eye coordination in one Attribute - what used to be split between Dexterity and a separate Precision is now a single stat. DEX sets your **Initiative** (`5 \+ DEX`, static and never rolled - see [[Initiative and turn order|exchange]]) and the base **Shot DC** a target presents to anyone shooting at them (see [[Shot DC|exchange]]). It also funds your DEX Ward, and governs the Finesse, Reflex & Subterfuge Skills.
-
-**DEX no longer counts your dice.** Tempo Pool size is a property of your gear now (see [[Your Tempo Pool|exchange]]), so DEX's whole combat job is going first and being hard to hit - it does not add to an attack or Parry roll, and it does not touch melee damage even for the blades it trains.
+**DEX doesn't count your dice.** Tempo Pool size is a property of your gear (see [[Your Tempo Pool|exchange]]), so DEX's whole combat job is going first and being hard to hit - it does not add to an attack or Parry roll, and it does not touch melee damage even for the blades it trains.
 
 **Mind (MIND):** Intelligence and reasoning. MIND sets your **Will pool** (`MIND × 3`) for casting and for resisting hostile magic and fear (see [[Magic Overview|magic_overview]] and [[Fear|exchange]]), determines automatic literacy at MIND 2+ (see Literacy, below), and governs the Intellect, Education & Reasoning Skills.
 
@@ -31,7 +29,7 @@ Attributes range from 0 (wholly absent) to 5 (near peak mortal potential). Every
 
 **A 0 in an Attribute** is a complete absence of that capacity, not just poor - the same way an unranked Skill sits at 0 until trained. It's a legitimate choice at character creation, not only a racial exception.
 
-**An Attribute can go below 0.** A racial modifier landing on an Attribute you assigned a 0 leaves you at \-1 or lower, and that is a legal character - a negative score simply subtracts wherever the Attribute is added. **Nothing in Ressam damages an Attribute**, so a negative score is always something you built, never something inflicted on you mid-campaign. Two derived stats floor rather than follow it down: **Will** never falls below 0, and **Slots** never fall below 1 (see [[Calculate Derived Stats|character_creation]]). The **Tempo Pool** no longer reads an Attribute at all, so it has nothing to floor.
+**An Attribute can go below 0.** A racial modifier landing on an Attribute you assigned a 0 leaves you at \-1 or lower, and that is a legal character - a negative score simply subtracts wherever the Attribute is added. **Nothing in Ressam damages an Attribute**, so a negative score is always something you built, never something inflicted on you mid-campaign. Two derived stats floor rather than follow it down: **Will** never falls below 0, and **Slots** never fall below 1 (see [[Calculate Derived Stats|character_creation]]). The **Tempo Pool** never reads an Attribute, so it has nothing to floor.
 
 ---
 
@@ -50,7 +48,7 @@ Skills range from 0 (untrained) to 5 (renowned master). Each is tied to one gove
 **Brawn, Endurance & Melee (STR)**
 
 - **Two-Handed Blades:** Longswords, greatsabers, greatswords, and warblades - the heaviest two-handed edged weapons.
-- **Cleaving Blades:** Shortswords, scimitars, and broadswords - one-handed edged weapons.
+- **Cleaving Blades:** Scimitars and broadswords - one-handed edged weapons.
 - **Hafted Weapons:** Battle axes, maces, clubs, war mauls, greatclubs, whips, weighted chains, and chain flails - blunt and axe-headed weapons that fight at Normal Reach (see [[Distance \& Reach|exchange]]).
 - **Polearms:** Spears, pikes, halberds, glaives, quarterstaves, and lances - every weapon that fights at Reach 1 or Reach 2, split off from Hafted Weapons by that reach rather than by grip (see [[Weapons|weapons]]).
 - **Daggers & Wrestling:** The stout fighting dagger, knives swung by hand rather than thrown, unarmed strikes, a Shield Bash (see [[Shields|weapons]]), and improvised close-quarters violence. It is also the Skill that Parries with a shield, a buckler, or bare hands. Its lighter, precision-thrusting cousin - the Stiletto - trains under Fencing Blades instead, below.
@@ -60,7 +58,7 @@ Skills range from 0 (untrained) to 5 (renowned master). Each is tied to one gove
 
 **Finesse, Reflex & Subterfuge (DEX)**
 
-- **Fencing Blades:** Rapiers, estocs, stilettos, and other fast, precise thrusting blades - agility and timing over raw power, so this Skill trains under DEX rather than joining the rest of melee under STR. **Its damage is still STR**, like every other melee weapon: a rapier in a quick hand is thrown more often than a poleaxe, and it still hits like the arm behind it.
+- **Fencing Blades:** Shortswords, rapiers, estocs, stilettos, and other fast, precise thrusting blades - agility and timing over raw power, so this Skill trains under DEX rather than joining the rest of melee under STR. **Its damage is still STR**, like every other melee weapon: a rapier in a quick hand is thrown more often than a poleaxe, and it still hits like the arm behind it.
 - **Archery:** Shortbows, longbows, and light and heavy crossbows.
 - **Firearms:** Every black-powder weapon - one-handed pistols, two-handed long guns, and the largest heavy firearms.
 - **Thrown:** Throwing axes, javelins, darts, knives, and slings.
@@ -68,15 +66,15 @@ Skills range from 0 (untrained) to 5 (renowned master). Each is tied to one gove
 - **Subterfuge:** Manual trickery and moving unseen in a single Skill - bypassing locks and mechanical security without the key, the sleight of hand behind palming, pickpocketing, and concealing small objects, and moving unseen and unheard - the check behind Hiding (see [[Stealth & Light|stealth_and_light]]). Specializing in one mode (lockpicking, sleight of hand, or stealth) instead of all of them at once is a Feat choice, not a Skill investment (see [[Skill Feats|skill_feats]]).
 - **Crafting:** Making, modifying, and repairing gear, tools, and armor alike, on top of everything else worth building or fixing by hand. A smith's Crafting-governed check can speed a Long Rest's armor repair (see [[Rest \& Repair|rest_and_survival]]). **Nothing reduces Armor Penalty**, Crafting included.
 - **Perception:** Noticing what's easy to miss - hidden creatures, traps, and details in your surroundings. Whether a target is aware of an attacker is a GM call informed by this, not a formal roll (see [[Awareness|exchange]]).
-- **Chirurgery:** Treating wounds and illness with your own two hands - the check behind reviving a Downed ally, a medic's faster Wound recovery on a Rest, treating a Scar, and other field medicine (see [[Downed|rest_and_survival]] and [[Scars|rest_and_survival]]). Split off from the old Medical Lore 2026-08-14: this is the physically-performed half (steady hands under pressure), not the recall half - see the note below.
+- **Chirurgery:** Treating wounds and illness with your own two hands - the check behind reviving a Downed ally, a medic's faster Wound recovery on a Rest, treating a Scar, and other field medicine (see [[Downed|rest_and_survival]] and [[Scars|rest_and_survival]]). This is the physically-performed half of field medicine (steady hands under pressure), not the recall half - see the note below.
 
 ### Mental Skills
 
 **Intellect, Education & Reasoning (MIND)**
 
-- **Thaumaturgy:** The practical, technical side of magic in a single Skill - brewing oils, bombs, and salves from harvested ingredients (see [[Alchemy|alchemy]]) and binding a magical effect from an Enchantment Scroll onto nonmagical gear (see Itemization in [[Per Level Advancement|progression_&_rewards]]) - distinct from actually casting a school, which no longer runs through a Skill at all (see Magic Schools, below).
+- **Thaumaturgy:** The practical, technical side of magic in a single Skill - brewing oils, bombs, and salves from harvested ingredients (see [[Alchemy|alchemy]]) and binding a magical effect from an Enchantment Scroll onto nonmagical gear (see Itemization in [[Per Level Advancement|progression_&_rewards]]) - distinct from actually casting a school, which never runs through a Skill (see Magic Schools, below).
 
-**2026-09-14: Magic schools are no longer Skills.** Aeromancy, Geomancy, Hydromancy, Pyromancy, Shadowmancy, Benediction, Cultivation, Invocation, Necration, and Subjugation used to be ten separate Skills split across the now-deleted ARC and FAI Attributes. They're Feats now - Novice/Adept/Expert/Master tiers per school, gating which difficulty of working you can learn - see [[Magic Feats|magic_feats]] and [[Magic Overview|magic_overview]]'s Casting section. No Skill or Attribute is ever added to a casting roll; MIND only sets how many dice you may commit and how large your Will pool is.
+**Magic schools are not Skills.** Aeromancy, Geomancy, Hydromancy, Pyromancy, Shadowmancy, Benediction, Cultivation, Invocation, Necration, and Subjugation are Feats - Novice/Adept/Expert/Master tiers per school, gating which difficulty of working you can learn - see [[Magic Feats|magic_feats]] and [[Magic Overview|magic_overview]]'s Casting section. No Skill or Attribute is ever added to a casting roll; MIND only sets how many dice you may commit and how large your Will pool is.
 
 ### Social Skills
 
@@ -88,9 +86,9 @@ Skills range from 0 (untrained) to 5 (renowned master). Each is tied to one gove
 - **Leadership:** Attracting, commanding, and retaining those who serve under you - Followers and Cohorts (see [[Leadership|leadership]]).
 - **Insight:** Reading people - the static defense against Manipulate, and the check for spotting a lie or a hidden motive.
 
-Animal Handling and Performance are no longer Skills - a mount's behavior under stress is now a Wayfaring check (see above), and holding an audience is handled as a ruling against the nearest fitting Skill rather than a dedicated one. Identify (appraising goods, spotting forgeries, recognizing an unfamiliar substance on sight) is likewise no longer a trained Skill.
+Animal Handling and Performance aren't Skills - a mount's behavior under stress is a Wayfaring check (see above), and holding an audience is a ruling against the nearest fitting Skill rather than a dedicated one. Identify (appraising goods, spotting forgeries, recognizing an unfamiliar substance on sight) is likewise not a trained Skill.
 
-**2026-08-14: Historic Lore, Nature Lore, Arcane Lore, and Religious Lore are no longer Skills either**, and Medical Lore split in two. Knowing things and rolling dice are different questions - whether you recognize an old conflict, a species of plant, a school's handiwork, or a faith's doctrine is a binary "does your character know this," not a check with a failure state, so it doesn't belong on this list at all. That recall half is being rebuilt as a separate Knowledge system (chosen like Skills at character creation, None/Familiarity/Expertise per subject, no roll ever) - see `TODO.md` for its status. What's left behind here is only the piece of each that was ever an actual trained, rollable action: Medical Lore's field-medicine roll survives as **Chirurgery**, above; Arcane Lore's two mechanical uses (Steady Hand, Scroll Sense) now key off flat MIND instead; Nature Lore's foraging/harvesting rolls (see [[Alchemy|alchemy]]) folded fully into Survival, which already covered them as an alternative.
+**Historic Lore, Nature Lore, Arcane Lore, and Religious Lore are not Skills.** Knowing things and rolling dice are different questions - whether you recognize an old conflict, a species of plant, a school's handiwork, or a faith's doctrine is a binary "does your character know this," not a check with a failure state - see [[Knowledge|knowledge]] for that system (chosen like Skills at character creation, None/Familiarity/Expertise per subject, no roll ever). Medical Lore's field-medicine roll survives as **Chirurgery**, above; Arcane Lore's two mechanical uses (Steady Hand, Scroll Sense) key off flat MIND instead; Nature Lore's foraging and harvesting rolls (see [[Alchemy|alchemy]]) fall fully under Survival.
 
 ---
 

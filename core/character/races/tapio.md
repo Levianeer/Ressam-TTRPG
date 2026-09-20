@@ -29,8 +29,8 @@ You may change it using the Size Changing feature.
 - **Large:** \+1 to STR checks and \+1 melee damage, disadvantage on Subterfuge.
 
 **One with Nature:** You can cast Parasitic Tendrils (Cultivation) once per Field Rest or Long Rest without needing that school's Unlock Feat.  
-**Rooted Recovery:** During a Field Rest or Long Rest in a natural environment, that rest also removes 1 additional level of Trauma automatically.  
-**Rootbound Regeneration:** While in contact with natural, unworked ground (not stone floors, worked wood, or metal), you regain 1 Patched Wound at the start of each of your turns. This ends immediately if you're moved off natural ground.
+**Rooted Recovery:** The first night of [[Unwinding|rest_and_survival]] you spend in a natural environment removes 1 additional Trauma.  
+**Rootbound Regeneration:** While in contact with natural, unworked ground (not stone floors, worked wood, or metal), you heal 1 Wound at the start of each of your turns - Trauma same as any healing (see [[Trauma|rest_and_survival]]). This ends immediately if you're moved off natural ground.
 
 ---
 

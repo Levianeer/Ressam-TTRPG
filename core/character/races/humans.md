@@ -18,7 +18,7 @@ Humanity is the most widespread and adaptable of the Artefolk, defined less by a
 
 ### **Features**
 
-**Adaptable:** Gain \+1 rank in any two different Skills of your choice, excluding weapon Skills (Two-Handed Blades, Fencing Blades, Cleaving Blades, Hafted & Polearms, Daggers & Wrestling, Ranged, and Thrown).  
+**Adaptable:** Gain \+1 rank in any two different Skills of your choice, excluding weapon Skills (Two-Handed Blades, Fencing Blades, Cleaving Blades, Hafted Weapons, Polearms, Daggers & Wrestling, Archery, Firearms, and Thrown).  
 **Steadfast:** You gain \+2 to Wards against being Frightened or Charmed.
 
 ---

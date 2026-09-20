@@ -10,20 +10,17 @@ Every entry lists exactly what a GM needs at the table and nothing else - Slots,
 
 - **Frequency:** How likely a GM is to actually field this creature in its home region - see Frequency, below.
 - **Attributes / Skills:** Only Skills relevant to this NPC's kit are listed; anything unlisted is 0 (untrained).
-- **Wounds:** Size baseline (Medium \= 3 for every entry here) plus any Feat that adds to it.
-- **Wound Threshold:** How much damage-after-AR it takes to inflict 1/2/3 Wounds in one hit, keyed to this NPC's own STR - see [[Wounds and Survival|rest_and_survival]]. Given as three bands (e.g. `1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+)`) so a GM doesn't have to cross-reference that table's STR row mid-fight.
-- **Tempo Pool:** `DEX + 1` dice, never fewer than 1, sized by STR - see [[Your Tempo Pool|exchange]]. This is the whole of an NPC's off-turn economy: it pays for every Parry and Opportunity Attack the same way it does for a PC.
-- **AR:** Current Armor Rating from worn or natural armor - see [[Armor|armor]]. A shield's Guard is not AR; it adds to the Parry roll instead (below).
-- **Parry:** `1d(Tempo Die) + Weapon Skill + Guard + Edge` at 1 die invested, the same formula a PC rolls - see [[Defending|exchange]]. An NPC can invest more dice into a single Parry exactly like a PC can, summing them the same way.
-- **Attack:** The Skill Rank added to `1d(Tempo Die) + Weapon Skill` on an attack roll at 1 die invested ([[Attacking|exchange]]) - `-` means the attack rolls the die alone (untrained: 0 Skill Ranks add nothing). More dice can be invested the same way a PC does.
-- **Damage:** Weapon Damage \+ STR (or \+ DEX for a missile weapon), before the target's AR is subtracted.
+- **Wounds:** Size baseline (Medium \= 5 for every entry here) plus any Feat that adds to it - see [[Carrying Capacity|rest_and_survival]] for the Size table.
+- **Dent Line / Rend Line:** Worn or natural armor's printed values, or Dent 0 / Rend 5 if the NPC is Unarmored - see [[Dent Line and Rend Line|armor]]. A shield's Guard is not part of this; it adds to the Parry roll instead (below).
+- **Tempo Pool:** `4 + the NPC's weapon's (and shield's) Attacks modifier`, every die a flat `1d12` - see [[Your Tempo Pool|exchange]]. This is the whole of an NPC's off-turn economy: it pays for every Parry and Opportunity Attack the same way it does for a PC.
+- **Parry:** `1d12 (per invested die) + Weapon Skill + Guard` at 1 die invested, the same formula a PC rolls - see [[Defending|exchange]]. An NPC can invest more dice into a single Parry exactly like a PC can, summing them the same way.
+- **Attack:** The Skill Rank added to `1d12 (per invested die) + Weapon Skill` on an attack roll at 1 die invested ([[Attacking|exchange]]) - `-` means the attack rolls the die alone (untrained: 0 Skill Ranks add nothing). More dice can be invested the same way a PC does.
+- **Damage:** Weapon Damage \+ STR (missiles: no Attribute added), compared straight to the target's Dent Line and Rend Line - see [[Damage Roll|combat]].
 - **Wards:** Passive Ward scores (`5 + Attribute`) for the Attributes this NPC's kit actually calls on - STR, DEX, MIND.
-- **Movement:** Walking Speed in feet, plus any secondary Speed (flying, climbing) it has. Armor Penalty never reduces this - it restricts Acrobatics, Subterfuge, and spellcasting, but not raw Speed and nothing in an Exchange (see [[Armor|armor]]).
-- **Initiative:** `5 + MIND`, static and never rolled - see [[Initiative and turn order|exchange]].
+- **Movement:** Walking Speed in feet, plus any secondary Speed (flying, climbing) it has. Armor Penalty never reduces this - it restricts Acrobatics and Subterfuge only, never spellcasting, raw Speed, or anything in an Exchange (see [[Armor|armor]]).
+- **Initiative:** `5 + DEX`, static and never rolled - see [[Initiative and turn order|exchange]].
 - **Mythic Initiative / signature abilities:** [[Mythical|mythical]] entries only - see that page's own note before pricing one.
 - **Fielding Guide:** Where present, a rough per-Level headcount ceiling for a 4-PC party - simulated with `tools/bestiary_sim.py`/`tools/rest_pressure_sim.py`, not eyeballed. Read these as a floor, not literal odds: the simulation can't see retreat, positioning, mid-fight healing, or spellcasting, and all of those favor the party in real play. "Past this count, treat it as a genuine threat" is the intended read, not "this many equals this percent chance of winning." Only a handful of entries have one so far - its absence elsewhere isn't a claim that headcount doesn't matter, just that the count hasn't been run yet.
-
-> **This guide is written for the Tempo Pool/Exchange combat system, current as of the 2026-08-23 Exchange merge. The stat blocks in [[Universal|universal]] and [[Mythical|mythical]] are not yet converted** - they still show `Evasion`, a flat `Attack` bonus, and a `Reactions`/`Maneuver`/`Block` line from the combat system the merge deleted, matching neither this guide nor `core/combat/exchange.md`. Until they're rewritten, read past those lines: the Attributes and Skills each entry lists are enough to derive its actual Tempo Pool, Parry, and Attack roll under the current rules. This mirrors how `tools/combat_engine.py` and its dependents are deliberately left stale post-merge - see `CLAUDE.md`.
 
 ---
 
@@ -92,11 +89,11 @@ Singular, campaign-defining threats carrying Mythic Initiative - not tied to a c
 
 Mythic creatures \- campaign-defining bosses and other singular threats \- do not act once per round. They are too fast, too vast, or too terrible for a single turn to contain them.
 
-**Mythic Initiative (X):** the creature takes a full turn at its Initiative (`5 \+ MIND`, static \- nobody rolls initiative, see [[Initiative and turn order|exchange]]), and another at every **\-2** below it, X counts in all. A Mythic creature with Initiative 11 and Mythic Initiative (4) acts on **11, 9, 7 and 5**.
+**Mythic Initiative (X):** the creature takes a full turn at its Initiative (`5 \+ DEX`, static \- nobody rolls initiative, see [[Initiative and turn order|exchange]]), and another at every **\-2** below it, X counts in all. A Mythic creature with Initiative 11 and Mythic Initiative (4) acts on **11, 9, 7 and 5**.
 
 All of a Mythic creature's counts are public and stated openly at the start of combat. The party always knows exactly when the beast will act \- surviving it is another matter.
 
-**Its Tempo Pool refills in full on its first count, and it regains 1 die on each count after that.** A Mythic (4) creature with DEX 3 opens the round with 4 dice and sees 7 across the whole of it \- deep, and drainable. **Shock still takes dice off it**, an emptied Mythic creature still eats unanswered blows and Openings, and a party that concentrates can still strip it between counts. What Mythic buys is that it refills three more times than you do.
+**Its Tempo Pool refills in full on its first count, and it regains 1 die on each count after that.** A Mythic (4) creature with a Tempo Pool of 5 opens the round with 5 dice and sees 8 across the whole of it \- deep, and drainable. **Shock still takes dice off it**, an emptied Mythic creature still eats unanswered blows and Openings, and a party that concentrates can still strip it between counts. What Mythic buys is that it refills three more times than you do.
 
 **Repetition:** A Mythic creature's unique abilities (breath weapons, signature spells, lair-shaking special attacks) can each be used only once per round, no matter how many turns the creature takes. Basic attacks, movement, and mundane actions face no such limit.
 

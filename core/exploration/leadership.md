@@ -244,7 +244,7 @@ Cohorts are characters. Their death should matter.
 
 **Mira Valdros, Squire** *Level 2 Human*
 
-**Wounds:** 5 | **Dent/Rend:** 3 / 7 (Gambeson) | **Initiative:** 7 | **Tempo Pool:** 5 dice at `1d12` | **Parry:** `1d12 \+ 3 \+ Guard`
+**Wounds:** 5 | **Dent/Rend:** 5 / 10 (Gambeson) | **Initiative:** 7 | **Tempo Pool:** 4 dice at `1d12` | **Parry:** `1d12 \+ 3 \+ Guard`
 
 **Attributes:** STR 4, DEX 2, MIND 3, CHA 2
 
@@ -252,9 +252,9 @@ Cohorts are characters. Their death should matter.
 
 **Equipment:**
 
-- Shortsword (1d6 \+ 1 Piercing, Normal Reach, `\+1` Attacks, Light, Signature: Riposte)  
+- Scimitar (1d8 Slashing, Normal Reach, `\+0` Attacks, Signature: Riposte)  
 - Targe Shield (Guard \+1, `\+0` Attacks, statted as a Buckler)  
-- Gambeson (Dent 3 / Rend 7)  
+- Gambeson (Dent 5 / Rend 10)  
 - Armorer's Tools
 
 **Personality:** Eager to prove herself, follows orders without question, secretly terrified of dying before making her name.
