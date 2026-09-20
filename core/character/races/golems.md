@@ -29,9 +29,9 @@ A golem is bound purpose wearing a body \- stone, metal, earth, or flesh animate
 
 | Form | Attribute Penalty | Benefit |
 | :---- | :---- | :---- |
-| **Stone** | \-1 DEX | AR increases by 2\. Once per turn, you may detach a piece of yourself (no action required) and throw it as a ranged weapon attack (1d8+STR B, range 30/60 ft). Detached pieces crumble to dust after impact. Your body regenerates lost mass during any rest. |
-| **Metal** | \-1 CHA | You gain a natural AR of 9 (cannot wear armor) and a natural Armor Penalty of \-3, exactly as worn armor. Your natural AR degrades when hit like worn armor, to a minimum of 4\. You regenerate 1d6 natural AR when you complete any Rest, and Crafting repairs (DC 12, 1 hour) restore 2d4 AR. |
-| **Dirt** | \-1 MIND | When an Adjacent creature's melee attack lands on you, you may spend **1 Tempo Die** to Grapple them (see [[Grappling|exchange]]) - the hold you would otherwise have to win an Opening for. |
+| **Stone** | \-1 DEX | Your Dent Line and Rend Line increase by 2\. Once per turn, you may detach a piece of yourself (no action required) and throw it as a ranged weapon attack (1d8+STR B, range 30/60 ft). Detached pieces crumble to dust after impact. Your body regenerates lost mass during any rest. |
+| **Metal** | \-1 CHA | You gain a natural Dent Line of 10 and Rend Line of 14 (cannot wear armor) and a natural Armor Penalty of \-3, exactly as worn armor. Your natural Dent Line and Rend Line degrade when hit like worn armor, floored at 5/9 rather than reaching Broken. You regenerate 1d6 durability (raising both lines together, up to their natural maximum) when you complete any Rest, and Crafting repairs (DC 12, 1 hour) restore 2d4 durability the same way. |
+| **Dirt** | \-1 MIND | When an Adjacent creature's melee attack lands on you, you may spend **1 Tempo Die** to Grapple them (see Grappling in [[exchange]]) - the hold you would otherwise have to win an Opening for. |
 | **Flesh** | \-1 STR, \+1 MIND | Can speak normally and can be healed normally (removes the Feature 'Cannot Heal Naturally'). |
 
 ---

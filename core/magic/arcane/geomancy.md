@@ -16,9 +16,9 @@ Geomancy bends stone, earth, and all that is grounded. Its practitioners underst
 - **Casting Time:** Off-turn, 1 Tempo Die
 - **Range:** Self or adjacent ally
 - **Duration:** Until start of your next turn
-- **Effect:** A slab of stone erupts to intercept the attack. The protected creature gains \+5 AR against the triggering attack only. This bonus does not cause the creature's own armor to degrade.
+- **Effect:** A slab of stone erupts to intercept the attack. The protected creature gains \+5 to their Dent Line and Rend Line against the triggering attack only. This bonus does not cause the creature's own armor to degrade.
 
-- After the attack resolves, the stone remains in place, providing Cover from attacks originating from the direction of the triggering attacker until the start of your next turn. The slab can be destroyed (3 Wounds, AR 8\) or circumvented by movement.
+- After the attack resolves, the stone remains in place, providing Cover from attacks originating from the direction of the triggering attacker until the start of your next turn. The slab can be destroyed (3 Wounds, Dent 9 / Rend 13\) or circumvented by movement.
 
 **Terrae Motus Pulse \- Mana Cost 3**
 
@@ -41,7 +41,7 @@ Geomancy bends stone, earth, and all that is grounded. Its practitioners underst
 - **Effect:** Your flesh hardens to the texture and resilience of granite.
 
 - While active you gain the follow effects:
-  - You gain \+2 AR (does not degrade)
+  - You gain \+2 to your Dent Line and Rend Line (does not degrade)
   - Your speed is reduced by 10 ft
   - You sink in water and cannot swim
 
@@ -50,7 +50,7 @@ Geomancy bends stone, earth, and all that is grounded. Its practitioners underst
 - **Casting Time:** Major Action
 - **Range:** 60 ft
 - **Duration:** Instant
-- **Effect:** Raise a wall of solid stone from the ground. The wall can be up to 20 ft long, 10 ft high, and 1 ft thick. It can be shaped (corner, curve, stepped) but must be continuous and anchored to the ground along its entire length. (Wall Statistics: Wounds: ARC × 3, AR: 10\)
+- **Effect:** Raise a wall of solid stone from the ground. The wall can be up to 20 ft long, 10 ft high, and 1 ft thick. It can be shaped (corner, curve, stepped) but must be continuous and anchored to the ground along its entire length. (Wall Statistics: Wounds: ARC × 3, Dent: 11 / Rend: 15\)
 
 - The wall provides cover. When the spell ends or the wall is destroyed, it crumbles into rubble (difficult terrain in its space).
 
@@ -61,7 +61,7 @@ Geomancy bends stone, earth, and all that is grounded. Its practitioners underst
 - **Duration:** Channel
 - **Effect:** The earth opens beneath a Medium sized or smaller creature you can see standing on earth or stone, then closes around them like a fist. Make a spell overcome roll vs. the target's STR Ward.
 
-  - **Overcome:** Pulled underground and encased in stone: Paralyzed, unable to breathe, and completely buried. An encased creature can hold their breath for a number of rounds equal to their STR (minimum 1\) before beginning to suffocate. The stone prison can be broken out of (AR 8, 5 Wounds).
+  - **Overcome:** Pulled underground and encased in stone: Paralyzed, unable to breathe, and completely buried. An encased creature can hold their breath for a number of rounds equal to their STR (minimum 1\) before beginning to suffocate. The stone prison can be broken out of (Dent 9 / Rend 13, 5 Wounds).
   - **Resist:** Only partially buried \- Restrained and able to breathe. On their turn, the target can use a Major Action to attempt to break free: roll 1d12 \+ STR vs. your original overcome roll. On success, they free themselves.
 
 

@@ -86,7 +86,7 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 
 
 - **Soulward:** A suit of armor and a shield of compressed spirit encase you.
-  - Gain \+5 AR (does not degrade), and a spectral shield at **Guard \+2** that likewise never degrades \- it adds to every Parry you make, and only the highest Guard counts if you are also carrying a real one (see [[Using Shields|weapons]])
+  - Gain \+5 to your Dent Line and Rend Line (does not degrade), and a spectral shield at **Guard \+2** that likewise never degrades \- it adds to every Parry you make, and only the highest Guard counts if you are also carrying a real one (see [[Using Shields|weapons]])
   - Your movement speed is reduced by 5 ft
   - When a creature hits you with a melee attack, they take 1d6 lightning damage
   - While you have a Soulward active, your attack rolls and Petition Rolls have disadvantage
@@ -103,7 +103,7 @@ You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up,
 - While Transformed:
   - Your unarmed strikes act at **both Adjacent and Reach at no Distance penalty**, and threaten every square within both
   - Your unarmed strikes deal 2d8 \+ FAI lightning damage
-  - **The first attack in each sequence you declare costs no Tempo Die** \- there is no cap on how many attacks you may declare, so what this buys you is one of them free, every turn
+  - **The first Tempo Die you invest in your attack each turn costs nothing** \- you still only get the one attack, but its first die is free, whether you stop there or keep investing beyond it
   - You have resistance to non-magical physical damage
   - At the end of each of your turns, gain 1 Strain
 

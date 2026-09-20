@@ -4,7 +4,7 @@ Ressam is a crunchy, lethal alternative to other TTRPGs, set in a world balanced
 
 ## Start Here
 
-Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks vs. Ward, the foundational mechanics nearly every other chapter assumes. Two sibling pages split off what used to live here: **[Wounds & Survival](wounds_and_survival)** (damage types, Wounds, Dying, Scars, Conditions, Trauma) and **[Carrying & Resting](carrying_and_resting)** (Slots, Resting). **[The Exchange](exchange)**, which is melee combat entire, lives under Combat, below.
+Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks vs. Ward, the foundational mechanics nearly every other chapter assumes. A sibling page split off what used to live here: **[Rest & Survival](rest_and_survival)** (Carrying Capacity, Resting, damage types, Wounds, Dying, Scars, Conditions, Trauma). **[The Exchange](exchange)**, which is melee combat entire, lives under Combat, below.
 
 ## Character
 
@@ -50,33 +50,21 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks v
 
 ## Magic
 
-- [Magic Overview](magic_overview) - universal rules shared by both casting paths
+- [Magic Overview](magic_overview) - universal rules shared by every school; no more Arcane/Divine split (2026-09-14)
 - [Laws of Magic](laws_of_magic) - the Five Laws, Three Costs, and adjudication framework behind every spell, ritual, and miracle
 - [Minor Magic](minor_magic) - small, instinctive Mana effects (minimum 1 Mana) that fall outside a normal spell
+- [Magic Feats](magic_feats) - how a caster actually buys into a school: Novice/Adept/Expert tier Unlocks, matching Focus bonuses, and cross-school Combination spells
 
-**Arcane path:**
-- [Arcane Overview](arcane_overview)
-- [Aeromancy](aeromancy)
-- [Geomancy](geomancy)
-- [Hydromancy](hydromancy)
-- [Pyromancy](pyromancy)
-- [Shadowmancy](shadowmancy)
-
-**Divine path:**
-- [Divine Overview](divine_overview)
-- [Benediction](benediction)
-- [Cultivation](cultivation)
-- [Invocation](invocation)
-- [Necration](necration)
-- [Subjugation](subjugation)
+**Schools** (flat list - the Arcane/Divine grouping below is flavor-only leftover pending a follow-up consolidation pass, see repo `TODO.md`):
+- [Arcane Overview](arcane_overview), [Aeromancy](aeromancy), [Geomancy](geomancy), [Hydromancy](hydromancy), [Pyromancy](pyromancy), [Shadowmancy](shadowmancy)
+- [Divine Overview](divine_overview), [Benediction](benediction), [Cultivation](cultivation), [Invocation](invocation), [Necration](necration), [Subjugation](subjugation)
 
 ## Feats
 
 - [Feats Overview](feats_overview)
 - [General](general_feats)
 - [Martial](martial_feats)
-- [Arcane](arcane_feats)
-- [Divine](divine_feats)
+- [Magic](magic_feats)
 - [Skill](skill_feats)
 - [Prestige](prestige_feats)
 - [Racial](racial_feats)

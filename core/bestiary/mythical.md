@@ -12,7 +12,7 @@ Singular, campaign-defining threats - not fielded in numbers, not tied to one co
 
 **Frequency:** Very Rare
 
-**Attributes:** STR 5, DEX 2, MIND 3, ARC 0, FAI 0, CHA 2
+**Attributes:** STR 5, DEX 2, MIND 3, CHA 2
 
 **Skills:** Daggers & Wrestling 5, Perception 3
 
@@ -32,7 +32,7 @@ Singular, campaign-defining threats - not fielded in numbers, not tied to one co
 
 **Natural Weapons:** Bite and Claw (2d8 Piercing/Slashing, Long Reach).
 
-**Size:** Huge (6 Wounds \= baseline 5 \+ Tough; see [[Wounds and Survival|wounds_and_survival]] on scaling the baseline past Large for GM-statted creatures).
+**Size:** Huge (6 Wounds \= baseline 5 \+ Tough; see [[Wounds and Survival|rest_and_survival]] on scaling the baseline past Large for GM-statted creatures).
 
 **Mythic Initiative (4):** Rolls initiative 4 times (normal, \-2, \-4, \-6); takes a full turn on each count. See [[Mythic Initiative|bestiary_overview]] - Reactions and end-of-turn effects (Bleed, Frightened saves, and the like) trigger on every one of its turns, not once per round.
 

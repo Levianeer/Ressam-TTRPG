@@ -18,7 +18,7 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 
 ### **Features**
 
-**Flesh Communion:** Once per Field Rest or Long Rest, consume flesh from a creature that died within 24 hours (at least a mouthful). Make a FAI check DC 12\. On success, the spirit answers one yes/no question truthfully. On failure, the spirit is hostile \- it lies, or you learn nothing and cannot attempt Flesh Communion again until your next Field Rest or Long Rest.
+**Flesh Communion:** Once per Field Rest or Long Rest, consume flesh from a creature that died within 24 hours (at least a mouthful). Make a MIND check DC 12\. On success, the spirit answers one yes/no question truthfully. On failure, the spirit is hostile \- it lies, or you learn nothing and cannot attempt Flesh Communion again until your next Field Rest or Long Rest.
 
 **Choose 1 Subculture:**
 
@@ -38,7 +38,7 @@ Aelves are swift, graceful, and aloof deeply valuing tradition. Their culture te
 ### **Features**
 
 **Weapon Training:** You gain \+1 in either any STR weapon Skill or Survival.  
-**Tradition of Fire:** You can cast Ignis Lancet (Pyromancy) once per Field Rest or Long Rest without needing ranks in the skill.  
+**Tradition of Fire:** You can cast Ignis Lancet (Pyromancy) once per Field Rest or Long Rest without needing that school's Unlock Feat.  
 **Tradition of Ash:** When you reduce a creature to 0 Wounds with fire damage, regain Wounds equal to your STR (once per Short Rest).
 
 ---

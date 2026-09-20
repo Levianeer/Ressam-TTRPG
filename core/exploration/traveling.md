@@ -37,7 +37,7 @@ The party pushes beyond normal limits. Add \+4 to their daily hex point allowanc
 
 ### **Rations on the Road**
 
-Each full travel day consumes **1 ration per character**, on top of the Field Long Rest ration cost (see [[Food and Water|wounds_and_survival]]). Traveling Clothes' "consume rations every 2 days instead of daily" benefit is an exception to this rule, not a separate one.
+Each full travel day consumes **1 ration per character**, on top of the Field Long Rest ration cost (see [[Food and Water|rest_and_survival]]). Traveling Clothes' "consume rations every 2 days instead of daily" benefit is an exception to this rule, not a separate one.
 
 ---
 
@@ -53,7 +53,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | :---- | :---- |
 | **Wounds** | 4 |
 | **Tempo Pool** | 3 dice at `1d8` |
-| **AR** | 1 (thick hide) |
+| **Dent / Rend** | 2 / 6 (thick hide) |
 | **Speed** | 40 ft |
 | **Daily Hex Pts** | 10 |
 | **Attributes** | STR 3, DEX 2 |
@@ -80,7 +80,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | :---- | :---- |
 | **Wounds** | 5 |
 | **Tempo Pool** | 4 dice at `1d8` |
-| **AR** | 2 |
+| **Dent / Rend** | 3 / 7 |
 | **Speed** | 70 ft |
 | **Daily Hex Pts** | 12 |
 | **Attributes** | STR 3, DEX 3 |
@@ -107,7 +107,7 @@ Each full travel day consumes **1 ration per character**, on top of the Field Lo
 | :---- | :---- |
 | **Wounds** | 8 |
 | **Tempo Pool** | 3 dice at `1d10` |
-| **AR** | 3 (can wear barding for \+3 AR) |
+| **Dent / Rend** | 4 / 8 (can wear barding for \+3 to both) |
 | **Speed** | 60 ft |
 | **Daily Hex Pts** | 12 |
 | **Attributes** | STR 4, DEX 2 |

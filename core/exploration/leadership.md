@@ -17,7 +17,7 @@ Followers are common folk who work for you \- servants, porters, scribes, grooms
 
 ### **Follower Limitations**
 
-- **No combat stats:** Followers don't have Wounds, a Tempo Pool, or AR in any meaningful sense. If targeted, they die or they flee.  
+- **No combat stats:** Followers don't have Wounds, a Tempo Pool, or a Dent/Rend Line in any meaningful sense. If targeted, they die or they flee.  
 - **No player-created sheets:** The DM creates followers as needed. You describe what role you're hiring; the DM provides the person.  
 - **Require upkeep:** Followers expect payment and reasonable treatment (see Upkeep below).
 
@@ -244,9 +244,9 @@ Cohorts are characters. Their death should matter.
 
 **Mira Valdros, Squire** *Level 2 Human*
 
-**Wounds:** 4 | **AR:** 6 (Gambeson) | **Initiative:** 7 | **Tempo Pool:** 3 dice at `1d10` | **Parry:** `1d10 \+ 3 \+ Guard`
+**Wounds:** 4 | **Dent/Rend:** 3 / 7 (Gambeson) | **Initiative:** 7 | **Tempo Pool:** 3 dice at `1d10` | **Parry:** `1d10 \+ 3 \+ Guard`
 
-**Attributes:** STR 4, DEX 2, MIND 2, ARC 0, FAI 1, CHA 2
+**Attributes:** STR 4, DEX 2, MIND 3, CHA 2
 
 **Skills:** Cleaving Blades \+3, Athletics \+2, Crafting \+2, Wayfaring \+2, Perception \+1
 
@@ -254,7 +254,7 @@ Cohorts are characters. Their death should matter.
 
 - Shortsword (1d6 \+ 1 piercing, Length 2, Light, takes an Opening on a margin of 4)  
 - Targe Shield (Guard \+1, statted as a Buckler)  
-- Gambeson (6 AR)  
+- Gambeson (Dent 3 / Rend 7)  
 - Armorer's Tools
 
 **Personality:** Eager to prove herself, follows orders without question, secretly terrified of dying before making her name.

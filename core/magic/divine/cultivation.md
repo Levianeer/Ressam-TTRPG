@@ -30,7 +30,7 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 - **Effect:** Make a Petition Roll (DC 7) as you channel vital energy into a creature's muscles and sinews, hardening them like living wood. **Success:** For the duration, the target gains:
 
   - You gain \+2 to all Cultivation Petition Rolls.
-  - You gain \+2 AR (does not degrade) and \+3 to STR Wards
+  - You gain \+2 to your Dent Line and Rend Line (does not degrade) and \+3 to STR Wards
 
 - When the spell ends, the target's muscles ache \- they have disadvantage on DEX checks and \-3 to DEX Wards for 10 minutes as their body readjusts.
 
@@ -53,6 +53,6 @@ Cultivation governs vitality itself \- its flow, transfer, and transformation. C
 - **Casting Time:** Major Action
 - **Range:** Short
 - **Duration:** 3 rounds
-- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains **3 temporary AR**. At the start of each of the target's turns, this bonus decreases by 1\.
+- **Effect:** As a tree's layers may protect it from fire, you may channel divine power to layer a target's form against damage. Make a Petition Roll (DC 7). **Success:** The target gains **\+3 to their Dent Line and Rend Line**. At the start of each of the target's turns, this bonus decreases by 1 (on both lines).
 - **Backlash:** When the effect ends, the target gains **1 Trauma** \- borrowed resilience is still borrowed, and the body settles the account afterwards (see [[Reciprocity|laws_of_magic]]).
-- **Note:** Temporary AR is layered flesh, not harness. It is subtracted from damage exactly as armor is, but nothing degrades it \- it decays on its own schedule and no hit takes it faster. It is not repaired, it is not worn, and the Rigid/Flexible rules do not touch it.
+- **Note:** This temporary protection is layered flesh, not harness. It raises the Dent Line and Rend Line exactly as armor's do, but nothing degrades it \- it decays on its own schedule and no hit takes it faster. It is not repaired, it is not worn, and the Rigid/Flexible rules do not touch it.

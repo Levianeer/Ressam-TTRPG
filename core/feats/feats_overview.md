@@ -27,13 +27,9 @@ General feats are available to all characters and represent broadly applicable a
 
 Martial feats represent combat prowess and battlefield tactics. These feats focus on weapon mastery, defensive techniques, and physical combat superiority.
 
-### **Arcane Feats**
+### **Magic Feats**
 
-Arcane feats enhance the powers of those who study the formulaic magic of the Arcane path, including metamagic and elemental specializations.
-
-### **Divine Feats**
-
-Divine feats deepen the connection between faithful casters and their divine patrons, enhancing prayers and channeled power.
+**2026-09-14:** Magic Feats replaced the old Arcane Feats/Divine Feats split (and the school Skills that used to fund it) with a single, unified system - see `magic_feats.md`. Each of the ten schools offers a Novice/Adept/Expert **Unlock** (spell access for that tier's rank range), a matching **Focus** (a flat +1/+2/+3 roll bonus), and **Combination** Feats that grant spells spanning two or more schools.
 
 ### **Skill Feats**
 

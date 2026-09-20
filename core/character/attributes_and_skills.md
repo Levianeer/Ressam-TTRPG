@@ -11,13 +11,13 @@ Attributes range from 0 (wholly absent) to 5 (near peak mortal potential). Every
 | **Strength** | STR | Physical power, melee damage, the size of your Tempo Die, carrying slots, resisting fatigue, disease, poison, and suffocation |
 | **Dexterity** | DEX | Agility, fine motor control, ranged damage, the size of your Tempo Pool          |
 | **Mind** | MIND | Intelligence, reasoning, mana pool, initiative                                  |
-| **Arcane** | ARC | Arcane magical aptitude                                                         |
-| **Faith** | FAI | Divine connection and conviction                                                |
 | **Charisma** | CHA | Social influence, force of personality                                          |
 
-**Strength (STR):** Raw physical power and physical resilience in one Attribute - what used to be split between Strength and a separate Endurance is now a single stat. STR drives **all** melee damage, the finesse blades included, and it **sizes your Tempo Die** - the die every attack and every Parry rolls (see [[Your Tempo Pool|exchange]]). It also governs your resistance to fatigue, disease, poison, and suffocation, how much you can carry before your Slots run out (see [[Carrying & Resting|carrying_and_resting]]), your STR Ward, and the Brawn, Endurance & Melee Skills.
+**2026-09-14: ARC and FAI are deleted**, along with the Arcane/Divine split itself - see [[Magic Overview|magic_overview]]. Magic is no longer keyed to a dedicated Attribute; MIND still funds the Mana Pool and literacy, but nothing is added to a casting roll except a school's own Feats.
 
-**STR is how well each act goes.** It does not decide how many acts you get, and it does not touch your Wound Threshold, which is the same table for everybody.
+**Strength (STR):** Raw physical power and physical resilience in one Attribute - what used to be split between Strength and a separate Endurance is now a single stat. STR drives **all** melee damage, the finesse blades included, and it **sizes your Tempo Die** - the die every attack and every Parry rolls (see [[Your Tempo Pool|exchange]]). It also governs your resistance to fatigue, disease, poison, and suffocation, how much you can carry before your Slots run out (see [[Carrying & Resting|rest_and_survival]]), your STR Ward, and the Brawn, Endurance & Melee Skills.
+
+**STR is how well each act goes.** It does not decide how many acts you get, and it does not touch how armor turns a hit aside \- your Dent Line and Rend Line come from the suit you're wearing, the same for everybody in it.
 
 **Dexterity (DEX):** Agility, fine motor control, and hand-eye coordination in one Attribute - what used to be split between Dexterity and a separate Precision is now a single stat. DEX **counts your Tempo Dice** - `DEX \+ 1` of them, the pool that pays for every attack, every Parry and every Opportunity Attack you make in a round (see [[Your Tempo Pool|exchange]]). It also governs **missile damage**, funds your DEX Ward, and governs the Finesse, Reflex & Subterfuge Skills.
 
@@ -27,21 +27,17 @@ Attributes range from 0 (wholly absent) to 5 (near peak mortal potential). Every
 
 **Why MIND and not DEX for turn order.** DEX is already the whole of your reflexes, priced as the Tempo Pool. Turn order is a different question - who reads the room first, who has already decided what to do while everybody else is still deciding whether - and it gives the party's thinkers one thing they are structurally first at.
 
-**Arcane (ARC):** Raw aptitude for bending the Arcane. ARC caps how far you can invest in any Arcane school Skill (Aeromancy, Geomancy, Hydromancy, Pyromancy, Shadowmancy) and is the governing Attribute behind each of them.
-
-**Faith (FAI):** Depth of conviction and connection to the divine. FAI caps how far you can invest in any Divine school Skill (Benediction, Cultivation, Invocation, Necration, Subjugation) and is the governing Attribute behind each of them - Divine magic is petitioned, not commanded, and FAI is what a god (or, for Subjugation, a stolen sliver of someone else's conviction) actually answers to.
-
 **Charisma (CHA):** Force of personality. CHA governs the Socialising, Manipulation & Interaction Skills - influencing, manipulating, intimidating, leading, and reading people.
 
 **A 0 in an Attribute** is a complete absence of that capacity, not just poor - the same way an unranked Skill sits at 0 until trained. It's a legitimate choice at character creation, not only a racial exception.
 
-**An Attribute can go below 0.** A racial modifier landing on an Attribute you assigned a 0 leaves you at \-1 or lower, and that is a legal character - a negative score simply subtracts wherever the Attribute is added. **Nothing in Ressam damages an Attribute**, so a negative score is always something you built, never something inflicted on you mid-campaign. Three derived stats floor rather than follow it down: a **Tempo Pool** is never fewer than 1 die, and **Mana** and **Slots** never fall below 0 (see [[Calculate Derived Stats|character_creation]]).
+**An Attribute can go below 0.** A racial modifier landing on an Attribute you assigned a 0 leaves you at \-1 or lower, and that is a legal character - a negative score simply subtracts wherever the Attribute is added. **Nothing in Ressam damages an Attribute**, so a negative score is always something you built, never something inflicted on you mid-campaign. Three derived stats floor rather than follow it down: a **Tempo Pool** is never fewer than 1 die, and **Mana** and **Backpack Slots** never fall below 0 (see [[Calculate Derived Stats|character_creation]]).
 
 ---
 
 ## Literacy
 
-**Automatic Literacy:** A character with **MIND 2+** at character creation is literate, able to read and write every language they know. Certain Careers (see [[Careers|careers]]) grant literacy as well, regardless of MIND. Below MIND 2, a character is illiterate by default unless literacy is granted by Career - see [[Core Rules|core_rules]] for the full rules, including learning to read later in play. Spellcasting requires literacy: an illiterate character cannot invest in an Arcane or Divine school, regardless of ARC or FAI, until they learn to read.
+**Automatic Literacy:** A character with **MIND 2+** at character creation is literate, able to read and write every language they know. Certain Careers (see [[Careers|careers]]) grant literacy as well, regardless of MIND. Below MIND 2, a character is illiterate by default unless literacy is granted by Career - see [[Core Rules|core_rules]] for the full rules, including learning to read later in play. Spellcasting requires literacy: an illiterate character cannot invest in a magic school until they learn to read.
 
 ---
 
@@ -68,35 +64,17 @@ Skills range from 0 (untrained) to 5 (renowned master). Each is tied to one gove
 - **Thrown:** Throwing axes, javelins, darts, knives, and slings.
 - **Acrobatics:** Balance, tumbling, and controlled falls - a deliberate feat of body control, not a reflex, and the check for staying upright somewhere you shouldn't be.
 - **Subterfuge:** Manual trickery and moving unseen in a single Skill - bypassing locks and mechanical security without the key, the sleight of hand behind palming, pickpocketing, and concealing small objects, and moving unseen and unheard - the check behind Hiding (see [[Stealth & Light|stealth_and_light]]). Specializing in one mode (lockpicking, sleight of hand, or stealth) instead of all of them at once is a Feat choice, not a Skill investment (see [[Skill Feats|skill_feats]]).
-- **Crafting:** Making, modifying, and repairing gear, tools, and armor alike - restores lost AR/Guard during downtime (see [[Armor|armor]]), on top of everything else worth building or fixing by hand. **Nothing reduces Armor Penalty**, Crafting included.
+- **Crafting:** Making, modifying, and repairing gear, tools, and armor alike - restores lost armor durability/Guard during downtime (see [[Armor|armor]]), on top of everything else worth building or fixing by hand. **Nothing reduces Armor Penalty**, Crafting included.
 - **Perception:** Noticing what's easy to miss - hidden creatures, traps, and details in your surroundings; also the check that resists being Surprised.
-- **Chirurgery:** Treating wounds and illness with your own two hands - the check behind Patched Wounds and other field medicine (see [[Wounds & Survival|wounds_and_survival]]). Split off from the old Medical Lore 2026-08-14: this is the physically-performed half (steady hands under pressure), not the recall half - see the note below.
+- **Chirurgery:** Treating wounds and illness with your own two hands - the check behind Patched Wounds and other field medicine (see [[Wounds & Survival|rest_and_survival]]). Split off from the old Medical Lore 2026-08-14: this is the physically-performed half (steady hands under pressure), not the recall half - see the note below.
 
 ### Mental Skills
 
 **Intellect, Education & Reasoning (MIND)**
 
-- **Thaumaturgy:** The practical, technical side of magic in a single Skill - brewing oils, bombs, and salves from harvested ingredients (see [[Alchemy|alchemy]]) and binding a magical effect from an Enchantment Scroll onto nonmagical gear (see Itemization in [[Per Level Advancement|progression_&_rewards]]) - distinct from actually casting a school, which lives under ARC or FAI.
+- **Thaumaturgy:** The practical, technical side of magic in a single Skill - brewing oils, bombs, and salves from harvested ingredients (see [[Alchemy|alchemy]]) and binding a magical effect from an Enchantment Scroll onto nonmagical gear (see Itemization in [[Per Level Advancement|progression_&_rewards]]) - distinct from actually casting a school, which no longer runs through a Skill at all (see Magic Schools, below).
 
-**Arcane Schools (ARC)**
-
-- **Aeromancy:** Wind and atmospheric pressure (see [[Aeromancy|aeromancy]]).
-- **Geomancy:** Stone and earth (see [[Geomancy|geomancy]]).
-- **Hydromancy:** Water and ice (see [[Hydromancy|hydromancy]]).
-- **Pyromancy:** Consuming, unforgiving fire (see [[Pyromancy|pyromancy]]).
-- **Shadowmancy:** The absence of the other Arcane elements - muffled sound, cloaked movement, and striking from nothing (see [[Shadowmancy|shadowmancy]]).
-
-Each Arcane school is now its own Skill: your rank in a given school funds that school's Spell Modifier and gates Spell Access for it alone (see [[Magic Overview|magic_overview]]) - a Pyromancer and a Shadowmancer are training two genuinely separate Skills, not splitting ranks in one.
-
-**Divine Schools (FAI)**
-
-- **Benediction:** Judgment - smiting, rebuking, and enforcing a god's will through righteous fury (see [[Benediction|benediction]]).
-- **Invocation:** A Familiar bound from a severed sliver of your own soul (see [[Invocation|invocation]]).
-- **Necration:** Death, decay, and the threshold between life and oblivion (see [[Necration|necration]]).
-- **Cultivation:** Vitality - its flow, transfer, and transformation (see [[Cultivation|cultivation]]).
-- **Subjugation:** Borrowed or stolen conviction (see [[Subjugation|subjugation]]).
-
-Each Divine school is now its own Skill: your rank in a given school governs Rite Mastery rerolls and gates Spell Access for it alone (see [[Magic Overview|magic_overview]]) - petitioning Benediction and petitioning Necration draw on two separate Skills, not one shared pool.
+**2026-09-14: Magic schools are no longer Skills.** Aeromancy, Geomancy, Hydromancy, Pyromancy, Shadowmancy, Benediction, Cultivation, Invocation, Necration, and Subjugation used to be ten separate Skills split across the now-deleted ARC and FAI Attributes. They're Feats now - Novice/Adept/Expert tiers per school, gating both spell access and a flat roll bonus - see [[Magic Feats|magic_feats]] and [[Magic Overview|magic_overview]]'s Rolling Magic section. No Skill or Attribute is added to a casting roll at all.
 
 ### Social Skills
 

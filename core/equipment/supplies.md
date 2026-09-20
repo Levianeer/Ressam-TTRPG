@@ -41,17 +41,17 @@ The world uses three major currencies, each dominant in different regions.
 
 Essential equipment for travel, exploration, and survival.
 
-**How Slots Work:** Your carrying capacity is Slots (2 × STR, see [[Slots|carrying_and_resting]]), checked when you decide what to carry \- not on every purchase. Tiny items (small tools, single-use trinkets) pack 3 to a Slot; a Belt Pouch holds 3 Tiny items for free. Standard gear costs 1 Slot, Heavy gear 2, Bulky gear 3, and coins are 100 per Slot. Torches, Candles, Rations, and Oil flasks are all sold and carried in bundles of 3 that cost 1 Slot per bundle.
+**How Slots Work:** Everything below counts against your **Slots** (`6 \+ STR`, see [[Carrying Capacity|rest_and_survival]]), checked when you decide what to carry \- not on every purchase. Every item costs **1 Slot, full stop**, no tier to look up. Coins are 100 per Slot, and Torches, Candles, Rations, and Oil flasks are sold and carried in bundles of 3 that cost 1 Slot per bundle - both are named exceptions, not a general rule. A weapon, a suit of armor, and a shield are free while equipped; each spare beyond what you're wearing or wielding costs **1 Slot** too, same as anything else \- see [[Weapons|weapons]] and [[Armor|armor]].
 
 ### **Travel & Shelter**
 
 | Item                  |   Cost   | Slots |                     Notes                     |
 |:----------------------|:--------:|:-----:|:---------------------------------------------:|
 | Backpack              | 25 Crown |   0   | Required to use your full Slot count \(without one, carry only STR Slots\) |
-| Belt Pouch            | 5 Crown  |   1   |           Holds 3 Tiny items free            |
+| Belt Pouch            | 5 Crown  |   1   |                       \-                        |
 | Bedroll               | 8 Crown  |   1   | Sleeping without one: disadvantage on Chirurgery checks to remove Trauma that rest |
-| Tent, 1-person        | 10 Crown |   3   |             Shelter from weather              |
-| Tent, 4-person        | 50 Crown |   5   |                       “                       |
+| Tent, 1-person        | 10 Crown |   1   |             Shelter from weather              |
+| Tent, 4-person        | 50 Crown |   1   |                       “                       |
 | Waterskin             | 2 Crown  |   1   |                      \-                       |
 | Rations (bundle of 3) | 60 Scale |   1   |        Includes daily intake of water         |
 
@@ -75,18 +75,18 @@ Essential equipment for travel, exploration, and survival.
 | Crowbar             | 10 Crown |   1   |           For prying            |
 | Hammer              | 5 Crown  |   1   |        For construction         |
 | Shovel              | 6 Crown  |   1   |       Digging, excavation       |
-| Pickaxe             | 10 Crown |   2   |     Mining, breaking stone      |
-| Chain (10 ft)       | 15 Crown |   2   |     STR Ward DC 16 to break     |
-| Rope (50 ft)        | 6 Crown  |   2   |         DC 10 to climb          |
+| Pickaxe             | 10 Crown |   1   |     Mining, breaking stone      |
+| Chain (10 ft)       | 15 Crown |   1   |     STR Ward DC 16 to break     |
+| Rope (50 ft)        | 6 Crown  |   1   |         DC 10 to climb          |
 | Grappling hook      | 8 Crown  |   1   |               \-                |
 | Lock, simple        | 10 Crown |   1   |          DC 10 to pick          |
 | Lock, superior      | 50 Crown |   1   |          DC 14 to pick          |
 | Manacles            | 15 Crown |   1   | DC 14 to escape; DC 14 to break |
-| Mirror, small steel | 8 Crown  |  1/3  |               \-                |
-| Whistle, signal     | 2 Crown  |  1/3  |         Audible 300 ft          |
-| Chalk (10 pieces)   | 1 Crown  |  1/3  |               \-                |
-| Compass             | 40 Crown |  1/3  |               \-                |
-| Wooden stakes (10)  | 3 Crown  |   2   |               \-                |
+| Mirror, small steel | 8 Crown  |   1   |               \-                |
+| Whistle, signal     | 2 Crown  |   1   |         Audible 300 ft          |
+| Chalk (10 pieces)   | 1 Crown  |   1   |               \-                |
+| Compass             | 40 Crown |   1   |               \-                |
+| Wooden stakes (10)  | 3 Crown  |   1   |               \-                |
 
 ---
 
@@ -99,7 +99,7 @@ Tactical equipment for combat preparation and area control. These items give mar
 | Item                  |   Cost   | Slots |                           Notes                           |
 |:----------------------|:--------:|:-----:|:-----------------------------------------------------------:|
 | Caltrops (bag of 20\) | 5 Crown  |   1   | Covers 5×5 ft; Ward DEX DC 12 or 1d4 damage \+ half speed |
-| Bear trap             | 25 Crown |   2   |           DC 12 DEX or 2d6 damage \+ restrained           |
+| Bear trap             | 25 Crown |   1   |           DC 12 DEX or 2d6 damage \+ restrained           |
 
 ### **Thrown Items**
 
@@ -119,10 +119,11 @@ Equipment for treating injuries and stabilizing the dying.
 
 | Item           |   Cost    | Slots |                   Notes                   |
 |:---------------|:---------:|:-----:|:-----------------------------------------:|
-| Healer's kit   |  20 Crown |   1   |    Advantage on stabilization; 10 uses    |
-| Bandages (5)   |  5 Crown  |  1/3  |          Gain 1d2 Patched Wounds             |
+| Healer's kit   |  20 Crown |   1   |    Required for any Chirurgery check (see [[Downed|rest_and_survival]] and [[Scars|rest_and_survival]]); 10 uses    |
+| Bandages (5)   |  5 Crown  |   1   |          Ends Bleeding without a check             |
 | Surgical tools |  25 Crown |   1   |    Required for surgery; \+2 to Chirurgery |
-| Antitoxin      |  50 Crown |  1/3  |      Removes the Poisoned Condition       |
+| Antitoxin      |  50 Crown |   1   |      Removes the Poisoned Condition       |
+| Healing Draught |  15 Crown |   1   | Minor Action to administer, Adjacent ally only: heal 1 Wound. Costs Trauma same as any healing (see [[Trauma|rest_and_survival]]). A Downed character can't drink one themselves. |
 
 **Note:** For premade Healing Potions, see the Alchemy chapter's Vital Oil Recipes - Alchemy is the one system that produces them, so its Common/Uncommon/Rare tiers are the only stats you need.
 
@@ -134,7 +135,7 @@ Material components required for Arcane casting.
 
 | Item                         |   Cost   | Slots |    Notes   |
 |:-----------------------------|:--------:|:-----:|:----------:|
-| Arcane Parchment (50 sheets) | 25 Crown |  1/3  |     \-     |
+| Arcane Parchment (50 sheets) | 25 Crown |   1   |     \-     |
 | Spellbook (blank book)       | 50 Crown |   1   | Waterproof |
 
 ### **Religious Texts**
@@ -142,8 +143,8 @@ Material components required for Arcane casting.
 | Item                |   Cost    | Slots |                                          Notes                                         |
 |:--------------------|:---------:|:-----:|:--------------------------------------------------------------------------------------:|
 | Religious codex     | 100 Crown |   1   |                               Required for Divine casters                              |
-| Holy symbol         |  5 Crown  |  1/3  |                     Required for Divine casters; focus for prayers                     |
-| Incense (10 sticks) |  5 Crown  |  1/3  | Ritual offering; can satisfy Deep Devotion's sacrifice requirement ([Magic Overview](magic_overview)) |
+| Holy symbol         |  5 Crown  |   1   |                     Required for Divine casters; focus for prayers                     |
+| Incense (10 sticks) |  5 Crown  |   1   | Ritual offering; can satisfy Deep Devotion's sacrifice requirement ([Magic Overview](magic_overview)) |
 
 **Spell Supply Notes:**
 
@@ -160,9 +161,9 @@ What you wear communicates status, profession, and intent. The right clothing op
 | Type              |   Cost    | Slots |                    Benefit                    |
 |:------------------|:---------:|:-----:|:-----------------------------------------------:|
 | Common clothes    | 10 Crown  |   1   |                      \-                       |
-| Work clothes      | 15 Crown  |   2   |         \+2 to downtime labor income          |
-| Traveling clothes | 50 Crown  |   2   | Consume rations every 2 days instead of daily |
-| Fine clothes      | 200 Crown |   2   |         \+2 to CHA-based skill checks         |
+| Work clothes      | 15 Crown  |   1   |         \+2 to downtime labor income          |
+| Traveling clothes | 50 Crown  |   1   | Consume rations every 2 days instead of daily |
+| Fine clothes      | 200 Crown |   1   |         \+2 to CHA-based skill checks         |
 
 ### **Clothing Guidelines**
 
@@ -182,11 +183,11 @@ Specialized equipment for crafting and professional work. When a career grants �
 
 | Tool Set                |   Cost   | Slots |       Primary Skill      |
 |:------------------------|:--------:|:-----:|:------------------------:|
-| Alchemist's supplies    | 30 Crown |   2   |          Thaumaturgy     |
-| Armorer's tools         | 18 Crown |   2   |          Crafting        |
+| Alchemist's supplies    | 30 Crown |   1   |          Thaumaturgy     |
+| Armorer's tools         | 18 Crown |   1   |          Crafting        |
 | Calligrapher's supplies | 15 Crown |   1   |         Manipulate |
-| Blacksmith's tools      | 20 Crown |   2   |     Crafting (metal)     |
-| Carpenter's tools       | 15 Crown |   2   |      Crafting (wood)     |
+| Blacksmith's tools      | 20 Crown |   1   |     Crafting (metal)     |
+| Carpenter's tools       | 15 Crown |   1   |      Crafting (wood)     |
 | Jeweler's tools         | 25 Crown |   1   |     Crafting (fine) |
 | Thieves' tools          | 30 Crown |   1   | Subterfuge (Lockpicking) |
 
@@ -213,8 +214,8 @@ Attempting skilled work **without proper tools:**
 
 | Tack & Harness |   Cost   | Slots |            Notes           |
 |:---------------|:--------:|:-----:|:--------------------------:|
-| Saddle, riding | 25 Crown |   3   | Required for mounted combat |
-| Saddle, bags   | 15 Crown |   2   |       Holds 4 Slots        |
+| Saddle, riding | 25 Crown |   1   | Required for mounted combat |
+| Saddle, bags   | 15 Crown |   1   |       Holds 4 Slots        |
 | Bit and bridle | 5 Crown  |   1   | Required to control mount  |
 
 *Feed for mounts is abstracted away \- see Stabling under Services, below, which includes feed.*
@@ -274,19 +275,19 @@ Attempting skilled work **without proper tools:**
 
 Pre-assembled equipment packages for common character types. Every kit bundles the same survival base \- Backpack, Bedroll, Waterskin, Rations (6 days), and Torches (3) \- with gear suited to that archetype, priced at roughly a 10% discount over buying every item piecemeal.
 
-### **Adventurer's Kit (45 Crown, ~10 Slots)**
+### **Adventurer's Kit (45 Crown, ~9 Slots)**
 
 Backpack, bedroll, waterskin, rations (6 days), torches (9), belt pouch, rope (50 ft)
 
-### **Healer's Kit (125 Crown, ~8 Slots)**
+### **Healer's Kit (125 Crown, ~10 Slots)**
 
 Backpack, bedroll, waterskin, rations (6 days), torches (3), Healer's kit, bandages (10), surgical tools, antitoxin
 
-### **Scholar's Kit (100 Crown, ~9 Slots)**
+### **Scholar's Kit (100 Crown, ~10 Slots)**
 
 Backpack, bedroll, waterskin, rations (6 days), torches (3), Spellbook (blank book), Arcane Parchment (50 sheets), candles (9)
 
-### **Devotee's Kit (130 Crown, ~7 Slots)**
+### **Devotee's Kit (130 Crown, ~8 Slots)**
 
 Backpack, bedroll, waterskin, rations (6 days), torches (3), Religious codex, Holy symbol, Incense (10 sticks)
 

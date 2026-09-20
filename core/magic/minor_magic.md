@@ -1,18 +1,18 @@
 ## Minor Magic
 
-Practitioners with **at least 1 rank** in a magic school can manifest small, instinctive effects by spending Mana \- larger scale, longer duration, or greater complexity costs more. There is no free-form casting; even the smallest trick costs **at least 1 Mana**.
+Practitioners who've unlocked **at least Novice tier** in a magic school (see [[Magic Feats|magic_feats]]) can manifest small, instinctive effects by spending Will \- larger scale, longer duration, or greater complexity costs more. There is no free-form casting; even the smallest trick costs **at least 1 Will**, and it's committed before rolling, same as any other casting (see [[Casting|magic_overview]]).
 
-**Roll:** 1d12 \+ that school's own Skill vs. DC \- pick Very Easy, Medium, Hard, or Very Hard off the [[DC tier table|core_rules]] by how ambitious the effect's scale/duration is. On failure, the Mana is spent but the effect fizzles or manifests weakly.
+**Roll:** `1d12` vs. DC \- pick Lesser (5), Common (7), or Greater (9) off [[Setting a Difficulty Class \(DC\)|core_rules]]'s ladder by how ambitious the effect's scale/duration is. No Skill or Attribute is ever added, and a Minor effect can't be Channelled or Pushed \- it's a single flat `1d12`, not a working. On failure, the Will is spent but the effect fizzles or manifests weakly.
 
 **Restrictions  \-  Minor Magic cannot:**
 
-- Deal damage or heal  
-- Replicate spell effects  
-- Force Ward checks  
-- Provide combat bonuses  
+- Deal damage or heal
+- Replicate a working's effect
+- Force a resist roll
+- Provide combat bonuses
 - Create matter or resources from nothing (water, food, light, or fuel must come from an existing source)
 
-| Mana | Scale | Duration |
+| Will | Scale | Duration |
 | :---: | :---- | :---- |
 | **1** | 10 ft cube | Up to 10 minutes |
 | **2** | 20 ft cube | Up to 1 hour |
@@ -20,7 +20,7 @@ Practitioners with **at least 1 rank** in a magic school can manifest small, ins
 
 **Examples:**
 
-| School | 1 Mana | 2-3 Mana |
+| School | 1 Will | 2-3 Will |
 | :---- | :---- | :---- |
 | Aeromancy | Light breeze, amplify voice, blow out candles, carry whispered messages 60 ft, ventilate a small room | Clear smoke from a large area, favorable winds for a small boat |
 | Geomancy | Sense vibrations through stone, make pebbles tremble, leave temporary marks in rock, shape soft earth into a seat, smooth a rocky path | Excavate a shallow pit, reinforce a doorframe |

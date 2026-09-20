@@ -2,9 +2,7 @@
 
 **[Core Rules](core_rules)**
 
-**[Wounds & Survival](wounds_and_survival)**
-
-**[Carrying & Resting](carrying_and_resting)**
+**[Rest & Survival](rest_and_survival)**
 
 **Character**
 - [Character Creation](character_creation)
@@ -41,8 +39,9 @@
 - [Overview](magic_overview)
 - [Laws of Magic](laws_of_magic)
 - [Minor Magic](minor_magic)
+- [Magic Feats](magic_feats)
 
-**Arcane Magic**
+**Schools (Arcane)**
 - [Overview](arcane_overview)
 - [Aeromancy](aeromancy)
 - [Geomancy](geomancy)
@@ -50,7 +49,7 @@
 - [Pyromancy](pyromancy)
 - [Shadowmancy](shadowmancy)
 
-**Divine Magic**
+**Schools (Divine)**
 - [Overview](divine_overview)
 - [Benediction](benediction)
 - [Cultivation](cultivation)
@@ -62,8 +61,7 @@
 - [Overview](feats_overview)
 - [General](general_feats)
 - [Martial](martial_feats)
-- [Arcane](arcane_feats)
-- [Divine](divine_feats)
+- [Magic](magic_feats)
 - [Skill](skill_feats)
 - [Prestige](prestige_feats)
 - [Racial](racial_feats)

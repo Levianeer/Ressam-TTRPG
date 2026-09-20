@@ -7,7 +7,7 @@
 The Tembels are slow-moving, contemplative beings descended from a cursed Orkh warband. Once brutal raiders, they were transformed by a Tapio’s wrath into peaceful, sloth-like creatures \- physically weak, yet spiritually profound. Today, they live monastic lives rooted in patience, healing, and harmony with the land. Seen by others as serene sages or relics of a gentler age, Tembels embrace their curse as a blessing of stillness, resisting haste in favour of long reflection and quiet resilience.
 
 **Homeland:** Halig, some in Inggaz  
-**Starting Attributes:** \+1 MIND, \+1 FAI, \-1 DEX  
+**Starting Attributes:** \+2 MIND, \-1 DEX  
 **Age:** Adult \~24, Lives to \~100  
 **Alignment:** Law  
 **Size:** Medium (\~5 ft, can grow larger)  
@@ -21,7 +21,7 @@ The Tembels are slow-moving, contemplative beings descended from a cursed Orkh w
 
 **Natural Born Healer:** When you use the Chirurgery skill to stabilize a creature, or administer Bandages or an Alchemy healing item to them, grant an additional 1 Patched Wound to the target.  
 **Deliberate Mind:** While below half Wounds, you may spend **1 Tempo Die** to reduce incoming damage by 1d6 as you endure through stillness.  
-**Oft Sleepy:** You heal Wounds at twice the normal rate (see [[Wound Recovery|wounds_and_survival]]) and restore 50% additional Mana when completing any Rest (rounded down).
+**Oft Sleepy:** You heal Wounds at twice the normal rate (see [[Wound Recovery|rest_and_survival]]) and restore 50% additional Mana when completing any Rest (rounded down).
 
 ---
 

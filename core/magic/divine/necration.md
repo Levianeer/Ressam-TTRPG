@@ -18,7 +18,7 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Duration:** Channel
 - **Effect:** Target one creature you can see. Make a Petition Roll (DC 7).
 
-  - **Success:** The target’s armor degrades by 1 AR and they take 1d6+FAI necrotic damage. At the start of each of your turns while channeling, the effect continues automatically.
+  - **Success:** The target’s armor loses 1 durability and they take 1d6+FAI necrotic damage. At the start of each of your turns while channeling, the effect continues automatically.
 
 - At the end of each of their turns, the target may attempt to fight off the rot by rolling 1d12 \+ STR vs. your original Petition Roll total. On success, the spell ends.
 
@@ -40,7 +40,7 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Casting Time:** Major Action
 - **Range:** Short
 - **Duration:** 24 hour
-- **Effect:** Make a Petition Roll (DC 7) as you animate a humanoid corpse as an undead thrall under your control. **Success:** The thrall acts immediately after your turn, following simple verbal commands (no action required). It has Wounds equal to your FAI × 3, AR 0, STR 4 and DEX 1 - a **Tempo Pool of 2 dice at `1d10`** - and attacks with whatever weapon it held in life (or 1d4 blunt unarmed), untrained. It Parries with that same pool and no Skill. The thrall cannot speak or use skills. When the spell ends, the corpse collapses \- it cannot be animated again for 8 hours.
+- **Effect:** Make a Petition Roll (DC 7) as you animate a humanoid corpse as an undead thrall under your control. **Success:** The thrall acts immediately after your turn, following simple verbal commands (no action required). It has Wounds equal to your FAI × 3, is Unarmored, STR 4 and DEX 1 - a **Tempo Pool of 2 dice at `1d10`** - and attacks with whatever weapon it held in life (or 1d4 blunt unarmed), untrained. It Parries with that same pool and no Skill. The thrall cannot speak or use skills. When the spell ends, the corpse collapses \- it cannot be animated again for 8 hours.
 
 **Mortis Harvest \- Mana Cost 4**
 
@@ -61,6 +61,6 @@ Necration is the manipulation of death, decay, and the threshold between life an
 - **Duration:** Instant
 - **Effect:** You tear at the connection between a creature's soul and body. Make a Petition Roll (DC 7).
 
-  - **Success:** 4d8 \+ FAI necrotic damage and the target’s armor degrades by 2 AR.
+  - **Success:** 4d8 \+ FAI necrotic damage and the target’s armor loses 2 durability.
 
 - If this spell reduces a creature to 0 Wounds, you may immediately animate their corpse as per Raise Thrall without spending additional Mana or requiring concentration (this thrall lasts 1 hour, then collapses permanently).

@@ -2,7 +2,7 @@
 
 **Three types:** Oil (base effect), Powder (modifier), Catalyst (delivery method) all of which must be contained in vials or flasks.
 
-Note: Ingredients are Tiny items \- 3 vials to a Slot.
+Note: Ingredient vials are carried in a case of 3 \= 1 Slot, the same bundle convention as Rations or Torches (see [[Carrying Capacity|rest_and_survival]]).
 
 ### **Oils**
 
@@ -70,7 +70,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 | \-1 to \-2 | **Partial Success** \- Create 1 concoction only, the rest of the ingredients are still spent |
 | \-3 or lower | **Failure** \- Ingredients wasted, no product |
 
-**Note:** All potions made via Alchemy are Tiny items \- 3 to a Slot.  
+**Note:** Potions made via Alchemy are carried in a case of 3 \= 1 Slot, the same bundle convention as Rations or Torches.  
 ---
 
 ## Acquiring Ingredients
@@ -91,31 +91,23 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 
 ### **Healing Potion (Quick)**
 
-- **Ingredients:** Vital Oil \+ Amplifying Powder \+ Abkasp  
-- **Effect:** Drink (Minor Action). Restores Patched Wounds  
-  - **Common:** Gain **1 \+ Bonus** Patched Wounds  
-  - **Uncommon:** Gain **1 \+ Bonus** Patched Wounds  
-  - **Rare:** Gain **1 \+ Bonus** Patched Wounds  
-- **Limit:** Drinking multiple Healing Potions between rests causes Trauma \- the first is free, each additional one grants \+1 Trauma  
+- **Ingredients:** Vital Oil \+ Amplifying Powder \+ Abkasp
+- **Effect:** Drink (Minor Action). Heals **1 \+ Bonus** Wounds \- real Wounds, not a separate resource. **Costs Trauma the same as any healing** (see [[Trauma|rest_and_survival]]): 1 per Wound healed, same as a Chirurgery check or a Healing Draught. A Downed character can't drink one themselves.
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
 ### **Revitalizing Bomb (Involved)**
 
-- **Ingredients:** Vital Oil \+ Prolonging Powder \+ Eshzera  
-- **Effect:** Thrown (20/40 ft), 10 ft radius. Allies gain Patched Wounds  
-  - **Common:** Allies gain **1 \+ Bonus** Patched Wounds  
-  - **Uncommon:** Allies gain **1 \+ Bonus** Patched Wounds  
-  - **Rare:** Allies gain **1 \+ Bonus** Patched Wounds  
+- **Ingredients:** Vital Oil \+ Prolonging Powder \+ Eshzera
+- **Effect:** Thrown (20/40 ft), 10 ft radius. Each ally caught in the radius heals **1 \+ Bonus** Wounds \- real Wounds, same Trauma cost as any healing, applied per ally healed.
 - **Value:** 75 Crown (Common), 95 Crown (Uncommon), 135 Crown (Rare)
 
 ### **Endurance Salve (Quick)**
 
-- **Ingredients:** Vital Oil \+ Stabilizing Powder \+ Nat’khor  
-- **Effect:** Apply before a Short Rest. That Short Rest also automatically removes additional levels of Trauma, on top of any Trauma it would otherwise remove  
-  - **Common:** Remove 1 additional level of Trauma  
-  - **Uncommon:** Remove 2 additional levels of Trauma  
-  - **Rare:** Remove 3 additional levels of Trauma  
-- **Note:** Endurance Salves do not count towards your Healing Potions per rest.  
+- **Ingredients:** Vital Oil \+ Stabilizing Powder \+ Nat’khor
+- **Effect:** Apply before any Rest (see [[Rest \& Repair|rest_and_survival]]). That Rest heals additional Wounds on top of its normal amount \- still costs Trauma per Wound healed, same as any other source. **Trauma itself is untouched**: only [[Revelry \& Leisure|rest_and_survival]] removes it, and nothing in Alchemy bypasses that.
+  - **Common:** Heal **1** additional Wound
+  - **Uncommon:** Heal **1 \+ Bonus** additional Wounds
+  - **Rare:** Heal **1 \+ Bonus** additional Wounds
 - **Value:** 30 Crown (Common), 50 Crown (Uncommon), 90 Crown (Rare)
 
 ---
@@ -125,7 +117,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Corrosive Draught (Involved)**
 
 - **Ingredients:** Reactive Oil \+ Amplifying Powder \+ Abkasp  
-- **Effect:** Coat weapon (Minor Action). Your next melee attack within 1 minute deals bonus acid damage and ignores 3 AR, can also be Thrown (20/40 ft), 10 ft radius, lowers AR by 3 while the target is standing in the area.  
+- **Effect:** Coat weapon (Minor Action). Your next melee attack within 1 minute deals bonus acid damage and lowers the target's Dent Line and Rend Line by 3 for that attack; can also be Thrown (20/40 ft), 10 ft radius, lowering a standing target's Dent Line and Rend Line by 3 while they remain in the area.  
   - **Common:** **1d8 \+ Bonus** acid damage  
   - **Uncommon:** **1d8 \+ Bonus** acid damage  
   - **Rare:** **1d8 \+ Bonus** acid damage  
@@ -174,10 +166,10 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Stoneskin Salve (Elaborate)**
 
 - **Ingredients:** Protective Oil \+ Prolonging Powder \+ Nat’khor  
-- **Effect:** Apply (Major Action). Gain bonus AR for 10 minutes  
-  - **Common:** **\+2 \+ Bonus** AR  
-  - **Uncommon:** **\+2 \+ Bonus** AR  
-  - **Rare:** **\+2 \+ Bonus** AR  
+- **Effect:** Apply (Major Action). Gain a bonus to your Dent Line and Rend Line for 10 minutes  
+  - **Common:** **\+2 \+ Bonus** to both Lines  
+  - **Uncommon:** **\+2 \+ Bonus** to both Lines  
+  - **Rare:** **\+2 \+ Bonus** to both Lines  
 - **Value:** 120 Crown (Common), 140 Crown (Uncommon), 180 Crown (Rare)
 
 ---
@@ -205,7 +197,7 @@ Oils and Powders come in three qualities based on their rarity. Rarity also sets
 ### **Alertness Salve (Quick)**
 
 - **Ingredients:** Sensory Oil \+ Prolonging Powder \+ Nat’khor  
-- **Effect:** Apply (Minor Action). You cannot be **Ambushed** (see [[Surprise|exchange]]), and your **Initiative** score is \+2 for the duration \- it is a static number, not a roll  
+- **Effect:** Apply (Minor Action). You are never treated as unaware (see [[Awareness|exchange]]), and your **Initiative** score is \+2 for the duration \- it is a static number, not a roll  
   - **Common:** **1 \+ Bonus** hour duration  
   - **Uncommon: 2 \+ Bonus** hours duration  
   - **Rare:** **3 \+ Bonus** hours duration  

@@ -7,7 +7,7 @@
 The Varulf are cursed reflections of humanity \- neither fully man nor wholly beast, born from a nightmare shared by mankind: the fear of losing control, of the savage lurking beneath civility. Transformed through bite and blood, a Varulf walks a tormented line between monstrous hunger and human conscience. Some exile themselves to the wilds in shame; others make a legend of their power instead. Either way, the howl follows them.
 
 **Homeland:** Lustralis  
-**Starting Attributes:** \+2 STR, \-1 FAI  
+**Starting Attributes:** \+2 STR, \-1 MIND  
 **Age:** Lives 100s of years  
 **Alignment:** Chaotic  
 **Size:** Medium (5-6 ft)  
@@ -25,7 +25,7 @@ The Varulf are cursed reflections of humanity \- neither fully man nor wholly be
 **Bestial Form:** Once per Field Rest or Long Rest, you can use a Minor Action to transform for 10 minutes. While transformed:
 
 - \+10 ft speed, \+2 STR.  
-- \+2 Natural AR.  
+- \+2 to your natural Dent Line and Rend Line.  
 - Gain 2 Patched Wounds.  
 - Gain natural weapons: Claws (1d8+STR slashing), Bite (1d10+STR piercing). These count as magical.
 

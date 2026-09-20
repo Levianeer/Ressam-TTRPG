@@ -18,11 +18,13 @@ Take the five priorities, **A** through **E**, and assign one to each of the fiv
 
 | Priority | Attributes (Array) | Skills (Pool) | Career             | Feats | Race                            |
 |:--------:|:------------------:|:-------------:|:-------------------|:-----:|:--------------------------------|
-|  **A**   |  3, 2, 2, 1, 1, 0  |      18       | Any Status tier    |   4   | Any Race Tier                   |
-|  **B**   |  2, 2, 2, 1, 1, 0  |      15       | Up to Upper-Middle |   3   | Up to Tier B (Uncanny)          |
-|  **C**   |  2, 2, 1, 1, 0, 0  |      12       | Up to Middle       |   2   | Up to Tier C (Exotic)           |
-|  **D**   |  2, 1, 1, 1, 0, 0  |       9       | Up to Lower-Middle |   1   | Up to Tier D (Marked)           |
-|  **E**   |  1, 1, 1, 1, 0, 0  |       6       | Low only           |   0   | Tier E only (the four Artefolk) |
+|  **A**   |     3, 2, 1, 0     |      18       | Any Status tier    |   4   | Any Race Tier                   |
+|  **B**   |     2, 2, 1, 0     |      15       | Up to Upper-Middle |   3   | Up to Tier B (Uncanny)          |
+|  **C**   |     2, 1, 1, 0     |      12       | Up to Middle       |   2   | Up to Tier C (Exotic)           |
+|  **D**   |     1, 1, 1, 0     |       9       | Up to Lower-Middle |   1   | Up to Tier D (Marked)           |
+|  **E**   |     1, 1, 0, 0     |       6       | Low only           |   0   | Tier E only (the four Artefolk) |
+
+**2026-09-14: the array shrank from six numbers to four** when ARC and FAI were deleted (see [[Attributes|core_rules]]) - one number per remaining Attribute (STR/DEX/MIND/CHA). Freshly resized rather than just trimmed, to keep the same shape the six-number arrays had: only an **A** ever reaches a 3, and every tier but **E** carries exactly one guaranteed 0 (**E** carries two - the tier that's openly trading Attributes away for everything else).
 
 - **Attributes** hands you a **standard array** for Step 5 - six fixed numbers, one per Attribute, assigned in whatever order you like. There is no Attribute point pool and nothing to buy: a higher priority is a better set of numbers, not more currency. Only an **A** starts with a 3 in anything.
 - **Skills** sets the size of your Skill point budget for Step 5 - those points are still spent freely within the normal caps, this only changes how many you have.
@@ -61,17 +63,17 @@ Your two Step 2 priorities pay out in two different currencies here, and neither
 
 ### **Attributes: assign the array**
 
-Your Attributes priority hands you a **standard array** \- six fixed numbers. **Assign one to each of your six Attributes**, in whatever order you like. There is nothing to buy and no budget to run out of: a better priority is a better set of numbers, not a bigger pool.
+Your Attributes priority hands you a **standard array** \- four fixed numbers. **Assign one to each of your four Attributes** (STR, DEX, MIND, CHA), in whatever order you like. There is nothing to buy and no budget to run out of: a better priority is a better set of numbers, not a bigger pool.
 
-| Priority | Standard Array   |
-|:--------:|:-----------------|
-|  **A**   | 3, 2, 2, 1, 1, 0 |
-|  **B**   | 2, 2, 2, 1, 1, 0 |
-|  **C**   | 2, 2, 1, 1, 0, 0 |
-|  **D**   | 2, 1, 1, 1, 0, 0 |
-|  **E**   | 1, 1, 1, 1, 0, 0 |
+| Priority | Standard Array |
+|:--------:|:----------------|
+|  **A**   | 3, 2, 1, 0       |
+|  **B**   | 2, 2, 1, 0       |
+|  **C**   | 2, 1, 1, 0       |
+|  **D**   | 1, 1, 1, 0       |
+|  **E**   | 1, 1, 0, 0       |
 
-**Every array is used whole.** You take all six numbers, the zeroes included \- you can't decline one, trade two in for a higher one, or leave a number unassigned. **A 3 is a Level 1 ceiling only an A reaches**, and only in a single Attribute.
+**Every array is used whole.** You take all four numbers, the zeroes included \- you can't decline one, trade two in for a higher one, or leave a number unassigned. **A 3 is a Level 1 ceiling only an A reaches**, and only in a single Attribute.
 
 **Racial modifiers (Step 3) are applied afterward, on top of the array**, and aren't limited by it: a race with \+2 in an Attribute you gave your 3 starts you at 5, and a race with \-1 in one you gave a 0 starts you at \-1. Both are legal (see Attribute Limits, below).
 
@@ -120,16 +122,17 @@ See the **Feats** chapter for the complete list.
 | :---- | :---- |
 | **Wounds** | Size baseline \+ Feats |
 | **Mana Points (MP)** | MIND × 2, minimum 0 |
-| **Slots** | 2 × STR, minimum 0 |
+| **Backpack Slots** | 2 × STR, minimum 0 |
+| **Bulky Capacity** | 5 \+ Size modifier (Small \+0, Medium \+1, Large \+2, Huge \+4) |
 | **Tempo Pool** | DEX \+ 1 dice, minimum 1, refilling at the start of your turn |
 | **Tempo Die** | STR 1 or lower: `1d4`, STR 2: `1d6`, STR 3: `1d8`, STR 4: `1d10`, STR 5\+: `1d12` |
 | **Parry** | `1d(Tempo Die) \+ Weapon Skill \+ Guard \+ Distance` |
 | **Initiative** | 5 \+ MIND (static, never rolled) |
-| **Armor Rating (AR)** | Equipped armor's AR value |
+| **Dent Line / Rend Line** | Equipped armor's printed values |
 
 **Your Tempo Pool is the only resource in a fight** - every attack, every Parry, every Opportunity Attack comes out of it, and there is no free defense of any kind. At STR 0 or lower that `1d4` is rolled at Disadvantage; above 5, STR stays at `1d12` while every point of DEX keeps adding a die. See [[Your Tempo Pool|exchange]].
 
-**Three of these floor rather than go negative** (see Attribute Limits in Step 5): a **Tempo Pool** is never fewer than **1** die however low DEX goes, and **Mana** and **Slots** never drop below **0**. Everything else takes a negative score straight - a \-1 Ward is a \-1 Ward, a \-1 to melee damage is a real subtraction (a blow reduced to 0 or less inflicts no Wound, see [[Damage|combat]]), and a MIND below 0 gives an Initiative under 5 and a Knowledge Freebie Pool of nothing.
+**Three of these floor rather than go negative** (see Attribute Limits in Step 5): a **Tempo Pool** is never fewer than **1** die however low DEX goes, and **Mana** and **Backpack Slots** never drop below **0**. Everything else takes a negative score straight - a \-1 Ward is a \-1 Ward, a \-1 to melee damage is a real subtraction (a blow reduced to 0 or less inflicts no Wound, see [[Damage|combat]]), and a MIND below 0 gives an Initiative under 5 and a Knowledge Freebie Pool of nothing. **Bulky Capacity doesn't derive from an Attribute at all** - it's fixed by Size, so nothing about your array changes it.
 
 ---
 
@@ -137,7 +140,7 @@ See the **Feats** chapter for the complete list.
 
 Your career provides starting equipment and currency. Purchase additional items from the **Equipment** chapter.
 
-**Armor Reminder:** Armor Penalty affects Acrobatics, Subterfuge and spellcasting, and **nothing at all inside a fight** (see [[Armor|armor]]). Nothing reduces it - no Skill and no Feat.
+**Armor Reminder:** Armor Penalty affects Acrobatics and Subterfuge, and **nothing at all inside a fight** (see [[Armor|armor]]). Nothing reduces it - no Skill and no Feat. **2026-09-14: Armor Penalty no longer touches spellcasting** - the new unified casting roll (see [[Magic Overview|magic_overview]]) carries no modifier for it to touch.
 
 ---
 

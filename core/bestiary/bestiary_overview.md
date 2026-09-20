@@ -11,11 +11,11 @@ Every entry lists exactly what a GM needs at the table and nothing else - Slots,
 - **Frequency:** How likely a GM is to actually field this creature in its home region - see Frequency, below.
 - **Attributes / Skills:** Only Skills relevant to this NPC's kit are listed; anything unlisted is 0 (untrained).
 - **Wounds:** Size baseline (Medium \= 3 for every entry here) plus any Feat that adds to it.
-- **Wound Threshold:** How much damage-after-AR it takes to inflict 1/2/3 Wounds in one hit, keyed to this NPC's own STR - see [[Wounds and Survival|wounds_and_survival]]. Given as three bands (e.g. `1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+)`) so a GM doesn't have to cross-reference that table's STR row mid-fight.
+- **Wound Threshold:** How much damage-after-AR it takes to inflict 1/2/3 Wounds in one hit, keyed to this NPC's own STR - see [[Wounds and Survival|rest_and_survival]]. Given as three bands (e.g. `1 Wound (1-7), 2 Wounds (8-13), 3 Wounds (14+)`) so a GM doesn't have to cross-reference that table's STR row mid-fight.
 - **Tempo Pool:** `DEX + 1` dice, never fewer than 1, sized by STR - see [[Your Tempo Pool|exchange]]. This is the whole of an NPC's off-turn economy: it pays for every Parry and Opportunity Attack the same way it does for a PC.
 - **AR:** Current Armor Rating from worn or natural armor - see [[Armor|armor]]. A shield's Guard is not AR; it adds to the Parry roll instead (below).
-- **Parry:** `1d(Tempo Die) + Weapon Skill + Guard + Edge`, the same formula a PC rolls - see [[Defending|exchange]]. Costs 1 Tempo Die, same as everything else in an Exchange.
-- **Attack:** The Skill Rank added to `1d(Tempo Die) + Weapon Skill` on an attack roll ([[Attacking|exchange]]) - `-` means the attack rolls the die alone (untrained: 0 Skill Ranks add nothing).
+- **Parry:** `1d(Tempo Die) + Weapon Skill + Guard + Edge` at 1 die invested, the same formula a PC rolls - see [[Defending|exchange]]. An NPC can invest more dice into a single Parry exactly like a PC can, summing them the same way.
+- **Attack:** The Skill Rank added to `1d(Tempo Die) + Weapon Skill` on an attack roll at 1 die invested ([[Attacking|exchange]]) - `-` means the attack rolls the die alone (untrained: 0 Skill Ranks add nothing). More dice can be invested the same way a PC does.
 - **Damage:** Weapon Damage \+ STR (or \+ DEX for a missile weapon), before the target's AR is subtracted.
 - **Wards:** Passive Ward scores (`5 + Attribute`) for the Attributes this NPC's kit actually calls on - STR, DEX, MIND.
 - **Movement:** Walking Speed in feet, plus any secondary Speed (flying, climbing) it has. Armor Penalty never reduces this - it restricts Acrobatics, Subterfuge, and spellcasting, but not raw Speed and nothing in an Exchange (see [[Armor|armor]]).

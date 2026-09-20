@@ -8,7 +8,7 @@ Creatures with no race or continent tied to them - built once, reused anywhere i
 
 **Frequency:** Common
 
-**Attributes:** STR 1, DEX 1, MIND 1, ARC 0, FAI 0, CHA 1
+**Attributes:** STR 1, DEX 1, MIND 1, CHA 1
 
 **Skills:** None (0 ranks in everything)
 
@@ -20,7 +20,7 @@ Creatures with no race or continent tied to them - built once, reused anywhere i
 
 **Wards:** STR 6, DEX 6, MIND 6
 
-**Reactions:** 1/round. No Maneuver - Dodge is technically legal on DEX 1 alone (see [[Maneuver|maneuvers]]), but a Peasant doesn't fight back with any real skill, and modeling a Reaction here (with its chance of a free Riposte) reads as far too competent for what's meant to be a harmless mob unit. May still spend its Reaction on a plain Opportunity Attack if armed and a creature leaves its reach.
+**Reactions:** 1/round. No Maneuver - Dodge is technically legal on DEX 1 alone (see [[Maneuver|maneuvers]]), but a Peasant doesn't fight back with any real skill. May still spend its Reaction on a plain Opportunity Attack if armed and a creature leaves its reach.
 
 **Movement:** 30 ft.
 
@@ -44,7 +44,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 2, DEX 2, MIND 1, ARC 0, FAI 0, CHA 1
+**Attributes:** STR 2, DEX 2, MIND 1, CHA 1
 
 **Skills:** Cleaving Blades 2, Intimidate 1, Perception 1
 
@@ -78,7 +78,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 3, DEX 1, MIND 1, ARC 0, FAI 0, CHA 1
+**Attributes:** STR 3, DEX 1, MIND 1, CHA 1
 
 **Skills:** Hafted & Polearms 2, Perception 1
 
@@ -96,7 +96,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Equipment:** Spear (1d6 Piercing, Medium Reach, Versatile, Throwable), Heater Shield (\+2 AR while Blocking, Penalty \-1), Mail Shirt (AR 4, Penalty \-2).
 
-**In Combat:** A Guard holds a line rather than chasing - the spear's Medium Reach and Versatile property mean it can brace two-handed against a charge or free a hand for the shield the rest of the time. Low Evasion (heavy armor plus a shield) is the same design pattern as the Knight below, just at a fraction of the investment: most hits "connect" in the passive sense, and Block is where the real defense happens. A Guard fights to hold a post or protect a charge, not to the death - it calls for backup or breaks off once a fight turns clearly unwinnable.
+**In Combat:** A Guard holds a line rather than chasing - the spear's Medium Reach and Versatile property mean it can brace two-handed against a charge or free a hand for the shield the rest of the time. Low Evasion (heavy armor plus a shield) means most hits "connect" in the passive sense, and Block is where the real defense happens. A Guard fights to hold a post or protect a charge, not to the death - it calls for backup or breaks off once a fight turns clearly unwinnable.
 
 ---
 
@@ -106,7 +106,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 2, DEX 2, MIND 1, ARC 0, FAI 0, CHA 1
+**Attributes:** STR 2, DEX 2, MIND 1, CHA 1
 
 **Skills:** Daggers & Wrestling 2, Perception 2
 
@@ -124,7 +124,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Natural Weapons:** Bite (1d6 Piercing, Short Reach).
 
-**In Combat:** A Wolf leans entirely on not getting hit in the first place - Evasion 9 and a real Dodge bonus, backed by nothing else, since it carries no AR at all. It won't stand and trade: expect it to circle, wait for an opening or a straggler, and disengage the moment a fight stops going its way. A pack of Wolves is worse than the sum of its parts once positioning is on the table, even though this stat block (like every other one here) doesn't model that directly.
+**In Combat:** A Wolf leans entirely on not getting hit in the first place - Evasion 9 and a real Dodge bonus, backed by nothing else, since it carries no AR at all. It won't stand and trade: expect it to circle, wait for an opening or a straggler, and disengage the moment a fight stops going its way. A pack of Wolves is worse than the sum of its parts once positioning is on the table.
 
 ---
 
@@ -134,7 +134,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 1, DEX 1, MIND 0, ARC 0, FAI 0, CHA 0
+**Attributes:** STR 1, DEX 1, MIND 0, CHA 0
 
 **Skills:** Daggers & Wrestling 1, Subterfuge 1
 
@@ -152,7 +152,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Natural Weapons:** Bite (1d4 Piercing, Short Reach).
 
-**Size:** Small (2 Wounds baseline, not Medium's 3 - see [[Wounds and Survival|wounds_and_survival]]).
+**Size:** Small (2 Wounds baseline, not Medium's 3 - see [[Wounds and Survival|rest_and_survival]]).
 
 **In Combat:** A Giant Rat cannot meaningfully hurt an armored target - its bite doesn't get through most AR at all. It exists to swarm the unarmored, infest a dungeon or sewer level with a body count, and die in one hit apiece. Never field one alone as a real threat; a nest of them is a nuisance encounter, not a combat one.
 
@@ -164,7 +164,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 1, DEX 2, MIND 1, ARC 0, FAI 0, CHA 1
+**Attributes:** STR 1, DEX 2, MIND 1, CHA 1
 
 **Skills:** Ranged 2, Perception 2
 
@@ -182,7 +182,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Equipment:** Longbow (1d8 Piercing, ranged), a hunting knife as backup, Gambeson (AR 2, Penalty \-1).
 
-**In Combat:** An Archer opens at range, using Perception 2 to spot the party before being spotted, and keeps its distance for as long as terrain allows - closing to melee is a last resort, not a plan. Like the Longbow Archer PC archetype it's built the same way as, it has nothing to answer a melee attacker with beyond Dodge once someone actually reaches it.
+**In Combat:** An Archer opens at range, using Perception 2 to spot the party before being spotted, and keeps its distance for as long as terrain allows - closing to melee is a last resort, not a plan. It has nothing to answer a melee attacker with beyond Dodge once someone actually reaches it.
 
 ---
 
@@ -192,7 +192,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Common
 
-**Attributes:** STR 1, DEX 2, MIND 1, ARC 0, FAI 0, CHA 0
+**Attributes:** STR 1, DEX 2, MIND 1, CHA 0
 
 **Skills:** Daggers & Wrestling 2, Perception 2
 
@@ -220,7 +220,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Uncommon
 
-**Attributes:** STR 2, DEX 1, MIND 0, ARC 0, FAI 0, CHA 0
+**Attributes:** STR 2, DEX 1, MIND 0, CHA 0
 
 **Skills:** Cleaving Blades 1
 
@@ -238,9 +238,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Equipment:** A rusted, pitted blade (1d6 Slashing, Short Reach), no armor.
 
-**Damage Types:** **Vulnerability** to Blunt (brittle bone shatters under a heavy blow); **Immunity** to Poison (no blood or organs left to poison). See Resistance, Vulnerability, and Immunity, [[Wounds and Survival|wounds_and_survival]].
+**Damage Types:** **Vulnerability** to Blunt (brittle bone shatters under a heavy blow); **Immunity** to Poison (no blood or organs left to poison). See Resistance, Vulnerability, and Immunity, [[Wounds and Survival|rest_and_survival]].
 
-**In Combat:** A Skeleton is deliberately weaker than a Bandit or Guard despite similar Attribute/Skill investment - no armor, a mediocre Parry, and MIND 0 - because it isn't a trained soldier anymore, just bone that still remembers how to swing. It doesn't flee, doesn't fear, and doesn't stop until destroyed; where a Bandit runs below half Wounds, a Skeleton fights on to zero. A mace or warhammer-wielding party will cut through a Skeleton mob fast once Vulnerability is in play - a GM can use that as a deliberate weakness for players to discover, not just a number on a page.
+**In Combat:** A Skeleton is weaker than a Bandit or Guard despite similar Attribute/Skill investment - no armor, a mediocre Parry, and MIND 0. It doesn't flee, doesn't fear, and doesn't stop until destroyed; where a Bandit runs below half Wounds, a Skeleton fights on to zero. A mace or warhammer-wielding party will cut through a Skeleton mob fast once Vulnerability is in play.
 
 ---
 
@@ -250,7 +250,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Uncommon
 
-**Attributes:** STR 2, DEX 0, MIND 0, ARC 0, FAI 0, CHA 0
+**Attributes:** STR 2, DEX 0, MIND 0, CHA 0
 
 **Skills:** Daggers & Wrestling 1
 
@@ -268,7 +268,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Natural Weapons:** Grasping Claws (1d6 Blunt, Short Reach) - may attempt a Grapple (Brawling table, [[Weapons|weapons]]) instead of a normal attack.
 
-**Damage Types:** **Resistance** to Piercing (stabbing does little to dead flesh with nothing vital left to hit); **Immunity** to Poison. See Resistance, Vulnerability, and Immunity, [[Wounds and Survival|wounds_and_survival]].
+**Damage Types:** **Resistance** to Piercing (stabbing does little to dead flesh with nothing vital left to hit); **Immunity** to Poison. See Resistance, Vulnerability, and Immunity, [[Wounds and Survival|rest_and_survival]].
 
 **In Combat:** A Zombie doesn't feint, doesn't retreat, and doesn't stop - it walks straight at the nearest living thing and grapples or claws until one of them stops moving. DEX 0 means Initiative \+0 and no Reaction worth spending, so it's rarely dangerous to a party that keeps its distance; the real threat is being cornered or swarmed by several at once in a confined space. Piercing Resistance quietly punishes a party that leans on rapiers and arrows without noticing - a good one to pair with a dungeon that also stocks a blunt weapon somewhere for players who go in unprepared.
 
@@ -280,7 +280,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Uncommon
 
-**Attributes:** STR 1, DEX 2, MIND 0, ARC 0, FAI 0, CHA 0
+**Attributes:** STR 1, DEX 2, MIND 0, CHA 0
 
 **Skills:** Daggers & Wrestling 2, Subterfuge 2
 
@@ -298,7 +298,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Natural Weapons:** Bite (1d6 Poison, Short Reach).
 
-**In Combat:** Subterfuge 2 is the actual build here - a Giant Spider that opens combat from hiding gets a full Surprise Round against whoever it targets ([[Surprise|positioning]]: surprised creatures can't act or React in Round 1), which this stat block alone doesn't show. Caught in the open or after that first exchange, it's a fast but fragile skirmisher, not a real threat to a party that's already braced for it.
+**In Combat:** Subterfuge 2 is the actual build here - a Giant Spider that opens combat from hiding gets a full Surprise Round against whoever it targets ([[Surprise|positioning]]: surprised creatures can't act or React in Round 1). Caught in the open or after that first exchange, it's a fast but fragile skirmisher, not a real threat to a party that's already braced for it.
 
 ---
 
@@ -308,7 +308,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Uncommon
 
-**Attributes:** STR 3, DEX 1, MIND 1, ARC 0, FAI 0, CHA 0
+**Attributes:** STR 3, DEX 1, MIND 1, CHA 0
 
 **Skills:** Daggers & Wrestling 2
 
@@ -336,7 +336,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Rare
 
-**Attributes:** STR 4, DEX 1, MIND 0, ARC 0, FAI 0, CHA 0
+**Attributes:** STR 4, DEX 1, MIND 0, CHA 0
 
 **Skills:** Daggers & Wrestling 3
 
@@ -354,9 +354,9 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Natural Weapons:** Claws (1d8 Slashing, Short Reach).
 
-**Size:** Large (4 Wounds baseline - see [[Wounds and Survival|wounds_and_survival]]).
+**Size:** Large (4 Wounds baseline - see [[Wounds and Survival|rest_and_survival]]).
 
-**In Combat:** A Bear doesn't fence - it closes the distance and swings as hard as it can, trusting AR 2 and a genuinely large Wounds pool to outlast whatever's hitting it back. Daggers & Wrestling 3 needs STR 3+ behind it (a Skill's Rank can never exceed its governing Attribute, see [[Skills|core_rules]]) - not a Peasant-tier mob stat, this is the first Universal entry actually priced above Level 1, and it should feel like it: a lone Bear is a legitimate threat, not filler.
+**In Combat:** A Bear doesn't fence - it closes the distance and swings as hard as it can, trusting AR 2 and a genuinely large Wounds pool to outlast whatever's hitting it back. Daggers & Wrestling 3 needs STR 3+ behind it (a Skill's Rank can never exceed its governing Attribute, see [[Skills|core_rules]]) - a lone Bear is a legitimate threat, not filler.
 
 ---
 
@@ -366,7 +366,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Frequency:** Rare
 
-**Attributes:** STR 4, DEX 3, MIND 1, ARC 0, FAI 1, CHA 1
+**Attributes:** STR 4, DEX 3, MIND 2, CHA 1
 
 **Skills:** Two-Handed Blades 4, Athletics 2, Wayfaring 2, Perception 1
 
@@ -386,7 +386,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Equipment:** Longsword, wielded one-handed (1d6 \+ 2 Slashing, Medium Reach, Versatile), Heater Shield (\+2 AR while Blocking, Penalty \-1), Breastplate (AR 6, Penalty \-6).
 
-**Design note:** That Evasion of 1 is deliberate, not an oversight - a Rigid Penalty this steep means nearly everything "hits" in the passive sense, but that's exactly what triggers the Knight's Reaction: two attempts a round at a Parry or Block roll that's already competitive with a level 12 PC's own attack roll, backed by AR 6 eating whatever actually connects. A GM running this Knight should lean on that loop (let the hit trigger, then roll the Parry/Block openly) rather than resolving it as a flat passive miss chance - the threat lives in the exchange, not the Evasion score.
+**Running this Knight:** Evasion 1 means nearly every attack "hits" in the passive sense - lean into that: let the hit trigger, then roll the Parry/Block openly (competitive with a level 12 PC's own attack roll, backed by AR 6) rather than resolving it as a flat passive miss chance. The threat lives in the exchange, not the Evasion score.
 
 **In Combat:** A Knight doesn't chase - it holds ground, Parries or Blocks whatever comes at it, and answers a won exchange with Riposte or Guard Break to keep an attacker from ever getting a clean second swing. Wayfaring 2 means a mounted Knight (lance, charge) is a real variant worth improvising if the encounter calls for it. This is not a fight to be walked into on a bad day.
 
@@ -396,6 +396,6 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 | :---- | :---: | :---: | :---: |
 | Knights | 3+ | 4+ | 5+ |
 
-A single Knight is a real fight at any of these Levels on its own merits (Design note, above) - these counts mark where a *second* or *third* Knight stops being an even bigger win and starts being a real risk of losing someone.
+A single Knight is a real fight at any of these Levels on its own merits (see Running this Knight, above) - these counts mark where a *second* or *third* Knight stops being an even bigger win and starts being a real risk of losing someone.
 
 **Variant - Highborn Knight/Paladin:** Swap Breastplate for Full Plate (AR 8, Penalty \-8) for a wealthier or more senior Knight - AR climbs to 8 but Evasion drops further still (to \-1), pushing the build even harder into "everything hits, AR and Maneuver absorb it" territory. Reserve this for a named or boss-tier Knight rather than a rank-and-file one; see [[Armor|armor]]'s own note that Full Plate is worn by "Knights and wealthy nobles," not common soldiers.

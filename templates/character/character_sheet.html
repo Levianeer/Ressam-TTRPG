@@ -162,6 +162,13 @@
   .spell-card .field label{ font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); }
   .spell-card-head .row-remove{ font-size:1.1rem; align-self:center; margin-left:auto; }
   .spell-card textarea{ min-height:5em; }
+  /* Bulky Items: one flat wrapping row per item, not a header row plus a
+     separate type-fields row - the fields a Type doesn't use are just
+     display:none rather than pushed to their own line, which is what keeps
+     each entry to roughly one card's height instead of two. */
+  .bulky-list{ gap:0.5em; }
+  .bulky-card{ padding:0.5em 0.7em; }
+  .bulky-card .spell-card-head{ margin-bottom:0; gap:0.5em 0.6em; }
   .prep-field{ flex:1 1 16em; margin-left:auto; }
   .prep-field .prep-row{ display:flex; align-items:center; gap:0.5em; flex-wrap:wrap; }
   .prep-note{ font-size:0.78rem; color:var(--muted); }
@@ -233,20 +240,25 @@
         <div class="note">Current Mana (Max includes Feat Bonus). 0 Mana + cast = death</div>
       </div>
       <div class="stat-box">
-        <div class="label">Slots</div>
+        <div class="label">Backpack Slots</div>
         <div class="value"><span class="computed" id="out-carryCurrent">0</span> / <span class="computed" id="out-carryMax">10</span></div>
-        <div class="note">Auto-sums Equipment tab Slots (worn/equipped items excluded)</div>
+        <div class="note">Auto-sums Clothes, Backpack, and any Bulky Item typed Other (worn clothing excluded). Weapons, armor and shields don't use this - see Bulky Capacity</div>
       </div>
       <div class="stat-box">
-        <div class="label">Armor Rating</div>
-        <div class="value computed" id="out-ar">0</div>
-        <button type="button" class="btn-mini" id="btnArHit" title="Reduce AR (not Max AR) of every worn armor piece by 1">&minus;1 AR (Hit)</button>
+        <div class="label">Bulky Capacity</div>
+        <div class="value"><span class="computed" id="out-bulkyCurrent">0</span> / <span class="computed" id="out-bulkyMax">6</span></div>
+        <div class="note">1 per Bulky Item typed Weapon/Armor/Shield, equipped or spare. 5 + Size (Small +0, Medium +1, Large +2, Huge +4)</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Dent / Rend Line</div>
+        <div class="value computed" id="out-dentRend">0 / 0</div>
+        <button type="button" class="btn-mini" id="btnArHit" title="Reduce durability (not Max Dent/Max Rend) of every worn armor piece by 1 - both lines fall together">&minus;1 Durability (Hit)</button>
         <div class="note">From worn armor (Equipment tab)</div>
       </div>
       <div class="stat-box">
         <div class="label">Armor Penalty</div>
         <div class="value computed" id="out-armorPenalty">0</div>
-        <div class="note">Banded from your worn armor's AR (1-4/5-7/8-10 = -1/-2/-3). Applies to Acrobatics, Subterfuge and Spellcasting. Nothing in a fight reads it, and nothing reduces it</div>
+        <div class="note">Banded from your worn armor's Max Dent Line (3-5/6-8/9-11 = -1/-2/-3). Applies to Acrobatics, Subterfuge and Spellcasting. Nothing in a fight reads it, and nothing reduces it</div>
       </div>
     </div>
 
@@ -267,12 +279,12 @@
       <div class="stat-box">
         <div class="label">Melee Damage</div>
         <div class="value computed" id="out-meleeDamage">+0</div>
-        <div class="note">Weapon Damage + STR - target's AR. Every melee weapon and Skill without exception, finesse blades included</div>
+        <div class="note">Weapon Damage + STR, read against the target's Dent/Rend Lines. Every melee weapon and Skill without exception, finesse blades included</div>
       </div>
       <div class="stat-box">
         <div class="label">Missile Damage</div>
         <div class="value computed" id="out-missileDamage">+0</div>
-        <div class="note">Weapon Damage + DEX - target's AR. Bows, slings and firearms only - what the bow stored, not what your shoulders did</div>
+        <div class="note">Weapon Damage + DEX, read against the target's Dent/Rend Lines. Bows, slings and firearms only - what the bow stored, not what your shoulders did</div>
       </div>
     </div>
 
@@ -291,17 +303,17 @@
 
   <div class="card">
     <h2>Wounds &amp; Survival</h2>
-    <p class="note">Log each unhealed Wound below with its Severity (1-3, from the Wound Thresholds table) and Source. Current Wounds is derived from this log - remove a row once that Wound heals. Wound Penalty applies to non-combat rolls by ruling, not baked into other numbers here.</p>
+    <p class="note">Log each unhealed Wound below with its Severity (1-2, from comparing the damage roll to the target's Dent/Rend Lines) and Source. Current Wounds is derived from this log - remove a row once that Wound heals. Wound Penalty applies to non-combat rolls by ruling, not baked into other numbers here.</p>
 
     <table>
-      <thead><tr><th>1 Wound</th><th>2 Wounds</th><th>3 Wounds</th></tr></thead>
+      <thead><tr><th>Turned Aside</th><th>1 Wound</th><th>2 Wounds</th></tr></thead>
       <tbody><tr>
-        <td class="computed">1-9</td>
-        <td class="computed">10-18</td>
-        <td class="computed">19+</td>
+        <td class="computed">below Dent Line</td>
+        <td class="computed">at/above Dent Line</td>
+        <td class="computed">at/above Rend Line</td>
       </tr></tbody>
     </table>
-    <p class="note">Wound Thresholds - damage remaining after AR. <strong>The same for every creature</strong>; no Attribute changes this table. A blow reduced to 0 or less inflicts no Wound, but it still landed: it degrades armor, and a melee one still costs you a Tempo Die to Shock.</p>
+    <p class="note">Weapon dice + STR/DEX, read off the target's armor (Dent Line / Rend Line, see Equipment tab). <strong>The same for every wearer of the same suit</strong>; no Attribute changes the lines themselves. Unarmored is a flat 2 Wounds, no roll. A Turned Aside blow still landed: it degrades armor, and a melee one still costs you a Tempo Die to Shock. Rolling maximum on every die finds a gap - see the Armor card.</p>
 
     <div class="grid grid-stats">
       <div class="stat-box">
@@ -349,7 +361,6 @@
           <select data-col="severity" class="num-sm">
             <option value="1">1</option>
             <option value="2">2</option>
-            <option value="3">3</option>
           </select>
         </td>
         <td>
@@ -390,7 +401,7 @@
 
   <div class="card">
     <h2>Ward DC by Attribute</h2>
-    <p class="note">Ward = 5 + Attribute; Skill never contributes. What Spell Overcomes and similar effects roll against.</p>
+    <p class="note">Ward = 5 + Attribute; Skill never contributes. Spells no longer target a Ward at all (see the Magic tab's Rolling Magic note) - this is what a Feature, poison, fall, or other non-spell effect rolls against.</p>
     <div class="ward-grid" id="wardGrid"></div>
   </div>
 
@@ -433,114 +444,98 @@
   </div>
 
   <div class="card">
-    <h2>Armor</h2>
-    <p class="note">Check "Worn" for equipped armor - only worn pieces contribute to AR / Armor Penalty above. AR is Durability: starts equal to Max AR, drops by 1 each hit (2 from a War Maul or any firearm); Max AR is the repair cap. <strong>Rigid armor loses no durability to a blow it absorbs entirely</strong> and cannot be field-repaired once Broken; Flexible loses 1 to every hit and can always be patched back. Penalty is derived from Max AR, not tracked per piece.</p>
-    <table class="dyn-table" data-table="armor" id="tbl-armor">
-      <thead><tr><th>Name</th><th>Type</th><th class="num-sm">AR</th><th class="num-sm">Max AR</th><th class="num-sm">Penalty</th><th class="num-sm">Stealth</th><th class="num-sm">Slots</th><th>Worn</th><th></th></tr></thead>
-      <tbody></tbody>
-    </table>
-    <button type="button" class="row-add" data-add-target="armor">+ Add Armor</button>
-    <template id="row-armor">
-      <tr data-row>
-        <td><input type="text" data-col="name"></td>
-        <td>
-          <select data-col="type" title="Rigid armor shrugs off a blow it absorbs entirely and cannot be field-repaired once Broken; Flexible loses durability to every hit and can always be patched back. Clothing carries no AR and no Penalty - track it on the Clothes table below instead.">
-            <option value="">-</option>
-            <option>Rigid</option>
-            <option>Flexible</option>
-          </select>
-        </td>
-        <td><input type="number" data-col="ar" class="num-sm" value="0" title="Current AR - this is also your armor's current Durability"></td>
-        <td><input type="number" data-col="maxAr" class="num-sm" value="0" title="Original AR - the repair cap, and what Penalty is banded from"></td>
-        <td class="computed" data-col-out="penalty" title="Derived from Max AR: 1-4 = -1, 5-7 = -2, 8-10 = -3. Nothing reduces it">-</td>
-        <td><input type="number" data-col="stealth" class="num-sm" value="0"></td>
-        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
-        <td style="text-align:center"><input type="checkbox" data-col="worn"></td>
-        <td><button type="button" class="row-remove">&times;</button></td>
-      </tr>
-    </template>
-  </div>
+    <h2>Bulky Items</h2>
+    <p class="note">Weapons, armor and shields share one <strong>Bulky Capacity</strong> (5 + Size, see the Overview tab) - 1 slot per row, worn/equipped or spare alike, freed only by removing the row. Pick a <strong>Type</strong> to reveal that item's fields; hover a field for its full rule. <strong>Other</strong> isn't Bulky at all - it's an ordinary Backpack item, costing Slots instead (same as the Backpack Items table below). A row with no Type picked yet counts toward neither pool, and the sheet won't let you set a Type to Weapon/Armor/Shield once Bulky Capacity is full.</p>
+    <div class="dyn-table spell-list bulky-list" data-table="bulky" id="tbl-bulky"></div>
+    <button type="button" class="row-add" data-add-target="bulky">+ Add Item</button>
+    <template id="row-bulky">
+      <div class="spell-card bulky-card" data-row>
+        <div class="spell-card-head">
+          <div class="field field-name"><label>Name</label><input type="text" data-col="name"></div>
+          <div class="field"><label>Type</label>
+            <select data-col="itemType">
+              <option value="">-</option>
+              <option value="weapon">Weapon</option>
+              <option value="armor">Armor</option>
+              <option value="shield">Shield</option>
+              <option value="other">Other (Backpack)</option>
+            </select>
+          </div>
+          <div class="field" data-role="activeField" style="display:none">
+            <label data-role="activeLabel">Equipped</label>
+            <input type="checkbox" data-col="active" style="width:auto;">
+          </div>
 
-  <div class="card">
-    <h2>Shields</h2>
-    <p class="note">Guard is passive - it adds to <strong>every Parry you make</strong> while the shield is Equipped, whatever you actually parry with, and needs no Skill. <strong>Only the highest equipped shield's Guard counts</strong>; it never stacks. It degrades by 1 whenever a Parry it added to is lost, and is restored with your armor by the same Crafting repair. A Chain Flail (<em>Ignores Guard</em>) sets it to 0 for as long as it is the thing swinging at you. The shield is also a Length 1 implement in its own right: it Parries at <strong>any range</strong> using Daggers &amp; Wrestling, though it never carries an Edge of its own, being as short as anything gets.</p>
-    <table class="dyn-table" data-table="shields" id="tbl-shields">
-      <thead><tr><th>Name</th><th class="num-sm">Guard</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
-      <tbody></tbody>
-    </table>
-    <button type="button" class="row-add" data-add-target="shields">+ Add Shield</button>
-    <template id="row-shields">
-      <tr data-row>
-        <td><input type="text" data-col="name"></td>
-        <td><input type="number" data-col="guard" class="num-sm" min="0" max="2" value="0" title="Current Guard (Buckler 1, Heater Shield 2, Pavise none) - added to every Parry you make while this shield is Equipped"></td>
-        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
-        <td style="text-align:center"><input type="checkbox" data-col="equipped"></td>
-        <td><button type="button" class="row-remove">&times;</button></td>
-      </tr>
-    </template>
-  </div>
+          <div class="field" data-fields="weapon" style="display:none"><label>Skill</label>
+            <select data-col="skill">
+              <option value="">-</option>
+              <option>Two-Handed Blades</option>
+              <option>Cleaving Blades</option>
+              <option>Hafted & Polearms</option>
+              <option>Daggers & Wrestling</option>
+              <option>Fencing Blades</option>
+              <option>Ranged</option>
+              <option>Thrown</option>
+            </select>
+          </div>
+          <div class="field" data-fields="weapon" style="display:none"><label>Attack</label><output class="computed" data-col-out="atkBonus" title="1d(Tempo Die) + Skill, no Length or Edge added">-</output></div>
+          <div class="field" data-fields="weapon" style="display:none"><label>Parry</label><output class="computed" data-col-out="parryBonus" title="Weapon Skill + Guard. Add any Edge from a Weapon Length mismatch at the table">-</output></div>
+          <div class="field field-name" data-fields="weapon" style="display:none"><label>Damage</label><input type="text" data-col="damage" placeholder="1d8 Slashing"></div>
+          <div class="field" data-fields="weapon" style="display:none"><label>Length</label><input type="number" data-col="length" min="1" max="5" placeholder="1-5" title="Melee only. 1-3 fight Adjacent; 4 reaches 1 square; 5 (the Pike alone) reaches 1-2 squares. A mismatch gives the longer weapon's Parry/Opportunity Attack an Edge equal to the raw difference - tracked live at the table, not here."></div>
+          <div class="field" data-fields="weapon" style="display:none"><label>Range</label><input type="text" data-col="range" placeholder="Missile only, e.g. 150/300 ft"></div>
+          <div class="field" data-fields="weapon" style="display:none"><label>Reload</label>
+            <select data-col="reload" title="Putting the next shot in. You have one Minor Action, so a missile weapon fires at most twice a turn.">
+              <option value="">-</option>
+              <option>Thrown (Object Int.)</option>
+              <option>Minor + 1 die</option>
+              <option>Minor + 2 dice</option>
+              <option>Minor + 3 dice</option>
+              <option>2 Major Actions</option>
+            </select>
+          </div>
+          <div class="field field-name" data-fields="weapon" style="display:none"><label>Properties</label><input type="text" data-col="properties"></div>
 
-  <div class="card">
-    <h2>Weapons</h2>
-    <p class="note">Pick the skill used to attack with each weapon. <strong>Attack</strong> is 1d(Tempo Die) + that Skill, with no Length or Edge added; <strong>Parry</strong> is the same roll plus your Guard - both columns compute the flat part, and you add any Edge from a Weapon Length mismatch at the table, since it depends on the opponent in front of you. Equipped weapons don't count towards Slots. Length is melee-only; use Range and Reload for missile weapons.</p>
-    <table class="dyn-table" data-table="weapons" id="tbl-weapons">
-      <thead><tr><th>Name</th><th>Skill</th><th class="num-sm">Attack</th><th class="num-sm">Parry</th><th>Damage</th><th class="num-sm">Length</th><th>Range</th><th class="num-sm">Reload</th><th>Properties</th><th class="num-sm">Slots</th><th>Equipped</th><th></th></tr></thead>
-      <tbody></tbody>
-    </table>
-    <button type="button" class="row-add" data-add-target="weapons">+ Add Weapon</button>
-    <template id="row-weapons">
-      <tr data-row>
-        <td><input type="text" data-col="name"></td>
-        <td>
-          <select data-col="skill">
-            <option value="">-</option>
-            <option>Two-Handed Blades</option>
-            <option>Cleaving Blades</option>
-            <option>Hafted & Polearms</option>
-            <option>Daggers & Wrestling</option>
-            <option>Fencing Blades</option>
-            <option>Ranged</option>
-            <option>Thrown</option>
-          </select>
-        </td>
-        <td class="computed" data-col-out="atkBonus">-</td>
-        <td class="computed" data-col-out="parryBonus" title="Weapon Skill + Guard. Add any Edge from a Weapon Length mismatch at the table">-</td>
-        <td><input type="text" data-col="damage" placeholder="1d8 Slashing"></td>
-        <td><input type="number" data-col="length" class="num-sm" min="1" max="5" placeholder="1-5" title="Melee only. 1-3 fight Adjacent; 4 reaches 1 square; 5 (the Pike alone) reaches 1-2 squares. A mismatch gives the longer weapon's Parry/Opportunity Attack an Edge equal to the raw difference - tracked live at the table, not here."></td>
-        <td><input type="text" data-col="range" placeholder="Missile only, e.g. 150/300 ft"></td>
-        <td>
-          <select data-col="reload" title="Putting the next shot in. You have one Minor Action, so a missile weapon fires at most twice a turn.">
-            <option value="">-</option>
-            <option>Thrown (Object Int.)</option>
-            <option>Minor + 1 die</option>
-            <option>Minor + 2 dice</option>
-            <option>Minor + 3 dice</option>
-            <option>2 Major Actions</option>
-          </select>
-        </td>
-        <td><input type="text" data-col="properties"></td>
-        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
-        <td style="text-align:center"><input type="checkbox" data-col="equipped"></td>
-        <td><button type="button" class="row-remove">&times;</button></td>
-      </tr>
+          <div class="field" data-fields="armor" style="display:none"><label>Armor Type</label>
+            <select data-col="armorType" title="Rigid armor shrugs off a Turned Aside blow and cannot be field-repaired once Broken; Flexible loses durability to every hit, Turned Aside included, and can always be patched back.">
+              <option value="">-</option>
+              <option>Rigid</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+          <div class="field" data-fields="armor" style="display:none"><label>Max Dent</label><input type="number" data-col="maxDent" value="0" title="Original Dent Line - the repair cap, and what Penalty is banded from"></div>
+          <div class="field" data-fields="armor" style="display:none"><label>Max Rend</label><input type="number" data-col="maxRend" value="0" title="Original Rend Line - the repair cap"></div>
+          <div class="field" data-fields="armor" style="display:none"><label>Damage</label><input type="number" data-col="armorDamage" min="0" value="0" title="Durability lost so far - increases by 1 for a hit that scores a Wound (2 from a War Maul or any firearm), and by 1 for a Turned Aside hit against Flexible armor (0 against Rigid). Both current lines fall together with it; at Damage >= Max Dent the armor is Broken and resolves as Unarmored."></div>
+          <div class="field" data-fields="armor" style="display:none"><label>Dent</label><output class="computed" data-col-out="dent" title="Max Dent - Damage, floored at 0. Only Worn pieces feed the Overview tab's Dent/Rend Line">-</output></div>
+          <div class="field" data-fields="armor" style="display:none"><label>Rend</label><output class="computed" data-col-out="rend" title="Max Rend - Damage, or 0 once Broken (Damage >= Max Dent)">-</output></div>
+          <div class="field" data-fields="armor" style="display:none"><label>Penalty</label><output class="computed" data-col-out="penalty" title="Derived from Max Dent: 3-5 = -1, 6-8 = -2, 9-11 = -3. Nothing reduces it">-</output></div>
+          <div class="field" data-fields="armor" style="display:none"><label>Stealth</label><input type="number" data-col="stealth" value="0"></div>
+
+          <div class="field" data-fields="shield" style="display:none"><label>Guard</label><input type="number" data-col="guard" min="0" max="2" value="0" title="Current Guard (Buckler 1, Heater Shield 2, Pavise none) - added to every Parry you make while this shield is Equipped, whatever you parry with, no Skill needed. Only the highest equipped shield's Guard counts, never stacked. Degrades by 1 whenever a Parry it added to is lost (see the Overview tab) and is restored with your armor's Crafting repair. The shield also Parries at any range using Daggers & Wrestling, with no Edge of its own."></div>
+
+          <div class="field" data-fields="other" style="display:none"><label>Qty</label><input type="number" data-col="qty" value="1"></div>
+          <div class="field" data-fields="other" style="display:none"><label>Slots</label><input type="number" data-col="slots" step="1" value="0" title="Not Bulky - counts toward Backpack Slots instead, same as the Backpack Items table below"></div>
+          <div class="field field-name" data-fields="other" style="display:none"><label>Description</label><input type="text" data-col="description"></div>
+
+          <button type="button" class="row-remove" title="Remove item">&times;</button>
+        </div>
+      </div>
     </template>
   </div>
 
   <div class="card">
     <h2>Clothes</h2>
     <table class="dyn-table" data-table="clothes" id="tbl-clothes">
-      <thead><tr><th>Name</th><th class="num-sm">Unlocked Lv.</th><th>Type</th><th>Worn</th><th class="num-sm">Cost</th><th class="num-sm">Slots</th><th>Benefits</th><th></th></tr></thead>
+      <thead><tr><th>Name</th><th>Type</th><th>Worn</th><th class="num-sm">Cost</th><th class="num-sm">Slots</th><th>Benefits</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
     <button type="button" class="row-add" data-add-target="clothes">+ Add Clothing</button>
     <template id="row-clothes">
       <tr data-row>
         <td><input type="text" data-col="name"></td>
-        <td><input type="number" data-col="unlockedLevel" class="num-sm"></td>
         <td><input type="text" data-col="type"></td>
         <td style="text-align:center"><input type="checkbox" data-col="worn"></td>
         <td><input type="text" data-col="cost" class="num-sm"></td>
-        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
+        <td><input type="number" data-col="slots" class="num-sm" step="1" value="0"></td>
         <td><input type="text" data-col="benefits"></td>
         <td><button type="button" class="row-remove">&times;</button></td>
       </tr>
@@ -558,7 +553,7 @@
       <tr data-row>
         <td><input type="text" data-col="name"></td>
         <td><input type="number" data-col="qty" class="num-sm" value="1"></td>
-        <td><input type="number" data-col="slots" class="num-sm" step="0.1" value="0"></td>
+        <td><input type="number" data-col="slots" class="num-sm" step="1" value="0"></td>
         <td><input type="text" data-col="description"></td>
         <td><button type="button" class="row-remove">&times;</button></td>
       </tr>
@@ -571,56 +566,39 @@
 <section class="tab-panel" id="tab-magic">
 
   <div class="card">
-    <h2>Magic Skills</h2>
-    <p class="note">Skill Total = Base + Mod, same as the Skills tab - ARC/FAI never contribute to the roll itself. Arcane and Divine resolve very differently: Arcane funds a per-school Spell Modifier used for Spell Attacks/Overcomes; Divine's Petition Roll is always flat 1d12 vs. DC 7 with no modifier at all - a Divine school's Skill Total instead sets Rite Mastery, reroll charges per Long Rest.</p>
-    <p class="note"><strong>A Spell Attack is answered by nothing</strong> - no Tempo Die, no Parry, no Ward. Roll 1d12 + Spell Modifier against the <strong>Shot DC</strong>, the same number a bowshot answers to, set by range, movement and position rather than by the target. A <strong>Spell Overcome</strong> instead rolls against the target's Ward (Overview tab); Divine's Petition Roll is flat 1d12 vs. DC 7. Nothing here criticals - there are no critical hits in Ressam.</p>
-    <h3>Arcane - Spell Modifier</h3>
+    <h2>Magic Feats</h2>
+    <p class="note">2026-09-14: there is no more Arcane/Divine split, and magic schools are no longer Skills - they're Feats (magic_feats.md). A school's <strong>Unlock</strong> tier (Novice/Adept/Expert) sets which spell ranks you may learn and cast; its <strong>Focus</strong> tier grants a flat, non-stacking roll bonus (a Focus Feat requires already holding that tier's Unlock - flagged red below if not). Neither tier reads a Skill or an Attribute.</p>
+    <p class="note"><strong>Rolling Magic</strong> (magic_overview.md): every cast costs a flat 1 Mana regardless of rank. Roll <code>1d12 + Focus bonus</code> vs. <code>DC = 5 + spell rank</code> - no Skill, no Attribute, no Armor Penalty. Failure: nothing happens, Mana is still spent. A targeted, thrown-shape spell can be dodged (defender spends 1 Tempo Die, opposed roll, no modifier, ties to defender); a spell that reaches for mind/body/will directly cannot be dodged at all. Nothing here criticals - there are no critical hits in Ressam.</p>
     <table>
-      <thead><tr><th>School</th><th class="num-sm">Skill Total</th><th class="num-sm">Armor Penalty</th><th class="num-sm">Spell Modifier</th></tr></thead>
-      <tbody id="arcaneModBody"></tbody>
-    </table>
-    <h3>Divine - Petition Roll &amp; Rite Mastery</h3>
-    <table>
-      <thead><tr><th>School</th><th class="num-sm">Skill Total</th><th class="num-sm">Petition Roll</th><th class="num-sm">Rite Mastery Charges</th></tr></thead>
-      <tbody id="divineModBody"></tbody>
+      <thead><tr><th>School</th><th>Unlock Tier</th><th>Focus Tier</th><th class="num-sm">Ranks Unlocked</th><th class="num-sm">Roll Bonus</th></tr></thead>
+      <tbody id="magicFeatsBody"></tbody>
     </table>
   </div>
 
   <div class="card">
     <h2>Spells Known</h2>
-    <p class="note">Each card holds one spell's header fields plus an Effect box for its rules text. Arcane spells need a scribed scroll to cast - track scrolls on hand. Divine spells cast straight from Mana with no prep step; Divine Mana only recovers through Prayer.</p>
+    <p class="note">Each card holds one spell's header fields plus an Effect box for its rules text. Every school now casts straight from Mana - there's no more scribing or scroll tracking.</p>
     <div class="dyn-table spell-list" data-table="spells" id="tbl-spells"></div>
     <button type="button" class="row-add" data-add-target="spells">+ Add Spell</button>
     <template id="row-spells">
       <div class="spell-card" data-row>
         <div class="spell-card-head">
           <div class="field field-name"><label>Name</label><input type="text" data-col="name"></div>
-          <div class="field"><label>Mana Cost</label><input type="number" data-col="manaCost" class="num-sm"></div>
+          <div class="field"><label>Spell Rank</label><input type="number" data-col="manaCost" class="num-sm" min="1" max="5"></div>
           <div class="field"><label>Casting Time</label><input type="text" data-col="castingTime"></div>
           <div class="field"><label>Range</label><input type="text" data-col="range"></div>
           <div class="field"><label>Duration</label><input type="text" data-col="duration"></div>
           <button type="button" class="row-remove" title="Remove spell">&times;</button>
         </div>
-        <div class="spell-card-head prep-row-head">
+        <div class="spell-card-head">
           <div class="field"><label>School</label>
             <select data-col="school">
               <option value="">-</option>
-              <optgroup label="Arcane">
-                <option>Aeromancy</option><option>Geomancy</option><option>Hydromancy</option>
-                <option>Pyromancy</option><option>Shadowmancy</option>
-              </optgroup>
-              <optgroup label="Divine">
-                <option>Benediction</option><option>Invocation</option><option>Necration</option>
-                <option>Cultivation</option><option>Subjugation</option>
-              </optgroup>
+              <option>Aeromancy</option><option>Geomancy</option><option>Hydromancy</option>
+              <option>Pyromancy</option><option>Shadowmancy</option>
+              <option>Benediction</option><option>Cultivation</option><option>Invocation</option>
+              <option>Necration</option><option>Subjugation</option>
             </select>
-          </div>
-          <div class="field prep-field">
-            <label data-role="prepLabel">Preparation</label>
-            <div class="prep-row">
-              <input type="number" data-col="scrollCount" class="num-sm" min="0" value="0" data-role="prepScrolls" style="display:none" title="Scribed scrolls of this spell currently on hand">
-              <span class="prep-note" data-role="prepNote">Pick a School to see prep mechanics.</span>
-            </div>
           </div>
         </div>
         <div class="field"><label>Effect</label><textarea data-col="effect" rows="5" placeholder="Effect / description"></textarea></div>
@@ -650,7 +628,7 @@
     <h2>Point Budgets</h2>
     <p class="note">Two separate budgets, no conversion between them. Level 1 size comes from your Priorities above; both then grow with level. There's no separate Skill Cap - a Skill's Rank can never exceed its own governing Attribute's current score, flagged in red on the Skills tab.</p>
     <div class="grid grid-stats">
-      <div class="stat-box"><div class="label">Attribute Array</div><div class="value computed" id="out-attrArray">2, 2, 1, 1, 0, 0</div><div class="note computed" id="out-attrArrayCheck"></div></div>
+      <div class="stat-box"><div class="label">Attribute Array</div><div class="value computed" id="out-attrArray">2, 1, 1, 0</div><div class="note computed" id="out-attrArrayCheck"></div></div>
       <div class="stat-box"><div class="label">Skill Points</div><div class="value"><span class="computed" id="out-skillPointsSpent">0</span> / <span class="computed" id="out-skillPointsBudget">12</span></div></div>
       <div class="stat-box"><div class="label">Attribute Cap</div><div class="value computed" id="out-attrCap">3</div></div>
       <div class="stat-box"><div class="label">Feat Slots</div><div class="value computed" id="out-featsTotal">2</div></div>
@@ -735,36 +713,42 @@
 
   // --- Reference data, mirrored from the rulebook -------------------------
 
+  // 2026-09-14: ARC and FAI are deleted along with the Arcane/Divine split -
+  // magic is no longer keyed to a dedicated Attribute (see magic_overview.md).
   var ATTRIBUTES = [
     {key:'STR', name:'Strength'},
     {key:'DEX', name:'Dexterity'},
     {key:'CHA', name:'Charisma'},
-    {key:'MIND', name:'Mind'},
-    {key:'ARC', name:'Arcane'},
-    {key:'FAI', name:'Faith'}
+    {key:'MIND', name:'Mind'}
   ];
 
-  // Mirrors attributes_and_skills.md's Skill Categories
+  // Mirrors attributes_and_skills.md's Skill Categories. Magic schools are no
+  // longer Skills at all (they're Feats now - see MAGIC_SCHOOLS and the Magic
+  // tab below), so the old Arcane Schools/Divine Schools categories are gone.
   var SKILL_CATEGORIES = [
     {attr:'STR', category:'Brawn, Endurance & Melee', skills:['Two-Handed Blades','Cleaving Blades','Hafted & Polearms','Daggers & Wrestling','Athletics','Survival','Wayfaring']},
     {attr:'DEX', category:'Finesse, Reflex & Subterfuge', skills:['Fencing Blades','Ranged','Thrown','Acrobatics','Subterfuge','Crafting','Perception','Chirurgery']},
     {attr:'MIND', category:'Intellect, Education & Reasoning', skills:['Thaumaturgy']},
-    {attr:'ARC', category:'Arcane Schools', skills:['Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy']},
-    {attr:'FAI', category:'Divine Schools', skills:['Benediction','Invocation','Necration','Cultivation','Subjugation']},
     {attr:'CHA', category:'Socialising, Manipulation & Interaction', skills:['Influence','Manipulate','Intimidate','Leadership','Insight']}
   ];
 
-  var ARCANE_SCHOOLS = ['Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy'];
-  var DIVINE_SCHOOLS = ['Benediction','Invocation','Necration','Cultivation','Subjugation'];
+  // The ten schools, flat - no more Arcane/Divine split (magic_overview.md).
+  var MAGIC_SCHOOLS = ['Aeromancy','Geomancy','Hydromancy','Pyromancy','Shadowmancy','Benediction','Cultivation','Invocation','Necration','Subjugation'];
+  // Mirrors magic_feats.md's tier table: Unlock tier -> spell ranks it grants
+  // access to, and Focus tier -> the flat roll bonus (non-stacking - Adept's
+  // +2 replaces Novice's +1 outright, per magic_feats.md).
+  var MAGIC_TIERS = ['None','Novice','Adept','Expert'];
+  var MAGIC_RANKS_BY_TIER = {None:'-', Novice:'1-2', Adept:'1-4', Expert:'Any'};
+  var MAGIC_BONUS_BY_TIER = {None:0, Novice:1, Adept:2, Expert:3};
 
-  // Mirrors wounds_and_survival.md's Scars table (Damage Type -> Scar name)
+  // Mirrors rest_and_survival.md's Scars table (Damage Type -> Scar name)
   var SCAR_MAP = {
     'Piercing':'Puncture', 'Slashing':'Laceration', 'Blunt':'Fracture', 'Poison':'Gangrene',
     'Fire':'Burn', 'Cold':'Frostbite', 'Lightning':'Fractal Burn', 'Acid':'Chemical Burn',
     'Necrotic':'Necrosis', 'Radiant':'Brand', 'Psychic':'Mania'
   };
 
-  // Mirrors wounds_and_survival.md's Trauma table - label per level (penalty itself is just -level)
+  // Mirrors rest_and_survival.md's Trauma table - label per level (penalty itself is just -level)
   var TRAUMA_LABELS = {0:'None', 1:'Manageable', 2:'Dangerous', 3:'Critical', 4:'Critical', 5:'Automatic Death'};
 
   // Total XP needed to reach each level: (level + next level) x 30
@@ -775,10 +759,13 @@
   // further per level (see the *BonusForLevel() functions below), independent of priority.
   var PRIORITY_LETTERS = ['A','B','C','D','E'];
   // Attributes are a standard array, not a pool (character_creation.md Step 5):
-  // six fixed numbers assigned one per Attribute, plus the +1 granted at levels
+  // four fixed numbers assigned one per Attribute, plus the +1 granted at levels
   // 4/8/12. Sorted-descending so a sheet can be checked against it directly.
+  // 2026-09-14: shrank from six numbers to four when ARC/FAI were deleted -
+  // freshly resized, not just trimmed, to keep only an A ever reaching 3 and
+  // every tier but E carrying exactly one guaranteed 0 (E carries two).
   var PRIORITY_ATTR_ARRAY = {
-    A:[3,2,2,1,1,0], B:[2,2,2,1,1,0], C:[2,2,1,1,0,0], D:[2,1,1,1,0,0], E:[1,1,1,1,0,0]
+    A:[3,2,1,0], B:[2,2,1,0], C:[2,1,1,0], D:[1,1,1,0], E:[1,1,0,0]
   };
   var PRIORITY_SKILL_POINTS = {A:18, B:15, C:12, D:9, E:6};
   var PRIORITY_FEATS = {A:4, B:3, C:2, D:1, E:0};
@@ -817,12 +804,12 @@
     return LADDER.hasOwnProperty(str) ? LADDER[str] : '1d4';
   }
 
-  // Armor Penalty banded from AR (armor.md): 1-4 = -1, 5-7 = -2, 8-10 = -3.
+  // Armor Penalty banded from Max Dent Line (armor.md): 3-5 = -1, 6-8 = -2, 9-11 = -3.
   // Returned as a positive magnitude; the caller prints the sign.
-  function armorPenaltyForAR(arValue){
-    if (arValue <= 0) return 0;
-    if (arValue <= 4) return 1;
-    if (arValue <= 7) return 2;
+  function armorPenaltyForDent(dentValue){
+    if (dentValue <= 0) return 0;
+    if (dentValue <= 5) return 1;
+    if (dentValue <= 8) return 2;
     return 3;
   }
   function el(tag, attrs, children){
@@ -887,6 +874,30 @@
     });
   }
 
+  // One fixed row per school (magic_feats.md) - unlike the old Arcane/Divine
+  // tables, this never rebuilds on recompute (nothing here is gated on Skill
+  // training any more), just its two computed cells get updated in place.
+  function buildMagicFeats(){
+    var body = document.getElementById('magicFeatsBody');
+    MAGIC_SCHOOLS.forEach(function(school){
+      var tr = el('tr', {'data-school-row':school});
+      tr.appendChild(el('td', {}, [text(school)]));
+      var tdUnlock = el('td', {});
+      var selUnlock = el('select', {name:'magic:'+school+':unlock'});
+      MAGIC_TIERS.forEach(function(t){ selUnlock.appendChild(el('option', {value:t}, [text(t)])); });
+      tdUnlock.appendChild(selUnlock);
+      tr.appendChild(tdUnlock);
+      var tdFocus = el('td', {});
+      var selFocus = el('select', {name:'magic:'+school+':focus'});
+      MAGIC_TIERS.forEach(function(t){ selFocus.appendChild(el('option', {value:t}, [text(t)])); });
+      tdFocus.appendChild(selFocus);
+      tr.appendChild(tdFocus);
+      tr.appendChild(el('td', {class:'computed', 'data-magic-ranks':school}, [text('-')]));
+      tr.appendChild(el('td', {class:'computed', 'data-magic-bonus':school}, [text('+0')]));
+      body.appendChild(tr);
+    });
+  }
+
   // Starting Feat count comes from the Feats priority (0-4, Step 2); the four
   // milestone Feats (levels 4/6/9/12) are fixed regardless of priority. Rebuilt
   // only when the starting count actually changes (see ensureFeatSlots), so a
@@ -940,10 +951,14 @@
     if (e.target.id === 'btnExport'){ exportJSON(); return; }
     if (e.target.id === 'btnImportTrigger'){ document.getElementById('importFile').click(); return; }
     if (e.target.id === 'btnArHit'){
-      document.querySelectorAll('#tbl-armor [data-row]').forEach(function(tr){
-        if (tr.querySelector('[data-col="worn"]').checked){
-          var arInput = tr.querySelector('[data-col="ar"]');
-          arInput.value = Math.max(0, num(arInput.value) - 1);
+      // Damage is durability lost - both current lines are derived from it
+      // (Max - Damage) and fall together automatically. See armor.md's Armor
+      // Durability section.
+      document.querySelectorAll('#tbl-bulky [data-row]').forEach(function(tr){
+        if (tr.querySelector('[data-col="itemType"]').value !== 'armor') return;
+        if (tr.querySelector('[data-col="active"]').checked){
+          var dmgInput = tr.querySelector('[data-col="armorDamage"]');
+          dmgInput.value = num(dmgInput.value) + 1;
         }
       });
       recompute();
@@ -966,8 +981,9 @@
       // Guard degrades by 1 whenever a Parry it added to is LOST - the shield
       // was in the way and the blow came through it. A won Parry never wears it.
       var best = null;
-      document.querySelectorAll('#tbl-shields [data-row]').forEach(function(tr){
-        if (!tr.querySelector('[data-col="equipped"]').checked) return;
+      document.querySelectorAll('#tbl-bulky [data-row]').forEach(function(tr){
+        if (tr.querySelector('[data-col="itemType"]').value !== 'shield') return;
+        if (!tr.querySelector('[data-col="active"]').checked) return;
         var g = tr.querySelector('[data-col="guard"]');
         if (!best || num(g.value) > num(best.value)) best = g;
       });
@@ -1055,52 +1071,88 @@
       }
     });
 
-    // 3. AR + Armor Penalty from worn armor rows. Penalty is no longer typed in
-    // per piece - armor.md derives it straight from AR in bands of three
-    // (1-4/5-7/8-10 = -1/-2/-3), read off Max AR rather than current durability,
-    // since a battered harness restricts you exactly as much as a fresh one.
-    // Nothing reduces it any more: the Broken In Feat was deleted with the
-    // Exchange merge, and no combat rule consults Penalty at all.
-    var ar = 0, maxAr = 0;
-    document.querySelectorAll('#tbl-armor [data-row]').forEach(function(tr){
-      var rowMaxAr = num(tr.querySelector('[data-col="maxAr"]').value);
-      var penOut = tr.querySelector('[data-col-out="penalty"]');
-      if (penOut) penOut.textContent = rowMaxAr > 0 ? ('-' + armorPenaltyForAR(rowMaxAr)) : '-';
-      if (!tr.querySelector('[data-col="worn"]').checked) return;
-      ar += num(tr.querySelector('[data-col="ar"]').value);
-      maxAr += rowMaxAr;
-    });
-    var armorPenalty = armorPenaltyForAR(maxAr);
-    document.getElementById('out-ar').textContent = ar;
-    document.getElementById('out-armorPenalty').textContent = armorPenalty ? ('-' + armorPenalty) : '0';
+    // 3. Bulky Items (rest_and_survival.md's Bulky Capacity): weapons, armor
+    // and shields now share one table, distinguished by a per-row Type. Field
+    // visibility and the Equipped/Worn label toggle first, then each row's
+    // own math runs by branch - Armor into Dent/Rend/Penalty (only Worn rows
+    // feed the totals) and Shield into the shared Guard max (only Equipped
+    // rows count, and only the highest of those). Weapon Attack/Parry runs in
+    // a second pass below (step 7) since Parry needs shieldGuard finished first.
+    // Penalty is derived straight from Max Dent Line in bands of three
+    // (3-5/6-8/9-11 = -1/-2/-3), read off the Max value rather than current
+    // durability, since a battered harness restricts you exactly as much as a
+    // fresh one. Nothing reduces it any more: the Broken In Feat was deleted
+    // with the Exchange merge, and no combat rule consults Penalty at all.
+    var dent = 0, rend = 0, maxDent = 0, shieldGuard = 0;
+    document.querySelectorAll('#tbl-bulky [data-row]').forEach(function(tr){
+      var itemType = tr.querySelector('[data-col="itemType"]').value;
+      tr.querySelectorAll('[data-fields]').forEach(function(field){
+        field.style.display = (field.getAttribute('data-fields') === itemType) ? '' : 'none';
+      });
+      var activeField = tr.querySelector('[data-role="activeField"]');
+      var activeLabel = tr.querySelector('[data-role="activeLabel"]');
+      if (itemType === 'armor'){ activeField.style.display = ''; activeLabel.textContent = 'Worn'; }
+      else if (itemType === 'weapon' || itemType === 'shield'){ activeField.style.display = ''; activeLabel.textContent = 'Equipped'; }
+      else { activeField.style.display = 'none'; }
 
-    // Shield Guard (weapons.md "Using Shields"). Guard adds to every Parry you
-    // make while a shield is equipped, whatever you actually parry with - and
-    // ONLY THE HIGHEST COUNTS. It never sums: a rule broad enough to touch every
-    // Parry cannot also stack, which is what replaced the old two-shield cap.
-    var shieldGuard = 0;
-    document.querySelectorAll('#tbl-shields [data-row]').forEach(function(tr){
-      if (tr.querySelector('[data-col="equipped"]').checked){
-        shieldGuard = Math.max(shieldGuard, num(tr.querySelector('[data-col="guard"]').value));
+      if (itemType === 'armor'){
+        var rowMaxDent = num(tr.querySelector('[data-col="maxDent"]').value);
+        var rowMaxRend = num(tr.querySelector('[data-col="maxRend"]').value);
+        var rowDamage = num(tr.querySelector('[data-col="armorDamage"]').value);
+        // Both current lines are derived from one durability-lost number rather
+        // than tracked separately - Max - Damage, and once Damage reaches Max
+        // Dent the armor is Broken (armor.md), so Rend reads 0 too rather than
+        // a leftover value nothing should read.
+        var rowDent = Math.max(0, rowMaxDent - rowDamage);
+        var rowRend = rowDent > 0 ? Math.max(0, rowMaxRend - rowDamage) : 0;
+        var dentOut = tr.querySelector('[data-col-out="dent"]');
+        var rendOut = tr.querySelector('[data-col-out="rend"]');
+        if (dentOut) dentOut.textContent = rowMaxDent > 0 ? rowDent : '-';
+        if (rendOut) rendOut.textContent = rowMaxDent > 0 ? rowRend : '-';
+        var penOut = tr.querySelector('[data-col-out="penalty"]');
+        if (penOut) penOut.textContent = rowMaxDent > 0 ? ('-' + armorPenaltyForDent(rowMaxDent)) : '-';
+        if (tr.querySelector('[data-col="active"]').checked){
+          dent += rowDent;
+          rend += rowRend;
+          maxDent += rowMaxDent;
+        }
+      } else if (itemType === 'shield'){
+        // Guard adds to every Parry you make while a shield is equipped,
+        // whatever you actually parry with - and ONLY THE HIGHEST COUNTS. It
+        // never sums: a rule broad enough to touch every Parry cannot also
+        // stack, which is what replaced the old two-shield cap.
+        if (tr.querySelector('[data-col="active"]').checked){
+          shieldGuard = Math.max(shieldGuard, num(tr.querySelector('[data-col="guard"]').value));
+        }
       }
     });
+    var armorPenalty = armorPenaltyForDent(maxDent);
+    document.getElementById('out-dentRend').textContent = dent + ' / ' + rend;
+    document.getElementById('out-armorPenalty').textContent = armorPenalty ? ('-' + armorPenalty) : '0';
     document.getElementById('out-shieldGuard').textContent = (shieldGuard>=0?'+':'') + shieldGuard;
 
     // 4. Single-pass derived stats
-    // Wounds baseline is by Size (wounds_and_survival.md), not STR - Small 2 / Medium 3 / Large 4.
+    // Wounds baseline is by Size (rest_and_survival.md), not STR - Small 2 / Medium 3 / Large 4.
     var sizeMult = num(document.querySelector('[name="size"]').value) || 1;
     var woundsBySize = {0.5:2, 1:3, 2:4};
     var woundsBaseline = woundsBySize.hasOwnProperty(sizeMult) ? woundsBySize[sizeMult] : 3;
     var hpMax = woundsBaseline + num(document.querySelector('[name="hpBonus"]').value);
-    // Mana and Slots floor at 0 and the Tempo Pool at 1 die: a racial modifier
+    // Mana and Backpack Slots floor at 0 and the Tempo Pool at 1 die: a racial modifier
     // can leave an Attribute at -1 or lower (character_creation.md's Attribute
     // Limits), and these three stop rather than follow it down. The Feat bonus
     // is added after the floor so it can still lift a floored pool.
     var manaMax = Math.max(0, attrTotals['MIND']*2) + num(document.querySelector('[name="manaBonus"]').value);
     var carryMax = Math.max(0, Math.floor((2 * attrTotals['STR']) * sizeMult));
+    // Bulky Capacity (rest_and_survival.md): weapons, armor and shields never
+    // touch Backpack Slots - what your body/harness can hold is a flat count,
+    // not something STR buys more of. 5 + Size (Small +0, Medium +1, Large +2,
+    // Huge +4) - additive, unlike Backpack Slots' multiplier.
+    var bulkyBonusBySize = {0.5:0, 1:1, 2:2, 4:4};
+    var bulkyMax = 5 + (bulkyBonusBySize.hasOwnProperty(sizeMult) ? bulkyBonusBySize[sizeMult] : 1);
 
-    // Wound Thresholds are flat for every creature now (1-9 / 10-18 / 19+) and
-    // no Attribute moves them, so the table on the Overview tab is static text.
+    // A landing hit is read off the target's armor (Dent Line / Rend Line)
+    // rather than a flat threshold table now, and no Attribute moves those
+    // lines, so this sheet leaves the actual comparison to the table.
 
     // The Tempo Pool (exchange.md): DEX + 1 dice, each sized by STR. It is the
     // only resource in a fight - attacks, Parries, Opportunity Attacks, reloads
@@ -1121,6 +1173,7 @@
     document.getElementById('out-hpMax').textContent = hpMax;
     document.getElementById('out-manaMax').textContent = manaMax;
     document.getElementById('out-carryMax').textContent = carryMax;
+    document.getElementById('out-bulkyMax').textContent = bulkyMax;
     document.getElementById('out-tempoPool').textContent = tempoPool;
     document.getElementById('out-tempoDie').textContent = tempoDie + (attrTotals['STR'] <= 0 ? ' (Disadv.)' : '');
     var tempoCurrentOut = document.getElementById('out-tempoCurrent');
@@ -1131,9 +1184,10 @@
     document.getElementById('out-meleeDamage').textContent = '+' + attrTotals['STR'];
     document.getElementById('out-missileDamage').textContent = '+' + attrTotals['DEX'];
 
-    // 4b. Wounds & Survival (wounds_and_survival.md). Current Wounds is derived
-    // from the Wound Log, not typed in directly - each row's Severity (1-3, the
-    // Wound Thresholds table) sums into how much of Max Wounds is currently lost.
+    // 4b. Wounds & Survival (rest_and_survival.md). Current Wounds is derived
+    // from the Wound Log, not typed in directly - each row's Severity (1-2, from
+    // comparing the roll to the target's Dent/Rend Lines) sums into how much of
+    // Max Wounds is currently lost.
     var woundsLost = 0;
     document.querySelectorAll('#tbl-wounds [data-row]').forEach(function(tr){
       woundsLost += num(tr.querySelector('[data-col="severity"]').value);
@@ -1172,16 +1226,23 @@
       tr.querySelector('[data-col-out="scarName"]').textContent = SCAR_MAP[dmgType] || '-';
     });
 
-    // Current load: sum every Slots column across all inventory tables. Worn
-    // armor/clothes and equipped shields/weapons don't count - you're
-    // wearing/wielding them, not carrying them. Backpack Slots is a flat
-    // per-line value, not multiplied by Qty.
+    // Current load: sum every Slots column across the Clothes and Backpack
+    // tables, plus any Bulky Items row typed Other - a weapon, armor or
+    // shield row never has a Slots value of its own (they draw from Bulky
+    // Capacity instead, below), and an Other row is deliberately an ordinary
+    // Backpack item wearing a different table. Worn clothes don't count -
+    // you're wearing it, not carrying it.
     var carryCurrent = 0;
-    var EQUIP_COL_BY_TABLE = {armor:'worn', shields:'equipped', weapons:'equipped', clothes:'worn'};
+    var EQUIP_COL_BY_TABLE = {clothes:'worn'};
     document.querySelectorAll('.dyn-table [data-col="slots"]').forEach(function(inp){
       var row = inp.closest('[data-row]');
       var tbl = row.closest('.dyn-table');
-      var equipCol = EQUIP_COL_BY_TABLE[tbl ? tbl.getAttribute('data-table') : ''];
+      var tableKey = tbl ? tbl.getAttribute('data-table') : '';
+      if (tableKey === 'bulky'){
+        var typeSel = row.querySelector('[data-col="itemType"]');
+        if (!typeSel || typeSel.value !== 'other') return;
+      }
+      var equipCol = EQUIP_COL_BY_TABLE[tableKey];
       if (equipCol){
         var equipInput = row.querySelector('[data-col="'+equipCol+'"]');
         if (equipInput && equipInput.checked) return;
@@ -1192,6 +1253,19 @@
     carryOut.textContent = carryCurrent;
     carryOut.style.color = carryCurrent > carryMax ? 'var(--danger)' : '';
 
+    // Bulky Capacity current: 1 per Bulky Items row typed Weapon/Armor/Shield,
+    // equipped or spare alike - equipping something doesn't free up room, only
+    // removing the row does. A row typed Other or left untyped counts toward
+    // neither pool (Other feeds Backpack Slots above instead).
+    var bulkyCurrent = 0;
+    document.querySelectorAll('#tbl-bulky [data-row]').forEach(function(tr){
+      var t = tr.querySelector('[data-col="itemType"]').value;
+      if (t === 'weapon' || t === 'armor' || t === 'shield') bulkyCurrent++;
+    });
+    var bulkyOut = document.getElementById('out-bulkyCurrent');
+    bulkyOut.textContent = bulkyCurrent;
+    bulkyOut.style.color = bulkyCurrent > bulkyMax ? 'var(--danger)' : '';
+
     // 5. Ward DC per attribute - Passive Ward = 5 + Attribute, full stop
     // (core_rules.md's Skill/Ward split - Skill no longer contributes at all).
     ATTRIBUTES.forEach(function(a){
@@ -1199,81 +1273,32 @@
       document.getElementById('ward-'+a.key).textContent = ward;
     });
 
-    // 6. Magic school Skill Total per school - same Base + Mod logic as the
-    // Skills tab's Total column. Arcane and Divine diverge from here per
-    // magic_overview.md: Arcane's Spell Modifier is Skill Total minus Armor
-    // Penalty; Divine's Petition Roll is a flat 1d12 vs. DC 7 with no
-    // modifier at all, and Skill Total instead sets Rite Mastery reroll
-    // charges per Long Rest. Only schools with at least 1 Base skill point
-    // (i.e. trained) are listed.
-    var arcaneModBody = document.getElementById('arcaneModBody');
-    var divineModBody = document.getElementById('divineModBody');
-    arcaneModBody.innerHTML = '';
-    divineModBody.innerHTML = '';
-    var trainedArcane = ARCANE_SCHOOLS.filter(function(s){ return (skillBase[s]||0) >= 1; });
-    var trainedDivine = DIVINE_SCHOOLS.filter(function(s){ return (skillBase[s]||0) >= 1; });
-    if (trainedArcane.length === 0){
-      var emptyArcTr = el('tr', {});
-      var emptyArcTd = el('td', {colspan:'4', class:'note'});
-      emptyArcTd.appendChild(text('No Arcane training - invest at least 1 skill point in an Arcane school (Skills tab) to see it here.'));
-      emptyArcTr.appendChild(emptyArcTd);
-      arcaneModBody.appendChild(emptyArcTr);
-    } else {
-      trainedArcane.forEach(function(school){
-        var skillTotal = skillTotals[school] || 0;
-        var spellMod = skillTotal - armorPenalty;
-        var tr = el('tr', {'data-school-row':school});
-        tr.appendChild(el('td', {}, [text(school)]));
-        tr.appendChild(el('td', {class:'computed'}, [text(String(skillTotal))]));
-        tr.appendChild(el('td', {class:'computed'}, [text(String(armorPenalty))]));
-        tr.appendChild(el('td', {class:'computed'}, [text((spellMod>=0?'+':'') + spellMod)]));
-        arcaneModBody.appendChild(tr);
-      });
-    }
-    if (trainedDivine.length === 0){
-      var emptyDivTr = el('tr', {});
-      var emptyDivTd = el('td', {colspan:'4', class:'note'});
-      emptyDivTd.appendChild(text('No Divine training - invest at least 1 skill point in a Divine school (Skills tab) to see it here.'));
-      emptyDivTr.appendChild(emptyDivTd);
-      divineModBody.appendChild(emptyDivTr);
-    } else {
-      trainedDivine.forEach(function(school){
-        var skillTotal = skillTotals[school] || 0;
-        var tr = el('tr', {'data-school-row':school});
-        tr.appendChild(el('td', {}, [text(school)]));
-        tr.appendChild(el('td', {class:'computed'}, [text(String(skillTotal))]));
-        tr.appendChild(el('td', {class:'computed'}, [text('1d12 vs. DC 7')]));
-        tr.appendChild(el('td', {class:'computed'}, [text(String(skillTotal) + ' / Long Rest')]));
-        divineModBody.appendChild(tr);
-      });
-    }
-
-    // 6b. Spells Known - prep mechanic per card, derived from School
-    // (magic_overview.md). Replaces a separate global Casting Path selector
-    // since each spell's School already implies which tradition prepares it.
-    // Arcane spells aren't always available - only a scribed scroll lets you
-    // cast one, so the tracked quantity is "how many scrolls on hand" (a
-    // number that goes up when you scribe, down when you consume one).
-    // Divine spells have no prep step or per-spell refresh anymore - they're
-    // cast straight from the shared Mana pool, which only Prayer refills.
-    document.querySelectorAll('#tbl-spells [data-row]').forEach(function(card){
-      var note = card.querySelector('[data-role="prepNote"]');
-      if (!note) return;
-      var label = card.querySelector('[data-role="prepLabel"]');
-      var scrolls = card.querySelector('[data-role="prepScrolls"]');
-      var school = card.querySelector('[data-col="school"]').value;
-      if (ARCANE_SCHOOLS.indexOf(school) !== -1){
-        label.textContent = 'Scrolls on Hand';
-        scrolls.style.display = '';
-        note.textContent = 'Arcane - scribe scrolls during a Field/Long Rest (Mana spent at scribing); consume one to cast for no Mana cost at cast time.';
-      } else if (DIVINE_SCHOOLS.indexOf(school) !== -1){
-        label.textContent = 'Preparation';
-        scrolls.style.display = 'none';
-        note.textContent = 'Divine - no prep needed; cast anytime by spending Mana. Mana only recovers via Prayer (1/hour prayed).';
-      } else {
-        label.textContent = 'Preparation';
-        scrolls.style.display = 'none';
-        note.textContent = 'Pick a School to see prep mechanics.';
+    // 6. Magic Feats per school (magic_feats.md) - Unlock tier sets which
+    // spell ranks are learnable/castable; Focus tier sets the flat,
+    // non-stacking roll bonus added to that school's casting roll. Neither
+    // reads a Skill or an Attribute (magic_overview.md's Rolling Magic) - this
+    // no longer has anything to do with the Skills tab at all. A Focus tier
+    // higher than the held Unlock tier is flagged, same red-flag pattern as a
+    // Skill Base exceeding its governing Attribute above.
+    var TIER_RANK = {None:0, Novice:1, Adept:2, Expert:3};
+    MAGIC_SCHOOLS.forEach(function(school){
+      var unlockSel = document.querySelector('[name="magic:'+school+':unlock"]');
+      var focusSel = document.querySelector('[name="magic:'+school+':focus"]');
+      var unlock = unlockSel ? unlockSel.value : 'None';
+      var focus = focusSel ? focusSel.value : 'None';
+      var ranksOut = document.querySelector('[data-magic-ranks="'+school+'"]');
+      var bonusOut = document.querySelector('[data-magic-bonus="'+school+'"]');
+      if (ranksOut) ranksOut.textContent = MAGIC_RANKS_BY_TIER[unlock];
+      if (bonusOut){
+        var bonus = MAGIC_BONUS_BY_TIER[focus];
+        bonusOut.textContent = (bonus>=0?'+':'') + bonus;
+        if (TIER_RANK[focus] > TIER_RANK[unlock]){
+          bonusOut.style.color = 'var(--danger)';
+          bonusOut.title = 'Focus tier (' + focus + ') needs the matching Unlock Feat first (currently ' + unlock + ') - see magic_feats.md.';
+        } else {
+          bonusOut.style.color = '';
+          bonusOut.title = '';
+        }
       }
     });
 
@@ -1282,8 +1307,10 @@
     // Skill is whichever the parrying implement trains under, not the one you
     // attack with. Edge is left off both: it depends on the opponent's Weapon
     // Length, which only the table knows. Ranged and Thrown never Parry - a
-    // bow answers nothing - so those rows print a dash.
-    document.querySelectorAll('#tbl-weapons [data-row]').forEach(function(tr){
+    // bow answers nothing - so those rows print a dash. Runs after the Bulky
+    // Items pass above so shieldGuard is already final.
+    document.querySelectorAll('#tbl-bulky [data-row]').forEach(function(tr){
+      if (tr.querySelector('[data-col="itemType"]').value !== 'weapon') return;
       var skillName = tr.querySelector('[data-col="skill"]').value;
       var atkOut = tr.querySelector('[data-col-out="atkBonus"]');
       var parryOut = tr.querySelector('[data-col-out="parryBonus"]');
@@ -1372,6 +1399,36 @@
     saveLocal();
   }
 
+  // Bulky Capacity is a hard ceiling, not a soft-encumbrance stat like
+  // Backpack Slots (rest_and_survival.md: "You cannot exceed your Bulky
+  // Capacity... you have nowhere left on your body or straps"). Enforced only
+  // at the point a row is typed Weapon/Armor/Shield - switching a row TO one
+  // of those types when the pool is already full reverts it rather than
+  // silently letting the count run over. Loading a saved character never hits
+  // this (restore() sets values directly, no change event), so an
+  // already-overfull legacy save still opens for the player to resolve by hand.
+  function enforceBulkyCap(e){
+    if (!e.target.matches('#tbl-bulky [data-col="itemType"]')) return;
+    var newType = e.target.value;
+    if (newType !== 'weapon' && newType !== 'armor' && newType !== 'shield') return;
+    var bulkyMaxNow = num(document.getElementById('out-bulkyMax').textContent);
+    var countNow = 0;
+    document.querySelectorAll('#tbl-bulky [data-row]').forEach(function(tr){
+      var t = tr.querySelector('[data-col="itemType"]').value;
+      if (t === 'weapon' || t === 'armor' || t === 'shield') countNow++;
+    });
+    if (countNow > bulkyMaxNow){
+      alert('Bulky Capacity full (' + bulkyMaxNow + ') - free up a slot (remove or retype a Weapon, Armor, or Shield row) before adding another.');
+      e.target.value = '';
+      recompute();
+    }
+  }
+  // A <select>'s value change dispatches 'input' in most browsers same as
+  // 'change' fires alongside it - listening to both is belt-and-suspenders
+  // rather than betting on one.
+  document.addEventListener('input', enforceBulkyCap);
+  document.addEventListener('change', enforceBulkyCap);
+
   document.addEventListener('input', function(e){
     if (e.target.closest('main') || e.target.closest('header.sheet-header')){
       recompute();
@@ -1407,8 +1464,41 @@
     return data;
   }
 
+  // A sheet saved before the Bulky Items merge kept weapons/armor/shields as
+  // three separate tables (their own row shapes, own field names). Rather
+  // than let that gear silently vanish the first time an old save loads under
+  // the new single "bulky" table, fold it into synthetic bulky rows here -
+  // only when there's no "bulky" data of its own yet, so this never clobbers
+  // a save already in the new shape.
+  function migrateLegacyBulkyTables(data){
+    if (!data || !data.tables) return;
+    if (data.tables.bulky && data.tables.bulky.length) return;
+    var migrated = [];
+    (data.tables.weapons||[]).forEach(function(w){
+      migrated.push({
+        name: w.name||'', itemType:'weapon', active: !!w.equipped,
+        skill: w.skill||'', damage: w.damage||'', length: w.length||'',
+        range: w.range||'', reload: w.reload||'', properties: w.properties||''
+      });
+    });
+    (data.tables.armor||[]).forEach(function(a){
+      migrated.push({
+        name: a.name||'', itemType:'armor', active: !!a.worn,
+        armorType: a.type||'', maxDent: a.maxDent||0, maxRend: a.maxRend||0,
+        armorDamage: a.damage||0, stealth: a.stealth||0
+      });
+    });
+    (data.tables.shields||[]).forEach(function(s){
+      migrated.push({
+        name: s.name||'', itemType:'shield', active: !!s.equipped, guard: s.guard||0
+      });
+    });
+    if (migrated.length) data.tables.bulky = migrated;
+  }
+
   function restore(data){
     if (!data) return;
+    migrateLegacyBulkyTables(data);
     var fieldMap = {};
     document.querySelectorAll('[name]').forEach(function(elm){
       if (!elm.closest('template')) fieldMap[elm.name] = elm;
@@ -1458,6 +1548,7 @@
 
   buildAttributes();
   buildSkills();
+  buildMagicFeats();
   buildWard();
   ensureFeatSlots();
 

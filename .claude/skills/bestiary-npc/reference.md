@@ -68,7 +68,7 @@ Tempo Pool floors at 1 die and Mana/Slots at 0.
 A Prestige Feat (prestige_feats.md) forces Effective Level >= 5 regardless of Feat
 count ("Can take a Prestige Feat" first appears at Level 5).
 
-## Wound Thresholds (wounds_and_survival.md) - keyed to the DEFENDER's own END
+## Wound Thresholds (rest_and_survival.md) - keyed to the DEFENDER's own END
 
 At END `e`: 1 Wound on damage-after-AR of 1 to `6+e`; 2 Wounds on `7+e` to `12+e`;
 3 Wounds on `13+e` or more.
@@ -88,7 +88,7 @@ the defender's own END using the formula above, don't copy another entry's band 
 | Large | 4 | 10 ft (2x2) | Medium |
 | Huge | 5* | 15 ft (3x3) | Long |
 
-\*Huge's Wounds baseline (5) extrapolates the +1-per-step pattern - `wounds_and_survival.md`
+\*Huge's Wounds baseline (5) extrapolates the +1-per-step pattern - `rest_and_survival.md`
 only tables Small/Medium/Large explicitly and says a GM is free to keep scaling past
 Large. Bigger-than-Huge: keep extrapolating +1/step unless a reason says otherwise.
 
