@@ -20,7 +20,7 @@ The Feliids are a cursed offshoot of the Aelfen, once a solemn and tradition-bou
 ### **Features**
 
 **Low-light Vision:** You treat dim light as bright light within 60 ft.  
-**Natural Weapons:** You gain a Claw attack that deals 1d4+DEX slashing damage (finesse).  
+**Natural Weapons:** You gain a Claw attack that deals 1d4+STR slashing damage.  
 **Catfall:** You take half damage from falls, you do not go prone when taking falling damage.  
 **Feline Agility:** Once per turn, when you take the Move action, you may double your movement speed for that turn. You cannot use this feature again until you move 0 feet on one of your turns.  
 **Magnetic Charm:** You gain \+1 to Influence and Manipulate.

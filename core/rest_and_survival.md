@@ -24,7 +24,7 @@ Bodies and gear recover on the same schedule.
 |:----------|:--------------------------------------------------------------------|:---------------------------------------------------------|:--------------------------------------------------------------------------------|:-----------------------------|
 | Short | A pause of minutes to an hour, catching your breath between fights | None | None | 1 |
 | Field | A night camped outside a town \- shelter, watch rotation, 1 ration per character | 1 | 1 point to each line (Dent, Rend, Guard) | Equal to MIND, minimum 2 |
-| Long Rest | A full day, in a town, with Good Shelter and Good Food | 1, or 2 if a medic passes a Chirurgery check (DC 7) that day | 1 point to each line, or 2 if a smith passes a Smithing check (DC 7) that day | Full |
+| Long Rest | A full day, in a town, with Good Shelter and Good Food | 1, or 2 if a medic passes a Chirurgery check (DC 9) that day | 1 point to each line, or 2 if a smith passes a Smithing check (DC 9) that day | Full |
 
 **A character cannot take more than 2 Short Rests per day**, and a Short Rest only counts against that cap if something happened first \- a fight, a scene, a stretch of travel. **A character benefits from at most one Field Rest per day.** Long Rest needs no such cap.
 
@@ -62,7 +62,7 @@ Every instance of damage \- a weapon's die, a working's damage, a Feat's rider, 
 
 ### Reflavored Damage
 
-A Feat or trait that reskins damage into its own named identity (Blood-Rule's **Bloodfire**, for a Stryg) creates a distinct type in its own right, not a costume worn over the mundane type it resembles. Slot a reflavored type into whichever of the three categories above actually fits its fiction rather than inventing a fourth category. Unless a trait explicitly says its reflavor keeps interacting with the original type, treat the two as unrelated for Resistance, Vulnerability, and Immunity purposes.
+A Feat or trait that reskins damage into its own named identity (a Stryg's blood magic manifesting as **Bloodfire**, say) creates a distinct type in its own right, not a costume worn over the mundane type it resembles. Slot a reflavored type into whichever of the three categories above actually fits its fiction rather than inventing a fourth category. Unless a trait explicitly says its reflavor keeps interacting with the original type, treat the two as unrelated for Resistance, Vulnerability, and Immunity purposes.
 
 ### Resistance, Vulnerability, and Immunity
 
@@ -103,7 +103,7 @@ When your last Wound box fills:
 
 While Downed, you're **Prone**, can't stand, and can't take a Major Action. **Any further Wound kills you.** You can still Parry, at most 1 die. Armor still protects you against Blunt and Slashing - a hit that's Turned Aside deals no Wound - but **a Normal-Reach Piercing weapon finds the gaps** (see [[Armor and Wounds|exchange]]), so the dagger standing over you is the thing to fear, harness or no harness.
 
-**A Downed creature doesn't threaten.** It isn't a living enemy for Engaged (see [[Distance \& Reach|exchange]]) and can't make Opportunity Attacks or take Openings. Allies can walk past or away from it freely.
+**A Downed creature doesn't threaten.** It isn't a living enemy for Engaged (see [[Distance \& Reach|exchange]]) and can't make Opportunity Attacks, take Openings, or Riposte - it's fighting to survive a Parry, nothing more. Allies can walk past or away from it freely.
 
 **Getting up.** Healing 1 Wound ends Downed. In a fight, an Adjacent ally can use their Major Action and a Healer's Kit to attempt a **Chirurgery check (DC 7)**; success heals 1 Wound. An Adjacent ally can instead administer a Healing Draught with their Minor Action (see [[Supplies|supplies]]) - **a Downed character can't drink one themselves**, and nobody gets up alone.
 
@@ -233,8 +233,8 @@ Conditions can be applied by numerous different sources and in a multitude of wa
 | **Paralyzed** | Incapacitated, Speed 0, and can't speak. Automatically fails STR and DEX Wards. Attacks against it land automatically and the attacker takes an Opening. |
 | **Petrified** | Incapacitated, Speed 0, and unaware of its surroundings. Becomes a nonmagical stone object: weight x10, aging stops, resistance to all damage. All other conditions and ongoing effects are suspended until it's freed. |
 | **Poisoned** | Disadvantage on attack rolls and Skill checks. |
-| **Prone** | Disadvantage on attack rolls; attacks against it have Advantage. **Parries at no penalty.** Can't move except to stand up, which costs its whole Move Action. A shot at a Prone target reads the [[Shot DC|exchange]] table instead of this line. |
-| **Restrained** | Speed 0; attack rolls against it have advantage; disadvantage on its own attack rolls; disadvantage on DEX Wards; casting requires being unengaged as normal but the working still resolves. Breaks for 1 Tempo Die, no roll (see [[Grappling|exchange]]). While Restrained, invest at most 1 die in each Parry. **A Restrained creature can be knifed through the gaps in its armor** - see [[Armor and Wounds|exchange]]. |
+| **Prone** | Attacking is unaffected. **While Prone, invest at most 1 die in each Parry.** Can't move except to stand up, which costs its whole Move Action. **Prone is not pinned** - a Prone creature's armor works normally (see [[Armor and Wounds|exchange]]). A shot at a Prone target reads the [[Shot DC|exchange]] table instead of this line. |
+| **Restrained** | Speed 0. Attacking and casting are unaffected (casting still requires being unengaged as normal). Breaks for 1 Tempo Die, no roll (see [[Grappling|exchange]]). While Restrained, invest at most 1 die in each Parry. **A Restrained creature can be knifed through the gaps in its armor** - see [[Armor and Wounds|exchange]]. |
 | **Silenced** | Can't speak or cast workings. |
 | **Stunned** | On its turn it can take only one action of any type instead of its normal allotment, and its Tempo Pool refills to half as many dice, rounded down (never below 1). |
 | **Unconscious** | Incapacitated, Speed 0, can't speak, and unaware of its surroundings; it falls Prone and drops what it's holding. Automatically fails all Checks and Wards. Attacks against it land automatically and the attacker takes an Opening. |

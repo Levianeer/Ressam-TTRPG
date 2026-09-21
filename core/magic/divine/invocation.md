@@ -24,7 +24,7 @@ When you first learn an Invocation spell, you must perform the Severing \- a rit
 
 You may cast Invocation spells using Wounds equal to Mana Cost ÷ 2 (rounded up, minimum 1\) instead of Mana, paid when you cast. This loss cannot be reduced or prevented but can use Patched Wounds.
 
-**Note:** This rate always applies to Invocation spells, even for casters who convert Mana costs to Wounds through other means (such as the Blood-Rule Prestige Feat) \- it does not stack with or get discounted by those effects.
+**Note:** This rate always applies to Invocation spells, even for casters who convert Mana costs to Wounds through some other effect \- it does not stack with or get discounted by those effects.
 
 ### **SPELLS**
 

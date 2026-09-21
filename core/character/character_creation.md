@@ -111,6 +111,7 @@ You receive Feats equal to your Feats priority from Step 2 (0 to 4).
 - You must meet all prerequisites
 - Some feats can be taken multiple times (noted in description)
 - Racial and Career skill modifiers count toward prerequisites
+- A Magic Feat's Unlock tier also grants a small number of workings known for free - see [[Learning Workings|magic_overview]]
 
 See the **Feats** chapter for the complete list.
 

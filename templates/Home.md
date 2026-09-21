@@ -53,7 +53,7 @@ Read **[Core Rules](core_rules)** first - dice, attributes, skills, and checks v
 - [Magic Overview](magic_overview) - universal rules shared by every school; no Arcane/Divine split
 - [Laws of Magic](laws_of_magic) - the Five Laws, Three Costs, and adjudication framework behind every spell, ritual, and miracle
 - [Minor Magic](minor_magic) - small, instinctive Will effects (minimum 1 Will) that fall outside a normal working
-- [Magic Feats](magic_feats) - how a caster actually buys into a school: Novice/Adept/Expert/Master tier Unlocks, matching Focus Feats built around Signature Workings, and cross-school Combination workings
+- [Magic Feats](magic_feats) - how a caster actually buys into a school: four Feats per school, Novice/Adept/Expert/Master, each one pure access to that tier's difficulty and nothing more
 
 **Schools** (flat list - the Arcane/Divine grouping below is flavor only, not a mechanical split):
 - [Arcane Overview](arcane_overview), [Aeromancy](aeromancy), [Geomancy](geomancy), [Hydromancy](hydromancy), [Pyromancy](pyromancy), [Shadowmancy](shadowmancy)

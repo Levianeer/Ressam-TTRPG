@@ -2,6 +2,8 @@
 
 **Pool size \= baseline 4, plus the Attacks modifier of your weapon and your shield** (see [[Weapons|weapons]]) \- `\+1` for a Light weapon, `\-1` for a Two-Handed one, `\+0` for everything else, a shield's own modifier stacking on top. **Every die is a flat `1d12`.** STR's whole role in a fight is melee damage (see [[Damage Roll|combat]]); DEX funds Initiative and the Shot DC a target presents instead \- see Initiative and The Shot, below.
 
+**Every Tempo roll takes the highest die invested, not the sum** \- add your modifier once, to that single result. This is true of an Attack, a Parry, a shot, and a cast alike (see [[Casting|magic_overview]]) \- investing more dice buys reliability, never a bigger total.
+
 Your pool refills in full **at the start of the round**, not the start of your own turn \- one pool per character per round, shared by your own attack and every defense you make no matter whose turn it is. It starts full before anyone's first turn. **Pool size is recalculated only when it refills**: disarmed or swapping weapons mid-round costs you nothing until the next refill, and it also means going early in Initiative commits dice blind, while going late means defending on what the round throws at you before you know what you'll have left to swing with.
 
 Dice buy attacks, Parries, Opportunity Attacks, Disengages, breaking a Grapple, Exerting, and a shot - see [What everything costs](#what-everything-costs). **A shot invests Tempo Dice too**, the same as a melee attack, though nothing is ever rolled back against it - see [The shot](#the-shot).
@@ -16,8 +18,8 @@ An **Exchange** is one attack and its answer \- but **the defender rolls first**
 
 | Step | What happens | |
 | :---- | :---- | :---- |
-| **1. Defend** | Before the attack is rolled, the defender invests any number of Tempo Dice into a **Parry** (each `1d12`, summed, `\+ Weapon Skill \+ Guard`) or declines outright. Either way this sets a **DC** the attack must beat \- 0 if they declined. | An unaware target has no choice: it declines \- see [Awareness](#awareness). |
-| **2. Attack** | Now knowing the DC, the attacker invests any number of Tempo Dice (each `1d12`, summed, `\+ Weapon Skill`). Once the defender has rolled, the attacker must invest at least 1 die \- declaring an attack is a commitment. | Outside the weapon's Reach, this roll closes the gap \- see [Distance & Reach](#distance--reach). |
+| **1. Defend** | Before the attack is rolled, the defender invests any number of Tempo Dice into a **Parry** (each `1d12`, take the highest, `\+ Weapon Skill \+ Guard`) or declines outright. Either way this sets a **DC** the attack must beat \- 0 if they declined. | An unaware target has no choice: it declines \- see [Awareness](#awareness). |
+| **2. Attack** | Now knowing the DC, the attacker invests any number of Tempo Dice (each `1d12`, take the highest, `\+ Weapon Skill`). Once the defender has rolled, the attacker must invest at least 1 die \- declaring an attack is a commitment. | Outside the weapon's Reach, this roll closes the gap \- see [Distance & Reach](#distance--reach). |
 | **3. Compare** | The attack must **strictly beat the DC** to land \- a tie still goes to the defender. Beat it by **5 or more** and the attacker takes an Opening; fall short by **5 or more** and the defender takes one instead (**3 or more** for a Signature Opening \- see [Openings](#openings)). Any hit that lands costs the target **1 Tempo Die** (Shock), margin aside. | A target with no dice left simply has none taken \- Shock never goes negative, and never converts into anything else. |
 
 **Declining is a last resort, not a live choice** \- it exists for when you're out of dice, not as a tactic to pick while you still have one to spend. Declining almost always costs an Opening too: a DC of 0 clears most margin-5 rolls.
@@ -46,7 +48,7 @@ Riposte, Opportunity Attacks and a held attack's trigger are **plain attacks**. 
 
 | Defense | Requires | The number | Can take an Opening |
 | :---- | :---- | :---- | :----: |
-| **Parry** | Something to parry with | Every invested die (`1d12` each), summed, `\+ Weapon Skill \+ Guard` | Yes, any Opening |
+| **Parry** | Something to parry with | Every invested die (`1d12` each), take the highest, `\+ Weapon Skill \+ Guard` | Yes, any Opening |
 | **Nothing** | Nothing at all | The blow lands | No |
 
 No cap on how many dice you sink into a single Parry, no stacking two defenses on one blow, and no cap on how many attacks you may answer in a round \- each Parry is its own separate investment. **Weapon Skill** on a Parry is the Skill of whatever is actually parrying, not of your own weapon \- a ranged weapon in hand Parries as Unarmed (see [Weapons in Hand](#weapons-in-hand)). **Guard** (see [[Shields|weapons]]) adds to every Parry you make while a shield is equipped; only the highest counts with more than one, and it degrades by 1 whenever a Parry it aided is lost.
@@ -90,11 +92,13 @@ Margin does not multiply damage \- it only decides Openings, whether you investe
 
 Ressam is played on a **square grid of five-foot squares** ([[Battlemap \& Positioning|positioning]] owns the grid); diagonals count as one square. Every weapon carries a **Reach** \- the farthest distance it can attack from \- and can attack at any distance from Adjacent up to that Reach:
 
-| Reach | Squares | Weapons (see [[Weapons|weapons]] for the full list) |
-|:------|:-------:|:--|
-| **Normal** | Adjacent only | Unarmed and every one-handed or Light melee weapon |
-| **Reach 1** | Adjacent through 1 square | Halberd, Glaive |
-| **Reach 2** | Adjacent through 2 squares | Pike |
+| Reach | Squares |
+|:------|:-------:|
+| **Normal** | Adjacent only |
+| **Reach 1** | Adjacent through 1 square |
+| **Reach 2** | Adjacent through 2 squares |
+
+See [[Weapons|weapons]] for which weapons carry which Reach - this chapter doesn't keep its own copy of that list.
 
 **Engaged** means you're within a living enemy's weapon Reach. Their remaining dice don't matter. **A Downed creature isn't a living enemy for this purpose** \- see [[Downed|rest_and_survival]].
 

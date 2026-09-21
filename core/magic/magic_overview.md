@@ -133,7 +133,7 @@ At 17% on one die, nobody casts Legendary without Channelling, and Channelling a
 
 **Five hard limits.** Breaking any of these breaks something else in this system.
 
-1. Nothing bypasses the resist roll. The resist is how non-casters participate. A single, deliberate Legendary working may grant total immunity for one round as its whole effect - matched in scope to a Sanctuary-style free-die trait, and costed at the top of the ladder for it - but that's the one sanctioned exception.
+1. Nothing bypasses the resist roll. The resist is how non-casters participate. A single, deliberate Legendary working may grant total immunity for one round as its whole effect - matched in scope to the Sanctuary trait, and costed at the top of the ladder for it - but that's the one sanctioned exception.
 2. No working generates Will or dice, and no working removes Trauma. Trauma can be moved, never removed. The economy stays closed.
 3. No working grants an extra cast. One per round is the pacing spine.
 4. Nothing reaches past the MIND ceiling. Free resist dice are the one deliberate exception, and they are defensive only.
@@ -239,7 +239,16 @@ The 7 and 9 rows double as the odds of passing a Terror or Dread Fear check (see
 | Expert | Greater workings | 9+ |
 | Master | Legendary workings | 11+ |
 
-**Learning New Workings:** requires time, money, and practice. At character creation you may spend 50 Crown per tier (Lesser 50, Common 100, Greater 150, Legendary 200) to "buy" your starting workings. Otherwise: 1 day studying per tier, and the same Crown cost, in whatever materials, offerings, or tuition the school's flavor calls for, from a teacher, a text, a mentor, or - where the fiction wants it - a vision or a master's demonstration.
+**Workings Known at Character Creation:** each Unlock Feat you hold grants a small number of workings free, of any tier that Feat (or a lower one you also hold) permits - a token grant, not a full spell list:
+
+| Highest Feat | Workings Known |
+|--------------|:---------------:|
+| Novice | 1 |
+| Adept | 2 |
+| Expert | 3 |
+| Master | 4 |
+
+**Learning New Workings:** beyond that free grant, learning one costs time, money, and practice. At character creation you may spend 50 Crown per tier (Lesser 50, Common 100, Greater 150, Legendary 200) to "buy" additional starting workings. Otherwise: 1 day studying per tier, and the same Crown cost, in whatever materials, offerings, or tuition the school's flavor calls for, from a teacher, a text, a mentor, or - where the fiction wants it - a vision or a master's demonstration.
 
 **Feat and MIND are separate axes.** The Feat sets what tier of magic you could ever perform; MIND sets how reliably you perform it.
 
@@ -249,7 +258,7 @@ The 7 and 9 rows double as the odds of passing a Terror or Dread Fear check (see
 
 Raising MIND directly is the wrong lever for progression - it moves the ceiling, pool, and resist floor at once. Treat it as a rare, story-weight advancement (see [[Per Level Advancement|progression_&_rewards]]), not a routine per-level increase.
 
-Grow casters sideways instead - see [[Magic Feats|magic_feats]] for how Focus Feats spend this menu:
+Grow casters sideways instead - never through a Magic Feat itself (see [[Magic Feats|magic_feats]]: those are pure access, nothing more), but through whatever else a build can reach for - a racial trait, a Prestige Feat, a rare find:
 
 - **More workings known.** Still one cast per round, so the choice gets harder rather than the caster getting stronger.
 - **Free resist dice.** A trait or Feat benefit, not more Will.

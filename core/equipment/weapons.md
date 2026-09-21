@@ -40,6 +40,8 @@ Weapons deal one of three Physical damage types: **Piercing**, **Slashing**, or 
 | **Reach 1** | Adjacent through 1 square | Spear, Halberd, Glaive, Quarterstaff, Lance |
 | **Reach 2** | Adjacent through 2 squares | Pike |
 
+**Every Reach 1 or Reach 2 weapon carries Ignores Guard** (see [Weapon Properties](#weapon-properties), above) \- a shield answers a blade kept close, not one held off at the end of a shaft. This is the trade a Polearm makes against a Normal-Reach weapon of the same cost: reach and a Guard-blind opponent, instead of a Rapier's own edge at finding the gaps in a pinned foe (see [[Armor and Wounds|exchange]]).
+
 **Hafted Weapons and Polearms split by Reach, not grip.** Hafted Weapons (Mace, Battle Axe, Club, War Maul, Greatclub, Whip, Weighted Chain, Chain Flail) are Normal Reach; every Polearm (Spear, Pike, Halberd, Glaive, Quarterstaff, Lance) is Reach 1 or Reach 2, even the ones short enough to grip close - the weapon still keeps a foe further off than Normal Reach lets one.
 
 **A thrown weapon takes its held Reach until thrown**, then is a shot off the [[Shot DC|exchange]] table, and Reach governs only what it does while you are still holding it. A **Sling** has no melee Reach at all.
@@ -158,12 +160,12 @@ See [[The shot|exchange]] for the Shot DC a shot rolls against.
 
 | Weapon       | Damage | Reach | Attacks | Signature | Properties | Cost      |
 |:-------------| :---- |:--------:|:---:|:----|:----|-----------|
-| Spear        | 1d8 Piercing | Reach 1 | `\+0` | Shove | Versatile (Two-Handed 1d10), Throwable (20/40 ft) | 30 Crown  |
-| Pike         | 1d8 Piercing | Reach 2 | `\-1` | Shove | Two-Handed | 50 Crown  |
-| Halberd      | 1d10 Slashing / Piercing | Reach 1 | `\-1` | Grapple | Two-Handed | 100 Crown |
-| Glaive       | 1d10 Slashing | Reach 1 | `\-1` | Sunder | Two-Handed | 95 Crown  |
-| Quarterstaff | 1d6 Blunt | Reach 1 | `\+0` | Shove | Versatile (Two-Handed 2d4) | 5 Crown   |
-| Lance        | 1d8 Piercing | Reach 1 | `\+0` | Shove | Charge (2d8), One-handed while mounted; Two-Handed and loses Charge on foot | 100 Crown |
+| Spear        | 1d8 Piercing | Reach 1 | `\+0` | Shove | Ignores Guard, Versatile (Two-Handed 1d10), Throwable (20/40 ft) | 30 Crown  |
+| Pike         | 1d8 Piercing | Reach 2 | `\-1` | Shove | Ignores Guard, Two-Handed | 50 Crown  |
+| Halberd      | 1d10 Slashing / Piercing | Reach 1 | `\-1` | Grapple | Ignores Guard, Two-Handed | 100 Crown |
+| Glaive       | 1d10 Slashing | Reach 1 | `\-1` | Sunder | Ignores Guard, Two-Handed | 95 Crown  |
+| Quarterstaff | 1d6 Blunt | Reach 1 | `\+0` | Shove | Ignores Guard, Versatile (Two-Handed 2d4) | 5 Crown   |
+| Lance        | 1d8 Piercing | Reach 1 | `\+0` | Shove | Ignores Guard, Charge (2d8), One-handed while mounted; Two-Handed and loses Charge on foot | 100 Crown |
 
 **DAGGERS & KNIVES** *(Daggers & Wrestling Skill)*
 
@@ -303,7 +305,7 @@ Guard is passive: it applies whenever you have a shield equipped, no roll or Ski
 
 **A shield Parries using Daggers \& Wrestling**, the same Skill that swings a Shield Bash.
 
-**Ignores Guard:** a Chain Flail's Guard-ignoring property (see [Weapon Properties](#weapon-properties), above) sets your Guard to 0 against that weapon for as long as it is the thing swinging at you.
+**Ignores Guard:** this property (see [Weapon Properties](#weapon-properties), above) sets your Guard to 0 against the weapon carrying it, for as long as that weapon is the thing swinging at you. Every Polearm carries it - reach keeps a shield from ever getting in the way - and the Chain Flail does too, for an unrelated reason: a flail head comes over a shield's rim rather than into it.
 
 ### **Shield Bash**
 

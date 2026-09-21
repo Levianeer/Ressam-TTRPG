@@ -370,7 +370,7 @@ Below that count the mob is a beatable nuisance; at or past it, expect real Woun
 
 **Skills:** Two-Handed Blades 4, Athletics 2, Wayfaring 2, Perception 1
 
-**Feats:** Tough (`+1` Wounds), Second Wind (reroll a failed Ward once; `+3` to STR Ward while below half Wounds)
+**Feats:** Tough (`+1` Wounds), Second Wind (Advantage on STR and DEX Wards while below half Wounds)
 
 | Wounds | Dent / Rend | Tempo Pool | Initiative |
 | :---: | :---: | :---: | :---: |

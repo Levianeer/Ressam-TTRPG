@@ -2,7 +2,7 @@ Singular, campaign-defining threats - not fielded in numbers, not tied to one co
 
 **This section exists separately from a Very Rare tag elsewhere on purpose.** Frequency (see [[Bestiary Overview|bestiary_overview]]) describes how often a GM reaches for a creature - a Mythic entry is almost always Very Rare, but "rare" isn't what actually sets it apart from, say, a Bear. What sets it apart is Mythic Initiative itself, and that's a mechanical category, not a point on the Frequency scale.
 
-**A note on Power Score:** `tools/power_score.py` cannot meaningfully price anything in this section. Power Score reads Attribute/Skill/Feat investment off the same table a PC advances through, and every character in Ressam shares the same Attribute 5 / Skill 5 ceiling - so a Mythic creature built at that ceiling scores identically to a non-Mythic creature built at the same ceiling, even though Mythic Initiative (extra turns, not bigger numbers) is what actually makes it dangerous. The Wyrm below and the hypothetical Blood-Rule Pyromancer stress-tested in `tools/danger_estimate.py` land on the exact same Effective Level and XP Reward despite one nearly wiping a 4-PC party solo and the other losing every simulated fight. Price a Mythic entry's reward by hand, or by comparison to the Wyrm below, not by running the calculator on it.
+**A note on Power Score:** `tools/power_score.py` cannot meaningfully price anything in this section. Power Score reads Attribute/Skill/Feat investment off the same table a PC advances through, and every character in Ressam shares the same Attribute 5 / Skill 5 ceiling - so a Mythic creature built at that ceiling scores identically to a non-Mythic creature built at the same ceiling, even though Mythic Initiative (extra turns, not bigger numbers) is what actually makes it dangerous. The Wyrm below and a hypothetical glass-cannon Pyromancer stress-tested in `tools/danger_estimate.py` land on the exact same Effective Level and XP Reward despite one nearly wiping a 4-PC party solo and the other losing every simulated fight. Price a Mythic entry's reward by hand, or by comparison to the Wyrm below, not by running the calculator on it.
 
 ---
 
@@ -18,7 +18,7 @@ Singular, campaign-defining threats - not fielded in numbers, not tied to one co
 
 **Skills:** Daggers & Wrestling 5, Perception 3
 
-**Feats:** Tough (\+1 Wounds), Second Wind (reroll a failed Ward once; \+3 to STR Ward below half Wounds)
+**Feats:** Tough (\+1 Wounds), Second Wind (Advantage on STR and DEX Wards below half Wounds)
 
 | Wounds | Dent / Rend | Tempo Pool | Initiative |
 | :---: | :---: | :---: | :---: |
